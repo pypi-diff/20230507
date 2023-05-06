@@ -559,3 +559,20 @@
 [2023-05-07 01:09:31] INFO root fetch - main [MainThread]: End processing [tmnt]: success
 [2023-05-07 01:09:31] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
 [2023-05-07 01:09:31] INFO root fetch - main [MainThread]: Store serial: [18002912]
+[2023-05-07 01:14:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002912]
+[2023-05-07 01:14:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-07 01:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyl4c
+[2023-05-07 01:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: latex2mathml
+[2023-05-07 01:14:40] INFO root fetch - processPackages [pyl4c]: New version: [0.16.0] Old Version: [0.15.1]
+[2023-05-07 01:14:40] INFO root fetch - processPackages [latex2mathml]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-05-07 01:14:40] INFO root fetch - processPackages [pyl4c]: Downloading https://files.pythonhosted.org/packages/fe/92/52bf18eb39b91ae1c614ab8e299a46e542cb3ecb6b9889db4eca3c5eb357/pyl4c-0.15.1.tar.gz
+[2023-05-07 01:14:40] INFO root fetch - processPackages [latex2mathml]: Downloading https://files.pythonhosted.org/packages/c4/20/07644423847e54d4dc9d49cd99a0440c6d4f72d940db5b01484f4de4f1ad/latex2mathml-3.8.0.tar.gz
+[2023-05-07 01:14:40] INFO root fetch - processPackages [pyl4c]: Downloading https://files.pythonhosted.org/packages/28/95/fb2de1b7119ba7722c9d4bba45683b603ef756e7b0ecbba2030e8feea9ee/pyl4c-0.16.0.tar.gz
+[2023-05-07 01:14:40] INFO root fetch - processPackages [latex2mathml]: Downloading https://files.pythonhosted.org/packages/33/93/31c4d1c4c57637f9dc86028de6ffad6aa37dab2344636ece96334d62fe8f/latex2mathml-3.9.0.tar.gz
+[2023-05-07 01:14:40] INFO root fetch - processPackages [pyl4c]: executing diffoscope
+[2023-05-07 01:14:40] INFO root fetch - processPackages [pyl4c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyl4c-0.15.1.tar.gz tmp/pyl4c-0.16.0.tar.gz --markdown 20230507/p/pyl4c/0.15.1-0.16.0/diff.md --exclude *.pyd
+[2023-05-07 01:14:41] INFO root fetch - processPackages [latex2mathml]: executing diffoscope
+[2023-05-07 01:14:41] INFO root fetch - processPackages [latex2mathml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latex2mathml-3.8.0.tar.gz tmp/latex2mathml-3.9.0.tar.gz --markdown 20230507/l/latex2mathml/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-07 01:14:42] INFO root fetch - main [MainThread]: End processing [pyl4c]: success
+[2023-05-07 01:14:42] INFO root fetch - main [MainThread]: End processing [latex2mathml]: success
+[2023-05-07 01:14:42] INFO root fetch - main [MainThread]: Store serial: [18002917]
