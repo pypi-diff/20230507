@@ -97,3 +97,39 @@
 [2023-05-07 00:09:01] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
 [2023-05-07 00:09:31] INFO root fetch - main [MainThread]: End processing [liccheck]: success
 [2023-05-07 00:09:31] INFO root fetch - main [MainThread]: Store serial: [18002567]
+[2023-05-07 00:14:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002567]
+[2023-05-07 00:14:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 00:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wgd
+[2023-05-07 00:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FeatureInsight
+[2023-05-07 00:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jawohl
+[2023-05-07 00:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cellpy
+[2023-05-07 00:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dolly-v2
+[2023-05-07 00:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: slashml
+[2023-05-07 00:14:40] INFO root fetch - processPackages [wgd]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-07 00:14:40] INFO root fetch - processPackages [FeatureInsight]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 00:14:40] WARNING root fetch - processPackages [jawohl]: Skipping, unable to determine old version
+[2023-05-07 00:14:40] INFO root fetch - main [MainThread]: End processing [jawohl] error
+[2023-05-07 00:14:40] INFO root fetch - processPackages [slashml]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-07 00:14:40] INFO root fetch - processPackages [cellpy]: New version: [1.0.0a4] Old Version: [1.0.0a3]
+[2023-05-07 00:14:40] ERROR root fetch - processPackages [dolly-v2]: Unable to get metadata: No such project 'dolly-v2'
+[2023-05-07 00:14:40] INFO root fetch - main [MainThread]: End processing [dolly-v2] error
+[2023-05-07 00:14:40] INFO root fetch - processPackages [wgd]: Downloading https://files.pythonhosted.org/packages/6f/3a/f226eacf4c672715f877e6fea45cd851e3c8c842f3d9c141e73caf5fa0fd/wgd-2.0.0.tar.gz
+[2023-05-07 00:14:40] INFO root fetch - processPackages [FeatureInsight]: Downloading https://files.pythonhosted.org/packages/b6/0d/0c919a8b47b4ec16b3f12bf937b50ce029d397df52e664d409ec6ba8f36f/FeatureInsight-0.0.1.tar.gz
+[2023-05-07 00:14:40] INFO root fetch - processPackages [slashml]: Downloading https://files.pythonhosted.org/packages/06/2b/5647d858d5a4f684243792c96047c48554c52b72762f3d90853ec576cd7c/slashml-0.1.tar.gz
+[2023-05-07 00:14:40] INFO root fetch - processPackages [cellpy]: Downloading https://files.pythonhosted.org/packages/81/71/71d27871caabc68e8180daa1b0a20a4e8b31dc1780de038108db72563e0a/cellpy-1.0.0a4.tar.gz
+[2023-05-07 00:14:40] INFO root fetch - processPackages [wgd]: Downloading https://files.pythonhosted.org/packages/0c/93/df11286b52f7f5429d437268f6fcbd2c1f37a09deaf176c1ffcc3c5be820/wgd-2.0.1.tar.gz
+[2023-05-07 00:14:40] INFO root fetch - processPackages [FeatureInsight]: Downloading https://files.pythonhosted.org/packages/cb/35/5cae5269fb5f636be5c542a92fb8f2f5cae24614f10bcc3c466ffe8d4fce/FeatureInsight-0.0.2.tar.gz
+[2023-05-07 00:14:40] INFO root fetch - processPackages [slashml]: Downloading https://files.pythonhosted.org/packages/a6/c4/9bcb718c9fc83229a90ba8f4d7a7faaf7006dfd07bfdb062c64550a1ace2/slashml-0.1.1.tar.gz
+[2023-05-07 00:14:40] INFO root fetch - processPackages [cellpy]: executing diffoscope
+[2023-05-07 00:14:40] INFO root fetch - processPackages [cellpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellpy-1.0.0a3.tar.gz tmp/cellpy-1.0.0a4.tar.gz --markdown 20230507/c/cellpy/1.0.0a3-1.0.0a4/diff.md --exclude *.pyd
+[2023-05-07 00:14:40] INFO root fetch - processPackages [wgd]: executing diffoscope
+[2023-05-07 00:14:40] INFO root fetch - processPackages [wgd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wgd-2.0.0.tar.gz tmp/wgd-2.0.1.tar.gz --markdown 20230507/w/wgd/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-07 00:14:41] INFO root fetch - processPackages [slashml]: executing diffoscope
+[2023-05-07 00:14:41] INFO root fetch - processPackages [slashml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slashml-0.1.tar.gz tmp/slashml-0.1.1.tar.gz --markdown 20230507/s/slashml/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 00:14:41] INFO root fetch - processPackages [FeatureInsight]: executing diffoscope
+[2023-05-07 00:14:41] INFO root fetch - processPackages [FeatureInsight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FeatureInsight-0.0.1.tar.gz tmp/FeatureInsight-0.0.2.tar.gz --markdown 20230507/F/FeatureInsight/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 00:14:42] INFO root fetch - main [MainThread]: End processing [slashml]: success
+[2023-05-07 00:14:42] INFO root fetch - main [MainThread]: End processing [FeatureInsight]: success
+[2023-05-07 00:14:42] INFO root fetch - main [MainThread]: End processing [wgd]: success
+[2023-05-07 00:14:43] INFO root fetch - main [MainThread]: End processing [cellpy]: success
+[2023-05-07 00:14:43] INFO root fetch - main [MainThread]: Store serial: [18002657]
