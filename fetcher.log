@@ -633,3 +633,45 @@
 [2023-05-07 01:25:02] INFO root fetch - main [MainThread]: End processing [pyghostdb]: success
 [2023-05-07 01:25:02] INFO root fetch - main [MainThread]: End processing [jsonformer]: success
 [2023-05-07 01:25:02] INFO root fetch - main [MainThread]: Store serial: [18002949]
+[2023-05-07 01:30:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002949]
+[2023-05-07 01:30:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-recipes
+[2023-05-07 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-eric-kotlin1.8
+[2023-05-07 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySpecies
+[2023-05-07 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: balpy-v2
+[2023-05-07 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: breds
+[2023-05-07 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbsite
+[2023-05-07 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: graphsignal
+[2023-05-07 01:30:11] INFO root fetch - processPackages [certora-cli-alpha-eric-kotlin1.8]: New version: [20230506.23.26.110297] Old Version: [20230506.22.5.999863]
+[2023-05-07 01:30:11] INFO root fetch - processPackages [PySpecies]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 01:30:11] INFO root fetch - processPackages [balpy-v2]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 01:30:11] INFO root fetch - processPackages [nbsite]: New version: [0.8.0rc9] Old Version: [0.8.0rc8]
+[2023-05-07 01:30:11] INFO root fetch - processPackages [graphsignal]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-07 01:30:11] INFO root fetch - processPackages [lbt-recipes]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-07 01:30:11] WARNING root fetch - processPackages [breds]: Skipping, unable to determine old version
+[2023-05-07 01:30:11] INFO root fetch - main [MainThread]: End processing [breds] error
+[2023-05-07 01:30:11] INFO root fetch - processPackages [PySpecies]: Downloading https://files.pythonhosted.org/packages/ce/bb/ba751453240416745992d6f1acfcb0cb28c3f846a8377f246be6aed3f6c9/PySpecies-0.1.1.tar.gz
+[2023-05-07 01:30:11] INFO root fetch - processPackages [certora-cli-alpha-eric-kotlin1.8]: Downloading https://files.pythonhosted.org/packages/ec/5b/e86f524ee45e38947410b06f5110dfc5c935168a2525f315656660fff9d5/certora-cli-alpha-eric-kotlin1.8-20230506.22.5.999863.tar.gz
+[2023-05-07 01:30:11] INFO root fetch - processPackages [nbsite]: executing diffoscope
+[2023-05-07 01:30:11] INFO root fetch - processPackages [nbsite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbsite-0.8.0rc8.tar.gz tmp/nbsite-0.8.0rc9.tar.gz --markdown 20230507/n/nbsite/0.8.0rc8-0.8.0rc9/diff.md --exclude *.pyd
+[2023-05-07 01:30:11] INFO root fetch - processPackages [graphsignal]: executing diffoscope
+[2023-05-07 01:30:11] INFO root fetch - processPackages [graphsignal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphsignal-0.9.4.tar.gz tmp/graphsignal-0.9.5.tar.gz --markdown 20230507/g/graphsignal/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-07 01:30:11] WARNING root fetch - processPackages [certora-cli-alpha-eric-kotlin1.8]: Skipping package: exceeds size limit 39204178>=10485760
+[2023-05-07 01:30:11] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eric-kotlin1.8] error
+[2023-05-07 01:30:11] INFO root fetch - processPackages [balpy-v2]: Downloading https://files.pythonhosted.org/packages/43/13/ffc95de1a1e533efbbd3cea7bf3a46a6cd527d382e62f3bc7924373ff9c4/balpy_v2-0.1.0.tar.gz
+[2023-05-07 01:30:11] INFO root fetch - processPackages [lbt-recipes]: Downloading https://files.pythonhosted.org/packages/69/f6/b4d9167d8390905370e4cb40cc23cf10ac640051293bc3158615d5b2a0cb/lbt-recipes-0.9.0.tar.gz
+[2023-05-07 01:30:11] INFO root fetch - processPackages [balpy-v2]: Downloading https://files.pythonhosted.org/packages/ed/8a/0f98eca8580a6ebae6fc2543822d145ce25e84f4516e3d0603c423235300/balpy_v2-0.1.1.tar.gz
+[2023-05-07 01:30:11] INFO root fetch - processPackages [balpy-v2]: executing diffoscope
+[2023-05-07 01:30:11] INFO root fetch - processPackages [balpy-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balpy_v2-0.1.0.tar.gz tmp/balpy_v2-0.1.1.tar.gz --markdown 20230507/b/balpy-v2/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 01:30:11] INFO root fetch - processPackages [PySpecies]: Downloading https://files.pythonhosted.org/packages/50/0e/11fd99d6cd1f85a7dc993c5d3e533c5d2ff7bce9636f32cdfd7fcc74f533/PySpecies-0.1.2.tar.gz
+[2023-05-07 01:30:11] INFO root fetch - processPackages [PySpecies]: executing diffoscope
+[2023-05-07 01:30:11] INFO root fetch - processPackages [PySpecies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySpecies-0.1.1.tar.gz tmp/PySpecies-0.1.2.tar.gz --markdown 20230507/P/PySpecies/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 01:30:11] INFO root fetch - processPackages [lbt-recipes]: Downloading https://files.pythonhosted.org/packages/35/60/e6ba2724f3fa325e0df5cfdb976d9de29cdbdc783aa4b490795b16c1228f/lbt-recipes-0.9.1.tar.gz
+[2023-05-07 01:30:12] INFO root fetch - processPackages [lbt-recipes]: executing diffoscope
+[2023-05-07 01:30:12] INFO root fetch - processPackages [lbt-recipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-recipes-0.9.0.tar.gz tmp/lbt-recipes-0.9.1.tar.gz --markdown 20230507/l/lbt-recipes/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-07 01:30:12] INFO root fetch - main [MainThread]: End processing [nbsite]: success
+[2023-05-07 01:30:12] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
+[2023-05-07 01:30:12] INFO root fetch - main [MainThread]: End processing [balpy-v2]: success
+[2023-05-07 01:30:12] INFO root fetch - main [MainThread]: End processing [PySpecies]: success
+[2023-05-07 01:30:13] INFO root fetch - main [MainThread]: End processing [lbt-recipes]: success
+[2023-05-07 01:30:13] INFO root fetch - main [MainThread]: Store serial: [18002972]
