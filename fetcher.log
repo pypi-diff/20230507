@@ -743,3 +743,12 @@
 [2023-05-07 01:45:43] INFO root fetch - processPackages [variant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/variant-0.0.8.tar.gz tmp/variant-0.0.9.tar.gz --markdown 20230507/v/variant/0.0.8-0.0.9/diff.md --exclude *.pyd
 [2023-05-07 01:45:44] INFO root fetch - main [MainThread]: End processing [variant]: success
 [2023-05-07 01:45:44] INFO root fetch - main [MainThread]: Store serial: [18003010]
+[2023-05-07 01:50:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003010]
+[2023-05-07 01:50:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-07 01:50:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: greyhorse-core
+[2023-05-07 01:50:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: greyhorse-sqla
+[2023-05-07 01:50:53] WARNING root fetch - processPackages [greyhorse-sqla]: Skipping, unable to determine old version
+[2023-05-07 01:50:53] INFO root fetch - main [MainThread]: End processing [greyhorse-sqla] error
+[2023-05-07 01:50:53] WARNING root fetch - processPackages [greyhorse-core]: Skipping, unable to determine old version
+[2023-05-07 01:50:53] INFO root fetch - main [MainThread]: End processing [greyhorse-core] error
+[2023-05-07 01:50:53] INFO root fetch - main [MainThread]: Store serial: [18003020]
