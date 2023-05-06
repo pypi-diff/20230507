@@ -576,3 +576,31 @@
 [2023-05-07 01:14:42] INFO root fetch - main [MainThread]: End processing [pyl4c]: success
 [2023-05-07 01:14:42] INFO root fetch - main [MainThread]: End processing [latex2mathml]: success
 [2023-05-07 01:14:42] INFO root fetch - main [MainThread]: Store serial: [18002917]
+[2023-05-07 01:19:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002917]
+[2023-05-07 01:19:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 01:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: queenbee-local
+[2023-05-07 01:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: awc
+[2023-05-07 01:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nkt-tools
+[2023-05-07 01:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyhOn
+[2023-05-07 01:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ecg-quality
+[2023-05-07 01:19:50] WARNING root fetch - processPackages [nkt-tools]: Skipping, unable to determine old version
+[2023-05-07 01:19:50] INFO root fetch - processPackages [awc]: New version: [1.3.0] Old Version: [1.2.4]
+[2023-05-07 01:19:50] INFO root fetch - main [MainThread]: End processing [nkt-tools] error
+[2023-05-07 01:19:50] INFO root fetch - processPackages [pyhOn]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-07 01:19:50] WARNING root fetch - processPackages [ecg-quality]: Skipping, unable to determine old version
+[2023-05-07 01:19:50] INFO root fetch - main [MainThread]: End processing [ecg-quality] error
+[2023-05-07 01:19:50] INFO root fetch - processPackages [queenbee-local]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-07 01:19:50] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-05-07 01:19:50] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.9.0.tar.gz tmp/pyhOn-0.9.1.tar.gz --markdown 20230507/p/pyhOn/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-07 01:19:50] INFO root fetch - processPackages [awc]: Downloading https://files.pythonhosted.org/packages/fd/bd/516fec4a5b69120c4a13eccba5b2cd99a6a387b53142f885ec663bcdd454/awc-1.2.4-py2.py3-none-any.whl
+[2023-05-07 01:19:50] INFO root fetch - processPackages [queenbee-local]: Downloading https://files.pythonhosted.org/packages/4a/0a/308905a09bcbb0199377191d0cbca40b46e4a90a3e9601f58c704e46c87b/queenbee-local-0.5.2.tar.gz
+[2023-05-07 01:19:51] INFO root fetch - processPackages [awc]: Downloading https://files.pythonhosted.org/packages/54/f7/23b7019570d7ee09e903a7e1f55262e338c3f3c20b7eaaf08d97795bce30/awc-1.3.0-py2.py3-none-any.whl
+[2023-05-07 01:19:51] INFO root fetch - processPackages [awc]: executing diffoscope
+[2023-05-07 01:19:51] INFO root fetch - processPackages [awc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awc-1.2.4-py2.py3-none-any.whl.zip tmp/awc-1.3.0-py2.py3-none-any.whl.zip --markdown 20230507/a/awc/1.2.4-1.3.0/diff.md --exclude *.pyd
+[2023-05-07 01:19:51] INFO root fetch - processPackages [queenbee-local]: Downloading https://files.pythonhosted.org/packages/18/53/2d07e7754b4c6f8f95dcfd3e3fd82cccae3b213463e70d457cdeb3309d43/queenbee-local-0.5.3.tar.gz
+[2023-05-07 01:19:51] INFO root fetch - processPackages [queenbee-local]: executing diffoscope
+[2023-05-07 01:19:51] INFO root fetch - processPackages [queenbee-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queenbee-local-0.5.2.tar.gz tmp/queenbee-local-0.5.3.tar.gz --markdown 20230507/q/queenbee-local/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-07 01:19:51] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-05-07 01:19:52] INFO root fetch - main [MainThread]: End processing [queenbee-local]: success
+[2023-05-07 01:19:52] INFO root fetch - main [MainThread]: End processing [awc]: success
+[2023-05-07 01:19:52] INFO root fetch - main [MainThread]: Store serial: [18002933]
