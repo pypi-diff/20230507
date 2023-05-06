@@ -604,3 +604,32 @@
 [2023-05-07 01:19:52] INFO root fetch - main [MainThread]: End processing [queenbee-local]: success
 [2023-05-07 01:19:52] INFO root fetch - main [MainThread]: End processing [awc]: success
 [2023-05-07 01:19:52] INFO root fetch - main [MainThread]: Store serial: [18002933]
+[2023-05-07 01:24:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002933]
+[2023-05-07 01:25:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 01:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lindze
+[2023-05-07 01:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adata
+[2023-05-07 01:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jsonformer
+[2023-05-07 01:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ronbun
+[2023-05-07 01:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyghostdb
+[2023-05-07 01:25:00] WARNING root fetch - processPackages [lindze]: Skipping, unable to determine old version
+[2023-05-07 01:25:00] INFO root fetch - main [MainThread]: End processing [lindze] error
+[2023-05-07 01:25:00] INFO root fetch - processPackages [pyghostdb]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-05-07 01:25:00] INFO root fetch - processPackages [ronbun]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-05-07 01:25:00] INFO root fetch - processPackages [jsonformer]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-07 01:25:00] INFO root fetch - processPackages [adata]: New version: [0.0.9b0] Old Version: [0.0.8b0]
+[2023-05-07 01:25:00] INFO root fetch - processPackages [adata]: executing diffoscope
+[2023-05-07 01:25:00] INFO root fetch - processPackages [adata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adata-0.0.8b0.tar.gz tmp/adata-0.0.9b0.tar.gz --markdown 20230507/a/adata/0.0.8b0-0.0.9b0/diff.md --exclude *.pyd
+[2023-05-07 01:25:00] INFO root fetch - processPackages [pyghostdb]: Downloading https://files.pythonhosted.org/packages/4c/1e/d13738badd775ebd026425253be21eea640b492020073830f425ecdf17fb/pyghostdb-0.0.0.tar.gz
+[2023-05-07 01:25:00] INFO root fetch - processPackages [ronbun]: Downloading https://files.pythonhosted.org/packages/07/38/4e7580c2b997c213776cddd19bfcca84b7feed3b07fcba0ac202e58c6564/ronbun-0.7.4.tar.gz
+[2023-05-07 01:25:00] INFO root fetch - processPackages [ronbun]: executing diffoscope
+[2023-05-07 01:25:00] INFO root fetch - processPackages [ronbun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ronbun-0.7.3.tar.gz tmp/ronbun-0.7.4.tar.gz --markdown 20230507/r/ronbun/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-05-07 01:25:01] INFO root fetch - processPackages [jsonformer]: executing diffoscope
+[2023-05-07 01:25:01] INFO root fetch - processPackages [jsonformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonformer-0.8.0.tar.gz tmp/jsonformer-0.9.0.tar.gz --markdown 20230507/j/jsonformer/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-07 01:25:01] INFO root fetch - processPackages [pyghostdb]: Downloading https://files.pythonhosted.org/packages/a7/f0/411114210aeb916d5a4927d7b192518e5c0f45d14d117a6d06c64edddf75/pyghostdb-0.0.1.tar.gz
+[2023-05-07 01:25:01] INFO root fetch - processPackages [pyghostdb]: executing diffoscope
+[2023-05-07 01:25:01] INFO root fetch - processPackages [pyghostdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyghostdb-0.0.0.tar.gz tmp/pyghostdb-0.0.1.tar.gz --markdown 20230507/p/pyghostdb/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-07 01:25:01] INFO root fetch - main [MainThread]: End processing [adata]: success
+[2023-05-07 01:25:01] INFO root fetch - main [MainThread]: End processing [ronbun]: success
+[2023-05-07 01:25:02] INFO root fetch - main [MainThread]: End processing [pyghostdb]: success
+[2023-05-07 01:25:02] INFO root fetch - main [MainThread]: End processing [jsonformer]: success
+[2023-05-07 01:25:02] INFO root fetch - main [MainThread]: Store serial: [18002949]
