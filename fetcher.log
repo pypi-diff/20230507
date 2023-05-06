@@ -752,3 +752,11 @@
 [2023-05-07 01:50:53] WARNING root fetch - processPackages [greyhorse-core]: Skipping, unable to determine old version
 [2023-05-07 01:50:53] INFO root fetch - main [MainThread]: End processing [greyhorse-core] error
 [2023-05-07 01:50:53] INFO root fetch - main [MainThread]: Store serial: [18003020]
+[2023-05-07 01:55:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003020]
+[2023-05-07 01:56:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-07 01:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpservice
+[2023-05-07 01:56:01] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-05-07 01:56:01] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-05-07 01:56:01] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230507/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-05-07 01:56:03] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-05-07 01:56:03] INFO root fetch - main [MainThread]: Store serial: [18003023]
