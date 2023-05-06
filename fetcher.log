@@ -702,3 +702,36 @@
 [2023-05-07 01:35:23] INFO root fetch - main [MainThread]: End processing [awc-cli]: success
 [2023-05-07 01:35:24] INFO root fetch - main [MainThread]: End processing [faker-file]: success
 [2023-05-07 01:35:24] INFO root fetch - main [MainThread]: Store serial: [18002983]
+[2023-05-07 01:40:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002983]
+[2023-05-07 01:40:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 01:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dreamai-dl
+[2023-05-07 01:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langchain-shell
+[2023-05-07 01:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pano-apache-airflow
+[2023-05-07 01:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: meshwell
+[2023-05-07 01:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tdh-tcd
+[2023-05-07 01:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyl4c
+[2023-05-07 01:40:33] INFO root fetch - processPackages [tdh-tcd]: New version: [2.5.2] Old Version: [2.5.1]
+[2023-05-07 01:40:33] WARNING root fetch - processPackages [meshwell]: Skipping, unable to determine old version
+[2023-05-07 01:40:33] INFO root fetch - processPackages [pyl4c]: New version: [0.16.1] Old Version: [0.16.0]
+[2023-05-07 01:40:33] INFO root fetch - main [MainThread]: End processing [meshwell] error
+[2023-05-07 01:40:33] INFO root fetch - processPackages [dreamai-dl]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 01:40:33] INFO root fetch - processPackages [langchain-shell]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 01:40:33] WARNING root fetch - processPackages [pano-apache-airflow]: Skipping, unable to determine old version
+[2023-05-07 01:40:33] INFO root fetch - main [MainThread]: End processing [pano-apache-airflow] error
+[2023-05-07 01:40:33] INFO root fetch - processPackages [dreamai-dl]: executing diffoscope
+[2023-05-07 01:40:33] INFO root fetch - processPackages [dreamai-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai_dl-0.0.8.tar.gz tmp/dreamai_dl-0.0.9.tar.gz --markdown 20230507/d/dreamai-dl/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 01:40:33] INFO root fetch - processPackages [pyl4c]: Downloading https://files.pythonhosted.org/packages/5f/1d/939a43b9d6594fa99e0d9e4575039b59b4fb38d88fee71399ed545c953e2/pyl4c-0.16.1.tar.gz
+[2023-05-07 01:40:33] INFO root fetch - processPackages [langchain-shell]: Downloading https://files.pythonhosted.org/packages/4e/df/85f74cd3f4d4d8dc6de53f168ed082c92ffb3568cb45428aebb519bb6007/langchain_shell-0.1.0.tar.gz
+[2023-05-07 01:40:33] INFO root fetch - processPackages [tdh-tcd]: Downloading https://files.pythonhosted.org/packages/d7/fc/35504fb020c71e40604b5050a540f1c626a66f24f0c47e0e849b820cb42f/tdh-tcd-2.5.2.tar.gz
+[2023-05-07 01:40:33] INFO root fetch - processPackages [pyl4c]: executing diffoscope
+[2023-05-07 01:40:33] INFO root fetch - processPackages [pyl4c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyl4c-0.16.0.tar.gz tmp/pyl4c-0.16.1.tar.gz --markdown 20230507/p/pyl4c/0.16.0-0.16.1/diff.md --exclude *.pyd
+[2023-05-07 01:40:33] INFO root fetch - processPackages [tdh-tcd]: executing diffoscope
+[2023-05-07 01:40:33] INFO root fetch - processPackages [tdh-tcd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdh-tcd-2.5.1.tar.gz tmp/tdh-tcd-2.5.2.tar.gz --markdown 20230507/t/tdh-tcd/2.5.1-2.5.2/diff.md --exclude *.pyd
+[2023-05-07 01:40:33] INFO root fetch - processPackages [langchain-shell]: Downloading https://files.pythonhosted.org/packages/a8/9a/f15c289dc9f680b1a832f72e2b96495b760828819eddd8cb3d525d951771/langchain_shell-0.1.1.tar.gz
+[2023-05-07 01:40:33] INFO root fetch - processPackages [langchain-shell]: executing diffoscope
+[2023-05-07 01:40:33] INFO root fetch - processPackages [langchain-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_shell-0.1.0.tar.gz tmp/langchain_shell-0.1.1.tar.gz --markdown 20230507/l/langchain-shell/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 01:40:34] INFO root fetch - main [MainThread]: End processing [dreamai-dl]: success
+[2023-05-07 01:40:34] INFO root fetch - main [MainThread]: End processing [tdh-tcd]: success
+[2023-05-07 01:40:34] INFO root fetch - main [MainThread]: End processing [pyl4c]: success
+[2023-05-07 01:40:34] INFO root fetch - main [MainThread]: End processing [langchain-shell]: success
+[2023-05-07 01:40:34] INFO root fetch - main [MainThread]: Store serial: [18003007]
