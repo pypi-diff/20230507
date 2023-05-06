@@ -174,3 +174,49 @@
 [2023-05-07 00:19:54] INFO root fetch - main [MainThread]: End processing [spotcrates]: success
 [2023-05-07 00:19:55] INFO root fetch - main [MainThread]: End processing [forust]: success
 [2023-05-07 00:19:55] INFO root fetch - main [MainThread]: Store serial: [18002684]
+[2023-05-07 00:24:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002684]
+[2023-05-07 00:25:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 00:25:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cellpy
+[2023-05-07 00:25:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-audio-transformer-plugin-speechbrain-langdetect
+[2023-05-07 00:25:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mynumericallib
+[2023-05-07 00:25:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: absl-extra
+[2023-05-07 00:25:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: FeatureInsight
+[2023-05-07 00:25:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cookiecutter-autodocs
+[2023-05-07 00:25:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: variant
+[2023-05-07 00:25:03] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: New version: [0.0.0a4] Old Version: [0.0.0a3]
+[2023-05-07 00:25:03] INFO root fetch - processPackages [cookiecutter-autodocs]: New version: [1.0.0] Old Version: [0.1.2]
+[2023-05-07 00:25:03] WARNING root fetch - processPackages [mynumericallib]: Skipping, unable to determine old version
+[2023-05-07 00:25:03] INFO root fetch - main [MainThread]: End processing [mynumericallib] error
+[2023-05-07 00:25:03] INFO root fetch - processPackages [FeatureInsight]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-07 00:25:03] INFO root fetch - processPackages [absl-extra]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 00:25:03] INFO root fetch - processPackages [cellpy]: New version: [1.0.0a5] Old Version: [1.0.0a4]
+[2023-05-07 00:25:04] INFO root fetch - processPackages [variant]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 00:25:04] INFO root fetch - processPackages [cookiecutter-autodocs]: Downloading https://files.pythonhosted.org/packages/c8/0c/0d7f49d62449a24b850cf4cd617adc79bd6bb043f891ecf2e2fc7461f0f3/cookiecutter_autodocs-0.1.2.tar.gz
+[2023-05-07 00:25:04] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: Downloading https://files.pythonhosted.org/packages/08/cc/c163a41401ca9b5fdd3ced0110ff3f7af5495af80eb83a3058082c6964c6/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a3.tar.gz
+[2023-05-07 00:25:04] INFO root fetch - processPackages [absl-extra]: Downloading https://files.pythonhosted.org/packages/c9/a4/4778a44bdf68cefda1e9642b8a583a0ecb1cde08c182d4a02347b294e253/absl_extra-0.0.7.tar.gz
+[2023-05-07 00:25:04] INFO root fetch - processPackages [cellpy]: Downloading https://files.pythonhosted.org/packages/3c/f9/1eeb9a5843d062d4f542f04989c7480e6cf3586cc5874e3f5275b13b4df4/cellpy-1.0.0a5.tar.gz
+[2023-05-07 00:25:04] INFO root fetch - processPackages [FeatureInsight]: Downloading https://files.pythonhosted.org/packages/38/c7/63a1e36c6c0782bb5a58a2b866a2341df0af7de865f7b5fac203161ed4d8/FeatureInsight-0.0.4.tar.gz
+[2023-05-07 00:25:04] INFO root fetch - processPackages [FeatureInsight]: executing diffoscope
+[2023-05-07 00:25:04] INFO root fetch - processPackages [FeatureInsight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FeatureInsight-0.0.3.tar.gz tmp/FeatureInsight-0.0.4.tar.gz --markdown 20230507/F/FeatureInsight/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-07 00:25:04] INFO root fetch - processPackages [variant]: Downloading https://files.pythonhosted.org/packages/0c/50/c5d1afa4fb0d5e41250f78fb4d0b3a0ebf97c5c51791c5366328fdf0fec8/variant-0.0.8.tar.gz
+[2023-05-07 00:25:04] INFO root fetch - processPackages [cookiecutter-autodocs]: Downloading https://files.pythonhosted.org/packages/f0/84/2c0668efd73a601eb199e4e9bb9b8febca7b95da1c91786d2113eefc0e96/cookiecutter_autodocs-1.0.0.tar.gz
+[2023-05-07 00:25:04] INFO root fetch - processPackages [absl-extra]: Downloading https://files.pythonhosted.org/packages/29/c2/2963a9d6af04f01e35537596dae79293de441ce549712ff30add2367a97e/absl_extra-0.0.8.tar.gz
+[2023-05-07 00:25:04] INFO root fetch - processPackages [cookiecutter-autodocs]: executing diffoscope
+[2023-05-07 00:25:04] INFO root fetch - processPackages [cookiecutter-autodocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cookiecutter_autodocs-0.1.2.tar.gz tmp/cookiecutter_autodocs-1.0.0.tar.gz --markdown 20230507/c/cookiecutter-autodocs/0.1.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 00:25:04] INFO root fetch - processPackages [absl-extra]: executing diffoscope
+[2023-05-07 00:25:04] INFO root fetch - processPackages [absl-extra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/absl_extra-0.0.7.tar.gz tmp/absl_extra-0.0.8.tar.gz --markdown 20230507/a/absl-extra/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 00:25:04] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: Downloading https://files.pythonhosted.org/packages/0f/da/7000f1c32c6f151cd5ef92a3b34fce467abb845a705c072f6b894606882e/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a4.tar.gz
+[2023-05-07 00:25:04] INFO root fetch - processPackages [cellpy]: executing diffoscope
+[2023-05-07 00:25:04] INFO root fetch - processPackages [cellpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellpy-1.0.0a4.tar.gz tmp/cellpy-1.0.0a5.tar.gz --markdown 20230507/c/cellpy/1.0.0a4-1.0.0a5/diff.md --exclude *.pyd
+[2023-05-07 00:25:04] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: executing diffoscope
+[2023-05-07 00:25:04] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a3.tar.gz tmp/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a4.tar.gz --markdown 20230507/o/ovos-audio-transformer-plugin-speechbrain-langdetect/0.0.0a3-0.0.0a4/diff.md --exclude *.pyd
+[2023-05-07 00:25:04] INFO root fetch - processPackages [variant]: Downloading https://files.pythonhosted.org/packages/48/0e/e63d42f98ce2e6a9d7828c6fe1a77a925185681f51aa1eca4d3542774eea/variant-0.0.9.tar.gz
+[2023-05-07 00:25:04] INFO root fetch - processPackages [variant]: executing diffoscope
+[2023-05-07 00:25:04] INFO root fetch - processPackages [variant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/variant-0.0.8.tar.gz tmp/variant-0.0.9.tar.gz --markdown 20230507/v/variant/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 00:25:05] INFO root fetch - main [MainThread]: End processing [FeatureInsight]: success
+[2023-05-07 00:25:05] INFO root fetch - main [MainThread]: End processing [cookiecutter-autodocs]: success
+[2023-05-07 00:25:05] INFO root fetch - main [MainThread]: End processing [ovos-audio-transformer-plugin-speechbrain-langdetect]: success
+[2023-05-07 00:25:05] INFO root fetch - main [MainThread]: End processing [variant]: success
+[2023-05-07 00:25:07] INFO root fetch - main [MainThread]: End processing [cellpy]: success
+[2023-05-07 00:25:34] INFO root fetch - main [MainThread]: End processing [absl-extra]: success
+[2023-05-07 00:25:34] INFO root fetch - main [MainThread]: Store serial: [18002714]
