@@ -355,3 +355,50 @@
 [2023-05-07 00:46:14] INFO root fetch - main [MainThread]: End processing [transformgpt]: success
 [2023-05-07 00:46:15] INFO root fetch - main [MainThread]: End processing [zero-play]: success
 [2023-05-07 00:46:15] INFO root fetch - main [MainThread]: Store serial: [18002810]
+[2023-05-07 00:51:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002810]
+[2023-05-07 00:51:23] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 00:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotON_sdk
+[2023-05-07 00:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fudgeo
+[2023-05-07 00:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-05-07 00:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-05-07 00:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbsite
+[2023-05-07 00:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyhOn
+[2023-05-07 00:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pythonfinder
+[2023-05-07 00:51:23] INFO root fetch - processPackages [nbsite]: New version: [0.8.0rc9] Old Version: [0.8.0rc8]
+[2023-05-07 00:51:23] INFO root fetch - processPackages [fudgeo]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-05-07 00:51:23] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.1.3] Old Version: [0.0.1.2]
+[2023-05-07 00:51:23] INFO root fetch - processPackages [pyhOn]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-07 00:51:23] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1683413307] Old Version: [0.1.1683413298]
+[2023-05-07 00:51:23] INFO root fetch - processPackages [pythonfinder]: New version: [2.0.0] Old Version: [1.3.2]
+[2023-05-07 00:51:23] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1683413307] Old Version: [0.1.1683413298]
+[2023-05-07 00:51:23] INFO root fetch - processPackages [fudgeo]: Downloading https://files.pythonhosted.org/packages/69/37/d0cefc371f3ef8d441330bf4a742a33a1e32adc63e0a7f9863be7314a2bd/fudgeo-0.3.9-py3-none-any.whl
+[2023-05-07 00:51:23] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-05-07 00:51:23] INFO root fetch - processPackages [pythonfinder]: Downloading https://files.pythonhosted.org/packages/af/6f/b6338a39667ffb26cfd4ada45577d36c96bd791715d32564d053b40ed49d/pythonfinder-1.3.2.tar.gz
+[2023-05-07 00:51:23] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.9.0.tar.gz tmp/pyhOn-0.9.1.tar.gz --markdown 20230507/p/pyhOn/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-07 00:51:23] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/c4/76/e932259324382c71f4d9de88845a079af3781b8ddb5c8b9b5c6bb347f36f/eia-odin-pkg-rioatmadja2018-0.1.1683413298.tar.gz
+[2023-05-07 00:51:23] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/c4/76/e932259324382c71f4d9de88845a079af3781b8ddb5c8b9b5c6bb347f36f/eia-odin-pkg-rioatmadja2018-0.1.1683413298.tar.gz
+[2023-05-07 00:51:23] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/60/8c/4da786b246113fb101126254c3a060b748177799af2f1758a33eba8ac757/spotON_sdk-0.0.1.3.tar.gz
+[2023-05-07 00:51:23] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-07 00:51:23] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.1.2.tar.gz tmp/spotON_sdk-0.0.1.3.tar.gz --markdown 20230507/s/spotON_sdk/0.0.1.2-0.0.1.3/diff.md --exclude *.pyd
+[2023-05-07 00:51:23] INFO root fetch - processPackages [nbsite]: executing diffoscope
+[2023-05-07 00:51:23] INFO root fetch - processPackages [nbsite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbsite-0.8.0rc8.tar.gz tmp/nbsite-0.8.0rc9.tar.gz --markdown 20230507/n/nbsite/0.8.0rc8-0.8.0rc9/diff.md --exclude *.pyd
+[2023-05-07 00:51:24] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/ef/de/f1558f4d0102a4cebfbe614ddb1d8dfa052e949de5e4d887b10cb10d07f7/eia_odin_pkg_rioatmadja2018-0.1.1683413307-py3-none-any.whl
+[2023-05-07 00:51:24] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/ef/de/f1558f4d0102a4cebfbe614ddb1d8dfa052e949de5e4d887b10cb10d07f7/eia_odin_pkg_rioatmadja2018-0.1.1683413307-py3-none-any.whl
+[2023-05-07 00:51:24] INFO root fetch - processPackages [pythonfinder]: Downloading https://files.pythonhosted.org/packages/b9/61/67ae39f9cce65f5bdc206c1dddfa228f2982ce8db88bc999ecdfdfb16ee7/pythonfinder-2.0.0.tar.gz
+[2023-05-07 00:51:24] INFO root fetch - processPackages [fudgeo]: Downloading https://files.pythonhosted.org/packages/c5/7a/928c1610717377c36bc23d808538ea51c7506ddbf76c6e6984c236c8199a/fudgeo-0.4.0-py3-none-any.whl
+[2023-05-07 00:51:24] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-07 00:51:24] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1683413298.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1683413307-py3-none-any.whl.zip --markdown 20230507/e/eia-odin-pkg-rioatmadja2018/0.1.1683413298-0.1.1683413307/diff.md --exclude *.pyd
+[2023-05-07 00:51:24] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-07 00:51:24] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1683413298.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1683413307-py3-none-any.whl.zip --markdown 20230507/e/eia-odin-pkg-rioatmadja2018/0.1.1683413298-0.1.1683413307/diff.md --exclude *.pyd
+[2023-05-07 00:51:24] INFO root fetch - processPackages [fudgeo]: executing diffoscope
+[2023-05-07 00:51:24] INFO root fetch - processPackages [fudgeo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudgeo-0.3.9-py3-none-any.whl.zip tmp/fudgeo-0.4.0-py3-none-any.whl.zip --markdown 20230507/f/fudgeo/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-05-07 00:51:24] INFO root fetch - processPackages [pythonfinder]: executing diffoscope
+[2023-05-07 00:51:24] INFO root fetch - processPackages [pythonfinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonfinder-1.3.2.tar.gz tmp/pythonfinder-2.0.0.tar.gz --markdown 20230507/p/pythonfinder/1.3.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-07 00:51:25] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-07 00:51:25] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-05-07 00:51:25] INFO root fetch - main [MainThread]: End processing [nbsite]: success
+[2023-05-07 00:51:25] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-05-07 00:51:25] INFO root fetch - main [MainThread]: End processing [fudgeo]: success
+[2023-05-07 00:51:25] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-05-07 00:51:31] INFO root fetch - main [MainThread]: End processing [pythonfinder]: success
+[2023-05-07 00:51:31] INFO root fetch - main [MainThread]: Store serial: [18002830]
