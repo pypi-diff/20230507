@@ -675,3 +675,30 @@
 [2023-05-07 01:30:12] INFO root fetch - main [MainThread]: End processing [PySpecies]: success
 [2023-05-07 01:30:13] INFO root fetch - main [MainThread]: End processing [lbt-recipes]: success
 [2023-05-07 01:30:13] INFO root fetch - main [MainThread]: Store serial: [18002972]
+[2023-05-07 01:35:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002972]
+[2023-05-07 01:35:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 01:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: awc-cli
+[2023-05-07 01:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dreamai-dl
+[2023-05-07 01:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spotON_sdk
+[2023-05-07 01:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: faker-file
+[2023-05-07 01:35:21] INFO root fetch - processPackages [dreamai-dl]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 01:35:21] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.1.5] Old Version: [0.0.1.4]
+[2023-05-07 01:35:21] INFO root fetch - processPackages [awc-cli]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-07 01:35:21] INFO root fetch - processPackages [faker-file]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-07 01:35:22] INFO root fetch - processPackages [awc-cli]: Downloading https://files.pythonhosted.org/packages/2d/12/34da9358f21eaa1ac662be1e0e76dacb59428dc49c352695411d7a600013/awc_cli-1.0.3-py2.py3-none-any.whl
+[2023-05-07 01:35:22] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/f7/8f/0c7c9bdabf20f5666d83f108eefa22327d1c116614340ac746d9c38edc7d/spotON_sdk-0.0.1.5.tar.gz
+[2023-05-07 01:35:22] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-07 01:35:22] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.1.4.tar.gz tmp/spotON_sdk-0.0.1.5.tar.gz --markdown 20230507/s/spotON_sdk/0.0.1.4-0.0.1.5/diff.md --exclude *.pyd
+[2023-05-07 01:35:22] INFO root fetch - processPackages [dreamai-dl]: Downloading https://files.pythonhosted.org/packages/9e/0d/8b25b7ab887628b6204e50464c26dc087ec5d2e830ce52b1356090af2888/dreamai_dl-0.0.9.tar.gz
+[2023-05-07 01:35:22] INFO root fetch - processPackages [dreamai-dl]: executing diffoscope
+[2023-05-07 01:35:22] INFO root fetch - processPackages [dreamai-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai_dl-0.0.8.tar.gz tmp/dreamai_dl-0.0.9.tar.gz --markdown 20230507/d/dreamai-dl/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 01:35:22] INFO root fetch - processPackages [awc-cli]: Downloading https://files.pythonhosted.org/packages/ac/d6/6df294c58b08ad693ef8ee153dc323c981d3f47d8fd5bccb80022837d007/awc_cli-1.0.4-py2.py3-none-any.whl
+[2023-05-07 01:35:22] INFO root fetch - processPackages [awc-cli]: executing diffoscope
+[2023-05-07 01:35:22] INFO root fetch - processPackages [awc-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awc_cli-1.0.3-py2.py3-none-any.whl.zip tmp/awc_cli-1.0.4-py2.py3-none-any.whl.zip --markdown 20230507/a/awc-cli/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-07 01:35:22] INFO root fetch - processPackages [faker-file]: executing diffoscope
+[2023-05-07 01:35:22] INFO root fetch - processPackages [faker-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faker-file-0.9.2.tar.gz tmp/faker-file-0.9.3.tar.gz --markdown 20230507/f/faker-file/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-07 01:35:23] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-07 01:35:23] INFO root fetch - main [MainThread]: End processing [dreamai-dl]: success
+[2023-05-07 01:35:23] INFO root fetch - main [MainThread]: End processing [awc-cli]: success
+[2023-05-07 01:35:24] INFO root fetch - main [MainThread]: End processing [faker-file]: success
+[2023-05-07 01:35:24] INFO root fetch - main [MainThread]: Store serial: [18002983]
