@@ -133,3 +133,44 @@
 [2023-05-07 00:14:42] INFO root fetch - main [MainThread]: End processing [wgd]: success
 [2023-05-07 00:14:43] INFO root fetch - main [MainThread]: End processing [cellpy]: success
 [2023-05-07 00:14:43] INFO root fetch - main [MainThread]: Store serial: [18002657]
+[2023-05-07 00:19:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002657]
+[2023-05-07 00:19:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 00:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotcrates
+[2023-05-07 00:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: forust
+[2023-05-07 00:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NeuroRuler
+[2023-05-07 00:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mindspore-dev
+[2023-05-07 00:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: FeatureInsight
+[2023-05-07 00:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cursesplus
+[2023-05-07 00:19:52] INFO root fetch - processPackages [spotcrates]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-05-07 00:19:52] INFO root fetch - processPackages [FeatureInsight]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 00:19:52] INFO root fetch - processPackages [cursesplus]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-07 00:19:52] INFO root fetch - processPackages [forust]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-07 00:19:52] INFO root fetch - processPackages [NeuroRuler]: New version: [1.7] Old Version: [1.0.0]
+[2023-05-07 00:19:52] INFO root fetch - processPackages [mindspore-dev]: New version: [2.0.0rc1.dev20230507] Old Version: [2.0.0rc1.dev20230430]
+[2023-05-07 00:19:52] INFO root fetch - processPackages [NeuroRuler]: Downloading https://files.pythonhosted.org/packages/3a/61/6b65e0f3f7df67cd7749216524177c075d542ab78eeb456299b0ae1397b3/NeuroRuler-1.0.0.tar.gz
+[2023-05-07 00:19:52] INFO root fetch - processPackages [FeatureInsight]: Downloading https://files.pythonhosted.org/packages/14/f2/d2014412e82a61aee1c09062e49f2aedad792657edefd7b5ebc8207e0aae/FeatureInsight-0.0.3.tar.gz
+[2023-05-07 00:19:52] INFO root fetch - processPackages [cursesplus]: Downloading https://files.pythonhosted.org/packages/d8/6f/dc25aa62b163b747e5571d06b9aa10de5af1c735e323866c7c11963c3816/cursesplus-2.0.3.tar.gz
+[2023-05-07 00:19:52] INFO root fetch - processPackages [mindspore-dev]: Downloading https://files.pythonhosted.org/packages/36/cc/08587f28f89e41088d4bf9cd936afc3b4a743ffc2101d2cf208a256e1970/mindspore_dev-2.0.0rc1.dev20230430-cp39-none-any.whl
+[2023-05-07 00:19:52] INFO root fetch - processPackages [forust]: Downloading https://files.pythonhosted.org/packages/71/bd/2b6db1579017f560f155ed0edeaa8094903967659e2ccabf769d1a57e483/forust-0.2.3.tar.gz
+[2023-05-07 00:19:52] INFO root fetch - processPackages [spotcrates]: Downloading https://files.pythonhosted.org/packages/c9/e8/c27d1604976bd3d7400e403dd43b19e3ddabb3a45578405240a737cdb96c/spotcrates-0.6.1.tar.gz
+[2023-05-07 00:19:53] WARNING root fetch - processPackages [mindspore-dev]: Skipping package: exceeds size limit 249928384>=10485760
+[2023-05-07 00:19:53] INFO root fetch - main [MainThread]: End processing [mindspore-dev] error
+[2023-05-07 00:19:53] INFO root fetch - processPackages [FeatureInsight]: executing diffoscope
+[2023-05-07 00:19:53] INFO root fetch - processPackages [FeatureInsight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FeatureInsight-0.0.2.tar.gz tmp/FeatureInsight-0.0.3.tar.gz --markdown 20230507/F/FeatureInsight/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 00:19:53] INFO root fetch - processPackages [NeuroRuler]: executing diffoscope
+[2023-05-07 00:19:53] INFO root fetch - processPackages [NeuroRuler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NeuroRuler-1.0.0.tar.gz tmp/NeuroRuler-1.7.tar.gz --markdown 20230507/N/NeuroRuler/1.0.0-1.7/diff.md --exclude *.pyd
+[2023-05-07 00:19:53] INFO root fetch - processPackages [cursesplus]: Downloading https://files.pythonhosted.org/packages/cc/f4/dde9fad3e612a45dc1dc494b098a616b5e36f0b7699a5efe7e96984b8a90/cursesplus-2.0.4.tar.gz
+[2023-05-07 00:19:53] INFO root fetch - processPackages [spotcrates]: Downloading https://files.pythonhosted.org/packages/ec/c6/6a58eaf977bb2fb99b7003bd742f9b537fcb09afccde19105797d15abb00/spotcrates-0.6.2.tar.gz
+[2023-05-07 00:19:53] INFO root fetch - processPackages [cursesplus]: executing diffoscope
+[2023-05-07 00:19:53] INFO root fetch - processPackages [cursesplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cursesplus-2.0.3.tar.gz tmp/cursesplus-2.0.4.tar.gz --markdown 20230507/c/cursesplus/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-07 00:19:53] INFO root fetch - processPackages [spotcrates]: executing diffoscope
+[2023-05-07 00:19:53] INFO root fetch - processPackages [spotcrates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotcrates-0.6.1.tar.gz tmp/spotcrates-0.6.2.tar.gz --markdown 20230507/s/spotcrates/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-05-07 00:19:53] INFO root fetch - processPackages [forust]: Downloading https://files.pythonhosted.org/packages/aa/9f/8c47c5c8a4ae2d7cc85fd1ef9b8be10dfad3f12ae19bf93122f378f94e68/forust-0.2.4.tar.gz
+[2023-05-07 00:19:53] INFO root fetch - processPackages [forust]: executing diffoscope
+[2023-05-07 00:19:53] INFO root fetch - processPackages [forust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forust-0.2.3.tar.gz tmp/forust-0.2.4.tar.gz --markdown 20230507/f/forust/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-07 00:19:54] INFO root fetch - main [MainThread]: End processing [FeatureInsight]: success
+[2023-05-07 00:19:54] INFO root fetch - main [MainThread]: End processing [NeuroRuler]: success
+[2023-05-07 00:19:54] INFO root fetch - main [MainThread]: End processing [cursesplus]: success
+[2023-05-07 00:19:54] INFO root fetch - main [MainThread]: End processing [spotcrates]: success
+[2023-05-07 00:19:55] INFO root fetch - main [MainThread]: End processing [forust]: success
+[2023-05-07 00:19:55] INFO root fetch - main [MainThread]: Store serial: [18002684]
