@@ -323,3 +323,9 @@
 [2023-05-07 00:35:55] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
 [2023-05-07 00:35:55] INFO root fetch - main [MainThread]: End processing [FeatureInsight]: success
 [2023-05-07 00:35:55] INFO root fetch - main [MainThread]: Store serial: [18002787]
+[2023-05-07 00:40:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002787]
+[2023-05-07 00:41:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-07 00:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Enregistrement-automatique
+[2023-05-07 00:41:04] WARNING root fetch - processPackages [Enregistrement-automatique]: Skipping, unable to determine old version
+[2023-05-07 00:41:04] INFO root fetch - main [MainThread]: End processing [Enregistrement-automatique] error
+[2023-05-07 00:41:04] INFO root fetch - main [MainThread]: Store serial: [18002795]
