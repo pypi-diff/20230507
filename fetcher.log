@@ -285,3 +285,41 @@
 [2023-05-07 00:30:45] INFO root fetch - main [MainThread]: End processing [mkdocstrings-python]: success
 [2023-05-07 00:30:45] INFO root fetch - main [MainThread]: End processing [modal-client]: success
 [2023-05-07 00:30:45] INFO root fetch - main [MainThread]: Store serial: [18002759]
+[2023-05-07 00:35:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002759]
+[2023-05-07 00:35:54] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 00:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zhengyang-env-2
+[2023-05-07 00:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhOn
+[2023-05-07 00:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cpsim
+[2023-05-07 00:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FeatureInsight
+[2023-05-07 00:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PySpecies
+[2023-05-07 00:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-05-07 00:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-05-07 00:35:54] WARNING root fetch - processPackages [zhengyang-env-2]: Skipping, unable to determine old version
+[2023-05-07 00:35:54] INFO root fetch - main [MainThread]: End processing [zhengyang-env-2] error
+[2023-05-07 00:35:54] WARNING root fetch - processPackages [cpsim]: Skipping, unable to determine old version
+[2023-05-07 00:35:54] INFO root fetch - main [MainThread]: End processing [cpsim] error
+[2023-05-07 00:35:54] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1683397094] Old Version: [0.1.1683397086]
+[2023-05-07 00:35:54] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1683397094] Old Version: [0.1.1683397086]
+[2023-05-07 00:35:54] INFO root fetch - processPackages [pyhOn]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-07 00:35:54] INFO root fetch - processPackages [FeatureInsight]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 00:35:54] WARNING root fetch - processPackages [PySpecies]: Skipping, unable to determine old version
+[2023-05-07 00:35:54] INFO root fetch - main [MainThread]: End processing [PySpecies] error
+[2023-05-07 00:35:54] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-05-07 00:35:54] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.9.0.tar.gz tmp/pyhOn-0.9.1.tar.gz --markdown 20230507/p/pyhOn/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-07 00:35:54] INFO root fetch - processPackages [FeatureInsight]: Downloading https://files.pythonhosted.org/packages/c5/e5/12f3ce969ceb520a7e3bcf57bbe33911c73752b412c1e11c10e39044219b/FeatureInsight-0.0.6.tar.gz
+[2023-05-07 00:35:54] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/68/4c/67d3457e0a017ee6f4a115c2fb236c3a3845581295912b061877870f5101/eia-odin-pkg-rioatmadja2018-0.1.1683397086.tar.gz
+[2023-05-07 00:35:54] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/68/4c/67d3457e0a017ee6f4a115c2fb236c3a3845581295912b061877870f5101/eia-odin-pkg-rioatmadja2018-0.1.1683397086.tar.gz
+[2023-05-07 00:35:54] INFO root fetch - processPackages [FeatureInsight]: Downloading https://files.pythonhosted.org/packages/6a/ea/5c73796b9826cde9ad0772065484fb7bace5127c7f4a3042656ed3c3bd89/FeatureInsight-0.0.7.tar.gz
+[2023-05-07 00:35:54] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/4f/01/6aa8f44eabaaa7eb8d43e9292ccc2ab057f58b718801338d5f66add529aa/eia_odin_pkg_rioatmadja2018-0.1.1683397094-py3-none-any.whl
+[2023-05-07 00:35:54] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/4f/01/6aa8f44eabaaa7eb8d43e9292ccc2ab057f58b718801338d5f66add529aa/eia_odin_pkg_rioatmadja2018-0.1.1683397094-py3-none-any.whl
+[2023-05-07 00:35:54] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-07 00:35:54] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1683397086.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1683397094-py3-none-any.whl.zip --markdown 20230507/e/eia-odin-pkg-rioatmadja2018/0.1.1683397086-0.1.1683397094/diff.md --exclude *.pyd
+[2023-05-07 00:35:54] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-07 00:35:54] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1683397086.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1683397094-py3-none-any.whl.zip --markdown 20230507/e/eia-odin-pkg-rioatmadja2018/0.1.1683397086-0.1.1683397094/diff.md --exclude *.pyd
+[2023-05-07 00:35:55] INFO root fetch - processPackages [FeatureInsight]: executing diffoscope
+[2023-05-07 00:35:55] INFO root fetch - processPackages [FeatureInsight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FeatureInsight-0.0.6.tar.gz tmp/FeatureInsight-0.0.7.tar.gz --markdown 20230507/F/FeatureInsight/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 00:35:55] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-05-07 00:35:55] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-05-07 00:35:55] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-05-07 00:35:55] INFO root fetch - main [MainThread]: End processing [FeatureInsight]: success
+[2023-05-07 00:35:55] INFO root fetch - main [MainThread]: Store serial: [18002787]
