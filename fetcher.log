@@ -1,0 +1,45 @@
+[2023-05-07 00:03:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002491]
+[2023-05-07 00:03:46] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 00:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tastytrade-sdk
+[2023-05-07 00:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: selfcord.py
+[2023-05-07 00:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: luna
+[2023-05-07 00:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: el-decko-backend-mpris
+[2023-05-07 00:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: iotbr
+[2023-05-07 00:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qsea
+[2023-05-07 00:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: eth-accounts-index
+[2023-05-07 00:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: topic-modelling-tools
+[2023-05-07 00:03:46] INFO root fetch - processPackages [selfcord.py]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-07 00:03:46] WARNING root fetch - processPackages [iotbr]: Skipping, unable to determine old version
+[2023-05-07 00:03:46] INFO root fetch - main [MainThread]: End processing [iotbr] error
+[2023-05-07 00:03:46] WARNING root fetch - processPackages [topic-modelling-tools]: Skipping, unable to determine old version
+[2023-05-07 00:03:46] INFO root fetch - main [MainThread]: End processing [topic-modelling-tools] error
+[2023-05-07 00:03:46] INFO root fetch - processPackages [qsea]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 00:03:46] INFO root fetch - processPackages [el-decko-backend-mpris]: New version: [2023.5.6.1] Old Version: [2023.5.6]
+[2023-05-07 00:03:46] WARNING root fetch - processPackages [tastytrade-sdk]: Skipping, unable to determine old version
+[2023-05-07 00:03:46] INFO root fetch - main [MainThread]: End processing [tastytrade-sdk] error
+[2023-05-07 00:03:46] INFO root fetch - processPackages [eth-accounts-index]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-07 00:03:46] INFO root fetch - processPackages [luna]: New version: [0.13.0] Old Version: [0.12.2]
+[2023-05-07 00:03:46] INFO root fetch - processPackages [qsea]: executing diffoscope
+[2023-05-07 00:03:46] INFO root fetch - processPackages [qsea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qsea-0.1.8.tar.gz tmp/qsea-0.1.9.tar.gz --markdown 20230507/q/qsea/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 00:03:46] INFO root fetch - processPackages [el-decko-backend-mpris]: Downloading https://files.pythonhosted.org/packages/f2/a0/df3a046802ff7dbe19dfcf37a9b1c25fee026e03e81dbaf96b8efae843ef/el_decko_backend_mpris-2023.5.6.tar.gz
+[2023-05-07 00:03:46] INFO root fetch - processPackages [selfcord.py]: Downloading https://files.pythonhosted.org/packages/94/65/d3a877a5dac02f3f09a81b9c69059ea3a85d250d9c48a07524ef3cd3728b/selfcord.py-0.1.2.tar.gz
+[2023-05-07 00:03:46] INFO root fetch - processPackages [luna]: Downloading https://files.pythonhosted.org/packages/48/fa/6067e1246868fb5d9dc0ba0079c3654f405d5c61d44a1eb52306e9e90552/luna-0.12.2.tar.gz
+[2023-05-07 00:03:46] INFO root fetch - processPackages [eth-accounts-index]: Downloading https://files.pythonhosted.org/packages/59/12/c91cdb4e15166c2b84b40cd8223fd3d93c6bb5296f65027d187f82449c84/eth-accounts-index-0.5.1.tar.gz
+[2023-05-07 00:03:47] INFO root fetch - processPackages [el-decko-backend-mpris]: Downloading https://files.pythonhosted.org/packages/59/7a/34ebd7ac0e4924c858ec719c45c87c618fbb9abbbca285fb77326479c548/el_decko_backend_mpris-2023.5.6.1.tar.gz
+[2023-05-07 00:03:47] INFO root fetch - processPackages [selfcord.py]: Downloading https://files.pythonhosted.org/packages/80/8a/22af0b4bc93e24d3f388918f0697a9a8b595e999666bbd04b8a1618eb2e4/selfcord.py-0.1.3.tar.gz
+[2023-05-07 00:03:47] INFO root fetch - processPackages [luna]: Downloading https://files.pythonhosted.org/packages/f9/ee/3128452590de78740b4432fd241a5f35b2adafa88763e3f8adcbcfdfd82e/luna-0.13.0.tar.gz
+[2023-05-07 00:03:47] INFO root fetch - processPackages [el-decko-backend-mpris]: executing diffoscope
+[2023-05-07 00:03:47] INFO root fetch - processPackages [el-decko-backend-mpris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/el_decko_backend_mpris-2023.5.6.tar.gz tmp/el_decko_backend_mpris-2023.5.6.1.tar.gz --markdown 20230507/e/el-decko-backend-mpris/2023.5.6-2023.5.6.1/diff.md --exclude *.pyd
+[2023-05-07 00:03:47] INFO root fetch - processPackages [selfcord.py]: executing diffoscope
+[2023-05-07 00:03:47] INFO root fetch - processPackages [selfcord.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selfcord.py-0.1.2.tar.gz tmp/selfcord.py-0.1.3.tar.gz --markdown 20230507/s/selfcord.py/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 00:03:47] INFO root fetch - processPackages [eth-accounts-index]: Downloading https://files.pythonhosted.org/packages/e9/1d/3eba606e38db3581d6ecc07c06615bd16ba54d0bea2d6b60a7d3dad47755/eth-accounts-index-0.5.2.tar.gz
+[2023-05-07 00:03:47] INFO root fetch - processPackages [eth-accounts-index]: executing diffoscope
+[2023-05-07 00:03:47] INFO root fetch - processPackages [eth-accounts-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eth-accounts-index-0.5.1.tar.gz tmp/eth-accounts-index-0.5.2.tar.gz --markdown 20230507/e/eth-accounts-index/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-07 00:03:47] INFO root fetch - processPackages [luna]: executing diffoscope
+[2023-05-07 00:03:47] INFO root fetch - processPackages [luna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luna-0.12.2.tar.gz tmp/luna-0.13.0.tar.gz --markdown 20230507/l/luna/0.12.2-0.13.0/diff.md --exclude *.pyd
+[2023-05-07 00:03:48] INFO root fetch - main [MainThread]: End processing [qsea]: success
+[2023-05-07 00:03:48] INFO root fetch - main [MainThread]: End processing [el-decko-backend-mpris]: success
+[2023-05-07 00:03:48] INFO root fetch - main [MainThread]: End processing [selfcord.py]: success
+[2023-05-07 00:03:48] INFO root fetch - main [MainThread]: End processing [eth-accounts-index]: success
+[2023-05-07 00:03:50] INFO root fetch - main [MainThread]: End processing [luna]: success
+[2023-05-07 00:03:50] INFO root fetch - main [MainThread]: Store serial: [18002520]
