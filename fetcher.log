@@ -329,3 +329,29 @@
 [2023-05-07 00:41:04] WARNING root fetch - processPackages [Enregistrement-automatique]: Skipping, unable to determine old version
 [2023-05-07 00:41:04] INFO root fetch - main [MainThread]: End processing [Enregistrement-automatique] error
 [2023-05-07 00:41:04] INFO root fetch - main [MainThread]: Store serial: [18002795]
+[2023-05-07 00:46:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002795]
+[2023-05-07 00:46:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 00:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transformgpt
+[2023-05-07 00:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotON_sdk
+[2023-05-07 00:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zero-play
+[2023-05-07 00:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slmsuite
+[2023-05-07 00:46:12] INFO root fetch - processPackages [transformgpt]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 00:46:12] INFO root fetch - processPackages [zero-play]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-07 00:46:12] WARNING root fetch - processPackages [slmsuite]: Skipping, unable to determine old version
+[2023-05-07 00:46:12] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.1.2] Old Version: [0.0.1.1]
+[2023-05-07 00:46:12] INFO root fetch - main [MainThread]: End processing [slmsuite] error
+[2023-05-07 00:46:13] INFO root fetch - processPackages [transformgpt]: Downloading https://files.pythonhosted.org/packages/6a/f3/cfa705bb8d843518cf9edc994a89d335cb7ef1ced4f61d6aa5534801e487/transformgpt-0.1.1.tar.gz
+[2023-05-07 00:46:13] INFO root fetch - processPackages [zero-play]: Downloading https://files.pythonhosted.org/packages/eb/bb/3c635ff15f8452cd89c86c865ef1a7f45134a0d4751b2e8f91e46748eff0/zero_play-0.4.0.tar.gz
+[2023-05-07 00:46:13] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/b5/a9/654bf7af35d35c6c4c988c8b678af7686baaea0267872a5110d41ae6754f/spotON_sdk-0.0.1.2.tar.gz
+[2023-05-07 00:46:13] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-07 00:46:13] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.1.1.tar.gz tmp/spotON_sdk-0.0.1.2.tar.gz --markdown 20230507/s/spotON_sdk/0.0.1.1-0.0.1.2/diff.md --exclude *.pyd
+[2023-05-07 00:46:13] INFO root fetch - processPackages [transformgpt]: Downloading https://files.pythonhosted.org/packages/50/25/4342fe0745c8137d351e91810d2d29cced0aafb390e6aa728f315b669d2d/transformgpt-0.1.2.tar.gz
+[2023-05-07 00:46:13] INFO root fetch - processPackages [zero-play]: Downloading https://files.pythonhosted.org/packages/31/03/74cda69c6d84c0979be15f05ae527e0df1329738cb1541ab2b118dd17369/zero_play-0.5.0.tar.gz
+[2023-05-07 00:46:13] INFO root fetch - processPackages [transformgpt]: executing diffoscope
+[2023-05-07 00:46:13] INFO root fetch - processPackages [transformgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformgpt-0.1.1.tar.gz tmp/transformgpt-0.1.2.tar.gz --markdown 20230507/t/transformgpt/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 00:46:13] INFO root fetch - processPackages [zero-play]: executing diffoscope
+[2023-05-07 00:46:13] INFO root fetch - processPackages [zero-play]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zero_play-0.4.0.tar.gz tmp/zero_play-0.5.0.tar.gz --markdown 20230507/z/zero-play/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-07 00:46:14] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-07 00:46:14] INFO root fetch - main [MainThread]: End processing [transformgpt]: success
+[2023-05-07 00:46:15] INFO root fetch - main [MainThread]: End processing [zero-play]: success
+[2023-05-07 00:46:15] INFO root fetch - main [MainThread]: Store serial: [18002810]
