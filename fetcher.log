@@ -9746,3 +9746,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 19:44:07] INFO root fetch - main [MainThread]: End processing [uoy-assessment-uploader]: success
 [2023-05-07 19:44:07] INFO root fetch - main [MainThread]: End processing [EvaLLM]: success
 [2023-05-07 19:44:07] INFO root fetch - main [MainThread]: Store serial: [18008637]
+[2023-05-07 19:49:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008637]
+[2023-05-07 19:49:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 19:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Snowball
+[2023-05-07 19:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deepdoctection
+[2023-05-07 19:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: embykeeper
+[2023-05-07 19:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tumfl
+[2023-05-07 19:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cshelph
+[2023-05-07 19:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cos-uploader
+[2023-05-07 19:49:16] INFO root fetch - processPackages [Snowball]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-07 19:49:16] INFO root fetch - processPackages [deepdoctection]: New version: [0.23] Old Version: [0.22]
+[2023-05-07 19:49:16] INFO root fetch - processPackages [embykeeper]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-07 19:49:16] INFO root fetch - processPackages [cshelph]: New version: [2.4.2] Old Version: [2.4.1]
+[2023-05-07 19:49:16] INFO root fetch - processPackages [tumfl]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 19:49:16] INFO root fetch - processPackages [cshelph]: executing diffoscope
+[2023-05-07 19:49:16] INFO root fetch - processPackages [cshelph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cshelph-2.4.1.tar.gz tmp/cshelph-2.4.2.tar.gz --markdown 20230507/c/cshelph/2.4.1-2.4.2/diff.md --exclude *.pyd
+[2023-05-07 19:49:16] WARNING root fetch - processPackages [cos-uploader]: Skipping, unable to determine old version
+[2023-05-07 19:49:16] INFO root fetch - main [MainThread]: End processing [cos-uploader] error
+[2023-05-07 19:49:16] INFO root fetch - processPackages [Snowball]: Downloading https://files.pythonhosted.org/packages/9f/0b/c0e2a05eeefaba5f8d59eb63aef2d2d128a7d5a2ee0cb6ff323652f4b0f6/Snowball-0.5.2-py3-none-any.whl
+[2023-05-07 19:49:16] INFO root fetch - processPackages [deepdoctection]: Downloading https://files.pythonhosted.org/packages/04/b6/ae13b062dab4c9ff65a5089b05660b9bdc803728b2b891edaae6f6142cb1/deepdoctection-0.22.tar.gz
+[2023-05-07 19:49:16] INFO root fetch - processPackages [embykeeper]: Downloading https://files.pythonhosted.org/packages/70/5d/fe9b1da841352dfe2a2a5967a0112cfc426b4bcc28b2e31246efa0132133/embykeeper-2.0.8.tar.gz
+[2023-05-07 19:49:16] INFO root fetch - processPackages [tumfl]: Downloading https://files.pythonhosted.org/packages/18/a0/367bf19ead0fc3384b5e979790f4c51fdf0e516b8e51bc66bae779d09c9b/tumfl-0.1.2.tar.gz
+[2023-05-07 19:49:17] INFO root fetch - processPackages [tumfl]: executing diffoscope
+[2023-05-07 19:49:17] INFO root fetch - processPackages [tumfl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tumfl-0.1.1.tar.gz tmp/tumfl-0.1.2.tar.gz --markdown 20230507/t/tumfl/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 19:49:17] INFO root fetch - processPackages [Snowball]: Downloading https://files.pythonhosted.org/packages/18/05/e8d230ca22aa8d081ce719aa157b67c8a2fa8366eed5a1377ad6a47e29f4/Snowball-0.5.3.tar.gz
+[2023-05-07 19:49:17] INFO root fetch - processPackages [deepdoctection]: Downloading https://files.pythonhosted.org/packages/73/2f/7642b1bf2a34b80ba8bec4b7c2f62058248e7238ee87a88d68a60e9a32a3/deepdoctection-0.23.tar.gz
+[2023-05-07 19:49:17] INFO root fetch - processPackages [embykeeper]: Downloading https://files.pythonhosted.org/packages/ec/83/907254058ca341691a913812243011b96321f947b575d9bdcde0b2c023c2/embykeeper-2.0.9.tar.gz
+[2023-05-07 19:49:17] INFO root fetch - processPackages [Snowball]: executing diffoscope
+[2023-05-07 19:49:17] INFO root fetch - processPackages [Snowball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Snowball-0.5.2-py3-none-any.whl.zip tmp/Snowball-0.5.3.tar.gz --markdown 20230507/S/Snowball/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-07 19:49:17] INFO root fetch - processPackages [embykeeper]: executing diffoscope
+[2023-05-07 19:49:17] INFO root fetch - processPackages [embykeeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embykeeper-2.0.8.tar.gz tmp/embykeeper-2.0.9.tar.gz --markdown 20230507/e/embykeeper/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-07 19:49:17] INFO root fetch - processPackages [deepdoctection]: executing diffoscope
+[2023-05-07 19:49:17] INFO root fetch - processPackages [deepdoctection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdoctection-0.22.tar.gz tmp/deepdoctection-0.23.tar.gz --markdown 20230507/d/deepdoctection/0.22-0.23/diff.md --exclude *.pyd
+[2023-05-07 19:49:17] INFO root fetch - main [MainThread]: End processing [cshelph]: success
+[2023-05-07 19:49:18] INFO root fetch - main [MainThread]: End processing [Snowball]: success
+[2023-05-07 19:49:18] INFO root fetch - main [MainThread]: End processing [tumfl]: success
+[2023-05-07 19:49:18] INFO root fetch - main [MainThread]: End processing [embykeeper]: success
+[2023-05-07 19:49:20] INFO root fetch - main [MainThread]: End processing [deepdoctection]: success
+[2023-05-07 19:49:20] INFO root fetch - main [MainThread]: Store serial: [18008654]
