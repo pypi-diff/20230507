@@ -10225,3 +10225,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 20:36:26] INFO root fetch - main [MainThread]: End processing [openlane]: success
 [2023-05-07 20:36:30] INFO root fetch - main [MainThread]: End processing [mlrun]: success
 [2023-05-07 20:36:30] INFO root fetch - main [MainThread]: Store serial: [18008925]
+[2023-05-07 20:41:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008925]
+[2023-05-07 20:41:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 20:41:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: JetBrains-Fleet-Run
+[2023-05-07 20:41:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Hunabku-siiu
+[2023-05-07 20:41:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flask-ngrok3
+[2023-05-07 20:41:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prompt-man
+[2023-05-07 20:41:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: khl
+[2023-05-07 20:41:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yamdog
+[2023-05-07 20:41:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dt-authentication-ente
+[2023-05-07 20:41:39] INFO root fetch - processPackages [prompt-man]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-07 20:41:39] WARNING root fetch - processPackages [flask-ngrok3]: Skipping, unable to determine old version
+[2023-05-07 20:41:39] INFO root fetch - main [MainThread]: End processing [flask-ngrok3] error
+[2023-05-07 20:41:39] INFO root fetch - processPackages [prompt-man]: executing diffoscope
+[2023-05-07 20:41:39] INFO root fetch - processPackages [prompt-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompt_man-0.1.4.tar.gz tmp/prompt_man-0.1.5.tar.gz --markdown 20230507/p/prompt-man/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-07 20:41:39] INFO root fetch - processPackages [Hunabku-siiu]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 20:41:39] WARNING root fetch - processPackages [JetBrains-Fleet-Run]: Skipping, unable to determine old version
+[2023-05-07 20:41:39] INFO root fetch - main [MainThread]: End processing [JetBrains-Fleet-Run] error
+[2023-05-07 20:41:39] INFO root fetch - processPackages [dt-authentication-ente]: New version: [2.0.0] Old Version: [1.0.1]
+[2023-05-07 20:41:39] INFO root fetch - processPackages [khl]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-07 20:41:39] INFO root fetch - processPackages [yamdog]: New version: [0.5.0] Old Version: [0.4.0.14]
+[2023-05-07 20:41:39] INFO root fetch - processPackages [Hunabku-siiu]: Downloading https://files.pythonhosted.org/packages/1c/ec/5102a545ec18a9952bbfd2ab4060f6263a8187437cf32b8192e50cf65230/Hunabku_siiu-0.0.2.tar.gz
+[2023-05-07 20:41:39] INFO root fetch - processPackages [khl]: Downloading https://files.pythonhosted.org/packages/e8/a1/250df30b9a5b8e5e7a752d255ae9fa694c19e5536b0e579209d78346f8a5/khl-2.0.0.tar.gz
+[2023-05-07 20:41:39] INFO root fetch - processPackages [dt-authentication-ente]: Downloading https://files.pythonhosted.org/packages/7a/db/4320b3b48678b28307011b14f8db2aaedb4bf1ce41d20634cece2b21a84f/dt-authentication-ente-1.0.1.tar.gz
+[2023-05-07 20:41:39] INFO root fetch - processPackages [yamdog]: Downloading https://files.pythonhosted.org/packages/7d/39/af8bf16bdd8f513f529a76d57517524fe9fdff9139b0786c8a5b2520daee/yamdog-0.4.0.14.tar.gz
+[2023-05-07 20:41:40] INFO root fetch - processPackages [Hunabku-siiu]: Downloading https://files.pythonhosted.org/packages/a6/5a/9475d852ed99202551b47b810889c407ca8170764ee58ee90f3af2b2058d/Hunabku_siiu-0.0.3.tar.gz
+[2023-05-07 20:41:40] INFO root fetch - processPackages [yamdog]: Downloading https://files.pythonhosted.org/packages/e8/24/e014c61e47730c6a3086b550956a1b9c87526950eaac5a6292eb3fc6447f/yamdog-0.5.0.tar.gz
+[2023-05-07 20:41:40] INFO root fetch - processPackages [dt-authentication-ente]: Downloading https://files.pythonhosted.org/packages/a5/26/a8755eaf8dde922b7fa4527505b2b22c8d562ac1ea4572822a48b4ccc22e/dt-authentication-ente-2.0.0.tar.gz
+[2023-05-07 20:41:40] INFO root fetch - processPackages [yamdog]: executing diffoscope
+[2023-05-07 20:41:40] INFO root fetch - processPackages [yamdog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yamdog-0.4.0.14.tar.gz tmp/yamdog-0.5.0.tar.gz --markdown 20230507/y/yamdog/0.4.0.14-0.5.0/diff.md --exclude *.pyd
+[2023-05-07 20:41:40] INFO root fetch - processPackages [Hunabku-siiu]: executing diffoscope
+[2023-05-07 20:41:40] INFO root fetch - processPackages [Hunabku-siiu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Hunabku_siiu-0.0.2.tar.gz tmp/Hunabku_siiu-0.0.3.tar.gz --markdown 20230507/H/Hunabku-siiu/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 20:41:40] INFO root fetch - processPackages [dt-authentication-ente]: executing diffoscope
+[2023-05-07 20:41:40] INFO root fetch - processPackages [dt-authentication-ente]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dt-authentication-ente-1.0.1.tar.gz tmp/dt-authentication-ente-2.0.0.tar.gz --markdown 20230507/d/dt-authentication-ente/1.0.1-2.0.0/diff.md --exclude *.pyd
+[2023-05-07 20:41:40] INFO root fetch - main [MainThread]: End processing [prompt-man]: success
+[2023-05-07 20:41:41] INFO root fetch - processPackages [khl]: Downloading https://files.pythonhosted.org/packages/10/ab/70a6d50ecd7aeda32e7ed727c0a1b95b5585e9fa8898d7115d06aa3e8999/khl-2.0.1.tar.gz
+[2023-05-07 20:41:41] INFO root fetch - processPackages [khl]: executing diffoscope
+[2023-05-07 20:41:41] INFO root fetch - processPackages [khl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khl-2.0.0.tar.gz tmp/khl-2.0.1.tar.gz --markdown 20230507/k/khl/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-07 20:41:41] INFO root fetch - main [MainThread]: End processing [Hunabku-siiu]: success
+[2023-05-07 20:41:41] INFO root fetch - main [MainThread]: End processing [yamdog]: success
+[2023-05-07 20:41:41] INFO root fetch - main [MainThread]: End processing [dt-authentication-ente]: success
+[2023-05-07 20:41:42] INFO root fetch - main [MainThread]: End processing [khl]: success
+[2023-05-07 20:41:42] INFO root fetch - main [MainThread]: Store serial: [18008947]
