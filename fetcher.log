@@ -6419,3 +6419,97 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 14:20:32] INFO root fetch - main [MainThread]: End processing [hcpdiff]: success
 [2023-05-07 14:21:01] INFO root fetch - main [MainThread]: End processing [alpha-trader-python]: success
 [2023-05-07 14:21:01] INFO root fetch - main [MainThread]: Store serial: [18006571]
+[2023-05-07 14:26:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006571]
+[2023-05-07 14:26:09] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-07 14:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: triplify-csv
+[2023-05-07 14:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: async-extensions
+[2023-05-07 14:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hagis
+[2023-05-07 14:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maya-rig-core
+[2023-05-07 14:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gatorpy
+[2023-05-07 14:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: relib
+[2023-05-07 14:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: maya-rig-operation-graph
+[2023-05-07 14:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cityscapesScripts
+[2023-05-07 14:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: web3.0
+[2023-05-07 14:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ghcr-badge
+[2023-05-07 14:26:09] INFO root fetch - processPackages [hagis]: New version: [0.6.0] Old Version: [0.5.7]
+[2023-05-07 14:26:09] INFO root fetch - processPackages [maya-rig-core]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-07 14:26:09] INFO root fetch - processPackages [async-extensions]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-07 14:26:09] INFO root fetch - processPackages [gatorpy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 14:26:09] INFO root fetch - processPackages [triplify-csv]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-07 14:26:09] INFO root fetch - processPackages [relib]: New version: [1.0.0] Old Version: [0.2.4]
+[2023-05-07 14:26:09] WARNING root fetch - processPackages [web3.0]: Skipping, unable to determine old version
+[2023-05-07 14:26:09] INFO root fetch - processPackages [maya-rig-operation-graph]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-05-07 14:26:09] INFO root fetch - processPackages [ghcr-badge]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-07 14:26:09] INFO root fetch - processPackages [web3.0]: Start processing: apininja
+[2023-05-07 14:26:09] INFO root fetch - main [MainThread]: End processing [web3.0] error
+[2023-05-07 14:26:09] INFO root fetch - processPackages [cityscapesScripts]: New version: [2.2.2] Old Version: [2.2.1]
+[2023-05-07 14:26:09] INFO root fetch - processPackages [apininja]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-07 14:26:10] INFO root fetch - processPackages [relib]: Downloading https://files.pythonhosted.org/packages/72/a1/1fd23bdd69b071f786b4b65470992962258e0199a231a9e5162911dff229/relib-0.2.4-py3-none-any.whl
+[2023-05-07 14:26:10] INFO root fetch - processPackages [maya-rig-operation-graph]: Downloading https://files.pythonhosted.org/packages/1b/64/fc175fb1e3ba828f407ada497a9a1dd0ffc1b24cf9377bcfd146fa451912/maya-rig-operation-graph-0.6.1.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [cityscapesScripts]: Downloading https://files.pythonhosted.org/packages/ab/c5/b68993a5d59d41040f78e6afd5cd5537421cc07f6e626ecf4b62fb844db7/cityscapesScripts-2.2.1.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [gatorpy]: Downloading https://files.pythonhosted.org/packages/1e/5b/b538d55d029d1bf354749fe1c38827c2725b7353632b05d7af5df167ec83/gatorpy-0.1.8.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [ghcr-badge]: Downloading https://files.pythonhosted.org/packages/ce/bf/3d2fecd84d4b63fe5cd43df690e73390762d7eb8fb1651e3248e0700fe55/ghcr_badge-0.2.0.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [triplify-csv]: Downloading https://files.pythonhosted.org/packages/57/e5/13d8b1ab4961850c9eb614228d001817a50d4cb3b9af35e970b384633c21/triplify_csv-0.2.2.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [apininja]: Downloading https://files.pythonhosted.org/packages/76/09/2b09496a93f1692a95f7aa9953248cd6077a877c6d39441d22717a345cbe/apininja-0.1.6.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [async-extensions]: Downloading https://files.pythonhosted.org/packages/d4/6e/1668beb30e22caa4d1335de5bd70eb55a2f9f74d9eb6a79c18da693f60d8/async_extensions-1.2.2.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [maya-rig-core]: Downloading https://files.pythonhosted.org/packages/fc/85/8cce72e588239584708053e31ca2aac9d360b0d7820314b0e938fd8a85dc/maya_rig_core-0.2.4.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [hagis]: Downloading https://files.pythonhosted.org/packages/b8/cf/cde76d417e3f85b7266200f112d736352d9b25c22837d03aad2851a389ac/hagis-0.6.0.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [apininja]: executing diffoscope
+[2023-05-07 14:26:10] INFO root fetch - processPackages [apininja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apininja-0.1.5.tar.gz tmp/apininja-0.1.6.tar.gz --markdown 20230507/a/apininja/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-07 14:26:10] INFO root fetch - processPackages [maya-rig-core]: executing diffoscope
+[2023-05-07 14:26:10] INFO root fetch - processPackages [maya-rig-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maya_rig_core-0.2.3.tar.gz tmp/maya_rig_core-0.2.4.tar.gz --markdown 20230507/m/maya-rig-core/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-07 14:26:10] INFO root fetch - processPackages [maya-rig-operation-graph]: Downloading https://files.pythonhosted.org/packages/e6/73/cd22216b81bea8637782a3b7be7ccdf087a45e286b5f632a1c88b5b3f98c/maya-rig-operation-graph-0.6.2.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [ghcr-badge]: Downloading https://files.pythonhosted.org/packages/70/22/0d1449915407816a287c22b2be1c11156dd2e727d51cbbfdfeeaa184df29/ghcr_badge-0.2.1.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [async-extensions]: Downloading https://files.pythonhosted.org/packages/f4/87/bbd134be77e9bb0d838e37d39c708e6bc621d62ea440a33164d79b25d9c7/async_extensions-1.2.3.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [relib]: Downloading https://files.pythonhosted.org/packages/8a/b9/d7087c0c687fff947358567408b839438ce2779bfe3a8c964f1bac38ba5b/relib-1.0.0-py3-none-any.whl
+[2023-05-07 14:26:10] INFO root fetch - processPackages [cityscapesScripts]: Downloading https://files.pythonhosted.org/packages/c9/9b/1ef033dac66e705f963d4b5f814ea7157c21d232d275c7cf0e3c114b78e6/cityscapesScripts-2.2.2.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [ghcr-badge]: executing diffoscope
+[2023-05-07 14:26:10] INFO root fetch - processPackages [ghcr-badge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ghcr_badge-0.2.0.tar.gz tmp/ghcr_badge-0.2.1.tar.gz --markdown 20230507/g/ghcr-badge/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-07 14:26:10] INFO root fetch - processPackages [hagis]: executing diffoscope
+[2023-05-07 14:26:10] INFO root fetch - processPackages [hagis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagis-0.5.7.tar.gz tmp/hagis-0.6.0.tar.gz --markdown 20230507/h/hagis/0.5.7-0.6.0/diff.md --exclude *.pyd
+[2023-05-07 14:26:10] INFO root fetch - processPackages [maya-rig-operation-graph]: executing diffoscope
+[2023-05-07 14:26:10] INFO root fetch - processPackages [maya-rig-operation-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maya-rig-operation-graph-0.6.1.tar.gz tmp/maya-rig-operation-graph-0.6.2.tar.gz --markdown 20230507/m/maya-rig-operation-graph/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-05-07 14:26:10] INFO root fetch - processPackages [async-extensions]: executing diffoscope
+[2023-05-07 14:26:10] INFO root fetch - processPackages [async-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_extensions-1.2.2.tar.gz tmp/async_extensions-1.2.3.tar.gz --markdown 20230507/a/async-extensions/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-07 14:26:10] INFO root fetch - processPackages [gatorpy]: Downloading https://files.pythonhosted.org/packages/c8/c8/d4846a7dc20121565d5ec6f87b4e86e3b4031d53c7dacb696afc58139cec/gatorpy-0.1.9.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [relib]: executing diffoscope
+[2023-05-07 14:26:10] INFO root fetch - processPackages [relib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relib-0.2.4-py3-none-any.whl.zip tmp/relib-1.0.0-py3-none-any.whl.zip --markdown 20230507/r/relib/0.2.4-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 14:26:10] INFO root fetch - processPackages [cityscapesScripts]: executing diffoscope
+[2023-05-07 14:26:10] INFO root fetch - processPackages [cityscapesScripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cityscapesScripts-2.2.1.tar.gz tmp/cityscapesScripts-2.2.2.tar.gz --markdown 20230507/c/cityscapesScripts/2.2.1-2.2.2/diff.md --exclude *.pyd
+[2023-05-07 14:26:10] INFO root fetch - processPackages [triplify-csv]: Downloading https://files.pythonhosted.org/packages/c9/1d/59f615555833d87bcc2543820e1aba23d0f838fcf3539aaa452dfaa47ddc/triplify_csv-0.3.0.tar.gz
+[2023-05-07 14:26:10] INFO root fetch - processPackages [gatorpy]: executing diffoscope
+[2023-05-07 14:26:10] INFO root fetch - processPackages [gatorpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gatorpy-0.1.8.tar.gz tmp/gatorpy-0.1.9.tar.gz --markdown 20230507/g/gatorpy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 14:26:10] INFO root fetch - processPackages [triplify-csv]: executing diffoscope
+[2023-05-07 14:26:10] INFO root fetch - processPackages [triplify-csv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/triplify_csv-0.2.2.tar.gz tmp/triplify_csv-0.3.0.tar.gz --markdown 20230507/t/triplify-csv/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-07 14:26:11] INFO root fetch - processPackages [apininja]: Start processing: siat
+[2023-05-07 14:26:11] INFO root fetch - main [MainThread]: End processing [apininja]: success
+[2023-05-07 14:26:11] INFO root fetch - processPackages [siat]: New version: [2.0] Old Version: [1.9.7]
+[2023-05-07 14:26:12] INFO root fetch - processPackages [siat]: Downloading https://files.pythonhosted.org/packages/8c/72/27aeacca456a9074158b534196c14eb7b561e358cd66f32aed2f59cd5411/siat-1.9.7-py3-none-any.whl
+[2023-05-07 14:26:12] INFO root fetch - processPackages [ghcr-badge]: Start processing: dbt-ai
+[2023-05-07 14:26:12] INFO root fetch - main [MainThread]: End processing [ghcr-badge]: success
+[2023-05-07 14:26:12] INFO root fetch - processPackages [dbt-ai]: New version: [0.1.1a0] Old Version: [0.1.0a0]
+[2023-05-07 14:26:12] INFO root fetch - processPackages [relib]: Start processing: bw2calc
+[2023-05-07 14:26:12] INFO root fetch - main [MainThread]: End processing [relib]: success
+[2023-05-07 14:26:12] INFO root fetch - main [MainThread]: End processing [async-extensions]: success
+[2023-05-07 14:26:12] INFO root fetch - processPackages [bw2calc]: New version: [2.0.dev8] Old Version: [2.0.dev7]
+[2023-05-07 14:26:12] INFO root fetch - main [MainThread]: End processing [hagis]: success
+[2023-05-07 14:26:12] INFO root fetch - processPackages [dbt-ai]: Downloading https://files.pythonhosted.org/packages/7b/71/a6fd168d4518003c79d8a01a17ec5e78904758af5e1fc38c98a0b5364401/dbt-ai-0.1.0a0.tar.gz
+[2023-05-07 14:26:12] INFO root fetch - processPackages [siat]: Downloading https://files.pythonhosted.org/packages/87/9a/e7cac04bb34418bd3553136cad103b481bd2d652999aa2921ee9be69d70d/siat-2.0-py3-none-any.whl
+[2023-05-07 14:26:12] INFO root fetch - main [MainThread]: End processing [maya-rig-operation-graph]: success
+[2023-05-07 14:26:12] INFO root fetch - main [MainThread]: End processing [triplify-csv]: success
+[2023-05-07 14:26:12] INFO root fetch - main [MainThread]: End processing [maya-rig-core]: success
+[2023-05-07 14:26:12] INFO root fetch - processPackages [bw2calc]: Downloading https://files.pythonhosted.org/packages/db/5d/f05f861c6e62088dac9586e8f966e4e7ce907d751e5e7899f3dd6474076c/bw2calc-2.0.dev7.tar.gz
+[2023-05-07 14:26:12] INFO root fetch - processPackages [siat]: executing diffoscope
+[2023-05-07 14:26:12] INFO root fetch - processPackages [siat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siat-1.9.7-py3-none-any.whl.zip tmp/siat-2.0-py3-none-any.whl.zip --markdown 20230507/s/siat/1.9.7-2.0/diff.md --exclude *.pyd
+[2023-05-07 14:26:12] INFO root fetch - main [MainThread]: End processing [gatorpy]: success
+[2023-05-07 14:26:12] INFO root fetch - processPackages [dbt-ai]: Downloading https://files.pythonhosted.org/packages/da/af/92841428439e813af3b8ab75d8a2982dd1ce40c26b84fc77f78b8eb61069/dbt-ai-0.1.1a0.tar.gz
+[2023-05-07 14:26:12] INFO root fetch - processPackages [dbt-ai]: executing diffoscope
+[2023-05-07 14:26:12] INFO root fetch - processPackages [dbt-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-ai-0.1.0a0.tar.gz tmp/dbt-ai-0.1.1a0.tar.gz --markdown 20230507/d/dbt-ai/0.1.0a0-0.1.1a0/diff.md --exclude *.pyd
+[2023-05-07 14:26:12] INFO root fetch - processPackages [bw2calc]: Downloading https://files.pythonhosted.org/packages/bd/fe/db9204d32684e974c14e440e46a92fc3d4b2e3add5045b4a16070992fe27/bw2calc-2.0.dev8.tar.gz
+[2023-05-07 14:26:12] INFO root fetch - processPackages [bw2calc]: executing diffoscope
+[2023-05-07 14:26:12] INFO root fetch - processPackages [bw2calc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bw2calc-2.0.dev7.tar.gz tmp/bw2calc-2.0.dev8.tar.gz --markdown 20230507/b/bw2calc/2.0.dev7-2.0.dev8/diff.md --exclude *.pyd
+[2023-05-07 14:26:13] INFO root fetch - main [MainThread]: End processing [cityscapesScripts]: success
+[2023-05-07 14:26:13] INFO root fetch - main [MainThread]: End processing [dbt-ai]: success
+[2023-05-07 14:26:14] INFO root fetch - main [MainThread]: End processing [bw2calc]: success
+[2023-05-07 14:26:14] INFO root fetch - main [MainThread]: End processing [siat]: success
+[2023-05-07 14:26:14] INFO root fetch - main [MainThread]: Store serial: [18006611]
