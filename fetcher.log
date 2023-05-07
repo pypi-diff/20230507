@@ -3226,3 +3226,40 @@
 [2023-05-07 08:01:10] INFO root fetch - main [MainThread]: End processing [uecho]: success
 [2023-05-07 08:01:10] INFO root fetch - main [MainThread]: End processing [miniwdl-aws]: success
 [2023-05-07 08:01:10] INFO root fetch - main [MainThread]: Store serial: [18004394]
+[2023-05-07 08:06:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004394]
+[2023-05-07 08:06:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 08:06:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyperfast-python-template
+[2023-05-07 08:06:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bagbag
+[2023-05-07 08:06:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hcpdiff
+[2023-05-07 08:06:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nyckel
+[2023-05-07 08:06:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cyberdrop-dl
+[2023-05-07 08:06:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyg-nightly
+[2023-05-07 08:06:19] INFO root fetch - processPackages [hcpdiff]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-07 08:06:19] INFO root fetch - processPackages [hyperfast-python-template]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-07 08:06:19] INFO root fetch - processPackages [bagbag]: New version: [0.58.9] Old Version: [0.58.8]
+[2023-05-07 08:06:19] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230506] Old Version: [2.4.0.dev20230505]
+[2023-05-07 08:06:19] INFO root fetch - processPackages [nyckel]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 08:06:19] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.14] Old Version: [4.2.13]
+[2023-05-07 08:06:19] INFO root fetch - processPackages [hyperfast-python-template]: executing diffoscope
+[2023-05-07 08:06:19] INFO root fetch - processPackages [hyperfast-python-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperfast_python_template-0.4.8.tar.gz tmp/hyperfast_python_template-0.4.9.tar.gz --markdown 20230507/h/hyperfast-python-template/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-07 08:06:19] INFO root fetch - processPackages [hcpdiff]: Downloading https://files.pythonhosted.org/packages/c1/62/2c82165ab08c7e26e5dbc0dc38d786dc00762b19460c79d30dacf92d14f8/hcpdiff-0.3.5.tar.gz
+[2023-05-07 08:06:19] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-07 08:06:19] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.8.tar.gz tmp/nyckel-0.0.9.tar.gz --markdown 20230507/n/nyckel/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 08:06:19] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/2c/e1/a99ae7df3d14d7bf9e1e7df6dd2c1c367e9e6082471aa079e888a0b53c5d/cyberdrop-dl-4.2.14.tar.gz
+[2023-05-07 08:06:19] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/b1/e6/f506cc2321dfb95a7c8abdb325da170103b804d75497565bcd992d370970/pyg-nightly-2.4.0.dev20230506.tar.gz
+[2023-05-07 08:06:19] INFO root fetch - processPackages [hcpdiff]: Downloading https://files.pythonhosted.org/packages/5b/2b/e87b1200222faeac535141b05f1bccd18505cbeae91471a363d86d2a4dbb/hcpdiff-0.3.6.tar.gz
+[2023-05-07 08:06:19] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-05-07 08:06:19] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.58.8.tar.gz tmp/bagbag-0.58.9.tar.gz --markdown 20230507/b/bagbag/0.58.8-0.58.9/diff.md --exclude *.pyd
+[2023-05-07 08:06:19] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-05-07 08:06:19] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg-nightly-2.4.0.dev20230505.tar.gz tmp/pyg-nightly-2.4.0.dev20230506.tar.gz --markdown 20230507/p/pyg-nightly/2.4.0.dev20230505-2.4.0.dev20230506/diff.md --exclude *.pyd
+[2023-05-07 08:06:19] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-05-07 08:06:19] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.13.tar.gz tmp/cyberdrop-dl-4.2.14.tar.gz --markdown 20230507/c/cyberdrop-dl/4.2.13-4.2.14/diff.md --exclude *.pyd
+[2023-05-07 08:06:19] INFO root fetch - processPackages [hcpdiff]: executing diffoscope
+[2023-05-07 08:06:19] INFO root fetch - processPackages [hcpdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcpdiff-0.3.5.tar.gz tmp/hcpdiff-0.3.6.tar.gz --markdown 20230507/h/hcpdiff/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-07 08:06:20] INFO root fetch - main [MainThread]: End processing [hyperfast-python-template]: success
+[2023-05-07 08:06:20] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-07 08:06:21] INFO root fetch - main [MainThread]: End processing [hcpdiff]: success
+[2023-05-07 08:06:22] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-05-07 08:06:24] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-05-07 08:06:26] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-05-07 08:06:26] INFO root fetch - main [MainThread]: Store serial: [18004412]
