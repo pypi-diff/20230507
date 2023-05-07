@@ -6158,3 +6158,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 13:46:22] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
 [2023-05-07 13:46:22] INFO root fetch - main [MainThread]: End processing [DHEater]: success
 [2023-05-07 13:46:22] INFO root fetch - main [MainThread]: Store serial: [18006398]
+[2023-05-07 13:51:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006398]
+[2023-05-07 13:51:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 13:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keyrock-core
+[2023-05-07 13:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keyrock-math
+[2023-05-07 13:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vietnam-provinces
+[2023-05-07 13:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hagis
+[2023-05-07 13:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: promaid
+[2023-05-07 13:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rekono-cli
+[2023-05-07 13:51:31] INFO root fetch - processPackages [hagis]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-05-07 13:51:31] INFO root fetch - processPackages [keyrock-math]: New version: [2023.5.7.1147] Old Version: [2023.3.18.2024]
+[2023-05-07 13:51:31] INFO root fetch - processPackages [keyrock-core]: New version: [2023.5.7.1147] Old Version: [2023.3.7.1624]
+[2023-05-07 13:51:31] INFO root fetch - processPackages [vietnam-provinces]: New version: [0.5.0] Old Version: [0.4.3]
+[2023-05-07 13:51:31] INFO root fetch - processPackages [rekono-cli]: New version: [2.0.0] Old Version: [1.1.0]
+[2023-05-07 13:51:31] WARNING root fetch - processPackages [promaid]: Skipping, unable to determine old version
+[2023-05-07 13:51:31] INFO root fetch - main [MainThread]: End processing [promaid] error
+[2023-05-07 13:51:31] INFO root fetch - processPackages [keyrock-core]: Downloading https://files.pythonhosted.org/packages/ed/92/ed7b784fad3f76da0603b3afaf53f631e38fa2a2af68b4f313238c021aa7/keyrock-core-2023.3.7.1624.tar.gz
+[2023-05-07 13:51:31] INFO root fetch - processPackages [hagis]: Downloading https://files.pythonhosted.org/packages/8a/97/49cf27ec16c203de1ac9a368691648d387559d0481382283aa4d8cf4f1a8/hagis-0.5.7.tar.gz
+[2023-05-07 13:51:31] INFO root fetch - processPackages [keyrock-math]: Downloading https://files.pythonhosted.org/packages/a8/91/4f99f0f3ccd4d5031120c638de3e32714170844ecd6f8781bbedea96431f/keyrock-math-2023.3.18.2024.tar.gz
+[2023-05-07 13:51:31] INFO root fetch - processPackages [vietnam-provinces]: Downloading https://files.pythonhosted.org/packages/07/9f/6b7f3ab18b6cf00239e5f988df18209c577be5cc96a08aca80088abc52ce/vietnam-provinces-0.4.3.tar.gz
+[2023-05-07 13:51:31] INFO root fetch - processPackages [rekono-cli]: Downloading https://files.pythonhosted.org/packages/08/d6/dca06c5348a37e3a432d6c97d2c146d47272a6e5666dd58756d20e666329/rekono-cli-1.1.0.tar.gz
+[2023-05-07 13:51:31] INFO root fetch - processPackages [hagis]: executing diffoscope
+[2023-05-07 13:51:31] INFO root fetch - processPackages [hagis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagis-0.5.6.tar.gz tmp/hagis-0.5.7.tar.gz --markdown 20230507/h/hagis/0.5.6-0.5.7/diff.md --exclude *.pyd
+[2023-05-07 13:51:31] INFO root fetch - processPackages [keyrock-core]: Downloading https://files.pythonhosted.org/packages/e0/c3/23b6db480633a1a8db4456f024adaa48a9548bdb6917091f17a8c38bbffb/keyrock-core-2023.5.7.1147.tar.gz
+[2023-05-07 13:51:31] INFO root fetch - processPackages [keyrock-math]: Downloading https://files.pythonhosted.org/packages/db/32/e9efbece2da71201b80a85d059a8cd9218134e2a8ea579647f1adb1bbe6e/keyrock-math-2023.5.7.1147.tar.gz
+[2023-05-07 13:51:31] INFO root fetch - processPackages [rekono-cli]: Downloading https://files.pythonhosted.org/packages/40/c1/dcd940fe5a6a095f3dea78d3070b82280e6957fd97384fb86bfa118b5321/rekono-cli-2.0.0.tar.gz
+[2023-05-07 13:51:31] INFO root fetch - processPackages [keyrock-core]: executing diffoscope
+[2023-05-07 13:51:31] INFO root fetch - processPackages [keyrock-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keyrock-core-2023.3.7.1624.tar.gz tmp/keyrock-core-2023.5.7.1147.tar.gz --markdown 20230507/k/keyrock-core/2023.3.7.1624-2023.5.7.1147/diff.md --exclude *.pyd
+[2023-05-07 13:51:31] INFO root fetch - processPackages [vietnam-provinces]: Downloading https://files.pythonhosted.org/packages/95/52/b2175aa5a93ca5f1cbdc325c9c2f8450f6d924c43b9f3567b74fd60d1b25/vietnam_provinces-0.5.0.tar.gz
+[2023-05-07 13:51:31] INFO root fetch - processPackages [rekono-cli]: executing diffoscope
+[2023-05-07 13:51:31] INFO root fetch - processPackages [rekono-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rekono-cli-1.1.0.tar.gz tmp/rekono-cli-2.0.0.tar.gz --markdown 20230507/r/rekono-cli/1.1.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-07 13:51:31] INFO root fetch - processPackages [keyrock-math]: executing diffoscope
+[2023-05-07 13:51:31] INFO root fetch - processPackages [keyrock-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keyrock-math-2023.3.18.2024.tar.gz tmp/keyrock-math-2023.5.7.1147.tar.gz --markdown 20230507/k/keyrock-math/2023.3.18.2024-2023.5.7.1147/diff.md --exclude *.pyd
+[2023-05-07 13:51:31] INFO root fetch - processPackages [vietnam-provinces]: executing diffoscope
+[2023-05-07 13:51:31] INFO root fetch - processPackages [vietnam-provinces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vietnam-provinces-0.4.3.tar.gz tmp/vietnam_provinces-0.5.0.tar.gz --markdown 20230507/v/vietnam-provinces/0.4.3-0.5.0/diff.md --exclude *.pyd
+[2023-05-07 13:51:32] INFO root fetch - main [MainThread]: End processing [hagis]: success
+[2023-05-07 13:51:32] INFO root fetch - main [MainThread]: End processing [keyrock-core]: success
+[2023-05-07 13:51:32] INFO root fetch - main [MainThread]: End processing [rekono-cli]: success
+[2023-05-07 13:51:33] INFO root fetch - main [MainThread]: End processing [keyrock-math]: success
+[2023-05-07 13:54:32] ERROR root fetch - processPackages [vietnam-provinces]: Timeout during execution of pkgdiff
+[2023-05-07 13:54:32] INFO root fetch - main [MainThread]: End processing [vietnam-provinces] error
+[2023-05-07 13:54:32] INFO root fetch - main [MainThread]: Store serial: [18006426]
