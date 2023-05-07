@@ -943,3 +943,88 @@
 [2023-05-07 02:17:42] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
 [2023-05-07 02:17:43] INFO root fetch - main [MainThread]: End processing [unigui]: success
 [2023-05-07 02:17:43] INFO root fetch - main [MainThread]: Store serial: [18003120]
+[2023-05-07 02:22:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003120]
+[2023-05-07 02:22:51] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-07 02:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unigui
+[2023-05-07 02:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: canvasxpress
+[2023-05-07 02:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdktf-surreal-backend
+[2023-05-07 02:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cliconfig
+[2023-05-07 02:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdklabs.appsync-utils
+[2023-05-07 02:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-budibase
+[2023-05-07 02:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk8s-valheim
+[2023-05-07 02:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aws-cdk.asset-node-proxy-agent-v5
+[2023-05-07 02:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vision-xformer
+[2023-05-07 02:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdklabs.cdk-ethereum-node
+[2023-05-07 02:22:51] INFO root fetch - processPackages [unigui]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-07 02:22:51] INFO root fetch - processPackages [canvasxpress]: New version: [2023.5.7.1742] Old Version: [2023.4.9.1736]
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdk-budibase]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 02:22:51] WARNING root fetch - processPackages [cliconfig]: Skipping, unable to determine old version
+[2023-05-07 02:22:51] INFO root fetch - processPackages [vision-xformer]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cliconfig]: Start processing: asciicards
+[2023-05-07 02:22:51] INFO root fetch - main [MainThread]: End processing [cliconfig] error
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdklabs.appsync-utils]: New version: [0.0.9] Old Version: [0.0.81]
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdk8s-valheim]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdktf-surreal-backend]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 02:22:51] INFO root fetch - processPackages [aws-cdk.asset-node-proxy-agent-v5]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-07 02:22:51] INFO root fetch - processPackages [asciicards]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-07 02:22:51] INFO root fetch - processPackages [unigui]: executing diffoscope
+[2023-05-07 02:22:51] INFO root fetch - processPackages [unigui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unigui-1.4.0.tar.gz tmp/unigui-1.4.1.tar.gz --markdown 20230507/u/unigui/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdk-budibase]: executing diffoscope
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdk-budibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-budibase-0.0.8.tar.gz tmp/cdk-budibase-0.0.9.tar.gz --markdown 20230507/c/cdk-budibase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdk8s-valheim]: executing diffoscope
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdk8s-valheim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-valheim-0.0.8.tar.gz tmp/cdk8s-valheim-0.0.9.tar.gz --markdown 20230507/c/cdk8s-valheim/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 02:22:51] INFO root fetch - processPackages [aws-cdk.asset-node-proxy-agent-v5]: executing diffoscope
+[2023-05-07 02:22:51] INFO root fetch - processPackages [aws-cdk.asset-node-proxy-agent-v5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-cdk.asset-node-proxy-agent-v5-2.0.98.tar.gz tmp/aws-cdk.asset-node-proxy-agent-v5-2.0.99.tar.gz --markdown 20230507/a/aws-cdk.asset-node-proxy-agent-v5/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/58/42/a6c8eae7c3e7f5d4199952d5ecb10b0f8eda0b306dcbaf16c1970c49e0a5/cdklabs.appsync-utils-0.0.81.tar.gz
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20230507/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdktf-surreal-backend]: executing diffoscope
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdktf-surreal-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-surreal-backend-1.0.98.tar.gz tmp/cdktf-surreal-backend-1.0.99.tar.gz --markdown 20230507/c/cdktf-surreal-backend/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-07 02:22:51] INFO root fetch - processPackages [vision-xformer]: Downloading https://files.pythonhosted.org/packages/e9/1c/37c72fe76c37e0c5584f18839d088db104230be404c9b1d60629e06815e1/vision_xformer-0.1.5.tar.gz
+[2023-05-07 02:22:51] INFO root fetch - processPackages [canvasxpress]: Downloading https://files.pythonhosted.org/packages/61/75/7babdcf7ca3ff5bc14d1b3c159e7d2eb3c9010b87756b3afbe1e684c129b/canvasxpress-2023.4.9.1736.tar.gz
+[2023-05-07 02:22:51] INFO root fetch - processPackages [vision-xformer]: executing diffoscope
+[2023-05-07 02:22:51] INFO root fetch - processPackages [vision-xformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vision_xformer-0.1.4.tar.gz tmp/vision_xformer-0.1.5.tar.gz --markdown 20230507/v/vision-xformer/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-07 02:22:51] INFO root fetch - processPackages [asciicards]: Downloading https://files.pythonhosted.org/packages/a5/ee/6f8997ad254d89b62be84bd2a2135ad2c593f2b3e55b73c0c604bb2b6177/asciicards-0.0.4.tar.gz
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdklabs.appsync-utils]: executing diffoscope
+[2023-05-07 02:22:51] INFO root fetch - processPackages [cdklabs.appsync-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.appsync-utils-0.0.81.tar.gz tmp/cdklabs.appsync-utils-0.0.9.tar.gz --markdown 20230507/c/cdklabs.appsync-utils/0.0.81-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 02:22:51] INFO root fetch - processPackages [asciicards]: executing diffoscope
+[2023-05-07 02:22:51] INFO root fetch - processPackages [asciicards]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asciicards-0.0.3.tar.gz tmp/asciicards-0.0.4.tar.gz --markdown 20230507/a/asciicards/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-07 02:22:52] INFO root fetch - processPackages [canvasxpress]: Downloading https://files.pythonhosted.org/packages/96/e8/5e91cd73ee8e70f376694f4aff8e3668a5598db56368f6dd85564554921f/canvasxpress-2023.5.7.1742.tar.gz
+[2023-05-07 02:22:52] INFO root fetch - processPackages [canvasxpress]: executing diffoscope
+[2023-05-07 02:22:52] INFO root fetch - processPackages [canvasxpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canvasxpress-2023.4.9.1736.tar.gz tmp/canvasxpress-2023.5.7.1742.tar.gz --markdown 20230507/c/canvasxpress/2023.4.9.1736-2023.5.7.1742/diff.md --exclude *.pyd
+[2023-05-07 02:22:53] INFO root fetch - processPackages [cdk-budibase]: Start processing: cdk-aurora-globaldatabase
+[2023-05-07 02:22:53] INFO root fetch - main [MainThread]: End processing [cdk-budibase]: success
+[2023-05-07 02:22:53] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-07 02:22:53] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2023-05-07 02:22:53] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20230507/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-07 02:22:53] INFO root fetch - processPackages [asciicards]: Start processing: NMODL-nightly
+[2023-05-07 02:22:53] INFO root fetch - main [MainThread]: End processing [asciicards]: success
+[2023-05-07 02:22:53] INFO root fetch - processPackages [vision-xformer]: Start processing: cdklabs.ecs-codedeploy
+[2023-05-07 02:22:53] INFO root fetch - main [MainThread]: End processing [vision-xformer]: success
+[2023-05-07 02:22:53] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 02:22:53] INFO root fetch - processPackages [cdklabs.appsync-utils]: Start processing: sweetrpg-db
+[2023-05-07 02:22:53] INFO root fetch - main [MainThread]: End processing [cdklabs.appsync-utils]: success
+[2023-05-07 02:22:53] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2023-05-07 02:22:53] INFO root fetch - main [MainThread]: End processing [cdk8s-valheim]: success
+[2023-05-07 02:22:53] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: executing diffoscope
+[2023-05-07 02:22:53] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.ecs-codedeploy-0.0.98.tar.gz tmp/cdklabs.ecs-codedeploy-0.0.99.tar.gz --markdown 20230507/c/cdklabs.ecs-codedeploy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 02:22:53] INFO root fetch - main [MainThread]: End processing [cdktf-surreal-backend]: success
+[2023-05-07 02:22:53] INFO root fetch - processPackages [NMODL-nightly]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-07 02:22:53] INFO root fetch - processPackages [sweetrpg-db]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 02:22:53] INFO root fetch - processPackages [NMODL-nightly]: Downloading https://files.pythonhosted.org/packages/d9/9c/160f8193b924116385768007b01a7b3184417c21b0bc8c1cd364d4a64c3a/NMODL_nightly-0.6.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-07 02:22:53] INFO root fetch - processPackages [sweetrpg-db]: Downloading https://files.pythonhosted.org/packages/a9/8d/3d3cba136965ab00c0338cfe26c6389ebecbad7a6f919918dee83c8706be/sweetrpg-db-0.0.98.tar.gz
+[2023-05-07 02:22:53] INFO root fetch - processPackages [sweetrpg-db]: Downloading https://files.pythonhosted.org/packages/cd/b0/462b503c41bce59517535ee1abde52ec10f2d1d9cfecfa361efd1369becb/sweetrpg-db-0.0.99.tar.gz
+[2023-05-07 02:22:53] INFO root fetch - processPackages [sweetrpg-db]: executing diffoscope
+[2023-05-07 02:22:53] INFO root fetch - processPackages [sweetrpg-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-db-0.0.98.tar.gz tmp/sweetrpg-db-0.0.99.tar.gz --markdown 20230507/s/sweetrpg-db/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 02:22:54] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2023-05-07 02:22:54] INFO root fetch - main [MainThread]: End processing [cdklabs.ecs-codedeploy]: success
+[2023-05-07 02:22:54] INFO root fetch - processPackages [NMODL-nightly]: Downloading https://files.pythonhosted.org/packages/98/7d/24a13c7d25a532f7407e0df22d3c5274fade3f92a22dc4404ab3e41e2cfc/NMODL_nightly-0.6.9-cp39-cp39-macosx_10_15_x86_64.whl
+[2023-05-07 02:22:54] INFO root fetch - main [MainThread]: End processing [sweetrpg-db]: success
+[2023-05-07 02:22:55] INFO root fetch - main [MainThread]: End processing [aws-cdk.asset-node-proxy-agent-v5]: success
+[2023-05-07 02:22:55] INFO root fetch - processPackages [NMODL-nightly]: executing diffoscope
+[2023-05-07 02:22:55] INFO root fetch - processPackages [NMODL-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NMODL_nightly-0.6.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/NMODL_nightly-0.6.9-cp39-cp39-macosx_10_15_x86_64.whl.zip --markdown 20230507/N/NMODL-nightly/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-07 02:22:56] INFO root fetch - main [MainThread]: End processing [unigui]: success
+[2023-05-07 02:23:08] INFO root fetch - main [MainThread]: End processing [NMODL-nightly]: success
+[2023-05-07 02:23:20] INFO root fetch - main [MainThread]: End processing [canvasxpress]: success
+[2023-05-07 02:23:20] INFO root fetch - main [MainThread]: Store serial: [18003166]
