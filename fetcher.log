@@ -1993,3 +1993,28 @@
 [2023-05-07 04:14:04] INFO root fetch - main [MainThread]: End processing [bumbo-shogo]: success
 [2023-05-07 04:14:04] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-csgo-case-simulator]: success
 [2023-05-07 04:14:04] INFO root fetch - main [MainThread]: Store serial: [18003755]
+[2023-05-07 04:19:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003755]
+[2023-05-07 04:19:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 04:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-audio-transformer-plugin-speechbrain-langdetect
+[2023-05-07 04:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-audio-transformer-plugin-speechbrain-langdetect
+[2023-05-07 04:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DeepSearchLite
+[2023-05-07 04:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lbt-recipes
+[2023-05-07 04:19:12] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: New version: [0.0.0a6] Old Version: [0.0.0a5]
+[2023-05-07 04:19:13] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: New version: [0.0.0a6] Old Version: [0.0.0a5]
+[2023-05-07 04:19:13] WARNING root fetch - processPackages [DeepSearchLite]: Skipping, unable to determine old version
+[2023-05-07 04:19:13] INFO root fetch - main [MainThread]: End processing [DeepSearchLite] error
+[2023-05-07 04:19:13] INFO root fetch - processPackages [lbt-recipes]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-07 04:19:13] INFO root fetch - processPackages [lbt-recipes]: executing diffoscope
+[2023-05-07 04:19:13] INFO root fetch - processPackages [lbt-recipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-recipes-0.9.0.tar.gz tmp/lbt-recipes-0.9.1.tar.gz --markdown 20230507/l/lbt-recipes/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-07 04:19:13] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: Downloading https://files.pythonhosted.org/packages/71/30/150e60b153ae946322b449de6a9c0c6d24531cbfb1234052ebcc1228333a/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a5.tar.gz
+[2023-05-07 04:19:13] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: Downloading https://files.pythonhosted.org/packages/71/30/150e60b153ae946322b449de6a9c0c6d24531cbfb1234052ebcc1228333a/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a5.tar.gz
+[2023-05-07 04:19:13] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: Downloading https://files.pythonhosted.org/packages/01/89/5cc8fd033a08e10cacd0373d8adba5dc967f3e27860d857d5fd6aae84222/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a6.tar.gz
+[2023-05-07 04:19:13] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: Downloading https://files.pythonhosted.org/packages/01/89/5cc8fd033a08e10cacd0373d8adba5dc967f3e27860d857d5fd6aae84222/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a6.tar.gz
+[2023-05-07 04:19:13] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: executing diffoscope
+[2023-05-07 04:19:13] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a5.tar.gz tmp/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a6.tar.gz --markdown 20230507/o/ovos-audio-transformer-plugin-speechbrain-langdetect/0.0.0a5-0.0.0a6/diff.md --exclude *.pyd
+[2023-05-07 04:19:13] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: executing diffoscope
+[2023-05-07 04:19:13] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a5.tar.gz tmp/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a6.tar.gz --markdown 20230507/o/ovos-audio-transformer-plugin-speechbrain-langdetect/0.0.0a5-0.0.0a6/diff.md --exclude *.pyd
+[2023-05-07 04:19:14] INFO root fetch - main [MainThread]: End processing [lbt-recipes]: success
+[2023-05-07 04:19:14] INFO root fetch - main [MainThread]: End processing [ovos-audio-transformer-plugin-speechbrain-langdetect]: success
+[2023-05-07 04:19:14] INFO root fetch - main [MainThread]: End processing [ovos-audio-transformer-plugin-speechbrain-langdetect]: success
+[2023-05-07 04:19:14] INFO root fetch - main [MainThread]: Store serial: [18003766]
