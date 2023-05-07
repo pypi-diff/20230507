@@ -11421,3 +11421,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 22:42:23] INFO root fetch - main [MainThread]: End processing [custodian]: success
 [2023-05-07 22:42:23] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
 [2023-05-07 22:42:23] INFO root fetch - main [MainThread]: Store serial: [18009669]
+[2023-05-07 22:47:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009669]
+[2023-05-07 22:47:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 22:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycutils
+[2023-05-07 22:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dxsp
+[2023-05-07 22:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netbox-secrets
+[2023-05-07 22:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pitv
+[2023-05-07 22:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: neopolitan
+[2023-05-07 22:47:31] INFO root fetch - processPackages [netbox-secrets]: New version: [1.8.0] Old Version: [1.7.6]
+[2023-05-07 22:47:31] INFO root fetch - processPackages [pycutils]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 22:47:31] INFO root fetch - processPackages [pitv]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 22:47:31] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 22:47:31] INFO root fetch - processPackages [dxsp]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-07 22:47:31] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-07 22:47:31] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230507/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 22:47:31] INFO root fetch - processPackages [pitv]: executing diffoscope
+[2023-05-07 22:47:31] INFO root fetch - processPackages [pitv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pitv-0.0.8.tar.gz tmp/pitv-0.0.9.tar.gz --markdown 20230507/p/pitv/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 22:47:31] INFO root fetch - processPackages [pycutils]: Downloading https://files.pythonhosted.org/packages/d6/3b/88b3cd83c2f957ad676e88bdb1174cf2e3efe3a2c042ec2c60426c8e5e39/pycutils-0.1.0.tar.gz
+[2023-05-07 22:47:32] INFO root fetch - processPackages [netbox-secrets]: Downloading https://files.pythonhosted.org/packages/46/60/a694de21beedffce80f9cab7514e026874b5d5b32cf1540fd20b8fcef5a2/netbox-secrets-1.7.6.tar.gz
+[2023-05-07 22:47:32] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/ef/00/ba4e7a992444f477ad86c1c0c7c1947505fefc2aacbc06e55917d9baad85/dxsp-2.0.5.tar.gz
+[2023-05-07 22:47:32] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-07 22:47:32] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.0.4.tar.gz tmp/dxsp-2.0.5.tar.gz --markdown 20230507/d/dxsp/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-07 22:47:32] INFO root fetch - processPackages [pycutils]: Downloading https://files.pythonhosted.org/packages/1d/5a/b525880bef5bcb33b4158f88f52e350e406eb00ba49face815929811eeee/pycutils-0.1.1.tar.gz
+[2023-05-07 22:47:32] INFO root fetch - processPackages [netbox-secrets]: Downloading https://files.pythonhosted.org/packages/d3/90/5704cbf028c59440481ff4a67c70d783ee4ff16c25b88055118a892d6e47/netbox-secrets-1.8.0.tar.gz
+[2023-05-07 22:47:32] INFO root fetch - processPackages [pycutils]: executing diffoscope
+[2023-05-07 22:47:32] INFO root fetch - processPackages [pycutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycutils-0.1.0.tar.gz tmp/pycutils-0.1.1.tar.gz --markdown 20230507/p/pycutils/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 22:47:32] INFO root fetch - processPackages [netbox-secrets]: executing diffoscope
+[2023-05-07 22:47:32] INFO root fetch - processPackages [netbox-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-secrets-1.7.6.tar.gz tmp/netbox-secrets-1.8.0.tar.gz --markdown 20230507/n/netbox-secrets/1.7.6-1.8.0/diff.md --exclude *.pyd
+[2023-05-07 22:47:32] INFO root fetch - main [MainThread]: End processing [pitv]: success
+[2023-05-07 22:47:33] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-07 22:47:33] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-07 22:47:33] INFO root fetch - main [MainThread]: End processing [pycutils]: success
+[2023-05-07 22:47:34] INFO root fetch - main [MainThread]: End processing [netbox-secrets]: success
+[2023-05-07 22:47:34] INFO root fetch - main [MainThread]: Store serial: [18009684]
