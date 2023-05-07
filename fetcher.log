@@ -9948,3 +9948,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 20:05:09] INFO root fetch - main [MainThread]: End processing [nographs]: success
 [2023-05-07 20:05:11] INFO root fetch - main [MainThread]: End processing [pyVLMP]: success
 [2023-05-07 20:05:11] INFO root fetch - main [MainThread]: Store serial: [18008732]
+[2023-05-07 20:10:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008732]
+[2023-05-07 20:10:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 20:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openrlbenchmark
+[2023-05-07 20:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: piperider-nightly
+[2023-05-07 20:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flxtrd
+[2023-05-07 20:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pitv
+[2023-05-07 20:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: image432
+[2023-05-07 20:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cos-uploader
+[2023-05-07 20:10:20] INFO root fetch - processPackages [flxtrd]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 20:10:20] INFO root fetch - processPackages [cos-uploader]: New version: [2.0.0rc2] Old Version: [2.0.0rc1]
+[2023-05-07 20:10:20] WARNING root fetch - processPackages [image432]: Skipping, unable to determine old version
+[2023-05-07 20:10:20] INFO root fetch - main [MainThread]: End processing [image432] error
+[2023-05-07 20:10:20] INFO root fetch - processPackages [pitv]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 20:10:20] INFO root fetch - processPackages [openrlbenchmark]: New version: [0.2.0b3] Old Version: [0.2.0b2]
+[2023-05-07 20:10:20] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2023-05-07 20:10:20] INFO root fetch - processPackages [flxtrd]: Downloading https://files.pythonhosted.org/packages/7d/a7/0f152f6eea4d6a131b7c1dc739d67c8c05bd2f33e71a6fe3ab7b786d1394/flxtrd-0.0.1.tar.gz
+[2023-05-07 20:10:20] INFO root fetch - processPackages [cos-uploader]: Downloading https://files.pythonhosted.org/packages/58/c3/bc611d053adbd2704e93bebf7511789ced90bbaae95e66e4c13304dda0d8/cos_uploader-2.0.0rc1.tar.gz
+[2023-05-07 20:10:20] INFO root fetch - processPackages [pitv]: Downloading https://files.pythonhosted.org/packages/18/3c/38392ad9d48d24f5debd57bb5430dffdeea86a767efcd102e31b8e4df2cc/pitv-0.0.6.tar.gz
+[2023-05-07 20:10:20] INFO root fetch - processPackages [piperider-nightly]: Downloading https://files.pythonhosted.org/packages/ed/93/38dc4b24d947f1ec271781bdb47a50b77ff762d7a701730c6786ca4ec303/piperider-nightly-0.9.0.20220920.tar.gz
+[2023-05-07 20:10:21] INFO root fetch - processPackages [openrlbenchmark]: Downloading https://files.pythonhosted.org/packages/0e/4c/c77e59e553492f66be339124df5850576a0867ea40474bc32bf4a6f597fe/openrlbenchmark-0.2.0b3.tar.gz
+[2023-05-07 20:10:21] INFO root fetch - processPackages [cos-uploader]: Downloading https://files.pythonhosted.org/packages/89/48/4dc7e04eb666590d47794710059adb1769dc0c5638ca1798f5aa34ccbdb6/cos_uploader-2.0.0rc2.tar.gz
+[2023-05-07 20:10:21] INFO root fetch - processPackages [pitv]: executing diffoscope
+[2023-05-07 20:10:21] INFO root fetch - processPackages [pitv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pitv-0.0.5.tar.gz tmp/pitv-0.0.6.tar.gz --markdown 20230507/p/pitv/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 20:10:21] INFO root fetch - processPackages [flxtrd]: Downloading https://files.pythonhosted.org/packages/cc/a1/4d1c245b02d1f2a6e561e2a5682cb5708b511d4bdceb473a6c0f8e64b392/flxtrd-0.0.2.tar.gz
+[2023-05-07 20:10:21] INFO root fetch - processPackages [openrlbenchmark]: executing diffoscope
+[2023-05-07 20:10:21] INFO root fetch - processPackages [openrlbenchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openrlbenchmark-0.2.0b2.tar.gz tmp/openrlbenchmark-0.2.0b3.tar.gz --markdown 20230507/o/openrlbenchmark/0.2.0b2-0.2.0b3/diff.md --exclude *.pyd
+[2023-05-07 20:10:21] INFO root fetch - processPackages [flxtrd]: executing diffoscope
+[2023-05-07 20:10:21] INFO root fetch - processPackages [flxtrd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flxtrd-0.0.1.tar.gz tmp/flxtrd-0.0.2.tar.gz --markdown 20230507/f/flxtrd/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 20:10:21] INFO root fetch - processPackages [cos-uploader]: executing diffoscope
+[2023-05-07 20:10:21] INFO root fetch - processPackages [cos-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cos_uploader-2.0.0rc1.tar.gz tmp/cos_uploader-2.0.0rc2.tar.gz --markdown 20230507/c/cos-uploader/2.0.0rc1-2.0.0rc2/diff.md --exclude *.pyd
+[2023-05-07 20:10:22] INFO root fetch - main [MainThread]: End processing [flxtrd]: success
+[2023-05-07 20:10:22] INFO root fetch - main [MainThread]: End processing [pitv]: success
+[2023-05-07 20:10:22] INFO root fetch - main [MainThread]: End processing [cos-uploader]: success
+[2023-05-07 20:10:22] INFO root fetch - processPackages [piperider-nightly]: Downloading https://files.pythonhosted.org/packages/a4/47/99354233feb8a6a201731f0992c5656ca2eb5728a26eae7fd09fc5e04b4c/piperider-nightly-0.9.0.20220921.tar.gz
+[2023-05-07 20:10:22] INFO root fetch - main [MainThread]: End processing [openrlbenchmark]: success
+[2023-05-07 20:10:23] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2023-05-07 20:10:23] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230507/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
+[2023-05-07 20:10:26] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2023-05-07 20:10:26] INFO root fetch - main [MainThread]: Store serial: [18008753]
