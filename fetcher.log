@@ -5029,3 +5029,73 @@
 [2023-05-07 11:43:56] INFO root fetch - main [MainThread]: End processing [pdm]: success
 [2023-05-07 11:44:05] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
 [2023-05-07 11:44:05] INFO root fetch - main [MainThread]: Store serial: [18005618]
+[2023-05-07 11:49:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005618]
+[2023-05-07 11:49:15] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-07 11:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: databutton
+[2023-05-07 11:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inverse
+[2023-05-07 11:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onlyfakes
+[2023-05-07 11:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyturf
+[2023-05-07 11:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: valo-api-official
+[2023-05-07 11:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: EdgeGPT
+[2023-05-07 11:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: struct-gpt
+[2023-05-07 11:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PCRinSilico
+[2023-05-07 11:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: certora-cli-alpha-rahav-cert-1987-update-regTest
+[2023-05-07 11:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: onlyfakes
+[2023-05-07 11:49:16] INFO root fetch - processPackages [pyturf]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-05-07 11:49:16] INFO root fetch - processPackages [valo-api-official]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-07 11:49:16] WARNING root fetch - processPackages [onlyfakes]: Skipping, unable to determine old version
+[2023-05-07 11:49:16] INFO root fetch - processPackages [onlyfakes]: Start processing: badi-users
+[2023-05-07 11:49:16] INFO root fetch - main [MainThread]: End processing [onlyfakes] error
+[2023-05-07 11:49:16] INFO root fetch - processPackages [PCRinSilico]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-07 11:49:16] INFO root fetch - processPackages [databutton]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-07 11:49:16] INFO root fetch - processPackages [struct-gpt]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-07 11:49:16] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: New version: [20230507.9.47.577125] Old Version: [20230507.8.27.526824]
+[2023-05-07 11:49:16] WARNING root fetch - processPackages [onlyfakes]: Skipping, unable to determine old version
+[2023-05-07 11:49:16] INFO root fetch - processPackages [onlyfakes]: Start processing: pyswitchbee
+[2023-05-07 11:49:16] INFO root fetch - main [MainThread]: End processing [onlyfakes] error
+[2023-05-07 11:49:16] INFO root fetch - processPackages [EdgeGPT]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-07 11:49:16] INFO root fetch - processPackages [inverse]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 11:49:16] INFO root fetch - processPackages [badi-users]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-07 11:49:16] INFO root fetch - processPackages [pyswitchbee]: New version: [1.7.9] Old Version: [1.7.8]
+[2023-05-07 11:49:16] INFO root fetch - processPackages [PCRinSilico]: Downloading https://files.pythonhosted.org/packages/99/db/e7b6249316fad1e55200105cfda3164d0ddf42be05f388a2c73cdc21a47c/PCRinSilico-1.0.2.tar.gz
+[2023-05-07 11:49:16] INFO root fetch - processPackages [valo-api-official]: Downloading https://files.pythonhosted.org/packages/99/d8/e07363e44a431a3bf2f9584b5b2d34ee49c9cc2e9d7d6dc15a0d55322b19/valo_api_official-1.0.0.tar.gz
+[2023-05-07 11:49:16] INFO root fetch - processPackages [pyturf]: Downloading https://files.pythonhosted.org/packages/f4/b4/10b68829bd1071efff5120c34297161b4ccdcbab8cf75122205794a58421/pyturf-0.6.5.tar.gz
+[2023-05-07 11:49:16] INFO root fetch - processPackages [databutton]: Downloading https://files.pythonhosted.org/packages/97/e4/e81aa45e6614cc27e77afdc05bda0df053f47af67b7f10dd3fa7e90977bf/databutton-0.9.1.tar.gz
+[2023-05-07 11:49:16] INFO root fetch - processPackages [badi-users]: Downloading https://files.pythonhosted.org/packages/20/6f/f723de8c51fc98d2cd0c46142b26407348d01204a9582be823aa7aa3d689/badi_users-1.0.1.tar.gz
+[2023-05-07 11:49:16] INFO root fetch - processPackages [struct-gpt]: Downloading https://files.pythonhosted.org/packages/2c/55/72d4305f52f4e7d1220b3c275ad13aefc2e6045c218da6bcd79c5f4494a1/struct_gpt-0.3.1.tar.gz
+[2023-05-07 11:49:16] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Downloading https://files.pythonhosted.org/packages/18/91/9107948ff93f03169be37397174f066ca051c92e276c8ba5f256faf1536a/certora-cli-alpha-rahav-cert-1987_update_regTest-20230507.8.27.526824.tar.gz
+[2023-05-07 11:49:16] INFO root fetch - processPackages [struct-gpt]: executing diffoscope
+[2023-05-07 11:49:16] INFO root fetch - processPackages [struct-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/struct_gpt-0.3.0.tar.gz tmp/struct_gpt-0.3.1.tar.gz --markdown 20230507/s/struct-gpt/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-07 11:49:16] INFO root fetch - processPackages [pyturf]: executing diffoscope
+[2023-05-07 11:49:16] INFO root fetch - processPackages [pyturf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyturf-0.6.4.tar.gz tmp/pyturf-0.6.5.tar.gz --markdown 20230507/p/pyturf/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-05-07 11:49:16] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/bf/2f/836308dfed796b829ba7ec30332f39ef327f80bde7a3f3f6bb7cd39e4d8a/EdgeGPT-0.3.6.tar.gz
+[2023-05-07 11:49:16] WARNING root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Skipping package: exceeds size limit 38472946>=10485760
+[2023-05-07 11:49:16] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-rahav-cert-1987-update-regTest] error
+[2023-05-07 11:49:16] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-05-07 11:49:16] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.3.5.tar.gz tmp/EdgeGPT-0.3.6.tar.gz --markdown 20230507/E/EdgeGPT/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-07 11:49:16] INFO root fetch - processPackages [inverse]: Downloading https://files.pythonhosted.org/packages/3a/53/cfd2fdd9706f14977bcf96220af42be872bae27ffd7d5e8c77b2a430b4e0/inverse-0.0.8-py3-none-any.whl
+[2023-05-07 11:49:16] INFO root fetch - processPackages [PCRinSilico]: Downloading https://files.pythonhosted.org/packages/df/de/edc3e7de5af7cb053868a917af19c2a13ff37998ea3651e420b8a6904867/PCRinSilico-1.1.0.tar.gz
+[2023-05-07 11:49:16] INFO root fetch - processPackages [inverse]: executing diffoscope
+[2023-05-07 11:49:16] INFO root fetch - processPackages [inverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverse-0.0.7-py3-none-any.whl.zip tmp/inverse-0.0.8-py3-none-any.whl.zip --markdown 20230507/i/inverse/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 11:49:16] INFO root fetch - processPackages [pyswitchbee]: executing diffoscope
+[2023-05-07 11:49:16] INFO root fetch - processPackages [pyswitchbee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyswitchbee-1.7.8.tar.gz tmp/pyswitchbee-1.7.9.tar.gz --markdown 20230507/p/pyswitchbee/1.7.8-1.7.9/diff.md --exclude *.pyd
+[2023-05-07 11:49:16] INFO root fetch - processPackages [PCRinSilico]: executing diffoscope
+[2023-05-07 11:49:16] INFO root fetch - processPackages [PCRinSilico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PCRinSilico-1.0.2.tar.gz tmp/PCRinSilico-1.1.0.tar.gz --markdown 20230507/P/PCRinSilico/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-05-07 11:49:16] INFO root fetch - processPackages [valo-api-official]: Downloading https://files.pythonhosted.org/packages/aa/82/e59946ebe7e32a28876f6d395d06244e30e3d13d8aa3bcb7b568219e8ba7/valo_api_official-1.0.1.tar.gz
+[2023-05-07 11:49:16] INFO root fetch - processPackages [valo-api-official]: executing diffoscope
+[2023-05-07 11:49:16] INFO root fetch - processPackages [valo-api-official]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valo_api_official-1.0.0.tar.gz tmp/valo_api_official-1.0.1.tar.gz --markdown 20230507/v/valo-api-official/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-07 11:49:16] INFO root fetch - processPackages [databutton]: Downloading https://files.pythonhosted.org/packages/5c/59/3ecc3881c8c0088b35a444d0208f992442d429068966d08be417ede43a72/databutton-0.9.2.tar.gz
+[2023-05-07 11:49:16] INFO root fetch - processPackages [badi-users]: executing diffoscope
+[2023-05-07 11:49:16] INFO root fetch - processPackages [badi-users]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badi_users-1.0.0.tar.gz tmp/badi_users-1.0.1.tar.gz --markdown 20230507/b/badi-users/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-07 11:49:17] INFO root fetch - processPackages [databutton]: executing diffoscope
+[2023-05-07 11:49:17] INFO root fetch - processPackages [databutton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databutton-0.9.1.tar.gz tmp/databutton-0.9.2.tar.gz --markdown 20230507/d/databutton/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-07 11:49:17] INFO root fetch - main [MainThread]: End processing [struct-gpt]: success
+[2023-05-07 11:49:17] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-05-07 11:49:17] INFO root fetch - main [MainThread]: End processing [PCRinSilico]: success
+[2023-05-07 11:49:18] INFO root fetch - main [MainThread]: End processing [valo-api-official]: success
+[2023-05-07 11:49:18] INFO root fetch - main [MainThread]: End processing [pyturf]: success
+[2023-05-07 11:49:18] INFO root fetch - main [MainThread]: End processing [pyswitchbee]: success
+[2023-05-07 11:49:18] INFO root fetch - main [MainThread]: End processing [inverse]: success
+[2023-05-07 11:49:18] INFO root fetch - main [MainThread]: End processing [databutton]: success
+[2023-05-07 11:49:21] INFO root fetch - main [MainThread]: End processing [badi-users]: success
+[2023-05-07 11:49:21] INFO root fetch - main [MainThread]: Store serial: [18005655]
