@@ -7013,3 +7013,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 15:18:41] INFO root fetch - main [MainThread]: End processing [geofileops]: success
 [2023-05-07 15:19:19] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-05-07 15:19:19] INFO root fetch - main [MainThread]: Store serial: [18006995]
+[2023-05-07 15:24:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006995]
+[2023-05-07 15:24:28] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-07 15:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: epdx
+[2023-05-07 15:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: promethium
+[2023-05-07 15:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: image-to-arduino
+[2023-05-07 15:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aij-webcam
+[2023-05-07 15:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fbgemm-gpu-nightly
+[2023-05-07 15:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: local-lang
+[2023-05-07 15:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lesscode-py
+[2023-05-07 15:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support
+[2023-05-07 15:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: KDEpy
+[2023-05-07 15:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: smartjs
+[2023-05-07 15:24:28] WARNING root fetch - processPackages [promethium]: Skipping, unable to determine old version
+[2023-05-07 15:24:28] INFO root fetch - processPackages [promethium]: Start processing: palmers-agents-general
+[2023-05-07 15:24:28] INFO root fetch - main [MainThread]: End processing [promethium] error
+[2023-05-07 15:24:28] INFO root fetch - processPackages [image-to-arduino]: New version: [1.0.4] Old Version: [1.0.3.9]
+[2023-05-07 15:24:28] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.5.6] Old Version: [2023.5.5]
+[2023-05-07 15:24:28] INFO root fetch - processPackages [smartjs]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 15:24:28] INFO root fetch - processPackages [aij-webcam]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-07 15:24:28] INFO root fetch - processPackages [palmers-agents-general]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 15:24:28] INFO root fetch - processPackages [lesscode-py]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-07 15:24:28] WARNING root fetch - processPackages [epdx]: Skipping, unable to determine old version
+[2023-05-07 15:24:28] INFO root fetch - processPackages [epdx]: Start processing: corecrud
+[2023-05-07 15:24:28] INFO root fetch - main [MainThread]: End processing [epdx] error
+[2023-05-07 15:24:28] INFO root fetch - processPackages [smartjs]: executing diffoscope
+[2023-05-07 15:24:28] INFO root fetch - processPackages [smartjs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartjs-0.0.7.tar.gz tmp/smartjs-0.0.8.tar.gz --markdown 20230507/s/smartjs/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 15:24:28] WARNING root fetch - processPackages [local-lang]: Skipping, unable to determine old version
+[2023-05-07 15:24:28] INFO root fetch - processPackages [certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support]: New version: [20230507.13.22.252755] Old Version: [20230504.21.22.932190]
+[2023-05-07 15:24:28] INFO root fetch - main [MainThread]: End processing [local-lang] error
+[2023-05-07 15:24:28] INFO root fetch - processPackages [KDEpy]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-07 15:24:28] INFO root fetch - processPackages [palmers-agents-general]: executing diffoscope
+[2023-05-07 15:24:28] INFO root fetch - processPackages [palmers-agents-general]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palmers_agents_general-0.0.1.tar.gz tmp/palmers_agents_general-0.0.2.tar.gz --markdown 20230507/p/palmers-agents-general/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 15:24:28] INFO root fetch - processPackages [aij-webcam]: executing diffoscope
+[2023-05-07 15:24:28] INFO root fetch - processPackages [aij-webcam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-webcam-1.1.3.tar.gz tmp/aij-webcam-1.1.4.tar.gz --markdown 20230507/a/aij-webcam/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-07 15:24:28] INFO root fetch - processPackages [lesscode-py]: executing diffoscope
+[2023-05-07 15:24:28] INFO root fetch - processPackages [lesscode-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode-py-0.3.8.tar.gz tmp/lesscode-py-0.3.9.tar.gz --markdown 20230507/l/lesscode-py/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-07 15:24:28] ERROR root fetch - processPackages [corecrud]: Unable to get metadata: No such project 'corecrud'
+[2023-05-07 15:24:28] INFO root fetch - main [MainThread]: End processing [corecrud] error
+[2023-05-07 15:24:28] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/74/b4/2dc848f21d9417ee871ba2b82958d4e533a0562afab6c7d8fadb0a7cf7ab/image-to-arduino-1.0.4.tar.gz
+[2023-05-07 15:24:28] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/5c/65/4778b4ef77ead7b7228a05f7724a4c08664f2b91c916fe5a0faacf3073cb/fbgemm_gpu_nightly-2023.5.5-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-07 15:24:29] INFO root fetch - processPackages [KDEpy]: Downloading https://files.pythonhosted.org/packages/9d/36/da3f58191bf5e12bd99fc27d7bf1688528ac9529b94f851c647ef1974052/KDEpy-1.1.1-cp39-cp39-win_amd64.whl
+[2023-05-07 15:24:29] INFO root fetch - processPackages [certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support]: Downloading https://files.pythonhosted.org/packages/da/73/775f937f866da276570dfbd5ba445a42ca857a3433717fdcceb0eca3cb7b/certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support-20230504.21.22.932190.tar.gz
+[2023-05-07 15:24:29] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 267850578>=10485760
+[2023-05-07 15:24:29] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-05-07 15:24:29] INFO root fetch - processPackages [image-to-arduino]: executing diffoscope
+[2023-05-07 15:24:29] INFO root fetch - processPackages [image-to-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-to-arduino-1.0.3.9.tar.gz tmp/image-to-arduino-1.0.4.tar.gz --markdown 20230507/i/image-to-arduino/1.0.3.9-1.0.4/diff.md --exclude *.pyd
+[2023-05-07 15:24:29] WARNING root fetch - processPackages [certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support]: Skipping package: exceeds size limit 38364467>=10485760
+[2023-05-07 15:24:29] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support] error
+[2023-05-07 15:24:29] INFO root fetch - processPackages [KDEpy]: Downloading https://files.pythonhosted.org/packages/0b/ce/c412c33480b5c332fb20b46fe6122ba74f931479e9f8e9e4fdb2504b7fbd/KDEpy-1.1.2-cp39-cp39-macosx_10_9_x86_64.whl
+[2023-05-07 15:24:29] INFO root fetch - processPackages [KDEpy]: executing diffoscope
+[2023-05-07 15:24:29] INFO root fetch - processPackages [KDEpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KDEpy-1.1.1-cp39-cp39-win_amd64.whl.zip tmp/KDEpy-1.1.2-cp39-cp39-macosx_10_9_x86_64.whl.zip --markdown 20230507/K/KDEpy/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-07 15:24:29] INFO root fetch - main [MainThread]: End processing [palmers-agents-general]: success
+[2023-05-07 15:24:29] INFO root fetch - main [MainThread]: End processing [smartjs]: success
+[2023-05-07 15:24:30] INFO root fetch - main [MainThread]: End processing [aij-webcam]: success
+[2023-05-07 15:24:30] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
+[2023-05-07 15:24:30] INFO root fetch - main [MainThread]: End processing [lesscode-py]: success
+[2023-05-07 15:24:30] INFO root fetch - main [MainThread]: End processing [KDEpy]: success
+[2023-05-07 15:24:30] INFO root fetch - main [MainThread]: Store serial: [18007046]
