@@ -8338,3 +8338,101 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 17:28:04] INFO root fetch - main [MainThread]: End processing [tumfl]: success
 [2023-05-07 17:28:08] INFO root fetch - main [MainThread]: End processing [anylabeling-gpu]: success
 [2023-05-07 17:28:08] INFO root fetch - main [MainThread]: Store serial: [18007846]
+[2023-05-07 17:33:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007846]
+[2023-05-07 17:33:21] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-07 17:33:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qsi-tk
+[2023-05-07 17:33:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xcpcio-board-spider
+[2023-05-07 17:33:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: corecrud
+[2023-05-07 17:33:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: magpylib-material-response
+[2023-05-07 17:33:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xia-service-cloudflare
+[2023-05-07 17:33:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: savvy-rest
+[2023-05-07 17:33:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: savvy-rest
+[2023-05-07 17:33:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyghs
+[2023-05-07 17:33:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flask-guard
+[2023-05-07 17:33:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: khloraascaf-utils
+[2023-05-07 17:33:21] INFO root fetch - processPackages [qsi-tk]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-05-07 17:33:21] INFO root fetch - processPackages [corecrud]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 17:33:21] INFO root fetch - processPackages [xcpcio-board-spider]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 17:33:22] INFO root fetch - processPackages [savvy-rest]: New version: [0.0.1.dev0] Old Version: [0.0.1]
+[2023-05-07 17:33:22] INFO root fetch - processPackages [savvy-rest]: New version: [0.0.1.dev0] Old Version: [0.0.1]
+[2023-05-07 17:33:22] INFO root fetch - processPackages [corecrud]: executing diffoscope
+[2023-05-07 17:33:22] INFO root fetch - processPackages [corecrud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corecrud-0.1.1.tar.gz tmp/corecrud-0.1.2.tar.gz --markdown 20230507/c/corecrud/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 17:33:22] WARNING root fetch - processPackages [xia-service-cloudflare]: Skipping, unable to determine old version
+[2023-05-07 17:33:22] INFO root fetch - processPackages [xia-service-cloudflare]: Start processing: flask-guard
+[2023-05-07 17:33:22] INFO root fetch - main [MainThread]: End processing [xia-service-cloudflare] error
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 17:33:22] INFO root fetch - processPackages [magpylib-material-response]: New version: [0.1.0a5] Old Version: [0.1.0a4]
+[2023-05-07 17:33:22] INFO root fetch - processPackages [pyghs]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-07 17:33:22] INFO root fetch - processPackages [khloraascaf-utils]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 17:33:22] INFO root fetch - processPackages [qsi-tk]: Downloading https://files.pythonhosted.org/packages/be/a8/a9a126d49b6771fad7560220c7dd63e39be838b21baaca2013d347021bf3/qsi-tk-0.4.6.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [savvy-rest]: Downloading https://files.pythonhosted.org/packages/57/ed/3e10fd48e19d69631228ba22d851d0532a42a685eef9d0f6ee7c38a86fe3/savvy_rest-0.0.1.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [savvy-rest]: Downloading https://files.pythonhosted.org/packages/57/ed/3e10fd48e19d69631228ba22d851d0532a42a685eef9d0f6ee7c38a86fe3/savvy_rest-0.0.1.tar.gz
+[2023-05-07 17:33:22] WARNING root fetch - processPackages [qsi-tk]: Skipping package: exceeds size limit 58243838>=10485760
+[2023-05-07 17:33:22] INFO root fetch - processPackages [qsi-tk]: Start processing: flask-guard
+[2023-05-07 17:33:22] INFO root fetch - main [MainThread]: End processing [qsi-tk] error
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: Downloading https://files.pythonhosted.org/packages/41/57/3049e7afdc3fad252ef915fa93b12f1b56520e5bef0228eb2e3e719def4b/flask-guard-0.0.6.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [pyghs]: Downloading https://files.pythonhosted.org/packages/2c/77/d7d1fb2d615d651e1a8d54593eb6b27bdb8d97b1acda6c11ce5b5357660f/pyghs-0.2.2.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [khloraascaf-utils]: Downloading https://files.pythonhosted.org/packages/8d/b1/413c446657679057e98d9bbb4c0e720f98d2e0320ec15853242f0664fad5/khloraascaf_utils-0.6.1.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: Downloading https://files.pythonhosted.org/packages/41/57/3049e7afdc3fad252ef915fa93b12f1b56520e5bef0228eb2e3e719def4b/flask-guard-0.0.6.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 17:33:22] INFO root fetch - processPackages [magpylib-material-response]: Downloading https://files.pythonhosted.org/packages/ee/2e/3d890302931c9051178092e5ac77fe17ea6d3726b0f1e169b003b32b5c68/magpylib-material-response-0.1.0a4.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: Downloading https://files.pythonhosted.org/packages/41/57/3049e7afdc3fad252ef915fa93b12f1b56520e5bef0228eb2e3e719def4b/flask-guard-0.0.6.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [xcpcio-board-spider]: Downloading https://files.pythonhosted.org/packages/23/85/7e2bcc229940ed51da5d1c47693efc3f82ae21eecd44490b8897c460f772/xcpcio_board_spider-0.0.9.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [xcpcio-board-spider]: executing diffoscope
+[2023-05-07 17:33:22] INFO root fetch - processPackages [xcpcio-board-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcpcio_board_spider-0.0.8.tar.gz tmp/xcpcio_board_spider-0.0.9.tar.gz --markdown 20230507/x/xcpcio-board-spider/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 17:33:22] INFO root fetch - processPackages [savvy-rest]: Downloading https://files.pythonhosted.org/packages/e5/73/9460fd3533d1aabf4eba2e215a55c5e6b42dcd5fd9f6fdf74e5d0fe3f2a5/savvy_rest-0.0.1.dev0.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [savvy-rest]: Downloading https://files.pythonhosted.org/packages/e5/73/9460fd3533d1aabf4eba2e215a55c5e6b42dcd5fd9f6fdf74e5d0fe3f2a5/savvy_rest-0.0.1.dev0.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: Downloading https://files.pythonhosted.org/packages/bd/37/c0c414572ca0951d1316d976edc3caf6eb884c39ac06e2c7a197006353c5/flask-guard-0.0.7.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [pyghs]: Downloading https://files.pythonhosted.org/packages/6f/ee/2067498270c86f7d135b8f43473d504250b1ce1886ccb7e7c63d31b2a6ce/pyghs-0.2.3.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: Downloading https://files.pythonhosted.org/packages/bd/37/c0c414572ca0951d1316d976edc3caf6eb884c39ac06e2c7a197006353c5/flask-guard-0.0.7.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: Downloading https://files.pythonhosted.org/packages/bd/37/c0c414572ca0951d1316d976edc3caf6eb884c39ac06e2c7a197006353c5/flask-guard-0.0.7.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [khloraascaf-utils]: Downloading https://files.pythonhosted.org/packages/60/bb/43393d615f052a5b7494827a30bcea0b1868838f81c14128f57e8022d5f5/khloraascaf_utils-0.6.2.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [magpylib-material-response]: Downloading https://files.pythonhosted.org/packages/bd/eb/0af3582f8e6900af1cede6c7ad1435127f74aeb22de793a4828fb73d1229/magpylib-material-response-0.1.0a5.tar.gz
+[2023-05-07 17:33:22] INFO root fetch - processPackages [pyghs]: executing diffoscope
+[2023-05-07 17:33:22] INFO root fetch - processPackages [savvy-rest]: executing diffoscope
+[2023-05-07 17:33:22] INFO root fetch - processPackages [savvy-rest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/savvy_rest-0.0.1.tar.gz tmp/savvy_rest-0.0.1.dev0.tar.gz --markdown 20230507/s/savvy-rest/0.0.1-0.0.1.dev0/diff.md --exclude *.pyd
+[2023-05-07 17:33:22] INFO root fetch - processPackages [pyghs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyghs-0.2.2.tar.gz tmp/pyghs-0.2.3.tar.gz --markdown 20230507/p/pyghs/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-07 17:33:22] INFO root fetch - processPackages [savvy-rest]: executing diffoscope
+[2023-05-07 17:33:22] INFO root fetch - processPackages [savvy-rest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/savvy_rest-0.0.1.tar.gz tmp/savvy_rest-0.0.1.dev0.tar.gz --markdown 20230507/s/savvy-rest/0.0.1-0.0.1.dev0/diff.md --exclude *.pyd
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: executing diffoscope
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-guard-0.0.6.tar.gz tmp/flask-guard-0.0.7.tar.gz --markdown 20230507/f/flask-guard/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: executing diffoscope
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-guard-0.0.6.tar.gz tmp/flask-guard-0.0.7.tar.gz --markdown 20230507/f/flask-guard/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 17:33:22] INFO root fetch - processPackages [magpylib-material-response]: executing diffoscope
+[2023-05-07 17:33:22] INFO root fetch - processPackages [magpylib-material-response]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magpylib-material-response-0.1.0a4.tar.gz tmp/magpylib-material-response-0.1.0a5.tar.gz --markdown 20230507/m/magpylib-material-response/0.1.0a4-0.1.0a5/diff.md --exclude *.pyd
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: executing diffoscope
+[2023-05-07 17:33:22] INFO root fetch - processPackages [flask-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-guard-0.0.6.tar.gz tmp/flask-guard-0.0.7.tar.gz --markdown 20230507/f/flask-guard/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 17:33:22] INFO root fetch - processPackages [khloraascaf-utils]: executing diffoscope
+[2023-05-07 17:33:22] INFO root fetch - processPackages [khloraascaf-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khloraascaf_utils-0.6.1.tar.gz tmp/khloraascaf_utils-0.6.2.tar.gz --markdown 20230507/k/khloraascaf-utils/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-05-07 17:33:23] INFO root fetch - processPackages [corecrud]: Start processing: flask-guard
+[2023-05-07 17:33:23] INFO root fetch - main [MainThread]: End processing [corecrud]: success
+[2023-05-07 17:33:23] INFO root fetch - processPackages [flask-guard]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 17:33:23] INFO root fetch - processPackages [flask-guard]: executing diffoscope
+[2023-05-07 17:33:23] INFO root fetch - processPackages [flask-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-guard-0.0.6.tar.gz tmp/flask-guard-0.0.7.tar.gz --markdown 20230507/f/flask-guard/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 17:33:23] INFO root fetch - processPackages [xcpcio-board-spider]: Start processing: flask-guard
+[2023-05-07 17:33:23] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
+[2023-05-07 17:33:23] INFO root fetch - processPackages [flask-guard]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 17:33:24] INFO root fetch - processPackages [flask-guard]: executing diffoscope
+[2023-05-07 17:33:24] INFO root fetch - processPackages [flask-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-guard-0.0.6.tar.gz tmp/flask-guard-0.0.7.tar.gz --markdown 20230507/f/flask-guard/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 17:33:24] INFO root fetch - processPackages [pyghs]: Start processing: flask-guard
+[2023-05-07 17:33:24] INFO root fetch - main [MainThread]: End processing [pyghs]: success
+[2023-05-07 17:33:24] INFO root fetch - processPackages [flask-guard]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 17:33:24] INFO root fetch - processPackages [flask-guard]: executing diffoscope
+[2023-05-07 17:33:24] INFO root fetch - processPackages [flask-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-guard-0.0.6.tar.gz tmp/flask-guard-0.0.7.tar.gz --markdown 20230507/f/flask-guard/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 17:33:24] INFO root fetch - processPackages [savvy-rest]: Start processing: evina
+[2023-05-07 17:33:24] INFO root fetch - main [MainThread]: End processing [savvy-rest]: success
+[2023-05-07 17:33:24] INFO root fetch - processPackages [evina]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-07 17:33:24] INFO root fetch - main [MainThread]: End processing [savvy-rest]: success
+[2023-05-07 17:33:24] INFO root fetch - processPackages [evina]: executing diffoscope
+[2023-05-07 17:33:24] INFO root fetch - processPackages [evina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evina-1.0.2.tar.gz tmp/evina-1.0.3.tar.gz --markdown 20230507/e/evina/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-07 17:33:24] INFO root fetch - main [MainThread]: End processing [flask-guard]: success
+[2023-05-07 17:33:24] INFO root fetch - main [MainThread]: End processing [flask-guard]: success
+[2023-05-07 17:33:24] INFO root fetch - main [MainThread]: End processing [flask-guard]: success
+[2023-05-07 17:33:24] INFO root fetch - main [MainThread]: End processing [flask-guard]: success
+[2023-05-07 17:33:24] INFO root fetch - main [MainThread]: End processing [magpylib-material-response]: success
+[2023-05-07 17:33:25] INFO root fetch - main [MainThread]: End processing [khloraascaf-utils]: success
+[2023-05-07 17:33:25] INFO root fetch - main [MainThread]: End processing [flask-guard]: success
+[2023-05-07 17:33:25] INFO root fetch - main [MainThread]: End processing [flask-guard]: success
+[2023-05-07 17:33:25] INFO root fetch - main [MainThread]: End processing [evina]: success
+[2023-05-07 17:33:25] INFO root fetch - main [MainThread]: Store serial: [18007907]
