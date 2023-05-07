@@ -10070,3 +10070,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 20:15:40] INFO root fetch - main [MainThread]: End processing [pyemaps]: success
 [2023-05-07 20:15:41] INFO root fetch - main [MainThread]: End processing [orjson]: success
 [2023-05-07 20:15:41] INFO root fetch - main [MainThread]: Store serial: [18008804]
+[2023-05-07 20:20:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008804]
+[2023-05-07 20:20:51] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 20:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uoy-assessment-uploader
+[2023-05-07 20:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: circuitpython-bma423
+[2023-05-07 20:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: omoment
+[2023-05-07 20:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastapi-sa-orm-filter
+[2023-05-07 20:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gravitypy
+[2023-05-07 20:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xyznetwork-lib
+[2023-05-07 20:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mysqlcipher
+[2023-05-07 20:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-tsp
+[2023-05-07 20:20:51] WARNING root fetch - processPackages [circuitpython-bma423]: Skipping, unable to determine old version
+[2023-05-07 20:20:51] INFO root fetch - main [MainThread]: End processing [circuitpython-bma423] error
+[2023-05-07 20:20:51] INFO root fetch - processPackages [uoy-assessment-uploader]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-07 20:20:51] INFO root fetch - processPackages [django-tsp]: New version: [3.14.5] Old Version: [3.14.2]
+[2023-05-07 20:20:51] WARNING root fetch - processPackages [fastapi-sa-orm-filter]: Skipping, unable to determine old version
+[2023-05-07 20:20:51] INFO root fetch - processPackages [omoment]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 20:20:51] WARNING root fetch - processPackages [xyznetwork-lib]: Skipping, unable to determine old version
+[2023-05-07 20:20:51] INFO root fetch - main [MainThread]: End processing [fastapi-sa-orm-filter] error
+[2023-05-07 20:20:51] INFO root fetch - processPackages [mysqlcipher]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-07 20:20:51] INFO root fetch - processPackages [gravitypy]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-07 20:20:51] INFO root fetch - main [MainThread]: End processing [xyznetwork-lib] error
+[2023-05-07 20:20:51] INFO root fetch - processPackages [django-tsp]: executing diffoscope
+[2023-05-07 20:20:51] INFO root fetch - processPackages [django-tsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tsp-3.14.2-py3-none-any.whl.zip tmp/django_tsp-3.14.5.tar.gz --markdown 20230507/d/django-tsp/3.14.2-3.14.5/diff.md --exclude *.pyd
+[2023-05-07 20:20:51] INFO root fetch - processPackages [mysqlcipher]: Downloading https://files.pythonhosted.org/packages/eb/15/271b5879486a85ebfa0f23ac0a6815d1f030a0e138cf504cae75461a3b4c/mysqlcipher-0.1.2.tar.gz
+[2023-05-07 20:20:51] INFO root fetch - processPackages [omoment]: Downloading https://files.pythonhosted.org/packages/0b/df/e03f4dba5536dc1bb8bb41bb38c3b1456edd6105c6aa214acdf2c70b965d/omoment-0.1.3.tar.gz
+[2023-05-07 20:20:51] INFO root fetch - processPackages [uoy-assessment-uploader]: Downloading https://files.pythonhosted.org/packages/38/28/b58517e749d6887a0a936ac62d1ef2428a397f16021e30a28b9b425f087e/uoy-assessment-uploader-0.2.0.tar.gz
+[2023-05-07 20:20:51] INFO root fetch - processPackages [gravitypy]: Downloading https://files.pythonhosted.org/packages/f0/c5/67e42dd842c5899c368d37fe899b9615b3672b0b287ebf05bad3169a0a6c/gravitypy-1.0.2.tar.gz
+[2023-05-07 20:20:51] INFO root fetch - processPackages [uoy-assessment-uploader]: executing diffoscope
+[2023-05-07 20:20:51] INFO root fetch - processPackages [uoy-assessment-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uoy-assessment-uploader-0.1.1.tar.gz tmp/uoy-assessment-uploader-0.2.0.tar.gz --markdown 20230507/u/uoy-assessment-uploader/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 20:20:51] INFO root fetch - processPackages [gravitypy]: executing diffoscope
+[2023-05-07 20:20:51] INFO root fetch - processPackages [gravitypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitypy-1.0.1.tar.gz tmp/gravitypy-1.0.2.tar.gz --markdown 20230507/g/gravitypy/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-07 20:20:51] INFO root fetch - processPackages [mysqlcipher]: Downloading https://files.pythonhosted.org/packages/1a/c9/d229ab34da62f061a6279df4b2ace1a20721da647d44b547b310f1eceba1/mysqlcipher-0.1.3.tar.gz
+[2023-05-07 20:20:51] INFO root fetch - processPackages [omoment]: Downloading https://files.pythonhosted.org/packages/99/aa/a27a8165f5c04bd5f27d2a916f5ea09dff7f773041db3eb2202e6c84be9e/omoment-0.1.4.tar.gz
+[2023-05-07 20:20:51] INFO root fetch - processPackages [omoment]: executing diffoscope
+[2023-05-07 20:20:51] INFO root fetch - processPackages [omoment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omoment-0.1.3.tar.gz tmp/omoment-0.1.4.tar.gz --markdown 20230507/o/omoment/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 20:20:51] INFO root fetch - processPackages [mysqlcipher]: executing diffoscope
+[2023-05-07 20:20:51] INFO root fetch - processPackages [mysqlcipher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mysqlcipher-0.1.2.tar.gz tmp/mysqlcipher-0.1.3.tar.gz --markdown 20230507/m/mysqlcipher/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 20:20:52] INFO root fetch - main [MainThread]: End processing [django-tsp]: success
+[2023-05-07 20:20:52] INFO root fetch - main [MainThread]: End processing [uoy-assessment-uploader]: success
+[2023-05-07 20:20:52] INFO root fetch - main [MainThread]: End processing [gravitypy]: success
+[2023-05-07 20:20:52] INFO root fetch - main [MainThread]: End processing [mysqlcipher]: success
+[2023-05-07 20:20:53] INFO root fetch - main [MainThread]: End processing [omoment]: success
+[2023-05-07 20:20:53] INFO root fetch - main [MainThread]: Store serial: [18008834]
