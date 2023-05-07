@@ -6720,3 +6720,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 14:46:58] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
 [2023-05-07 14:47:27] INFO root fetch - main [MainThread]: End processing [prelude-sdk]: success
 [2023-05-07 14:47:27] INFO root fetch - main [MainThread]: Store serial: [18006764]
+[2023-05-07 14:52:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006764]
+[2023-05-07 14:52:36] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 14:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensorcircuit-nightly
+[2023-05-07 14:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: client-order-fix
+[2023-05-07 14:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syft
+[2023-05-07 14:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xia-service
+[2023-05-07 14:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bw-graph-tools
+[2023-05-07 14:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyfmc
+[2023-05-07 14:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rootbox
+[2023-05-07 14:52:36] INFO root fetch - processPackages [client-order-fix]: New version: [0.4] Old Version: [0.3]
+[2023-05-07 14:52:36] WARNING root fetch - processPackages [xia-service]: Skipping, unable to determine old version
+[2023-05-07 14:52:36] INFO root fetch - main [MainThread]: End processing [xia-service] error
+[2023-05-07 14:52:36] INFO root fetch - processPackages [pyfmc]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 14:52:36] INFO root fetch - processPackages [syft]: New version: [0.8.1b1] Old Version: [0.8.0b9]
+[2023-05-07 14:52:36] INFO root fetch - processPackages [bw-graph-tools]: New version: [0.2.1] Old Version: [0.1.1]
+[2023-05-07 14:52:37] INFO root fetch - processPackages [rootbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 14:52:37] INFO root fetch - processPackages [pyfmc]: Downloading https://files.pythonhosted.org/packages/4b/db/ba8a7bdb440c9f938ea1f98a75f3e42713a92d2af7a6a56c5284701f45cf/pyfmc-0.0.5.tar.gz
+[2023-05-07 14:52:37] INFO root fetch - processPackages [client-order-fix]: Downloading https://files.pythonhosted.org/packages/5c/79/8030fbdbce6feaaf7346e6dd9734d98a509343bd55548872d5541a1cc873/client_order_fix-0.3.tar.gz
+[2023-05-07 14:52:37] INFO root fetch - processPackages [bw-graph-tools]: Downloading https://files.pythonhosted.org/packages/32/f8/cfb044c82ecf0abe50fb8203a590038df7cf283b4fe4053886173df9f5ce/bw_graph_tools-0.1.1.tar.gz
+[2023-05-07 14:52:37] INFO root fetch - processPackages [syft]: Downloading https://files.pythonhosted.org/packages/59/2a/de5855ad933fea0f7260c144e45216158852b7a15c0c65452a16b7427292/syft-0.8.0b9.tar.gz
+[2023-05-07 14:52:37] INFO root fetch - processPackages [client-order-fix]: Downloading https://files.pythonhosted.org/packages/37/77/db9e0bfeb0bc087dabf4fbb0621a4cd60c1675056708966b52803dededde/client_order_fix-0.4.tar.gz
+[2023-05-07 14:52:37] INFO root fetch - processPackages [pyfmc]: Downloading https://files.pythonhosted.org/packages/c8/de/4f989ee202512e1b99bbd27da5e451977874204cb17f455374016d99d3d9/pyfmc-0.0.6.tar.gz
+[2023-05-07 14:52:37] INFO root fetch - processPackages [bw-graph-tools]: Downloading https://files.pythonhosted.org/packages/cf/72/b205e6ca672cacd690e3a117cb7ffda6938f07f399a30e41088a0580b623/bw_graph_tools-0.2.1.tar.gz
+[2023-05-07 14:52:37] INFO root fetch - processPackages [pyfmc]: executing diffoscope
+[2023-05-07 14:52:37] INFO root fetch - processPackages [pyfmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfmc-0.0.5.tar.gz tmp/pyfmc-0.0.6.tar.gz --markdown 20230507/p/pyfmc/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 14:52:37] INFO root fetch - processPackages [client-order-fix]: executing diffoscope
+[2023-05-07 14:52:37] INFO root fetch - processPackages [client-order-fix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/client_order_fix-0.3.tar.gz tmp/client_order_fix-0.4.tar.gz --markdown 20230507/c/client-order-fix/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-07 14:52:37] INFO root fetch - processPackages [rootbox]: executing diffoscope
+[2023-05-07 14:52:37] INFO root fetch - processPackages [rootbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rootbox-0.0.8.tar.gz tmp/rootbox-0.0.9.tar.gz --markdown 20230507/r/rootbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 14:52:37] INFO root fetch - processPackages [bw-graph-tools]: executing diffoscope
+[2023-05-07 14:52:37] INFO root fetch - processPackages [bw-graph-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bw_graph_tools-0.1.1.tar.gz tmp/bw_graph_tools-0.2.1.tar.gz --markdown 20230507/b/bw-graph-tools/0.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-05-07 14:52:37] INFO root fetch - processPackages [syft]: Downloading https://files.pythonhosted.org/packages/0b/69/84e3ffccfe599b7e8b59a23868340f72efc7fe28387734d9908c8079b755/syft-0.8.1b1.tar.gz
+[2023-05-07 14:52:37] INFO root fetch - processPackages [syft]: executing diffoscope
+[2023-05-07 14:52:37] INFO root fetch - processPackages [syft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syft-0.8.0b9.tar.gz tmp/syft-0.8.1b1.tar.gz --markdown 20230507/s/syft/0.8.0b9-0.8.1b1/diff.md --exclude *.pyd
+[2023-05-07 14:52:38] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.0.dev20230507] Old Version: [0.9.0.dev20230506]
+[2023-05-07 14:52:38] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/87/39/935318c42a7345ecc9ef07238a38d267ea2d08516ca4e40789f9903838a1/tensorcircuit-nightly-0.9.0.dev20230507.tar.gz
+[2023-05-07 14:52:38] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-05-07 14:52:38] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.0.dev20230506.tar.gz tmp/tensorcircuit-nightly-0.9.0.dev20230507.tar.gz --markdown 20230507/t/tensorcircuit-nightly/0.9.0.dev20230506-0.9.0.dev20230507/diff.md --exclude *.pyd
+[2023-05-07 14:52:38] INFO root fetch - main [MainThread]: End processing [client-order-fix]: success
+[2023-05-07 14:52:38] INFO root fetch - main [MainThread]: End processing [pyfmc]: success
+[2023-05-07 14:52:38] INFO root fetch - main [MainThread]: End processing [rootbox]: success
+[2023-05-07 14:52:38] INFO root fetch - main [MainThread]: End processing [bw-graph-tools]: success
+[2023-05-07 14:52:40] INFO root fetch - main [MainThread]: End processing [syft]: success
+[2023-05-07 14:52:40] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2023-05-07 14:52:40] INFO root fetch - main [MainThread]: Store serial: [18006790]
