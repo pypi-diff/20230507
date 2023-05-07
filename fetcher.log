@@ -3143,3 +3143,40 @@
 [2023-05-07 07:45:39] INFO root fetch - main [MainThread]: End processing [streetscope]: success
 [2023-05-07 07:45:39] INFO root fetch - main [MainThread]: End processing [vmilog-py]: success
 [2023-05-07 07:45:39] INFO root fetch - main [MainThread]: Store serial: [18004350]
+[2023-05-07 07:50:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004350]
+[2023-05-07 07:50:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 07:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streetscope
+[2023-05-07 07:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytale
+[2023-05-07 07:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: first-pypi-proj
+[2023-05-07 07:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easierfile
+[2023-05-07 07:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: silobuster
+[2023-05-07 07:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nyckel
+[2023-05-07 07:50:47] INFO root fetch - processPackages [streetscope]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-07 07:50:47] INFO root fetch - processPackages [pytale]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 07:50:47] WARNING root fetch - processPackages [first-pypi-proj]: Skipping, unable to determine old version
+[2023-05-07 07:50:47] INFO root fetch - processPackages [silobuster]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-07 07:50:47] INFO root fetch - main [MainThread]: End processing [first-pypi-proj] error
+[2023-05-07 07:50:47] INFO root fetch - processPackages [easierfile]: New version: [3.0.0] Old Version: [2.3.0]
+[2023-05-07 07:50:47] INFO root fetch - processPackages [nyckel]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 07:50:48] INFO root fetch - processPackages [silobuster]: executing diffoscope
+[2023-05-07 07:50:48] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-0.1.7.tar.gz tmp/silobuster-0.1.8.tar.gz --markdown 20230507/s/silobuster/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-07 07:50:48] INFO root fetch - processPackages [easierfile]: Downloading https://files.pythonhosted.org/packages/e5/e2/689088c4e3f86ce6e8b8a7edefe662de2532df4a95511e825e53e0ca8bd0/easierfile-2.3.0.tar.gz
+[2023-05-07 07:50:48] INFO root fetch - processPackages [streetscope]: Downloading https://files.pythonhosted.org/packages/c3/b7/cbb4c84f06f044771d0e963a8ecc426ba26f263d6b9c0187431d915b6bc8/streetscope-0.3.5.tar.gz
+[2023-05-07 07:50:48] INFO root fetch - processPackages [pytale]: Downloading https://files.pythonhosted.org/packages/e1/89/7bd4ac42366d7a57384d0799265c9b0038f8c583ec8875c5b64a2b078edf/pytale-0.1.1.tar.gz
+[2023-05-07 07:50:48] INFO root fetch - processPackages [nyckel]: Downloading https://files.pythonhosted.org/packages/44/be/18126ac7e7be3b6db5916e37529641b2aa83b85ad3076f23a737bac70bf7/nyckel-0.0.9.tar.gz
+[2023-05-07 07:50:48] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-07 07:50:48] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.8.tar.gz tmp/nyckel-0.0.9.tar.gz --markdown 20230507/n/nyckel/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 07:50:48] INFO root fetch - processPackages [streetscope]: executing diffoscope
+[2023-05-07 07:50:48] INFO root fetch - processPackages [streetscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streetscope-0.3.4.tar.gz tmp/streetscope-0.3.5.tar.gz --markdown 20230507/s/streetscope/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-07 07:50:48] INFO root fetch - processPackages [easierfile]: Downloading https://files.pythonhosted.org/packages/3b/14/e328f7097be571b9c8f495efa79485949d285bcb6a71e8f13201dee37401/easierfile-3.0.0.tar.gz
+[2023-05-07 07:50:48] INFO root fetch - processPackages [easierfile]: executing diffoscope
+[2023-05-07 07:50:48] INFO root fetch - processPackages [easierfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easierfile-2.3.0.tar.gz tmp/easierfile-3.0.0.tar.gz --markdown 20230507/e/easierfile/2.3.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-07 07:50:48] INFO root fetch - processPackages [pytale]: Downloading https://files.pythonhosted.org/packages/19/ec/2d86e3988b51007658669c1ce553f8395b5ca757126af61737d09a978095/pytale-0.1.2-py3-none-any.whl
+[2023-05-07 07:50:48] INFO root fetch - processPackages [pytale]: executing diffoscope
+[2023-05-07 07:50:48] INFO root fetch - processPackages [pytale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytale-0.1.1.tar.gz tmp/pytale-0.1.2-py3-none-any.whl.zip --markdown 20230507/p/pytale/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 07:50:49] INFO root fetch - main [MainThread]: End processing [silobuster]: success
+[2023-05-07 07:50:49] INFO root fetch - main [MainThread]: End processing [streetscope]: success
+[2023-05-07 07:50:49] INFO root fetch - main [MainThread]: End processing [easierfile]: success
+[2023-05-07 07:50:49] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-07 07:50:49] INFO root fetch - main [MainThread]: End processing [pytale]: success
+[2023-05-07 07:50:49] INFO root fetch - main [MainThread]: Store serial: [18004368]
