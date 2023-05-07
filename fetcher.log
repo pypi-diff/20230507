@@ -5386,3 +5386,23 @@
 [2023-05-07 12:32:20] INFO root fetch - main [MainThread]: End processing [hpo3]: success
 [2023-05-07 12:32:21] INFO root fetch - main [MainThread]: End processing [deepracer-utils]: success
 [2023-05-07 12:32:21] INFO root fetch - main [MainThread]: Store serial: [18005960]
+[2023-05-07 12:37:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005960]
+[2023-05-07 12:37:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 12:37:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: portablemc-forge
+[2023-05-07 12:37:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: typeguard
+[2023-05-07 12:37:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graph-z
+[2023-05-07 12:37:35] INFO root fetch - processPackages [typeguard]: New version: [4.0.0rc6] Old Version: [4.0.0rc5]
+[2023-05-07 12:37:35] WARNING root fetch - processPackages [graph-z]: Skipping, unable to determine old version
+[2023-05-07 12:37:35] INFO root fetch - main [MainThread]: End processing [graph-z] error
+[2023-05-07 12:37:35] INFO root fetch - processPackages [portablemc-forge]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-07 12:37:35] INFO root fetch - processPackages [typeguard]: Downloading https://files.pythonhosted.org/packages/9f/85/de8d213bdb834745f50558f9d9873d2e5445760380f53ef1c408911e20f3/typeguard-4.0.0rc5.tar.gz
+[2023-05-07 12:37:35] INFO root fetch - processPackages [portablemc-forge]: Downloading https://files.pythonhosted.org/packages/da/44/32556b7b34860ecbdde9b53360ebc25f531c570b5cbc77e6ff259ada6d19/portablemc-forge-2.0.1.tar.gz
+[2023-05-07 12:37:35] INFO root fetch - processPackages [typeguard]: Downloading https://files.pythonhosted.org/packages/f9/9a/efe98e6b912f5ed57a1db688337d3d0d78ee813523ff5a030d8610700b16/typeguard-4.0.0rc6.tar.gz
+[2023-05-07 12:37:36] INFO root fetch - processPackages [portablemc-forge]: Downloading https://files.pythonhosted.org/packages/90/bf/bd7eebd97f0e5b364442cd77ba6b937fc95ee152d5f63706f0dab25138eb/portablemc-forge-2.0.2.tar.gz
+[2023-05-07 12:37:36] INFO root fetch - processPackages [typeguard]: executing diffoscope
+[2023-05-07 12:37:36] INFO root fetch - processPackages [typeguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typeguard-4.0.0rc5.tar.gz tmp/typeguard-4.0.0rc6.tar.gz --markdown 20230507/t/typeguard/4.0.0rc5-4.0.0rc6/diff.md --exclude *.pyd
+[2023-05-07 12:37:36] INFO root fetch - processPackages [portablemc-forge]: executing diffoscope
+[2023-05-07 12:37:36] INFO root fetch - processPackages [portablemc-forge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portablemc-forge-2.0.1.tar.gz tmp/portablemc-forge-2.0.2.tar.gz --markdown 20230507/p/portablemc-forge/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-07 12:37:37] INFO root fetch - main [MainThread]: End processing [portablemc-forge]: success
+[2023-05-07 12:37:37] INFO root fetch - main [MainThread]: End processing [typeguard]: success
+[2023-05-07 12:37:37] INFO root fetch - main [MainThread]: Store serial: [18005975]
