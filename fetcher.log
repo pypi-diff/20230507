@@ -1820,3 +1820,15 @@
 [2023-05-07 03:48:09] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
 [2023-05-07 03:48:09] INFO root fetch - main [MainThread]: End processing [ImageMagic]: success
 [2023-05-07 03:48:09] INFO root fetch - main [MainThread]: Store serial: [18003660]
+[2023-05-07 03:53:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003660]
+[2023-05-07 03:53:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-07 03:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyundai-kia-connect-api
+[2023-05-07 03:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ftdz-from-fyh1
+[2023-05-07 03:53:18] WARNING root fetch - processPackages [ftdz-from-fyh1]: Skipping, unable to determine old version
+[2023-05-07 03:53:18] INFO root fetch - main [MainThread]: End processing [ftdz-from-fyh1] error
+[2023-05-07 03:53:18] INFO root fetch - processPackages [hyundai-kia-connect-api]: New version: [3.3.3] Old Version: [3.3.2]
+[2023-05-07 03:53:18] INFO root fetch - processPackages [hyundai-kia-connect-api]: Downloading https://files.pythonhosted.org/packages/72/1d/093da94bb0aadcd5ca17f80127bc98282579b3ebdcb8dc44753619ebe6b1/hyundai_kia_connect_api-3.3.3.tar.gz
+[2023-05-07 03:53:18] INFO root fetch - processPackages [hyundai-kia-connect-api]: executing diffoscope
+[2023-05-07 03:53:18] INFO root fetch - processPackages [hyundai-kia-connect-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyundai_kia_connect_api-3.3.2.tar.gz tmp/hyundai_kia_connect_api-3.3.3.tar.gz --markdown 20230507/h/hyundai-kia-connect-api/3.3.2-3.3.3/diff.md --exclude *.pyd
+[2023-05-07 03:53:20] INFO root fetch - main [MainThread]: End processing [hyundai-kia-connect-api]: success
+[2023-05-07 03:53:20] INFO root fetch - main [MainThread]: Store serial: [18003668]
