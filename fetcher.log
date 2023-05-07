@@ -10165,3 +10165,63 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 20:31:14] INFO root fetch - main [MainThread]: End processing [BlockFrame]: success
 [2023-05-07 20:31:15] INFO root fetch - main [MainThread]: End processing [circuitpython-bmp581]: success
 [2023-05-07 20:31:15] INFO root fetch - main [MainThread]: Store serial: [18008865]
+[2023-05-07 20:36:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008865]
+[2023-05-07 20:36:23] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-07 20:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlrun
+[2023-05-07 20:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openlane
+[2023-05-07 20:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: compel
+[2023-05-07 20:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stickytext
+[2023-05-07 20:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: graphique
+[2023-05-07 20:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyjpegls
+[2023-05-07 20:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: weatherpy2
+[2023-05-07 20:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pymap-admin
+[2023-05-07 20:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: whisper-cpp-python
+[2023-05-07 20:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pangeo-forge-cordex
+[2023-05-07 20:36:23] INFO root fetch - processPackages [compel]: New version: [1.1.4.dev0] Old Version: [1.1.4]
+[2023-05-07 20:36:24] INFO root fetch - processPackages [openlane]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-05-07 20:36:24] INFO root fetch - processPackages [weatherpy2]: New version: [1.2.1] Old Version: [1.0.0]
+[2023-05-07 20:36:24] INFO root fetch - processPackages [pangeo-forge-cordex]: New version: [0.3.0] Old Version: [0.2.3]
+[2023-05-07 20:36:24] WARNING root fetch - processPackages [stickytext]: Skipping, unable to determine old version
+[2023-05-07 20:36:24] INFO root fetch - processPackages [graphique]: New version: [1.2] Old Version: [1.1]
+[2023-05-07 20:36:24] INFO root fetch - processPackages [stickytext]: Start processing: captcha6
+[2023-05-07 20:36:24] INFO root fetch - main [MainThread]: End processing [stickytext] error
+[2023-05-07 20:36:24] WARNING root fetch - processPackages [whisper-cpp-python]: Skipping, unable to determine old version
+[2023-05-07 20:36:24] INFO root fetch - main [MainThread]: End processing [whisper-cpp-python] error
+[2023-05-07 20:36:24] WARNING root fetch - processPackages [pyjpegls]: Skipping, unable to determine old version
+[2023-05-07 20:36:24] INFO root fetch - main [MainThread]: End processing [pyjpegls] error
+[2023-05-07 20:36:24] INFO root fetch - processPackages [pymap-admin]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-07 20:36:24] INFO root fetch - processPackages [mlrun]: New version: [1.4.0rc2] Old Version: [1.4.0rc1]
+[2023-05-07 20:36:24] WARNING root fetch - processPackages [captcha6]: Skipping, unable to determine old version
+[2023-05-07 20:36:24] INFO root fetch - main [MainThread]: End processing [captcha6] error
+[2023-05-07 20:36:24] INFO root fetch - processPackages [compel]: executing diffoscope
+[2023-05-07 20:36:24] INFO root fetch - processPackages [compel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compel-1.1.4.tar.gz tmp/compel-1.1.4.dev0.tar.gz --markdown 20230507/c/compel/1.1.4-1.1.4.dev0/diff.md --exclude *.pyd
+[2023-05-07 20:36:24] INFO root fetch - processPackages [graphique]: Downloading https://files.pythonhosted.org/packages/4c/44/e02b41c323cb05ea75ef8d80c17268fa4a0afd11867da704c52e1e75e92e/graphique-1.1.tar.gz
+[2023-05-07 20:36:24] INFO root fetch - processPackages [weatherpy2]: Downloading https://files.pythonhosted.org/packages/43/81/ae3de701623447bcdf61e6e7875b1eef82e9c859e1baa10f27ad3910b6c5/weatherpy2-1.0.0.tar.gz
+[2023-05-07 20:36:24] INFO root fetch - processPackages [openlane]: Downloading https://files.pythonhosted.org/packages/f9/e1/2bc6d40f7a838d2e5cfcd0d8b4d3b5f2a822440b2a94b0ce02148cab52bc/openlane-2.0.0a8.tar.gz
+[2023-05-07 20:36:24] INFO root fetch - processPackages [pangeo-forge-cordex]: Downloading https://files.pythonhosted.org/packages/a2/65/8084ab25f95874facb856e555f2010d620cd5534e15fbab951068f7f36c3/pangeo-forge-cordex-0.2.3.tar.gz
+[2023-05-07 20:36:24] INFO root fetch - processPackages [pymap-admin]: Downloading https://files.pythonhosted.org/packages/2a/6a/3f4b8c2e3b9977dd9a8d9c0d38e4e0a6208976b8d8cb40893f45ff4a06ac/pymap_admin-0.9.1.tar.gz
+[2023-05-07 20:36:24] INFO root fetch - processPackages [pangeo-forge-cordex]: Downloading https://files.pythonhosted.org/packages/21/68/e5a2184b05e2d41330e914de96820b79e1f19f7b4555d7783c9e6a8b7717/pangeo-forge-cordex-0.3.0.tar.gz
+[2023-05-07 20:36:24] INFO root fetch - processPackages [weatherpy2]: Downloading https://files.pythonhosted.org/packages/66/ac/0d269d4d7ba6089829a45ad8587a8e0c1666eef9293b064bb2920a757825/weatherpy2-1.2.1.tar.gz
+[2023-05-07 20:36:24] INFO root fetch - processPackages [openlane]: Downloading https://files.pythonhosted.org/packages/3b/36/ef13f9e1e09e4ec49090d033dcc88d1ce603bd51886f214690e50b2e5357/openlane-2.0.0a9.tar.gz
+[2023-05-07 20:36:24] INFO root fetch - processPackages [pymap-admin]: Downloading https://files.pythonhosted.org/packages/9e/02/7f793741b3d8a5c8f25f7075c659cdeb2e784e4b3516ce3d578c17f750eb/pymap_admin-0.9.2.tar.gz
+[2023-05-07 20:36:24] INFO root fetch - processPackages [graphique]: Downloading https://files.pythonhosted.org/packages/38/bf/35c6c54a4a25176f2613accaf7aed5bd336e607268556aa06a186aa5b9c2/graphique-1.2.tar.gz
+[2023-05-07 20:36:24] INFO root fetch - processPackages [mlrun]: executing diffoscope
+[2023-05-07 20:36:24] INFO root fetch - processPackages [mlrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun-1.4.0rc1-py3-none-any.whl.zip tmp/mlrun-1.4.0rc2-py3-none-any.whl.zip --markdown 20230507/m/mlrun/1.4.0rc1-1.4.0rc2/diff.md --exclude *.pyd
+[2023-05-07 20:36:24] INFO root fetch - processPackages [pangeo-forge-cordex]: executing diffoscope
+[2023-05-07 20:36:24] INFO root fetch - processPackages [pangeo-forge-cordex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pangeo-forge-cordex-0.2.3.tar.gz tmp/pangeo-forge-cordex-0.3.0.tar.gz --markdown 20230507/p/pangeo-forge-cordex/0.2.3-0.3.0/diff.md --exclude *.pyd
+[2023-05-07 20:36:24] INFO root fetch - processPackages [weatherpy2]: executing diffoscope
+[2023-05-07 20:36:24] INFO root fetch - processPackages [weatherpy2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weatherpy2-1.0.0.tar.gz tmp/weatherpy2-1.2.1.tar.gz --markdown 20230507/w/weatherpy2/1.0.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-07 20:36:24] INFO root fetch - processPackages [graphique]: executing diffoscope
+[2023-05-07 20:36:24] INFO root fetch - processPackages [graphique]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphique-1.1.tar.gz tmp/graphique-1.2.tar.gz --markdown 20230507/g/graphique/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-07 20:36:24] INFO root fetch - processPackages [openlane]: executing diffoscope
+[2023-05-07 20:36:24] INFO root fetch - processPackages [openlane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlane-2.0.0a8.tar.gz tmp/openlane-2.0.0a9.tar.gz --markdown 20230507/o/openlane/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-05-07 20:36:24] INFO root fetch - processPackages [pymap-admin]: executing diffoscope
+[2023-05-07 20:36:24] INFO root fetch - processPackages [pymap-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymap_admin-0.9.1.tar.gz tmp/pymap_admin-0.9.2.tar.gz --markdown 20230507/p/pymap-admin/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-07 20:36:25] INFO root fetch - main [MainThread]: End processing [compel]: success
+[2023-05-07 20:36:25] INFO root fetch - main [MainThread]: End processing [weatherpy2]: success
+[2023-05-07 20:36:26] INFO root fetch - main [MainThread]: End processing [graphique]: success
+[2023-05-07 20:36:26] INFO root fetch - main [MainThread]: End processing [pymap-admin]: success
+[2023-05-07 20:36:26] INFO root fetch - main [MainThread]: End processing [pangeo-forge-cordex]: success
+[2023-05-07 20:36:26] INFO root fetch - main [MainThread]: End processing [openlane]: success
+[2023-05-07 20:36:30] INFO root fetch - main [MainThread]: End processing [mlrun]: success
+[2023-05-07 20:36:30] INFO root fetch - main [MainThread]: Store serial: [18008925]
