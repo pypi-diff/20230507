@@ -7457,3 +7457,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 16:02:18] INFO root fetch - main [MainThread]: End processing [mcdreforged]: success
 [2023-05-07 16:02:44] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
 [2023-05-07 16:02:44] INFO root fetch - main [MainThread]: Store serial: [18007273]
+[2023-05-07 16:07:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007273]
+[2023-05-07 16:07:53] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 16:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xapianpy
+[2023-05-07 16:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aij-webcam
+[2023-05-07 16:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: demisto-sdk
+[2023-05-07 16:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: djangorestframework-verbose-errors
+[2023-05-07 16:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: corecrud
+[2023-05-07 16:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: v8unpack
+[2023-05-07 16:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nwebclient
+[2023-05-07 16:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aioesphomeapi
+[2023-05-07 16:07:53] INFO root fetch - processPackages [xapianpy]: New version: [1.4.22.post2305071405] Old Version: [1.4.22.post2305071005]
+[2023-05-07 16:07:53] INFO root fetch - processPackages [aij-webcam]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-07 16:07:53] INFO root fetch - processPackages [corecrud]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 16:07:53] INFO root fetch - processPackages [nwebclient]: New version: [1.0.87] Old Version: [1.0.86]
+[2023-05-07 16:07:53] INFO root fetch - processPackages [demisto-sdk]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-05-07 16:07:53] INFO root fetch - processPackages [djangorestframework-verbose-errors]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 16:07:53] INFO root fetch - processPackages [v8unpack]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-07 16:07:53] INFO root fetch - processPackages [aioesphomeapi]: New version: [9.1.5] Old Version: [9.1.4]
+[2023-05-07 16:07:53] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-05-07 16:07:53] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.86.tar.gz tmp/nwebclient-1.0.87.tar.gz --markdown 20230507/n/nwebclient/1.0.86-1.0.87/diff.md --exclude *.pyd
+[2023-05-07 16:07:53] INFO root fetch - processPackages [v8unpack]: executing diffoscope
+[2023-05-07 16:07:53] INFO root fetch - processPackages [v8unpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v8unpack-0.9.2.tar.gz tmp/v8unpack-0.9.3.tar.gz --markdown 20230507/v/v8unpack/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-07 16:07:53] INFO root fetch - processPackages [xapianpy]: Downloading https://files.pythonhosted.org/packages/e9/a8/76f4c19cc55a8c5d391f5d4c4dd9b0dbbbcb2da0062aecffb550eff115c8/xapianpy-1.4.22.post2305071005-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-07 16:07:53] INFO root fetch - processPackages [djangorestframework-verbose-errors]: Downloading https://files.pythonhosted.org/packages/07/27/6e986ea3b1118684cf897225f8b98489dd11262a491599243dc5a919f717/djangorestframework-verbose-errors-0.0.1.tar.gz
+[2023-05-07 16:07:53] INFO root fetch - processPackages [aij-webcam]: Downloading https://files.pythonhosted.org/packages/10/fa/ac2ef5949d5044d6911fcc2467fb27566e6a70757fdaaf2fa35a2ee09cfc/aij-webcam-1.1.8.tar.gz
+[2023-05-07 16:07:53] INFO root fetch - processPackages [corecrud]: Downloading https://files.pythonhosted.org/packages/76/3f/7b656f3ad8363bd58e83d44dc4c0e4d1664d349f5d7680d0e916402cc16d/corecrud-0.1.2.tar.gz
+[2023-05-07 16:07:53] INFO root fetch - processPackages [demisto-sdk]: Downloading https://files.pythonhosted.org/packages/09/d8/b40156edfeb2c658f2e1fbd96230c4ad73caeb31f2c65c8c3c79aadd10ae/demisto_sdk-1.8.3.tar.gz
+[2023-05-07 16:07:53] WARNING root fetch - processPackages [xapianpy]: Skipping package: exceeds size limit 16711323>=10485760
+[2023-05-07 16:07:53] INFO root fetch - main [MainThread]: End processing [xapianpy] error
+[2023-05-07 16:07:53] INFO root fetch - processPackages [aij-webcam]: executing diffoscope
+[2023-05-07 16:07:53] INFO root fetch - processPackages [aij-webcam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-webcam-1.1.7.tar.gz tmp/aij-webcam-1.1.8.tar.gz --markdown 20230507/a/aij-webcam/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-07 16:07:53] INFO root fetch - processPackages [aioesphomeapi]: Downloading https://files.pythonhosted.org/packages/62/7f/d2cc3b95dfe936bbad8f3956f274147389d6625de031d1105261491bffd9/aioesphomeapi-9.1.4.tar.gz
+[2023-05-07 16:07:53] INFO root fetch - processPackages [corecrud]: executing diffoscope
+[2023-05-07 16:07:53] INFO root fetch - processPackages [corecrud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corecrud-0.1.1.tar.gz tmp/corecrud-0.1.2.tar.gz --markdown 20230507/c/corecrud/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 16:07:53] INFO root fetch - processPackages [djangorestframework-verbose-errors]: Downloading https://files.pythonhosted.org/packages/b3/89/2348915b4b53b1a98fc08cf3d0bba6c34c846fb172b0576dfa46f643ad04/djangorestframework-verbose-errors-0.0.2.tar.gz
+[2023-05-07 16:07:53] INFO root fetch - processPackages [djangorestframework-verbose-errors]: executing diffoscope
+[2023-05-07 16:07:53] INFO root fetch - processPackages [djangorestframework-verbose-errors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangorestframework-verbose-errors-0.0.1.tar.gz tmp/djangorestframework-verbose-errors-0.0.2.tar.gz --markdown 20230507/d/djangorestframework-verbose-errors/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 16:07:53] INFO root fetch - processPackages [demisto-sdk]: Downloading https://files.pythonhosted.org/packages/64/f1/eb1afa74c8cd36ec00a08aa9c524502235aca66e33f399269e7f2b852df2/demisto_sdk-1.9.0.tar.gz
+[2023-05-07 16:07:54] INFO root fetch - processPackages [demisto-sdk]: executing diffoscope
+[2023-05-07 16:07:54] INFO root fetch - processPackages [demisto-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demisto_sdk-1.8.3.tar.gz tmp/demisto_sdk-1.9.0.tar.gz --markdown 20230507/d/demisto-sdk/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-05-07 16:07:54] INFO root fetch - processPackages [aioesphomeapi]: Downloading https://files.pythonhosted.org/packages/95/57/381c894380ec58a8c891a923696dc0d97d7af266921f326f942ec3332685/aioesphomeapi-9.1.5.tar.gz
+[2023-05-07 16:07:54] INFO root fetch - processPackages [aioesphomeapi]: executing diffoscope
+[2023-05-07 16:07:54] INFO root fetch - processPackages [aioesphomeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioesphomeapi-9.1.4.tar.gz tmp/aioesphomeapi-9.1.5.tar.gz --markdown 20230507/a/aioesphomeapi/9.1.4-9.1.5/diff.md --exclude *.pyd
+[2023-05-07 16:07:54] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-05-07 16:07:54] INFO root fetch - main [MainThread]: End processing [aij-webcam]: success
+[2023-05-07 16:07:54] INFO root fetch - main [MainThread]: End processing [v8unpack]: success
+[2023-05-07 16:07:54] INFO root fetch - main [MainThread]: End processing [djangorestframework-verbose-errors]: success
+[2023-05-07 16:07:54] INFO root fetch - main [MainThread]: End processing [corecrud]: success
+[2023-05-07 16:07:56] INFO root fetch - main [MainThread]: End processing [aioesphomeapi]: success
+[2023-05-07 16:08:08] INFO root fetch - main [MainThread]: End processing [demisto-sdk]: success
+[2023-05-07 16:08:08] INFO root fetch - main [MainThread]: Store serial: [18007299]
