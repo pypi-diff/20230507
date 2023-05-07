@@ -2882,3 +2882,26 @@
 [2023-05-07 06:56:12] INFO root fetch - main [MainThread]: End processing [gsearch-nyaa]: success
 [2023-05-07 06:56:12] INFO root fetch - main [MainThread]: End processing [isyflask-cli]: success
 [2023-05-07 06:56:12] INFO root fetch - main [MainThread]: Store serial: [18004181]
+[2023-05-07 07:01:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004181]
+[2023-05-07 07:01:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 07:01:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bitcoin-explorer
+[2023-05-07 07:01:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: silobuster
+[2023-05-07 07:01:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: evalplus
+[2023-05-07 07:01:21] INFO root fetch - processPackages [silobuster]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-07 07:01:21] INFO root fetch - processPackages [bitcoin-explorer]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-07 07:01:21] INFO root fetch - processPackages [evalplus]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 07:01:21] INFO root fetch - processPackages [bitcoin-explorer]: Downloading https://files.pythonhosted.org/packages/31/8a/46a9b2fe9d98c7279d962009da6bba27ff86306aaca40432465ff9288fb9/bitcoin_explorer-1.2.8-cp39-none-win_amd64.whl
+[2023-05-07 07:01:21] INFO root fetch - processPackages [silobuster]: Downloading https://files.pythonhosted.org/packages/f3/07/3fb53f62a1412ed825d1b950ad6074f6ff9643ba79bcef804b3a4f88d34f/silobuster-0.1.6.tar.gz
+[2023-05-07 07:01:21] INFO root fetch - processPackages [evalplus]: Downloading https://files.pythonhosted.org/packages/b0/cc/baf5a7b48c87d895f4f4c4da553ad8f115e8111500362d73eec2e50456d8/evalplus-0.1.1.tar.gz
+[2023-05-07 07:01:21] INFO root fetch - processPackages [silobuster]: executing diffoscope
+[2023-05-07 07:01:21] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-0.1.5.tar.gz tmp/silobuster-0.1.6.tar.gz --markdown 20230507/s/silobuster/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-07 07:01:22] INFO root fetch - processPackages [bitcoin-explorer]: Downloading https://files.pythonhosted.org/packages/1f/93/38d1ac8744be9624bef1384e72fe2f106d84cb87725004ff647422074dd1/bitcoin_explorer-1.2.9-cp39-none-win_amd64.whl
+[2023-05-07 07:01:22] INFO root fetch - processPackages [evalplus]: Downloading https://files.pythonhosted.org/packages/77/0c/ec688791114de680768eff80787db44c4e2f828c2ee022e836d9e6833ead/evalplus-0.1.2.tar.gz
+[2023-05-07 07:01:22] INFO root fetch - processPackages [bitcoin-explorer]: executing diffoscope
+[2023-05-07 07:01:22] INFO root fetch - processPackages [bitcoin-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitcoin_explorer-1.2.8-cp39-none-win_amd64.whl.zip tmp/bitcoin_explorer-1.2.9-cp39-none-win_amd64.whl.zip --markdown 20230507/b/bitcoin-explorer/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-07 07:01:22] INFO root fetch - processPackages [evalplus]: executing diffoscope
+[2023-05-07 07:01:22] INFO root fetch - processPackages [evalplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalplus-0.1.1.tar.gz tmp/evalplus-0.1.2.tar.gz --markdown 20230507/e/evalplus/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 07:01:22] INFO root fetch - main [MainThread]: End processing [silobuster]: success
+[2023-05-07 07:01:23] INFO root fetch - main [MainThread]: End processing [bitcoin-explorer]: success
+[2023-05-07 07:01:23] INFO root fetch - main [MainThread]: End processing [evalplus]: success
+[2023-05-07 07:01:23] INFO root fetch - main [MainThread]: Store serial: [18004218]
