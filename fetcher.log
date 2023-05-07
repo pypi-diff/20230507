@@ -9706,3 +9706,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 19:38:56] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
 [2023-05-07 19:38:57] INFO root fetch - main [MainThread]: End processing [thera-py]: success
 [2023-05-07 19:38:57] INFO root fetch - main [MainThread]: Store serial: [18008606]
+[2023-05-07 19:44:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008606]
+[2023-05-07 19:44:06] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 19:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uoy-assessment-uploader
+[2023-05-07 19:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-07 19:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sidetrek
+[2023-05-07 19:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: EvaLLM
+[2023-05-07 19:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-rahav-cert-1987-update-regTest
+[2023-05-07 19:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nvppackage
+[2023-05-07 19:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sidetrek
+[2023-05-07 19:44:06] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230507.17.39.646619] Old Version: [20230507.16.52.673315]
+[2023-05-07 19:44:06] INFO root fetch - processPackages [uoy-assessment-uploader]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 19:44:06] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: New version: [20230507.9.47.577125] Old Version: [20230507.8.27.526824]
+[2023-05-07 19:44:06] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 19:44:06] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 19:44:06] INFO root fetch - processPackages [EvaLLM]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-07 19:44:06] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Downloading https://files.pythonhosted.org/packages/18/91/9107948ff93f03169be37397174f066ca051c92e276c8ba5f256faf1536a/certora-cli-alpha-rahav-cert-1987_update_regTest-20230507.8.27.526824.tar.gz
+[2023-05-07 19:44:06] WARNING root fetch - processPackages [nvppackage]: Skipping, unable to determine old version
+[2023-05-07 19:44:06] INFO root fetch - main [MainThread]: End processing [nvppackage] error
+[2023-05-07 19:44:06] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-07 19:44:06] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230507/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 19:44:06] WARNING root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Skipping package: exceeds size limit 38472946>=10485760
+[2023-05-07 19:44:06] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-rahav-cert-1987-update-regTest] error
+[2023-05-07 19:44:06] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-07 19:44:06] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230507/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 19:44:06] INFO root fetch - processPackages [uoy-assessment-uploader]: Downloading https://files.pythonhosted.org/packages/09/10/73ca57581f8535204cd3e2469c0218b4c127a40b46f062637c207964bdde/uoy-assessment-uploader-0.1.0.tar.gz
+[2023-05-07 19:44:06] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/39/5e/3e23081731ecfa617efd4a031e883f2ace777eb1ef5159efe248228ab132/certora-cli-alpha-roy-CERT-1955-assertHits-20230507.16.52.673315.tar.gz
+[2023-05-07 19:44:06] INFO root fetch - processPackages [EvaLLM]: Downloading https://files.pythonhosted.org/packages/5f/f3/75031c21e7e955c7f002c40ab9218ff179b9ea28c3ebd944d3daf171610e/EvaLLM-1.1.2.tar.gz
+[2023-05-07 19:44:06] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 38474294>=10485760
+[2023-05-07 19:44:06] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-07 19:44:06] INFO root fetch - processPackages [uoy-assessment-uploader]: Downloading https://files.pythonhosted.org/packages/bb/27/552e71650796ae7f1e5764b29132d8c6690e2a74283a29eaf957f07c2e4d/uoy-assessment-uploader-0.1.1.tar.gz
+[2023-05-07 19:44:06] INFO root fetch - processPackages [EvaLLM]: Downloading https://files.pythonhosted.org/packages/bc/bb/8ea43ebc28d2a46e6b1aa71bf458bb5e161be01179dba5c344451539089c/EvaLLM-1.1.3.tar.gz
+[2023-05-07 19:44:06] INFO root fetch - processPackages [uoy-assessment-uploader]: executing diffoscope
+[2023-05-07 19:44:06] INFO root fetch - processPackages [uoy-assessment-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uoy-assessment-uploader-0.1.0.tar.gz tmp/uoy-assessment-uploader-0.1.1.tar.gz --markdown 20230507/u/uoy-assessment-uploader/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 19:44:06] INFO root fetch - processPackages [EvaLLM]: executing diffoscope
+[2023-05-07 19:44:06] INFO root fetch - processPackages [EvaLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EvaLLM-1.1.2.tar.gz tmp/EvaLLM-1.1.3.tar.gz --markdown 20230507/E/EvaLLM/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-07 19:44:07] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-07 19:44:07] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-07 19:44:07] INFO root fetch - main [MainThread]: End processing [uoy-assessment-uploader]: success
+[2023-05-07 19:44:07] INFO root fetch - main [MainThread]: End processing [EvaLLM]: success
+[2023-05-07 19:44:07] INFO root fetch - main [MainThread]: Store serial: [18008637]
