@@ -9146,3 +9146,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 18:41:41] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
 [2023-05-07 18:41:41] INFO root fetch - main [MainThread]: End processing [LibJciHitachi]: success
 [2023-05-07 18:41:41] INFO root fetch - main [MainThread]: Store serial: [18008307]
+[2023-05-07 18:46:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008307]
+[2023-05-07 18:46:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 18:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flask-guard
+[2023-05-07 18:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: linkeddeepdict
+[2023-05-07 18:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arequestsHelper
+[2023-05-07 18:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edidsdfsxccqqsc
+[2023-05-07 18:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apache-airflow-client
+[2023-05-07 18:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spectrafit
+[2023-05-07 18:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: budgetguard
+[2023-05-07 18:46:50] INFO root fetch - processPackages [arequestsHelper]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-07 18:46:50] INFO root fetch - processPackages [linkeddeepdict]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-07 18:46:50] WARNING root fetch - processPackages [edidsdfsxccqqsc]: Skipping, unable to determine old version
+[2023-05-07 18:46:50] INFO root fetch - main [MainThread]: End processing [edidsdfsxccqqsc] error
+[2023-05-07 18:46:50] INFO root fetch - processPackages [flask-guard]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 18:46:50] INFO root fetch - processPackages [apache-airflow-client]: New version: [2.6.0rc3] Old Version: [2.6.0rc2]
+[2023-05-07 18:46:50] INFO root fetch - processPackages [spectrafit]: New version: [1.0.0b2] Old Version: [1.0.0b1]
+[2023-05-07 18:46:50] INFO root fetch - processPackages [budgetguard]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-05-07 18:46:50] INFO root fetch - processPackages [spectrafit]: executing diffoscope
+[2023-05-07 18:46:50] INFO root fetch - processPackages [spectrafit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectrafit-1.0.0b1.tar.gz tmp/spectrafit-1.0.0b2.tar.gz --markdown 20230507/s/spectrafit/1.0.0b1-1.0.0b2/diff.md --exclude *.pyd
+[2023-05-07 18:46:50] INFO root fetch - processPackages [arequestsHelper]: Downloading https://files.pythonhosted.org/packages/29/a2/a74d70f5d8b7d779c1f67efaee14596fdeec1bc07e64eb5a828dc168e3bd/arequestsHelper-0.4.1.tar.gz
+[2023-05-07 18:46:50] INFO root fetch - processPackages [linkeddeepdict]: Downloading https://files.pythonhosted.org/packages/a6/09/c4e6690c73fb47c8585fc0b8083c5e2af981064ba83d0a6a7f025ee78b9e/linkeddeepdict-1.0.0.tar.gz
+[2023-05-07 18:46:50] INFO root fetch - processPackages [apache-airflow-client]: Downloading https://files.pythonhosted.org/packages/18/cd/372607d0d27f90fac7590a7c2b8016272e2a09f67859c914bfad4714ec44/apache-airflow-client-2.6.0rc2.tar.gz
+[2023-05-07 18:46:50] INFO root fetch - processPackages [budgetguard]: Downloading https://files.pythonhosted.org/packages/cc/4d/55ba68abc2e94ad87d6c94541583205ef1c804e691a38540af8e64bd9485/budgetguard-0.1.0.tar.gz
+[2023-05-07 18:46:50] INFO root fetch - processPackages [flask-guard]: Downloading https://files.pythonhosted.org/packages/dd/45/49bb0644153444548472467209172c25da310ffb00fc845e88231cbb93ed/flask-guard-0.0.8.tar.gz
+[2023-05-07 18:46:50] INFO root fetch - processPackages [flask-guard]: executing diffoscope
+[2023-05-07 18:46:50] INFO root fetch - processPackages [flask-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-guard-0.0.7.tar.gz tmp/flask-guard-0.0.8.tar.gz --markdown 20230507/f/flask-guard/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 18:46:50] INFO root fetch - processPackages [apache-airflow-client]: Downloading https://files.pythonhosted.org/packages/9e/e9/6fec2b8148f8d1cf3dab7657fdc9796e53152ff9c792cb0cec1061d284c2/apache-airflow-client-2.6.0rc3.tar.gz
+[2023-05-07 18:46:50] INFO root fetch - processPackages [arequestsHelper]: Downloading https://files.pythonhosted.org/packages/bd/ea/b5f389f1723bdb54f2f42d3dc325501069d55a02c926bdb71ab83163e030/arequestsHelper-0.4.2.tar.gz
+[2023-05-07 18:46:50] INFO root fetch - processPackages [linkeddeepdict]: Downloading https://files.pythonhosted.org/packages/34/8f/21a617a363e2a9011612f64b2117856affcbc57d7e41e6d1411c084a6d7b/linkeddeepdict-1.1.0.tar.gz
+[2023-05-07 18:46:50] INFO root fetch - processPackages [linkeddeepdict]: executing diffoscope
+[2023-05-07 18:46:50] INFO root fetch - processPackages [linkeddeepdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkeddeepdict-1.0.0.tar.gz tmp/linkeddeepdict-1.1.0.tar.gz --markdown 20230507/l/linkeddeepdict/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-07 18:46:50] INFO root fetch - processPackages [arequestsHelper]: executing diffoscope
+[2023-05-07 18:46:50] INFO root fetch - processPackages [arequestsHelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arequestsHelper-0.4.1.tar.gz tmp/arequestsHelper-0.4.2.tar.gz --markdown 20230507/a/arequestsHelper/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-07 18:46:50] INFO root fetch - processPackages [apache-airflow-client]: executing diffoscope
+[2023-05-07 18:46:50] INFO root fetch - processPackages [apache-airflow-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-client-2.6.0rc2.tar.gz tmp/apache-airflow-client-2.6.0rc3.tar.gz --markdown 20230507/a/apache-airflow-client/2.6.0rc2-2.6.0rc3/diff.md --exclude *.pyd
+[2023-05-07 18:46:50] INFO root fetch - processPackages [budgetguard]: Downloading https://files.pythonhosted.org/packages/34/c9/d146498a58da7779b86887a23951012d0e6d5a6341610e0eecdabed6baef/budgetguard-0.2.1.tar.gz
+[2023-05-07 18:46:51] INFO root fetch - processPackages [budgetguard]: executing diffoscope
+[2023-05-07 18:46:51] INFO root fetch - processPackages [budgetguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/budgetguard-0.1.0.tar.gz tmp/budgetguard-0.2.1.tar.gz --markdown 20230507/b/budgetguard/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-07 18:46:51] INFO root fetch - main [MainThread]: End processing [flask-guard]: success
+[2023-05-07 18:46:51] INFO root fetch - main [MainThread]: End processing [arequestsHelper]: success
+[2023-05-07 18:46:51] INFO root fetch - main [MainThread]: End processing [linkeddeepdict]: success
+[2023-05-07 18:46:52] INFO root fetch - main [MainThread]: End processing [spectrafit]: success
+[2023-05-07 18:46:52] INFO root fetch - main [MainThread]: End processing [budgetguard]: success
+[2023-05-07 18:46:54] INFO root fetch - main [MainThread]: End processing [apache-airflow-client]: success
+[2023-05-07 18:46:54] INFO root fetch - main [MainThread]: Store serial: [18008334]
