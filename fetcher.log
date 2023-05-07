@@ -7955,3 +7955,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 16:56:08] INFO root fetch - main [MainThread]: End processing [pyphetools]: success
 [2023-05-07 16:56:12] INFO root fetch - main [MainThread]: End processing [vessl]: success
 [2023-05-07 16:56:12] INFO root fetch - main [MainThread]: Store serial: [18007634]
+[2023-05-07 17:01:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007634]
+[2023-05-07 17:01:22] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 17:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gcsaws
+[2023-05-07 17:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: betanegbinfit
+[2023-05-07 17:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cryptenv
+[2023-05-07 17:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: parquet2lance
+[2023-05-07 17:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mixalime
+[2023-05-07 17:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cursesplus
+[2023-05-07 17:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nakuru-project-idk
+[2023-05-07 17:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: certora-cli-alpha-uri-generate-link-json
+[2023-05-07 17:01:22] INFO root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: New version: [20230507.13.57.111892] Old Version: [20230507.11.11.247102]
+[2023-05-07 17:01:22] INFO root fetch - processPackages [cursesplus]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-07 17:01:22] INFO root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: Downloading https://files.pythonhosted.org/packages/ea/40/e16846977e71989eabc1cd01de1475c1d169aa3efb6b0c7205c13a0c7dd4/certora-cli-alpha-uri-generate_link_json-20230507.11.11.247102.tar.gz
+[2023-05-07 17:01:22] INFO root fetch - processPackages [mixalime]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-07 17:01:22] WARNING root fetch - processPackages [gcsaws]: Skipping, unable to determine old version
+[2023-05-07 17:01:22] INFO root fetch - main [MainThread]: End processing [gcsaws] error
+[2023-05-07 17:01:22] INFO root fetch - processPackages [parquet2lance]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 17:01:22] WARNING root fetch - processPackages [cryptenv]: Skipping, unable to determine old version
+[2023-05-07 17:01:22] INFO root fetch - main [MainThread]: End processing [cryptenv] error
+[2023-05-07 17:01:22] INFO root fetch - processPackages [betanegbinfit]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-07 17:01:22] INFO root fetch - processPackages [nakuru-project-idk]: New version: [0.0.2.1] Old Version: [0.0.2]
+[2023-05-07 17:01:22] WARNING root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: Skipping package: exceeds size limit 38474686>=10485760
+[2023-05-07 17:01:22] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-uri-generate-link-json] error
+[2023-05-07 17:01:22] INFO root fetch - processPackages [cursesplus]: Downloading https://files.pythonhosted.org/packages/c6/8b/4c92a6fea6ce673a07e06a609355cc9095584bead45362f1007cb6682b7a/cursesplus-2.0.5.tar.gz
+[2023-05-07 17:01:22] INFO root fetch - processPackages [mixalime]: Downloading https://files.pythonhosted.org/packages/8e/2f/d240b2f6803bf60aeb17f7f054aa7d50ae9fed0d01f2c78df860d2d41795/mixalime-2.9.8.tar.gz
+[2023-05-07 17:01:22] INFO root fetch - processPackages [nakuru-project-idk]: Downloading https://files.pythonhosted.org/packages/40/bb/e87c881c0097e2b541d901455f2ddb289e0899b0aa0ea3f39747573790aa/nakuru_project_idk-0.0.2.tar.gz
+[2023-05-07 17:01:22] INFO root fetch - processPackages [parquet2lance]: Downloading https://files.pythonhosted.org/packages/cd/bb/7fd56298f93ac0c7da2a87a505ee0adceda9dc23d3a6c9bc0e2268033582/parquet2lance-0.0.3-cp310-cp310-macosx_10_7_x86_64.whl
+[2023-05-07 17:01:22] INFO root fetch - processPackages [cursesplus]: executing diffoscope
+[2023-05-07 17:01:22] INFO root fetch - processPackages [cursesplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cursesplus-2.0.4.tar.gz tmp/cursesplus-2.0.5.tar.gz --markdown 20230507/c/cursesplus/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-07 17:01:22] INFO root fetch - processPackages [betanegbinfit]: Downloading https://files.pythonhosted.org/packages/db/4c/d1b6d71e81bc8f42e15030fd2f67544d10dfd1befbb3022c2f85dd70c320/betanegbinfit-1.9.2.tar.gz
+[2023-05-07 17:01:22] INFO root fetch - processPackages [betanegbinfit]: executing diffoscope
+[2023-05-07 17:01:22] INFO root fetch - processPackages [betanegbinfit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betanegbinfit-1.9.1.tar.gz tmp/betanegbinfit-1.9.2.tar.gz --markdown 20230507/b/betanegbinfit/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-07 17:01:22] INFO root fetch - processPackages [parquet2lance]: executing diffoscope
+[2023-05-07 17:01:22] INFO root fetch - processPackages [parquet2lance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parquet2lance-0.0.2.tar.gz tmp/parquet2lance-0.0.3-cp310-cp310-macosx_10_7_x86_64.whl.zip --markdown 20230507/p/parquet2lance/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 17:01:22] INFO root fetch - processPackages [nakuru-project-idk]: Downloading https://files.pythonhosted.org/packages/4d/02/2e59ed6a70452b669412a7b89fb9c14396f61fb63b30797c3263cae7ea04/nakuru_project_idk-0.0.2.1.tar.gz
+[2023-05-07 17:01:23] INFO root fetch - processPackages [nakuru-project-idk]: executing diffoscope
+[2023-05-07 17:01:23] INFO root fetch - processPackages [nakuru-project-idk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nakuru_project_idk-0.0.2.tar.gz tmp/nakuru_project_idk-0.0.2.1.tar.gz --markdown 20230507/n/nakuru-project-idk/0.0.2-0.0.2.1/diff.md --exclude *.pyd
+[2023-05-07 17:01:23] INFO root fetch - main [MainThread]: End processing [cursesplus]: success
+[2023-05-07 17:01:23] INFO root fetch - processPackages [mixalime]: Downloading https://files.pythonhosted.org/packages/15/d5/57edb971c7da6a1fae4e07e7bb1439621759adf902da9fc6527602363bd9/mixalime-2.9.9.tar.gz
+[2023-05-07 17:01:23] INFO root fetch - main [MainThread]: End processing [betanegbinfit]: success
+[2023-05-07 17:01:24] INFO root fetch - main [MainThread]: End processing [nakuru-project-idk]: success
+[2023-05-07 17:01:24] INFO root fetch - main [MainThread]: End processing [parquet2lance]: success
+[2023-05-07 17:01:25] INFO root fetch - processPackages [mixalime]: executing diffoscope
+[2023-05-07 17:01:25] INFO root fetch - processPackages [mixalime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixalime-2.9.8.tar.gz tmp/mixalime-2.9.9.tar.gz --markdown 20230507/m/mixalime/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-07 17:01:26] INFO root fetch - main [MainThread]: End processing [mixalime]: success
+[2023-05-07 17:01:26] INFO root fetch - main [MainThread]: Store serial: [18007662]
