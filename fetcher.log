@@ -6808,3 +6808,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 14:57:50] INFO root fetch - main [MainThread]: End processing [AudioProcessor]: success
 [2023-05-07 14:57:50] INFO root fetch - main [MainThread]: End processing [esdbclient]: success
 [2023-05-07 14:57:50] INFO root fetch - main [MainThread]: Store serial: [18006815]
+[2023-05-07 15:02:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006815]
+[2023-05-07 15:03:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 15:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: palmers-agents-general
+[2023-05-07 15:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: assisted-service-client
+[2023-05-07 15:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlmermaid
+[2023-05-07 15:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-05-07 15:03:00] INFO root fetch - processPackages [sqlmermaid]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 15:03:00] INFO root fetch - processPackages [palmers-agents-general]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 15:03:00] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.5.6] Old Version: [2023.5.5]
+[2023-05-07 15:03:00] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-05-07 15:03:00] INFO root fetch - processPackages [palmers-agents-general]: Downloading https://files.pythonhosted.org/packages/87/49/fb6b6d5385ea4ba76f6b688eb36b30f758e471ec26238cf5552aaf9db836/palmers_agents_general-0.0.1.tar.gz
+[2023-05-07 15:03:00] INFO root fetch - processPackages [sqlmermaid]: Downloading https://files.pythonhosted.org/packages/ba/f3/cf901f2101b80b32adbdb60be718dbc88b3871c4bbe5758d4f4e6156b905/sqlmermaid-0.1.1.tar.gz
+[2023-05-07 15:03:00] INFO root fetch - processPackages [assisted-service-client]: Downloading https://files.pythonhosted.org/packages/a5/ee/a5837c5427b0689f863021f5d65c42ff9d4ae267905a751492653198b2dc/assisted_service_client-2.9.0.post8-py3-none-any.whl
+[2023-05-07 15:03:00] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/0a/07/9b5c3152a349e6abb9b4fe970eebbb7c4004dfc92c5cfd66f081990d7927/fbgemm_gpu_nightly_cpu-2023.5.6-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-07 15:03:00] INFO root fetch - processPackages [palmers-agents-general]: Downloading https://files.pythonhosted.org/packages/9a/ae/ec76e085362a4d9d5398385ed3196677dd814f219c751adca3cf3b366b46/palmers_agents_general-0.0.2.tar.gz
+[2023-05-07 15:03:00] INFO root fetch - processPackages [palmers-agents-general]: executing diffoscope
+[2023-05-07 15:03:00] INFO root fetch - processPackages [palmers-agents-general]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palmers_agents_general-0.0.1.tar.gz tmp/palmers_agents_general-0.0.2.tar.gz --markdown 20230507/p/palmers-agents-general/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 15:03:00] INFO root fetch - processPackages [sqlmermaid]: Downloading https://files.pythonhosted.org/packages/0d/e6/2274bad1b1829062c5a6c9c5e2c3095d1ccaa1f57975ad0e7332062e3c28/sqlmermaid-0.1.2.tar.gz
+[2023-05-07 15:03:00] INFO root fetch - processPackages [assisted-service-client]: Downloading https://files.pythonhosted.org/packages/f6/90/2599b3c134ea21c06d22f83dd1dfac6801d974b9aa0958f008fb332e5b4d/assisted_service_client-2.9.0.post9-py3-none-any.whl
+[2023-05-07 15:03:00] INFO root fetch - processPackages [sqlmermaid]: executing diffoscope
+[2023-05-07 15:03:00] INFO root fetch - processPackages [sqlmermaid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlmermaid-0.1.1.tar.gz tmp/sqlmermaid-0.1.2.tar.gz --markdown 20230507/s/sqlmermaid/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 15:03:00] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-05-07 15:03:00] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230507/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-05-07 15:03:01] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-05-07 15:03:01] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.5.5-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.5.6-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230507/f/fbgemm-gpu-nightly-cpu/2023.5.5-2023.5.6/diff.md --exclude *.pyd
+[2023-05-07 15:03:01] INFO root fetch - main [MainThread]: End processing [palmers-agents-general]: success
+[2023-05-07 15:03:01] INFO root fetch - main [MainThread]: End processing [sqlmermaid]: success
+[2023-05-07 15:03:02] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-05-07 15:03:05] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-05-07 15:03:05] INFO root fetch - main [MainThread]: Store serial: [18006829]
