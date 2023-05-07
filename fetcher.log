@@ -9464,3 +9464,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 19:12:56] INFO root fetch - main [MainThread]: End processing [eko]: success
 [2023-05-07 19:12:57] INFO root fetch - main [MainThread]: End processing [pygit2]: success
 [2023-05-07 19:12:57] INFO root fetch - main [MainThread]: Store serial: [18008474]
+[2023-05-07 19:18:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008474]
+[2023-05-07 19:18:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 19:18:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: balladeer
+[2023-05-07 19:18:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pptools
+[2023-05-07 19:18:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wombatoo
+[2023-05-07 19:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: budgetguard
+[2023-05-07 19:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cshelph
+[2023-05-07 19:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sidetrek
+[2023-05-07 19:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Omar-Style-sel
+[2023-05-07 19:18:06] INFO root fetch - processPackages [wombatoo]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 19:18:06] INFO root fetch - processPackages [cshelph]: New version: [2.4.1] Old Version: [2.3.2]
+[2023-05-07 19:18:06] WARNING root fetch - processPackages [pptools]: Skipping, unable to determine old version
+[2023-05-07 19:18:06] INFO root fetch - main [MainThread]: End processing [pptools] error
+[2023-05-07 19:18:06] INFO root fetch - processPackages [balladeer]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-07 19:18:06] INFO root fetch - processPackages [budgetguard]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-07 19:18:06] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 19:18:06] INFO root fetch - processPackages [Omar-Style-sel]: New version: [0.6] Old Version: [0.5]
+[2023-05-07 19:18:06] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-07 19:18:06] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230507/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 19:18:06] INFO root fetch - processPackages [wombatoo]: Downloading https://files.pythonhosted.org/packages/55/9a/59cac9fe17a3df0b68c705ad61b09eae49587253fa0035efae037a6443f4/wombatoo-0.0.6.tar.gz
+[2023-05-07 19:18:06] INFO root fetch - processPackages [balladeer]: Downloading https://files.pythonhosted.org/packages/1f/43/53529d10bdca06dda5752947f24bf67b88cab69c060a37b9f5478ed74e8f/balladeer-0.8.0.tar.gz
+[2023-05-07 19:18:06] INFO root fetch - processPackages [budgetguard]: Downloading https://files.pythonhosted.org/packages/06/d5/c832692416ebd29c840c7669b3640c2a2d65a3228bbdbdd463e635c5e0a1/budgetguard-0.6.0.tar.gz
+[2023-05-07 19:18:06] INFO root fetch - processPackages [cshelph]: Downloading https://files.pythonhosted.org/packages/50/1c/24c5b9a6ea1cc439d1569ca21c17f2bfd777f69a6ea7cc6eed113efb995d/cshelph-2.4.1.tar.gz
+[2023-05-07 19:18:06] INFO root fetch - processPackages [cshelph]: executing diffoscope
+[2023-05-07 19:18:06] INFO root fetch - processPackages [cshelph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cshelph-2.3.2.tar.gz tmp/cshelph-2.4.1.tar.gz --markdown 20230507/c/cshelph/2.3.2-2.4.1/diff.md --exclude *.pyd
+[2023-05-07 19:18:06] INFO root fetch - processPackages [wombatoo]: executing diffoscope
+[2023-05-07 19:18:06] INFO root fetch - processPackages [wombatoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wombatoo-0.0.5.tar.gz tmp/wombatoo-0.0.6.tar.gz --markdown 20230507/w/wombatoo/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 19:18:06] INFO root fetch - processPackages [budgetguard]: executing diffoscope
+[2023-05-07 19:18:06] INFO root fetch - processPackages [budgetguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/budgetguard-0.5.0.tar.gz tmp/budgetguard-0.6.0.tar.gz --markdown 20230507/b/budgetguard/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-07 19:18:06] INFO root fetch - processPackages [Omar-Style-sel]: Downloading https://files.pythonhosted.org/packages/59/b5/a046cd45d93f5bf95903cb9fa73e4b5ba2283a0425724bf108d8f3d61a4d/Omar_Style_sel-0.5.tar.gz
+[2023-05-07 19:18:06] INFO root fetch - processPackages [balladeer]: Downloading https://files.pythonhosted.org/packages/0f/28/d422c06bc986a4f14c0e70b958a10c6d2d3617f2290ce9d0390ea5b7de2f/balladeer-0.9.0.tar.gz
+[2023-05-07 19:18:06] INFO root fetch - processPackages [Omar-Style-sel]: Downloading https://files.pythonhosted.org/packages/31/1a/a247e4dbea6cc3648874d6b8330a71239a87b803bcb265d1ab4b756a053d/Omar_Style_sel-0.6.tar.gz
+[2023-05-07 19:18:06] INFO root fetch - processPackages [Omar-Style-sel]: executing diffoscope
+[2023-05-07 19:18:06] INFO root fetch - processPackages [Omar-Style-sel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Omar_Style_sel-0.5.tar.gz tmp/Omar_Style_sel-0.6.tar.gz --markdown 20230507/O/Omar-Style-sel/0.5-0.6/diff.md --exclude *.pyd
+[2023-05-07 19:18:07] INFO root fetch - processPackages [balladeer]: executing diffoscope
+[2023-05-07 19:18:07] INFO root fetch - processPackages [balladeer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balladeer-0.8.0.tar.gz tmp/balladeer-0.9.0.tar.gz --markdown 20230507/b/balladeer/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-07 19:18:07] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-07 19:18:07] INFO root fetch - main [MainThread]: End processing [wombatoo]: success
+[2023-05-07 19:18:07] INFO root fetch - main [MainThread]: End processing [budgetguard]: success
+[2023-05-07 19:18:07] INFO root fetch - main [MainThread]: End processing [cshelph]: success
+[2023-05-07 19:18:08] INFO root fetch - main [MainThread]: End processing [Omar-Style-sel]: success
+[2023-05-07 19:18:08] INFO root fetch - main [MainThread]: End processing [balladeer]: success
+[2023-05-07 19:18:08] INFO root fetch - main [MainThread]: Store serial: [18008501]
