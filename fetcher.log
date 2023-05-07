@@ -2635,3 +2635,18 @@
 [2023-05-07 06:19:52] INFO root fetch - main [MainThread]: End processing [DeepSearchLite]: success
 [2023-05-07 06:19:53] INFO root fetch - main [MainThread]: End processing [ReplayTables-andnp]: success
 [2023-05-07 06:19:53] INFO root fetch - main [MainThread]: Store serial: [18004061]
+[2023-05-07 06:24:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004061]
+[2023-05-07 06:25:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-07 06:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-chatgpt-on-qq
+[2023-05-07 06:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: silobuster
+[2023-05-07 06:25:01] INFO root fetch - processPackages [silobuster]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 06:25:01] INFO root fetch - processPackages [nonebot-plugin-chatgpt-on-qq]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-07 06:25:02] INFO root fetch - processPackages [silobuster]: Downloading https://files.pythonhosted.org/packages/5d/8e/08487d4469703c5e908b698f81f7e9191076ff6e62e9f49e6942c6f4e7b0/silobuster-0.1.2.tar.gz
+[2023-05-07 06:25:02] INFO root fetch - processPackages [nonebot-plugin-chatgpt-on-qq]: Downloading https://files.pythonhosted.org/packages/9c/7c/99e06865344381aaaa88c79af907545a46969cb924ad9831a451e2c76917/nonebot-plugin-chatgpt-on-qq-1.5.1.tar.gz
+[2023-05-07 06:25:02] INFO root fetch - processPackages [nonebot-plugin-chatgpt-on-qq]: executing diffoscope
+[2023-05-07 06:25:02] INFO root fetch - processPackages [nonebot-plugin-chatgpt-on-qq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-chatgpt-on-qq-1.5.0.tar.gz tmp/nonebot-plugin-chatgpt-on-qq-1.5.1.tar.gz --markdown 20230507/n/nonebot-plugin-chatgpt-on-qq/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-07 06:25:02] INFO root fetch - processPackages [silobuster]: executing diffoscope
+[2023-05-07 06:25:02] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-0.1.1.tar.gz tmp/silobuster-0.1.2.tar.gz --markdown 20230507/s/silobuster/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 06:25:03] INFO root fetch - main [MainThread]: End processing [silobuster]: success
+[2023-05-07 06:25:03] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chatgpt-on-qq]: success
+[2023-05-07 06:25:03] INFO root fetch - main [MainThread]: Store serial: [18004066]
