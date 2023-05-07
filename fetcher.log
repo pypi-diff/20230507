@@ -11888,3 +11888,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 23:35:33] INFO root fetch - main [MainThread]: End processing [whisper-cpp-python]: success
 [2023-05-07 23:35:36] INFO root fetch - main [MainThread]: End processing [cercis]: success
 [2023-05-07 23:35:36] INFO root fetch - main [MainThread]: Store serial: [18009893]
+[2023-05-07 23:40:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009893]
+[2023-05-07 23:40:45] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 23:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: power-analysis
+[2023-05-07 23:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastf1
+[2023-05-07 23:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ersciyt
+[2023-05-07 23:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dlt
+[2023-05-07 23:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyglplot
+[2023-05-07 23:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hedra
+[2023-05-07 23:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: postgres-copy-binary
+[2023-05-07 23:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: postgres-copy-binary-extension-module
+[2023-05-07 23:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tiktoken
+[2023-05-07 23:40:45] INFO root fetch - processPackages [power-analysis]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-07 23:40:45] INFO root fetch - processPackages [ersciyt]: New version: [1.82] Old Version: [1.81]
+[2023-05-07 23:40:45] INFO root fetch - processPackages [dlt]: New version: [0.2.6a2] Old Version: [0.2.6a1]
+[2023-05-07 23:40:45] INFO root fetch - processPackages [pyglplot]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 23:40:45] INFO root fetch - processPackages [fastf1]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-05-07 23:40:45] INFO root fetch - processPackages [postgres-copy-binary-extension-module]: New version: [0.6.0] Old Version: [0.4.0]
+[2023-05-07 23:40:45] INFO root fetch - processPackages [tiktoken]: New version: [0.4.0] Old Version: [0.3.3]
+[2023-05-07 23:40:45] INFO root fetch - processPackages [postgres-copy-binary]: New version: [0.6.0] Old Version: [0.4.0]
+[2023-05-07 23:40:45] INFO root fetch - processPackages [hedra]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-07 23:40:45] INFO root fetch - processPackages [dlt]: Downloading https://files.pythonhosted.org/packages/3c/53/f156c276150a297064232d950ee8858b76a40fb29bb17ab4637092b4d5a1/dlt-0.2.6a1.tar.gz
+[2023-05-07 23:40:45] INFO root fetch - processPackages [postgres-copy-binary]: Downloading https://files.pythonhosted.org/packages/2d/d9/8a5947c82fdcf57c3bf2ce311d91f8d6f23f9a25a9d65dbc84f90de3bf00/postgres_copy_binary-0.4.0.tar.gz
+[2023-05-07 23:40:45] INFO root fetch - processPackages [fastf1]: Downloading https://files.pythonhosted.org/packages/17/c5/a36210814067fc1872aed7348af29ec26ceb3c6834248a8b58d287234775/fastf1-3.0.0.tar.gz
+[2023-05-07 23:40:46] INFO root fetch - processPackages [ersciyt]: Downloading https://files.pythonhosted.org/packages/f0/fe/c241570b124b4de9ca9d1bdc954f45c0053b75ae3736864583ad3500c748/ersciyt-1.82.tar.gz
+[2023-05-07 23:40:46] INFO root fetch - processPackages [pyglplot]: Downloading https://files.pythonhosted.org/packages/93/4f/1ed1462151fe1c185adc790e6cc6adaa863198a911d32f716f9ac562d4c0/pyglplot-0.1.0.tar.gz
+[2023-05-07 23:40:46] INFO root fetch - processPackages [hedra]: Downloading https://files.pythonhosted.org/packages/a0/8c/b5e4e6bc0dc0a019f64eff1b0b2af798bb54ab7c36688cdd40f909c8147f/hedra-0.7.8.tar.gz
+[2023-05-07 23:40:46] INFO root fetch - processPackages [postgres-copy-binary-extension-module]: Downloading https://files.pythonhosted.org/packages/27/e6/9c11c4403efa5a414d8b34cf865c34d80ea0c6f25a530747c3f45a4353f5/postgres_copy_binary_extension_module-0.4.0-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.whl
+[2023-05-07 23:40:46] INFO root fetch - processPackages [tiktoken]: Downloading https://files.pythonhosted.org/packages/8e/3a/20704b89b271cfebb1c981ef9f172fb18cb879b5c5cfc3b209083f71b229/tiktoken-0.3.3.tar.gz
+[2023-05-07 23:40:46] INFO root fetch - processPackages [power-analysis]: Downloading https://files.pythonhosted.org/packages/05/0a/6b915f469371b62d8beb60579e7ee441bbd0e31d4297a3f565cd4631a400/power_analysis-0.1.5.tar.gz
+[2023-05-07 23:40:46] INFO root fetch - processPackages [power-analysis]: executing diffoscope
+[2023-05-07 23:40:46] INFO root fetch - processPackages [power-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/power_analysis-0.1.4.tar.gz tmp/power_analysis-0.1.5.tar.gz --markdown 20230507/p/power-analysis/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-07 23:40:46] INFO root fetch - processPackages [ersciyt]: executing diffoscope
+[2023-05-07 23:40:46] INFO root fetch - processPackages [ersciyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ersciyt-1.81.tar.gz tmp/ersciyt-1.82.tar.gz --markdown 20230507/e/ersciyt/1.81-1.82/diff.md --exclude *.pyd
+[2023-05-07 23:40:46] INFO root fetch - processPackages [postgres-copy-binary]: Downloading https://files.pythonhosted.org/packages/cb/c2/0dcdf0bab6c34df5157140c8e1d4296430a4d485635639b8daf77b0732a1/postgres_copy_binary-0.6.0.tar.gz
+[2023-05-07 23:40:46] INFO root fetch - processPackages [dlt]: Downloading https://files.pythonhosted.org/packages/d9/b3/99ea03affc575c799b4cffab493faa2ad44724e63654faff041b68fdbec2/dlt-0.2.6a2.tar.gz
+[2023-05-07 23:40:46] INFO root fetch - processPackages [fastf1]: Downloading https://files.pythonhosted.org/packages/cc/55/ea28d34ebda40d2d85bde9f094659f4933c2a18629e30ce9ea16a28c637a/fastf1-3.0.1.tar.gz
+[2023-05-07 23:40:46] INFO root fetch - processPackages [tiktoken]: Downloading https://files.pythonhosted.org/packages/35/7a/444904f5969300e6bdd886102b499f3bcd80d49c25e46b176aebd262b223/tiktoken-0.4.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-07 23:40:46] INFO root fetch - processPackages [dlt]: executing diffoscope
+[2023-05-07 23:40:46] INFO root fetch - processPackages [dlt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlt-0.2.6a1.tar.gz tmp/dlt-0.2.6a2.tar.gz --markdown 20230507/d/dlt/0.2.6a1-0.2.6a2/diff.md --exclude *.pyd
+[2023-05-07 23:40:46] INFO root fetch - processPackages [fastf1]: executing diffoscope
+[2023-05-07 23:40:46] INFO root fetch - processPackages [fastf1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastf1-3.0.0.tar.gz tmp/fastf1-3.0.1.tar.gz --markdown 20230507/f/fastf1/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-05-07 23:40:46] INFO root fetch - processPackages [pyglplot]: Downloading https://files.pythonhosted.org/packages/60/29/c673a1ccd6d4f77643d9d23996ad344b176a98010e949d78650dab3d8688/pyglplot-0.1.1.tar.gz
+[2023-05-07 23:40:46] INFO root fetch - processPackages [hedra]: Downloading https://files.pythonhosted.org/packages/d0/43/976730d8c9c7ed00c6327ce3d46ca659b7246102e23cc84568381a2a29dc/hedra-0.7.9.tar.gz
+[2023-05-07 23:40:46] INFO root fetch - processPackages [postgres-copy-binary]: executing diffoscope
+[2023-05-07 23:40:46] INFO root fetch - processPackages [postgres-copy-binary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/postgres_copy_binary-0.4.0.tar.gz tmp/postgres_copy_binary-0.6.0.tar.gz --markdown 20230507/p/postgres-copy-binary/0.4.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-07 23:40:46] INFO root fetch - processPackages [pyglplot]: executing diffoscope
+[2023-05-07 23:40:46] INFO root fetch - processPackages [pyglplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglplot-0.1.0.tar.gz tmp/pyglplot-0.1.1.tar.gz --markdown 20230507/p/pyglplot/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 23:40:46] INFO root fetch - processPackages [hedra]: executing diffoscope
+[2023-05-07 23:40:46] INFO root fetch - processPackages [hedra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hedra-0.7.8.tar.gz tmp/hedra-0.7.9.tar.gz --markdown 20230507/h/hedra/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-07 23:40:46] INFO root fetch - processPackages [tiktoken]: executing diffoscope
+[2023-05-07 23:40:46] INFO root fetch - processPackages [tiktoken]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiktoken-0.3.3.tar.gz tmp/tiktoken-0.4.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230507/t/tiktoken/0.3.3-0.4.0/diff.md --exclude *.pyd
+[2023-05-07 23:40:46] INFO root fetch - processPackages [postgres-copy-binary-extension-module]: Downloading https://files.pythonhosted.org/packages/82/26/4809f8f7ee2ae194bb11f9f92f63188a73f1b8b95352c9fe3a1bc2e4c65e/postgres_copy_binary_extension_module-0.6.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-05-07 23:40:47] INFO root fetch - processPackages [postgres-copy-binary-extension-module]: executing diffoscope
+[2023-05-07 23:40:47] INFO root fetch - processPackages [postgres-copy-binary-extension-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/postgres_copy_binary_extension_module-0.4.0-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.whl.zip tmp/postgres_copy_binary_extension_module-0.6.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20230507/p/postgres-copy-binary-extension-module/0.4.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-07 23:40:47] INFO root fetch - main [MainThread]: End processing [power-analysis]: success
+[2023-05-07 23:40:47] INFO root fetch - main [MainThread]: End processing [ersciyt]: success
+[2023-05-07 23:40:47] INFO root fetch - main [MainThread]: End processing [postgres-copy-binary]: success
+[2023-05-07 23:40:47] INFO root fetch - main [MainThread]: End processing [fastf1]: success
+[2023-05-07 23:40:47] INFO root fetch - main [MainThread]: End processing [pyglplot]: success
+[2023-05-07 23:40:48] INFO root fetch - main [MainThread]: End processing [tiktoken]: success
+[2023-05-07 23:40:50] INFO root fetch - main [MainThread]: End processing [dlt]: success
+[2023-05-07 23:40:54] INFO root fetch - main [MainThread]: End processing [hedra]: success
+[2023-05-07 23:41:05] INFO root fetch - main [MainThread]: End processing [postgres-copy-binary-extension-module]: success
+[2023-05-07 23:41:05] INFO root fetch - main [MainThread]: Store serial: [18009951]
