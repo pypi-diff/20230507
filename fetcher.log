@@ -8962,3 +8962,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 18:20:49] INFO root fetch - main [MainThread]: End processing [mixalime]: success
 [2023-05-07 18:20:49] INFO root fetch - main [MainThread]: End processing [funasr]: success
 [2023-05-07 18:20:49] INFO root fetch - main [MainThread]: Store serial: [18008222]
+[2023-05-07 18:25:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008222]
+[2023-05-07 18:25:58] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-07 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: marshy
+[2023-05-07 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipcryptomodsV2
+[2023-05-07 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dxsp
+[2023-05-07 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: findmyorder
+[2023-05-07 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: HumanCursor
+[2023-05-07 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kray-zeroconf
+[2023-05-07 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kray-zeroconf
+[2023-05-07 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kray-zeroconf
+[2023-05-07 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: funasr-onnx
+[2023-05-07 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mysqlcipher
+[2023-05-07 18:25:58] INFO root fetch - processPackages [marshy]: New version: [4.0.3] Old Version: [4.0.2]
+[2023-05-07 18:25:58] INFO root fetch - processPackages [pipcryptomodsV2]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-07 18:25:58] INFO root fetch - processPackages [HumanCursor]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 18:25:58] INFO root fetch - processPackages [findmyorder]: New version: [1.3.5] Old Version: [1.3.4]
+[2023-05-07 18:25:58] WARNING root fetch - processPackages [mysqlcipher]: Skipping, unable to determine old version
+[2023-05-07 18:25:58] INFO root fetch - main [MainThread]: End processing [mysqlcipher] error
+[2023-05-07 18:25:58] INFO root fetch - processPackages [dxsp]: New version: [2.0.0] Old Version: [1.9.9]
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 18:25:59] INFO root fetch - processPackages [funasr-onnx]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 18:25:59] INFO root fetch - processPackages [pipcryptomodsV2]: Downloading https://files.pythonhosted.org/packages/9a/e5/13d7cca57f60fd92597acb66a3e28ff6dfdc4ded8d4f8a20e02a6ce184cc/pipcryptomodsV2-1.2.0.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/f1/a6/e0131c8b0d9a56860d63f568c3446800064528d1c7258b52c7efe5d32c21/dxsp-2.0.0.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [marshy]: Downloading https://files.pythonhosted.org/packages/0a/ff/2a578cdd0811414709b46d16f3bd9d4cd98474a48d2393b2f4c9ac878249/marshy-4.0.3.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [findmyorder]: Downloading https://files.pythonhosted.org/packages/b2/cb/207d8e6db00d574eb7c71ba7d275ea538a2774dcdbe05242cea432c9d3bb/findmyorder-1.3.5.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: Downloading https://files.pythonhosted.org/packages/79/5c/ee60ca313c17a103880df1c902a9868dfdb4e5798d1a22a3a3779521ffff/kray_zeroconf-0.1.1.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: Downloading https://files.pythonhosted.org/packages/79/5c/ee60ca313c17a103880df1c902a9868dfdb4e5798d1a22a3a3779521ffff/kray_zeroconf-0.1.1.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: Downloading https://files.pythonhosted.org/packages/79/5c/ee60ca313c17a103880df1c902a9868dfdb4e5798d1a22a3a3779521ffff/kray_zeroconf-0.1.1.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [funasr-onnx]: Downloading https://files.pythonhosted.org/packages/5f/fa/b73775fe7336dacac4222ef7e9406cbf41201f9dac2fdfe50ee4f2b883e6/funasr_onnx-0.0.6.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [HumanCursor]: Downloading https://files.pythonhosted.org/packages/59/c8/cb2d07414a37b67574bfd2bac620c03afb49b8e87a0f1040247028a25cb3/HumanCursor-0.0.6.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [pipcryptomodsV2]: executing diffoscope
+[2023-05-07 18:25:59] INFO root fetch - processPackages [pipcryptomodsV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipcryptomodsV2-1.1.0.tar.gz tmp/pipcryptomodsV2-1.2.0.tar.gz --markdown 20230507/p/pipcryptomodsV2/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-07 18:25:59] INFO root fetch - processPackages [marshy]: executing diffoscope
+[2023-05-07 18:25:59] INFO root fetch - processPackages [marshy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marshy-4.0.2.tar.gz tmp/marshy-4.0.3.tar.gz --markdown 20230507/m/marshy/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2023-05-07 18:25:59] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-07 18:25:59] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.9.9.tar.gz tmp/dxsp-2.0.0.tar.gz --markdown 20230507/d/dxsp/1.9.9-2.0.0/diff.md --exclude *.pyd
+[2023-05-07 18:25:59] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-05-07 18:25:59] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.3.4.tar.gz tmp/findmyorder-1.3.5.tar.gz --markdown 20230507/f/findmyorder/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2023-05-07 18:25:59] INFO root fetch - processPackages [HumanCursor]: executing diffoscope
+[2023-05-07 18:25:59] INFO root fetch - processPackages [HumanCursor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HumanCursor-0.0.5.tar.gz tmp/HumanCursor-0.0.6.tar.gz --markdown 20230507/H/HumanCursor/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: Downloading https://files.pythonhosted.org/packages/d7/22/a454543173137b3ee746fd1b63e013330babae66a38f903f317201486ec3/kray_zeroconf-0.1.2.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: Downloading https://files.pythonhosted.org/packages/d7/22/a454543173137b3ee746fd1b63e013330babae66a38f903f317201486ec3/kray_zeroconf-0.1.2.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: Downloading https://files.pythonhosted.org/packages/d7/22/a454543173137b3ee746fd1b63e013330babae66a38f903f317201486ec3/kray_zeroconf-0.1.2.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [funasr-onnx]: Downloading https://files.pythonhosted.org/packages/c6/9a/4600c6839d37aa50fea4324374c5abf38b86b5d3a521bcde1c930ce7be65/funasr_onnx-0.0.7.tar.gz
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: executing diffoscope
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kray_zeroconf-0.1.1.tar.gz tmp/kray_zeroconf-0.1.2.tar.gz --markdown 20230507/k/kray-zeroconf/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: executing diffoscope
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kray_zeroconf-0.1.1.tar.gz tmp/kray_zeroconf-0.1.2.tar.gz --markdown 20230507/k/kray-zeroconf/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: executing diffoscope
+[2023-05-07 18:25:59] INFO root fetch - processPackages [kray-zeroconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kray_zeroconf-0.1.1.tar.gz tmp/kray_zeroconf-0.1.2.tar.gz --markdown 20230507/k/kray-zeroconf/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 18:25:59] INFO root fetch - processPackages [funasr-onnx]: executing diffoscope
+[2023-05-07 18:25:59] INFO root fetch - processPackages [funasr-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funasr_onnx-0.0.6.tar.gz tmp/funasr_onnx-0.0.7.tar.gz --markdown 20230507/f/funasr-onnx/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 18:26:00] INFO root fetch - main [MainThread]: End processing [pipcryptomodsV2]: success
+[2023-05-07 18:26:00] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-05-07 18:26:00] INFO root fetch - main [MainThread]: End processing [HumanCursor]: success
+[2023-05-07 18:26:01] INFO root fetch - main [MainThread]: End processing [kray-zeroconf]: success
+[2023-05-07 18:26:01] INFO root fetch - main [MainThread]: End processing [kray-zeroconf]: success
+[2023-05-07 18:26:01] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-07 18:26:01] INFO root fetch - main [MainThread]: End processing [kray-zeroconf]: success
+[2023-05-07 18:26:01] INFO root fetch - main [MainThread]: End processing [marshy]: success
+[2023-05-07 18:26:01] INFO root fetch - main [MainThread]: End processing [funasr-onnx]: success
+[2023-05-07 18:26:01] INFO root fetch - main [MainThread]: Store serial: [18008253]
