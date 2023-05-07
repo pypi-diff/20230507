@@ -6652,3 +6652,71 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 14:41:46] INFO root fetch - main [MainThread]: End processing [quantsight]: success
 [2023-05-07 14:41:47] INFO root fetch - main [MainThread]: End processing [nodered.py]: success
 [2023-05-07 14:41:47] INFO root fetch - main [MainThread]: Store serial: [18006715]
+[2023-05-07 14:46:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006715]
+[2023-05-07 14:46:56] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-shays-CERT-1024-move-to-positive
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyprojectx
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ersciyt
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coreftools
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: prelude-sdk
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prelude-cli
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: colorara
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: palmers-agents-general
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: customChatbot
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: apininja
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ersciyt]: New version: [1.81] Old Version: [1.8]
+[2023-05-07 14:46:56] INFO root fetch - processPackages [pyprojectx]: New version: [1.0.0b4] Old Version: [1.0.0b3]
+[2023-05-07 14:46:56] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-1024-move-to-positive]: New version: [20230507.9.29.260785] Old Version: [20230507.12.42.659687]
+[2023-05-07 14:46:56] INFO root fetch - processPackages [apininja]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-07 14:46:56] WARNING root fetch - processPackages [customChatbot]: Skipping, unable to determine old version
+[2023-05-07 14:46:56] INFO root fetch - processPackages [customChatbot]: Start processing: manticore
+[2023-05-07 14:46:56] INFO root fetch - main [MainThread]: End processing [customChatbot] error
+[2023-05-07 14:46:56] INFO root fetch - processPackages [coreftools]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-07 14:46:56] WARNING root fetch - processPackages [palmers-agents-general]: Skipping, unable to determine old version
+[2023-05-07 14:46:56] INFO root fetch - processPackages [prelude-cli]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-07 14:46:56] INFO root fetch - processPackages [palmers-agents-general]: Start processing: tensorcircuit-nightly
+[2023-05-07 14:46:56] INFO root fetch - main [MainThread]: End processing [palmers-agents-general] error
+[2023-05-07 14:46:56] INFO root fetch - processPackages [prelude-sdk]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-07 14:46:56] WARNING root fetch - processPackages [colorara]: Skipping, unable to determine old version
+[2023-05-07 14:46:56] INFO root fetch - main [MainThread]: End processing [colorara] error
+[2023-05-07 14:46:56] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.0.dev20230506] Old Version: [0.9.0.dev20230505]
+[2023-05-07 14:46:56] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-1024-move-to-positive]: Downloading https://files.pythonhosted.org/packages/0e/ef/274b3361e0bd4170f2d09f1863f7748ce8764d4de7b0f981ba5e03053102/certora-cli-alpha-shays-CERT-1024-move-to-positive-20230507.12.42.659687.tar.gz
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ersciyt]: Downloading https://files.pythonhosted.org/packages/b8/19/975bf09e1cd9b6a1d7313d5fc8735fa6c644d013f5b7cb4a8420505ca62c/ersciyt-1.81.tar.gz
+[2023-05-07 14:46:56] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230506] Old Version: [0.3.8.dev230505]
+[2023-05-07 14:46:56] WARNING root fetch - processPackages [certora-cli-alpha-shays-CERT-1024-move-to-positive]: Skipping package: exceeds size limit 38474755>=10485760
+[2023-05-07 14:46:56] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shays-CERT-1024-move-to-positive] error
+[2023-05-07 14:46:56] INFO root fetch - processPackages [apininja]: Downloading https://files.pythonhosted.org/packages/0d/29/0bd99796c387fb0aef799fe4d12f577ea884325bc3e56ace0c6c81ed6827/apininja-0.1.8.tar.gz
+[2023-05-07 14:46:56] INFO root fetch - processPackages [pyprojectx]: Downloading https://files.pythonhosted.org/packages/27/0e/04ec5e93fd843c14c1310d78e5b84c4d6eae2df6f1468ca02718d3ffac78/pyprojectx-1.0.0b3.tar.gz
+[2023-05-07 14:46:56] INFO root fetch - processPackages [coreftools]: Downloading https://files.pythonhosted.org/packages/ec/9b/784a03468e5c50ebd243227315392b804fdf5e088fb578cdeb3d209b4326/coreftools-0.2.5-py3-none-any.whl
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ersciyt]: executing diffoscope
+[2023-05-07 14:46:56] INFO root fetch - processPackages [ersciyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ersciyt-1.8.tar.gz tmp/ersciyt-1.81.tar.gz --markdown 20230507/e/ersciyt/1.8-1.81/diff.md --exclude *.pyd
+[2023-05-07 14:46:56] INFO root fetch - processPackages [prelude-cli]: Downloading https://files.pythonhosted.org/packages/dd/f4/d5e1f5778e1ad7fc91e22d9a577ae27f2afccc35bd6f05b8593c337ba73d/prelude-cli-1.0.2.tar.gz
+[2023-05-07 14:46:56] INFO root fetch - processPackages [prelude-sdk]: Downloading https://files.pythonhosted.org/packages/c9/58/70e7f558efb0ea6e2af2b86117e694ad9f69d6984992f478e7b7c927798d/prelude-sdk-1.0.1.tar.gz
+[2023-05-07 14:46:56] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-05-07 14:46:56] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230505.tar.gz tmp/manticore-0.3.8.dev230506.tar.gz --markdown 20230507/m/manticore/0.3.8.dev230505-0.3.8.dev230506/diff.md --exclude *.pyd
+[2023-05-07 14:46:56] INFO root fetch - processPackages [apininja]: executing diffoscope
+[2023-05-07 14:46:56] INFO root fetch - processPackages [apininja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apininja-0.1.7.tar.gz tmp/apininja-0.1.8.tar.gz --markdown 20230507/a/apininja/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-07 14:46:56] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/04/89/93d278aa75855235fd22a3c008820c91a9842531079c843a3058df2c431b/tensorcircuit-nightly-0.9.0.dev20230506.tar.gz
+[2023-05-07 14:46:56] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-05-07 14:46:56] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.0.dev20230505.tar.gz tmp/tensorcircuit-nightly-0.9.0.dev20230506.tar.gz --markdown 20230507/t/tensorcircuit-nightly/0.9.0.dev20230505-0.9.0.dev20230506/diff.md --exclude *.pyd
+[2023-05-07 14:46:56] INFO root fetch - processPackages [pyprojectx]: Downloading https://files.pythonhosted.org/packages/28/b9/9f735d567373412a3a8b0708869e584204b844be88f852bf398c2263d046/pyprojectx-1.0.0b4.tar.gz
+[2023-05-07 14:46:56] INFO root fetch - processPackages [coreftools]: Downloading https://files.pythonhosted.org/packages/01/4c/efe42b7bd87905b88e7c89a44849fd5a593609e02dc14935cad7233a5376/coreftools-0.2.6-py3-none-any.whl
+[2023-05-07 14:46:56] INFO root fetch - processPackages [pyprojectx]: executing diffoscope
+[2023-05-07 14:46:56] INFO root fetch - processPackages [pyprojectx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprojectx-1.0.0b3.tar.gz tmp/pyprojectx-1.0.0b4.tar.gz --markdown 20230507/p/pyprojectx/1.0.0b3-1.0.0b4/diff.md --exclude *.pyd
+[2023-05-07 14:46:56] INFO root fetch - processPackages [coreftools]: executing diffoscope
+[2023-05-07 14:46:56] INFO root fetch - processPackages [coreftools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coreftools-0.2.5-py3-none-any.whl.zip tmp/coreftools-0.2.6-py3-none-any.whl.zip --markdown 20230507/c/coreftools/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-07 14:46:56] INFO root fetch - processPackages [prelude-sdk]: Downloading https://files.pythonhosted.org/packages/76/3b/2a3c2f7808466de5e79190b5f3c7888dc349a3a94df01d092d0ccec6c7ba/prelude-sdk-1.1.0.tar.gz
+[2023-05-07 14:46:57] INFO root fetch - processPackages [prelude-cli]: Downloading https://files.pythonhosted.org/packages/21/41/f584a576079512ea87def69c81d0626214c15f2888c5e3bcdb7d7b90660d/prelude-cli-1.1.0.tar.gz
+[2023-05-07 14:46:57] INFO root fetch - processPackages [prelude-sdk]: executing diffoscope
+[2023-05-07 14:46:57] INFO root fetch - processPackages [prelude-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prelude-sdk-1.0.1.tar.gz tmp/prelude-sdk-1.1.0.tar.gz --markdown 20230507/p/prelude-sdk/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-07 14:46:57] INFO root fetch - processPackages [prelude-cli]: executing diffoscope
+[2023-05-07 14:46:57] INFO root fetch - processPackages [prelude-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prelude-cli-1.0.2.tar.gz tmp/prelude-cli-1.1.0.tar.gz --markdown 20230507/p/prelude-cli/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-05-07 14:46:57] INFO root fetch - main [MainThread]: End processing [apininja]: success
+[2023-05-07 14:46:58] INFO root fetch - main [MainThread]: End processing [ersciyt]: success
+[2023-05-07 14:46:58] INFO root fetch - main [MainThread]: End processing [coreftools]: success
+[2023-05-07 14:46:58] INFO root fetch - main [MainThread]: End processing [pyprojectx]: success
+[2023-05-07 14:46:58] INFO root fetch - main [MainThread]: End processing [prelude-cli]: success
+[2023-05-07 14:46:58] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-05-07 14:46:58] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2023-05-07 14:47:27] INFO root fetch - main [MainThread]: End processing [prelude-sdk]: success
+[2023-05-07 14:47:27] INFO root fetch - main [MainThread]: Store serial: [18006764]
