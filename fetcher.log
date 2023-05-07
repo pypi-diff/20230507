@@ -3690,3 +3690,33 @@
 [2023-05-07 09:08:45] INFO root fetch - main [MainThread]: End processing [leap-model-parser]: success
 [2023-05-07 09:08:47] INFO root fetch - main [MainThread]: End processing [maturin]: success
 [2023-05-07 09:08:47] INFO root fetch - main [MainThread]: Store serial: [18004762]
+[2023-05-07 09:13:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004762]
+[2023-05-07 09:13:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 09:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wheeldiff
+[2023-05-07 09:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pineapple-spark
+[2023-05-07 09:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-models-nightly
+[2023-05-07 09:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-nightly
+[2023-05-07 09:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-hub-nightly
+[2023-05-07 09:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bambooai
+[2023-05-07 09:13:56] INFO root fetch - processPackages [wheeldiff]: New version: [2023.5.7.7] Old Version: [2023.5.7.5]
+[2023-05-07 09:13:56] WARNING root fetch - processPackages [pineapple-spark]: Skipping, unable to determine old version
+[2023-05-07 09:13:56] INFO root fetch - main [MainThread]: End processing [pineapple-spark] error
+[2023-05-07 09:13:56] WARNING root fetch - processPackages [bambooai]: Skipping, unable to determine old version
+[2023-05-07 09:13:56] INFO root fetch - main [MainThread]: End processing [bambooai] error
+[2023-05-07 09:13:56] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-05-07 09:13:56] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-05-07 09:13:56] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-05-07 09:13:56] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-05-07 09:13:56] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230507/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-05-07 09:13:56] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-05-07 09:13:56] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230507/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-05-07 09:13:56] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-05-07 09:13:56] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230507/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-05-07 09:13:56] INFO root fetch - processPackages [wheeldiff]: Downloading https://files.pythonhosted.org/packages/a8/7a/b1d58c4541a55ae30875ab7f72d29697648626a734faba1856a62600d1a8/wheeldiff-2023.5.7.7.tar.gz
+[2023-05-07 09:13:57] INFO root fetch - processPackages [wheeldiff]: executing diffoscope
+[2023-05-07 09:13:57] INFO root fetch - processPackages [wheeldiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheeldiff-2023.5.7.5.tar.gz tmp/wheeldiff-2023.5.7.7.tar.gz --markdown 20230507/w/wheeldiff/2023.5.7.5-2023.5.7.7/diff.md --exclude *.pyd
+[2023-05-07 09:13:58] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-05-07 09:13:58] INFO root fetch - main [MainThread]: End processing [wheeldiff]: success
+[2023-05-07 09:14:06] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-05-07 09:14:13] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-05-07 09:14:13] INFO root fetch - main [MainThread]: Store serial: [18004781]
