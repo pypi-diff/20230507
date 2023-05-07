@@ -11234,3 +11234,81 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 22:26:43] INFO root fetch - main [MainThread]: End processing [pulsectl-asyncio]: success
 [2023-05-07 22:26:45] INFO root fetch - main [MainThread]: End processing [whisper-cpp-python]: success
 [2023-05-07 22:26:45] INFO root fetch - main [MainThread]: Store serial: [18009574]
+[2023-05-07 22:31:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009574]
+[2023-05-07 22:31:54] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-07 22:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blume
+[2023-05-07 22:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autoAmbient
+[2023-05-07 22:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: struct-gpt
+[2023-05-07 22:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ha-services
+[2023-05-07 22:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: budgetcli
+[2023-05-07 22:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: neopolitan
+[2023-05-07 22:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: karcher-home
+[2023-05-07 22:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: qlat
+[2023-05-07 22:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: qlat-cps
+[2023-05-07 22:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: qlat-grid
+[2023-05-07 22:31:54] WARNING root fetch - processPackages [ha-services]: Skipping, unable to determine old version
+[2023-05-07 22:31:54] INFO root fetch - processPackages [ha-services]: Start processing: qlat-utils
+[2023-05-07 22:31:54] INFO root fetch - main [MainThread]: End processing [ha-services] error
+[2023-05-07 22:31:54] INFO root fetch - processPackages [blume]: New version: [0.2.5.4] Old Version: [0.2.5.3]
+[2023-05-07 22:31:54] INFO root fetch - processPackages [karcher-home]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-07 22:31:54] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 22:31:54] WARNING root fetch - processPackages [autoAmbient]: Skipping, unable to determine old version
+[2023-05-07 22:31:54] INFO root fetch - processPackages [autoAmbient]: Start processing: uoy-assessment-uploader
+[2023-05-07 22:31:54] INFO root fetch - main [MainThread]: End processing [autoAmbient] error
+[2023-05-07 22:31:54] INFO root fetch - processPackages [struct-gpt]: New version: [2.0.0] Old Version: [1.0.1]
+[2023-05-07 22:31:54] INFO root fetch - processPackages [uoy-assessment-uploader]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat]: New version: [0.9] Old Version: [0.8]
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-cps]: New version: [0.33] Old Version: [0.31]
+[2023-05-07 22:31:54] INFO root fetch - processPackages [budgetcli]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-grid]: New version: [0.9] Old Version: [0.8]
+[2023-05-07 22:31:54] INFO root fetch - processPackages [karcher-home]: executing diffoscope
+[2023-05-07 22:31:54] INFO root fetch - processPackages [karcher-home]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karcher-home-0.4.3.tar.gz tmp/karcher-home-0.4.4.tar.gz --markdown 20230507/k/karcher-home/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-utils]: New version: [0.9] Old Version: [0.8]
+[2023-05-07 22:31:54] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-07 22:31:54] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230507/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 22:31:54] INFO root fetch - processPackages [uoy-assessment-uploader]: executing diffoscope
+[2023-05-07 22:31:54] INFO root fetch - processPackages [uoy-assessment-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uoy-assessment-uploader-0.2.0.tar.gz tmp/uoy-assessment-uploader-0.2.1.tar.gz --markdown 20230507/u/uoy-assessment-uploader/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-07 22:31:54] INFO root fetch - processPackages [blume]: Downloading https://files.pythonhosted.org/packages/0a/7b/67a9c082ad6c72588fa4357ad40e228dc1b8d44c872e0dde6ad37cc16662/blume-0.2.5.3-py3-none-any.whl
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-grid]: Downloading https://files.pythonhosted.org/packages/cf/0f/594acbf132deaec157f4f6359b76028d1dc4d7f5664ef0481e1697ff48ef/qlat_grid-0.8.tar.gz
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-cps]: Downloading https://files.pythonhosted.org/packages/ce/66/f81ac99bfaffba68faab749241de4a13807d5672826b0f3da4e9376785df/qlat_cps-0.31.tar.gz
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat]: Downloading https://files.pythonhosted.org/packages/c1/78/3a21dfaa66aadd58ff521b3bbe198adc1082646f3b916b87ce3c16a06a4b/qlat-0.8.tar.gz
+[2023-05-07 22:31:54] INFO root fetch - processPackages [struct-gpt]: Downloading https://files.pythonhosted.org/packages/e8/77/4e135c5424349029486e60ee35569e164d808e95e3f0bd73b0c5ff240efb/struct_gpt-2.0.0.tar.gz
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-utils]: Downloading https://files.pythonhosted.org/packages/7c/2b/2132e4683879343a8503be10dfddbda8ef69bed2da3406817f3c6cbb1ea4/qlat_utils-0.8.tar.gz
+[2023-05-07 22:31:54] INFO root fetch - processPackages [struct-gpt]: executing diffoscope
+[2023-05-07 22:31:54] INFO root fetch - processPackages [struct-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/struct_gpt-1.0.1.tar.gz tmp/struct_gpt-2.0.0.tar.gz --markdown 20230507/s/struct-gpt/1.0.1-2.0.0/diff.md --exclude *.pyd
+[2023-05-07 22:31:54] INFO root fetch - processPackages [budgetcli]: Downloading https://files.pythonhosted.org/packages/b1/46/eec3641caaa0055d54d3dc09b4075af7d2248d6069ff541d877ff6d63e69/budgetcli-1.1.2.tar.gz
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-cps]: Downloading https://files.pythonhosted.org/packages/36/2a/300fae66d2702405778e605352867df27d8de03250c9db4bfde91aafcb05/qlat_cps-0.33.tar.gz
+[2023-05-07 22:31:54] INFO root fetch - processPackages [blume]: Downloading https://files.pythonhosted.org/packages/77/03/bd8282ee30561c987aebf6f70b2c5a3a53da9c7d6b5af6724289aa7d0e36/blume-0.2.5.4-py3-none-any.whl
+[2023-05-07 22:31:54] INFO root fetch - processPackages [budgetcli]: executing diffoscope
+[2023-05-07 22:31:54] INFO root fetch - processPackages [budgetcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/budgetcli-1.1.1.tar.gz tmp/budgetcli-1.1.2.tar.gz --markdown 20230507/b/budgetcli/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-grid]: Downloading https://files.pythonhosted.org/packages/a2/eb/4942d98922c17c64af3ee3db55ec8fc6ef5e9d228f9c6d009457e1ddaf61/qlat_grid-0.9.tar.gz
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat]: Downloading https://files.pythonhosted.org/packages/a0/e1/78310cfcdfaadaa0349840d9886556d6fb5ad85d743641d50f280a9e08df/qlat-0.9.tar.gz
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-cps]: executing diffoscope
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-cps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlat_cps-0.31.tar.gz tmp/qlat_cps-0.33.tar.gz --markdown 20230507/q/qlat-cps/0.31-0.33/diff.md --exclude *.pyd
+[2023-05-07 22:31:54] INFO root fetch - processPackages [blume]: executing diffoscope
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-utils]: Downloading https://files.pythonhosted.org/packages/db/40/6e58c3038e9046dd51fa42c9748ef7c8c65466165c0e9a6ed71064e6ca6b/qlat_utils-0.9.tar.gz
+[2023-05-07 22:31:54] INFO root fetch - processPackages [blume]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blume-0.2.5.3-py3-none-any.whl.zip tmp/blume-0.2.5.4-py3-none-any.whl.zip --markdown 20230507/b/blume/0.2.5.3-0.2.5.4/diff.md --exclude *.pyd
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-grid]: executing diffoscope
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlat_grid-0.8.tar.gz tmp/qlat_grid-0.9.tar.gz --markdown 20230507/q/qlat-grid/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat]: executing diffoscope
+[2023-05-07 22:31:54] INFO root fetch - processPackages [qlat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlat-0.8.tar.gz tmp/qlat-0.9.tar.gz --markdown 20230507/q/qlat/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-07 22:31:55] INFO root fetch - processPackages [qlat-utils]: executing diffoscope
+[2023-05-07 22:31:55] INFO root fetch - processPackages [qlat-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlat_utils-0.8.tar.gz tmp/qlat_utils-0.9.tar.gz --markdown 20230507/q/qlat-utils/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-07 22:31:55] INFO root fetch - processPackages [neopolitan]: Start processing: ue4-docker
+[2023-05-07 22:31:55] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-07 22:31:55] INFO root fetch - main [MainThread]: End processing [uoy-assessment-uploader]: success
+[2023-05-07 22:31:55] INFO root fetch - processPackages [ue4-docker]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 22:31:56] INFO root fetch - main [MainThread]: End processing [struct-gpt]: success
+[2023-05-07 22:31:56] INFO root fetch - main [MainThread]: End processing [karcher-home]: success
+[2023-05-07 22:31:56] INFO root fetch - processPackages [ue4-docker]: Downloading https://files.pythonhosted.org/packages/3a/44/00d410b7dba1162ec3054bd1df1c9507502c878523843c58306b9be412ff/ue4-docker-0.0.98.tar.gz
+[2023-05-07 22:31:56] INFO root fetch - main [MainThread]: End processing [budgetcli]: success
+[2023-05-07 22:31:56] INFO root fetch - main [MainThread]: End processing [qlat-grid]: success
+[2023-05-07 22:31:56] INFO root fetch - main [MainThread]: End processing [qlat-cps]: success
+[2023-05-07 22:31:56] INFO root fetch - processPackages [ue4-docker]: Downloading https://files.pythonhosted.org/packages/db/54/2e81cf485a46ebd823a3e694527714022532e9debd59ebc42bfb517bb2b1/ue4-docker-0.0.99.tar.gz
+[2023-05-07 22:31:56] INFO root fetch - main [MainThread]: End processing [blume]: success
+[2023-05-07 22:31:56] INFO root fetch - processPackages [ue4-docker]: executing diffoscope
+[2023-05-07 22:31:56] INFO root fetch - processPackages [ue4-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ue4-docker-0.0.98.tar.gz tmp/ue4-docker-0.0.99.tar.gz --markdown 20230507/u/ue4-docker/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 22:31:56] INFO root fetch - main [MainThread]: End processing [qlat-utils]: success
+[2023-05-07 22:31:58] INFO root fetch - main [MainThread]: End processing [ue4-docker]: success
+[2023-05-07 22:32:00] INFO root fetch - main [MainThread]: End processing [qlat]: success
+[2023-05-07 22:32:00] INFO root fetch - main [MainThread]: Store serial: [18009619]
