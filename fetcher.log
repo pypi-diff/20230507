@@ -9071,3 +9071,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 18:31:13] INFO root fetch - main [MainThread]: End processing [strawberry-django-auth]: success
 [2023-05-07 18:31:15] INFO root fetch - main [MainThread]: End processing [feathub-nightly]: success
 [2023-05-07 18:31:15] INFO root fetch - main [MainThread]: Store serial: [18008273]
+[2023-05-07 18:36:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008273]
+[2023-05-07 18:36:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 18:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: instruction-ner
+[2023-05-07 18:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cardano-nft-vending-machine
+[2023-05-07 18:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: impose-cli
+[2023-05-07 18:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jiggybase
+[2023-05-07 18:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tsp-wrapper
+[2023-05-07 18:36:27] INFO root fetch - processPackages [tsp-wrapper]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-07 18:36:27] INFO root fetch - processPackages [instruction-ner]: New version: [0.1.6] Old Version: [0.1.3]
+[2023-05-07 18:36:27] INFO root fetch - processPackages [impose-cli]: New version: [0.0.14] Old Version: [0.0.13]
+[2023-05-07 18:36:27] INFO root fetch - processPackages [jiggybase]: New version: [0.0.28] Old Version: [0.0.27]
+[2023-05-07 18:36:27] INFO root fetch - processPackages [cardano-nft-vending-machine]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-07 18:36:27] INFO root fetch - processPackages [impose-cli]: Downloading https://files.pythonhosted.org/packages/0e/2d/6b48dd96c69152231642eefc591ef9c2b5bcf15010e83ea2e97df22a78e4/impose_cli-0.0.13.tar.gz
+[2023-05-07 18:36:27] INFO root fetch - processPackages [tsp-wrapper]: Downloading https://files.pythonhosted.org/packages/b3/55/e4bb06b386ab51745420c743b076ac45ae79df9646f1f9439f444dcbbd90/tsp_wrapper-1.0.3.tar.gz
+[2023-05-07 18:36:27] INFO root fetch - processPackages [jiggybase]: Downloading https://files.pythonhosted.org/packages/30/37/b3a06802ef267ee9336872477fa23b6758039051875e758a9f5028a91d05/jiggybase-0.0.28.tar.gz
+[2023-05-07 18:36:27] INFO root fetch - processPackages [cardano-nft-vending-machine]: Downloading https://files.pythonhosted.org/packages/56/2c/e1629895794bc8d400dea3ae992fe1a8f4176a4542c3944d4e262d4caf8d/cardano-nft-vending-machine-0.7.1.tar.gz
+[2023-05-07 18:36:27] INFO root fetch - processPackages [jiggybase]: executing diffoscope
+[2023-05-07 18:36:27] INFO root fetch - processPackages [jiggybase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jiggybase-0.0.27.tar.gz tmp/jiggybase-0.0.28.tar.gz --markdown 20230507/j/jiggybase/0.0.27-0.0.28/diff.md --exclude *.pyd
+[2023-05-07 18:36:27] INFO root fetch - processPackages [instruction-ner]: Downloading https://files.pythonhosted.org/packages/ea/ba/9622e925618d2037bb8f7cff2333fd53495edeafb80e287b9a0737a8653b/instruction_ner-0.1.6.tar.gz
+[2023-05-07 18:36:27] INFO root fetch - processPackages [impose-cli]: Downloading https://files.pythonhosted.org/packages/0f/59/007d6642a75988df2317ba855c16421cc82ca1d071a0a191a7aaffa9d19a/impose_cli-0.0.14.tar.gz
+[2023-05-07 18:36:27] INFO root fetch - processPackages [cardano-nft-vending-machine]: executing diffoscope
+[2023-05-07 18:36:27] INFO root fetch - processPackages [cardano-nft-vending-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardano-nft-vending-machine-0.7.0.tar.gz tmp/cardano-nft-vending-machine-0.7.1.tar.gz --markdown 20230507/c/cardano-nft-vending-machine/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-07 18:36:27] INFO root fetch - processPackages [tsp-wrapper]: Downloading https://files.pythonhosted.org/packages/c5/a2/3f5b8f87893cfb12a2b9d0374c24d57020b859523b5df778a647c24e7f81/tsp_wrapper-1.0.4.tar.gz
+[2023-05-07 18:36:27] INFO root fetch - processPackages [instruction-ner]: executing diffoscope
+[2023-05-07 18:36:27] INFO root fetch - processPackages [instruction-ner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instruction_ner-0.1.3.tar.gz tmp/instruction_ner-0.1.6.tar.gz --markdown 20230507/i/instruction-ner/0.1.3-0.1.6/diff.md --exclude *.pyd
+[2023-05-07 18:36:27] INFO root fetch - processPackages [impose-cli]: executing diffoscope
+[2023-05-07 18:36:27] INFO root fetch - processPackages [impose-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/impose_cli-0.0.13.tar.gz tmp/impose_cli-0.0.14.tar.gz --markdown 20230507/i/impose-cli/0.0.13-0.0.14/diff.md --exclude *.pyd
+[2023-05-07 18:36:27] INFO root fetch - processPackages [tsp-wrapper]: executing diffoscope
+[2023-05-07 18:36:27] INFO root fetch - processPackages [tsp-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsp_wrapper-1.0.3.tar.gz tmp/tsp_wrapper-1.0.4.tar.gz --markdown 20230507/t/tsp-wrapper/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-07 18:36:28] INFO root fetch - main [MainThread]: End processing [cardano-nft-vending-machine]: success
+[2023-05-07 18:36:28] INFO root fetch - main [MainThread]: End processing [impose-cli]: success
+[2023-05-07 18:36:28] INFO root fetch - main [MainThread]: End processing [jiggybase]: success
+[2023-05-07 18:36:29] INFO root fetch - main [MainThread]: End processing [tsp-wrapper]: success
+[2023-05-07 18:36:29] INFO root fetch - main [MainThread]: End processing [instruction-ner]: success
+[2023-05-07 18:36:29] INFO root fetch - main [MainThread]: Store serial: [18008287]
