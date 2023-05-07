@@ -2321,3 +2321,23 @@
 [2023-05-07 05:12:00] INFO root fetch - main [MainThread]: End processing [jiggybase]: success
 [2023-05-07 05:12:01] INFO root fetch - main [MainThread]: End processing [gcvit]: success
 [2023-05-07 05:12:01] INFO root fetch - main [MainThread]: Store serial: [18003905]
+[2023-05-07 05:17:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003905]
+[2023-05-07 05:17:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 05:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GANDLF
+[2023-05-07 05:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onvif-zeep-async
+[2023-05-07 05:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: audioviz
+[2023-05-07 05:17:09] INFO root fetch - processPackages [audioviz]: New version: [0.1.5.dev1] Old Version: [0.1.5.dev0]
+[2023-05-07 05:17:09] INFO root fetch - processPackages [onvif-zeep-async]: New version: [3.1.0] Old Version: [3.0.2]
+[2023-05-07 05:17:09] INFO root fetch - processPackages [GANDLF]: New version: [0.0.16.dev20230507] Old Version: [0.0.16.dev20230506]
+[2023-05-07 05:17:09] INFO root fetch - processPackages [audioviz]: executing diffoscope
+[2023-05-07 05:17:09] INFO root fetch - processPackages [audioviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audioviz-0.1.5.dev0.tar.gz tmp/audioviz-0.1.5.dev1.tar.gz --markdown 20230507/a/audioviz/0.1.5.dev0-0.1.5.dev1/diff.md --exclude *.pyd
+[2023-05-07 05:17:09] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/52/5e/5d7cb5a529afee000954c1954235c026a25190783bf3398890da3352ce43/onvif-zeep-async-3.1.0.tar.gz
+[2023-05-07 05:17:09] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/1b/35/be5438198b4f6f8e691c44db0ba083cb22063254c264f4e5dbfb97ee261e/GANDLF-0.0.16.dev20230507.tar.gz
+[2023-05-07 05:17:09] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-05-07 05:17:09] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.16.dev20230506.tar.gz tmp/GANDLF-0.0.16.dev20230507.tar.gz --markdown 20230507/G/GANDLF/0.0.16.dev20230506-0.0.16.dev20230507/diff.md --exclude *.pyd
+[2023-05-07 05:17:09] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-05-07 05:17:09] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-3.0.2.tar.gz tmp/onvif-zeep-async-3.1.0.tar.gz --markdown 20230507/o/onvif-zeep-async/3.0.2-3.1.0/diff.md --exclude *.pyd
+[2023-05-07 05:17:10] INFO root fetch - main [MainThread]: End processing [audioviz]: success
+[2023-05-07 05:17:11] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-05-07 05:17:11] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-05-07 05:17:11] INFO root fetch - main [MainThread]: Store serial: [18003914]
