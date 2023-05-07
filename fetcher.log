@@ -2341,3 +2341,26 @@
 [2023-05-07 05:17:11] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
 [2023-05-07 05:17:11] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
 [2023-05-07 05:17:11] INFO root fetch - main [MainThread]: Store serial: [18003914]
+[2023-05-07 05:22:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003914]
+[2023-05-07 05:22:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 05:22:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdktf-cdktf-provider-spotinst
+[2023-05-07 05:22:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-mahjong-scoreboard
+[2023-05-07 05:22:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dgh
+[2023-05-07 05:22:20] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: New version: [0.3.1] Old Version: [0.3.0a1]
+[2023-05-07 05:22:20] INFO root fetch - processPackages [dgh]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 05:22:20] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: New version: [7.0.3] Old Version: [7.0.2]
+[2023-05-07 05:22:20] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: Downloading https://files.pythonhosted.org/packages/f0/6e/15641e9eaf4a8ac113f0104beb4949823cc0d54a6a47277ee353be8cf3ca/nonebot_plugin_mahjong_scoreboard-0.3.0a1.tar.gz
+[2023-05-07 05:22:20] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Downloading https://files.pythonhosted.org/packages/c4/42/7d097b48bce1ea063297565eba92ce3c9dc19fb44f42ab0428c94780956f/cdktf-cdktf-provider-spotinst-7.0.2.tar.gz
+[2023-05-07 05:22:20] INFO root fetch - processPackages [dgh]: Downloading https://files.pythonhosted.org/packages/64/84/361fa8e28af617f5530827fe552be3f1797b3667301f3979ecd005a8b155/dgh-0.0.3.tar.gz
+[2023-05-07 05:22:20] INFO root fetch - processPackages [dgh]: executing diffoscope
+[2023-05-07 05:22:20] INFO root fetch - processPackages [dgh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dgh-0.0.2.tar.gz tmp/dgh-0.0.3.tar.gz --markdown 20230507/d/dgh/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 05:22:20] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: Downloading https://files.pythonhosted.org/packages/62/d8/891a1ba5924c104100a43930fe9ba3b9031f29cd950f2d8c37a12d814c57/nonebot_plugin_mahjong_scoreboard-0.3.1.tar.gz
+[2023-05-07 05:22:20] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: executing diffoscope
+[2023-05-07 05:22:20] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_mahjong_scoreboard-0.3.0a1.tar.gz tmp/nonebot_plugin_mahjong_scoreboard-0.3.1.tar.gz --markdown 20230507/n/nonebot-plugin-mahjong-scoreboard/0.3.0a1-0.3.1/diff.md --exclude *.pyd
+[2023-05-07 05:22:20] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Downloading https://files.pythonhosted.org/packages/cf/da/06ad66cae278e5b5fc32ad34dd7ee057b6228d362381f858b2698dd3ac12/cdktf-cdktf-provider-spotinst-7.0.3.tar.gz
+[2023-05-07 05:22:21] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: executing diffoscope
+[2023-05-07 05:22:21] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-spotinst-7.0.2.tar.gz tmp/cdktf-cdktf-provider-spotinst-7.0.3.tar.gz --markdown 20230507/c/cdktf-cdktf-provider-spotinst/7.0.2-7.0.3/diff.md --exclude *.pyd
+[2023-05-07 05:22:21] INFO root fetch - main [MainThread]: End processing [dgh]: success
+[2023-05-07 05:22:22] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mahjong-scoreboard]: success
+[2023-05-07 05:22:26] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
+[2023-05-07 05:22:26] INFO root fetch - main [MainThread]: Store serial: [18003929]
