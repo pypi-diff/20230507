@@ -3122,3 +3122,24 @@
 [2023-05-07 07:40:28] INFO root fetch - main [MainThread]: End processing [streetscope]: success
 [2023-05-07 07:40:29] INFO root fetch - main [MainThread]: End processing [dj-rest-auth]: success
 [2023-05-07 07:40:29] INFO root fetch - main [MainThread]: Store serial: [18004341]
+[2023-05-07 07:45:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004341]
+[2023-05-07 07:45:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 07:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vmilog-py
+[2023-05-07 07:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kindenty-base
+[2023-05-07 07:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streetscope
+[2023-05-07 07:45:37] INFO root fetch - processPackages [kindenty-base]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 07:45:37] INFO root fetch - processPackages [streetscope]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-07 07:45:37] INFO root fetch - processPackages [vmilog-py]: New version: [1.0.0] Old Version: [0.9.0]
+[2023-05-07 07:45:37] INFO root fetch - processPackages [kindenty-base]: executing diffoscope
+[2023-05-07 07:45:37] INFO root fetch - processPackages [kindenty-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kindenty_base-0.1.8.tar.gz tmp/kindenty_base-0.1.9.tar.gz --markdown 20230507/k/kindenty-base/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 07:45:37] INFO root fetch - processPackages [streetscope]: Downloading https://files.pythonhosted.org/packages/a8/75/8ec1b73b437253f0c48439add2a889943959ac79e80dce2c1d4dad58fc3e/streetscope-0.3.4.tar.gz
+[2023-05-07 07:45:38] INFO root fetch - processPackages [vmilog-py]: Downloading https://files.pythonhosted.org/packages/3a/fb/918ffa79bea44dbe3625a976557af9f7b2fe42ff5454677a4afc09567632/vmilog-py-0.9.0.tar.gz
+[2023-05-07 07:45:38] INFO root fetch - processPackages [streetscope]: executing diffoscope
+[2023-05-07 07:45:38] INFO root fetch - processPackages [streetscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streetscope-0.3.3.tar.gz tmp/streetscope-0.3.4.tar.gz --markdown 20230507/s/streetscope/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-07 07:45:38] INFO root fetch - processPackages [vmilog-py]: Downloading https://files.pythonhosted.org/packages/59/2c/880e30a029d1b3f60aa3d71de7788c4b8417c6f0d10d5ad33d97078e913d/vmilog-py-1.0.0.tar.gz
+[2023-05-07 07:45:38] INFO root fetch - processPackages [vmilog-py]: executing diffoscope
+[2023-05-07 07:45:38] INFO root fetch - processPackages [vmilog-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmilog-py-0.9.0.tar.gz tmp/vmilog-py-1.0.0.tar.gz --markdown 20230507/v/vmilog-py/0.9.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 07:45:38] INFO root fetch - main [MainThread]: End processing [kindenty-base]: success
+[2023-05-07 07:45:39] INFO root fetch - main [MainThread]: End processing [streetscope]: success
+[2023-05-07 07:45:39] INFO root fetch - main [MainThread]: End processing [vmilog-py]: success
+[2023-05-07 07:45:39] INFO root fetch - main [MainThread]: Store serial: [18004350]
