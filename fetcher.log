@@ -2438,3 +2438,27 @@
 [2023-05-07 05:37:58] INFO root fetch - main [MainThread]: End processing [basal-and-bark]: success
 [2023-05-07 05:37:58] INFO root fetch - main [MainThread]: End processing [MLVisualizationTools]: success
 [2023-05-07 05:37:58] INFO root fetch - main [MainThread]: Store serial: [18003968]
+[2023-05-07 05:43:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003968]
+[2023-05-07 05:43:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 05:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: getMultiPrimerSet
+[2023-05-07 05:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zillionare-trader-client
+[2023-05-07 05:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pwproxy
+[2023-05-07 05:43:07] INFO root fetch - processPackages [pwproxy]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-05-07 05:43:07] INFO root fetch - processPackages [zillionare-trader-client]: New version: [0.4.1] Old Version: [0.3.9]
+[2023-05-07 05:43:07] INFO root fetch - processPackages [getMultiPrimerSet]: New version: [0.3] Old Version: [0.2a0]
+[2023-05-07 05:43:07] INFO root fetch - processPackages [getMultiPrimerSet]: Downloading https://files.pythonhosted.org/packages/f8/b3/afcef14d3eb6d9755ec5d2fc2d89cb0f38919e03ec0964a7d2773ec267da/getMultiPrimerSet-0.2a0.tar.gz
+[2023-05-07 05:43:07] INFO root fetch - processPackages [pwproxy]: Downloading https://files.pythonhosted.org/packages/b3/3a/486741716c295384c14016b37a58a54b07388eae4e434f4a41ec0b4a53ab/pwproxy-0.1.0.tar.gz
+[2023-05-07 05:43:07] INFO root fetch - processPackages [zillionare-trader-client]: Downloading https://files.pythonhosted.org/packages/00/3a/d25af2bb0ad345ddfdfee34b0afeefe315bdba86ce092fd982aaee777b27/zillionare-trader-client-0.3.9.tar.gz
+[2023-05-07 05:43:07] INFO root fetch - processPackages [getMultiPrimerSet]: Downloading https://files.pythonhosted.org/packages/cb/66/2866c05116fca0fa71df128e00f00e4928636a398e5263e7f267bdb64248/getMultiPrimerSet-0.3.tar.gz
+[2023-05-07 05:43:07] INFO root fetch - processPackages [pwproxy]: Downloading https://files.pythonhosted.org/packages/f4/ae/673e34ebcd0d3d577dae820563ada3a1b2c8dad2d1e07fec51a52260754d/pwproxy-1.0.0.tar.gz
+[2023-05-07 05:43:07] INFO root fetch - processPackages [getMultiPrimerSet]: executing diffoscope
+[2023-05-07 05:43:07] INFO root fetch - processPackages [getMultiPrimerSet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getMultiPrimerSet-0.2a0.tar.gz tmp/getMultiPrimerSet-0.3.tar.gz --markdown 20230507/g/getMultiPrimerSet/0.2a0-0.3/diff.md --exclude *.pyd
+[2023-05-07 05:43:08] INFO root fetch - processPackages [zillionare-trader-client]: Downloading https://files.pythonhosted.org/packages/ed/ae/a74d35ff5a5d29ffbe0fd0cb9887841d55b891166df2ea2482a38e136254/zillionare_trader_client-0.4.1.tar.gz
+[2023-05-07 05:43:08] INFO root fetch - processPackages [pwproxy]: executing diffoscope
+[2023-05-07 05:43:08] INFO root fetch - processPackages [pwproxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwproxy-0.1.0.tar.gz tmp/pwproxy-1.0.0.tar.gz --markdown 20230507/p/pwproxy/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 05:43:08] INFO root fetch - processPackages [zillionare-trader-client]: executing diffoscope
+[2023-05-07 05:43:08] INFO root fetch - processPackages [zillionare-trader-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zillionare-trader-client-0.3.9.tar.gz tmp/zillionare_trader_client-0.4.1.tar.gz --markdown 20230507/z/zillionare-trader-client/0.3.9-0.4.1/diff.md --exclude *.pyd
+[2023-05-07 05:43:09] INFO root fetch - main [MainThread]: End processing [getMultiPrimerSet]: success
+[2023-05-07 05:43:09] INFO root fetch - main [MainThread]: End processing [pwproxy]: success
+[2023-05-07 05:43:09] INFO root fetch - main [MainThread]: End processing [zillionare-trader-client]: success
+[2023-05-07 05:43:09] INFO root fetch - main [MainThread]: Store serial: [18003977]
