@@ -8484,3 +8484,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 17:38:35] INFO root fetch - main [MainThread]: End processing [corecrud]: success
 [2023-05-07 17:38:40] INFO root fetch - main [MainThread]: End processing [parquet2lance]: success
 [2023-05-07 17:38:40] INFO root fetch - main [MainThread]: Store serial: [18007944]
+[2023-05-07 17:43:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007944]
+[2023-05-07 17:44:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 17:44:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: VoiceIdentification
+[2023-05-07 17:44:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhOn
+[2023-05-07 17:44:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pcleaner
+[2023-05-07 17:44:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycloaker
+[2023-05-07 17:44:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: code-aimpetus
+[2023-05-07 17:44:01] INFO root fetch - processPackages [VoiceIdentification]: New version: [1.8] Old Version: [1.7]
+[2023-05-07 17:44:01] WARNING root fetch - processPackages [pycloaker]: Skipping, unable to determine old version
+[2023-05-07 17:44:01] INFO root fetch - main [MainThread]: End processing [pycloaker] error
+[2023-05-07 17:44:01] INFO root fetch - processPackages [pcleaner]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-05-07 17:44:01] WARNING root fetch - processPackages [code-aimpetus]: Skipping, unable to determine old version
+[2023-05-07 17:44:01] INFO root fetch - main [MainThread]: End processing [code-aimpetus] error
+[2023-05-07 17:44:01] INFO root fetch - processPackages [pyhOn]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-07 17:44:01] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-05-07 17:44:01] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.9.0.tar.gz tmp/pyhOn-0.9.1.tar.gz --markdown 20230507/p/pyhOn/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-07 17:44:01] INFO root fetch - processPackages [VoiceIdentification]: Downloading https://files.pythonhosted.org/packages/89/05/c68516367dafb34d127e255cd74d36469facf5b0c1799a69b91d8fe84cbb/VoiceIdentification-1.7.tar.gz
+[2023-05-07 17:44:01] INFO root fetch - processPackages [pcleaner]: Downloading https://files.pythonhosted.org/packages/37/aa/bdb9be00819c439450abbb61d17ded84bbaea796dbe5606124410d18bf11/pcleaner-1.7.0.tar.gz
+[2023-05-07 17:44:01] INFO root fetch - processPackages [VoiceIdentification]: Downloading https://files.pythonhosted.org/packages/bf/b4/4766ba8e23e64979267119925337cd068af547b98759d6959ee17653801d/VoiceIdentification-1.8.tar.gz
+[2023-05-07 17:44:01] INFO root fetch - processPackages [pcleaner]: Downloading https://files.pythonhosted.org/packages/62/e2/c3274463aed1629c43ec311c015d7bb07e755786d0fbfa352fb49e7661ff/pcleaner-1.7.1.tar.gz
+[2023-05-07 17:44:01] INFO root fetch - processPackages [pcleaner]: executing diffoscope
+[2023-05-07 17:44:01] INFO root fetch - processPackages [pcleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcleaner-1.7.0.tar.gz tmp/pcleaner-1.7.1.tar.gz --markdown 20230507/p/pcleaner/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2023-05-07 17:44:01] INFO root fetch - processPackages [VoiceIdentification]: executing diffoscope
+[2023-05-07 17:44:01] INFO root fetch - processPackages [VoiceIdentification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VoiceIdentification-1.7.tar.gz tmp/VoiceIdentification-1.8.tar.gz --markdown 20230507/V/VoiceIdentification/1.7-1.8/diff.md --exclude *.pyd
+[2023-05-07 17:44:02] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-05-07 17:44:02] INFO root fetch - main [MainThread]: End processing [VoiceIdentification]: success
+[2023-05-07 17:44:03] INFO root fetch - main [MainThread]: End processing [pcleaner]: success
+[2023-05-07 17:44:03] INFO root fetch - main [MainThread]: Store serial: [18007962]
