@@ -6125,3 +6125,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 13:41:11] INFO root fetch - main [MainThread]: End processing [django-medialogue] error
 [2023-05-07 13:41:11] INFO root fetch - main [MainThread]: End processing [kiwipiepy]: success
 [2023-05-07 13:41:11] INFO root fetch - main [MainThread]: Store serial: [18006377]
+[2023-05-07 13:46:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006377]
+[2023-05-07 13:46:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 13:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DHEater
+[2023-05-07 13:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nkust-ucl-k12-bot
+[2023-05-07 13:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: extended-tk
+[2023-05-07 13:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: h1parser
+[2023-05-07 13:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nkust-ucl-k12-bot
+[2023-05-07 13:46:20] INFO root fetch - processPackages [nkust-ucl-k12-bot]: New version: [2.8.4] Old Version: [2.8.3]
+[2023-05-07 13:46:20] INFO root fetch - processPackages [nkust-ucl-k12-bot]: New version: [2.8.4] Old Version: [2.8.3]
+[2023-05-07 13:46:20] INFO root fetch - processPackages [extended-tk]: New version: [0.14.0] Old Version: [0.13.0]
+[2023-05-07 13:46:20] INFO root fetch - processPackages [DHEater]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-05-07 13:46:20] WARNING root fetch - processPackages [h1parser]: Skipping, unable to determine old version
+[2023-05-07 13:46:20] INFO root fetch - main [MainThread]: End processing [h1parser] error
+[2023-05-07 13:46:20] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Downloading https://files.pythonhosted.org/packages/18/31/9e5b5952b37ac87f4f980d33170a0917392b1c2746db9c04d5bd6f4d07f0/nkust-ucl-k12-bot-2.8.3.tar.gz
+[2023-05-07 13:46:20] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Downloading https://files.pythonhosted.org/packages/18/31/9e5b5952b37ac87f4f980d33170a0917392b1c2746db9c04d5bd6f4d07f0/nkust-ucl-k12-bot-2.8.3.tar.gz
+[2023-05-07 13:46:20] INFO root fetch - processPackages [DHEater]: Downloading https://files.pythonhosted.org/packages/6a/eb/48c1c760d102fb88ba98ab0c500bf50b4e620ce5245416d49e662ffcafa9/DHEater-0.3.2.tar.gz
+[2023-05-07 13:46:20] INFO root fetch - processPackages [extended-tk]: Downloading https://files.pythonhosted.org/packages/63/f6/4d2be879ec98c420cbaa3bd661e2975819ad033c258a61dbcc1f46f8271d/extended_tk-0.14.0-py3-none-any.whl
+[2023-05-07 13:46:21] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Downloading https://files.pythonhosted.org/packages/8c/15/414f062c9f5e37eaa6ee6969b9b756859002a8823996a175f36ead87e147/nkust-ucl-k12-bot-2.8.4.tar.gz
+[2023-05-07 13:46:21] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Downloading https://files.pythonhosted.org/packages/8c/15/414f062c9f5e37eaa6ee6969b9b756859002a8823996a175f36ead87e147/nkust-ucl-k12-bot-2.8.4.tar.gz
+[2023-05-07 13:46:21] INFO root fetch - processPackages [extended-tk]: executing diffoscope
+[2023-05-07 13:46:21] INFO root fetch - processPackages [extended-tk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extended_tk-0.13.0-py3-none-any.whl.zip tmp/extended_tk-0.14.0-py3-none-any.whl.zip --markdown 20230507/e/extended-tk/0.13.0-0.14.0/diff.md --exclude *.pyd
+[2023-05-07 13:46:21] INFO root fetch - processPackages [DHEater]: Downloading https://files.pythonhosted.org/packages/5d/5f/b4eb59f4e9369b899996c4d38e0ec2552b890059b6e2b84a40d52ff9d52a/DHEater-0.4.0.tar.gz
+[2023-05-07 13:46:21] INFO root fetch - processPackages [DHEater]: executing diffoscope
+[2023-05-07 13:46:21] INFO root fetch - processPackages [DHEater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DHEater-0.3.2.tar.gz tmp/DHEater-0.4.0.tar.gz --markdown 20230507/D/DHEater/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-05-07 13:46:21] INFO root fetch - processPackages [nkust-ucl-k12-bot]: executing diffoscope
+[2023-05-07 13:46:21] INFO root fetch - processPackages [nkust-ucl-k12-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkust-ucl-k12-bot-2.8.3.tar.gz tmp/nkust-ucl-k12-bot-2.8.4.tar.gz --markdown 20230507/n/nkust-ucl-k12-bot/2.8.3-2.8.4/diff.md --exclude *.pyd
+[2023-05-07 13:46:21] INFO root fetch - processPackages [nkust-ucl-k12-bot]: executing diffoscope
+[2023-05-07 13:46:21] INFO root fetch - processPackages [nkust-ucl-k12-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkust-ucl-k12-bot-2.8.3.tar.gz tmp/nkust-ucl-k12-bot-2.8.4.tar.gz --markdown 20230507/n/nkust-ucl-k12-bot/2.8.3-2.8.4/diff.md --exclude *.pyd
+[2023-05-07 13:46:22] INFO root fetch - main [MainThread]: End processing [extended-tk]: success
+[2023-05-07 13:46:22] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
+[2023-05-07 13:46:22] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
+[2023-05-07 13:46:22] INFO root fetch - main [MainThread]: End processing [DHEater]: success
+[2023-05-07 13:46:22] INFO root fetch - main [MainThread]: Store serial: [18006398]
