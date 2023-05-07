@@ -2550,3 +2550,38 @@
 [2023-05-07 05:58:40] INFO root fetch - main [MainThread]: End processing [pyaxetool]: success
 [2023-05-07 05:58:40] INFO root fetch - main [MainThread]: End processing [mtsql]: success
 [2023-05-07 05:58:40] INFO root fetch - main [MainThread]: Store serial: [18004029]
+[2023-05-07 06:03:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004029]
+[2023-05-07 06:03:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 06:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mtsql
+[2023-05-07 06:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyghostdb
+[2023-05-07 06:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: getMultiPrimerSet
+[2023-05-07 06:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyllms
+[2023-05-07 06:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TDhelper
+[2023-05-07 06:03:49] INFO root fetch - processPackages [pyghostdb]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 06:03:49] INFO root fetch - processPackages [getMultiPrimerSet]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-07 06:03:49] INFO root fetch - processPackages [pyllms]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-07 06:03:49] INFO root fetch - processPackages [TDhelper]: New version: [2.4.8] Old Version: [2.4.7]
+[2023-05-07 06:03:49] INFO root fetch - processPackages [mtsql]: New version: [1.4.202305070359] Old Version: [1.4.202305070337]
+[2023-05-07 06:03:49] INFO root fetch - processPackages [getMultiPrimerSet]: Downloading https://files.pythonhosted.org/packages/11/5a/1d6742676f7687c19142e4f76e320ee41192e967f9db3e69e609378b365a/getMultiPrimerSet-1.0.0.tar.gz
+[2023-05-07 06:03:49] INFO root fetch - processPackages [pyghostdb]: Downloading https://files.pythonhosted.org/packages/ce/48/5e372a617f2801e7d6617461a5386c1af9e9f776036e4e74085e4224e6df/pyghostdb-0.0.3.tar.gz
+[2023-05-07 06:03:49] INFO root fetch - processPackages [pyllms]: Downloading https://files.pythonhosted.org/packages/1a/6b/ed750736e88b0edc0889fae40835fe094c6bc70ab60ab643159bf3daf3ca/pyllms-0.2.0.tar.gz
+[2023-05-07 06:03:49] INFO root fetch - processPackages [TDhelper]: Downloading https://files.pythonhosted.org/packages/bb/1c/dca1ceb037eb8f1ae4de4019d0068c738138f1245464ed9fc883cebccd4c/TDhelper-2.4.8.tar.gz
+[2023-05-07 06:03:49] INFO root fetch - processPackages [mtsql]: Downloading https://files.pythonhosted.org/packages/13/b6/844e7ac2cb3e5cd18a8b1d7dad57f98ce0032c103c152db20201fb7b5261/mtsql-1.4.202305070359-py3-none-any.whl
+[2023-05-07 06:03:49] INFO root fetch - processPackages [pyghostdb]: executing diffoscope
+[2023-05-07 06:03:49] INFO root fetch - processPackages [pyghostdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyghostdb-0.0.2.tar.gz tmp/pyghostdb-0.0.3.tar.gz --markdown 20230507/p/pyghostdb/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 06:03:49] INFO root fetch - processPackages [mtsql]: executing diffoscope
+[2023-05-07 06:03:49] INFO root fetch - processPackages [mtsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtsql-1.4.202305070337-py3-none-any.whl.zip tmp/mtsql-1.4.202305070359-py3-none-any.whl.zip --markdown 20230507/m/mtsql/1.4.202305070337-1.4.202305070359/diff.md --exclude *.pyd
+[2023-05-07 06:03:49] INFO root fetch - processPackages [getMultiPrimerSet]: Downloading https://files.pythonhosted.org/packages/07/22/d29d52fb1cb0d5955979d4ff8b071f03dfb5e86e7a2445e3674cbb620db6/getMultiPrimerSet-1.0.1.tar.gz
+[2023-05-07 06:03:49] INFO root fetch - processPackages [TDhelper]: executing diffoscope
+[2023-05-07 06:03:49] INFO root fetch - processPackages [TDhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TDhelper-2.4.7.tar.gz tmp/TDhelper-2.4.8.tar.gz --markdown 20230507/T/TDhelper/2.4.7-2.4.8/diff.md --exclude *.pyd
+[2023-05-07 06:03:49] INFO root fetch - processPackages [pyllms]: Downloading https://files.pythonhosted.org/packages/c3/63/a2778e4aca0c35241e33b2fb6cc383d2d4e108aaae57d4eaea96a3b113db/pyllms-0.2.1.tar.gz
+[2023-05-07 06:03:50] INFO root fetch - processPackages [pyllms]: executing diffoscope
+[2023-05-07 06:03:50] INFO root fetch - processPackages [pyllms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyllms-0.2.0.tar.gz tmp/pyllms-0.2.1.tar.gz --markdown 20230507/p/pyllms/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-07 06:03:50] INFO root fetch - processPackages [getMultiPrimerSet]: executing diffoscope
+[2023-05-07 06:03:50] INFO root fetch - processPackages [getMultiPrimerSet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getMultiPrimerSet-1.0.0.tar.gz tmp/getMultiPrimerSet-1.0.1.tar.gz --markdown 20230507/g/getMultiPrimerSet/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-07 06:03:50] INFO root fetch - main [MainThread]: End processing [pyghostdb]: success
+[2023-05-07 06:03:50] INFO root fetch - main [MainThread]: End processing [mtsql]: success
+[2023-05-07 06:03:51] INFO root fetch - main [MainThread]: End processing [pyllms]: success
+[2023-05-07 06:03:51] INFO root fetch - main [MainThread]: End processing [getMultiPrimerSet]: success
+[2023-05-07 06:03:51] INFO root fetch - main [MainThread]: End processing [TDhelper]: success
+[2023-05-07 06:03:51] INFO root fetch - main [MainThread]: Store serial: [18004043]
