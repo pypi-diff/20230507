@@ -9563,3 +9563,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 19:23:19] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2023-05-07 19:23:20] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
 [2023-05-07 19:23:20] INFO root fetch - main [MainThread]: Store serial: [18008529]
+[2023-05-07 19:28:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008529]
+[2023-05-07 19:28:29] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-07 19:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quantplay
+[2023-05-07 19:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: budgetguard
+[2023-05-07 19:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cuboxGPT
+[2023-05-07 19:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cuboxgpt
+[2023-05-07 19:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pynixconfig
+[2023-05-07 19:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: uoy-assessment-uploader
+[2023-05-07 19:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: crazy-thursday
+[2023-05-07 19:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: moneycarlo
+[2023-05-07 19:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cagen
+[2023-05-07 19:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pipkin
+[2023-05-07 19:28:29] INFO root fetch - processPackages [quantplay]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cuboxGPT]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 19:28:29] INFO root fetch - processPackages [budgetguard]: New version: [0.8.0] Old Version: [0.6.0]
+[2023-05-07 19:28:29] INFO root fetch - processPackages [pynixconfig]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cuboxgpt]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 19:28:29] WARNING root fetch - processPackages [uoy-assessment-uploader]: Skipping, unable to determine old version
+[2023-05-07 19:28:29] INFO root fetch - main [MainThread]: End processing [uoy-assessment-uploader] error
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cagen]: New version: [0.2.0b9] Old Version: [0.2.0b8]
+[2023-05-07 19:28:29] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.7.1] Old Version: [2023.5.7.0]
+[2023-05-07 19:28:29] WARNING root fetch - processPackages [moneycarlo]: Skipping, unable to determine old version
+[2023-05-07 19:28:29] INFO root fetch - main [MainThread]: End processing [moneycarlo] error
+[2023-05-07 19:28:29] INFO root fetch - processPackages [pipkin]: New version: [2.0b2] Old Version: [2.0b1]
+[2023-05-07 19:28:29] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-07 19:28:29] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.7.0.tar.gz tmp/crazy-thursday-2023.5.7.1.tar.gz --markdown 20230507/c/crazy-thursday/2023.5.7.0-2023.5.7.1/diff.md --exclude *.pyd
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cuboxGPT]: Downloading https://files.pythonhosted.org/packages/4f/ee/ce2cdf1d578862fba5948346f8cf2363cdd95df0d37902e9cce73db9a790/cuboxGPT-0.1.0.tar.gz
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cuboxgpt]: Downloading https://files.pythonhosted.org/packages/4f/ee/ce2cdf1d578862fba5948346f8cf2363cdd95df0d37902e9cce73db9a790/cuboxGPT-0.1.0.tar.gz
+[2023-05-07 19:28:29] INFO root fetch - processPackages [budgetguard]: Downloading https://files.pythonhosted.org/packages/21/6c/028fedf7a016a2f9559e4cb63077c598b50b933d194ed02b228fb92f383c/budgetguard-0.8.0.tar.gz
+[2023-05-07 19:28:29] INFO root fetch - processPackages [pynixconfig]: Downloading https://files.pythonhosted.org/packages/76/31/1b16ef0769c77c7baf9b472e6325372bed3484d7878cc1be163758dd5041/pynixconfig-0.1.0.tar.gz
+[2023-05-07 19:28:29] INFO root fetch - processPackages [budgetguard]: executing diffoscope
+[2023-05-07 19:28:29] INFO root fetch - processPackages [budgetguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/budgetguard-0.6.0.tar.gz tmp/budgetguard-0.8.0.tar.gz --markdown 20230507/b/budgetguard/0.6.0-0.8.0/diff.md --exclude *.pyd
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cagen]: executing diffoscope
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagen-0.2.0b8.tar.gz tmp/cagen-0.2.0b9.tar.gz --markdown 20230507/c/cagen/0.2.0b8-0.2.0b9/diff.md --exclude *.pyd
+[2023-05-07 19:28:29] INFO root fetch - processPackages [quantplay]: executing diffoscope
+[2023-05-07 19:28:29] INFO root fetch - processPackages [pipkin]: Downloading https://files.pythonhosted.org/packages/db/c9/0375a018891949146e4df54aadc9bd9cc485633be58f55c44799b97b31f0/pipkin-2.0b1.tar.gz
+[2023-05-07 19:28:29] INFO root fetch - processPackages [quantplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantplay-1.2.8.tar.gz tmp/quantplay-1.2.9.tar.gz --markdown 20230507/q/quantplay/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cuboxGPT]: Downloading https://files.pythonhosted.org/packages/a4/a3/6c8cf34f672631169324ef67dbed4e6a55fc0fadb42f9bcf1f5457c3c6db/cuboxgpt-0.1.1.tar.gz
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cuboxgpt]: Downloading https://files.pythonhosted.org/packages/a4/a3/6c8cf34f672631169324ef67dbed4e6a55fc0fadb42f9bcf1f5457c3c6db/cuboxgpt-0.1.1.tar.gz
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cuboxgpt]: executing diffoscope
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cuboxGPT]: executing diffoscope
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cuboxGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuboxGPT-0.1.0.tar.gz tmp/cuboxgpt-0.1.1.tar.gz --markdown 20230507/c/cuboxGPT/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 19:28:29] INFO root fetch - processPackages [cuboxgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuboxGPT-0.1.0.tar.gz tmp/cuboxgpt-0.1.1.tar.gz --markdown 20230507/c/cuboxgpt/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 19:28:29] INFO root fetch - processPackages [pynixconfig]: Downloading https://files.pythonhosted.org/packages/97/53/3cba3ebc0432b0905939a1013325670ad3c2a39bff4dd344d5106e2ce4b8/pynixconfig-0.1.1.tar.gz
+[2023-05-07 19:28:29] INFO root fetch - processPackages [pynixconfig]: executing diffoscope
+[2023-05-07 19:28:29] INFO root fetch - processPackages [pynixconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynixconfig-0.1.0.tar.gz tmp/pynixconfig-0.1.1.tar.gz --markdown 20230507/p/pynixconfig/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 19:28:29] INFO root fetch - processPackages [pipkin]: Downloading https://files.pythonhosted.org/packages/84/3c/96d57f10fb0ef617e685199a0f1856d2d3f5866451e53ebfc79f78c8cf20/pipkin-2.0b2.tar.gz
+[2023-05-07 19:28:30] INFO root fetch - processPackages [pipkin]: executing diffoscope
+[2023-05-07 19:28:30] INFO root fetch - processPackages [pipkin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipkin-2.0b1.tar.gz tmp/pipkin-2.0b2.tar.gz --markdown 20230507/p/pipkin/2.0b1-2.0b2/diff.md --exclude *.pyd
+[2023-05-07 19:28:30] INFO root fetch - main [MainThread]: End processing [budgetguard]: success
+[2023-05-07 19:28:30] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-07 19:28:30] INFO root fetch - main [MainThread]: End processing [cuboxGPT]: success
+[2023-05-07 19:28:31] INFO root fetch - main [MainThread]: End processing [cagen]: success
+[2023-05-07 19:28:31] INFO root fetch - main [MainThread]: End processing [cuboxgpt]: success
+[2023-05-07 19:28:31] INFO root fetch - main [MainThread]: End processing [pynixconfig]: success
+[2023-05-07 19:28:31] INFO root fetch - main [MainThread]: End processing [quantplay]: success
+[2023-05-07 19:28:31] INFO root fetch - main [MainThread]: End processing [pipkin]: success
+[2023-05-07 19:28:31] INFO root fetch - main [MainThread]: Store serial: [18008563]
