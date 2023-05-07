@@ -5406,3 +5406,40 @@
 [2023-05-07 12:37:37] INFO root fetch - main [MainThread]: End processing [portablemc-forge]: success
 [2023-05-07 12:37:37] INFO root fetch - main [MainThread]: End processing [typeguard]: success
 [2023-05-07 12:37:37] INFO root fetch - main [MainThread]: Store serial: [18005975]
+[2023-05-07 12:42:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005975]
+[2023-05-07 12:42:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 12:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: md-anchors
+[2023-05-07 12:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zesty.zbs-api-securonix
+[2023-05-07 12:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PCRinSilico
+[2023-05-07 12:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chafa.py
+[2023-05-07 12:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gimera
+[2023-05-07 12:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prompt-man
+[2023-05-07 12:42:45] INFO root fetch - processPackages [gimera]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-07 12:42:45] INFO root fetch - processPackages [prompt-man]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 12:42:45] INFO root fetch - processPackages [gimera]: executing diffoscope
+[2023-05-07 12:42:45] INFO root fetch - processPackages [gimera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gimera-0.6.8.tar.gz tmp/gimera-0.6.9.tar.gz --markdown 20230507/g/gimera/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-07 12:42:45] INFO root fetch - processPackages [zesty.zbs-api-securonix]: New version: [1.0.2023.5.7.1683455929] Old Version: [1.0.2023.3.26.1679833388]
+[2023-05-07 12:42:45] WARNING root fetch - processPackages [PCRinSilico]: Skipping, unable to determine old version
+[2023-05-07 12:42:45] INFO root fetch - main [MainThread]: End processing [PCRinSilico] error
+[2023-05-07 12:42:45] INFO root fetch - processPackages [chafa.py]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-07 12:42:45] INFO root fetch - processPackages [md-anchors]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-07 12:42:45] INFO root fetch - processPackages [prompt-man]: executing diffoscope
+[2023-05-07 12:42:45] INFO root fetch - processPackages [prompt-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompt_man-0.1.3.tar.gz tmp/prompt_man-0.1.4.tar.gz --markdown 20230507/p/prompt-man/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 12:42:46] INFO root fetch - processPackages [zesty.zbs-api-securonix]: Downloading https://files.pythonhosted.org/packages/34/df/a6d823a9be5225275381c470d37bc9fe17013f5be4ad199dbb2f71824152/zesty.zbs-api-securonix-1.0.2023.3.26.1679833388.tar.gz
+[2023-05-07 12:42:46] INFO root fetch - processPackages [chafa.py]: Downloading https://files.pythonhosted.org/packages/58/0c/d58c6cdc4c339bd5bbec79e786f87e8deffc7e7cec2b6b3e0082f1735fb3/chafa.py-1.1.1.tar.gz
+[2023-05-07 12:42:46] INFO root fetch - processPackages [md-anchors]: Downloading https://files.pythonhosted.org/packages/72/16/459be1aeeac323c9232a16be6ad5945d1c79b84cc14cc9fc2e0d42d1f83b/md-anchors-0.2.1.tar.gz
+[2023-05-07 12:42:46] INFO root fetch - processPackages [zesty.zbs-api-securonix]: Downloading https://files.pythonhosted.org/packages/17/6b/3197980f92502e981d727a8218778b86ae2e6c47d1be3bec5a56d8d3c3bb/zesty.zbs-api-securonix-1.0.2023.5.7.1683455929.tar.gz
+[2023-05-07 12:42:46] INFO root fetch - processPackages [md-anchors]: Downloading https://files.pythonhosted.org/packages/50/27/085a510af1da90d854adbb234d07fb7b28c6b69fead7b5ee9107307242bf/md-anchors-0.2.2.tar.gz
+[2023-05-07 12:42:46] INFO root fetch - processPackages [zesty.zbs-api-securonix]: executing diffoscope
+[2023-05-07 12:42:46] INFO root fetch - processPackages [zesty.zbs-api-securonix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zesty.zbs-api-securonix-1.0.2023.3.26.1679833388.tar.gz tmp/zesty.zbs-api-securonix-1.0.2023.5.7.1683455929.tar.gz --markdown 20230507/z/zesty.zbs-api-securonix/1.0.2023.3.26.1679833388-1.0.2023.5.7.1683455929/diff.md --exclude *.pyd
+[2023-05-07 12:42:46] INFO root fetch - processPackages [md-anchors]: executing diffoscope
+[2023-05-07 12:42:46] INFO root fetch - processPackages [md-anchors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/md-anchors-0.2.1.tar.gz tmp/md-anchors-0.2.2.tar.gz --markdown 20230507/m/md-anchors/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-07 12:42:46] INFO root fetch - processPackages [chafa.py]: Downloading https://files.pythonhosted.org/packages/33/72/e83f2c070d711f17fff7048b68cc6f24f3fc49863ba11f34be987aa21a7a/chafa.py-1.1.2.tar.gz
+[2023-05-07 12:42:46] INFO root fetch - main [MainThread]: End processing [prompt-man]: success
+[2023-05-07 12:42:46] INFO root fetch - main [MainThread]: End processing [gimera]: success
+[2023-05-07 12:42:47] INFO root fetch - processPackages [chafa.py]: executing diffoscope
+[2023-05-07 12:42:47] INFO root fetch - processPackages [chafa.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chafa.py-1.1.1.tar.gz tmp/chafa.py-1.1.2.tar.gz --markdown 20230507/c/chafa.py/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-07 12:42:47] INFO root fetch - main [MainThread]: End processing [md-anchors]: success
+[2023-05-07 12:42:47] INFO root fetch - main [MainThread]: End processing [zesty.zbs-api-securonix]: success
+[2023-05-07 12:42:48] INFO root fetch - main [MainThread]: End processing [chafa.py]: success
+[2023-05-07 12:42:48] INFO root fetch - main [MainThread]: Store serial: [18006003]
