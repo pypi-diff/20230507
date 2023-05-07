@@ -2077,3 +2077,75 @@
 [2023-05-07 04:29:47] INFO root fetch - main [MainThread]: End processing [tastytrade-sdk]: success
 [2023-05-07 04:29:48] INFO root fetch - main [MainThread]: End processing [autoxx]: success
 [2023-05-07 04:29:48] INFO root fetch - main [MainThread]: Store serial: [18003792]
+[2023-05-07 04:34:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003792]
+[2023-05-07 04:34:56] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-07 04:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monailabel-weekly
+[2023-05-07 04:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: junitparser
+[2023-05-07 04:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk8s-plus-24
+[2023-05-07 04:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qtex
+[2023-05-07 04:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: onvif-zeep-async
+[2023-05-07 04:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: iam-actions
+[2023-05-07 04:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk8s-plus-25
+[2023-05-07 04:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk8s-plus-26
+[2023-05-07 04:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: filter-choices
+[2023-05-07 04:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sry
+[2023-05-07 04:34:56] INFO root fetch - processPackages [monailabel-weekly]: New version: [0.5.dev2319] Old Version: [0.5.dev2318]
+[2023-05-07 04:34:56] INFO root fetch - processPackages [junitparser]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-05-07 04:34:56] INFO root fetch - processPackages [qtex]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 04:34:56] INFO root fetch - processPackages [sry]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 04:34:56] INFO root fetch - processPackages [onvif-zeep-async]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-05-07 04:34:56] INFO root fetch - processPackages [cdk8s-plus-24]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-07 04:34:56] WARNING root fetch - processPackages [filter-choices]: Skipping, unable to determine old version
+[2023-05-07 04:34:56] INFO root fetch - processPackages [filter-choices]: Start processing: plotfish2
+[2023-05-07 04:34:56] INFO root fetch - main [MainThread]: End processing [filter-choices] error
+[2023-05-07 04:34:56] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230507] Old Version: [1.2.20230506]
+[2023-05-07 04:34:56] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-07 04:34:56] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-07 04:34:56] INFO root fetch - processPackages [plotfish2]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 04:34:56] INFO root fetch - processPackages [monailabel-weekly]: Downloading https://files.pythonhosted.org/packages/18/34/d41be22aef8d03bc01c2275b9f38c69851b016fea6ced95465287b93f6ee/monailabel_weekly-0.5.dev2318-py3-none-any.whl
+[2023-05-07 04:34:56] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/a6/23/a7ecef405ff894abacc34cd4beb2a5da0bf004f9a31b8d7213590210e2b3/onvif-zeep-async-3.0.2.tar.gz
+[2023-05-07 04:34:56] INFO root fetch - processPackages [qtex]: Downloading https://files.pythonhosted.org/packages/15/75/f8ef3d1464484566e4fb59b2a3cd04948026c9cf96660a5b72d05bc53334/qtex-0.0.6.tar.gz
+[2023-05-07 04:34:56] INFO root fetch - processPackages [junitparser]: Downloading https://files.pythonhosted.org/packages/69/6c/3f94d7400caff0b05bf722d6ffdea3b08b887a0d2b4473fb47fc6b97dfee/junitparser-3.0.0.tar.gz
+[2023-05-07 04:34:56] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-05-07 04:34:56] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-3.0.1.tar.gz tmp/onvif-zeep-async-3.0.2.tar.gz --markdown 20230507/o/onvif-zeep-async/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-05-07 04:34:56] INFO root fetch - processPackages [qtex]: executing diffoscope
+[2023-05-07 04:34:56] INFO root fetch - processPackages [qtex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtex-0.0.5.tar.gz tmp/qtex-0.0.6.tar.gz --markdown 20230507/q/qtex/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 04:34:56] INFO root fetch - processPackages [plotfish2]: Downloading https://files.pythonhosted.org/packages/d7/68/a5647d68f7f51964e47a4f46832ce1641000772e45fe0ccf6ee4df2800d4/plotfish2-0.1.1.tar.gz
+[2023-05-07 04:34:56] INFO root fetch - processPackages [sry]: Downloading https://files.pythonhosted.org/packages/0d/d2/c6a0bd60a6888c8aee3d09195b2d1cc8172fd7b9ade61772a1144327c4e8/sry-0.0.2.tar.gz
+[2023-05-07 04:34:56] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/8b/fa/e7c2c389c11161cced5dff6c923b5cf4d4f921b91cc455d8105286061ded/iam_actions-1.2.20230507.tar.gz
+[2023-05-07 04:34:56] INFO root fetch - processPackages [sry]: executing diffoscope
+[2023-05-07 04:34:56] INFO root fetch - processPackages [sry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sry-0.0.1.tar.gz tmp/sry-0.0.2.tar.gz --markdown 20230507/s/sry/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 04:34:56] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-05-07 04:34:56] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230506.tar.gz tmp/iam_actions-1.2.20230507.tar.gz --markdown 20230507/i/iam-actions/1.2.20230506-1.2.20230507/diff.md --exclude *.pyd
+[2023-05-07 04:34:56] INFO root fetch - processPackages [cdk8s-plus-24]: executing diffoscope
+[2023-05-07 04:34:56] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.7.8.tar.gz tmp/cdk8s-plus-24-2.7.9.tar.gz --markdown 20230507/c/cdk8s-plus-24/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-07 04:34:56] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-05-07 04:34:56] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.3.8.tar.gz tmp/cdk8s-plus-26-2.3.9.tar.gz --markdown 20230507/c/cdk8s-plus-26/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-07 04:34:56] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-05-07 04:34:56] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.7.8.tar.gz tmp/cdk8s-plus-25-2.7.9.tar.gz --markdown 20230507/c/cdk8s-plus-25/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-07 04:34:57] INFO root fetch - processPackages [plotfish2]: Downloading https://files.pythonhosted.org/packages/64/d3/0930b1e8c72f2a0f58bc9eef1c5723866024d2784a6e48527ecd4d4ed881/plotfish2-0.1.2.tar.gz
+[2023-05-07 04:34:57] INFO root fetch - processPackages [junitparser]: Downloading https://files.pythonhosted.org/packages/fb/fc/ddf4590667a5f2c95fdee24eaa2290c3f6b2b05c8e564bd6689ad91209a6/junitparser-3.1.0.tar.gz
+[2023-05-07 04:34:57] INFO root fetch - processPackages [junitparser]: executing diffoscope
+[2023-05-07 04:34:57] INFO root fetch - processPackages [junitparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/junitparser-3.0.0.tar.gz tmp/junitparser-3.1.0.tar.gz --markdown 20230507/j/junitparser/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-05-07 04:34:57] INFO root fetch - processPackages [plotfish2]: executing diffoscope
+[2023-05-07 04:34:57] INFO root fetch - processPackages [plotfish2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plotfish2-0.1.1.tar.gz tmp/plotfish2-0.1.2.tar.gz --markdown 20230507/p/plotfish2/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 04:34:58] INFO root fetch - processPackages [qtex]: Start processing: ovos-stt-plugin-fasterwhisper
+[2023-05-07 04:34:58] INFO root fetch - main [MainThread]: End processing [qtex]: success
+[2023-05-07 04:34:58] INFO root fetch - main [MainThread]: End processing [sry]: success
+[2023-05-07 04:34:58] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: New version: [0.0.1a3] Old Version: [0.0.1a2]
+[2023-05-07 04:34:58] INFO root fetch - main [MainThread]: End processing [junitparser]: success
+[2023-05-07 04:34:58] INFO root fetch - processPackages [monailabel-weekly]: Downloading https://files.pythonhosted.org/packages/85/ef/b9308ef2469c141c122a74c98a087d343ad4133586b5c1c036a4df670220/monailabel_weekly-0.5.dev2319-py3-none-any.whl
+[2023-05-07 04:34:58] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: Downloading https://files.pythonhosted.org/packages/44/c9/49752690b3d7d478caf33b4a87f5b38026c4fc733ed6538ff2849906b874/ovos-stt-plugin-fasterwhisper-0.0.1a3.tar.gz
+[2023-05-07 04:34:58] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-24]: success
+[2023-05-07 04:34:58] INFO root fetch - main [MainThread]: End processing [plotfish2]: success
+[2023-05-07 04:34:58] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2023-05-07 04:34:58] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
+[2023-05-07 04:34:58] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: executing diffoscope
+[2023-05-07 04:34:58] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-stt-plugin-fasterwhisper-0.0.1a2.tar.gz tmp/ovos-stt-plugin-fasterwhisper-0.0.1a3.tar.gz --markdown 20230507/o/ovos-stt-plugin-fasterwhisper/0.0.1a2-0.0.1a3/diff.md --exclude *.pyd
+[2023-05-07 04:34:59] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-05-07 04:34:59] INFO root fetch - main [MainThread]: End processing [ovos-stt-plugin-fasterwhisper]: success
+[2023-05-07 04:35:00] INFO root fetch - processPackages [monailabel-weekly]: executing diffoscope
+[2023-05-07 04:35:00] INFO root fetch - processPackages [monailabel-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monailabel_weekly-0.5.dev2318-py3-none-any.whl.zip tmp/monailabel_weekly-0.5.dev2319-py3-none-any.whl.zip --markdown 20230507/m/monailabel-weekly/0.5.dev2318-0.5.dev2319/diff.md --exclude *.pyd
+[2023-05-07 04:35:00] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-05-07 04:35:49] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
+[2023-05-07 04:35:49] INFO root fetch - main [MainThread]: Store serial: [18003826]
