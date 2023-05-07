@@ -11477,3 +11477,71 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 22:52:44] INFO root fetch - main [MainThread]: End processing [llmbda-fastapi]: success
 [2023-05-07 22:53:14] INFO root fetch - main [MainThread]: End processing [cloud-files]: success
 [2023-05-07 22:53:14] INFO root fetch - main [MainThread]: Store serial: [18009694]
+[2023-05-07 22:58:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009694]
+[2023-05-07 22:58:22] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-07 22:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: optimum
+[2023-05-07 22:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: raffdoc
+[2023-05-07 22:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydetex
+[2023-05-07 22:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cliconfig
+[2023-05-07 22:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shello-world
+[2023-05-07 22:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gimera
+[2023-05-07 22:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: discminer
+[2023-05-07 22:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: shello-world
+[2023-05-07 22:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gdshoplib
+[2023-05-07 22:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: codrone-edu
+[2023-05-07 22:58:22] INFO root fetch - processPackages [optimum]: New version: [1.8.4] Old Version: [1.8.3]
+[2023-05-07 22:58:22] INFO root fetch - processPackages [cliconfig]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-07 22:58:22] INFO root fetch - processPackages [discminer]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-07 22:58:22] WARNING root fetch - processPackages [raffdoc]: Skipping, unable to determine old version
+[2023-05-07 22:58:22] INFO root fetch - main [MainThread]: End processing [raffdoc] error
+[2023-05-07 22:58:22] INFO root fetch - processPackages [codrone-edu]: New version: [1.8] Old Version: [1.7]
+[2023-05-07 22:58:22] INFO root fetch - processPackages [shello-world]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-07 22:58:22] INFO root fetch - processPackages [pydetex]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-07 22:58:22] INFO root fetch - processPackages [shello-world]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-07 22:58:22] INFO root fetch - processPackages [gdshoplib]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-07 22:58:22] INFO root fetch - processPackages [gimera]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-07 22:58:23] INFO root fetch - processPackages [shello-world]: Downloading https://files.pythonhosted.org/packages/bb/5e/e8897f6015cb6d114cc78a33fad16e8d7018baa06e16a72cf8c7295c4ecb/shello_world-0.1.2.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [shello-world]: Downloading https://files.pythonhosted.org/packages/bb/5e/e8897f6015cb6d114cc78a33fad16e8d7018baa06e16a72cf8c7295c4ecb/shello_world-0.1.2.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [gimera]: executing diffoscope
+[2023-05-07 22:58:23] INFO root fetch - processPackages [gimera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gimera-0.6.8.tar.gz tmp/gimera-0.6.9.tar.gz --markdown 20230507/g/gimera/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-07 22:58:23] INFO root fetch - processPackages [discminer]: Downloading https://files.pythonhosted.org/packages/23/76/ba7babc50e87b1b65f224cdc1225db2f3ce1df08ecced5be2c59ece0a5ca/discminer-0.2.4.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [optimum]: Downloading https://files.pythonhosted.org/packages/88/b4/2ab76a0b0248c1a2cc8511ee36f6438802596d9f983e7aca4ae8f6bf59e5/optimum-1.8.3.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [pydetex]: Downloading https://files.pythonhosted.org/packages/14/25/a34ad1d44f35c6f11fc943579893ab6676b851a00bd62bce116e43b1b9f9/pydetex-1.0.0.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [cliconfig]: Downloading https://files.pythonhosted.org/packages/ee/04/cc2e9b4b111949700897cd20aa42e96fe355ae78d7fc085baadf66c4da8b/cliconfig-0.2.2.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [codrone-edu]: Downloading https://files.pythonhosted.org/packages/aa/1c/f8719aa1170018f0c1b27fff51e5dc970bbd30de76cda4f4a174904a4d2d/codrone_edu-1.7-py3-none-any.whl
+[2023-05-07 22:58:23] INFO root fetch - processPackages [gdshoplib]: Downloading https://files.pythonhosted.org/packages/73/0b/7f0c190c94d6d643bd6926117358a01049ebdfb799d6b257c6ea1e1753bc/gdshoplib-1.8.0.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [cliconfig]: executing diffoscope
+[2023-05-07 22:58:23] INFO root fetch - processPackages [cliconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cliconfig-0.2.1.tar.gz tmp/cliconfig-0.2.2.tar.gz --markdown 20230507/c/cliconfig/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-07 22:58:23] INFO root fetch - processPackages [shello-world]: Downloading https://files.pythonhosted.org/packages/52/4f/ee7a0f6104386fbb6e49518d22229f341fba6f0650f84c8654a34db01a80/shello_world-0.1.3.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [shello-world]: Downloading https://files.pythonhosted.org/packages/52/4f/ee7a0f6104386fbb6e49518d22229f341fba6f0650f84c8654a34db01a80/shello_world-0.1.3.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [optimum]: Downloading https://files.pythonhosted.org/packages/7a/00/b597402893199eb04394a43069ed101cd05fd1060e3259f4c1c086aaf9dc/optimum-1.8.4.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [pydetex]: Downloading https://files.pythonhosted.org/packages/41/68/4e11cf587cb993de8916e442274aa86962079f56d126118bb6cd96aef4cf/pydetex-1.0.1.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [discminer]: Downloading https://files.pythonhosted.org/packages/76/f6/29e4de48c7944ec9dc62968e918302103d13d804c00157d7eb45651df357/discminer-0.2.5.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [codrone-edu]: Downloading https://files.pythonhosted.org/packages/aa/4d/a7f3a39f35b1a69d634356af5738a37f587e1d7d2080aaf385012437bc54/codrone_edu-1.8-py3-none-any.whl
+[2023-05-07 22:58:23] ERROR root fetch - processPackages [cliconfig]: Diffoscope failed: Error: error creating container storage: the container name "pedantic_torvalds" is already in use by "43a11e2efb8812a63b17cd75f58259b3fa7d0d841b202e9ebb9ae275d91a41dd". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-07 22:58:23] INFO root fetch - main [MainThread]: End processing [cliconfig] error
+[2023-05-07 22:58:23] INFO root fetch - processPackages [shello-world]: executing diffoscope
+[2023-05-07 22:58:23] INFO root fetch - processPackages [shello-world]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shello_world-0.1.2.tar.gz tmp/shello_world-0.1.3.tar.gz --markdown 20230507/s/shello-world/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 22:58:23] INFO root fetch - processPackages [shello-world]: executing diffoscope
+[2023-05-07 22:58:23] INFO root fetch - processPackages [shello-world]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shello_world-0.1.2.tar.gz tmp/shello_world-0.1.3.tar.gz --markdown 20230507/s/shello-world/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 22:58:23] INFO root fetch - processPackages [pydetex]: executing diffoscope
+[2023-05-07 22:58:23] INFO root fetch - processPackages [pydetex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydetex-1.0.0.tar.gz tmp/pydetex-1.0.1.tar.gz --markdown 20230507/p/pydetex/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-07 22:58:23] INFO root fetch - processPackages [discminer]: executing diffoscope
+[2023-05-07 22:58:23] INFO root fetch - processPackages [codrone-edu]: executing diffoscope
+[2023-05-07 22:58:23] INFO root fetch - processPackages [discminer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discminer-0.2.4.tar.gz tmp/discminer-0.2.5.tar.gz --markdown 20230507/d/discminer/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-07 22:58:23] INFO root fetch - processPackages [codrone-edu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codrone_edu-1.7-py3-none-any.whl.zip tmp/codrone_edu-1.8-py3-none-any.whl.zip --markdown 20230507/c/codrone-edu/1.7-1.8/diff.md --exclude *.pyd
+[2023-05-07 22:58:23] INFO root fetch - processPackages [optimum]: executing diffoscope
+[2023-05-07 22:58:23] INFO root fetch - processPackages [optimum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimum-1.8.3.tar.gz tmp/optimum-1.8.4.tar.gz --markdown 20230507/o/optimum/1.8.3-1.8.4/diff.md --exclude *.pyd
+[2023-05-07 22:58:23] INFO root fetch - processPackages [gdshoplib]: Downloading https://files.pythonhosted.org/packages/48/91/d657572826a5d41e3284ecce0fb4393bf35e0c761799a04d0d8397113ce7/gdshoplib-1.9.0.tar.gz
+[2023-05-07 22:58:23] INFO root fetch - processPackages [gdshoplib]: executing diffoscope
+[2023-05-07 22:58:23] INFO root fetch - processPackages [gdshoplib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdshoplib-1.8.0.tar.gz tmp/gdshoplib-1.9.0.tar.gz --markdown 20230507/g/gdshoplib/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-07 22:58:24] INFO root fetch - main [MainThread]: End processing [gimera]: success
+[2023-05-07 22:58:24] INFO root fetch - main [MainThread]: End processing [shello-world]: success
+[2023-05-07 22:58:24] INFO root fetch - main [MainThread]: End processing [shello-world]: success
+[2023-05-07 22:58:25] INFO root fetch - main [MainThread]: End processing [pydetex]: success
+[2023-05-07 22:58:25] INFO root fetch - main [MainThread]: End processing [discminer]: success
+[2023-05-07 22:58:25] INFO root fetch - main [MainThread]: End processing [gdshoplib]: success
+[2023-05-07 22:58:25] INFO root fetch - main [MainThread]: End processing [optimum]: success
+[2023-05-07 22:58:54] INFO root fetch - main [MainThread]: End processing [codrone-edu]: success
+[2023-05-07 22:58:54] INFO root fetch - main [MainThread]: Store serial: [18009722]
