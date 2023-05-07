@@ -2481,3 +2481,48 @@
 [2023-05-07 05:48:19] INFO root fetch - main [MainThread]: End processing [usda-api]: success
 [2023-05-07 05:48:19] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
 [2023-05-07 05:48:19] INFO root fetch - main [MainThread]: Store serial: [18003988]
+[2023-05-07 05:53:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003988]
+[2023-05-07 05:53:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 05:53:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmbda-fastapi
+[2023-05-07 05:53:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cvxsimulator
+[2023-05-07 05:53:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: control-rod
+[2023-05-07 05:53:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: getMultiPrimerSet
+[2023-05-07 05:53:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-mahjong-scoreboard
+[2023-05-07 05:53:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ARIclicker
+[2023-05-07 05:53:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: TDhelper
+[2023-05-07 05:53:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: laplacian-pyramid-blend
+[2023-05-07 05:53:28] INFO root fetch - processPackages [cvxsimulator]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-05-07 05:53:28] INFO root fetch - processPackages [llmbda-fastapi]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 05:53:28] INFO root fetch - processPackages [control-rod]: New version: [2023.5.6.1] Old Version: [2023.5.6.0]
+[2023-05-07 05:53:28] WARNING root fetch - processPackages [getMultiPrimerSet]: Skipping, unable to determine old version
+[2023-05-07 05:53:28] INFO root fetch - main [MainThread]: End processing [getMultiPrimerSet] error
+[2023-05-07 05:53:28] INFO root fetch - processPackages [ARIclicker]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 05:53:28] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: New version: [0.3.1.post1] Old Version: [0.3.1]
+[2023-05-07 05:53:28] INFO root fetch - processPackages [TDhelper]: New version: [2.4.7] Old Version: [2.4.6]
+[2023-05-07 05:53:28] WARNING root fetch - processPackages [laplacian-pyramid-blend]: Skipping, unable to determine old version
+[2023-05-07 05:53:28] INFO root fetch - main [MainThread]: End processing [laplacian-pyramid-blend] error
+[2023-05-07 05:53:28] INFO root fetch - processPackages [ARIclicker]: Downloading https://files.pythonhosted.org/packages/c6/9e/c0d7e055eac20b41d8e691dc0887928103a60af74adb484fee96c3da69fe/ARIclicker-0.0.1.tar.gz
+[2023-05-07 05:53:28] INFO root fetch - processPackages [control-rod]: Downloading https://files.pythonhosted.org/packages/0c/91/8870111dd66a7b9a154f3d9e55abc44b13b0cdc963564cd404f552a623cd/control_rod-2023.5.6.1.tar.gz
+[2023-05-07 05:53:28] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: Downloading https://files.pythonhosted.org/packages/f2/31/5b219865dd622b993d05a8fdceb65ae9941421b76811868cffcbbbe29cdd/nonebot_plugin_mahjong_scoreboard-0.3.1.post1.tar.gz
+[2023-05-07 05:53:28] INFO root fetch - processPackages [llmbda-fastapi]: executing diffoscope
+[2023-05-07 05:53:28] INFO root fetch - processPackages [llmbda-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmbda_fastapi-0.0.7.tar.gz tmp/llmbda_fastapi-0.0.8.tar.gz --markdown 20230507/l/llmbda-fastapi/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 05:53:28] INFO root fetch - processPackages [control-rod]: executing diffoscope
+[2023-05-07 05:53:28] INFO root fetch - processPackages [control-rod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/control_rod-2023.5.6.0.tar.gz tmp/control_rod-2023.5.6.1.tar.gz --markdown 20230507/c/control-rod/2023.5.6.0-2023.5.6.1/diff.md --exclude *.pyd
+[2023-05-07 05:53:28] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: executing diffoscope
+[2023-05-07 05:53:28] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_mahjong_scoreboard-0.3.1.tar.gz tmp/nonebot_plugin_mahjong_scoreboard-0.3.1.post1.tar.gz --markdown 20230507/n/nonebot-plugin-mahjong-scoreboard/0.3.1-0.3.1.post1/diff.md --exclude *.pyd
+[2023-05-07 05:53:28] INFO root fetch - processPackages [cvxsimulator]: Downloading https://files.pythonhosted.org/packages/88/5f/80167547860688ef408f05ed2269e0577082b595cf11f689ac4984b513b3/cvxsimulator-0.2.0.tar.gz
+[2023-05-07 05:53:28] INFO root fetch - processPackages [cvxsimulator]: executing diffoscope
+[2023-05-07 05:53:28] INFO root fetch - processPackages [cvxsimulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvxsimulator-0.1.3.tar.gz tmp/cvxsimulator-0.2.0.tar.gz --markdown 20230507/c/cvxsimulator/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 05:53:28] INFO root fetch - processPackages [ARIclicker]: Downloading https://files.pythonhosted.org/packages/43/cf/9e0aae38461fbbf139ab9f768c3b606db77561372094ec3c5bf98bc9a9b3/ARIclicker-0.0.2.tar.gz
+[2023-05-07 05:53:28] INFO root fetch - processPackages [TDhelper]: Downloading https://files.pythonhosted.org/packages/62/f2/4e070ac6fc4e998bf04d6d1f669ad525f0e0d7ef893ae39b874c538583cf/TDhelper-2.4.7.tar.gz
+[2023-05-07 05:53:28] INFO root fetch - processPackages [ARIclicker]: executing diffoscope
+[2023-05-07 05:53:28] INFO root fetch - processPackages [ARIclicker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ARIclicker-0.0.1.tar.gz tmp/ARIclicker-0.0.2.tar.gz --markdown 20230507/A/ARIclicker/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 05:53:28] INFO root fetch - processPackages [TDhelper]: executing diffoscope
+[2023-05-07 05:53:28] INFO root fetch - processPackages [TDhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TDhelper-2.4.6.tar.gz tmp/TDhelper-2.4.7.tar.gz --markdown 20230507/T/TDhelper/2.4.6-2.4.7/diff.md --exclude *.pyd
+[2023-05-07 05:53:29] INFO root fetch - main [MainThread]: End processing [cvxsimulator]: success
+[2023-05-07 05:53:29] INFO root fetch - main [MainThread]: End processing [llmbda-fastapi]: success
+[2023-05-07 05:53:29] INFO root fetch - main [MainThread]: End processing [ARIclicker]: success
+[2023-05-07 05:53:29] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mahjong-scoreboard]: success
+[2023-05-07 05:53:29] INFO root fetch - main [MainThread]: End processing [control-rod]: success
+[2023-05-07 05:53:30] INFO root fetch - main [MainThread]: End processing [TDhelper]: success
+[2023-05-07 05:53:30] INFO root fetch - main [MainThread]: Store serial: [18004016]
