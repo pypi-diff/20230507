@@ -8685,3 +8685,85 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 17:59:39] INFO root fetch - main [MainThread]: End processing [xhtml2pdf]: success
 [2023-05-07 17:59:39] INFO root fetch - main [MainThread]: End processing [budy]: success
 [2023-05-07 17:59:39] INFO root fetch - main [MainThread]: Store serial: [18008086]
+[2023-05-07 18:04:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008086]
+[2023-05-07 18:04:48] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mknsmPy
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ThermiaOnlineAPI
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gcsaws
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sidetrek
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: grrif-tools
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-appdata
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ini-klass
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bayanpy
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: spacs
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: betanegbinfit
+[2023-05-07 18:04:48] INFO root fetch - processPackages [mknsmPy]: New version: [0.3] Old Version: [0.2]
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ThermiaOnlineAPI]: New version: [3.9] Old Version: [3.8]
+[2023-05-07 18:04:48] INFO root fetch - processPackages [django-appdata]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-05-07 18:04:48] INFO root fetch - processPackages [grrif-tools]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ini-klass]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-07 18:04:48] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 18:04:48] INFO root fetch - processPackages [bayanpy]: New version: [0.6.8] Old Version: [0.6.5]
+[2023-05-07 18:04:48] INFO root fetch - processPackages [gcsaws]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 18:04:48] INFO root fetch - processPackages [betanegbinfit]: New version: [1.9.4] Old Version: [1.9.3]
+[2023-05-07 18:04:48] INFO root fetch - processPackages [spacs]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 18:04:48] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-07 18:04:48] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230507/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 18:04:48] INFO root fetch - processPackages [betanegbinfit]: executing diffoscope
+[2023-05-07 18:04:48] INFO root fetch - processPackages [betanegbinfit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betanegbinfit-1.9.3.tar.gz tmp/betanegbinfit-1.9.4.tar.gz --markdown 20230507/b/betanegbinfit/1.9.3-1.9.4/diff.md --exclude *.pyd
+[2023-05-07 18:04:48] INFO root fetch - processPackages [bayanpy]: Downloading https://files.pythonhosted.org/packages/12/f2/6be00176761b7809afe68acb7ab701b16a96301c502b58065c9d3179b44d/bayanpy-0.6.5.tar.gz
+[2023-05-07 18:04:48] INFO root fetch - processPackages [gcsaws]: Downloading https://files.pythonhosted.org/packages/a4/e6/db4624e9f90a284e3f928c88c60f8aa031c5fe1fc606004bd4f85ecbfeeb/gcsaws-0.0.5.tar.gz
+[2023-05-07 18:04:48] INFO root fetch - processPackages [django-appdata]: Downloading https://files.pythonhosted.org/packages/86/41/bfeab51479786f557d6880f4a4cb80875a171ce15b94390d4b8c208f7125/django-appdata-0.3.2.tar.gz
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ThermiaOnlineAPI]: Downloading https://files.pythonhosted.org/packages/f4/df/461ca58e5ad55f448e70e8c22228dc1c5601adb9ce4926d4d356aa99c993/ThermiaOnlineAPI-3.8.tar.gz
+[2023-05-07 18:04:48] INFO root fetch - processPackages [ini-klass]: Downloading https://files.pythonhosted.org/packages/e1/b3/e3ed4992e37226456cef9ffa45b1e7b57a7ea12290f76c3fd4c9e828cc94/ini-klass-0.0.3.tar.gz
+[2023-05-07 18:04:48] INFO root fetch - processPackages [spacs]: Downloading https://files.pythonhosted.org/packages/b4/1e/b243a3beed0e0eeea54726a76af2e7f117d88edc83ed2973de7f3b9a13d6/spacs-0.0.7.tar.gz
+[2023-05-07 18:04:48] INFO root fetch - processPackages [grrif-tools]: Downloading https://files.pythonhosted.org/packages/9c/53/5939a6a458fb20a03ed75a24668e5b77f381edd6424d25751eb143114933/grrif_tools-0.5.1.tar.gz
+[2023-05-07 18:04:48] INFO root fetch - processPackages [mknsmPy]: Downloading https://files.pythonhosted.org/packages/c5/8a/da67ff361c75305c99529e5a4f414ff8ffd14551cc828a89f8bb75efe8f3/mknsmPy-0.3.tar.gz
+[2023-05-07 18:04:48] INFO root fetch - processPackages [grrif-tools]: executing diffoscope
+[2023-05-07 18:04:48] INFO root fetch - processPackages [grrif-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grrif_tools-0.5.0.tar.gz tmp/grrif_tools-0.5.1.tar.gz --markdown 20230507/g/grrif-tools/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-07 18:04:48] INFO root fetch - processPackages [mknsmPy]: executing diffoscope
+[2023-05-07 18:04:48] INFO root fetch - processPackages [mknsmPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mknsmPy-0.2.tar.gz tmp/mknsmPy-0.3.tar.gz --markdown 20230507/m/mknsmPy/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-07 18:04:49] INFO root fetch - processPackages [gcsaws]: Downloading https://files.pythonhosted.org/packages/16/05/8ba601a39eacee0209fd49b1983e5261ea167d77dec1f2e12b49ba222816/gcsaws-0.0.6.tar.gz
+[2023-05-07 18:04:49] INFO root fetch - processPackages [gcsaws]: executing diffoscope
+[2023-05-07 18:04:49] INFO root fetch - processPackages [gcsaws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcsaws-0.0.5.tar.gz tmp/gcsaws-0.0.6.tar.gz --markdown 20230507/g/gcsaws/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 18:04:49] INFO root fetch - processPackages [spacs]: Downloading https://files.pythonhosted.org/packages/38/d3/b3142f037ab3c5ffc3fbad65aaf21db13f09f2dda0f88b22b8ef5cbf7295/spacs-0.0.8.tar.gz
+[2023-05-07 18:04:49] INFO root fetch - processPackages [bayanpy]: Downloading https://files.pythonhosted.org/packages/8c/2f/e327271cba0465b24d63bc8e84e44662bdd9f28afd90a6fb59c050dad870/bayanpy-0.6.8.tar.gz
+[2023-05-07 18:04:49] INFO root fetch - processPackages [django-appdata]: Downloading https://files.pythonhosted.org/packages/06/80/3d7f1ce310c6ad30e2d70b1dc37378950a6f6650d4ebdd11faabe149e712/django-appdata-0.4.0.tar.gz
+[2023-05-07 18:04:49] INFO root fetch - processPackages [ini-klass]: Downloading https://files.pythonhosted.org/packages/f6/dd/c2760f8df2992eb3740d750e526bf1f2df178b42fe5aba2ce84aadb04d01/ini-klass-0.0.4.tar.gz
+[2023-05-07 18:04:49] INFO root fetch - processPackages [bayanpy]: executing diffoscope
+[2023-05-07 18:04:49] INFO root fetch - processPackages [bayanpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bayanpy-0.6.5.tar.gz tmp/bayanpy-0.6.8.tar.gz --markdown 20230507/b/bayanpy/0.6.5-0.6.8/diff.md --exclude *.pyd
+[2023-05-07 18:04:49] INFO root fetch - processPackages [ThermiaOnlineAPI]: Downloading https://files.pythonhosted.org/packages/5a/05/bb0ee829744c47d7b57f1516c113cb6591ea356b913d3e5caa54e78df559/ThermiaOnlineAPI-3.9.tar.gz
+[2023-05-07 18:04:49] INFO root fetch - processPackages [django-appdata]: executing diffoscope
+[2023-05-07 18:04:49] INFO root fetch - processPackages [django-appdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-appdata-0.3.2.tar.gz tmp/django-appdata-0.4.0.tar.gz --markdown 20230507/d/django-appdata/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-05-07 18:04:49] INFO root fetch - processPackages [spacs]: executing diffoscope
+[2023-05-07 18:04:49] INFO root fetch - processPackages [spacs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spacs-0.0.7.tar.gz tmp/spacs-0.0.8.tar.gz --markdown 20230507/s/spacs/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 18:04:49] INFO root fetch - processPackages [ini-klass]: executing diffoscope
+[2023-05-07 18:04:49] INFO root fetch - processPackages [ini-klass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ini-klass-0.0.3.tar.gz tmp/ini-klass-0.0.4.tar.gz --markdown 20230507/i/ini-klass/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-07 18:04:49] INFO root fetch - processPackages [ThermiaOnlineAPI]: executing diffoscope
+[2023-05-07 18:04:49] INFO root fetch - processPackages [ThermiaOnlineAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ThermiaOnlineAPI-3.8.tar.gz tmp/ThermiaOnlineAPI-3.9.tar.gz --markdown 20230507/T/ThermiaOnlineAPI/3.8-3.9/diff.md --exclude *.pyd
+[2023-05-07 18:04:50] INFO root fetch - processPackages [sidetrek]: Start processing: cairo-lang
+[2023-05-07 18:04:50] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-07 18:04:50] INFO root fetch - processPackages [cairo-lang]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-07 18:04:50] INFO root fetch - processPackages [betanegbinfit]: Start processing: mixalime
+[2023-05-07 18:04:50] INFO root fetch - main [MainThread]: End processing [betanegbinfit]: success
+[2023-05-07 18:04:50] INFO root fetch - processPackages [mixalime]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-07 18:04:50] INFO root fetch - processPackages [cairo-lang]: Downloading https://files.pythonhosted.org/packages/11/ce/067fdb9b6154af674ea52b4ec1f0e58ce300973835cae5f290e9bcd9a87f/cairo-lang-0.9.0.zip
+[2023-05-07 18:04:50] INFO root fetch - processPackages [mixalime]: executing diffoscope
+[2023-05-07 18:04:50] INFO root fetch - processPackages [mixalime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixalime-2.9.8.tar.gz tmp/mixalime-2.9.9.tar.gz --markdown 20230507/m/mixalime/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-07 18:04:50] INFO root fetch - processPackages [gcsaws]: Start processing: impose-cli
+[2023-05-07 18:04:50] INFO root fetch - main [MainThread]: End processing [gcsaws]: success
+[2023-05-07 18:04:50] INFO root fetch - main [MainThread]: End processing [grrif-tools]: success
+[2023-05-07 18:04:50] INFO root fetch - main [MainThread]: End processing [bayanpy]: success
+[2023-05-07 18:04:50] WARNING root fetch - processPackages [impose-cli]: Skipping, unable to determine old version
+[2023-05-07 18:04:50] INFO root fetch - main [MainThread]: End processing [impose-cli] error
+[2023-05-07 18:04:50] INFO root fetch - main [MainThread]: End processing [spacs]: success
+[2023-05-07 18:04:50] INFO root fetch - main [MainThread]: End processing [mknsmPy]: success
+[2023-05-07 18:04:50] INFO root fetch - processPackages [cairo-lang]: Downloading https://files.pythonhosted.org/packages/00/8e/4505453196ad40ba5158eef2496504fc0b9059187402217ff26d053d7027/cairo-lang-0.9.1.zip
+[2023-05-07 18:04:50] INFO root fetch - main [MainThread]: End processing [ini-klass]: success
+[2023-05-07 18:04:50] INFO root fetch - main [MainThread]: End processing [ThermiaOnlineAPI]: success
+[2023-05-07 18:04:50] INFO root fetch - processPackages [cairo-lang]: executing diffoscope
+[2023-05-07 18:04:50] INFO root fetch - processPackages [cairo-lang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cairo-lang-0.9.0.zip tmp/cairo-lang-0.9.1.zip --markdown 20230507/c/cairo-lang/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-07 18:04:50] INFO root fetch - main [MainThread]: End processing [django-appdata]: success
+[2023-05-07 18:04:52] INFO root fetch - main [MainThread]: End processing [mixalime]: success
+[2023-05-07 18:05:01] INFO root fetch - main [MainThread]: End processing [cairo-lang]: success
+[2023-05-07 18:05:01] INFO root fetch - main [MainThread]: Store serial: [18008123]
