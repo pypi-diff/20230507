@@ -10711,3 +10711,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 21:28:39] INFO root fetch - main [MainThread]: End processing [karcher-home]: success
 [2023-05-07 21:28:40] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
 [2023-05-07 21:28:40] INFO root fetch - main [MainThread]: Store serial: [18009271]
+[2023-05-07 21:33:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009271]
+[2023-05-07 21:33:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gravitypy
+[2023-05-07 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grrif-tools
+[2023-05-07 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: banksync
+[2023-05-07 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gravitypy
+[2023-05-07 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nats-nsc
+[2023-05-07 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: splinecalib
+[2023-05-07 21:33:49] INFO root fetch - processPackages [gravitypy]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 21:33:49] INFO root fetch - processPackages [nats-nsc]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-07 21:33:49] INFO root fetch - processPackages [grrif-tools]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-07 21:33:49] INFO root fetch - processPackages [splinecalib]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-07 21:33:49] INFO root fetch - processPackages [banksync]: New version: [0.9.9] Old Version: [0.9.4]
+[2023-05-07 21:33:49] INFO root fetch - processPackages [gravitypy]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 21:33:50] INFO root fetch - processPackages [gravitypy]: Downloading https://files.pythonhosted.org/packages/f7/57/f2f30d68adfc72b5c11a6b9cf14c862c238260ec21be9868bb139072d9a0/gravitypy-1.0.8.tar.gz
+[2023-05-07 21:33:50] INFO root fetch - processPackages [gravitypy]: Downloading https://files.pythonhosted.org/packages/f7/57/f2f30d68adfc72b5c11a6b9cf14c862c238260ec21be9868bb139072d9a0/gravitypy-1.0.8.tar.gz
+[2023-05-07 21:33:50] INFO root fetch - processPackages [grrif-tools]: Downloading https://files.pythonhosted.org/packages/f3/6e/2439d1fa2cd849828e69f73aa9858efd5a02956e2af70af74c0fb3cfba8c/grrif_tools-0.5.3.tar.gz
+[2023-05-07 21:33:50] INFO root fetch - processPackages [nats-nsc]: Downloading https://files.pythonhosted.org/packages/64/7f/77f291ea07173ebe0b3ebb38909b0905aa2689ceadf5b5e6b4756426c184/nats_nsc-0.2.2.tar.gz
+[2023-05-07 21:33:50] INFO root fetch - processPackages [splinecalib]: Downloading https://files.pythonhosted.org/packages/5c/c5/e5179b6e5942b5b85b2363a4cc8f2ce12b2e61132d4be1c3bdd8d98a41ef/splinecalib-0.0.4.tar.gz
+[2023-05-07 21:33:50] INFO root fetch - processPackages [banksync]: Downloading https://files.pythonhosted.org/packages/dc/0d/000c4eaeee16f7816bd191cba60530c70b4c90de4f2d2951870ac2b95f43/banksync-0.9.4.tar.gz
+[2023-05-07 21:33:50] INFO root fetch - processPackages [gravitypy]: Downloading https://files.pythonhosted.org/packages/9f/af/c14a661c9990569cbefae7078615689f0bf20a2de1b9b8255086a3b9e6b0/gravitypy-1.0.9.tar.gz
+[2023-05-07 21:33:50] INFO root fetch - processPackages [grrif-tools]: Downloading https://files.pythonhosted.org/packages/c4/5b/84c61adeec2bdeddfdd8ae18ce9c7de40add073946dc29b1ef792baa0e9b/grrif_tools-0.5.4.tar.gz
+[2023-05-07 21:33:50] INFO root fetch - processPackages [gravitypy]: Downloading https://files.pythonhosted.org/packages/9f/af/c14a661c9990569cbefae7078615689f0bf20a2de1b9b8255086a3b9e6b0/gravitypy-1.0.9.tar.gz
+[2023-05-07 21:33:50] INFO root fetch - processPackages [nats-nsc]: Downloading https://files.pythonhosted.org/packages/ce/3e/2f230db0d7d0edaaa9280dc7d9bafca6abb3de62a5717f56f620da077b08/nats_nsc-0.2.3.tar.gz
+[2023-05-07 21:33:50] INFO root fetch - processPackages [banksync]: Downloading https://files.pythonhosted.org/packages/0f/c9/45668c855e3b5e2a86c6f3b077069282e280740198e53345287407180141/banksync-0.9.9.tar.gz
+[2023-05-07 21:33:50] INFO root fetch - processPackages [grrif-tools]: executing diffoscope
+[2023-05-07 21:33:50] INFO root fetch - processPackages [grrif-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grrif_tools-0.5.3.tar.gz tmp/grrif_tools-0.5.4.tar.gz --markdown 20230507/g/grrif-tools/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-07 21:33:50] INFO root fetch - processPackages [splinecalib]: Downloading https://files.pythonhosted.org/packages/d9/35/b2c71d2eb338fc7296697c3471ba47ae41060e77a455130015c92089b1f1/splinecalib-0.0.5.tar.gz
+[2023-05-07 21:33:50] INFO root fetch - processPackages [gravitypy]: executing diffoscope
+[2023-05-07 21:33:50] INFO root fetch - processPackages [gravitypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitypy-1.0.8.tar.gz tmp/gravitypy-1.0.9.tar.gz --markdown 20230507/g/gravitypy/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 21:33:50] INFO root fetch - processPackages [banksync]: executing diffoscope
+[2023-05-07 21:33:50] INFO root fetch - processPackages [gravitypy]: executing diffoscope
+[2023-05-07 21:33:50] INFO root fetch - processPackages [banksync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/banksync-0.9.4.tar.gz tmp/banksync-0.9.9.tar.gz --markdown 20230507/b/banksync/0.9.4-0.9.9/diff.md --exclude *.pyd
+[2023-05-07 21:33:50] INFO root fetch - processPackages [gravitypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitypy-1.0.8.tar.gz tmp/gravitypy-1.0.9.tar.gz --markdown 20230507/g/gravitypy/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 21:33:50] INFO root fetch - processPackages [nats-nsc]: executing diffoscope
+[2023-05-07 21:33:50] INFO root fetch - processPackages [nats-nsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nats_nsc-0.2.2.tar.gz tmp/nats_nsc-0.2.3.tar.gz --markdown 20230507/n/nats-nsc/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-07 21:33:50] INFO root fetch - processPackages [splinecalib]: executing diffoscope
+[2023-05-07 21:33:50] INFO root fetch - processPackages [splinecalib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splinecalib-0.0.4.tar.gz tmp/splinecalib-0.0.5.tar.gz --markdown 20230507/s/splinecalib/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-07 21:33:51] INFO root fetch - main [MainThread]: End processing [grrif-tools]: success
+[2023-05-07 21:33:51] INFO root fetch - main [MainThread]: End processing [gravitypy]: success
+[2023-05-07 21:33:51] INFO root fetch - main [MainThread]: End processing [nats-nsc]: success
+[2023-05-07 21:33:51] INFO root fetch - main [MainThread]: End processing [banksync]: success
+[2023-05-07 21:33:51] INFO root fetch - main [MainThread]: End processing [gravitypy]: success
+[2023-05-07 21:33:52] INFO root fetch - main [MainThread]: End processing [splinecalib]: success
+[2023-05-07 21:33:52] INFO root fetch - main [MainThread]: Store serial: [18009314]
