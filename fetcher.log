@@ -9191,3 +9191,59 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 18:46:52] INFO root fetch - main [MainThread]: End processing [budgetguard]: success
 [2023-05-07 18:46:54] INFO root fetch - main [MainThread]: End processing [apache-airflow-client]: success
 [2023-05-07 18:46:54] INFO root fetch - main [MainThread]: Store serial: [18008334]
+[2023-05-07 18:51:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008334]
+[2023-05-07 18:52:02] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 18:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: djangocms-apphook-setup
+[2023-05-07 18:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: budgetguard
+[2023-05-07 18:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bayanpy
+[2023-05-07 18:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-app-helper
+[2023-05-07 18:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fhnw-nlp-utils
+[2023-05-07 18:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dfvfs
+[2023-05-07 18:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ukmon-meteortools
+[2023-05-07 18:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tahoma
+[2023-05-07 18:52:03] INFO root fetch - processPackages [fhnw-nlp-utils]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-07 18:52:03] INFO root fetch - processPackages [budgetguard]: New version: [0.5.0] Old Version: [0.2.1]
+[2023-05-07 18:52:03] INFO root fetch - processPackages [ukmon-meteortools]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-07 18:52:03] INFO root fetch - processPackages [bayanpy]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-07 18:52:03] INFO root fetch - processPackages [djangocms-apphook-setup]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-05-07 18:52:03] INFO root fetch - processPackages [django-app-helper]: New version: [3.3.0] Old Version: [3.2.0]
+[2023-05-07 18:52:03] INFO root fetch - processPackages [dfvfs]: New version: [20230507] Old Version: [20230408]
+[2023-05-07 18:52:03] INFO root fetch - processPackages [tahoma]: New version: [2.2.6] Old Version: [2.2.5]
+[2023-05-07 18:52:03] INFO root fetch - processPackages [fhnw-nlp-utils]: Downloading https://files.pythonhosted.org/packages/4b/e5/059be93d8937ccdbd9d41ffcffdd390fa27b267b9b4330c6eaf98df1777c/fhnw_nlp_utils-0.6.8-py3-none-any.whl
+[2023-05-07 18:52:03] INFO root fetch - processPackages [dfvfs]: Downloading https://files.pythonhosted.org/packages/7e/ad/d45da08149dcc794cb8909f4b2d5902f1e34bd4cfaac65c22d34eb8f8342/dfvfs-20230408.tar.gz
+[2023-05-07 18:52:03] INFO root fetch - processPackages [djangocms-apphook-setup]: Downloading https://files.pythonhosted.org/packages/05/b5/5515fade36345b119854871d50b7fab2712bb8a6181afbe57330e5271300/djangocms-apphook-setup-0.4.1.tar.gz
+[2023-05-07 18:52:03] INFO root fetch - processPackages [budgetguard]: Downloading https://files.pythonhosted.org/packages/8d/ee/f500ec9e10f3aadb2d3dd5d3ae76edd55e7117c1bfec787d658d8aec972f/budgetguard-0.5.0.tar.gz
+[2023-05-07 18:52:03] INFO root fetch - processPackages [ukmon-meteortools]: Downloading https://files.pythonhosted.org/packages/bb/e8/dce82e571ff6b077b59896680f903c06e083f58be88304f06c82c195fa1f/ukmon_meteortools-2023.5.9.tar.gz
+[2023-05-07 18:52:03] INFO root fetch - processPackages [bayanpy]: Downloading https://files.pythonhosted.org/packages/f1/67/543a5200ed90136bc8ee4b5510ab3b423c3ef5150d7f255962e167428de0/bayanpy-0.6.9.tar.gz
+[2023-05-07 18:52:03] INFO root fetch - processPackages [tahoma]: Downloading https://files.pythonhosted.org/packages/22/21/86759ee345ca19d8d47e04a017ca6f6b928e8c634c5da80d4c1e5801ad41/tahoma-2.2.5.tar.gz
+[2023-05-07 18:52:03] INFO root fetch - processPackages [budgetguard]: executing diffoscope
+[2023-05-07 18:52:03] INFO root fetch - processPackages [budgetguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/budgetguard-0.2.1.tar.gz tmp/budgetguard-0.5.0.tar.gz --markdown 20230507/b/budgetguard/0.2.1-0.5.0/diff.md --exclude *.pyd
+[2023-05-07 18:52:03] INFO root fetch - processPackages [ukmon-meteortools]: executing diffoscope
+[2023-05-07 18:52:03] INFO root fetch - processPackages [ukmon-meteortools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ukmon_meteortools-2023.5.8.tar.gz tmp/ukmon_meteortools-2023.5.9.tar.gz --markdown 20230507/u/ukmon-meteortools/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-07 18:52:03] INFO root fetch - processPackages [django-app-helper]: Downloading https://files.pythonhosted.org/packages/f1/bb/d9812f7227b7cc3440aba61085940d102a7d0cea70a01e5c5986c118ea12/django-app-helper-3.2.0.tar.gz
+[2023-05-07 18:52:03] INFO root fetch - processPackages [bayanpy]: executing diffoscope
+[2023-05-07 18:52:03] INFO root fetch - processPackages [bayanpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bayanpy-0.6.8.tar.gz tmp/bayanpy-0.6.9.tar.gz --markdown 20230507/b/bayanpy/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-07 18:52:03] INFO root fetch - processPackages [fhnw-nlp-utils]: Downloading https://files.pythonhosted.org/packages/11/67/7115b84725fc7938a503325c52b57c9134a467ce979d36eab281cb23ccf5/fhnw_nlp_utils-0.6.9-py3-none-any.whl
+[2023-05-07 18:52:03] INFO root fetch - processPackages [djangocms-apphook-setup]: Downloading https://files.pythonhosted.org/packages/6e/d2/45f579357d8eaa4a7d059dee40ec0fbfaaa4b22f2a4f629b3b48177cb3ca/djangocms-apphook-setup-0.5.0.tar.gz
+[2023-05-07 18:52:03] INFO root fetch - processPackages [fhnw-nlp-utils]: executing diffoscope
+[2023-05-07 18:52:03] INFO root fetch - processPackages [fhnw-nlp-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhnw_nlp_utils-0.6.8-py3-none-any.whl.zip tmp/fhnw_nlp_utils-0.6.9-py3-none-any.whl.zip --markdown 20230507/f/fhnw-nlp-utils/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-07 18:52:03] INFO root fetch - processPackages [dfvfs]: Downloading https://files.pythonhosted.org/packages/b3/55/b5a6b4d4b1a9069bf81b132c4e73eb75e46feab252285ed68f2b34210517/dfvfs-20230507.tar.gz
+[2023-05-07 18:52:03] INFO root fetch - processPackages [djangocms-apphook-setup]: executing diffoscope
+[2023-05-07 18:52:03] INFO root fetch - processPackages [djangocms-apphook-setup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangocms-apphook-setup-0.4.1.tar.gz tmp/djangocms-apphook-setup-0.5.0.tar.gz --markdown 20230507/d/djangocms-apphook-setup/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-05-07 18:52:03] INFO root fetch - processPackages [tahoma]: Downloading https://files.pythonhosted.org/packages/44/85/2b173a29a094751ad9a49f846709559730082a71b563bf7f3be97f3737b9/tahoma-2.2.6.tar.gz
+[2023-05-07 18:52:03] INFO root fetch - processPackages [dfvfs]: executing diffoscope
+[2023-05-07 18:52:03] INFO root fetch - processPackages [dfvfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfvfs-20230408.tar.gz tmp/dfvfs-20230507.tar.gz --markdown 20230507/d/dfvfs/20230408-20230507/diff.md --exclude *.pyd
+[2023-05-07 18:52:03] INFO root fetch - processPackages [django-app-helper]: Downloading https://files.pythonhosted.org/packages/1a/1a/983971877eab3f95174076be30578e833629b4a8163e4121b24d585b3ec7/django-app-helper-3.3.0.tar.gz
+[2023-05-07 18:52:03] INFO root fetch - processPackages [django-app-helper]: executing diffoscope
+[2023-05-07 18:52:03] INFO root fetch - processPackages [django-app-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-app-helper-3.2.0.tar.gz tmp/django-app-helper-3.3.0.tar.gz --markdown 20230507/d/django-app-helper/3.2.0-3.3.0/diff.md --exclude *.pyd
+[2023-05-07 18:52:03] INFO root fetch - processPackages [tahoma]: executing diffoscope
+[2023-05-07 18:52:03] INFO root fetch - processPackages [tahoma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tahoma-2.2.5.tar.gz tmp/tahoma-2.2.6.tar.gz --markdown 20230507/t/tahoma/2.2.5-2.2.6/diff.md --exclude *.pyd
+[2023-05-07 18:52:04] INFO root fetch - main [MainThread]: End processing [budgetguard]: success
+[2023-05-07 18:52:04] INFO root fetch - main [MainThread]: End processing [bayanpy]: success
+[2023-05-07 18:52:04] INFO root fetch - main [MainThread]: End processing [fhnw-nlp-utils]: success
+[2023-05-07 18:52:05] INFO root fetch - main [MainThread]: End processing [tahoma]: success
+[2023-05-07 18:52:05] INFO root fetch - main [MainThread]: End processing [ukmon-meteortools]: success
+[2023-05-07 18:52:05] INFO root fetch - main [MainThread]: End processing [djangocms-apphook-setup]: success
+[2023-05-07 18:52:06] INFO root fetch - main [MainThread]: End processing [django-app-helper]: success
+[2023-05-07 18:52:11] INFO root fetch - main [MainThread]: End processing [dfvfs]: success
+[2023-05-07 18:52:11] INFO root fetch - main [MainThread]: Store serial: [18008356]
