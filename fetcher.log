@@ -7242,3 +7242,55 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 15:40:07] INFO root fetch - main [MainThread]: End processing [npf-web-extension]: success
 [2023-05-07 15:40:07] INFO root fetch - main [MainThread]: End processing [python-telegram-bot-raw]: success
 [2023-05-07 15:40:07] INFO root fetch - main [MainThread]: Store serial: [18007137]
+[2023-05-07 15:45:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007137]
+[2023-05-07 15:45:18] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 15:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-ace
+[2023-05-07 15:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: epdx
+[2023-05-07 15:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qgis-deployment-toolbelt
+[2023-05-07 15:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hella-api
+[2023-05-07 15:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: korcen
+[2023-05-07 15:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lesscode-tool
+[2023-05-07 15:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cagen
+[2023-05-07 15:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-chatgpt-plus
+[2023-05-07 15:45:18] INFO root fetch - processPackages [qgis-deployment-toolbelt]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-07 15:45:18] INFO root fetch - processPackages [epdx]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-07 15:45:18] INFO root fetch - processPackages [lesscode-tool]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 15:45:18] INFO root fetch - processPackages [django-ace]: New version: [1.19.0] Old Version: [1.15.4]
+[2023-05-07 15:45:18] ERROR root fetch - processPackages [hella-api]: Unable to get metadata: No such project 'hella-api'
+[2023-05-07 15:45:18] INFO root fetch - processPackages [korcen]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-07 15:45:18] INFO root fetch - processPackages [nonebot-plugin-chatgpt-plus]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-05-07 15:45:18] INFO root fetch - main [MainThread]: End processing [hella-api] error
+[2023-05-07 15:45:18] INFO root fetch - processPackages [cagen]: New version: [0.2.0b9] Old Version: [0.2.0b8]
+[2023-05-07 15:45:18] INFO root fetch - processPackages [lesscode-tool]: executing diffoscope
+[2023-05-07 15:45:18] INFO root fetch - processPackages [lesscode-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode_tool-0.0.8.tar.gz tmp/lesscode_tool-0.0.9.tar.gz --markdown 20230507/l/lesscode-tool/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 15:45:18] INFO root fetch - processPackages [qgis-deployment-toolbelt]: Downloading https://files.pythonhosted.org/packages/4d/af/26cc6ca37c9029d2a68da3981972d583a710238e073fe44d2f33c039d869/qgis-deployment-toolbelt-0.8.0.tar.gz
+[2023-05-07 15:45:18] INFO root fetch - processPackages [epdx]: Downloading https://files.pythonhosted.org/packages/9d/da/d6f741399edcf11fff4b75b46931fb99ef1a839d7ea8c42ced6b3137b621/epdx-0.2.0-cp38-abi3-win_amd64.whl
+[2023-05-07 15:45:18] INFO root fetch - processPackages [korcen]: Downloading https://files.pythonhosted.org/packages/d1/d5/80b6ed68b43050780efb24f108fa64f1828670007fa708fa7be86020b485/korcen-0.3.4.tar.gz
+[2023-05-07 15:45:18] INFO root fetch - processPackages [django-ace]: Downloading https://files.pythonhosted.org/packages/de/8b/7f52d0ced4a7b6410f6af97cd14a6baeeab4a4d0568edd06822e737e12b7/django-ace-1.15.4.tar.gz
+[2023-05-07 15:45:18] INFO root fetch - processPackages [nonebot-plugin-chatgpt-plus]: Downloading https://files.pythonhosted.org/packages/e2/29/f702d496684e87b3232fcfa72e0ca6a0ee09d7dc2a6f715347e00fe6b1b9/nonebot-plugin-chatgpt-plus-0.8.5.tar.gz
+[2023-05-07 15:45:18] INFO root fetch - processPackages [cagen]: Downloading https://files.pythonhosted.org/packages/1a/2b/0b13f946d0dd0cb335e17bb1816472cfc85c35150aa0c1c6ccb2c5a0c9f4/cagen-0.2.0b9.tar.gz
+[2023-05-07 15:45:18] INFO root fetch - processPackages [korcen]: Downloading https://files.pythonhosted.org/packages/71/a4/ada3eeeed75d2df327667bbf2922e366e4b70188c65a4518dc16b8b59989/korcen-0.3.5.tar.gz
+[2023-05-07 15:45:18] INFO root fetch - processPackages [cagen]: executing diffoscope
+[2023-05-07 15:45:18] INFO root fetch - processPackages [cagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagen-0.2.0b8.tar.gz tmp/cagen-0.2.0b9.tar.gz --markdown 20230507/c/cagen/0.2.0b8-0.2.0b9/diff.md --exclude *.pyd
+[2023-05-07 15:45:18] INFO root fetch - processPackages [nonebot-plugin-chatgpt-plus]: Downloading https://files.pythonhosted.org/packages/ab/36/93540e8a4526ad5b85fbd17b8cb0eb3afa9f9a87a2c8904dab27b67a177c/nonebot-plugin-chatgpt-plus-0.8.6.tar.gz
+[2023-05-07 15:45:18] INFO root fetch - processPackages [epdx]: Downloading https://files.pythonhosted.org/packages/48/1c/39f45453e806eed6c9a2189ebc1f88a802c40c11f57cc5983c22b468ff2d/epdx-0.2.1-cp38-abi3-win_amd64.whl
+[2023-05-07 15:45:18] INFO root fetch - processPackages [django-ace]: Downloading https://files.pythonhosted.org/packages/86/cb/40757c7a4f5096998f435f202c3d9f235ca3a9826404f09d0026365524e7/django-ace-1.19.0.tar.gz
+[2023-05-07 15:45:18] INFO root fetch - processPackages [korcen]: executing diffoscope
+[2023-05-07 15:45:18] INFO root fetch - processPackages [korcen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/korcen-0.3.4.tar.gz tmp/korcen-0.3.5.tar.gz --markdown 20230507/k/korcen/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-07 15:45:18] INFO root fetch - processPackages [qgis-deployment-toolbelt]: Downloading https://files.pythonhosted.org/packages/d5/9a/086bf308844e6a51bcccd209e648d370690f6c9e5bb19bcf231bf1cad2dc/qgis-deployment-toolbelt-0.9.0.tar.gz
+[2023-05-07 15:45:18] INFO root fetch - processPackages [epdx]: executing diffoscope
+[2023-05-07 15:45:18] INFO root fetch - processPackages [epdx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epdx-0.2.0-cp38-abi3-win_amd64.whl.zip tmp/epdx-0.2.1-cp38-abi3-win_amd64.whl.zip --markdown 20230507/e/epdx/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-07 15:45:18] INFO root fetch - processPackages [nonebot-plugin-chatgpt-plus]: executing diffoscope
+[2023-05-07 15:45:18] INFO root fetch - processPackages [nonebot-plugin-chatgpt-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-chatgpt-plus-0.8.5.tar.gz tmp/nonebot-plugin-chatgpt-plus-0.8.6.tar.gz --markdown 20230507/n/nonebot-plugin-chatgpt-plus/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-05-07 15:45:18] INFO root fetch - processPackages [django-ace]: executing diffoscope
+[2023-05-07 15:45:18] INFO root fetch - processPackages [django-ace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ace-1.15.4.tar.gz tmp/django-ace-1.19.0.tar.gz --markdown 20230507/d/django-ace/1.15.4-1.19.0/diff.md --exclude *.pyd
+[2023-05-07 15:45:18] INFO root fetch - processPackages [qgis-deployment-toolbelt]: executing diffoscope
+[2023-05-07 15:45:18] INFO root fetch - processPackages [qgis-deployment-toolbelt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qgis-deployment-toolbelt-0.8.0.tar.gz tmp/qgis-deployment-toolbelt-0.9.0.tar.gz --markdown 20230507/q/qgis-deployment-toolbelt/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-07 15:45:19] INFO root fetch - main [MainThread]: End processing [lesscode-tool]: success
+[2023-05-07 15:45:19] INFO root fetch - main [MainThread]: End processing [cagen]: success
+[2023-05-07 15:45:19] INFO root fetch - main [MainThread]: End processing [korcen]: success
+[2023-05-07 15:45:20] INFO root fetch - main [MainThread]: End processing [epdx]: success
+[2023-05-07 15:45:20] INFO root fetch - main [MainThread]: End processing [qgis-deployment-toolbelt]: success
+[2023-05-07 15:45:20] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chatgpt-plus]: success
+[2023-05-07 15:46:38] INFO root fetch - main [MainThread]: End processing [django-ace]: success
+[2023-05-07 15:46:38] INFO root fetch - main [MainThread]: Store serial: [18007167]
