@@ -10378,3 +10378,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 20:57:20] INFO root fetch - main [MainThread]: End processing [wn]: success
 [2023-05-07 20:57:21] INFO root fetch - main [MainThread]: End processing [ndfind]: success
 [2023-05-07 20:57:21] INFO root fetch - main [MainThread]: Store serial: [18009058]
+[2023-05-07 21:02:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009058]
+[2023-05-07 21:02:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 21:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gallery-dl
+[2023-05-07 21:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hindilemmatizer
+[2023-05-07 21:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: valo-api
+[2023-05-07 21:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asap-stereo
+[2023-05-07 21:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gravitypy
+[2023-05-07 21:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stockpy-learn
+[2023-05-07 21:02:31] INFO root fetch - processPackages [gravitypy]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-07 21:02:31] INFO root fetch - processPackages [valo-api]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-07 21:02:31] INFO root fetch - processPackages [stockpy-learn]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 21:02:31] INFO root fetch - processPackages [gravitypy]: executing diffoscope
+[2023-05-07 21:02:31] INFO root fetch - processPackages [gravitypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitypy-1.0.1.tar.gz tmp/gravitypy-1.0.2.tar.gz --markdown 20230507/g/gravitypy/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-07 21:02:31] INFO root fetch - processPackages [asap-stereo]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-07 21:02:31] INFO root fetch - processPackages [hindilemmatizer]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-07 21:02:31] INFO root fetch - processPackages [gallery-dl]: New version: [1.9.0] Old Version: [1.8.7]
+[2023-05-07 21:02:31] INFO root fetch - processPackages [valo-api]: executing diffoscope
+[2023-05-07 21:02:31] INFO root fetch - processPackages [valo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valo_api-2.0.1.tar.gz tmp/valo_api-2.0.2.tar.gz --markdown 20230507/v/valo-api/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-07 21:02:31] INFO root fetch - processPackages [stockpy-learn]: executing diffoscope
+[2023-05-07 21:02:31] INFO root fetch - processPackages [stockpy-learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockpy-learn-0.1.8.tar.gz tmp/stockpy-learn-0.1.9.tar.gz --markdown 20230507/s/stockpy-learn/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 21:02:31] INFO root fetch - processPackages [asap-stereo]: Downloading https://files.pythonhosted.org/packages/fc/2e/303fc79d533f02b3343989281329a571d2086df13ea84105e9187e6690c5/asap_stereo-0.3.0.tar.gz
+[2023-05-07 21:02:31] INFO root fetch - processPackages [hindilemmatizer]: Downloading https://files.pythonhosted.org/packages/01/ea/4315a9101bb599309f70a4f7995a67a439d3531f46b269d4f1e5b63f5026/hindilemmatizer-0.2.0.tar.gz
+[2023-05-07 21:02:31] INFO root fetch - processPackages [gallery-dl]: Downloading https://files.pythonhosted.org/packages/5d/1c/09cf02a5b984e19ad70eef4b0546aef2c2642861044e7d619f393e8c8b9a/gallery_dl-1.8.7.tar.gz
+[2023-05-07 21:02:31] INFO root fetch - processPackages [hindilemmatizer]: Downloading https://files.pythonhosted.org/packages/4c/98/0396273f3e846c70afdceaaf06c59d75b9f595e28d199f557cce7797f3cf/hindilemmatizer-0.3.0-py3-none-any.whl
+[2023-05-07 21:02:31] INFO root fetch - processPackages [gallery-dl]: Downloading https://files.pythonhosted.org/packages/c5/b2/1405454a6bfc347687a5b389bf788d050a0f09cf6f56e4409b54a6571334/gallery_dl-1.9.0.tar.gz
+[2023-05-07 21:02:31] INFO root fetch - processPackages [gallery-dl]: executing diffoscope
+[2023-05-07 21:02:31] INFO root fetch - processPackages [gallery-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gallery_dl-1.8.7.tar.gz tmp/gallery_dl-1.9.0.tar.gz --markdown 20230507/g/gallery-dl/1.8.7-1.9.0/diff.md --exclude *.pyd
+[2023-05-07 21:02:31] INFO root fetch - processPackages [asap-stereo]: Downloading https://files.pythonhosted.org/packages/1d/6d/a53f7174e4b4a495ced5b77b1256b197d8c014485c69dd0bd801963e720e/asap_stereo-0.3.1.tar.gz
+[2023-05-07 21:02:31] INFO root fetch - processPackages [hindilemmatizer]: executing diffoscope
+[2023-05-07 21:02:31] INFO root fetch - processPackages [hindilemmatizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hindilemmatizer-0.2.0.tar.gz tmp/hindilemmatizer-0.3.0-py3-none-any.whl.zip --markdown 20230507/h/hindilemmatizer/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-07 21:02:31] INFO root fetch - processPackages [asap-stereo]: executing diffoscope
+[2023-05-07 21:02:31] INFO root fetch - processPackages [asap-stereo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asap_stereo-0.3.0.tar.gz tmp/asap_stereo-0.3.1.tar.gz --markdown 20230507/a/asap-stereo/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-07 21:02:32] INFO root fetch - main [MainThread]: End processing [gravitypy]: success
+[2023-05-07 21:02:32] INFO root fetch - main [MainThread]: End processing [stockpy-learn]: success
+[2023-05-07 21:02:32] INFO root fetch - main [MainThread]: End processing [valo-api]: success
+[2023-05-07 21:02:32] INFO root fetch - main [MainThread]: End processing [hindilemmatizer]: success
+[2023-05-07 21:02:33] INFO root fetch - main [MainThread]: End processing [asap-stereo]: success
+[2023-05-07 21:02:34] INFO root fetch - main [MainThread]: End processing [gallery-dl]: success
+[2023-05-07 21:02:34] INFO root fetch - main [MainThread]: Store serial: [18009081]
