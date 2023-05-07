@@ -7754,3 +7754,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 16:34:25] INFO root fetch - main [MainThread]: End processing [aws-lambda-stream]: success
 [2023-05-07 16:34:25] INFO root fetch - main [MainThread]: End processing [elasticsearch-faker]: success
 [2023-05-07 16:34:25] INFO root fetch - main [MainThread]: Store serial: [18007527]
+[2023-05-07 16:39:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007527]
+[2023-05-07 16:39:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 16:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scarfer
+[2023-05-07 16:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: VoiceIdentification
+[2023-05-07 16:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hella-api
+[2023-05-07 16:39:33] WARNING root fetch - processPackages [hella-api]: Skipping, unable to determine old version
+[2023-05-07 16:39:33] INFO root fetch - main [MainThread]: End processing [hella-api] error
+[2023-05-07 16:39:33] INFO root fetch - processPackages [VoiceIdentification]: New version: [1.6] Old Version: [1.5]
+[2023-05-07 16:39:33] INFO root fetch - processPackages [scarfer]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-05-07 16:39:34] INFO root fetch - processPackages [VoiceIdentification]: executing diffoscope
+[2023-05-07 16:39:34] INFO root fetch - processPackages [VoiceIdentification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VoiceIdentification-1.5.tar.gz tmp/VoiceIdentification-1.6.tar.gz --markdown 20230507/V/VoiceIdentification/1.5-1.6/diff.md --exclude *.pyd
+[2023-05-07 16:39:34] INFO root fetch - processPackages [scarfer]: Downloading https://files.pythonhosted.org/packages/9d/75/d04b53ad934e89c31a02ceec62c056247eff50cd7df5e46ece392fb06ef9/scarfer-0.3.7.tar.gz
+[2023-05-07 16:39:34] INFO root fetch - processPackages [scarfer]: Downloading https://files.pythonhosted.org/packages/82/ed/4f8b1965e82ccd2ef96ee755eec56a9f6419640f32a145ecb62f9fc44661/scarfer-0.3.8.tar.gz
+[2023-05-07 16:39:34] INFO root fetch - processPackages [scarfer]: executing diffoscope
+[2023-05-07 16:39:34] INFO root fetch - processPackages [scarfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scarfer-0.3.7.tar.gz tmp/scarfer-0.3.8.tar.gz --markdown 20230507/s/scarfer/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-05-07 16:39:35] INFO root fetch - main [MainThread]: End processing [VoiceIdentification]: success
+[2023-05-07 16:39:35] INFO root fetch - main [MainThread]: End processing [scarfer]: success
+[2023-05-07 16:39:35] INFO root fetch - main [MainThread]: Store serial: [18007535]
