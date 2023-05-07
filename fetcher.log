@@ -9365,3 +9365,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 19:02:34] INFO root fetch - main [MainThread]: End processing [vmn]: success
 [2023-05-07 19:02:34] INFO root fetch - main [MainThread]: End processing [dcentralab-qa-infra-automation]: success
 [2023-05-07 19:02:34] INFO root fetch - main [MainThread]: Store serial: [18008429]
+[2023-05-07 19:07:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008429]
+[2023-05-07 19:07:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 19:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schemey
+[2023-05-07 19:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syssqlitedbpackageV1
+[2023-05-07 19:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wagtail-photography
+[2023-05-07 19:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: querytograph
+[2023-05-07 19:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: always-updates
+[2023-05-07 19:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: syssqlitedbpackageV1
+[2023-05-07 19:07:43] INFO root fetch - processPackages [schemey]: New version: [6.0.2] Old Version: [6.0.1]
+[2023-05-07 19:07:43] INFO root fetch - processPackages [wagtail-photography]: New version: [0.3] Old Version: [0.2]
+[2023-05-07 19:07:43] INFO root fetch - processPackages [syssqlitedbpackageV1]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-07 19:07:43] INFO root fetch - processPackages [querytograph]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 19:07:43] INFO root fetch - processPackages [syssqlitedbpackageV1]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-07 19:07:43] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-07 19:07:43] INFO root fetch - processPackages [schemey]: Downloading https://files.pythonhosted.org/packages/36/94/94b815c884ee7d4324ab7de8c4129ffa822b4f20e28e181f9f74869d1af0/schemey-6.0.1.tar.gz
+[2023-05-07 19:07:43] INFO root fetch - processPackages [syssqlitedbpackageV1]: Downloading https://files.pythonhosted.org/packages/27/6b/afb0c7157085d89972144aa0b1bfb21ce7453144a88c7fdd9e228dc11bf1/syssqlitedbpackageV1-1.0.0.tar.gz
+[2023-05-07 19:07:43] INFO root fetch - processPackages [syssqlitedbpackageV1]: Downloading https://files.pythonhosted.org/packages/27/6b/afb0c7157085d89972144aa0b1bfb21ce7453144a88c7fdd9e228dc11bf1/syssqlitedbpackageV1-1.0.0.tar.gz
+[2023-05-07 19:07:43] INFO root fetch - processPackages [querytograph]: Downloading https://files.pythonhosted.org/packages/dd/00/a83f7c119764d2aec276b7916482cfd0b555e7c0fc82d35bf9119a7a1ff7/querytograph-0.0.1.tar.gz
+[2023-05-07 19:07:43] INFO root fetch - processPackages [wagtail-photography]: Downloading https://files.pythonhosted.org/packages/93/3c/904269007aed70d4a132e3ff80a4a92a7bc96db086b79ed47d6b1a000d02/wagtail-photography-0.2.tar.gz
+[2023-05-07 19:07:43] INFO root fetch - processPackages [always-updates]: Downloading https://files.pythonhosted.org/packages/5a/dc/f0b9cc3dcafc81b230cec909ee0b7d6229e97b28093d8f6f51c2ace8468b/always_updates-99.8.tar.gz
+[2023-05-07 19:07:43] INFO root fetch - processPackages [syssqlitedbpackageV1]: Downloading https://files.pythonhosted.org/packages/8a/d8/6fe12012086e57ba1bbb193db913f7e578ea6ff487a17bc9a9ef79f0eecc/syssqlitedbpackageV1-1.1.0.tar.gz
+[2023-05-07 19:07:43] INFO root fetch - processPackages [syssqlitedbpackageV1]: Downloading https://files.pythonhosted.org/packages/8a/d8/6fe12012086e57ba1bbb193db913f7e578ea6ff487a17bc9a9ef79f0eecc/syssqlitedbpackageV1-1.1.0.tar.gz
+[2023-05-07 19:07:43] INFO root fetch - processPackages [querytograph]: Downloading https://files.pythonhosted.org/packages/56/81/8f89598d72c6ac567578f2896f2101290c2237526ae94334aca9156af827/querytograph-0.0.2.tar.gz
+[2023-05-07 19:07:43] INFO root fetch - processPackages [schemey]: Downloading https://files.pythonhosted.org/packages/36/aa/703febc336a481717b7c5d70854102c2d15194b6e13d0b97c67d2cec5e3d/schemey-6.0.2.tar.gz
+[2023-05-07 19:07:43] INFO root fetch - processPackages [wagtail-photography]: Downloading https://files.pythonhosted.org/packages/3d/26/c8ade482e6236b063210d0459417099be47b593f14e743b3966747c175d2/wagtail-photography-0.3.tar.gz
+[2023-05-07 19:07:43] INFO root fetch - processPackages [querytograph]: executing diffoscope
+[2023-05-07 19:07:43] INFO root fetch - processPackages [querytograph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/querytograph-0.0.1.tar.gz tmp/querytograph-0.0.2.tar.gz --markdown 20230507/q/querytograph/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 19:07:43] INFO root fetch - processPackages [schemey]: executing diffoscope
+[2023-05-07 19:07:43] INFO root fetch - processPackages [schemey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schemey-6.0.1.tar.gz tmp/schemey-6.0.2.tar.gz --markdown 20230507/s/schemey/6.0.1-6.0.2/diff.md --exclude *.pyd
+[2023-05-07 19:07:43] INFO root fetch - processPackages [always-updates]: Downloading https://files.pythonhosted.org/packages/b1/bd/641679b0c9c7b7c15f7084f8215f70f9189c0f4efd5633e45fe0a7f33ba5/always_updates-99.9.tar.gz
+[2023-05-07 19:07:43] INFO root fetch - processPackages [wagtail-photography]: executing diffoscope
+[2023-05-07 19:07:43] INFO root fetch - processPackages [wagtail-photography]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-photography-0.2.tar.gz tmp/wagtail-photography-0.3.tar.gz --markdown 20230507/w/wagtail-photography/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-07 19:07:43] INFO root fetch - processPackages [syssqlitedbpackageV1]: executing diffoscope
+[2023-05-07 19:07:43] INFO root fetch - processPackages [syssqlitedbpackageV1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syssqlitedbpackageV1-1.0.0.tar.gz tmp/syssqlitedbpackageV1-1.1.0.tar.gz --markdown 20230507/s/syssqlitedbpackageV1/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-07 19:07:43] INFO root fetch - processPackages [syssqlitedbpackageV1]: executing diffoscope
+[2023-05-07 19:07:43] INFO root fetch - processPackages [syssqlitedbpackageV1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syssqlitedbpackageV1-1.0.0.tar.gz tmp/syssqlitedbpackageV1-1.1.0.tar.gz --markdown 20230507/s/syssqlitedbpackageV1/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-07 19:07:43] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-07 19:07:43] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230507/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-07 19:07:44] INFO root fetch - main [MainThread]: End processing [syssqlitedbpackageV1]: success
+[2023-05-07 19:07:44] INFO root fetch - main [MainThread]: End processing [querytograph]: success
+[2023-05-07 19:07:44] INFO root fetch - main [MainThread]: End processing [syssqlitedbpackageV1]: success
+[2023-05-07 19:07:45] INFO root fetch - main [MainThread]: End processing [schemey]: success
+[2023-05-07 19:07:45] INFO root fetch - main [MainThread]: End processing [wagtail-photography]: success
+[2023-05-07 19:07:45] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-07 19:07:45] INFO root fetch - main [MainThread]: Store serial: [18008449]
