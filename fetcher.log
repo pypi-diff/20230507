@@ -1315,3 +1315,31 @@
 [2023-05-07 02:54:41] INFO root fetch - main [MainThread]: End processing [quick-csv]: success
 [2023-05-07 02:54:43] INFO root fetch - main [MainThread]: End processing [projen]: success
 [2023-05-07 02:54:43] INFO root fetch - main [MainThread]: Store serial: [18003376]
+[2023-05-07 02:59:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003376]
+[2023-05-07 02:59:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 02:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bioversions
+[2023-05-07 02:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zipline-norgatedata
+[2023-05-07 02:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ibm-generative-ai
+[2023-05-07 02:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-sns-notify
+[2023-05-07 02:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-emrserverless-with-delta-lake
+[2023-05-07 02:59:52] WARNING root fetch - processPackages [ibm-generative-ai]: Skipping, unable to determine old version
+[2023-05-07 02:59:52] INFO root fetch - main [MainThread]: End processing [ibm-generative-ai] error
+[2023-05-07 02:59:52] INFO root fetch - processPackages [zipline-norgatedata]: New version: [2.4.0] Old Version: [2.3.4]
+[2023-05-07 02:59:52] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-05-07 02:59:52] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 02:59:52] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-07 02:59:52] INFO root fetch - processPackages [zipline-norgatedata]: Downloading https://files.pythonhosted.org/packages/cf/60/76cddf7616b7727c9483b9d5b238d61d9e887d153cfdad99f22859da6ffa/zipline_norgatedata-2.3.4-py3-none-any.whl
+[2023-05-07 02:59:53] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-05-07 02:59:53] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230507/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-05-07 02:59:53] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2023-05-07 02:59:53] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20230507/c/cdk-sns-notify/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 02:59:53] INFO root fetch - processPackages [zipline-norgatedata]: Downloading https://files.pythonhosted.org/packages/f9/58/88f593ae194abfa3438d3b2a20ead28bea51138134691146dc08bae0c04f/zipline_norgatedata-2.4.0-py3-none-any.whl
+[2023-05-07 02:59:53] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2023-05-07 02:59:53] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20230507/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-07 02:59:53] INFO root fetch - processPackages [zipline-norgatedata]: executing diffoscope
+[2023-05-07 02:59:53] INFO root fetch - processPackages [zipline-norgatedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zipline_norgatedata-2.3.4-py3-none-any.whl.zip tmp/zipline_norgatedata-2.4.0-py3-none-any.whl.zip --markdown 20230507/z/zipline-norgatedata/2.3.4-2.4.0/diff.md --exclude *.pyd
+[2023-05-07 02:59:54] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2023-05-07 02:59:54] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
+[2023-05-07 02:59:54] INFO root fetch - main [MainThread]: End processing [zipline-norgatedata]: success
+[2023-05-07 03:00:13] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2023-05-07 03:00:13] INFO root fetch - main [MainThread]: Store serial: [18003392]
