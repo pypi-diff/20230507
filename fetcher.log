@@ -10939,3 +10939,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 21:54:52] INFO root fetch - main [MainThread]: End processing [releng-tool]: success
 [2023-05-07 21:54:53] INFO root fetch - main [MainThread]: End processing [spotPython]: success
 [2023-05-07 21:54:53] INFO root fetch - main [MainThread]: Store serial: [18009411]
+[2023-05-07 21:59:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009411]
+[2023-05-07 22:00:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 22:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dxsp
+[2023-05-07 22:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lazycsv
+[2023-05-07 22:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: struct-gpt
+[2023-05-07 22:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: karcher-home
+[2023-05-07 22:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: djangocms-blog
+[2023-05-07 22:00:02] INFO root fetch - processPackages [karcher-home]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-07 22:00:02] INFO root fetch - processPackages [lazycsv]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-07 22:00:02] INFO root fetch - processPackages [dxsp]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-07 22:00:02] INFO root fetch - processPackages [djangocms-blog]: New version: [2.0.0b1] Old Version: [1.2.3]
+[2023-05-07 22:00:02] INFO root fetch - processPackages [struct-gpt]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-07 22:00:02] INFO root fetch - processPackages [lazycsv]: Downloading https://files.pythonhosted.org/packages/1e/44/0777af99546fe6ba50be016b5de3132d4f69258238446ca0fb6bf596a286/lazycsv-1.1.1.tar.gz
+[2023-05-07 22:00:02] INFO root fetch - processPackages [karcher-home]: Downloading https://files.pythonhosted.org/packages/15/7f/707378d90d319eb972016176e5f4a864259ea4c555263c16965b8056dfef/karcher-home-0.4.1.tar.gz
+[2023-05-07 22:00:02] INFO root fetch - processPackages [struct-gpt]: Downloading https://files.pythonhosted.org/packages/c9/25/f4f0d5222dc0d880da8f7cefb9184b728dd4bf48fee86ce2a38e4b34c343/struct_gpt-1.0.0.tar.gz
+[2023-05-07 22:00:02] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/8e/8c/f30e0b53de71a23629a89caf96cc471e09e4397441bd0d57a9630b8b4c0e/dxsp-2.0.2.tar.gz
+[2023-05-07 22:00:02] INFO root fetch - processPackages [djangocms-blog]: Downloading https://files.pythonhosted.org/packages/42/f0/305b136a5c79c35d2e892fd5fa4de9ea281b8e91189596500d22123848d6/djangocms-blog-1.2.3.tar.gz
+[2023-05-07 22:00:02] INFO root fetch - processPackages [karcher-home]: Downloading https://files.pythonhosted.org/packages/31/32/98fa783b3c1c1eea90a80a29c9086534d74f8f2b400ad9eadac3bf9e0c9b/karcher-home-0.4.2.tar.gz
+[2023-05-07 22:00:02] INFO root fetch - processPackages [lazycsv]: Downloading https://files.pythonhosted.org/packages/31/e6/776e7310f1483d73ab76365108b4fcafa9d3cb140e10eb6e4338f6b53150/lazycsv-1.1.2.tar.gz
+[2023-05-07 22:00:02] INFO root fetch - processPackages [struct-gpt]: Downloading https://files.pythonhosted.org/packages/52/00/ef209a436ff648c72a6d23e99e678e28877bbd5bc195672e123ef346d0ec/struct_gpt-1.0.1.tar.gz
+[2023-05-07 22:00:02] INFO root fetch - processPackages [djangocms-blog]: Downloading https://files.pythonhosted.org/packages/c3/e6/be9d46469ae8dace556a8b92d6c6ce623d53fc1152e54d2708c9c4ec75f3/djangocms-blog-2.0.0b1.tar.gz
+[2023-05-07 22:00:02] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/bd/4d/4d72efe749ed7f52c7ca9ebcddd874f7e228064b5b181bdde92bd1beee39/dxsp-2.0.3.tar.gz
+[2023-05-07 22:00:02] INFO root fetch - processPackages [karcher-home]: executing diffoscope
+[2023-05-07 22:00:02] INFO root fetch - processPackages [karcher-home]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karcher-home-0.4.1.tar.gz tmp/karcher-home-0.4.2.tar.gz --markdown 20230507/k/karcher-home/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-07 22:00:02] INFO root fetch - processPackages [lazycsv]: executing diffoscope
+[2023-05-07 22:00:02] INFO root fetch - processPackages [lazycsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazycsv-1.1.1.tar.gz tmp/lazycsv-1.1.2.tar.gz --markdown 20230507/l/lazycsv/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-07 22:00:02] INFO root fetch - processPackages [struct-gpt]: executing diffoscope
+[2023-05-07 22:00:02] INFO root fetch - processPackages [struct-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/struct_gpt-1.0.0.tar.gz tmp/struct_gpt-1.0.1.tar.gz --markdown 20230507/s/struct-gpt/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-07 22:00:02] INFO root fetch - processPackages [djangocms-blog]: executing diffoscope
+[2023-05-07 22:00:02] INFO root fetch - processPackages [djangocms-blog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangocms-blog-1.2.3.tar.gz tmp/djangocms-blog-2.0.0b1.tar.gz --markdown 20230507/d/djangocms-blog/1.2.3-2.0.0b1/diff.md --exclude *.pyd
+[2023-05-07 22:00:02] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-07 22:00:02] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.0.2.tar.gz tmp/dxsp-2.0.3.tar.gz --markdown 20230507/d/dxsp/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-07 22:00:03] INFO root fetch - main [MainThread]: End processing [struct-gpt]: success
+[2023-05-07 22:00:03] INFO root fetch - main [MainThread]: End processing [karcher-home]: success
+[2023-05-07 22:00:03] INFO root fetch - main [MainThread]: End processing [lazycsv]: success
+[2023-05-07 22:00:04] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-07 22:00:04] INFO root fetch - main [MainThread]: End processing [djangocms-blog]: success
+[2023-05-07 22:00:04] INFO root fetch - main [MainThread]: Store serial: [18009426]
