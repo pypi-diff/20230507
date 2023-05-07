@@ -8643,3 +8643,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 17:54:25] INFO root fetch - main [MainThread]: End processing [jesse]: success
 [2023-05-07 17:54:28] INFO root fetch - main [MainThread]: End processing [gramex]: success
 [2023-05-07 17:54:28] INFO root fetch - main [MainThread]: Store serial: [18008057]
+[2023-05-07 17:59:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008057]
+[2023-05-07 17:59:37] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycloaker
+[2023-05-07 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: milvus
+[2023-05-07 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: colony-print
+[2023-05-07 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tsmetric
+[2023-05-07 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xhtml2pdf
+[2023-05-07 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: budy
+[2023-05-07 17:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gcscore
+[2023-05-07 17:59:37] INFO root fetch - processPackages [milvus]: New version: [2.2.8] Old Version: [2.2.6]
+[2023-05-07 17:59:37] INFO root fetch - processPackages [gcscore]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-07 17:59:37] WARNING root fetch - processPackages [pycloaker]: Skipping, unable to determine old version
+[2023-05-07 17:59:37] INFO root fetch - main [MainThread]: End processing [pycloaker] error
+[2023-05-07 17:59:37] INFO root fetch - processPackages [colony-print]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-05-07 17:59:37] INFO root fetch - processPackages [xhtml2pdf]: New version: [0.2b1] Old Version: [0.2.9]
+[2023-05-07 17:59:37] INFO root fetch - processPackages [budy]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-07 17:59:37] WARNING root fetch - processPackages [tsmetric]: Skipping, unable to determine old version
+[2023-05-07 17:59:37] INFO root fetch - main [MainThread]: End processing [tsmetric] error
+[2023-05-07 17:59:37] INFO root fetch - processPackages [gcscore]: Downloading https://files.pythonhosted.org/packages/7a/df/b155b2aaa241f86d629b20b9f64904b3e3b3d5d486f09410b6eb6e9ac2ea/gcscore-0.0.4.tar.gz
+[2023-05-07 17:59:37] INFO root fetch - processPackages [milvus]: Downloading https://files.pythonhosted.org/packages/45/bd/85c14282575543736e50870ab2c047fc60fe630cc76e562df4a6464a8866/milvus-2.2.6-py3-none-win_amd64.whl
+[2023-05-07 17:59:37] INFO root fetch - processPackages [colony-print]: Downloading https://files.pythonhosted.org/packages/1c/ba/f47ce63af39fa5cede4b56bf8109d850d470a11624c2bb20a201d3297798/colony_print-0.1.4.tar.gz
+[2023-05-07 17:59:37] INFO root fetch - processPackages [budy]: Downloading https://files.pythonhosted.org/packages/16/06/1e7594faa48633f046c683106651137b69accbebf8792686a0c48590e555/budy-0.8.0.tar.gz
+[2023-05-07 17:59:37] INFO root fetch - processPackages [xhtml2pdf]: Downloading https://files.pythonhosted.org/packages/3c/a9/beeae666c73d34542019a49bf91b836cc372a447ff777182048736e1c508/xhtml2pdf-0.2.9-py3-none-any.whl
+[2023-05-07 17:59:37] WARNING root fetch - processPackages [milvus]: Skipping package: exceeds size limit 38507237>=10485760
+[2023-05-07 17:59:37] INFO root fetch - main [MainThread]: End processing [milvus] error
+[2023-05-07 17:59:37] INFO root fetch - processPackages [colony-print]: Downloading https://files.pythonhosted.org/packages/77/8d/813b3b4d5a5100eacfccc99a289983aa661a561df671af57c39e36608c70/colony-print-0.2.0.tar.gz
+[2023-05-07 17:59:37] INFO root fetch - processPackages [budy]: Downloading https://files.pythonhosted.org/packages/50/67/fdfbfa7e56e3896057597d173e41d2dbef42a56e622a9f0f0e36599994bd/budy-0.8.1.tar.gz
+[2023-05-07 17:59:37] INFO root fetch - processPackages [gcscore]: Downloading https://files.pythonhosted.org/packages/2f/7a/ca6fb0c8397cadbd266bc1cb08aef00f8ca02cc9087e60428a3eb4c60210/gcscore-0.0.5.tar.gz
+[2023-05-07 17:59:38] INFO root fetch - processPackages [colony-print]: executing diffoscope
+[2023-05-07 17:59:38] INFO root fetch - processPackages [colony-print]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colony_print-0.1.4.tar.gz tmp/colony-print-0.2.0.tar.gz --markdown 20230507/c/colony-print/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 17:59:38] INFO root fetch - processPackages [xhtml2pdf]: Downloading https://files.pythonhosted.org/packages/a9/82/57ada36111511206ff2db1f77f0f3e3e5e8b2dfb073c2b6239016c493be1/xhtml2pdf-0.2b1.zip
+[2023-05-07 17:59:38] INFO root fetch - processPackages [budy]: executing diffoscope
+[2023-05-07 17:59:38] INFO root fetch - processPackages [budy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/budy-0.8.0.tar.gz tmp/budy-0.8.1.tar.gz --markdown 20230507/b/budy/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-07 17:59:38] INFO root fetch - processPackages [gcscore]: executing diffoscope
+[2023-05-07 17:59:38] INFO root fetch - processPackages [gcscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcscore-0.0.4.tar.gz tmp/gcscore-0.0.5.tar.gz --markdown 20230507/g/gcscore/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-07 17:59:38] INFO root fetch - processPackages [xhtml2pdf]: executing diffoscope
+[2023-05-07 17:59:38] INFO root fetch - processPackages [xhtml2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xhtml2pdf-0.2.9-py3-none-any.whl.zip tmp/xhtml2pdf-0.2b1.zip --markdown 20230507/x/xhtml2pdf/0.2.9-0.2b1/diff.md --exclude *.pyd
+[2023-05-07 17:59:39] INFO root fetch - main [MainThread]: End processing [gcscore]: success
+[2023-05-07 17:59:39] INFO root fetch - main [MainThread]: End processing [colony-print]: success
+[2023-05-07 17:59:39] INFO root fetch - main [MainThread]: End processing [xhtml2pdf]: success
+[2023-05-07 17:59:39] INFO root fetch - main [MainThread]: End processing [budy]: success
+[2023-05-07 17:59:39] INFO root fetch - main [MainThread]: Store serial: [18008086]
