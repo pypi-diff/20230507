@@ -6199,3 +6199,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 13:54:32] ERROR root fetch - processPackages [vietnam-provinces]: Timeout during execution of pkgdiff
 [2023-05-07 13:54:32] INFO root fetch - main [MainThread]: End processing [vietnam-provinces] error
 [2023-05-07 13:54:32] INFO root fetch - main [MainThread]: Store serial: [18006426]
+[2023-05-07 13:59:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006426]
+[2023-05-07 13:59:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 13:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cpmel
+[2023-05-07 13:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotPython
+[2023-05-07 13:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nlpstack
+[2023-05-07 13:59:40] INFO root fetch - processPackages [cpmel]: New version: [3.6.0] Old Version: [3.5.0]
+[2023-05-07 13:59:40] WARNING root fetch - processPackages [nlpstack]: Skipping, unable to determine old version
+[2023-05-07 13:59:40] INFO root fetch - main [MainThread]: End processing [nlpstack] error
+[2023-05-07 13:59:40] INFO root fetch - processPackages [spotPython]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 13:59:41] INFO root fetch - processPackages [cpmel]: Downloading https://files.pythonhosted.org/packages/ab/60/62bbea21b8fe76e588d23fb46241374125b08419b9900638120402cb664e/cpmel-3.5.0.tar.gz
+[2023-05-07 13:59:41] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-05-07 13:59:41] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.0.8.tar.gz tmp/spotPython-0.0.9.tar.gz --markdown 20230507/s/spotPython/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 13:59:41] INFO root fetch - processPackages [cpmel]: Downloading https://files.pythonhosted.org/packages/0d/94/42e2c1911e9ced473bd9d0d0e30d8f0e9745885d19064a73c6038673c04b/cpmel-3.6.0.tar.gz
+[2023-05-07 13:59:41] INFO root fetch - processPackages [cpmel]: executing diffoscope
+[2023-05-07 13:59:41] INFO root fetch - processPackages [cpmel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpmel-3.5.0.tar.gz tmp/cpmel-3.6.0.tar.gz --markdown 20230507/c/cpmel/3.5.0-3.6.0/diff.md --exclude *.pyd
+[2023-05-07 13:59:42] INFO root fetch - main [MainThread]: End processing [cpmel]: success
+[2023-05-07 13:59:42] INFO root fetch - main [MainThread]: End processing [spotPython]: success
+[2023-05-07 13:59:42] INFO root fetch - main [MainThread]: Store serial: [18006447]
