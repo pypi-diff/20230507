@@ -1502,3 +1502,46 @@
 [2023-05-07 03:21:04] INFO root fetch - main [MainThread]: End processing [portmod]: success
 [2023-05-07 03:21:04] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
 [2023-05-07 03:21:04] INFO root fetch - main [MainThread]: Store serial: [18003499]
+[2023-05-07 03:26:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003499]
+[2023-05-07 03:26:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 03:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onvif-zeep-async
+[2023-05-07 03:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-static
+[2023-05-07 03:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-lambda-layer-curl
+[2023-05-07 03:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ibm-generative-ai
+[2023-05-07 03:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ecg-quality
+[2023-05-07 03:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pdcscore
+[2023-05-07 03:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ImageMagic
+[2023-05-07 03:26:12] INFO root fetch - processPackages [onvif-zeep-async]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-05-07 03:26:12] INFO root fetch - processPackages [ecg-quality]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 03:26:12] INFO root fetch - processPackages [pytest-static]: New version: [0.1.0] Old Version: [0.0.0]
+[2023-05-07 03:26:12] INFO root fetch - processPackages [ImageMagic]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-07 03:26:12] WARNING root fetch - processPackages [ibm-generative-ai]: Skipping, unable to determine old version
+[2023-05-07 03:26:12] INFO root fetch - main [MainThread]: End processing [ibm-generative-ai] error
+[2023-05-07 03:26:12] INFO root fetch - processPackages [pdcscore]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-07 03:26:12] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-07 03:26:13] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-07 03:26:13] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230507/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:26:13] INFO root fetch - processPackages [ecg-quality]: Downloading https://files.pythonhosted.org/packages/ed/31/5b766832079ad6eefa1ebbe26e12bf6907586c7cbbee99631a3027f20d83/ecg_quality-0.1.1.tar.gz
+[2023-05-07 03:26:13] INFO root fetch - processPackages [pytest-static]: Downloading https://files.pythonhosted.org/packages/cb/db/122b23c03b13325c2549f6c5980a33b88138030e3827db04473409c950d6/pytest-static-0.0.0.tar.gz
+[2023-05-07 03:26:13] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/58/2f/02ccea7549800b101b643be24c73142244deac5af148121c34f94839023c/onvif-zeep-async-3.0.1.tar.gz
+[2023-05-07 03:26:13] INFO root fetch - processPackages [ImageMagic]: Downloading https://files.pythonhosted.org/packages/cc/ce/8b9ecf1c70577edfd1b65eebf687686ef0d0d8695a6852239a506d2a14c0/ImageMagic-0.1.7.tar.gz
+[2023-05-07 03:26:13] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-05-07 03:26:13] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-3.0.0.tar.gz tmp/onvif-zeep-async-3.0.1.tar.gz --markdown 20230507/o/onvif-zeep-async/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-05-07 03:26:13] INFO root fetch - processPackages [pdcscore]: Downloading https://files.pythonhosted.org/packages/fc/8e/2f30dae3ee1cf23657ee74832ff4f2e8d0a3a3a43f6e01afc2abbb26a2c0/pdcscore-1.1.1.tar.gz
+[2023-05-07 03:26:13] INFO root fetch - processPackages [ecg-quality]: Downloading https://files.pythonhosted.org/packages/a9/99/c0d4c87a29fec982f22ffd35655930601b7bbfc044867ec34a4760883cc9/ecg_quality-0.1.2.tar.gz
+[2023-05-07 03:26:13] INFO root fetch - processPackages [pdcscore]: executing diffoscope
+[2023-05-07 03:26:13] INFO root fetch - processPackages [pdcscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdcscore-1.1.0.tar.gz tmp/pdcscore-1.1.1.tar.gz --markdown 20230507/p/pdcscore/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-07 03:26:13] INFO root fetch - processPackages [ImageMagic]: executing diffoscope
+[2023-05-07 03:26:13] INFO root fetch - processPackages [pytest-static]: Downloading https://files.pythonhosted.org/packages/8f/2c/eb0f70de2afd5f70dcfeb727c0bc924c821880d53538c936137f4d76f0b5/pytest-static-0.1.0.tar.gz
+[2023-05-07 03:26:13] INFO root fetch - processPackages [ImageMagic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ImageMagic-0.1.6.tar.gz tmp/ImageMagic-0.1.7.tar.gz --markdown 20230507/I/ImageMagic/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-07 03:26:13] INFO root fetch - processPackages [pytest-static]: executing diffoscope
+[2023-05-07 03:26:13] INFO root fetch - processPackages [pytest-static]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-static-0.0.0.tar.gz tmp/pytest-static-0.1.0.tar.gz --markdown 20230507/p/pytest-static/0.0.0-0.1.0/diff.md --exclude *.pyd
+[2023-05-07 03:26:14] INFO root fetch - processPackages [ecg-quality]: executing diffoscope
+[2023-05-07 03:26:14] INFO root fetch - processPackages [ecg-quality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecg_quality-0.1.1.tar.gz tmp/ecg_quality-0.1.2.tar.gz --markdown 20230507/e/ecg-quality/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 03:26:14] INFO root fetch - main [MainThread]: End processing [pdcscore]: success
+[2023-05-07 03:26:14] INFO root fetch - main [MainThread]: End processing [pytest-static]: success
+[2023-05-07 03:26:14] INFO root fetch - main [MainThread]: End processing [ImageMagic]: success
+[2023-05-07 03:26:14] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-07 03:26:15] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-05-07 03:26:15] INFO root fetch - main [MainThread]: End processing [ecg-quality]: success
+[2023-05-07 03:26:15] INFO root fetch - main [MainThread]: Store serial: [18003519]
