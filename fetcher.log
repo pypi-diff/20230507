@@ -9026,3 +9026,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 18:26:01] INFO root fetch - main [MainThread]: End processing [marshy]: success
 [2023-05-07 18:26:01] INFO root fetch - main [MainThread]: End processing [funasr-onnx]: success
 [2023-05-07 18:26:01] INFO root fetch - main [MainThread]: Store serial: [18008253]
+[2023-05-07 18:31:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008253]
+[2023-05-07 18:31:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 18:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: customshowme
+[2023-05-07 18:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kray-zeroconf
+[2023-05-07 18:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: strawberry-django-auth
+[2023-05-07 18:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: test1library
+[2023-05-07 18:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kray-zeroconf
+[2023-05-07 18:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: feathub-nightly
+[2023-05-07 18:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: instruction-ner
+[2023-05-07 18:31:11] INFO root fetch - processPackages [customshowme]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 18:31:11] INFO root fetch - processPackages [kray-zeroconf]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 18:31:11] INFO root fetch - processPackages [kray-zeroconf]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 18:31:11] WARNING root fetch - processPackages [test1library]: Skipping, unable to determine old version
+[2023-05-07 18:31:11] INFO root fetch - main [MainThread]: End processing [test1library] error
+[2023-05-07 18:31:11] INFO root fetch - processPackages [strawberry-django-auth]: New version: [0.374.4] Old Version: [0.374.3]
+[2023-05-07 18:31:11] INFO root fetch - processPackages [feathub-nightly]: New version: [0.1.dev20230506] Old Version: [0.1.dev20230505]
+[2023-05-07 18:31:11] INFO root fetch - processPackages [instruction-ner]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-07 18:31:11] INFO root fetch - processPackages [customshowme]: executing diffoscope
+[2023-05-07 18:31:11] INFO root fetch - processPackages [customshowme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customshowme-1.0.8-py2.py3-none-any.whl.zip tmp/customshowme-1.0.9.tar.gz --markdown 20230507/c/customshowme/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 18:31:11] INFO root fetch - processPackages [kray-zeroconf]: Downloading https://files.pythonhosted.org/packages/10/da/3f6e636fd1d805ce286e3f97fd700a97c63cd5155b4f96b876b2c2a0753f/kray_zeroconf-0.1.3.tar.gz
+[2023-05-07 18:31:11] INFO root fetch - processPackages [kray-zeroconf]: Downloading https://files.pythonhosted.org/packages/10/da/3f6e636fd1d805ce286e3f97fd700a97c63cd5155b4f96b876b2c2a0753f/kray_zeroconf-0.1.3.tar.gz
+[2023-05-07 18:31:11] INFO root fetch - processPackages [instruction-ner]: Downloading https://files.pythonhosted.org/packages/af/4e/4a9c9c0768b3889e407cf840a77fefe35f35fa4099426970bba5bd853d18/instruction_ner-0.1.2.tar.gz
+[2023-05-07 18:31:11] INFO root fetch - processPackages [strawberry-django-auth]: Downloading https://files.pythonhosted.org/packages/09/13/8642ec886b7bc3e40504e80ab46074566a4776d78d05802d4841cfb0ccda/strawberry_django_auth-0.374.3.tar.gz
+[2023-05-07 18:31:11] INFO root fetch - processPackages [feathub-nightly]: Downloading https://files.pythonhosted.org/packages/b0/0b/a01b1874ea20d4d3780b6d3189c9c2cb3a5283a4c8bc2573efd1d80c944e/feathub_nightly-0.1.dev20230506-py3-none-any.whl
+[2023-05-07 18:31:11] INFO root fetch - processPackages [feathub-nightly]: executing diffoscope
+[2023-05-07 18:31:11] INFO root fetch - processPackages [feathub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feathub_nightly-0.1.dev20230505-py3-none-any.whl.zip tmp/feathub_nightly-0.1.dev20230506-py3-none-any.whl.zip --markdown 20230507/f/feathub-nightly/0.1.dev20230505-0.1.dev20230506/diff.md --exclude *.pyd
+[2023-05-07 18:31:12] INFO root fetch - processPackages [kray-zeroconf]: Downloading https://files.pythonhosted.org/packages/af/7f/ecc8bb2e0b44b3e8df87b5f66a8a74cefcb3c2a7a5036322862f79d6535d/kray_zeroconf-0.1.4.tar.gz
+[2023-05-07 18:31:12] INFO root fetch - processPackages [kray-zeroconf]: Downloading https://files.pythonhosted.org/packages/af/7f/ecc8bb2e0b44b3e8df87b5f66a8a74cefcb3c2a7a5036322862f79d6535d/kray_zeroconf-0.1.4.tar.gz
+[2023-05-07 18:31:12] INFO root fetch - processPackages [kray-zeroconf]: executing diffoscope
+[2023-05-07 18:31:12] INFO root fetch - processPackages [kray-zeroconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kray_zeroconf-0.1.3.tar.gz tmp/kray_zeroconf-0.1.4.tar.gz --markdown 20230507/k/kray-zeroconf/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 18:31:12] INFO root fetch - processPackages [kray-zeroconf]: executing diffoscope
+[2023-05-07 18:31:12] INFO root fetch - processPackages [kray-zeroconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kray_zeroconf-0.1.3.tar.gz tmp/kray_zeroconf-0.1.4.tar.gz --markdown 20230507/k/kray-zeroconf/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 18:31:12] INFO root fetch - processPackages [instruction-ner]: Downloading https://files.pythonhosted.org/packages/9d/a8/4f9212103d8a98bf53f9788c92dad79a434f975a36042185f3e13def81d9/instruction_ner-0.1.3.tar.gz
+[2023-05-07 18:31:12] INFO root fetch - processPackages [strawberry-django-auth]: Downloading https://files.pythonhosted.org/packages/68/c7/b21352e30d19507a0e9ad0188d445b7afb272675e38a090df9ba289d3b2b/strawberry_django_auth-0.374.4.tar.gz
+[2023-05-07 18:31:12] INFO root fetch - processPackages [instruction-ner]: executing diffoscope
+[2023-05-07 18:31:12] INFO root fetch - processPackages [instruction-ner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instruction_ner-0.1.2.tar.gz tmp/instruction_ner-0.1.3.tar.gz --markdown 20230507/i/instruction-ner/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 18:31:12] INFO root fetch - processPackages [strawberry-django-auth]: executing diffoscope
+[2023-05-07 18:31:12] INFO root fetch - processPackages [strawberry-django-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry_django_auth-0.374.3.tar.gz tmp/strawberry_django_auth-0.374.4.tar.gz --markdown 20230507/s/strawberry-django-auth/0.374.3-0.374.4/diff.md --exclude *.pyd
+[2023-05-07 18:31:12] INFO root fetch - main [MainThread]: End processing [customshowme]: success
+[2023-05-07 18:31:13] INFO root fetch - main [MainThread]: End processing [kray-zeroconf]: success
+[2023-05-07 18:31:13] INFO root fetch - main [MainThread]: End processing [kray-zeroconf]: success
+[2023-05-07 18:31:13] INFO root fetch - main [MainThread]: End processing [instruction-ner]: success
+[2023-05-07 18:31:13] INFO root fetch - main [MainThread]: End processing [strawberry-django-auth]: success
+[2023-05-07 18:31:15] INFO root fetch - main [MainThread]: End processing [feathub-nightly]: success
+[2023-05-07 18:31:15] INFO root fetch - main [MainThread]: Store serial: [18008273]
