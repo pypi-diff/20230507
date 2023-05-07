@@ -6217,3 +6217,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 13:59:42] INFO root fetch - main [MainThread]: End processing [cpmel]: success
 [2023-05-07 13:59:42] INFO root fetch - main [MainThread]: End processing [spotPython]: success
 [2023-05-07 13:59:42] INFO root fetch - main [MainThread]: Store serial: [18006447]
+[2023-05-07 14:04:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006447]
+[2023-05-07 14:04:51] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 14:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gqt
+[2023-05-07 14:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: klarity-connector
+[2023-05-07 14:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apininja
+[2023-05-07 14:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-shays-CERT-1861-c
+[2023-05-07 14:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-mcversion
+[2023-05-07 14:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbt-ai
+[2023-05-07 14:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: certora-cli-alpha-rahav-cert-1987-update-regTest
+[2023-05-07 14:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: telegram-menu
+[2023-05-07 14:04:51] INFO root fetch - processPackages [klarity-connector]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-07 14:04:51] INFO root fetch - processPackages [gqt]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-05-07 14:04:51] INFO root fetch - processPackages [dbt-ai]: New version: [0.0.9a0] Old Version: [0.0.8a0]
+[2023-05-07 14:04:51] WARNING root fetch - processPackages [certora-cli-alpha-shays-CERT-1861-c]: Skipping, unable to determine old version
+[2023-05-07 14:04:51] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shays-CERT-1861-c] error
+[2023-05-07 14:04:51] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: New version: [20230507.9.47.577125] Old Version: [20230507.8.27.526824]
+[2023-05-07 14:04:51] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Downloading https://files.pythonhosted.org/packages/18/91/9107948ff93f03169be37397174f066ca051c92e276c8ba5f256faf1536a/certora-cli-alpha-rahav-cert-1987_update_regTest-20230507.8.27.526824.tar.gz
+[2023-05-07 14:04:51] INFO root fetch - processPackages [gqt]: executing diffoscope
+[2023-05-07 14:04:51] INFO root fetch - processPackages [gqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqt-0.98.0.tar.gz tmp/gqt-0.99.0.tar.gz --markdown 20230507/g/gqt/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-05-07 14:04:51] WARNING root fetch - processPackages [nonebot-plugin-mcversion]: Skipping, unable to determine old version
+[2023-05-07 14:04:51] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mcversion] error
+[2023-05-07 14:04:51] WARNING root fetch - processPackages [apininja]: Skipping, unable to determine old version
+[2023-05-07 14:04:51] INFO root fetch - main [MainThread]: End processing [apininja] error
+[2023-05-07 14:04:51] INFO root fetch - processPackages [dbt-ai]: executing diffoscope
+[2023-05-07 14:04:51] INFO root fetch - processPackages [dbt-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-ai-0.0.8a0.tar.gz tmp/dbt-ai-0.0.9a0.tar.gz --markdown 20230507/d/dbt-ai/0.0.8a0-0.0.9a0/diff.md --exclude *.pyd
+[2023-05-07 14:04:52] INFO root fetch - processPackages [telegram-menu]: New version: [2.1.0] Old Version: [2.0.2]
+[2023-05-07 14:04:52] WARNING root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Skipping package: exceeds size limit 38472946>=10485760
+[2023-05-07 14:04:52] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-rahav-cert-1987-update-regTest] error
+[2023-05-07 14:04:52] INFO root fetch - processPackages [klarity-connector]: Downloading https://files.pythonhosted.org/packages/7b/d3/4d87729f06c610e4eb95223d144d69d49839658124c9a7e4d4b5a4acdd9c/klarity-connector-0.1.5.tar.gz
+[2023-05-07 14:04:52] INFO root fetch - processPackages [klarity-connector]: executing diffoscope
+[2023-05-07 14:04:52] INFO root fetch - processPackages [klarity-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klarity-connector-0.1.4.tar.gz tmp/klarity-connector-0.1.5.tar.gz --markdown 20230507/k/klarity-connector/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-07 14:04:52] INFO root fetch - processPackages [telegram-menu]: Downloading https://files.pythonhosted.org/packages/c9/08/19d8e7af60748f7616215c5fba8686c334297c920eae6a7499763cc157f3/telegram_menu-2.0.2.tar.gz
+[2023-05-07 14:04:52] INFO root fetch - processPackages [telegram-menu]: Downloading https://files.pythonhosted.org/packages/87/49/a45ab1d5c8e80944b751cdbff65c9ec7bdeb26e62594fd907f36e51ddf77/telegram_menu-2.1.0.tar.gz
+[2023-05-07 14:04:52] INFO root fetch - processPackages [telegram-menu]: executing diffoscope
+[2023-05-07 14:04:52] INFO root fetch - processPackages [telegram-menu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_menu-2.0.2.tar.gz tmp/telegram_menu-2.1.0.tar.gz --markdown 20230507/t/telegram-menu/2.0.2-2.1.0/diff.md --exclude *.pyd
+[2023-05-07 14:04:53] INFO root fetch - main [MainThread]: End processing [dbt-ai]: success
+[2023-05-07 14:04:53] INFO root fetch - main [MainThread]: End processing [gqt]: success
+[2023-05-07 14:04:53] INFO root fetch - main [MainThread]: End processing [klarity-connector]: success
+[2023-05-07 14:04:53] INFO root fetch - main [MainThread]: End processing [telegram-menu]: success
+[2023-05-07 14:04:53] INFO root fetch - main [MainThread]: Store serial: [18006482]
