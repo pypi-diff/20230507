@@ -10756,3 +10756,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 21:33:51] INFO root fetch - main [MainThread]: End processing [gravitypy]: success
 [2023-05-07 21:33:52] INFO root fetch - main [MainThread]: End processing [splinecalib]: success
 [2023-05-07 21:33:52] INFO root fetch - main [MainThread]: Store serial: [18009314]
+[2023-05-07 21:38:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009314]
+[2023-05-07 21:39:01] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-07 21:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: copyparty
+[2023-05-07 21:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gravitypy
+[2023-05-07 21:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: boneIO
+[2023-05-07 21:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: acrosort-tex
+[2023-05-07 21:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tsp-wrapper
+[2023-05-07 21:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: banksync
+[2023-05-07 21:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: banksync
+[2023-05-07 21:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: p2sql
+[2023-05-07 21:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aiotfm
+[2023-05-07 21:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: intecomm-edc
+[2023-05-07 21:39:01] INFO root fetch - processPackages [gravitypy]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 21:39:01] WARNING root fetch - processPackages [acrosort-tex]: Skipping, unable to determine old version
+[2023-05-07 21:39:01] INFO root fetch - processPackages [acrosort-tex]: Start processing: karcher-home
+[2023-05-07 21:39:01] INFO root fetch - main [MainThread]: End processing [acrosort-tex] error
+[2023-05-07 21:39:01] WARNING root fetch - processPackages [p2sql]: Skipping, unable to determine old version
+[2023-05-07 21:39:01] INFO root fetch - processPackages [tsp-wrapper]: New version: [1.0.7] Old Version: [1.0.5]
+[2023-05-07 21:39:01] INFO root fetch - main [MainThread]: End processing [p2sql] error
+[2023-05-07 21:39:01] INFO root fetch - processPackages [banksync]: New version: [0.9.9.1] Old Version: [0.9.9]
+[2023-05-07 21:39:01] INFO root fetch - processPackages [banksync]: New version: [0.9.9.1] Old Version: [0.9.9]
+[2023-05-07 21:39:01] INFO root fetch - processPackages [aiotfm]: New version: [1.4.8] Old Version: [1.4.6]
+[2023-05-07 21:39:01] INFO root fetch - processPackages [boneIO]: New version: [0.6.0.dev5] Old Version: [0.6.0.dev4]
+[2023-05-07 21:39:01] INFO root fetch - processPackages [intecomm-edc]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 21:39:01] INFO root fetch - processPackages [karcher-home]: New version: [0.4] Old Version: [0.3]
+[2023-05-07 21:39:01] INFO root fetch - processPackages [copyparty]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-05-07 21:39:01] INFO root fetch - processPackages [gravitypy]: executing diffoscope
+[2023-05-07 21:39:01] INFO root fetch - processPackages [gravitypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitypy-1.0.8.tar.gz tmp/gravitypy-1.0.9.tar.gz --markdown 20230507/g/gravitypy/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 21:39:01] INFO root fetch - processPackages [tsp-wrapper]: Downloading https://files.pythonhosted.org/packages/da/38/0ef2c964d4405075805195503bedcecbd9c70163f583027802ddf7b805c0/tsp_wrapper-1.0.5.tar.gz
+[2023-05-07 21:39:01] INFO root fetch - processPackages [karcher-home]: executing diffoscope
+[2023-05-07 21:39:01] INFO root fetch - processPackages [karcher-home]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karcher-home-0.3.tar.gz tmp/karcher-home-0.4.tar.gz --markdown 20230507/k/karcher-home/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-07 21:39:01] INFO root fetch - processPackages [boneIO]: executing diffoscope
+[2023-05-07 21:39:01] INFO root fetch - processPackages [boneIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boneIO-0.6.0.dev4.tar.gz tmp/boneIO-0.6.0.dev5.tar.gz --markdown 20230507/b/boneIO/0.6.0.dev4-0.6.0.dev5/diff.md --exclude *.pyd
+[2023-05-07 21:39:01] INFO root fetch - processPackages [banksync]: Downloading https://files.pythonhosted.org/packages/63/68/0bff1a74333c13b86f4f541990c012c796522ab0e96a0463c30fad2c068e/banksync-0.9.9.1.tar.gz
+[2023-05-07 21:39:01] INFO root fetch - processPackages [intecomm-edc]: Downloading https://files.pythonhosted.org/packages/da/f0/9548929a437af2527d196c8f58001aa53a4c972387197713ccc8fc8c3093/intecomm-edc-0.1.8.tar.gz
+[2023-05-07 21:39:01] INFO root fetch - processPackages [banksync]: Downloading https://files.pythonhosted.org/packages/63/68/0bff1a74333c13b86f4f541990c012c796522ab0e96a0463c30fad2c068e/banksync-0.9.9.1.tar.gz
+[2023-05-07 21:39:01] INFO root fetch - processPackages [aiotfm]: Downloading https://files.pythonhosted.org/packages/e5/c2/9fb55373a595bed6d136871acd2d6231849fd380e159bcc10ea60ec01c2a/aiotfm-1.4.6.tar.gz
+[2023-05-07 21:39:01] INFO root fetch - processPackages [copyparty]: Downloading https://files.pythonhosted.org/packages/3e/0f/c07a94c707b1e0310df8c8bf31d98a80c1b39734a40dc20bc5235c0030cb/copyparty-1.7.0.tar.gz
+[2023-05-07 21:39:01] INFO root fetch - processPackages [tsp-wrapper]: Downloading https://files.pythonhosted.org/packages/63/73/0076e033560a1f4aae181167bb3ebc07a853c7964d6d74d236bf5683828f/tsp_wrapper-1.0.7.tar.gz
+[2023-05-07 21:39:01] INFO root fetch - processPackages [banksync]: executing diffoscope
+[2023-05-07 21:39:01] INFO root fetch - processPackages [banksync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/banksync-0.9.9.tar.gz tmp/banksync-0.9.9.1.tar.gz --markdown 20230507/b/banksync/0.9.9-0.9.9.1/diff.md --exclude *.pyd
+[2023-05-07 21:39:01] INFO root fetch - processPackages [banksync]: executing diffoscope
+[2023-05-07 21:39:01] INFO root fetch - processPackages [banksync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/banksync-0.9.9.tar.gz tmp/banksync-0.9.9.1.tar.gz --markdown 20230507/b/banksync/0.9.9-0.9.9.1/diff.md --exclude *.pyd
+[2023-05-07 21:39:01] INFO root fetch - processPackages [tsp-wrapper]: executing diffoscope
+[2023-05-07 21:39:01] INFO root fetch - processPackages [tsp-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsp_wrapper-1.0.5.tar.gz tmp/tsp_wrapper-1.0.7.tar.gz --markdown 20230507/t/tsp-wrapper/1.0.5-1.0.7/diff.md --exclude *.pyd
+[2023-05-07 21:39:01] INFO root fetch - processPackages [copyparty]: Downloading https://files.pythonhosted.org/packages/9d/fd/44907fbcf2514f8c558c0d8841a5f4920c8eace944a1b454a2e340450f23/copyparty-1.7.1.tar.gz
+[2023-05-07 21:39:01] INFO root fetch - processPackages [aiotfm]: Downloading https://files.pythonhosted.org/packages/89/81/ac9a7a3fa965bcff17394b6fce1644f7949fe8a26e51d51cd3731197e2d2/aiotfm-1.4.8.tar.gz
+[2023-05-07 21:39:01] INFO root fetch - processPackages [intecomm-edc]: Downloading https://files.pythonhosted.org/packages/3c/c4/5d66f454c202fb25cafb15878ef119f2f40e92abb71f90eda7a667e098d0/intecomm-edc-0.1.9.tar.gz
+[2023-05-07 21:39:01] INFO root fetch - processPackages [aiotfm]: executing diffoscope
+[2023-05-07 21:39:01] INFO root fetch - processPackages [aiotfm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotfm-1.4.6.tar.gz tmp/aiotfm-1.4.8.tar.gz --markdown 20230507/a/aiotfm/1.4.6-1.4.8/diff.md --exclude *.pyd
+[2023-05-07 21:39:02] INFO root fetch - processPackages [copyparty]: executing diffoscope
+[2023-05-07 21:39:02] INFO root fetch - processPackages [copyparty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copyparty-1.7.0.tar.gz tmp/copyparty-1.7.1.tar.gz --markdown 20230507/c/copyparty/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2023-05-07 21:39:02] INFO root fetch - processPackages [intecomm-edc]: executing diffoscope
+[2023-05-07 21:39:02] INFO root fetch - processPackages [intecomm-edc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intecomm-edc-0.1.8.tar.gz tmp/intecomm-edc-0.1.9.tar.gz --markdown 20230507/i/intecomm-edc/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 21:39:03] INFO root fetch - main [MainThread]: End processing [gravitypy]: success
+[2023-05-07 21:39:03] INFO root fetch - main [MainThread]: End processing [karcher-home]: success
+[2023-05-07 21:39:03] INFO root fetch - main [MainThread]: End processing [tsp-wrapper]: success
+[2023-05-07 21:39:03] INFO root fetch - main [MainThread]: End processing [banksync]: success
+[2023-05-07 21:39:03] INFO root fetch - main [MainThread]: End processing [boneIO]: success
+[2023-05-07 21:39:03] INFO root fetch - main [MainThread]: End processing [aiotfm]: success
+[2023-05-07 21:39:03] INFO root fetch - main [MainThread]: End processing [banksync]: success
+[2023-05-07 21:39:04] INFO root fetch - main [MainThread]: End processing [copyparty]: success
+[2023-05-07 21:39:06] INFO root fetch - main [MainThread]: End processing [intecomm-edc]: success
+[2023-05-07 21:39:06] INFO root fetch - main [MainThread]: Store serial: [18009349]
