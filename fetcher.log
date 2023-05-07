@@ -2608,3 +2608,13 @@
 [2023-05-07 06:09:01] INFO root fetch - main [MainThread]: End processing [bnaug]: success
 [2023-05-07 06:09:30] INFO root fetch - main [MainThread]: End processing [silobuster]: success
 [2023-05-07 06:09:30] INFO root fetch - main [MainThread]: Store serial: [18004052]
+[2023-05-07 06:14:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004052]
+[2023-05-07 06:14:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-07 06:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyttyd
+[2023-05-07 06:14:39] INFO root fetch - processPackages [pyttyd]: New version: [1.0.8] Old Version: [1.0.6]
+[2023-05-07 06:14:39] INFO root fetch - processPackages [pyttyd]: Downloading https://files.pythonhosted.org/packages/ad/71/fbf3232f67c9720f378bfdbaada497be2a287fe76b58983dd6b3fc979010/pyttyd-1.0.6.tar.gz
+[2023-05-07 06:14:40] INFO root fetch - processPackages [pyttyd]: Downloading https://files.pythonhosted.org/packages/98/14/704d3d04369d097949ec87f4c7e5ff666b57f68abba1a4ddfb86756df9de/pyttyd-1.0.8.tar.gz
+[2023-05-07 06:14:40] INFO root fetch - processPackages [pyttyd]: executing diffoscope
+[2023-05-07 06:14:40] INFO root fetch - processPackages [pyttyd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyttyd-1.0.6.tar.gz tmp/pyttyd-1.0.8.tar.gz --markdown 20230507/p/pyttyd/1.0.6-1.0.8/diff.md --exclude *.pyd
+[2023-05-07 06:14:42] INFO root fetch - main [MainThread]: End processing [pyttyd]: success
+[2023-05-07 06:14:42] INFO root fetch - main [MainThread]: Store serial: [18004055]
