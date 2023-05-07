@@ -2650,3 +2650,11 @@
 [2023-05-07 06:25:03] INFO root fetch - main [MainThread]: End processing [silobuster]: success
 [2023-05-07 06:25:03] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chatgpt-on-qq]: success
 [2023-05-07 06:25:03] INFO root fetch - main [MainThread]: Store serial: [18004066]
+[2023-05-07 06:30:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004066]
+[2023-05-07 06:30:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-07 06:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: start-html-tag-helpers
+[2023-05-07 06:30:12] INFO root fetch - processPackages [start-html-tag-helpers]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 06:30:12] INFO root fetch - processPackages [start-html-tag-helpers]: executing diffoscope
+[2023-05-07 06:30:12] INFO root fetch - processPackages [start-html-tag-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/start_html_tag_helpers-0.0.2.tar.gz tmp/start_html_tag_helpers-0.0.3.tar.gz --markdown 20230507/s/start-html-tag-helpers/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 06:30:13] INFO root fetch - main [MainThread]: End processing [start-html-tag-helpers]: success
+[2023-05-07 06:30:13] INFO root fetch - main [MainThread]: Store serial: [18004068]
