@@ -2018,3 +2018,47 @@
 [2023-05-07 04:19:14] INFO root fetch - main [MainThread]: End processing [ovos-audio-transformer-plugin-speechbrain-langdetect]: success
 [2023-05-07 04:19:14] INFO root fetch - main [MainThread]: End processing [ovos-audio-transformer-plugin-speechbrain-langdetect]: success
 [2023-05-07 04:19:14] INFO root fetch - main [MainThread]: Store serial: [18003766]
+[2023-05-07 04:24:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003766]
+[2023-05-07 04:24:23] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 04:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-recipes
+[2023-05-07 04:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qtex
+[2023-05-07 04:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyundai-kia-connect-api
+[2023-05-07 04:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyghostdb
+[2023-05-07 04:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sweetrpg-library-objects
+[2023-05-07 04:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: monai-weekly
+[2023-05-07 04:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sweetrpg-web-core
+[2023-05-07 04:24:23] INFO root fetch - processPackages [pyghostdb]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 04:24:23] INFO root fetch - processPackages [qtex]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-07 04:24:23] INFO root fetch - processPackages [monai-weekly]: New version: [1.2.dev2319] Old Version: [1.2.dev2318]
+[2023-05-07 04:24:23] INFO root fetch - processPackages [hyundai-kia-connect-api]: New version: [3.3.5] Old Version: [3.3.4]
+[2023-05-07 04:24:23] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2023-05-07 04:24:23] INFO root fetch - processPackages [lbt-recipes]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-07 04:24:23] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 04:24:23] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2023-05-07 04:24:23] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20230507/s/sweetrpg-library-objects/0.0.85-0.0.86/diff.md --exclude *.pyd
+[2023-05-07 04:24:23] INFO root fetch - processPackages [qtex]: Downloading https://files.pythonhosted.org/packages/a7/3d/455bca906377153e0c8f1370f1ba402d60e5c726f22040544edb8a978c34/qtex-0.0.4.tar.gz
+[2023-05-07 04:24:23] INFO root fetch - processPackages [pyghostdb]: Downloading https://files.pythonhosted.org/packages/96/68/76cef1cd16a4b1538dd364420021ac5341572ba6e097e1196cc2ee4d1ba5/pyghostdb-0.0.2.tar.gz
+[2023-05-07 04:24:23] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/a0/80/76a653b7776408041f2c15d7607c8ac8c93781e6806a3a0625c8b388664e/monai-weekly-1.2.dev2318.tar.gz
+[2023-05-07 04:24:23] INFO root fetch - processPackages [hyundai-kia-connect-api]: Downloading https://files.pythonhosted.org/packages/11/54/ff0ad886f5a695467fa2b0116a4877f0680f4159a4ea531e3685dd0f93ac/hyundai_kia_connect_api-3.3.5.tar.gz
+[2023-05-07 04:24:23] INFO root fetch - processPackages [pyghostdb]: executing diffoscope
+[2023-05-07 04:24:23] INFO root fetch - processPackages [pyghostdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyghostdb-0.0.1.tar.gz tmp/pyghostdb-0.0.2.tar.gz --markdown 20230507/p/pyghostdb/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 04:24:23] INFO root fetch - processPackages [hyundai-kia-connect-api]: executing diffoscope
+[2023-05-07 04:24:23] INFO root fetch - processPackages [hyundai-kia-connect-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyundai_kia_connect_api-3.3.4.tar.gz tmp/hyundai_kia_connect_api-3.3.5.tar.gz --markdown 20230507/h/hyundai-kia-connect-api/3.3.4-3.3.5/diff.md --exclude *.pyd
+[2023-05-07 04:24:23] INFO root fetch - processPackages [qtex]: Downloading https://files.pythonhosted.org/packages/f4/27/c4d5ca5bfec953fb5953f1d01993b389123947b8ecbe3a91a7aae877286e/qtex-0.0.5.tar.gz
+[2023-05-07 04:24:23] INFO root fetch - processPackages [lbt-recipes]: executing diffoscope
+[2023-05-07 04:24:23] INFO root fetch - processPackages [lbt-recipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-recipes-0.9.0.tar.gz tmp/lbt-recipes-0.9.1.tar.gz --markdown 20230507/l/lbt-recipes/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-07 04:24:23] INFO root fetch - processPackages [qtex]: executing diffoscope
+[2023-05-07 04:24:23] INFO root fetch - processPackages [qtex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtex-0.0.4.tar.gz tmp/qtex-0.0.5.tar.gz --markdown 20230507/q/qtex/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-07 04:24:23] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-05-07 04:24:23] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230507/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 04:24:24] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/c3/ac/6511d00cbc176d9e8ae0cc6a201576cd00bbfd14ac6ea6260e09c4193a33/monai-weekly-1.2.dev2319.tar.gz
+[2023-05-07 04:24:24] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2023-05-07 04:24:24] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai-weekly-1.2.dev2318.tar.gz tmp/monai-weekly-1.2.dev2319.tar.gz --markdown 20230507/m/monai-weekly/1.2.dev2318-1.2.dev2319/diff.md --exclude *.pyd
+[2023-05-07 04:24:24] INFO root fetch - main [MainThread]: End processing [pyghostdb]: success
+[2023-05-07 04:24:24] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-05-07 04:24:25] INFO root fetch - main [MainThread]: End processing [hyundai-kia-connect-api]: success
+[2023-05-07 04:24:25] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2023-05-07 04:24:25] INFO root fetch - main [MainThread]: End processing [qtex]: success
+[2023-05-07 04:24:25] INFO root fetch - main [MainThread]: End processing [lbt-recipes]: success
+[2023-05-07 04:24:38] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2023-05-07 04:24:38] INFO root fetch - main [MainThread]: Store serial: [18003786]
