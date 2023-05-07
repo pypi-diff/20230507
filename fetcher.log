@@ -2389,3 +2389,27 @@
 [2023-05-07 05:27:37] INFO root fetch - main [MainThread]: End processing [rcmpy]: success
 [2023-05-07 05:27:38] INFO root fetch - main [MainThread]: End processing [PyComplexHeatmap]: success
 [2023-05-07 05:27:38] INFO root fetch - main [MainThread]: Store serial: [18003941]
+[2023-05-07 05:32:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003941]
+[2023-05-07 05:32:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 05:32:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-helper-mod
+[2023-05-07 05:32:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nkt-tools
+[2023-05-07 05:32:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: control-rod
+[2023-05-07 05:32:46] INFO root fetch - processPackages [nkt-tools]: New version: [0.0.1b0] Old Version: [0.0.1]
+[2023-05-07 05:32:46] INFO root fetch - processPackages [py-helper-mod]: New version: [0.0.24] Old Version: [0.0.23]
+[2023-05-07 05:32:46] INFO root fetch - processPackages [control-rod]: New version: [2023.5.6.0] Old Version: [2023.4.28.2]
+[2023-05-07 05:32:46] INFO root fetch - processPackages [nkt-tools]: Downloading https://files.pythonhosted.org/packages/1c/9f/23e335d77b2bf7d7f79590c9699e298bba9cf52a7dc7659f2196f6078173/nkt_tools-0.0.1.tar.gz
+[2023-05-07 05:32:46] INFO root fetch - processPackages [control-rod]: Downloading https://files.pythonhosted.org/packages/5c/03/7796e117be13724c6edc6b44b34735ef55b67e1c3a148bb77c62deaa14d5/control_rod-2023.4.28.2.tar.gz
+[2023-05-07 05:32:46] INFO root fetch - processPackages [py-helper-mod]: Downloading https://files.pythonhosted.org/packages/58/6e/106bbbe5a7a4a43c27b09bdf9b640c640711a5e96141348defa83ee31b0a/py-helper-mod-0.0.23.tar.gz
+[2023-05-07 05:32:47] INFO root fetch - processPackages [control-rod]: Downloading https://files.pythonhosted.org/packages/e5/13/2351040e46d3e270fd2e2f9431098d980d51c3109a94ecadece23e990e8a/control_rod-2023.5.6.0.tar.gz
+[2023-05-07 05:32:47] INFO root fetch - processPackages [nkt-tools]: Downloading https://files.pythonhosted.org/packages/90/8d/e928fe8864b2721e06d064e22e5879ec088a3e9d2edf3fa292eb3e576d18/nkt_tools-0.0.1b0.tar.gz
+[2023-05-07 05:32:47] INFO root fetch - processPackages [py-helper-mod]: Downloading https://files.pythonhosted.org/packages/05/44/e657163f2cd3617a95ee45bed33df5b7d6faedbf598aa64bf68e610dcb69/py-helper-mod-0.0.24.tar.gz
+[2023-05-07 05:32:47] INFO root fetch - processPackages [nkt-tools]: executing diffoscope
+[2023-05-07 05:32:47] INFO root fetch - processPackages [nkt-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkt_tools-0.0.1.tar.gz tmp/nkt_tools-0.0.1b0.tar.gz --markdown 20230507/n/nkt-tools/0.0.1-0.0.1b0/diff.md --exclude *.pyd
+[2023-05-07 05:32:47] INFO root fetch - processPackages [control-rod]: executing diffoscope
+[2023-05-07 05:32:47] INFO root fetch - processPackages [control-rod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/control_rod-2023.4.28.2.tar.gz tmp/control_rod-2023.5.6.0.tar.gz --markdown 20230507/c/control-rod/2023.4.28.2-2023.5.6.0/diff.md --exclude *.pyd
+[2023-05-07 05:32:47] INFO root fetch - processPackages [py-helper-mod]: executing diffoscope
+[2023-05-07 05:32:47] INFO root fetch - processPackages [py-helper-mod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-helper-mod-0.0.23.tar.gz tmp/py-helper-mod-0.0.24.tar.gz --markdown 20230507/p/py-helper-mod/0.0.23-0.0.24/diff.md --exclude *.pyd
+[2023-05-07 05:32:48] INFO root fetch - main [MainThread]: End processing [nkt-tools]: success
+[2023-05-07 05:32:48] INFO root fetch - main [MainThread]: End processing [control-rod]: success
+[2023-05-07 05:32:48] INFO root fetch - main [MainThread]: End processing [py-helper-mod]: success
+[2023-05-07 05:32:48] INFO root fetch - main [MainThread]: Store serial: [18003954]
