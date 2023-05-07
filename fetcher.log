@@ -7071,3 +7071,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 15:24:30] INFO root fetch - main [MainThread]: End processing [lesscode-py]: success
 [2023-05-07 15:24:30] INFO root fetch - main [MainThread]: End processing [KDEpy]: success
 [2023-05-07 15:24:30] INFO root fetch - main [MainThread]: Store serial: [18007046]
+[2023-05-07 15:29:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007046]
+[2023-05-07 15:29:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 15:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inverse
+[2023-05-07 15:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-master
+[2023-05-07 15:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maya-rig-operation-graph
+[2023-05-07 15:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: KMMTR
+[2023-05-07 15:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bridgecrew
+[2023-05-07 15:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rancid-verifier
+[2023-05-07 15:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: palmers-agents-general
+[2023-05-07 15:29:39] INFO root fetch - processPackages [inverse]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 15:29:39] INFO root fetch - processPackages [maya-rig-operation-graph]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-05-07 15:29:39] INFO root fetch - processPackages [palmers-agents-general]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-07 15:29:39] INFO root fetch - processPackages [KMMTR]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 15:29:39] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-07 15:29:39] WARNING root fetch - processPackages [rancid-verifier]: Skipping, unable to determine old version
+[2023-05-07 15:29:39] INFO root fetch - main [MainThread]: End processing [rancid-verifier] error
+[2023-05-07 15:29:39] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230507.8.43.246318] Old Version: [20230507.8.23.441642]
+[2023-05-07 15:29:39] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/c1/70/3267f94d196f9213b2b44a429d64b71cb1f9f3d812687dd74ff8a983a588/bridgecrew-2.3.98.tar.gz
+[2023-05-07 15:29:39] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/d8/2f/daa34fe878aac6c13bf35c9e6c4156e3f4c2507d9daefad15047c7fe5863/certora-cli-alpha-master-20230507.8.23.441642.tar.gz
+[2023-05-07 15:29:39] INFO root fetch - processPackages [maya-rig-operation-graph]: Downloading https://files.pythonhosted.org/packages/ed/c4/2a60eefedb60a6d37feb62327616a945f9649c52bd0956d0ddb281fc08d4/maya-rig-operation-graph-0.7.0.tar.gz
+[2023-05-07 15:29:39] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38474057>=10485760
+[2023-05-07 15:29:39] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-07 15:29:39] INFO root fetch - processPackages [palmers-agents-general]: Downloading https://files.pythonhosted.org/packages/f4/b6/80ca194d3da89491de14cf1cceffd5efd5a264c409c9fd616ace156e176c/palmers_agents_general-0.0.3.tar.gz
+[2023-05-07 15:29:39] INFO root fetch - processPackages [KMMTR]: Downloading https://files.pythonhosted.org/packages/85/50/1b41f1351ac69a0a7caad6ce1515f1277f7c364c92e3d15918edfdc57f74/KMMTR-0.0.2.tar.gz
+[2023-05-07 15:29:39] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/9e/6b/ea9cdf20d73a8621ab1f56b3ee95c8fe6b3e23cb8cd7a0f75ec041c3f16f/bridgecrew-2.3.99.tar.gz
+[2023-05-07 15:29:39] INFO root fetch - processPackages [maya-rig-operation-graph]: executing diffoscope
+[2023-05-07 15:29:39] INFO root fetch - processPackages [maya-rig-operation-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maya-rig-operation-graph-0.6.2.tar.gz tmp/maya-rig-operation-graph-0.7.0.tar.gz --markdown 20230507/m/maya-rig-operation-graph/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-05-07 15:29:39] INFO root fetch - processPackages [inverse]: executing diffoscope
+[2023-05-07 15:29:39] INFO root fetch - processPackages [inverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverse-0.0.8-py3-none-any.whl.zip tmp/inverse-0.0.9-py3-none-any.whl.zip --markdown 20230507/i/inverse/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 15:29:39] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-05-07 15:29:39] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230507/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-07 15:29:40] INFO root fetch - processPackages [palmers-agents-general]: Downloading https://files.pythonhosted.org/packages/67/7f/550ab43a5afed18a156ecdf8ed83a5fe9cef7d2acac741c81aa176cca981/palmers_agents_general-0.0.4.tar.gz
+[2023-05-07 15:29:40] INFO root fetch - processPackages [KMMTR]: Downloading https://files.pythonhosted.org/packages/bd/74/7c150b1fab8739b530fb8743181c03d24922dd1c4b24b249236a890e0e26/KMMTR-0.0.3.tar.gz
+[2023-05-07 15:29:40] INFO root fetch - processPackages [palmers-agents-general]: executing diffoscope
+[2023-05-07 15:29:40] INFO root fetch - processPackages [palmers-agents-general]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palmers_agents_general-0.0.3.tar.gz tmp/palmers_agents_general-0.0.4.tar.gz --markdown 20230507/p/palmers-agents-general/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-07 15:29:40] INFO root fetch - processPackages [KMMTR]: executing diffoscope
+[2023-05-07 15:29:40] INFO root fetch - processPackages [KMMTR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KMMTR-0.0.2.tar.gz tmp/KMMTR-0.0.3.tar.gz --markdown 20230507/K/KMMTR/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 15:29:41] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-05-07 15:29:41] INFO root fetch - main [MainThread]: End processing [palmers-agents-general]: success
+[2023-05-07 15:29:41] INFO root fetch - main [MainThread]: End processing [maya-rig-operation-graph]: success
+[2023-05-07 15:29:41] INFO root fetch - main [MainThread]: End processing [KMMTR]: success
+[2023-05-07 15:29:41] INFO root fetch - main [MainThread]: End processing [inverse]: success
+[2023-05-07 15:29:41] INFO root fetch - main [MainThread]: Store serial: [18007079]
