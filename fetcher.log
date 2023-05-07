@@ -3497,3 +3497,33 @@
 [2023-05-07 08:42:49] INFO root fetch - main [MainThread]: End processing [tremolo]: success
 [2023-05-07 08:42:49] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-csgo-case-simulator]: success
 [2023-05-07 08:42:49] INFO root fetch - main [MainThread]: Store serial: [18004645]
+[2023-05-07 08:47:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004645]
+[2023-05-07 08:47:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 08:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gptcache
+[2023-05-07 08:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uss
+[2023-05-07 08:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-project-tag
+[2023-05-07 08:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-project-category
+[2023-05-07 08:47:58] INFO root fetch - processPackages [gptcache]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 08:47:58] INFO root fetch - processPackages [uss]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-07 08:47:58] INFO root fetch - processPackages [odoo14-addon-project-tag]: New version: [14.0.1.1.1.dev2] Old Version: [14.0.1.1.1.dev1]
+[2023-05-07 08:47:58] INFO root fetch - processPackages [odoo14-addon-project-category]: New version: [14.0.1.0.1.dev9] Old Version: [14.0.1.0.1.dev8]
+[2023-05-07 08:47:58] INFO root fetch - processPackages [odoo14-addon-project-tag]: Downloading https://files.pythonhosted.org/packages/07/b0/70bdff43816639bac11841b664656afa4e00b38d39ecf725156cb0894fdb/odoo14_addon_project_tag-14.0.1.1.1.dev1-py3-none-any.whl
+[2023-05-07 08:47:58] INFO root fetch - processPackages [gptcache]: Downloading https://files.pythonhosted.org/packages/48/fa/7951cf776b9e50ff1089bfadde7258031a0a38d79998521a48a3c9a40db5/gptcache-0.1.8.tar.gz
+[2023-05-07 08:47:58] INFO root fetch - processPackages [uss]: Downloading https://files.pythonhosted.org/packages/78/70/f8d16cce516c73ca92b75ef21109523ff9b12d2769a2868d29a593191537/uss-0.0.4.tar.gz
+[2023-05-07 08:47:58] INFO root fetch - processPackages [odoo14-addon-project-category]: Downloading https://files.pythonhosted.org/packages/7a/23/f5f71548e71536933c69a653f084d5f721a2222a1fee29c72f1444c492c6/odoo14_addon_project_category-14.0.1.0.1.dev8-py3-none-any.whl
+[2023-05-07 08:47:58] INFO root fetch - processPackages [uss]: executing diffoscope
+[2023-05-07 08:47:58] INFO root fetch - processPackages [uss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uss-0.0.3.tar.gz tmp/uss-0.0.4.tar.gz --markdown 20230507/u/uss/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-07 08:47:58] INFO root fetch - processPackages [odoo14-addon-project-tag]: Downloading https://files.pythonhosted.org/packages/82/66/86d77aa278289952853a63d181c9e7735afe7a1482c787e0df202abc4dcf/odoo14_addon_project_tag-14.0.1.1.1.dev2-py3-none-any.whl
+[2023-05-07 08:47:58] INFO root fetch - processPackages [gptcache]: Downloading https://files.pythonhosted.org/packages/0e/bb/72700c82969c8279118015284301ef2a13caa1a56f2533ba0476c955077f/gptcache-0.1.9.tar.gz
+[2023-05-07 08:47:58] INFO root fetch - processPackages [odoo14-addon-project-category]: Downloading https://files.pythonhosted.org/packages/9d/04/238352c02e7e00a6355cf95f6ce8c73f532e4331db7089ba54cda5ceac7e/odoo14_addon_project_category-14.0.1.0.1.dev9-py3-none-any.whl
+[2023-05-07 08:47:58] INFO root fetch - processPackages [odoo14-addon-project-tag]: executing diffoscope
+[2023-05-07 08:47:58] INFO root fetch - processPackages [odoo14-addon-project-tag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_project_tag-14.0.1.1.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_project_tag-14.0.1.1.1.dev2-py3-none-any.whl.zip --markdown 20230507/o/odoo14-addon-project-tag/14.0.1.1.1.dev1-14.0.1.1.1.dev2/diff.md --exclude *.pyd
+[2023-05-07 08:47:58] INFO root fetch - processPackages [gptcache]: executing diffoscope
+[2023-05-07 08:47:58] INFO root fetch - processPackages [gptcache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptcache-0.1.8.tar.gz tmp/gptcache-0.1.9.tar.gz --markdown 20230507/g/gptcache/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 08:47:58] INFO root fetch - processPackages [odoo14-addon-project-category]: executing diffoscope
+[2023-05-07 08:47:58] INFO root fetch - processPackages [odoo14-addon-project-category]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_project_category-14.0.1.0.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_project_category-14.0.1.0.1.dev9-py3-none-any.whl.zip --markdown 20230507/o/odoo14-addon-project-category/14.0.1.0.1.dev8-14.0.1.0.1.dev9/diff.md --exclude *.pyd
+[2023-05-07 08:47:59] INFO root fetch - main [MainThread]: End processing [odoo14-addon-project-tag]: success
+[2023-05-07 08:48:00] INFO root fetch - main [MainThread]: End processing [odoo14-addon-project-category]: success
+[2023-05-07 08:48:00] INFO root fetch - main [MainThread]: End processing [gptcache]: success
+[2023-05-07 08:48:00] INFO root fetch - main [MainThread]: End processing [uss]: success
+[2023-05-07 08:48:00] INFO root fetch - main [MainThread]: Store serial: [18004656]
