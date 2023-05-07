@@ -3953,3 +3953,32 @@
 [2023-05-07 09:46:23] INFO root fetch - main [MainThread]: End processing [async-rotating-proxy]: success
 [2023-05-07 09:46:23] INFO root fetch - main [MainThread]: End processing [compel]: success
 [2023-05-07 09:46:23] INFO root fetch - main [MainThread]: Store serial: [18004945]
+[2023-05-07 09:51:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004945]
+[2023-05-07 09:51:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 09:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: time-magic
+[2023-05-07 09:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfmc
+[2023-05-07 09:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quantplay
+[2023-05-07 09:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly-cpu
+[2023-05-07 09:51:32] INFO root fetch - processPackages [time-magic]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 09:51:32] INFO root fetch - processPackages [quantplay]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-07 09:51:32] INFO root fetch - processPackages [pyfmc]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-07 09:51:32] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.14.0.dev20230507] Old Version: [2.14.0.dev20230506]
+[2023-05-07 09:51:32] INFO root fetch - processPackages [time-magic]: Downloading https://files.pythonhosted.org/packages/38/00/f2f365c6a06646f4f19261c130d979f4852254afad0d475d6e89109fba55/time_magic-0.1.0.tar.gz
+[2023-05-07 09:51:32] INFO root fetch - processPackages [quantplay]: Downloading https://files.pythonhosted.org/packages/e8/7d/5b0cfb08ebd7d57b63f5af26f6c42c21db94de1f1aa850f6df9dee6c19b7/quantplay-1.2.8.tar.gz
+[2023-05-07 09:51:32] INFO root fetch - processPackages [pyfmc]: Downloading https://files.pythonhosted.org/packages/56/e7/8dfc294643264d646edc01ba68d91ee3294f4e1f04064edda9265a34d1c1/pyfmc-0.0.4.tar.gz
+[2023-05-07 09:51:33] INFO root fetch - processPackages [pyfmc]: executing diffoscope
+[2023-05-07 09:51:33] INFO root fetch - processPackages [pyfmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfmc-0.0.3.tar.gz tmp/pyfmc-0.0.4.tar.gz --markdown 20230507/p/pyfmc/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-07 09:51:33] INFO root fetch - processPackages [time-magic]: Downloading https://files.pythonhosted.org/packages/ea/27/5147154db758e979ac6409d1364acd1c3dc07a1a9755d32591fd56e17788/time_magic-0.1.1.tar.gz
+[2023-05-07 09:51:33] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/28/2c/f29cfc35e53f9eeb449e43305912df1d89f4f81ea1dcad8ec24ba2600f7e/tf_nightly_cpu-2.14.0.dev20230507-cp39-cp39-win_amd64.whl
+[2023-05-07 09:51:33] INFO root fetch - processPackages [time-magic]: executing diffoscope
+[2023-05-07 09:51:33] INFO root fetch - processPackages [time-magic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/time_magic-0.1.0.tar.gz tmp/time_magic-0.1.1.tar.gz --markdown 20230507/t/time-magic/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 09:51:33] INFO root fetch - processPackages [quantplay]: Downloading https://files.pythonhosted.org/packages/19/3b/b3bcbacf0846c30a0cfe5927468504ce92224d97a66e3c1419b6576aad58/quantplay-1.2.9.tar.gz
+[2023-05-07 09:51:33] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-05-07 09:51:33] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.14.0.dev20230506-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.14.0.dev20230507-cp39-cp39-win_amd64.whl.zip --markdown 20230507/t/tf-nightly-cpu/2.14.0.dev20230506-2.14.0.dev20230507/diff.md --exclude *.pyd
+[2023-05-07 09:51:33] INFO root fetch - processPackages [quantplay]: executing diffoscope
+[2023-05-07 09:51:33] INFO root fetch - processPackages [quantplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantplay-1.2.8.tar.gz tmp/quantplay-1.2.9.tar.gz --markdown 20230507/q/quantplay/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-07 09:51:34] INFO root fetch - main [MainThread]: End processing [pyfmc]: success
+[2023-05-07 09:51:34] INFO root fetch - main [MainThread]: End processing [time-magic]: success
+[2023-05-07 09:51:34] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2023-05-07 09:51:34] INFO root fetch - main [MainThread]: End processing [quantplay]: success
+[2023-05-07 09:51:34] INFO root fetch - main [MainThread]: Store serial: [18004959]
