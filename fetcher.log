@@ -11630,3 +11630,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 23:09:21] INFO root fetch - main [MainThread]: End processing [docassemble.demo]: success
 [2023-05-07 23:09:23] INFO root fetch - main [MainThread]: End processing [docassemble.webapp]: success
 [2023-05-07 23:09:23] INFO root fetch - main [MainThread]: Store serial: [18009770]
+[2023-05-07 23:14:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009770]
+[2023-05-07 23:14:32] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 23:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyocd
+[2023-05-07 23:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: struct-gpt
+[2023-05-07 23:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pystarshade
+[2023-05-07 23:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vampire-analysis
+[2023-05-07 23:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: power-analysis
+[2023-05-07 23:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: grrif-tools
+[2023-05-07 23:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pandera
+[2023-05-07 23:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: llmbda-fastapi
+[2023-05-07 23:14:32] INFO root fetch - processPackages [grrif-tools]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-07 23:14:32] INFO root fetch - processPackages [power-analysis]: New version: [0.1.3] Old Version: [0.1.1]
+[2023-05-07 23:14:32] INFO root fetch - processPackages [pyocd]: New version: [0.9.0] Old Version: [0.8.1a1]
+[2023-05-07 23:14:32] INFO root fetch - processPackages [vampire-analysis]: New version: [0.2.0.dev1] Old Version: [0.1.0.dev9]
+[2023-05-07 23:14:32] INFO root fetch - processPackages [llmbda-fastapi]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 23:14:32] INFO root fetch - processPackages [struct-gpt]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-07 23:14:32] INFO root fetch - processPackages [pystarshade]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 23:14:32] INFO root fetch - processPackages [pandera]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-07 23:14:32] INFO root fetch - processPackages [llmbda-fastapi]: executing diffoscope
+[2023-05-07 23:14:32] INFO root fetch - processPackages [llmbda-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmbda_fastapi-0.0.7.tar.gz tmp/llmbda_fastapi-0.0.8.tar.gz --markdown 20230507/l/llmbda-fastapi/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 23:14:32] INFO root fetch - processPackages [pyocd]: Downloading https://files.pythonhosted.org/packages/c5/2c/274a31b605f40f66aff97362bef211730ae5410f5e4539031c5ef2e19b6d/pyOCD-0.8.1a1.tar.gz
+[2023-05-07 23:14:32] INFO root fetch - processPackages [grrif-tools]: Downloading https://files.pythonhosted.org/packages/64/a3/2922112854fff05b8d7798b7896f1a2fc88cd64999babdb1f7bc22d61c58/grrif_tools-0.6.1.tar.gz
+[2023-05-07 23:14:32] INFO root fetch - processPackages [struct-gpt]: Downloading https://files.pythonhosted.org/packages/ec/df/f073d8041c8c898c42589ca16c9a1e79882f6127526d765876cc5f438b79/struct_gpt-2.0.1.tar.gz
+[2023-05-07 23:14:32] INFO root fetch - processPackages [power-analysis]: Downloading https://files.pythonhosted.org/packages/9c/24/d3071b00e61aeec2bb9b9deb74bcf573e4e8b56c5e5fde1c8cd3e4056f26/power_analysis-0.1.1.tar.gz
+[2023-05-07 23:14:32] INFO root fetch - processPackages [pystarshade]: Downloading https://files.pythonhosted.org/packages/75/75/29be88b205e973887481c82e9bb6976c963aac14278fb9d126bbbfbfdfb1/pystarshade-0.1.4.tar.gz
+[2023-05-07 23:14:32] INFO root fetch - processPackages [vampire-analysis]: Downloading https://files.pythonhosted.org/packages/a0/fb/5ed98e7a7e6f13d0f71e8837b0eb14425c92396f6c282908ebfe9153662f/vampire_analysis-0.1.0.dev9-py3-none-any.whl
+[2023-05-07 23:14:32] INFO root fetch - processPackages [pandera]: Downloading https://files.pythonhosted.org/packages/b0/0e/d435a4c20c8ca9269ca2ccf44f3bb98ee85b9fc9fbfda8f1952cfc2b9c43/pandera-0.8.1.tar.gz
+[2023-05-07 23:14:32] INFO root fetch - processPackages [grrif-tools]: executing diffoscope
+[2023-05-07 23:14:32] INFO root fetch - processPackages [grrif-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grrif_tools-0.6.0.tar.gz tmp/grrif_tools-0.6.1.tar.gz --markdown 20230507/g/grrif-tools/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-07 23:14:32] INFO root fetch - processPackages [pystarshade]: executing diffoscope
+[2023-05-07 23:14:32] INFO root fetch - processPackages [pystarshade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystarshade-0.1.3.tar.gz tmp/pystarshade-0.1.4.tar.gz --markdown 20230507/p/pystarshade/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 23:14:32] INFO root fetch - processPackages [struct-gpt]: executing diffoscope
+[2023-05-07 23:14:32] INFO root fetch - processPackages [struct-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/struct_gpt-2.0.0.tar.gz tmp/struct_gpt-2.0.1.tar.gz --markdown 20230507/s/struct-gpt/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-07 23:14:32] INFO root fetch - processPackages [power-analysis]: Downloading https://files.pythonhosted.org/packages/da/15/d7949d6cf3488de367be38461b5d56585e40f3e055a53b1c9051b887fe10/power_analysis-0.1.3.tar.gz
+[2023-05-07 23:14:32] INFO root fetch - processPackages [pyocd]: Downloading https://files.pythonhosted.org/packages/84/58/473d80f8a4282e4a09b688ba54e592f05bd51ad46348234569ab8c038e1a/pyOCD-0.9.0.tar.gz
+[2023-05-07 23:14:32] INFO root fetch - processPackages [vampire-analysis]: Downloading https://files.pythonhosted.org/packages/21/e8/ec4780d48e54b0e17673e31a0a771bf327dd3fe00a1bc6dcf92645f2b797/vampire_analysis-0.2.0.dev1-py3-none-any.whl
+[2023-05-07 23:14:32] INFO root fetch - processPackages [power-analysis]: executing diffoscope
+[2023-05-07 23:14:32] INFO root fetch - processPackages [power-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/power_analysis-0.1.1.tar.gz tmp/power_analysis-0.1.3.tar.gz --markdown 20230507/p/power-analysis/0.1.1-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 23:14:33] INFO root fetch - processPackages [vampire-analysis]: executing diffoscope
+[2023-05-07 23:14:33] INFO root fetch - processPackages [vampire-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vampire_analysis-0.1.0.dev9-py3-none-any.whl.zip tmp/vampire_analysis-0.2.0.dev1-py3-none-any.whl.zip --markdown 20230507/v/vampire-analysis/0.1.0.dev9-0.2.0.dev1/diff.md --exclude *.pyd
+[2023-05-07 23:14:33] INFO root fetch - processPackages [pandera]: Downloading https://files.pythonhosted.org/packages/0b/8f/199b2d6886d40d20c9382c189d0b40c6118c2df6f0df21e9e78ab886aaea/pandera-0.9.0.tar.gz
+[2023-05-07 23:14:33] INFO root fetch - processPackages [pyocd]: executing diffoscope
+[2023-05-07 23:14:33] INFO root fetch - processPackages [pyocd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyOCD-0.8.1a1.tar.gz tmp/pyOCD-0.9.0.tar.gz --markdown 20230507/p/pyocd/0.8.1a1-0.9.0/diff.md --exclude *.pyd
+[2023-05-07 23:14:33] INFO root fetch - processPackages [pandera]: executing diffoscope
+[2023-05-07 23:14:33] INFO root fetch - processPackages [pandera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandera-0.8.1.tar.gz tmp/pandera-0.9.0.tar.gz --markdown 20230507/p/pandera/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-07 23:14:33] INFO root fetch - main [MainThread]: End processing [grrif-tools]: success
+[2023-05-07 23:14:33] INFO root fetch - main [MainThread]: End processing [pystarshade]: success
+[2023-05-07 23:14:34] INFO root fetch - main [MainThread]: End processing [struct-gpt]: success
+[2023-05-07 23:14:34] INFO root fetch - main [MainThread]: End processing [llmbda-fastapi]: success
+[2023-05-07 23:14:34] INFO root fetch - main [MainThread]: End processing [power-analysis]: success
+[2023-05-07 23:14:34] INFO root fetch - main [MainThread]: End processing [vampire-analysis]: success
+[2023-05-07 23:14:36] INFO root fetch - main [MainThread]: End processing [pyocd]: success
+[2023-05-07 23:14:36] INFO root fetch - main [MainThread]: End processing [pandera]: success
+[2023-05-07 23:14:36] INFO root fetch - main [MainThread]: Store serial: [18009790]
