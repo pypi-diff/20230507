@@ -9987,3 +9987,86 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 20:10:23] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230507/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
 [2023-05-07 20:10:26] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
 [2023-05-07 20:10:26] INFO root fetch - main [MainThread]: Store serial: [18008753]
+[2023-05-07 20:15:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008753]
+[2023-05-07 20:15:35] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-07 20:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytrafikverket
+[2023-05-07 20:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyemaps
+[2023-05-07 20:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flxtrd
+[2023-05-07 20:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: conding
+[2023-05-07 20:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: orjson
+[2023-05-07 20:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pythoncolourliberyV2
+[2023-05-07 20:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: code-loader
+[2023-05-07 20:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: netteikei
+[2023-05-07 20:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pitv
+[2023-05-07 20:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sidetrek
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pyemaps]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-07 20:15:35] INFO root fetch - processPackages [conding]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 20:15:35] WARNING root fetch - processPackages [netteikei]: Skipping, unable to determine old version
+[2023-05-07 20:15:35] INFO root fetch - processPackages [netteikei]: Start processing: atom-ml
+[2023-05-07 20:15:35] INFO root fetch - main [MainThread]: End processing [netteikei] error
+[2023-05-07 20:15:35] INFO root fetch - processPackages [flxtrd]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pytrafikverket]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pitv]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 20:15:35] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-07 20:15:35] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 20:15:35] INFO root fetch - processPackages [orjson]: New version: [3.8.9] Old Version: [3.8.8]
+[2023-05-07 20:15:35] INFO root fetch - processPackages [atom-ml]: New version: [5.1.2] Old Version: [5.1.1]
+[2023-05-07 20:15:35] WARNING root fetch - processPackages [pythoncolourliberyV2]: Skipping, unable to determine old version
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pythoncolourliberyV2]: Start processing: valo-api
+[2023-05-07 20:15:35] INFO root fetch - main [MainThread]: End processing [pythoncolourliberyV2] error
+[2023-05-07 20:15:35] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-05-07 20:15:35] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230507/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-07 20:15:35] INFO root fetch - processPackages [valo-api]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-07 20:15:35] INFO root fetch - processPackages [conding]: Downloading https://files.pythonhosted.org/packages/5b/6d/426fe80ed0a426e7253256c6e4a369729a36cc1ef6bda9a815c7dd1f9865/conding-0.1.0.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pyemaps]: Downloading https://files.pythonhosted.org/packages/1a/03/52f8d1c679a209a747086cd3aba8fae2b313f3e147b1ec085d1f6adce720/pyemaps-1.0.3.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pytrafikverket]: Downloading https://files.pythonhosted.org/packages/aa/82/7ea9162968a948769d8fb409e3a622a12b0a75395df44bd720994962d1c6/pytrafikverket-0.3.1.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [flxtrd]: Downloading https://files.pythonhosted.org/packages/f4/87/c9b2605dd3908ef973c79fc1dcc38adca8e6b4b6c226991c6b23611629f2/flxtrd-0.0.3.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pitv]: Downloading https://files.pythonhosted.org/packages/c4/cb/dd035e4901f0aa2082b6835795ddd817721f3ee1e3bd3f10f0c80428e162/pitv-0.0.7.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [atom-ml]: Downloading https://files.pythonhosted.org/packages/9d/dd/ff41accaf99a0ff489a31ddc1afb632fa5288217c3ab36c6da656ff4ad89/atom-ml-5.1.1.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [orjson]: Downloading https://files.pythonhosted.org/packages/65/79/961d7e607d1fd52cf01c1333994fa5ba628b8da8910d436737f1537cf71a/orjson-3.8.8.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-07 20:15:35] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230507/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 20:15:35] INFO root fetch - processPackages [valo-api]: Downloading https://files.pythonhosted.org/packages/2a/bb/af69ff683ad699e9507464fe96d84d6a7cb402bd7eca13b6cd13f08b6c44/valo_api-2.0.2.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pitv]: executing diffoscope
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pitv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pitv-0.0.6.tar.gz tmp/pitv-0.0.7.tar.gz --markdown 20230507/p/pitv/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 20:15:35] INFO root fetch - processPackages [flxtrd]: executing diffoscope
+[2023-05-07 20:15:35] INFO root fetch - processPackages [flxtrd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flxtrd-0.0.2.tar.gz tmp/flxtrd-0.0.3.tar.gz --markdown 20230507/f/flxtrd/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pytrafikverket]: Downloading https://files.pythonhosted.org/packages/28/7d/6f767611f23cb975c83da5c73a0771ef2857b89f37a555eccf4b4f881fac/pytrafikverket-0.3.2.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [valo-api]: executing diffoscope
+[2023-05-07 20:15:35] INFO root fetch - processPackages [valo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valo_api-2.0.1.tar.gz tmp/valo_api-2.0.2.tar.gz --markdown 20230507/v/valo-api/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-07 20:15:35] INFO root fetch - processPackages [conding]: Downloading https://files.pythonhosted.org/packages/8e/31/1fa77960c56945fc16d3595817591c6c7de9d1e955e9fcab2f6a29aa1c19/conding-0.1.1.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pytrafikverket]: executing diffoscope
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pytrafikverket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytrafikverket-0.3.1.tar.gz tmp/pytrafikverket-0.3.2.tar.gz --markdown 20230507/p/pytrafikverket/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pyemaps]: Downloading https://files.pythonhosted.org/packages/20/0a/33cdb66742e1f6e985e7a685b3e129aa7642fa49caba88e7f6eff125f50a/pyemaps-1.0.4.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [conding]: executing diffoscope
+[2023-05-07 20:15:35] INFO root fetch - processPackages [conding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conding-0.1.0.tar.gz tmp/conding-0.1.1.tar.gz --markdown 20230507/c/conding/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 20:15:35] INFO root fetch - processPackages [orjson]: Downloading https://files.pythonhosted.org/packages/dd/23/36e24fccddf107d26b548a771f49747dd98a33515e2ccfa2ecabb79e0ea3/orjson-3.8.9.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pyemaps]: executing diffoscope
+[2023-05-07 20:15:35] INFO root fetch - processPackages [pyemaps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyemaps-1.0.3.tar.gz tmp/pyemaps-1.0.4.tar.gz --markdown 20230507/p/pyemaps/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-07 20:15:35] INFO root fetch - processPackages [atom-ml]: Downloading https://files.pythonhosted.org/packages/37/c3/8ed8dc781d4506e6949109ecda5c7b9e10a7a0afddbf43e089120a1fb5eb/atom-ml-5.1.2.tar.gz
+[2023-05-07 20:15:35] INFO root fetch - processPackages [orjson]: executing diffoscope
+[2023-05-07 20:15:35] INFO root fetch - processPackages [orjson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orjson-3.8.8.tar.gz tmp/orjson-3.8.9.tar.gz --markdown 20230507/o/orjson/3.8.8-3.8.9/diff.md --exclude *.pyd
+[2023-05-07 20:15:35] INFO root fetch - processPackages [atom-ml]: executing diffoscope
+[2023-05-07 20:15:35] INFO root fetch - processPackages [atom-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atom-ml-5.1.1.tar.gz tmp/atom-ml-5.1.2.tar.gz --markdown 20230507/a/atom-ml/5.1.1-5.1.2/diff.md --exclude *.pyd
+[2023-05-07 20:15:36] INFO root fetch - processPackages [code-loader]: Start processing: tsp-wrapper
+[2023-05-07 20:15:36] INFO root fetch - main [MainThread]: End processing [code-loader]: success
+[2023-05-07 20:15:36] INFO root fetch - processPackages [tsp-wrapper]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-07 20:15:36] INFO root fetch - processPackages [pitv]: Start processing: ZaidPP
+[2023-05-07 20:15:36] INFO root fetch - main [MainThread]: End processing [pitv]: success
+[2023-05-07 20:15:37] INFO root fetch - processPackages [tsp-wrapper]: executing diffoscope
+[2023-05-07 20:15:37] INFO root fetch - processPackages [tsp-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsp_wrapper-1.0.3.tar.gz tmp/tsp_wrapper-1.0.4.tar.gz --markdown 20230507/t/tsp-wrapper/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-07 20:15:37] INFO root fetch - main [MainThread]: End processing [flxtrd]: success
+[2023-05-07 20:15:37] INFO root fetch - processPackages [ZaidPP]: New version: [0.4.1] Old Version: [0.3.1]
+[2023-05-07 20:15:37] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-07 20:15:37] INFO root fetch - main [MainThread]: End processing [pytrafikverket]: success
+[2023-05-07 20:15:37] INFO root fetch - main [MainThread]: End processing [valo-api]: success
+[2023-05-07 20:15:37] INFO root fetch - processPackages [ZaidPP]: Downloading https://files.pythonhosted.org/packages/d5/a5/908f7256fb1ae2ae73adc1bf6226df2c3ddff904f9058acd4222a6ce6356/ZaidPP-0.4.1.tar.gz
+[2023-05-07 20:15:37] INFO root fetch - main [MainThread]: End processing [conding]: success
+[2023-05-07 20:15:37] INFO root fetch - processPackages [ZaidPP]: executing diffoscope
+[2023-05-07 20:15:37] INFO root fetch - processPackages [ZaidPP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ZaidPP-0.3.1.tar.gz tmp/ZaidPP-0.4.1.tar.gz --markdown 20230507/Z/ZaidPP/0.3.1-0.4.1/diff.md --exclude *.pyd
+[2023-05-07 20:15:38] INFO root fetch - main [MainThread]: End processing [tsp-wrapper]: success
+[2023-05-07 20:15:38] INFO root fetch - main [MainThread]: End processing [ZaidPP]: success
+[2023-05-07 20:15:40] INFO root fetch - main [MainThread]: End processing [atom-ml]: success
+[2023-05-07 20:15:40] INFO root fetch - main [MainThread]: End processing [pyemaps]: success
+[2023-05-07 20:15:41] INFO root fetch - main [MainThread]: End processing [orjson]: success
+[2023-05-07 20:15:41] INFO root fetch - main [MainThread]: Store serial: [18008804]
