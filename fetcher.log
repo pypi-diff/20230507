@@ -2618,3 +2618,20 @@
 [2023-05-07 06:14:40] INFO root fetch - processPackages [pyttyd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyttyd-1.0.6.tar.gz tmp/pyttyd-1.0.8.tar.gz --markdown 20230507/p/pyttyd/1.0.6-1.0.8/diff.md --exclude *.pyd
 [2023-05-07 06:14:42] INFO root fetch - main [MainThread]: End processing [pyttyd]: success
 [2023-05-07 06:14:42] INFO root fetch - main [MainThread]: Store serial: [18004055]
+[2023-05-07 06:19:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004055]
+[2023-05-07 06:19:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-07 06:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DeepSearchLite
+[2023-05-07 06:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ReplayTables-andnp
+[2023-05-07 06:19:50] INFO root fetch - processPackages [DeepSearchLite]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 06:19:50] INFO root fetch - processPackages [ReplayTables-andnp]: New version: [2.6.0] Old Version: [2.5.1]
+[2023-05-07 06:19:51] INFO root fetch - processPackages [DeepSearchLite]: Downloading https://files.pythonhosted.org/packages/86/01/d82ce9d471851db62de8746887446f2b6ba6a3b86e1eb051387337cfec98/DeepSearchLite-0.1.0.tar.gz
+[2023-05-07 06:19:51] INFO root fetch - processPackages [ReplayTables-andnp]: Downloading https://files.pythonhosted.org/packages/0c/04/bae139651126db6e654d9088016d23c14b36073ddcbccbc024759f2f1c49/ReplayTables-andnp-2.5.1.tar.gz
+[2023-05-07 06:19:51] INFO root fetch - processPackages [DeepSearchLite]: Downloading https://files.pythonhosted.org/packages/69/71/ccafcad1cd5d0f70f7eec84e836cc7cd334d3518533b0c83c7653e9881b0/DeepSearchLite-0.1.1.tar.gz
+[2023-05-07 06:19:51] INFO root fetch - processPackages [ReplayTables-andnp]: Downloading https://files.pythonhosted.org/packages/5d/0a/64e86568aba4fe7fffd0b1a4263c50baf5f3f6b3a3a9f0f28237c0543bcd/ReplayTables-andnp-2.6.0.tar.gz
+[2023-05-07 06:19:51] INFO root fetch - processPackages [DeepSearchLite]: executing diffoscope
+[2023-05-07 06:19:51] INFO root fetch - processPackages [DeepSearchLite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DeepSearchLite-0.1.0.tar.gz tmp/DeepSearchLite-0.1.1.tar.gz --markdown 20230507/D/DeepSearchLite/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 06:19:51] INFO root fetch - processPackages [ReplayTables-andnp]: executing diffoscope
+[2023-05-07 06:19:51] INFO root fetch - processPackages [ReplayTables-andnp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReplayTables-andnp-2.5.1.tar.gz tmp/ReplayTables-andnp-2.6.0.tar.gz --markdown 20230507/R/ReplayTables-andnp/2.5.1-2.6.0/diff.md --exclude *.pyd
+[2023-05-07 06:19:52] INFO root fetch - main [MainThread]: End processing [DeepSearchLite]: success
+[2023-05-07 06:19:53] INFO root fetch - main [MainThread]: End processing [ReplayTables-andnp]: success
+[2023-05-07 06:19:53] INFO root fetch - main [MainThread]: Store serial: [18004061]
