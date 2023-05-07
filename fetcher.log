@@ -3271,3 +3271,37 @@
 [2023-05-07 08:11:34] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-0.1.7.tar.gz tmp/silobuster-0.1.8.tar.gz --markdown 20230507/s/silobuster/0.1.7-0.1.8/diff.md --exclude *.pyd
 [2023-05-07 08:11:35] INFO root fetch - main [MainThread]: End processing [silobuster]: success
 [2023-05-07 08:11:35] INFO root fetch - main [MainThread]: Store serial: [18004413]
+[2023-05-07 08:16:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004413]
+[2023-05-07 08:16:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 08:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: silobuster
+[2023-05-07 08:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reditio
+[2023-05-07 08:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bambooai
+[2023-05-07 08:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: so-vits-svc-fork
+[2023-05-07 08:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opstool
+[2023-05-07 08:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xj-location
+[2023-05-07 08:16:44] WARNING root fetch - processPackages [reditio]: Skipping, unable to determine old version
+[2023-05-07 08:16:44] INFO root fetch - main [MainThread]: End processing [reditio] error
+[2023-05-07 08:16:44] INFO root fetch - processPackages [silobuster]: New version: [1.0.0] Old Version: [0.1.8]
+[2023-05-07 08:16:44] WARNING root fetch - processPackages [bambooai]: Skipping, unable to determine old version
+[2023-05-07 08:16:44] INFO root fetch - main [MainThread]: End processing [bambooai] error
+[2023-05-07 08:16:44] INFO root fetch - processPackages [opstool]: New version: [0.8.0] Old Version: [0.7.3]
+[2023-05-07 08:16:44] INFO root fetch - processPackages [xj-location]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-07 08:16:44] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.9.5] Old Version: [3.9.4]
+[2023-05-07 08:16:44] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-05-07 08:16:44] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.9.4.tar.gz tmp/so_vits_svc_fork-3.9.5.tar.gz --markdown 20230507/s/so-vits-svc-fork/3.9.4-3.9.5/diff.md --exclude *.pyd
+[2023-05-07 08:16:44] INFO root fetch - processPackages [opstool]: Downloading https://files.pythonhosted.org/packages/bb/77/668daa801f4269068ff3b7c5e6354806c98c619164968b0bef3976304ec2/opstool-0.7.3.tar.gz
+[2023-05-07 08:16:44] INFO root fetch - processPackages [xj-location]: Downloading https://files.pythonhosted.org/packages/54/45/ee95e0adb082bc148a594901ba8687a3c70798524c8fefb4b95d6d7792f5/xj_location-1.1.7.tar.gz
+[2023-05-07 08:16:44] INFO root fetch - processPackages [silobuster]: Downloading https://files.pythonhosted.org/packages/ad/3a/c82e0534b48180797f6051739686d5b4f8c6a94c6230ba953f8fb08e273c/silobuster-1.0.0.tar.gz
+[2023-05-07 08:16:44] INFO root fetch - processPackages [silobuster]: executing diffoscope
+[2023-05-07 08:16:44] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-0.1.8.tar.gz tmp/silobuster-1.0.0.tar.gz --markdown 20230507/s/silobuster/0.1.8-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 08:16:44] INFO root fetch - processPackages [opstool]: Downloading https://files.pythonhosted.org/packages/f2/e7/3f4e607550cd33defffc210ef85fba642dcdd6a5893e741700e3446cffb7/opstool-0.8.0.tar.gz
+[2023-05-07 08:16:44] INFO root fetch - processPackages [xj-location]: Downloading https://files.pythonhosted.org/packages/95/0a/5de4f8a3dd51d50c53430993ebbb0f29eb016bb1d38cd09203dc454bb736/xj_location-1.1.8.tar.gz
+[2023-05-07 08:16:45] INFO root fetch - processPackages [opstool]: executing diffoscope
+[2023-05-07 08:16:45] INFO root fetch - processPackages [opstool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opstool-0.7.3.tar.gz tmp/opstool-0.8.0.tar.gz --markdown 20230507/o/opstool/0.7.3-0.8.0/diff.md --exclude *.pyd
+[2023-05-07 08:16:45] INFO root fetch - processPackages [xj-location]: executing diffoscope
+[2023-05-07 08:16:45] INFO root fetch - processPackages [xj-location]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_location-1.1.7.tar.gz tmp/xj_location-1.1.8.tar.gz --markdown 20230507/x/xj-location/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-07 08:16:45] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-05-07 08:16:46] INFO root fetch - main [MainThread]: End processing [silobuster]: success
+[2023-05-07 08:16:46] INFO root fetch - main [MainThread]: End processing [xj-location]: success
+[2023-05-07 08:16:46] INFO root fetch - main [MainThread]: End processing [opstool]: success
+[2023-05-07 08:16:46] INFO root fetch - main [MainThread]: Store serial: [18004434]
