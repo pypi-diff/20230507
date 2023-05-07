@@ -10124,3 +10124,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 20:26:02] INFO root fetch - processPackages [soccer-poisson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soccer_poisson-0.1.8.tar.gz tmp/soccer_poisson-0.1.9.tar.gz --markdown 20230507/s/soccer-poisson/0.1.8-0.1.9/diff.md --exclude *.pyd
 [2023-05-07 20:26:03] INFO root fetch - main [MainThread]: End processing [soccer-poisson]: success
 [2023-05-07 20:26:03] INFO root fetch - main [MainThread]: Store serial: [18008842]
+[2023-05-07 20:31:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008842]
+[2023-05-07 20:31:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 20:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uoy-assessment-uploader
+[2023-05-07 20:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytrafikverket
+[2023-05-07 20:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BlockFrame
+[2023-05-07 20:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gcvit
+[2023-05-07 20:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: captcha6
+[2023-05-07 20:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: circuitpython-bmp581
+[2023-05-07 20:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: moneycarlo
+[2023-05-07 20:31:11] INFO root fetch - processPackages [uoy-assessment-uploader]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-07 20:31:11] INFO root fetch - processPackages [moneycarlo]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 20:31:11] INFO root fetch - processPackages [pytrafikverket]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-07 20:31:11] INFO root fetch - processPackages [gcvit]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-07 20:31:12] INFO root fetch - processPackages [pytrafikverket]: executing diffoscope
+[2023-05-07 20:31:12] INFO root fetch - processPackages [pytrafikverket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytrafikverket-0.3.1.tar.gz tmp/pytrafikverket-0.3.2.tar.gz --markdown 20230507/p/pytrafikverket/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-07 20:31:12] INFO root fetch - processPackages [moneycarlo]: executing diffoscope
+[2023-05-07 20:31:12] INFO root fetch - processPackages [moneycarlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moneycarlo-0.1.0.tar.gz tmp/moneycarlo-0.1.1.tar.gz --markdown 20230507/m/moneycarlo/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 20:31:12] INFO root fetch - processPackages [circuitpython-bmp581]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 20:31:12] WARNING root fetch - processPackages [captcha6]: Skipping, unable to determine old version
+[2023-05-07 20:31:12] INFO root fetch - main [MainThread]: End processing [captcha6] error
+[2023-05-07 20:31:12] INFO root fetch - processPackages [BlockFrame]: New version: [1.0.0] Old Version: [0.1.4]
+[2023-05-07 20:31:12] INFO root fetch - processPackages [gcvit]: executing diffoscope
+[2023-05-07 20:31:12] INFO root fetch - processPackages [gcvit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcvit-1.1.1.tar.gz tmp/gcvit-1.1.2.tar.gz --markdown 20230507/g/gcvit/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-07 20:31:12] INFO root fetch - processPackages [uoy-assessment-uploader]: Downloading https://files.pythonhosted.org/packages/47/97/46d38dc037c2d3ddd54ae3ce6da6af8598adc3cb15806ac9fdd4f0365c38/uoy-assessment-uploader-0.2.1.tar.gz
+[2023-05-07 20:31:12] INFO root fetch - processPackages [BlockFrame]: Downloading https://files.pythonhosted.org/packages/3e/d2/741bc2be5afdd338909b95da93cf9f4a8f5388e29a6589e7865a92db1612/BlockFrame-0.1.4.tar.gz
+[2023-05-07 20:31:12] INFO root fetch - processPackages [circuitpython-bmp581]: Downloading https://files.pythonhosted.org/packages/59/8d/4d9648b1a069dd294884aa2ca5ebcbf2771dcd4f87d62702baa0b5094bde/circuitpython-bmp581-0.1.0.tar.gz
+[2023-05-07 20:31:13] INFO root fetch - main [MainThread]: End processing [pytrafikverket]: success
+[2023-05-07 20:31:13] INFO root fetch - main [MainThread]: End processing [moneycarlo]: success
+[2023-05-07 20:31:13] INFO root fetch - main [MainThread]: End processing [gcvit]: success
+[2023-05-07 20:31:13] INFO root fetch - processPackages [uoy-assessment-uploader]: executing diffoscope
+[2023-05-07 20:31:13] INFO root fetch - processPackages [uoy-assessment-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uoy-assessment-uploader-0.2.0.tar.gz tmp/uoy-assessment-uploader-0.2.1.tar.gz --markdown 20230507/u/uoy-assessment-uploader/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-07 20:31:13] INFO root fetch - processPackages [BlockFrame]: Downloading https://files.pythonhosted.org/packages/a1/c7/f257cbb84f5e14f1244d853c8de8b23e57b206a7fac14e60f6467d6e906c/BlockFrame-1.0.0.tar.gz
+[2023-05-07 20:31:13] INFO root fetch - processPackages [circuitpython-bmp581]: Downloading https://files.pythonhosted.org/packages/fc/2e/922a5435e36ac0d5b988b5477c5b8ed4dde464e024a86d8d29abafd94228/circuitpython-bmp581-0.1.1.tar.gz
+[2023-05-07 20:31:13] INFO root fetch - processPackages [BlockFrame]: executing diffoscope
+[2023-05-07 20:31:13] INFO root fetch - processPackages [BlockFrame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BlockFrame-0.1.4.tar.gz tmp/BlockFrame-1.0.0.tar.gz --markdown 20230507/B/BlockFrame/0.1.4-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 20:31:13] INFO root fetch - processPackages [circuitpython-bmp581]: executing diffoscope
+[2023-05-07 20:31:13] INFO root fetch - processPackages [circuitpython-bmp581]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-bmp581-0.1.0.tar.gz tmp/circuitpython-bmp581-0.1.1.tar.gz --markdown 20230507/c/circuitpython-bmp581/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 20:31:14] INFO root fetch - main [MainThread]: End processing [uoy-assessment-uploader]: success
+[2023-05-07 20:31:14] INFO root fetch - main [MainThread]: End processing [BlockFrame]: success
+[2023-05-07 20:31:15] INFO root fetch - main [MainThread]: End processing [circuitpython-bmp581]: success
+[2023-05-07 20:31:15] INFO root fetch - main [MainThread]: Store serial: [18008865]
