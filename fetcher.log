@@ -1593,3 +1593,78 @@
 [2023-05-07 03:31:25] INFO root fetch - main [MainThread]: End processing [authanor]: success
 [2023-05-07 03:32:32] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2023-05-07 03:32:32] INFO root fetch - main [MainThread]: Store serial: [18003542]
+[2023-05-07 03:37:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003542]
+[2023-05-07 03:37:41] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-07 03:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-stdlib
+[2023-05-07 03:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-model-core
+[2023-05-07 03:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-numpy
+[2023-05-07 03:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-wordpress
+[2023-05-07 03:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: authanor
+[2023-05-07 03:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bh-utils
+[2023-05-07 03:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-pandas
+[2023-05-07 03:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tplink-ess-lib
+[2023-05-07 03:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: thonny-autosave
+[2023-05-07 03:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sweetrpg-library-objects
+[2023-05-07 03:37:41] INFO root fetch - processPackages [bh-utils]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 03:37:41] INFO root fetch - processPackages [sweetrpg-model-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 03:37:41] INFO root fetch - processPackages [tplink-ess-lib]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-05-07 03:37:41] INFO root fetch - processPackages [authanor]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-07 03:37:41] INFO root fetch - processPackages [thonny-autosave]: New version: [0.0.16] Old Version: [0.0.15]
+[2023-05-07 03:37:41] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 03:37:41] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 03:37:41] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2023-05-07 03:37:41] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 03:37:41] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 03:37:41] INFO root fetch - processPackages [thonny-autosave]: executing diffoscope
+[2023-05-07 03:37:41] INFO root fetch - processPackages [thonny-autosave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thonny_autosave-0.0.15-py3-none-any.whl.zip tmp/thonny_autosave-0.0.16-py3-none-any.whl.zip --markdown 20230507/t/thonny-autosave/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2023-05-07 03:37:41] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2023-05-07 03:37:41] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20230507/s/sweetrpg-library-objects/0.0.85-0.0.86/diff.md --exclude *.pyd
+[2023-05-07 03:37:41] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-07 03:37:41] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230507/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:37:41] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-07 03:37:41] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230507/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:37:41] INFO root fetch - processPackages [sweetrpg-model-core]: Downloading https://files.pythonhosted.org/packages/2b/a9/f6d12795fc3f52981f5476c74fd485c2b56fe1911b278640171d94d92bc1/sweetrpg-model-core-0.0.98.tar.gz
+[2023-05-07 03:37:41] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-07 03:37:41] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230507/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:37:41] INFO root fetch - processPackages [tplink-ess-lib]: Downloading https://files.pythonhosted.org/packages/5a/be/45741c4be43dfef5744bb10fa5a67497c669f10789a63091bab2796af984/tplink-ess-lib-0.4.4.tar.gz
+[2023-05-07 03:37:41] INFO root fetch - processPackages [bh-utils]: Downloading https://files.pythonhosted.org/packages/03/3f/615b020a145db831da26c84f199d616fcfaf1ed839cdd5999bb9d1cca557/bh-utils-0.0.2.tar.gz
+[2023-05-07 03:37:41] INFO root fetch - processPackages [authanor]: Downloading https://files.pythonhosted.org/packages/ba/3b/563113828fc7089e0f6e2d965cd56b8be3eab96983e3b80a3c618439a26d/authanor-1.0.1.tar.gz
+[2023-05-07 03:37:41] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2023-05-07 03:37:41] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20230507/c/cdk-wordpress/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:37:41] INFO root fetch - processPackages [bh-utils]: Downloading https://files.pythonhosted.org/packages/b1/41/becbccc1c1b7b27ff487b399eb955893fb503e482cbfaf498f8fc2402798/bh-utils-0.0.3.tar.gz
+[2023-05-07 03:37:41] INFO root fetch - processPackages [tplink-ess-lib]: Downloading https://files.pythonhosted.org/packages/43/7e/75260ceffb657af5905be4e730fc090dc420870f428766a237edb4fbc9b0/tplink-ess-lib-0.4.5.tar.gz
+[2023-05-07 03:37:41] INFO root fetch - processPackages [bh-utils]: executing diffoscope
+[2023-05-07 03:37:41] INFO root fetch - processPackages [bh-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bh-utils-0.0.2.tar.gz tmp/bh-utils-0.0.3.tar.gz --markdown 20230507/b/bh-utils/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 03:37:41] INFO root fetch - processPackages [authanor]: executing diffoscope
+[2023-05-07 03:37:41] INFO root fetch - processPackages [sweetrpg-model-core]: Downloading https://files.pythonhosted.org/packages/45/2f/72ea3ec101547d659b6522d0efd329d98807f3f70bd531b7c55e48836946/sweetrpg-model-core-0.0.99.tar.gz
+[2023-05-07 03:37:41] INFO root fetch - processPackages [authanor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authanor-1.0.0.tar.gz tmp/authanor-1.0.1.tar.gz --markdown 20230507/a/authanor/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-07 03:37:42] INFO root fetch - processPackages [tplink-ess-lib]: executing diffoscope
+[2023-05-07 03:37:42] INFO root fetch - processPackages [tplink-ess-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tplink-ess-lib-0.4.4.tar.gz tmp/tplink-ess-lib-0.4.5.tar.gz --markdown 20230507/t/tplink-ess-lib/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-05-07 03:37:42] INFO root fetch - processPackages [sweetrpg-model-core]: executing diffoscope
+[2023-05-07 03:37:42] INFO root fetch - processPackages [sweetrpg-model-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-model-core-0.0.98.tar.gz tmp/sweetrpg-model-core-0.0.99.tar.gz --markdown 20230507/s/sweetrpg-model-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:37:43] INFO root fetch - processPackages [nbdev-pandas]: Start processing: sweetrpg-web-core
+[2023-05-07 03:37:43] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-07 03:37:43] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 03:37:43] INFO root fetch - processPackages [thonny-autosave]: Start processing: sweetrpg-api-core
+[2023-05-07 03:37:43] INFO root fetch - main [MainThread]: End processing [thonny-autosave]: success
+[2023-05-07 03:37:43] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 03:37:43] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-05-07 03:37:43] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230507/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:37:43] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2023-05-07 03:37:43] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20230507/s/sweetrpg-api-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:37:43] INFO root fetch - processPackages [cdk-wordpress]: Start processing: pdcscore
+[2023-05-07 03:37:43] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2023-05-07 03:37:43] INFO root fetch - processPackages [pdcscore]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-07 03:37:43] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-07 03:37:43] INFO root fetch - processPackages [pdcscore]: executing diffoscope
+[2023-05-07 03:37:43] INFO root fetch - processPackages [pdcscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdcscore-1.1.0.tar.gz tmp/pdcscore-1.1.1.tar.gz --markdown 20230507/p/pdcscore/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-07 03:37:43] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2023-05-07 03:37:43] INFO root fetch - main [MainThread]: End processing [tplink-ess-lib]: success
+[2023-05-07 03:37:43] INFO root fetch - main [MainThread]: End processing [authanor]: success
+[2023-05-07 03:37:43] INFO root fetch - main [MainThread]: End processing [sweetrpg-model-core]: success
+[2023-05-07 03:37:43] INFO root fetch - main [MainThread]: End processing [bh-utils]: success
+[2023-05-07 03:37:44] INFO root fetch - main [MainThread]: End processing [pdcscore]: success
+[2023-05-07 03:37:44] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-05-07 03:37:44] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2023-05-07 03:37:44] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-07 03:37:44] INFO root fetch - main [MainThread]: Store serial: [18003581]
