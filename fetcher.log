@@ -1423,3 +1423,21 @@
 [2023-05-07 03:10:36] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
 [2023-05-07 03:10:37] INFO root fetch - main [MainThread]: End processing [modal-client]: success
 [2023-05-07 03:10:37] INFO root fetch - main [MainThread]: Store serial: [18003447]
+[2023-05-07 03:15:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003447]
+[2023-05-07 03:15:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 03:15:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mp-api
+[2023-05-07 03:15:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: basal-and-bark
+[2023-05-07 03:15:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: csv-similarity
+[2023-05-07 03:15:46] INFO root fetch - processPackages [basal-and-bark]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 03:15:46] INFO root fetch - processPackages [mp-api]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-07 03:15:46] WARNING root fetch - processPackages [csv-similarity]: Skipping, unable to determine old version
+[2023-05-07 03:15:46] INFO root fetch - main [MainThread]: End processing [csv-similarity] error
+[2023-05-07 03:15:46] INFO root fetch - processPackages [basal-and-bark]: Downloading https://files.pythonhosted.org/packages/3e/d6/e3320d86df60972388babbc0d4a149b8a879769969c883330d4386071b48/basal_and_bark-0.0.5.tar.gz
+[2023-05-07 03:15:47] INFO root fetch - processPackages [mp-api]: executing diffoscope
+[2023-05-07 03:15:47] INFO root fetch - processPackages [mp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mp-api-0.9.0.tar.gz tmp/mp-api-0.9.1.tar.gz --markdown 20230507/m/mp-api/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-07 03:15:47] INFO root fetch - processPackages [basal-and-bark]: Downloading https://files.pythonhosted.org/packages/47/a5/7ab90cf5336535d3ad803a07b43cbe1f8c765a1ddbca6af5617add379bc7/basal_and_bark-0.0.6.tar.gz
+[2023-05-07 03:15:47] INFO root fetch - processPackages [basal-and-bark]: executing diffoscope
+[2023-05-07 03:15:47] INFO root fetch - processPackages [basal-and-bark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basal_and_bark-0.0.5.tar.gz tmp/basal_and_bark-0.0.6.tar.gz --markdown 20230507/b/basal-and-bark/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 03:15:48] INFO root fetch - main [MainThread]: End processing [basal-and-bark]: success
+[2023-05-07 03:15:50] INFO root fetch - main [MainThread]: End processing [mp-api]: success
+[2023-05-07 03:15:50] INFO root fetch - main [MainThread]: Store serial: [18003458]
