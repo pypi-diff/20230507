@@ -2413,3 +2413,28 @@
 [2023-05-07 05:32:48] INFO root fetch - main [MainThread]: End processing [control-rod]: success
 [2023-05-07 05:32:48] INFO root fetch - main [MainThread]: End processing [py-helper-mod]: success
 [2023-05-07 05:32:48] INFO root fetch - main [MainThread]: Store serial: [18003954]
+[2023-05-07 05:37:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003954]
+[2023-05-07 05:37:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 05:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: basal-and-bark
+[2023-05-07 05:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotcrates
+[2023-05-07 05:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: global-contrast-factor-python
+[2023-05-07 05:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MLVisualizationTools
+[2023-05-07 05:37:57] INFO root fetch - processPackages [spotcrates]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-05-07 05:37:57] WARNING root fetch - processPackages [global-contrast-factor-python]: Skipping, unable to determine old version
+[2023-05-07 05:37:57] INFO root fetch - processPackages [basal-and-bark]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 05:37:57] INFO root fetch - main [MainThread]: End processing [global-contrast-factor-python] error
+[2023-05-07 05:37:57] INFO root fetch - processPackages [MLVisualizationTools]: New version: [0.7.0] Old Version: [0.6.3]
+[2023-05-07 05:37:57] INFO root fetch - processPackages [spotcrates]: Downloading https://files.pythonhosted.org/packages/ae/ce/09a2c72c540b078e3364e07b624cee5d8acbdf8bdba5e1b7d923065e46b6/spotcrates-0.6.3.tar.gz
+[2023-05-07 05:37:57] INFO root fetch - processPackages [MLVisualizationTools]: Downloading https://files.pythonhosted.org/packages/e1/4a/0982ae19033c2ac80d605bc18e61645461e1d53847ae0e95c0f7d57129cd/MLVisualizationTools-0.6.3.tar.gz
+[2023-05-07 05:37:57] INFO root fetch - processPackages [basal-and-bark]: Downloading https://files.pythonhosted.org/packages/cd/e8/1da5f462046416bb941d7d872ce46925343e22050d1729ee7fc0c3f30c25/basal_and_bark-0.0.7.tar.gz
+[2023-05-07 05:37:57] INFO root fetch - processPackages [spotcrates]: executing diffoscope
+[2023-05-07 05:37:57] INFO root fetch - processPackages [spotcrates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotcrates-0.6.2.tar.gz tmp/spotcrates-0.6.3.tar.gz --markdown 20230507/s/spotcrates/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-05-07 05:37:57] INFO root fetch - processPackages [basal-and-bark]: executing diffoscope
+[2023-05-07 05:37:57] INFO root fetch - processPackages [basal-and-bark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basal_and_bark-0.0.6.tar.gz tmp/basal_and_bark-0.0.7.tar.gz --markdown 20230507/b/basal-and-bark/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 05:37:57] INFO root fetch - processPackages [MLVisualizationTools]: Downloading https://files.pythonhosted.org/packages/eb/e3/ad906551ce8648aff79f710c59571c9a87861b93aa5b4e3d836e0a3b6539/MLVisualizationTools-0.7.0.tar.gz
+[2023-05-07 05:37:57] INFO root fetch - processPackages [MLVisualizationTools]: executing diffoscope
+[2023-05-07 05:37:57] INFO root fetch - processPackages [MLVisualizationTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLVisualizationTools-0.6.3.tar.gz tmp/MLVisualizationTools-0.7.0.tar.gz --markdown 20230507/M/MLVisualizationTools/0.6.3-0.7.0/diff.md --exclude *.pyd
+[2023-05-07 05:37:58] INFO root fetch - main [MainThread]: End processing [spotcrates]: success
+[2023-05-07 05:37:58] INFO root fetch - main [MainThread]: End processing [basal-and-bark]: success
+[2023-05-07 05:37:58] INFO root fetch - main [MainThread]: End processing [MLVisualizationTools]: success
+[2023-05-07 05:37:58] INFO root fetch - main [MainThread]: Store serial: [18003968]
