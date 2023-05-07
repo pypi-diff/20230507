@@ -3527,3 +3527,57 @@
 [2023-05-07 08:48:00] INFO root fetch - main [MainThread]: End processing [gptcache]: success
 [2023-05-07 08:48:00] INFO root fetch - main [MainThread]: End processing [uss]: success
 [2023-05-07 08:48:00] INFO root fetch - main [MainThread]: Store serial: [18004656]
+[2023-05-07 08:53:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004656]
+[2023-05-07 08:53:09] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 08:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: putkoff-functions
+[2023-05-07 08:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdisk
+[2023-05-07 08:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: saltext.bitwarden
+[2023-05-07 08:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xtrack
+[2023-05-07 08:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xia-scw-mongodb
+[2023-05-07 08:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: irails
+[2023-05-07 08:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: certora-cli-alpha-ghila-enable-event-reporting
+[2023-05-07 08:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xfields
+[2023-05-07 08:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hyperfast-python-template
+[2023-05-07 08:53:09] WARNING root fetch - processPackages [putkoff-functions]: Skipping, unable to determine old version
+[2023-05-07 08:53:09] INFO root fetch - main [MainThread]: End processing [putkoff-functions] error
+[2023-05-07 08:53:09] INFO root fetch - processPackages [pdisk]: New version: [1.0.6] Old Version: [1.0.4]
+[2023-05-07 08:53:09] INFO root fetch - processPackages [saltext.bitwarden]: New version: [0.0.1b9] Old Version: [0.0.1b8]
+[2023-05-07 08:53:09] INFO root fetch - processPackages [xfields]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-07 08:53:09] INFO root fetch - processPackages [certora-cli-alpha-ghila-enable-event-reporting]: New version: [20230507.6.51.268658] Old Version: [20230506.19.2.951761]
+[2023-05-07 08:53:09] INFO root fetch - processPackages [irails]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-07 08:53:09] INFO root fetch - processPackages [xia-scw-mongodb]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 08:53:09] INFO root fetch - processPackages [xtrack]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-07 08:53:09] INFO root fetch - processPackages [hyperfast-python-template]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-07 08:53:09] INFO root fetch - processPackages [saltext.bitwarden]: executing diffoscope
+[2023-05-07 08:53:09] INFO root fetch - processPackages [saltext.bitwarden]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saltext.bitwarden-0.0.1b8.tar.gz tmp/saltext.bitwarden-0.0.1b9.tar.gz --markdown 20230507/s/saltext.bitwarden/0.0.1b8-0.0.1b9/diff.md --exclude *.pyd
+[2023-05-07 08:53:09] INFO root fetch - processPackages [hyperfast-python-template]: executing diffoscope
+[2023-05-07 08:53:09] INFO root fetch - processPackages [hyperfast-python-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperfast_python_template-0.4.8.tar.gz tmp/hyperfast_python_template-0.4.9.tar.gz --markdown 20230507/h/hyperfast-python-template/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-07 08:53:09] INFO root fetch - processPackages [xtrack]: Downloading https://files.pythonhosted.org/packages/8a/c3/e19b3d04ca1e27256466963f0323b5925c96b787f5066e5229a7c6b8db3a/xtrack-0.9.4.tar.gz
+[2023-05-07 08:53:09] INFO root fetch - processPackages [xia-scw-mongodb]: Downloading https://files.pythonhosted.org/packages/1a/a1/c72c8b14a32303aa90faf426e487138dd61d991568d61bb6bdb06215a4a7/xia_scw_mongodb-0.0.2-cp39-none-win_amd64.whl
+[2023-05-07 08:53:09] INFO root fetch - processPackages [xfields]: Downloading https://files.pythonhosted.org/packages/7a/77/3a6abbee5bec0b9a1a9208d8bfbb48c1d3847a3623b736877d07f2a19f3c/xfields-0.9.3.tar.gz
+[2023-05-07 08:53:09] INFO root fetch - processPackages [pdisk]: Downloading https://files.pythonhosted.org/packages/80/3d/35b5b9c114bc2ea3644b303198812aa8b19634f25aee25cf669154cad74b/pdisk-1.0.6.tar.gz
+[2023-05-07 08:53:09] INFO root fetch - processPackages [certora-cli-alpha-ghila-enable-event-reporting]: Downloading https://files.pythonhosted.org/packages/28/0d/cccc9d9a7a2fc52cda4452eeabc9b8edca4b3ca3eacbf2829ecd8995fe96/certora-cli-alpha-ghila-enable_event_reporting-20230506.19.2.951761.tar.gz
+[2023-05-07 08:53:09] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/e8/a4/e48bbda71cab4d257896e6bce4d9c5dae4e9e5fb0e0f5d2dcdb624da99ae/irails-1.1.9.tar.gz
+[2023-05-07 08:53:09] WARNING root fetch - processPackages [certora-cli-alpha-ghila-enable-event-reporting]: Skipping package: exceeds size limit 38473300>=10485760
+[2023-05-07 08:53:09] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-ghila-enable-event-reporting] error
+[2023-05-07 08:53:09] INFO root fetch - processPackages [pdisk]: executing diffoscope
+[2023-05-07 08:53:09] INFO root fetch - processPackages [pdisk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdisk-1.0.4.tar.gz tmp/pdisk-1.0.6.tar.gz --markdown 20230507/p/pdisk/1.0.4-1.0.6/diff.md --exclude *.pyd
+[2023-05-07 08:53:09] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-07 08:53:09] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.1.8.tar.gz tmp/irails-1.1.9.tar.gz --markdown 20230507/i/irails/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-07 08:53:10] INFO root fetch - processPackages [xia-scw-mongodb]: Downloading https://files.pythonhosted.org/packages/30/c8/deee7a997b86ac0d73fbc7bff50b603531987d7d6ab0f680ab750bbae858/xia_scw_mongodb-0.0.3-cp39-none-macosx_11_0_x86_64.whl
+[2023-05-07 08:53:10] INFO root fetch - processPackages [xtrack]: Downloading https://files.pythonhosted.org/packages/46/38/dad135658362d6eec72747f7f0ae41cf43b0d0fb26e948ac142a49dfcec8/xtrack-0.9.5.tar.gz
+[2023-05-07 08:53:10] INFO root fetch - processPackages [xia-scw-mongodb]: executing diffoscope
+[2023-05-07 08:53:10] INFO root fetch - processPackages [xia-scw-mongodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_scw_mongodb-0.0.2-cp39-none-win_amd64.whl.zip tmp/xia_scw_mongodb-0.0.3-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230507/x/xia-scw-mongodb/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 08:53:10] INFO root fetch - processPackages [xfields]: Downloading https://files.pythonhosted.org/packages/8b/54/cac5d52db408c1d03b97e7d6c7f37530ed94cdc6cec242e76f900759b3a3/xfields-0.9.4.tar.gz
+[2023-05-07 08:53:10] INFO root fetch - processPackages [xtrack]: executing diffoscope
+[2023-05-07 08:53:10] INFO root fetch - processPackages [xtrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtrack-0.9.4.tar.gz tmp/xtrack-0.9.5.tar.gz --markdown 20230507/x/xtrack/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-07 08:53:10] INFO root fetch - processPackages [xfields]: executing diffoscope
+[2023-05-07 08:53:10] INFO root fetch - processPackages [xfields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xfields-0.9.3.tar.gz tmp/xfields-0.9.4.tar.gz --markdown 20230507/x/xfields/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-07 08:53:10] INFO root fetch - main [MainThread]: End processing [hyperfast-python-template]: success
+[2023-05-07 08:53:10] INFO root fetch - main [MainThread]: End processing [pdisk]: success
+[2023-05-07 08:53:10] INFO root fetch - main [MainThread]: End processing [saltext.bitwarden]: success
+[2023-05-07 08:53:11] INFO root fetch - main [MainThread]: End processing [xia-scw-mongodb]: success
+[2023-05-07 08:53:12] INFO root fetch - main [MainThread]: End processing [xfields]: success
+[2023-05-07 08:53:13] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-07 08:53:13] INFO root fetch - main [MainThread]: End processing [xtrack]: success
+[2023-05-07 08:53:13] INFO root fetch - main [MainThread]: Store serial: [18004683]
