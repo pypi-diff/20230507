@@ -7339,3 +7339,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 15:51:48] INFO root fetch - main [MainThread]: End processing [corecrud]: success
 [2023-05-07 15:51:48] INFO root fetch - main [MainThread]: End processing [xpanther]: success
 [2023-05-07 15:51:48] INFO root fetch - main [MainThread]: Store serial: [18007198]
+[2023-05-07 15:56:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007198]
+[2023-05-07 15:56:57] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: steamcrawl
+[2023-05-07 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hella-api
+[2023-05-07 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coreftools
+[2023-05-07 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: steamcrawl
+[2023-05-07 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: djangorestframework-verbose-errors
+[2023-05-07 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ytspider
+[2023-05-07 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vessl
+[2023-05-07 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: FisheyeWarping
+[2023-05-07 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aij-webcam
+[2023-05-07 15:56:57] INFO root fetch - processPackages [steamcrawl]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-07 15:56:57] WARNING root fetch - processPackages [hella-api]: Skipping, unable to determine old version
+[2023-05-07 15:56:57] INFO root fetch - main [MainThread]: End processing [hella-api] error
+[2023-05-07 15:56:57] WARNING root fetch - processPackages [djangorestframework-verbose-errors]: Skipping, unable to determine old version
+[2023-05-07 15:56:57] INFO root fetch - main [MainThread]: End processing [djangorestframework-verbose-errors] error
+[2023-05-07 15:56:57] INFO root fetch - processPackages [coreftools]: New version: [1.1.1] Old Version: [0.2.8]
+[2023-05-07 15:56:57] INFO root fetch - processPackages [ytspider]: New version: [0.0.0.4] Old Version: [0.0.0.3]
+[2023-05-07 15:56:57] INFO root fetch - processPackages [steamcrawl]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-07 15:56:57] WARNING root fetch - processPackages [FisheyeWarping]: Skipping, unable to determine old version
+[2023-05-07 15:56:57] INFO root fetch - main [MainThread]: End processing [FisheyeWarping] error
+[2023-05-07 15:56:57] INFO root fetch - processPackages [vessl]: New version: [0.1.92] Old Version: [0.1.91]
+[2023-05-07 15:56:57] INFO root fetch - processPackages [aij-webcam]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-07 15:56:57] INFO root fetch - processPackages [steamcrawl]: Downloading https://files.pythonhosted.org/packages/bb/0e/d72019141b4c9bae5285a252f655e6f77b03443b0fb93614b54945218e9e/steamcrawl-0.1.6.tar.gz
+[2023-05-07 15:56:57] INFO root fetch - processPackages [ytspider]: Downloading https://files.pythonhosted.org/packages/6e/81/cbb7d00df20cac08692cc8ca96dc573045e7386a2d078be895c3621de431/ytspider-0.0.0.3.tar.gz
+[2023-05-07 15:56:57] INFO root fetch - processPackages [steamcrawl]: Downloading https://files.pythonhosted.org/packages/bb/0e/d72019141b4c9bae5285a252f655e6f77b03443b0fb93614b54945218e9e/steamcrawl-0.1.6.tar.gz
+[2023-05-07 15:56:57] INFO root fetch - processPackages [vessl]: Downloading https://files.pythonhosted.org/packages/c3/96/5053e07e6eacbe5d72bdfc02947467b9ec0024075092a1976ad4bf51f2e2/vessl-0.1.91.tar.gz
+[2023-05-07 15:56:57] INFO root fetch - processPackages [coreftools]: Downloading https://files.pythonhosted.org/packages/fb/99/2640380b2d63a20b055b50287d7d6960a4b2614a37075f6d00353d490afa/coreftools-0.2.8-py3-none-any.whl
+[2023-05-07 15:56:57] INFO root fetch - processPackages [aij-webcam]: Downloading https://files.pythonhosted.org/packages/09/a2/fb9ab8fa47459d99c6d58eaa6da4e347cce47853b7c897219d7475790c47/aij-webcam-1.1.5.tar.gz
+[2023-05-07 15:56:58] INFO root fetch - processPackages [steamcrawl]: Downloading https://files.pythonhosted.org/packages/3a/6c/a1752cc5d552fe2b9417fa9e5bcb58798d0805a16a1192123abb99879ccc/steamcrawl-0.1.7.tar.gz
+[2023-05-07 15:56:58] INFO root fetch - processPackages [steamcrawl]: Downloading https://files.pythonhosted.org/packages/3a/6c/a1752cc5d552fe2b9417fa9e5bcb58798d0805a16a1192123abb99879ccc/steamcrawl-0.1.7.tar.gz
+[2023-05-07 15:56:58] INFO root fetch - processPackages [ytspider]: Downloading https://files.pythonhosted.org/packages/55/fe/f68e3169f770ac923cd1a5e0b258da4d99fa0857e4320ad860ad1ab21798/ytspider-0.0.0.4.tar.gz
+[2023-05-07 15:56:58] INFO root fetch - processPackages [aij-webcam]: Downloading https://files.pythonhosted.org/packages/3e/1d/626ce329f7919a938cf6e9929b6249393f555258229ea08cabc211135697/aij-webcam-1.1.6.tar.gz
+[2023-05-07 15:56:58] INFO root fetch - processPackages [steamcrawl]: executing diffoscope
+[2023-05-07 15:56:58] INFO root fetch - processPackages [steamcrawl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steamcrawl-0.1.6.tar.gz tmp/steamcrawl-0.1.7.tar.gz --markdown 20230507/s/steamcrawl/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-07 15:56:58] INFO root fetch - processPackages [steamcrawl]: executing diffoscope
+[2023-05-07 15:56:58] INFO root fetch - processPackages [steamcrawl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steamcrawl-0.1.6.tar.gz tmp/steamcrawl-0.1.7.tar.gz --markdown 20230507/s/steamcrawl/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-07 15:56:58] INFO root fetch - processPackages [vessl]: Downloading https://files.pythonhosted.org/packages/2e/71/6d38966b66911f1f7dd6a74cfc8c30e304d7e442a4a31a3f4e505322033f/vessl-0.1.92.tar.gz
+[2023-05-07 15:56:58] INFO root fetch - processPackages [ytspider]: executing diffoscope
+[2023-05-07 15:56:58] INFO root fetch - processPackages [ytspider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytspider-0.0.0.3.tar.gz tmp/ytspider-0.0.0.4.tar.gz --markdown 20230507/y/ytspider/0.0.0.3-0.0.0.4/diff.md --exclude *.pyd
+[2023-05-07 15:56:58] INFO root fetch - processPackages [coreftools]: Downloading https://files.pythonhosted.org/packages/de/59/e052e700cafe5cc8dbd4c34fb7675d449bd873f80c5461577fcc69fb056b/coreftools-1.1.1-py3-none-any.whl
+[2023-05-07 15:56:58] INFO root fetch - processPackages [aij-webcam]: executing diffoscope
+[2023-05-07 15:56:58] INFO root fetch - processPackages [aij-webcam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-webcam-1.1.5.tar.gz tmp/aij-webcam-1.1.6.tar.gz --markdown 20230507/a/aij-webcam/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-07 15:56:58] INFO root fetch - processPackages [vessl]: executing diffoscope
+[2023-05-07 15:56:58] INFO root fetch - processPackages [vessl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vessl-0.1.91.tar.gz tmp/vessl-0.1.92.tar.gz --markdown 20230507/v/vessl/0.1.91-0.1.92/diff.md --exclude *.pyd
+[2023-05-07 15:56:58] INFO root fetch - processPackages [coreftools]: executing diffoscope
+[2023-05-07 15:56:58] INFO root fetch - processPackages [coreftools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coreftools-0.2.8-py3-none-any.whl.zip tmp/coreftools-1.1.1-py3-none-any.whl.zip --markdown 20230507/c/coreftools/0.2.8-1.1.1/diff.md --exclude *.pyd
+[2023-05-07 15:56:59] INFO root fetch - main [MainThread]: End processing [steamcrawl]: success
+[2023-05-07 15:56:59] INFO root fetch - main [MainThread]: End processing [steamcrawl]: success
+[2023-05-07 15:56:59] INFO root fetch - main [MainThread]: End processing [ytspider]: success
+[2023-05-07 15:56:59] INFO root fetch - main [MainThread]: End processing [aij-webcam]: success
+[2023-05-07 15:56:59] INFO root fetch - main [MainThread]: End processing [coreftools]: success
+[2023-05-07 15:57:05] INFO root fetch - main [MainThread]: End processing [vessl]: success
+[2023-05-07 15:57:05] INFO root fetch - main [MainThread]: Store serial: [18007228]
