@@ -1832,3 +1832,66 @@
 [2023-05-07 03:53:18] INFO root fetch - processPackages [hyundai-kia-connect-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyundai_kia_connect_api-3.3.2.tar.gz tmp/hyundai_kia_connect_api-3.3.3.tar.gz --markdown 20230507/h/hyundai-kia-connect-api/3.3.2-3.3.3/diff.md --exclude *.pyd
 [2023-05-07 03:53:20] INFO root fetch - main [MainThread]: End processing [hyundai-kia-connect-api]: success
 [2023-05-07 03:53:20] INFO root fetch - main [MainThread]: Store serial: [18003668]
+[2023-05-07 03:58:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003668]
+[2023-05-07 03:58:28] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-07 03:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dgh
+[2023-05-07 03:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: languagemodels
+[2023-05-07 03:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thonny-autosave
+[2023-05-07 03:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mojo-xmodules
+[2023-05-07 03:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: atlas-finance
+[2023-05-07 03:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dgh
+[2023-05-07 03:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tastytrade-sdk
+[2023-05-07 03:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tastytrade-sdk
+[2023-05-07 03:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: plugnplai
+[2023-05-07 03:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mojo-runtime
+[2023-05-07 03:58:28] WARNING root fetch - processPackages [languagemodels]: Skipping, unable to determine old version
+[2023-05-07 03:58:28] INFO root fetch - processPackages [dgh]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 03:58:28] INFO root fetch - main [MainThread]: End processing [languagemodels] error
+[2023-05-07 03:58:28] INFO root fetch - processPackages [thonny-autosave]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-05-07 03:58:28] INFO root fetch - processPackages [atlas-finance]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-07 03:58:28] INFO root fetch - processPackages [tastytrade-sdk]: New version: [0.0.dev1] Old Version: [0.0.1.dev1]
+[2023-05-07 03:58:28] INFO root fetch - processPackages [tastytrade-sdk]: New version: [0.0.dev1] Old Version: [0.0.1.dev1]
+[2023-05-07 03:58:28] INFO root fetch - processPackages [mojo-runtime]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 03:58:28] INFO root fetch - processPackages [dgh]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 03:58:28] INFO root fetch - processPackages [mojo-xmodules]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 03:58:28] INFO root fetch - processPackages [plugnplai]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 03:58:28] INFO root fetch - processPackages [mojo-xmodules]: executing diffoscope
+[2023-05-07 03:58:28] INFO root fetch - processPackages [mojo-xmodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_xmodules-0.0.8.tar.gz tmp/mojo_xmodules-0.0.9.tar.gz --markdown 20230507/m/mojo-xmodules/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 03:58:28] INFO root fetch - processPackages [mojo-runtime]: executing diffoscope
+[2023-05-07 03:58:28] INFO root fetch - processPackages [mojo-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_runtime-0.0.8.tar.gz tmp/mojo_runtime-0.0.9.tar.gz --markdown 20230507/m/mojo-runtime/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 03:58:28] INFO root fetch - processPackages [tastytrade-sdk]: Downloading https://files.pythonhosted.org/packages/f1/ad/e61325e250d55b13d268798291efa92d1ccb1ba660e1dec410aabb78c3b8/tastytrade-sdk-0.0.1.dev1.tar.gz
+[2023-05-07 03:58:28] INFO root fetch - processPackages [tastytrade-sdk]: Downloading https://files.pythonhosted.org/packages/f1/ad/e61325e250d55b13d268798291efa92d1ccb1ba660e1dec410aabb78c3b8/tastytrade-sdk-0.0.1.dev1.tar.gz
+[2023-05-07 03:58:28] INFO root fetch - processPackages [atlas-finance]: Downloading https://files.pythonhosted.org/packages/c6/c1/ddfc5c48446b5e4da5eaa0bbd670833162f89aaae10a8b718bb7c508a246/atlas-finance-2.0.1.win-amd64.zip
+[2023-05-07 03:58:28] INFO root fetch - processPackages [dgh]: Downloading https://files.pythonhosted.org/packages/8a/dd/ec627b5ad622c6a98d27ece8f4c248bb5ee65e984b110b264de034085973/dgh-0.0.1-py3-none-any.whl
+[2023-05-07 03:58:28] INFO root fetch - processPackages [dgh]: Downloading https://files.pythonhosted.org/packages/8a/dd/ec627b5ad622c6a98d27ece8f4c248bb5ee65e984b110b264de034085973/dgh-0.0.1-py3-none-any.whl
+[2023-05-07 03:58:28] INFO root fetch - processPackages [thonny-autosave]: Downloading https://files.pythonhosted.org/packages/32/f6/41d58e8ac109dd61862db276d21a2e88e4c3435a76b359477f3380507a3b/thonny_autosave-0.0.19-py3-none-any.whl
+[2023-05-07 03:58:28] INFO root fetch - processPackages [thonny-autosave]: executing diffoscope
+[2023-05-07 03:58:28] INFO root fetch - processPackages [thonny-autosave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thonny_autosave-0.0.18-py3-none-any.whl.zip tmp/thonny_autosave-0.0.19-py3-none-any.whl.zip --markdown 20230507/t/thonny-autosave/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-05-07 03:58:28] INFO root fetch - processPackages [plugnplai]: Downloading https://files.pythonhosted.org/packages/59/fd/b769fa3dfe4ab5c03742e8e00088201bf677db6ca0b47368ee1d08fe10e1/plugnplai-0.0.6.tar.gz
+[2023-05-07 03:58:28] INFO root fetch - processPackages [dgh]: Downloading https://files.pythonhosted.org/packages/e1/9a/4397d80a4d1bfc68c8976b301f9d7b05a89bec6cc786b58f1f9fb4bf460a/dgh-0.0.2.tar.gz
+[2023-05-07 03:58:28] INFO root fetch - processPackages [dgh]: Downloading https://files.pythonhosted.org/packages/e1/9a/4397d80a4d1bfc68c8976b301f9d7b05a89bec6cc786b58f1f9fb4bf460a/dgh-0.0.2.tar.gz
+[2023-05-07 03:58:28] INFO root fetch - processPackages [atlas-finance]: Downloading https://files.pythonhosted.org/packages/d7/70/77ba615f299932e2028d4f09cfcb15e546ca31f3becaede5a044ea1f09cf/atlas-finance-2.0.2.win-amd64.zip
+[2023-05-07 03:58:29] INFO root fetch - processPackages [tastytrade-sdk]: Downloading https://files.pythonhosted.org/packages/d9/6a/51b8c369e61b319b379822ac9e7f57bdaa4e98bf2333a5dc6ccfa464be59/tastytrade-sdk-0.0.dev1.tar.gz
+[2023-05-07 03:58:29] INFO root fetch - processPackages [tastytrade-sdk]: Downloading https://files.pythonhosted.org/packages/d9/6a/51b8c369e61b319b379822ac9e7f57bdaa4e98bf2333a5dc6ccfa464be59/tastytrade-sdk-0.0.dev1.tar.gz
+[2023-05-07 03:58:29] INFO root fetch - processPackages [plugnplai]: executing diffoscope
+[2023-05-07 03:58:29] INFO root fetch - processPackages [plugnplai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugnplai-0.0.5.tar.gz tmp/plugnplai-0.0.6.tar.gz --markdown 20230507/p/plugnplai/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 03:58:29] INFO root fetch - processPackages [dgh]: executing diffoscope
+[2023-05-07 03:58:29] INFO root fetch - processPackages [dgh]: executing diffoscope
+[2023-05-07 03:58:29] INFO root fetch - processPackages [dgh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dgh-0.0.1-py3-none-any.whl.zip tmp/dgh-0.0.2.tar.gz --markdown 20230507/d/dgh/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 03:58:29] INFO root fetch - processPackages [dgh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dgh-0.0.1-py3-none-any.whl.zip tmp/dgh-0.0.2.tar.gz --markdown 20230507/d/dgh/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 03:58:29] INFO root fetch - processPackages [atlas-finance]: executing diffoscope
+[2023-05-07 03:58:29] INFO root fetch - processPackages [atlas-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlas-finance-2.0.1.win-amd64.zip tmp/atlas-finance-2.0.2.win-amd64.zip --markdown 20230507/a/atlas-finance/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-07 03:58:29] INFO root fetch - processPackages [tastytrade-sdk]: executing diffoscope
+[2023-05-07 03:58:29] INFO root fetch - processPackages [tastytrade-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tastytrade-sdk-0.0.1.dev1.tar.gz tmp/tastytrade-sdk-0.0.dev1.tar.gz --markdown 20230507/t/tastytrade-sdk/0.0.1.dev1-0.0.dev1/diff.md --exclude *.pyd
+[2023-05-07 03:58:29] INFO root fetch - processPackages [tastytrade-sdk]: executing diffoscope
+[2023-05-07 03:58:29] INFO root fetch - processPackages [tastytrade-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tastytrade-sdk-0.0.1.dev1.tar.gz tmp/tastytrade-sdk-0.0.dev1.tar.gz --markdown 20230507/t/tastytrade-sdk/0.0.1.dev1-0.0.dev1/diff.md --exclude *.pyd
+[2023-05-07 03:58:30] INFO root fetch - main [MainThread]: End processing [thonny-autosave]: success
+[2023-05-07 03:58:30] INFO root fetch - main [MainThread]: End processing [mojo-runtime]: success
+[2023-05-07 03:58:30] INFO root fetch - main [MainThread]: End processing [mojo-xmodules]: success
+[2023-05-07 03:58:30] INFO root fetch - main [MainThread]: End processing [dgh]: success
+[2023-05-07 03:58:30] INFO root fetch - main [MainThread]: End processing [tastytrade-sdk]: success
+[2023-05-07 03:58:30] INFO root fetch - main [MainThread]: End processing [plugnplai]: success
+[2023-05-07 03:58:30] INFO root fetch - main [MainThread]: End processing [dgh]: success
+[2023-05-07 03:58:30] INFO root fetch - main [MainThread]: End processing [tastytrade-sdk]: success
+[2023-05-07 03:58:30] INFO root fetch - main [MainThread]: End processing [atlas-finance]: success
+[2023-05-07 03:58:30] INFO root fetch - main [MainThread]: Store serial: [18003701]
