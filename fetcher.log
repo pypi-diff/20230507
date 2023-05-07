@@ -2223,3 +2223,17 @@
 [2023-05-07 04:56:28] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.8.tar.gz tmp/pyfirebird-0.0.9.tar.gz --markdown 20230507/p/pyfirebird/0.0.8-0.0.9/diff.md --exclude *.pyd
 [2023-05-07 04:56:29] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
 [2023-05-07 04:56:29] INFO root fetch - main [MainThread]: Store serial: [18003863]
+[2023-05-07 05:01:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003863]
+[2023-05-07 05:01:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-07 05:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: defog
+[2023-05-07 05:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autoxx
+[2023-05-07 05:01:38] INFO root fetch - processPackages [autoxx]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 05:01:38] INFO root fetch - processPackages [defog]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-07 05:01:38] INFO root fetch - processPackages [autoxx]: Downloading https://files.pythonhosted.org/packages/06/cb/e70f1cf28ed69ab7f711dbeac361f2b0e3e59ab26aa4fafefd6c138c8a1a/autoxx-0.0.6.tar.gz
+[2023-05-07 05:01:38] INFO root fetch - processPackages [autoxx]: executing diffoscope
+[2023-05-07 05:01:38] INFO root fetch - processPackages [autoxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoxx-0.0.5.tar.gz tmp/autoxx-0.0.6.tar.gz --markdown 20230507/a/autoxx/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 05:01:38] INFO root fetch - processPackages [defog]: executing diffoscope
+[2023-05-07 05:01:38] INFO root fetch - processPackages [defog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/defog-0.9.1.tar.gz tmp/defog-0.9.2.tar.gz --markdown 20230507/d/defog/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-07 05:01:39] INFO root fetch - main [MainThread]: End processing [defog]: success
+[2023-05-07 05:01:39] INFO root fetch - main [MainThread]: End processing [autoxx]: success
+[2023-05-07 05:01:39] INFO root fetch - main [MainThread]: Store serial: [18003871]
