@@ -780,3 +780,38 @@
 [2023-05-07 02:01:13] INFO root fetch - main [MainThread]: End processing [snake-opencv]: success
 [2023-05-07 02:01:13] INFO root fetch - main [MainThread]: End processing [ec2-manager]: success
 [2023-05-07 02:01:13] INFO root fetch - main [MainThread]: Store serial: [18003034]
+[2023-05-07 02:06:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003034]
+[2023-05-07 02:06:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 02:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pychromedriver
+[2023-05-07 02:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: variant
+[2023-05-07 02:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchdatasets-nightly
+[2023-05-07 02:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FeatureInsight
+[2023-05-07 02:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mct-nightly
+[2023-05-07 02:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jaxkern-nightly
+[2023-05-07 02:06:21] INFO root fetch - processPackages [variant]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 02:06:21] INFO root fetch - processPackages [pychromedriver]: New version: [99.0] Old Version: [98.0]
+[2023-05-07 02:06:21] INFO root fetch - processPackages [FeatureInsight]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 02:06:21] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-05-07 02:06:21] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9042023.post411] Old Version: [1.8.0.9032023.post431]
+[2023-05-07 02:06:21] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1683331372] Old Version: [1683244990]
+[2023-05-07 02:06:21] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-05-07 02:06:21] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230507/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-05-07 02:06:21] INFO root fetch - processPackages [variant]: executing diffoscope
+[2023-05-07 02:06:21] INFO root fetch - processPackages [variant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/variant-0.0.8.tar.gz tmp/variant-0.0.9.tar.gz --markdown 20230507/v/variant/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 02:06:21] INFO root fetch - processPackages [pychromedriver]: Downloading https://files.pythonhosted.org/packages/58/ea/4728c10bf3da86b82ff28be3159d8f9e15ecad5fc025edbeed8263f3a93a/pychromedriver-98.0.tar.gz
+[2023-05-07 02:06:21] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-05-07 02:06:21] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9032023.post431.tar.gz tmp/mct-nightly-1.8.0.9042023.post411.tar.gz --markdown 20230507/m/mct-nightly/1.8.0.9032023.post431-1.8.0.9042023.post411/diff.md --exclude *.pyd
+[2023-05-07 02:06:21] INFO root fetch - processPackages [FeatureInsight]: Downloading https://files.pythonhosted.org/packages/f4/eb/04aa85d4f24b8e6ea2ae81fc2ff2acaadcdfe0eab42481ef60aec3204363/FeatureInsight-0.0.8.tar.gz
+[2023-05-07 02:06:21] WARNING root fetch - processPackages [pychromedriver]: Skipping package: exceeds size limit 24713510>=10485760
+[2023-05-07 02:06:21] INFO root fetch - main [MainThread]: End processing [pychromedriver] error
+[2023-05-07 02:06:21] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/4c/9f/f70df36236abade45a5a115adaddddbff114f604a49affaed62332685a9a/torchdatasets-nightly-1683331372.tar.gz
+[2023-05-07 02:06:21] INFO root fetch - processPackages [FeatureInsight]: executing diffoscope
+[2023-05-07 02:06:21] INFO root fetch - processPackages [FeatureInsight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FeatureInsight-0.0.7.tar.gz tmp/FeatureInsight-0.0.8.tar.gz --markdown 20230507/F/FeatureInsight/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 02:06:22] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-05-07 02:06:22] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1683244990.tar.gz tmp/torchdatasets-nightly-1683331372.tar.gz --markdown 20230507/t/torchdatasets-nightly/1683244990-1683331372/diff.md --exclude *.pyd
+[2023-05-07 02:06:22] INFO root fetch - main [MainThread]: End processing [variant]: success
+[2023-05-07 02:06:22] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-05-07 02:06:23] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-05-07 02:06:27] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-05-07 02:06:51] INFO root fetch - main [MainThread]: End processing [FeatureInsight]: success
+[2023-05-07 02:06:51] INFO root fetch - main [MainThread]: Store serial: [18003061]
