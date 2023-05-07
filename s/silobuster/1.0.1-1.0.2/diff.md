@@ -1,0 +1,824 @@
+# Comparing `tmp/silobuster-1.0.1.tar.gz` & `tmp/silobuster-1.0.2.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "silobuster-1.0.1.tar", last modified: Sun May  7 06:25:20 2023, max compression
++gzip compressed data, was "silobuster-1.0.2.tar", last modified: Sun May  7 07:23:03 2023, max compression
+```
+
+## Comparing `silobuster-1.0.1.tar` & `silobuster-1.0.2.tar`
+
+### file list
+
+```diff
+@@ -1,185 +1,185 @@
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.534376 silobuster-1.0.1/
+--rw-r--r--   0 runner    (1001) docker     (123)       66 2023-05-07 06:25:10.000000 silobuster-1.0.1/MANIFEST.in
+--rw-r--r--   0 runner    (1001) docker     (123)      135 2023-05-07 06:25:20.534376 silobuster-1.0.1/PKG-INFO
+--rw-r--r--   0 runner    (1001) docker     (123)     6246 2023-05-07 06:25:10.000000 silobuster-1.0.1/README.md
+--rw-r--r--   0 runner    (1001) docker     (123)       38 2023-05-07 06:25:20.534376 silobuster-1.0.1/setup.cfg
+--rw-r--r--   0 runner    (1001) docker     (123)      507 2023-05-07 06:25:12.000000 silobuster-1.0.1/setup.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.510376 silobuster-1.0.1/silobuster/
+--rw-r--r--   0 runner    (1001) docker     (123)       16 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/LICENSE
+--rw-r--r--   0 runner    (1001) docker     (123)       98 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/README.md
+--rw-r--r--   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/__init__.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.510376 silobuster-1.0.1/silobuster/libs/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.510376 silobuster-1.0.1/silobuster/libs/ARCHIVED/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.510376 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.510376 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/.ipynb_checkpoints/
+--rw-r--r--   0 runner    (1001) docker     (123)      589 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/.ipynb_checkpoints/test_conn-checkpoint.ipynb
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.514376 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)     1408 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/abstract_connector.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1345 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/abstract_connector.cpython-36.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1425 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/abstract_connector.cpython-39.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     2215 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/postgres_connector.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1935 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/postgres_connector.cpython-36.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     2263 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/postgres_connector.cpython-39.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      609 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/abstract_connector.py
+--rw-r--r--   0 runner    (1001) docker     (123)     1544 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/postgres_connector.py
+--rw-r--r--   0 runner    (1001) docker     (123)      589 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/test_conn.ipynb
+--rw-r--r--   0 runner    (1001) docker     (123)    55032 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/deduplication_results.csv
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.514376 silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.514376 silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)      862 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/__pycache__/abstract_feed.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      857 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/__pycache__/abstract_feed.cpython-39.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)    11033 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/__pycache__/postgres_feed.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     8936 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/__pycache__/postgres_feed.cpython-39.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      498 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/abstract_feed.py
+--rw-r--r--   0 runner    (1001) docker     (123)    12303 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/postgres_feed.py
+--rw-r--r--   0 runner    (1001) docker     (123)      491 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/test.txt
+--rw-r--r--   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/__init__.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.514376 silobuster-1.0.1/silobuster/libs/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)     1361 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/__pycache__/uuid.cpython-310.pyc
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.514376 silobuster-1.0.1/silobuster/libs/base_classes/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.514376 silobuster-1.0.1/silobuster/libs/base_classes/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)     2308 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/base_classes/__pycache__/base_iterator.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1742 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/base_classes/__pycache__/singleton.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1564 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/base_classes/base_iterator.py
+--rwxr-xr-x   0 runner    (1001) docker     (123)     1298 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/base_classes/singleton.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.514376 silobuster-1.0.1/silobuster/libs/connector/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.514376 silobuster-1.0.1/silobuster/libs/connector/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)     3678 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/__pycache__/base_connector.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      955 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/__pycache__/base_converter.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      837 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/__pycache__/base_convertor.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      733 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/__pycache__/base_source.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     2057 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/__pycache__/dataframe_connector.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     7102 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/__pycache__/generic_connector.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      744 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/__pycache__/log_formatter.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      644 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/__pycache__/postgres.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     4821 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/__pycache__/postgres_connector.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     3468 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/__pycache__/postgres_converter.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1876 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/__pycache__/postgres_convertor.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     2184 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/base_connector.py
+--rw-r--r--   0 runner    (1001) docker     (123)     1494 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/dataframe_connector.py
+--rw-r--r--   0 runner    (1001) docker     (123)     6910 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/generic_connector.py
+--rw-r--r--   0 runner    (1001) docker     (123)     4494 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/connector/postgres_connector.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/dataframes/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/dataframes/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)      180 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/dataframes/__pycache__/__init__.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      838 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/dataframes/__pycache__/encoders.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      961 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/dataframes/__pycache__/process_dedupe.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      723 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/dataframes/__pycache__/to_types.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      963 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/dataframes/encoders.py
+--rw-r--r--   0 runner    (1001) docker     (123)      176 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/dataframes/map_columns.py
+--rw-r--r--   0 runner    (1001) docker     (123)      986 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/dataframes/process_dedupe.py
+--rw-r--r--   0 runner    (1001) docker     (123)      395 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/dataframes/to_types.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/globals/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/globals/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)      229 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/globals/__pycache__/queries.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)       78 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/globals/queries.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/handler/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/handler/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)     1290 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/__pycache__/base_db_source.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     2011 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/__pycache__/base_handler.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1422 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/__pycache__/base_source.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1934 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/__pycache__/dataframe_handler.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1277 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/__pycache__/excel_handler.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      932 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/__pycache__/json_handler.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     8139 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/__pycache__/postgres_handler.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     4761 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/__pycache__/postgres_source.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1075 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/base_handler.py
+--rw-r--r--   0 runner    (1001) docker     (123)     1241 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/dataframe_handler.py
+--rw-r--r--   0 runner    (1001) docker     (123)      804 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/excel_handler.py
+--rw-r--r--   0 runner    (1001) docker     (123)      404 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/json_handler.py
+--rw-r--r--   0 runner    (1001) docker     (123)     8659 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/handler/postgres_handler.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/log_handler/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/log_handler/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)     1280 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/log_handler/__pycache__/log_formatter.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     6449 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/log_handler/__pycache__/log_handler.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     7456 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/log_handler/log_handler.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/nodes/
+--rw-r--r--   0 runner    (1001) docker     (123)     2610 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/nodes/node.py
+--rw-r--r--   0 runner    (1001) docker     (123)      221 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/nodes/nodes.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/silobuster_exceptions/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/silobuster_exceptions/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)      847 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/silobuster_exceptions/__pycache__/connection_exceptions.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1434 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/silobuster_exceptions/__pycache__/log_exceptions.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      875 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/silobuster_exceptions/__pycache__/query_exceptions.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      537 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/silobuster_exceptions/__pycache__/type_exceptions.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      387 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/silobuster_exceptions/connection_exceptions.py
+--rw-r--r--   0 runner    (1001) docker     (123)      483 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/silobuster_exceptions/log_exceptions.py
+--rw-r--r--   0 runner    (1001) docker     (123)      253 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/silobuster_exceptions/nodes_exceptions.py
+--rw-r--r--   0 runner    (1001) docker     (123)      301 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/silobuster_exceptions/query_exceptions.py
+--rw-r--r--   0 runner    (1001) docker     (123)      118 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/silobuster_exceptions/type_exceptions.py
+--rw-r--r--   0 runner    (1001) docker     (123)      586 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/uuid.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/workers/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.518376 silobuster-1.0.1/silobuster/libs/workers/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)     2674 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/__pycache__/helpers.cpython-310.pyc
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.522376 silobuster-1.0.1/silobuster/libs/workers/algo/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.522376 silobuster-1.0.1/silobuster/libs/workers/algo/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)     5422 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/algo/__pycache__/exact_address.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1380 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/algo/__pycache__/exact_identifier.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1671 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/algo/__pycache__/exact_lat_long.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     2022 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/algo/__pycache__/exact_name_url.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)    17073 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/algo/exact_address.py
+--rw-r--r--   0 runner    (1001) docker     (123)     2217 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/algo/exact_identifier.py
+--rw-r--r--   0 runner    (1001) docker     (123)     2383 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/algo/exact_lat_long.py
+--rw-r--r--   0 runner    (1001) docker     (123)     2554 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/algo/exact_name_url.py
+--rw-r--r--   0 runner    (1001) docker     (123)     3664 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/helpers.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.522376 silobuster-1.0.1/silobuster/libs/workers/ml/
+--rw-r--r--   0 runner    (1001) docker     (123)     4047 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/OLD-deduper.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.522376 silobuster-1.0.1/silobuster/libs/workers/ml/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)      657 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/__pycache__/names_orgs.cpython-310.pyc
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.522376 silobuster-1.0.1/silobuster/libs/workers/ml/addresses/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.522376 silobuster-1.0.1/silobuster/libs/workers/ml/addresses/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)     4253 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/addresses/__pycache__/addresses.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     7698 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/addresses/addresses.py
+--rw-r--r--   0 runner    (1001) docker     (123)     4592 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/addresses/dedupe_io_addresses_only_learned_settings
+--rw-r--r--   0 runner    (1001) docker     (123)  1623481 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/addresses/dedupe_io_addresses_only_training.json
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.526376 silobuster-1.0.1/silobuster/libs/workers/ml/name_street/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.526376 silobuster-1.0.1/silobuster/libs/workers/ml/name_street/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)     4146 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/name_street/__pycache__/addresses.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     3915 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/name_street/__pycache__/name_street.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     4320 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/name_street/dedupe_io_name_street_learned_settings
+--rw-r--r--   0 runner    (1001) docker     (123)  2978387 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/name_street/dedupe_io_name_street_training.json
+--rw-r--r--   0 runner    (1001) docker     (123)     7250 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/name_street/name_street.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.530376 silobuster-1.0.1/silobuster/libs/workers/ml/names_addresses/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.530376 silobuster-1.0.1/silobuster/libs/workers/ml/names_addresses/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)     2067 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/names_addresses/__pycache__/dedupe_io_addresses.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     3867 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/names_addresses/__pycache__/names_addresses.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     4159 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/names_addresses/dedupe_io_addresses_learned_settings
+--rw-r--r--   0 runner    (1001) docker     (123)  2759344 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/names_addresses/dedupe_io_addresses_training.json
+--rw-r--r--   0 runner    (1001) docker     (123)     7139 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/names_addresses/names_addresses.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.530376 silobuster-1.0.1/silobuster/libs/workers/ml/names_urls_addresses/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.530376 silobuster-1.0.1/silobuster/libs/workers/ml/names_urls_addresses/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)     1751 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/names_urls_addresses/__pycache__/names_orgs.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     2270 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/names_urls_addresses/__pycache__/names_urls_addresses.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     4332 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/names_urls_addresses/names_orgs_learned_settings
+--rw-r--r--   0 runner    (1001) docker     (123)   261631 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/names_urls_addresses/names_orgs_training.json
+--rw-r--r--   0 runner    (1001) docker     (123)     2838 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/libs/workers/ml/names_urls_addresses/names_urls_addresses.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.530376 silobuster-1.0.1/silobuster/manglers/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.534376 silobuster-1.0.1/silobuster/manglers/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)      289 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/__pycache__/__init__.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      272 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/__pycache__/__init__.cpython-39.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1023 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/__pycache__/mangle_org_name.cpython-39.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     2604 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/__pycache__/mangle_url.cpython-310.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     2591 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/__pycache__/mangle_url.cpython-39.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)      459 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/__pycache__/tld_swap_prob_dict.cpython-39.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     1367 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/mangle_org_name.py
+--rw-r--r--   0 runner    (1001) docker     (123)     3860 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/mangle_url.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.534376 silobuster-1.0.1/silobuster/manglers/tests/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.534376 silobuster-1.0.1/silobuster/manglers/tests/__pycache__/
+--rw-r--r--   0 runner    (1001) docker     (123)      162 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/tests/__pycache__/__init__.cpython-39.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     7357 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/tests/__pycache__/test_mangle_org.cpython-39-pytest-7.1.2.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)    11819 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/tests/__pycache__/test_mangle_url.cpython-39-pytest-7.1.2.pyc
+--rw-r--r--   0 runner    (1001) docker     (123)     5417 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/tests/test_mangle_org.py
+--rw-r--r--   0 runner    (1001) docker     (123)     9549 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/tests/test_mangle_url.py
+--rw-r--r--   0 runner    (1001) docker     (123)     1128 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/tests/testing.py
+--rw-r--r--   0 runner    (1001) docker     (123)      978 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/manglers/tld_swap_prob_dict.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.534376 silobuster-1.0.1/silobuster/reports/
+--rw-r--r--   0 runner    (1001) docker     (123)       72 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/reports/.~lock.report_1.ods#
+--rw-r--r--   0 runner    (1001) docker     (123)    18483 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/reports/report_1.csv
+--rw-r--r--   0 runner    (1001) docker     (123)    39465 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/reports/report_1.ods
+--rw-r--r--   0 runner    (1001) docker     (123)    17905 2023-05-07 06:25:12.000000 silobuster-1.0.1/silobuster/reports/report_1.xlsx
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 06:25:20.510376 silobuster-1.0.1/silobuster.egg-info/
+--rw-r--r--   0 runner    (1001) docker     (123)      135 2023-05-07 06:25:20.000000 silobuster-1.0.1/silobuster.egg-info/PKG-INFO
+--rw-r--r--   0 runner    (1001) docker     (123)     7991 2023-05-07 06:25:20.000000 silobuster-1.0.1/silobuster.egg-info/SOURCES.txt
+--rw-r--r--   0 runner    (1001) docker     (123)        1 2023-05-07 06:25:20.000000 silobuster-1.0.1/silobuster.egg-info/dependency_links.txt
+--rw-r--r--   0 runner    (1001) docker     (123)      142 2023-05-07 06:25:20.000000 silobuster-1.0.1/silobuster.egg-info/requires.txt
+--rw-r--r--   0 runner    (1001) docker     (123)       11 2023-05-07 06:25:20.000000 silobuster-1.0.1/silobuster.egg-info/top_level.txt
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.482402 silobuster-1.0.2/
++-rw-r--r--   0 runner    (1001) docker     (123)       66 2023-05-07 07:22:51.000000 silobuster-1.0.2/MANIFEST.in
++-rw-r--r--   0 runner    (1001) docker     (123)      242 2023-05-07 07:23:03.482402 silobuster-1.0.2/PKG-INFO
++-rw-r--r--   0 runner    (1001) docker     (123)     6246 2023-05-07 07:22:51.000000 silobuster-1.0.2/README.md
++-rw-r--r--   0 runner    (1001) docker     (123)       38 2023-05-07 07:23:03.482402 silobuster-1.0.2/setup.cfg
++-rw-r--r--   0 runner    (1001) docker     (123)      645 2023-05-07 07:22:53.000000 silobuster-1.0.2/setup.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.462402 silobuster-1.0.2/silobuster/
++-rw-r--r--   0 runner    (1001) docker     (123)       16 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/LICENSE
++-rw-r--r--   0 runner    (1001) docker     (123)       98 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/README.md
++-rw-r--r--   0 runner    (1001) docker     (123)        0 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/__init__.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.462402 silobuster-1.0.2/silobuster/libs/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.462402 silobuster-1.0.2/silobuster/libs/ARCHIVED/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.462402 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.462402 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/.ipynb_checkpoints/
++-rw-r--r--   0 runner    (1001) docker     (123)      589 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/.ipynb_checkpoints/test_conn-checkpoint.ipynb
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.462402 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)     1408 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/abstract_connector.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1345 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/abstract_connector.cpython-36.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1425 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/abstract_connector.cpython-39.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     2215 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/postgres_connector.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1935 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/postgres_connector.cpython-36.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     2263 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/postgres_connector.cpython-39.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      609 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/abstract_connector.py
++-rw-r--r--   0 runner    (1001) docker     (123)     1544 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/postgres_connector.py
++-rw-r--r--   0 runner    (1001) docker     (123)      589 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/test_conn.ipynb
++-rw-r--r--   0 runner    (1001) docker     (123)    55032 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/deduplication_results.csv
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.466402 silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.466402 silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)      862 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/__pycache__/abstract_feed.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      857 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/__pycache__/abstract_feed.cpython-39.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)    11033 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/__pycache__/postgres_feed.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     8936 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/__pycache__/postgres_feed.cpython-39.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      498 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/abstract_feed.py
++-rw-r--r--   0 runner    (1001) docker     (123)    12303 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/postgres_feed.py
++-rw-r--r--   0 runner    (1001) docker     (123)      491 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/test.txt
++-rw-r--r--   0 runner    (1001) docker     (123)        0 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/__init__.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.466402 silobuster-1.0.2/silobuster/libs/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)     1361 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/__pycache__/uuid.cpython-310.pyc
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.466402 silobuster-1.0.2/silobuster/libs/base_classes/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.466402 silobuster-1.0.2/silobuster/libs/base_classes/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)     2308 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/base_classes/__pycache__/base_iterator.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1742 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/base_classes/__pycache__/singleton.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1564 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/base_classes/base_iterator.py
++-rwxr-xr-x   0 runner    (1001) docker     (123)     1298 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/base_classes/singleton.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.466402 silobuster-1.0.2/silobuster/libs/connector/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.466402 silobuster-1.0.2/silobuster/libs/connector/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)     3678 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/__pycache__/base_connector.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      955 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/__pycache__/base_converter.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      837 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/__pycache__/base_convertor.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      733 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/__pycache__/base_source.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     2057 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/__pycache__/dataframe_connector.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     7102 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/__pycache__/generic_connector.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      744 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/__pycache__/log_formatter.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      644 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/__pycache__/postgres.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     4821 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/__pycache__/postgres_connector.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     3468 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/__pycache__/postgres_converter.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1876 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/__pycache__/postgres_convertor.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     2184 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/base_connector.py
++-rw-r--r--   0 runner    (1001) docker     (123)     1494 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/dataframe_connector.py
++-rw-r--r--   0 runner    (1001) docker     (123)     6910 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/generic_connector.py
++-rw-r--r--   0 runner    (1001) docker     (123)     4494 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/connector/postgres_connector.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.466402 silobuster-1.0.2/silobuster/libs/dataframes/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.466402 silobuster-1.0.2/silobuster/libs/dataframes/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)      180 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/dataframes/__pycache__/__init__.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      838 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/dataframes/__pycache__/encoders.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      961 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/dataframes/__pycache__/process_dedupe.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      723 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/dataframes/__pycache__/to_types.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      963 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/dataframes/encoders.py
++-rw-r--r--   0 runner    (1001) docker     (123)      176 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/dataframes/map_columns.py
++-rw-r--r--   0 runner    (1001) docker     (123)      986 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/dataframes/process_dedupe.py
++-rw-r--r--   0 runner    (1001) docker     (123)      395 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/dataframes/to_types.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.466402 silobuster-1.0.2/silobuster/libs/globals/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.466402 silobuster-1.0.2/silobuster/libs/globals/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)      229 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/globals/__pycache__/queries.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)       78 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/globals/queries.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/handler/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/handler/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)     1290 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/__pycache__/base_db_source.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     2011 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/__pycache__/base_handler.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1422 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/__pycache__/base_source.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1934 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/__pycache__/dataframe_handler.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1277 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/__pycache__/excel_handler.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      932 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/__pycache__/json_handler.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     8139 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/__pycache__/postgres_handler.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     4761 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/__pycache__/postgres_source.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1075 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/base_handler.py
++-rw-r--r--   0 runner    (1001) docker     (123)     1241 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/dataframe_handler.py
++-rw-r--r--   0 runner    (1001) docker     (123)      804 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/excel_handler.py
++-rw-r--r--   0 runner    (1001) docker     (123)      404 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/json_handler.py
++-rw-r--r--   0 runner    (1001) docker     (123)     8659 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/handler/postgres_handler.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/log_handler/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/log_handler/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)     1280 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/log_handler/__pycache__/log_formatter.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     6449 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/log_handler/__pycache__/log_handler.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     7456 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/log_handler/log_handler.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/nodes/
++-rw-r--r--   0 runner    (1001) docker     (123)     2610 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/nodes/node.py
++-rw-r--r--   0 runner    (1001) docker     (123)      221 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/nodes/nodes.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/silobuster_exceptions/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/silobuster_exceptions/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)      847 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/silobuster_exceptions/__pycache__/connection_exceptions.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1434 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/silobuster_exceptions/__pycache__/log_exceptions.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      875 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/silobuster_exceptions/__pycache__/query_exceptions.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      537 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/silobuster_exceptions/__pycache__/type_exceptions.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      387 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/silobuster_exceptions/connection_exceptions.py
++-rw-r--r--   0 runner    (1001) docker     (123)      483 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/silobuster_exceptions/log_exceptions.py
++-rw-r--r--   0 runner    (1001) docker     (123)      253 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/silobuster_exceptions/nodes_exceptions.py
++-rw-r--r--   0 runner    (1001) docker     (123)      301 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/silobuster_exceptions/query_exceptions.py
++-rw-r--r--   0 runner    (1001) docker     (123)      118 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/silobuster_exceptions/type_exceptions.py
++-rw-r--r--   0 runner    (1001) docker     (123)      586 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/uuid.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/workers/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/workers/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)     2674 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/__pycache__/helpers.cpython-310.pyc
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/workers/algo/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/workers/algo/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)     5422 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/algo/__pycache__/exact_address.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1380 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/algo/__pycache__/exact_identifier.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1671 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/algo/__pycache__/exact_lat_long.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     2022 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/algo/__pycache__/exact_name_url.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)    17073 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/algo/exact_address.py
++-rw-r--r--   0 runner    (1001) docker     (123)     2217 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/algo/exact_identifier.py
++-rw-r--r--   0 runner    (1001) docker     (123)     2383 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/algo/exact_lat_long.py
++-rw-r--r--   0 runner    (1001) docker     (123)     2554 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/algo/exact_name_url.py
++-rw-r--r--   0 runner    (1001) docker     (123)     3664 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/helpers.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/workers/ml/
++-rw-r--r--   0 runner    (1001) docker     (123)     4047 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/OLD-deduper.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/workers/ml/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)      657 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/__pycache__/names_orgs.cpython-310.pyc
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.470402 silobuster-1.0.2/silobuster/libs/workers/ml/addresses/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.474402 silobuster-1.0.2/silobuster/libs/workers/ml/addresses/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)     4253 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/addresses/__pycache__/addresses.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     7698 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/addresses/addresses.py
++-rw-r--r--   0 runner    (1001) docker     (123)     4592 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/addresses/dedupe_io_addresses_only_learned_settings
++-rw-r--r--   0 runner    (1001) docker     (123)  1623481 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/addresses/dedupe_io_addresses_only_training.json
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.478402 silobuster-1.0.2/silobuster/libs/workers/ml/name_street/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.478402 silobuster-1.0.2/silobuster/libs/workers/ml/name_street/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)     4146 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/name_street/__pycache__/addresses.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     3915 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/name_street/__pycache__/name_street.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     4320 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/name_street/dedupe_io_name_street_learned_settings
++-rw-r--r--   0 runner    (1001) docker     (123)  2978387 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/name_street/dedupe_io_name_street_training.json
++-rw-r--r--   0 runner    (1001) docker     (123)     7250 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/name_street/name_street.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.482402 silobuster-1.0.2/silobuster/libs/workers/ml/names_addresses/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.482402 silobuster-1.0.2/silobuster/libs/workers/ml/names_addresses/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)     2067 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/names_addresses/__pycache__/dedupe_io_addresses.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     3867 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/names_addresses/__pycache__/names_addresses.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     4159 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/names_addresses/dedupe_io_addresses_learned_settings
++-rw-r--r--   0 runner    (1001) docker     (123)  2759344 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/names_addresses/dedupe_io_addresses_training.json
++-rw-r--r--   0 runner    (1001) docker     (123)     7139 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/names_addresses/names_addresses.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.482402 silobuster-1.0.2/silobuster/libs/workers/ml/names_urls_addresses/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.482402 silobuster-1.0.2/silobuster/libs/workers/ml/names_urls_addresses/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)     1751 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/names_urls_addresses/__pycache__/names_orgs.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     2270 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/names_urls_addresses/__pycache__/names_urls_addresses.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     4332 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/names_urls_addresses/names_orgs_learned_settings
++-rw-r--r--   0 runner    (1001) docker     (123)   261631 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/names_urls_addresses/names_orgs_training.json
++-rw-r--r--   0 runner    (1001) docker     (123)     2838 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/libs/workers/ml/names_urls_addresses/names_urls_addresses.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.482402 silobuster-1.0.2/silobuster/manglers/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.482402 silobuster-1.0.2/silobuster/manglers/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)      289 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/__pycache__/__init__.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      272 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/__pycache__/__init__.cpython-39.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1023 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/__pycache__/mangle_org_name.cpython-39.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     2604 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/__pycache__/mangle_url.cpython-310.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     2591 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/__pycache__/mangle_url.cpython-39.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)      459 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/__pycache__/tld_swap_prob_dict.cpython-39.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     1367 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/mangle_org_name.py
++-rw-r--r--   0 runner    (1001) docker     (123)     3860 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/mangle_url.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.482402 silobuster-1.0.2/silobuster/manglers/tests/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.482402 silobuster-1.0.2/silobuster/manglers/tests/__pycache__/
++-rw-r--r--   0 runner    (1001) docker     (123)      162 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/tests/__pycache__/__init__.cpython-39.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     7357 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/tests/__pycache__/test_mangle_org.cpython-39-pytest-7.1.2.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)    11819 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/tests/__pycache__/test_mangle_url.cpython-39-pytest-7.1.2.pyc
++-rw-r--r--   0 runner    (1001) docker     (123)     5417 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/tests/test_mangle_org.py
++-rw-r--r--   0 runner    (1001) docker     (123)     9549 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/tests/test_mangle_url.py
++-rw-r--r--   0 runner    (1001) docker     (123)     1128 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/tests/testing.py
++-rw-r--r--   0 runner    (1001) docker     (123)      978 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/manglers/tld_swap_prob_dict.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.482402 silobuster-1.0.2/silobuster/reports/
++-rw-r--r--   0 runner    (1001) docker     (123)       72 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/reports/.~lock.report_1.ods#
++-rw-r--r--   0 runner    (1001) docker     (123)    18483 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/reports/report_1.csv
++-rw-r--r--   0 runner    (1001) docker     (123)    39465 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/reports/report_1.ods
++-rw-r--r--   0 runner    (1001) docker     (123)    17905 2023-05-07 07:22:53.000000 silobuster-1.0.2/silobuster/reports/report_1.xlsx
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-07 07:23:03.462402 silobuster-1.0.2/silobuster.egg-info/
++-rw-r--r--   0 runner    (1001) docker     (123)      242 2023-05-07 07:23:03.000000 silobuster-1.0.2/silobuster.egg-info/PKG-INFO
++-rw-r--r--   0 runner    (1001) docker     (123)     7991 2023-05-07 07:23:03.000000 silobuster-1.0.2/silobuster.egg-info/SOURCES.txt
++-rw-r--r--   0 runner    (1001) docker     (123)        1 2023-05-07 07:23:03.000000 silobuster-1.0.2/silobuster.egg-info/dependency_links.txt
++-rw-r--r--   0 runner    (1001) docker     (123)      142 2023-05-07 07:23:03.000000 silobuster-1.0.2/silobuster.egg-info/requires.txt
++-rw-r--r--   0 runner    (1001) docker     (123)       11 2023-05-07 07:23:03.000000 silobuster-1.0.2/silobuster.egg-info/top_level.txt
+```
+
+### Comparing `silobuster-1.0.1/README.md` & `silobuster-1.0.2/README.md`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/.ipynb_checkpoints/test_conn-checkpoint.ipynb` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/.ipynb_checkpoints/test_conn-checkpoint.ipynb`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/abstract_connector.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/abstract_connector.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/abstract_connector.cpython-36.pyc` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/abstract_connector.cpython-36.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/abstract_connector.cpython-39.pyc` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/abstract_connector.cpython-39.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/postgres_connector.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/postgres_connector.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/postgres_connector.cpython-36.pyc` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/postgres_connector.cpython-36.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/__pycache__/postgres_connector.cpython-39.pyc` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/__pycache__/postgres_connector.cpython-39.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/abstract_connector.py` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/abstract_connector.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/postgres_connector.py` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/postgres_connector.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/connectors/test_conn.ipynb` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/connectors/test_conn.ipynb`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/deduplication_results.csv` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/deduplication_results.csv`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/__pycache__/abstract_feed.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/__pycache__/abstract_feed.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/__pycache__/abstract_feed.cpython-39.pyc` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/__pycache__/abstract_feed.cpython-39.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/__pycache__/postgres_feed.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/__pycache__/postgres_feed.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/__pycache__/postgres_feed.cpython-39.pyc` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/__pycache__/postgres_feed.cpython-39.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/ARCHIVED/feeds/postgres_feed.py` & `silobuster-1.0.2/silobuster/libs/ARCHIVED/feeds/postgres_feed.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/__pycache__/uuid.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/__pycache__/uuid.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/base_classes/__pycache__/base_iterator.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/base_classes/__pycache__/base_iterator.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/base_classes/__pycache__/singleton.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/base_classes/__pycache__/singleton.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/base_classes/base_iterator.py` & `silobuster-1.0.2/silobuster/libs/base_classes/base_iterator.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/base_classes/singleton.py` & `silobuster-1.0.2/silobuster/libs/base_classes/singleton.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/__pycache__/base_connector.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/connector/__pycache__/base_connector.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/__pycache__/base_converter.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/connector/__pycache__/base_converter.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/__pycache__/base_convertor.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/connector/__pycache__/base_convertor.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/__pycache__/base_source.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/connector/__pycache__/base_source.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/__pycache__/dataframe_connector.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/connector/__pycache__/dataframe_connector.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/__pycache__/generic_connector.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/connector/__pycache__/generic_connector.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/__pycache__/log_formatter.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/connector/__pycache__/log_formatter.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/__pycache__/postgres.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/connector/__pycache__/postgres.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/__pycache__/postgres_connector.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/connector/__pycache__/postgres_connector.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/__pycache__/postgres_converter.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/connector/__pycache__/postgres_converter.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/__pycache__/postgres_convertor.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/connector/__pycache__/postgres_convertor.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/base_connector.py` & `silobuster-1.0.2/silobuster/libs/connector/base_connector.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/dataframe_connector.py` & `silobuster-1.0.2/silobuster/libs/connector/dataframe_connector.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/generic_connector.py` & `silobuster-1.0.2/silobuster/libs/connector/generic_connector.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/connector/postgres_connector.py` & `silobuster-1.0.2/silobuster/libs/connector/postgres_connector.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/dataframes/__pycache__/encoders.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/dataframes/__pycache__/encoders.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/dataframes/__pycache__/process_dedupe.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/dataframes/__pycache__/process_dedupe.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/dataframes/__pycache__/to_types.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/dataframes/__pycache__/to_types.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/dataframes/encoders.py` & `silobuster-1.0.2/silobuster/libs/dataframes/encoders.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/dataframes/process_dedupe.py` & `silobuster-1.0.2/silobuster/libs/dataframes/process_dedupe.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/handler/__pycache__/base_db_source.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/handler/__pycache__/base_db_source.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/handler/__pycache__/base_handler.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/handler/__pycache__/base_handler.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/handler/__pycache__/base_source.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/handler/__pycache__/base_source.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/handler/__pycache__/dataframe_handler.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/handler/__pycache__/dataframe_handler.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/handler/__pycache__/excel_handler.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/handler/__pycache__/excel_handler.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/handler/__pycache__/json_handler.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/handler/__pycache__/json_handler.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/handler/__pycache__/postgres_handler.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/handler/__pycache__/postgres_handler.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/handler/__pycache__/postgres_source.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/handler/__pycache__/postgres_source.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/handler/base_handler.py` & `silobuster-1.0.2/silobuster/libs/handler/base_handler.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/handler/dataframe_handler.py` & `silobuster-1.0.2/silobuster/libs/handler/dataframe_handler.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/handler/excel_handler.py` & `silobuster-1.0.2/silobuster/libs/handler/excel_handler.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/handler/postgres_handler.py` & `silobuster-1.0.2/silobuster/libs/handler/postgres_handler.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/log_handler/__pycache__/log_formatter.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/log_handler/__pycache__/log_formatter.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/log_handler/__pycache__/log_handler.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/log_handler/__pycache__/log_handler.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/log_handler/log_handler.py` & `silobuster-1.0.2/silobuster/libs/log_handler/log_handler.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/nodes/node.py` & `silobuster-1.0.2/silobuster/libs/nodes/node.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/silobuster_exceptions/__pycache__/connection_exceptions.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/silobuster_exceptions/__pycache__/connection_exceptions.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/silobuster_exceptions/__pycache__/log_exceptions.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/silobuster_exceptions/__pycache__/log_exceptions.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/silobuster_exceptions/__pycache__/query_exceptions.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/silobuster_exceptions/__pycache__/query_exceptions.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/silobuster_exceptions/__pycache__/type_exceptions.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/silobuster_exceptions/__pycache__/type_exceptions.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/uuid.py` & `silobuster-1.0.2/silobuster/libs/uuid.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/__pycache__/helpers.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/__pycache__/helpers.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/algo/__pycache__/exact_address.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/algo/__pycache__/exact_address.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/algo/__pycache__/exact_identifier.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/algo/__pycache__/exact_identifier.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/algo/__pycache__/exact_lat_long.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/algo/__pycache__/exact_lat_long.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/algo/__pycache__/exact_name_url.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/algo/__pycache__/exact_name_url.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/algo/exact_address.py` & `silobuster-1.0.2/silobuster/libs/workers/algo/exact_address.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/algo/exact_identifier.py` & `silobuster-1.0.2/silobuster/libs/workers/algo/exact_identifier.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/algo/exact_lat_long.py` & `silobuster-1.0.2/silobuster/libs/workers/algo/exact_lat_long.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/algo/exact_name_url.py` & `silobuster-1.0.2/silobuster/libs/workers/algo/exact_name_url.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/helpers.py` & `silobuster-1.0.2/silobuster/libs/workers/helpers.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/OLD-deduper.py` & `silobuster-1.0.2/silobuster/libs/workers/ml/OLD-deduper.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/__pycache__/names_orgs.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/ml/__pycache__/names_orgs.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/addresses/__pycache__/addresses.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/ml/addresses/__pycache__/addresses.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/addresses/addresses.py` & `silobuster-1.0.2/silobuster/libs/workers/ml/addresses/addresses.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/addresses/dedupe_io_addresses_only_learned_settings` & `silobuster-1.0.2/silobuster/libs/workers/ml/addresses/dedupe_io_addresses_only_learned_settings`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/addresses/dedupe_io_addresses_only_training.json` & `silobuster-1.0.2/silobuster/libs/workers/ml/addresses/dedupe_io_addresses_only_training.json`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/name_street/__pycache__/addresses.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/ml/name_street/__pycache__/addresses.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/name_street/__pycache__/name_street.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/ml/name_street/__pycache__/name_street.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/name_street/dedupe_io_name_street_learned_settings` & `silobuster-1.0.2/silobuster/libs/workers/ml/name_street/dedupe_io_name_street_learned_settings`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/name_street/dedupe_io_name_street_training.json` & `silobuster-1.0.2/silobuster/libs/workers/ml/name_street/dedupe_io_name_street_training.json`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/name_street/name_street.py` & `silobuster-1.0.2/silobuster/libs/workers/ml/name_street/name_street.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/names_addresses/__pycache__/dedupe_io_addresses.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/ml/names_addresses/__pycache__/dedupe_io_addresses.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/names_addresses/__pycache__/names_addresses.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/ml/names_addresses/__pycache__/names_addresses.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/names_addresses/dedupe_io_addresses_learned_settings` & `silobuster-1.0.2/silobuster/libs/workers/ml/names_addresses/dedupe_io_addresses_learned_settings`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/names_addresses/dedupe_io_addresses_training.json` & `silobuster-1.0.2/silobuster/libs/workers/ml/names_addresses/dedupe_io_addresses_training.json`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/names_addresses/names_addresses.py` & `silobuster-1.0.2/silobuster/libs/workers/ml/names_addresses/names_addresses.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/names_urls_addresses/__pycache__/names_orgs.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/ml/names_urls_addresses/__pycache__/names_orgs.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/names_urls_addresses/__pycache__/names_urls_addresses.cpython-310.pyc` & `silobuster-1.0.2/silobuster/libs/workers/ml/names_urls_addresses/__pycache__/names_urls_addresses.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/names_urls_addresses/names_orgs_learned_settings` & `silobuster-1.0.2/silobuster/libs/workers/ml/names_urls_addresses/names_orgs_learned_settings`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/names_urls_addresses/names_orgs_training.json` & `silobuster-1.0.2/silobuster/libs/workers/ml/names_urls_addresses/names_orgs_training.json`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/libs/workers/ml/names_urls_addresses/names_urls_addresses.py` & `silobuster-1.0.2/silobuster/libs/workers/ml/names_urls_addresses/names_urls_addresses.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/manglers/__pycache__/mangle_org_name.cpython-39.pyc` & `silobuster-1.0.2/silobuster/manglers/__pycache__/mangle_org_name.cpython-39.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/manglers/__pycache__/mangle_url.cpython-310.pyc` & `silobuster-1.0.2/silobuster/manglers/__pycache__/mangle_url.cpython-310.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/manglers/__pycache__/mangle_url.cpython-39.pyc` & `silobuster-1.0.2/silobuster/manglers/__pycache__/mangle_url.cpython-39.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/manglers/mangle_org_name.py` & `silobuster-1.0.2/silobuster/manglers/mangle_org_name.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/manglers/mangle_url.py` & `silobuster-1.0.2/silobuster/manglers/mangle_url.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/manglers/tests/__pycache__/test_mangle_org.cpython-39-pytest-7.1.2.pyc` & `silobuster-1.0.2/silobuster/manglers/tests/__pycache__/test_mangle_org.cpython-39-pytest-7.1.2.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/manglers/tests/__pycache__/test_mangle_url.cpython-39-pytest-7.1.2.pyc` & `silobuster-1.0.2/silobuster/manglers/tests/__pycache__/test_mangle_url.cpython-39-pytest-7.1.2.pyc`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/manglers/tests/test_mangle_org.py` & `silobuster-1.0.2/silobuster/manglers/tests/test_mangle_org.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/manglers/tests/test_mangle_url.py` & `silobuster-1.0.2/silobuster/manglers/tests/test_mangle_url.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/manglers/tests/testing.py` & `silobuster-1.0.2/silobuster/manglers/tests/testing.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/manglers/tld_swap_prob_dict.py` & `silobuster-1.0.2/silobuster/manglers/tld_swap_prob_dict.py`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/reports/report_1.csv` & `silobuster-1.0.2/silobuster/reports/report_1.csv`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/reports/report_1.ods` & `silobuster-1.0.2/silobuster/reports/report_1.ods`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster/reports/report_1.xlsx` & `silobuster-1.0.2/silobuster/reports/report_1.xlsx`
+
+ * *Files identical despite different names*
+
+### Comparing `silobuster-1.0.1/silobuster.egg-info/SOURCES.txt` & `silobuster-1.0.2/silobuster.egg-info/SOURCES.txt`
+
+ * *Files identical despite different names*
+
