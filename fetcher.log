@@ -5225,3 +5225,24 @@
 [2023-05-07 12:10:04] INFO root fetch - main [MainThread]: End processing [speakleash]: success
 [2023-05-07 12:10:04] INFO root fetch - main [MainThread]: End processing [inverse]: success
 [2023-05-07 12:10:04] INFO root fetch - main [MainThread]: Store serial: [18005737]
+[2023-05-07 12:15:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005737]
+[2023-05-07 12:15:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 12:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: usls
+[2023-05-07 12:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lightwood
+[2023-05-07 12:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dm-reverb-nightly
+[2023-05-07 12:15:13] INFO root fetch - processPackages [lightwood]: New version: [23.5.1.0] Old Version: [23.4.3.0]
+[2023-05-07 12:15:13] INFO root fetch - processPackages [usls]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-07 12:15:13] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-05-07 12:15:13] INFO root fetch - processPackages [lightwood]: Downloading https://files.pythonhosted.org/packages/de/e3/48d945063db9252b21912dafe198644c616003b1c0656a29c638f4ef4988/lightwood-23.4.3.0.tar.gz
+[2023-05-07 12:15:13] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-05-07 12:15:13] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230507/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-05-07 12:15:13] INFO root fetch - processPackages [usls]: Downloading https://files.pythonhosted.org/packages/47/76/42ad2a98d8a369174c102b03045401fb9a3419429e0dfde9707aabd8f135/usls-0.2.5-py3-none-any.whl
+[2023-05-07 12:15:13] INFO root fetch - processPackages [usls]: executing diffoscope
+[2023-05-07 12:15:13] INFO root fetch - processPackages [usls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usls-0.2.4-py3-none-any.whl.zip tmp/usls-0.2.5-py3-none-any.whl.zip --markdown 20230507/u/usls/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-07 12:15:13] INFO root fetch - processPackages [lightwood]: Downloading https://files.pythonhosted.org/packages/2b/5a/5794ec286a0420ffbdee1b1ee03038cb3820bfef9420bbf299df0ce21e6d/lightwood-23.5.1.0.tar.gz
+[2023-05-07 12:15:14] INFO root fetch - processPackages [lightwood]: executing diffoscope
+[2023-05-07 12:15:14] INFO root fetch - processPackages [lightwood]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightwood-23.4.3.0.tar.gz tmp/lightwood-23.5.1.0.tar.gz --markdown 20230507/l/lightwood/23.4.3.0-23.5.1.0/diff.md --exclude *.pyd
+[2023-05-07 12:15:15] INFO root fetch - main [MainThread]: End processing [usls]: success
+[2023-05-07 12:15:15] INFO root fetch - main [MainThread]: End processing [lightwood]: success
+[2023-05-07 12:16:06] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-05-07 12:16:06] INFO root fetch - main [MainThread]: Store serial: [18005747]
