@@ -9676,3 +9676,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 19:33:43] INFO root fetch - main [MainThread]: End processing [disease-normalizer]: success
 [2023-05-07 19:33:46] INFO root fetch - main [MainThread]: End processing [variation-normalizer]: success
 [2023-05-07 19:33:46] INFO root fetch - main [MainThread]: Store serial: [18008588]
+[2023-05-07 19:38:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008588]
+[2023-05-07 19:38:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 19:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thera-py
+[2023-05-07 19:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sidetrek
+[2023-05-07 19:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gravitypy
+[2023-05-07 19:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: libida
+[2023-05-07 19:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sidetrek
+[2023-05-07 19:38:55] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 19:38:55] INFO root fetch - processPackages [gravitypy]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-07 19:38:55] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 19:38:55] INFO root fetch - processPackages [thera-py]: New version: [0.4.dev0] Old Version: [0.4.0]
+[2023-05-07 19:38:55] WARNING root fetch - processPackages [libida]: Skipping, unable to determine old version
+[2023-05-07 19:38:55] INFO root fetch - main [MainThread]: End processing [libida] error
+[2023-05-07 19:38:55] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-07 19:38:55] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230507/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 19:38:55] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-07 19:38:55] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230507/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 19:38:55] INFO root fetch - processPackages [thera-py]: Downloading https://files.pythonhosted.org/packages/5b/17/463607db1fbd2213a17afe5cca73687f6cb4f1e74599bb9a437dd857af3a/thera-py-0.4.0.tar.gz
+[2023-05-07 19:38:55] INFO root fetch - processPackages [gravitypy]: Downloading https://files.pythonhosted.org/packages/8f/32/0b7794b1ee90dd1023af09267a4b64504f5a0512fa0267d78f1a5033296c/gravitypy-1.0.0.tar.gz
+[2023-05-07 19:38:56] INFO root fetch - processPackages [gravitypy]: Downloading https://files.pythonhosted.org/packages/47/65/b14f68e1760c1cc55a1c2dbb50001004990f1065539ddf4a622a6ac4ae8f/gravitypy-1.0.1.tar.gz
+[2023-05-07 19:38:56] INFO root fetch - processPackages [gravitypy]: executing diffoscope
+[2023-05-07 19:38:56] INFO root fetch - processPackages [gravitypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitypy-1.0.0.tar.gz tmp/gravitypy-1.0.1.tar.gz --markdown 20230507/g/gravitypy/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-07 19:38:56] INFO root fetch - processPackages [thera-py]: Downloading https://files.pythonhosted.org/packages/f1/78/2676f0435bda34f4fdb2c38cc60ed4d182fd2e03191556db5046f8297dff/thera-py-0.4.dev0.tar.gz
+[2023-05-07 19:38:56] INFO root fetch - processPackages [thera-py]: executing diffoscope
+[2023-05-07 19:38:56] INFO root fetch - processPackages [thera-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thera-py-0.4.0.tar.gz tmp/thera-py-0.4.dev0.tar.gz --markdown 20230507/t/thera-py/0.4.0-0.4.dev0/diff.md --exclude *.pyd
+[2023-05-07 19:38:56] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-07 19:38:56] INFO root fetch - main [MainThread]: End processing [gravitypy]: success
+[2023-05-07 19:38:56] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-07 19:38:57] INFO root fetch - main [MainThread]: End processing [thera-py]: success
+[2023-05-07 19:38:57] INFO root fetch - main [MainThread]: Store serial: [18008606]
