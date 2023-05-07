@@ -11789,3 +11789,47 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 23:25:02] INFO root fetch - main [MainThread]: End processing [fpyo2apk]: success
 [2023-05-07 23:25:10] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-07 23:25:10] INFO root fetch - main [MainThread]: Store serial: [18009841]
+[2023-05-07 23:30:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009841]
+[2023-05-07 23:30:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 23:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: struct-gpt
+[2023-05-07 23:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: manim-slides
+[2023-05-07 23:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shello-world
+[2023-05-07 23:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gravitypy
+[2023-05-07 23:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arvan-dns
+[2023-05-07 23:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pystarshade
+[2023-05-07 23:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gravitypy
+[2023-05-07 23:30:19] INFO root fetch - processPackages [gravitypy]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 23:30:19] INFO root fetch - processPackages [struct-gpt]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-07 23:30:19] INFO root fetch - processPackages [arvan-dns]: New version: [1.0.5] Old Version: [1.0.2]
+[2023-05-07 23:30:19] INFO root fetch - processPackages [pystarshade]: New version: [0.1.5] Old Version: [0.1.2]
+[2023-05-07 23:30:19] INFO root fetch - processPackages [gravitypy]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 23:30:19] INFO root fetch - processPackages [shello-world]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 23:30:19] INFO root fetch - processPackages [manim-slides]: New version: [4.9.2] Old Version: [4.9.1]
+[2023-05-07 23:30:19] INFO root fetch - processPackages [gravitypy]: executing diffoscope
+[2023-05-07 23:30:19] INFO root fetch - processPackages [gravitypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitypy-1.0.8.tar.gz tmp/gravitypy-1.0.9.tar.gz --markdown 20230507/g/gravitypy/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 23:30:19] INFO root fetch - processPackages [gravitypy]: executing diffoscope
+[2023-05-07 23:30:19] INFO root fetch - processPackages [gravitypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitypy-1.0.8.tar.gz tmp/gravitypy-1.0.9.tar.gz --markdown 20230507/g/gravitypy/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 23:30:19] INFO root fetch - processPackages [struct-gpt]: Downloading https://files.pythonhosted.org/packages/00/9d/cdc15a03edd23bff2f0cf0e0c394993e21f822addb1ce3aa62508e396abd/struct_gpt-2.0.2.tar.gz
+[2023-05-07 23:30:19] INFO root fetch - processPackages [manim-slides]: Downloading https://files.pythonhosted.org/packages/01/66/68cb2f7aa92cde383f89b17355e87369f2baf0ea4e8e28e2afc8747f2ae3/manim_slides-4.9.1.tar.gz
+[2023-05-07 23:30:19] INFO root fetch - processPackages [arvan-dns]: Downloading https://files.pythonhosted.org/packages/df/b7/70456203e63f8bc8d28ab2c4d9cd5913ca2d966835726a5bbd3d646ba36a/arvan_dns-1.0.5.tar.gz
+[2023-05-07 23:30:19] INFO root fetch - processPackages [shello-world]: Downloading https://files.pythonhosted.org/packages/bb/34/17abd8b00b74754adcd17bbc455999260d3e295aec1622f6d5bf934d638e/shello_world-0.1.4.tar.gz
+[2023-05-07 23:30:19] INFO root fetch - processPackages [struct-gpt]: executing diffoscope
+[2023-05-07 23:30:19] INFO root fetch - processPackages [struct-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/struct_gpt-2.0.1.tar.gz tmp/struct_gpt-2.0.2.tar.gz --markdown 20230507/s/struct-gpt/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-07 23:30:19] INFO root fetch - processPackages [pystarshade]: Downloading https://files.pythonhosted.org/packages/ad/cc/66885dd53d591f1b6dd9044498bf71c18d44ede06fb0f63a584bf3da0799/pystarshade-0.1.5.tar.gz
+[2023-05-07 23:30:19] INFO root fetch - processPackages [shello-world]: executing diffoscope
+[2023-05-07 23:30:19] INFO root fetch - processPackages [shello-world]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shello_world-0.1.3.tar.gz tmp/shello_world-0.1.4.tar.gz --markdown 20230507/s/shello-world/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 23:30:19] INFO root fetch - processPackages [arvan-dns]: executing diffoscope
+[2023-05-07 23:30:19] INFO root fetch - processPackages [arvan-dns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arvan_dns-1.0.2.tar.gz tmp/arvan_dns-1.0.5.tar.gz --markdown 20230507/a/arvan-dns/1.0.2-1.0.5/diff.md --exclude *.pyd
+[2023-05-07 23:30:20] INFO root fetch - processPackages [pystarshade]: executing diffoscope
+[2023-05-07 23:30:20] INFO root fetch - processPackages [pystarshade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystarshade-0.1.2.tar.gz tmp/pystarshade-0.1.5.tar.gz --markdown 20230507/p/pystarshade/0.1.2-0.1.5/diff.md --exclude *.pyd
+[2023-05-07 23:30:20] INFO root fetch - processPackages [manim-slides]: Downloading https://files.pythonhosted.org/packages/d6/37/0be0d6411b1a7a6cf618af6fcba43955236250da1be7dc26ee58dc76ba8a/manim_slides-4.9.2.tar.gz
+[2023-05-07 23:30:20] INFO root fetch - processPackages [manim-slides]: executing diffoscope
+[2023-05-07 23:30:20] INFO root fetch - processPackages [manim-slides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manim_slides-4.9.1.tar.gz tmp/manim_slides-4.9.2.tar.gz --markdown 20230507/m/manim-slides/4.9.1-4.9.2/diff.md --exclude *.pyd
+[2023-05-07 23:30:20] INFO root fetch - main [MainThread]: End processing [gravitypy]: success
+[2023-05-07 23:30:21] INFO root fetch - main [MainThread]: End processing [gravitypy]: success
+[2023-05-07 23:30:21] INFO root fetch - main [MainThread]: End processing [shello-world]: success
+[2023-05-07 23:30:21] INFO root fetch - main [MainThread]: End processing [struct-gpt]: success
+[2023-05-07 23:30:21] INFO root fetch - main [MainThread]: End processing [pystarshade]: success
+[2023-05-07 23:30:21] INFO root fetch - main [MainThread]: End processing [arvan-dns]: success
+[2023-05-07 23:30:21] INFO root fetch - main [MainThread]: End processing [manim-slides]: success
+[2023-05-07 23:30:21] INFO root fetch - main [MainThread]: Store serial: [18009861]
