@@ -5179,3 +5179,28 @@
 [2023-05-07 11:59:42] INFO root fetch - main [MainThread]: End processing [ogc-na]: success
 [2023-05-07 11:59:42] INFO root fetch - main [MainThread]: End processing [vht]: success
 [2023-05-07 11:59:42] INFO root fetch - main [MainThread]: Store serial: [18005704]
+[2023-05-07 12:04:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005704]
+[2023-05-07 12:04:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 12:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zipline-norgatedata
+[2023-05-07 12:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PCRinSilico
+[2023-05-07 12:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xapianpy
+[2023-05-07 12:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nazo-rand
+[2023-05-07 12:04:51] INFO root fetch - processPackages [zipline-norgatedata]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-05-07 12:04:51] WARNING root fetch - processPackages [xapianpy]: Skipping, unable to determine old version
+[2023-05-07 12:04:51] INFO root fetch - main [MainThread]: End processing [xapianpy] error
+[2023-05-07 12:04:51] INFO root fetch - processPackages [PCRinSilico]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-07 12:04:51] INFO root fetch - processPackages [nazo-rand]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 12:04:51] INFO root fetch - processPackages [PCRinSilico]: Downloading https://files.pythonhosted.org/packages/21/dd/c9c66d561d8d0d04491abd21eb8e3c2e5efe126ceec96e23e908c54c3241/PCRinSilico-1.1.1.tar.gz
+[2023-05-07 12:04:51] INFO root fetch - processPackages [zipline-norgatedata]: Downloading https://files.pythonhosted.org/packages/25/b9/d8bbec189a1790db714206aedd926bcada05189f0970f77bbe1d6b99c2cd/zipline_norgatedata-2.4.1-py3-none-any.whl
+[2023-05-07 12:04:52] INFO root fetch - processPackages [PCRinSilico]: executing diffoscope
+[2023-05-07 12:04:52] INFO root fetch - processPackages [PCRinSilico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PCRinSilico-1.1.0.tar.gz tmp/PCRinSilico-1.1.1.tar.gz --markdown 20230507/P/PCRinSilico/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-07 12:04:52] INFO root fetch - processPackages [nazo-rand]: Downloading https://files.pythonhosted.org/packages/f6/3d/fef6216292c0123c922c136c73e1385dea48e1f574fbb54055ae74ad112f/nazo_rand-0.0.7.tar.gz
+[2023-05-07 12:04:53] INFO root fetch - processPackages [zipline-norgatedata]: executing diffoscope
+[2023-05-07 12:04:53] INFO root fetch - processPackages [zipline-norgatedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zipline_norgatedata-2.4.0-py3-none-any.whl.zip tmp/zipline_norgatedata-2.4.1-py3-none-any.whl.zip --markdown 20230507/z/zipline-norgatedata/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-05-07 12:04:53] INFO root fetch - processPackages [nazo-rand]: Downloading https://files.pythonhosted.org/packages/c6/7d/f3d9a4e7a88d6d3e91a56c5150e1ec081c04b31aed4cdd2f12cd564cd0b8/nazo_rand-0.0.8.tar.gz
+[2023-05-07 12:04:53] INFO root fetch - processPackages [nazo-rand]: executing diffoscope
+[2023-05-07 12:04:53] INFO root fetch - processPackages [nazo-rand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nazo_rand-0.0.7.tar.gz tmp/nazo_rand-0.0.8.tar.gz --markdown 20230507/n/nazo-rand/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 12:04:53] INFO root fetch - main [MainThread]: End processing [PCRinSilico]: success
+[2023-05-07 12:04:54] INFO root fetch - main [MainThread]: End processing [zipline-norgatedata]: success
+[2023-05-07 12:04:54] INFO root fetch - main [MainThread]: End processing [nazo-rand]: success
+[2023-05-07 12:04:54] INFO root fetch - main [MainThread]: Store serial: [18005727]
