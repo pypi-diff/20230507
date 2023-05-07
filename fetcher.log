@@ -3196,3 +3196,33 @@
 [2023-05-07 07:55:59] INFO root fetch - main [MainThread]: End processing [pytale]: success
 [2023-05-07 07:55:59] INFO root fetch - main [MainThread]: End processing [aiowebostv]: success
 [2023-05-07 07:55:59] INFO root fetch - main [MainThread]: Store serial: [18004374]
+[2023-05-07 08:01:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004374]
+[2023-05-07 08:01:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 08:01:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nyckel
+[2023-05-07 08:01:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: miniwdl-aws
+[2023-05-07 08:01:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: VonPylib
+[2023-05-07 08:01:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thunsearch
+[2023-05-07 08:01:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: uecho
+[2023-05-07 08:01:08] WARNING root fetch - processPackages [thunsearch]: Skipping, unable to determine old version
+[2023-05-07 08:01:08] INFO root fetch - main [MainThread]: End processing [thunsearch] error
+[2023-05-07 08:01:08] INFO root fetch - processPackages [nyckel]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 08:01:08] INFO root fetch - processPackages [VonPylib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 08:01:08] INFO root fetch - processPackages [miniwdl-aws]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-07 08:01:08] INFO root fetch - processPackages [uecho]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-07 08:01:08] INFO root fetch - processPackages [VonPylib]: executing diffoscope
+[2023-05-07 08:01:08] INFO root fetch - processPackages [VonPylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VonPylib-0.1.8.tar.gz tmp/VonPylib-0.1.9.tar.gz --markdown 20230507/V/VonPylib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 08:01:08] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-07 08:01:08] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.8.tar.gz tmp/nyckel-0.0.9.tar.gz --markdown 20230507/n/nyckel/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 08:01:08] INFO root fetch - processPackages [miniwdl-aws]: Downloading https://files.pythonhosted.org/packages/b9/04/f3d3a59ee09500871e601f1d82b8422399b66879182fdc139019178fbe6b/miniwdl-aws-0.9.0.tar.gz
+[2023-05-07 08:01:08] INFO root fetch - processPackages [uecho]: Downloading https://files.pythonhosted.org/packages/36/b6/a79cbb9c9b786b4e82e838839d1d35def4f2f55186278b404f00e5f0b00e/uecho-1.0.2.tar.gz
+[2023-05-07 08:01:09] INFO root fetch - processPackages [miniwdl-aws]: Downloading https://files.pythonhosted.org/packages/10/0c/7481d4b13a9d48048c35a8b4145d04f5a1058ed47f6293b008180b6a4d83/miniwdl-aws-0.9.1.tar.gz
+[2023-05-07 08:01:09] INFO root fetch - processPackages [uecho]: Downloading https://files.pythonhosted.org/packages/94/dd/a91dda78bd746db32c713b2c8865565677f2ce1cb298b7d73ee6cd290376/uecho-1.0.3.tar.gz
+[2023-05-07 08:01:09] INFO root fetch - processPackages [miniwdl-aws]: executing diffoscope
+[2023-05-07 08:01:09] INFO root fetch - processPackages [miniwdl-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miniwdl-aws-0.9.0.tar.gz tmp/miniwdl-aws-0.9.1.tar.gz --markdown 20230507/m/miniwdl-aws/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-07 08:01:09] INFO root fetch - processPackages [uecho]: executing diffoscope
+[2023-05-07 08:01:09] INFO root fetch - processPackages [uecho]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uecho-1.0.2.tar.gz tmp/uecho-1.0.3.tar.gz --markdown 20230507/u/uecho/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-07 08:01:09] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-07 08:01:09] INFO root fetch - main [MainThread]: End processing [VonPylib]: success
+[2023-05-07 08:01:10] INFO root fetch - main [MainThread]: End processing [uecho]: success
+[2023-05-07 08:01:10] INFO root fetch - main [MainThread]: End processing [miniwdl-aws]: success
+[2023-05-07 08:01:10] INFO root fetch - main [MainThread]: Store serial: [18004394]
