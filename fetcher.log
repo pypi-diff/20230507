@@ -5443,3 +5443,56 @@
 [2023-05-07 12:42:47] INFO root fetch - main [MainThread]: End processing [zesty.zbs-api-securonix]: success
 [2023-05-07 12:42:48] INFO root fetch - main [MainThread]: End processing [chafa.py]: success
 [2023-05-07 12:42:48] INFO root fetch - main [MainThread]: Store serial: [18006003]
+[2023-05-07 12:47:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006003]
+[2023-05-07 12:47:57] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 12:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prompt-man
+[2023-05-07 12:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inverter-connect
+[2023-05-07 12:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wizata-dsapi
+[2023-05-07 12:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bring-python-api
+[2023-05-07 12:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mojo-xmodules
+[2023-05-07 12:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: graphsignal
+[2023-05-07 12:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyswitchbee
+[2023-05-07 12:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: image-to-arduino
+[2023-05-07 12:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mojo-runtime
+[2023-05-07 12:47:57] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 12:47:57] INFO root fetch - processPackages [image-to-arduino]: New version: [1.0.3.6] Old Version: [1.0.3.4]
+[2023-05-07 12:47:57] INFO root fetch - processPackages [pyswitchbee]: New version: [1.8.0] Old Version: [1.7.9]
+[2023-05-07 12:47:57] INFO root fetch - processPackages [inverter-connect]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-07 12:47:57] INFO root fetch - processPackages [prompt-man]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-07 12:47:57] INFO root fetch - processPackages [mojo-runtime]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 12:47:57] INFO root fetch - processPackages [bring-python-api]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-07 12:47:57] INFO root fetch - processPackages [graphsignal]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-07 12:47:57] INFO root fetch - processPackages [mojo-xmodules]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 12:47:57] INFO root fetch - processPackages [image-to-arduino]: executing diffoscope
+[2023-05-07 12:47:57] INFO root fetch - processPackages [image-to-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-to-arduino-1.0.3.4.tar.gz tmp/image-to-arduino-1.0.3.6.tar.gz --markdown 20230507/i/image-to-arduino/1.0.3.4-1.0.3.6/diff.md --exclude *.pyd
+[2023-05-07 12:47:57] INFO root fetch - processPackages [mojo-runtime]: executing diffoscope
+[2023-05-07 12:47:57] INFO root fetch - processPackages [mojo-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_runtime-0.0.8.tar.gz tmp/mojo_runtime-0.0.9.tar.gz --markdown 20230507/m/mojo-runtime/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 12:47:57] INFO root fetch - processPackages [mojo-xmodules]: executing diffoscope
+[2023-05-07 12:47:57] INFO root fetch - processPackages [mojo-xmodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_xmodules-0.0.8.tar.gz tmp/mojo_xmodules-0.0.9.tar.gz --markdown 20230507/m/mojo-xmodules/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 12:47:57] INFO root fetch - processPackages [graphsignal]: executing diffoscope
+[2023-05-07 12:47:57] INFO root fetch - processPackages [graphsignal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphsignal-0.9.4.tar.gz tmp/graphsignal-0.9.5.tar.gz --markdown 20230507/g/graphsignal/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-07 12:47:57] INFO root fetch - processPackages [bring-python-api]: Downloading https://files.pythonhosted.org/packages/81/b8/b18dc56fd0cccdacda5eba4093ee8d766b2383ffc90a89c5b9306aba4e6b/bring-python-api-1.0.1.tar.gz
+[2023-05-07 12:47:57] INFO root fetch - processPackages [pyswitchbee]: Downloading https://files.pythonhosted.org/packages/ba/6e/ef09694f0f25f056e143fcab77681cb9b61f7f74a98dea4a0f6743202a91/pyswitchbee-1.8.0.tar.gz
+[2023-05-07 12:47:57] INFO root fetch - processPackages [prompt-man]: Downloading https://files.pythonhosted.org/packages/cb/ad/0ea1cac617edb1dbc03f02dcc0d3062f64822590a3f4f6e85d2900865a52/prompt_man-0.1.5.tar.gz
+[2023-05-07 12:47:57] INFO root fetch - processPackages [inverter-connect]: Downloading https://files.pythonhosted.org/packages/89/0c/5a86efd27f8bdef551706fdaab28d2d7af73c3bca68ebbf77cd06de49aae/inverter-connect-0.6.1.tar.gz
+[2023-05-07 12:47:57] INFO root fetch - processPackages [pyswitchbee]: executing diffoscope
+[2023-05-07 12:47:57] INFO root fetch - processPackages [pyswitchbee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyswitchbee-1.7.9.tar.gz tmp/pyswitchbee-1.8.0.tar.gz --markdown 20230507/p/pyswitchbee/1.7.9-1.8.0/diff.md --exclude *.pyd
+[2023-05-07 12:47:58] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-05-07 12:47:58] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.8.tar.gz tmp/wizata-dsapi-0.1.9.tar.gz --markdown 20230507/w/wizata-dsapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 12:47:58] INFO root fetch - processPackages [inverter-connect]: executing diffoscope
+[2023-05-07 12:47:58] INFO root fetch - processPackages [inverter-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverter-connect-0.6.0.tar.gz tmp/inverter-connect-0.6.1.tar.gz --markdown 20230507/i/inverter-connect/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-07 12:47:58] INFO root fetch - processPackages [prompt-man]: executing diffoscope
+[2023-05-07 12:47:58] INFO root fetch - processPackages [prompt-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompt_man-0.1.4.tar.gz tmp/prompt_man-0.1.5.tar.gz --markdown 20230507/p/prompt-man/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-07 12:47:58] INFO root fetch - processPackages [bring-python-api]: Downloading https://files.pythonhosted.org/packages/5b/81/0e18774ef322c24508a7a9f37876ee11d5c6f2321c1bd3c45cfc85f9a819/bring-python-api-1.0.2.tar.gz
+[2023-05-07 12:47:58] INFO root fetch - processPackages [bring-python-api]: executing diffoscope
+[2023-05-07 12:47:58] INFO root fetch - processPackages [bring-python-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bring-python-api-1.0.1.tar.gz tmp/bring-python-api-1.0.2.tar.gz --markdown 20230507/b/bring-python-api/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-07 12:47:59] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
+[2023-05-07 12:47:59] INFO root fetch - main [MainThread]: End processing [mojo-runtime]: success
+[2023-05-07 12:47:59] INFO root fetch - main [MainThread]: End processing [prompt-man]: success
+[2023-05-07 12:47:59] INFO root fetch - main [MainThread]: End processing [mojo-xmodules]: success
+[2023-05-07 12:47:59] INFO root fetch - main [MainThread]: End processing [pyswitchbee]: success
+[2023-05-07 12:47:59] INFO root fetch - main [MainThread]: End processing [bring-python-api]: success
+[2023-05-07 12:47:59] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-05-07 12:48:00] INFO root fetch - main [MainThread]: End processing [inverter-connect]: success
+[2023-05-07 12:48:01] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
+[2023-05-07 12:48:01] INFO root fetch - main [MainThread]: Store serial: [18006038]
