@@ -9247,3 +9247,80 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 18:52:06] INFO root fetch - main [MainThread]: End processing [django-app-helper]: success
 [2023-05-07 18:52:11] INFO root fetch - main [MainThread]: End processing [dfvfs]: success
 [2023-05-07 18:52:11] INFO root fetch - main [MainThread]: Store serial: [18008356]
+[2023-05-07 18:57:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008356]
+[2023-05-07 18:57:21] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-07 18:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anova-wifi
+[2023-05-07 18:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sidetrek
+[2023-05-07 18:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cluedin
+[2023-05-07 18:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mkdocstrings-python
+[2023-05-07 18:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-07 18:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fabsync
+[2023-05-07 18:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pylovelace
+[2023-05-07 18:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dgh
+[2023-05-07 18:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: neumann
+[2023-05-07 18:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: teelebot
+[2023-05-07 18:57:21] INFO root fetch - processPackages [anova-wifi]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-07 18:57:21] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 18:57:21] INFO root fetch - processPackages [mkdocstrings-python]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-05-07 18:57:21] INFO root fetch - processPackages [cluedin]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-07 18:57:21] INFO root fetch - processPackages [fabsync]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-07 18:57:21] INFO root fetch - processPackages [pylovelace]: New version: [2023.2.0] Old Version: [2023.1.5]
+[2023-05-07 18:57:21] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230507.16.52.673315] Old Version: [20230507.14.10.356139]
+[2023-05-07 18:57:21] INFO root fetch - processPackages [dgh]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-07 18:57:21] INFO root fetch - processPackages [neumann]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-07 18:57:21] INFO root fetch - processPackages [teelebot]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-07 18:57:21] INFO root fetch - processPackages [mkdocstrings-python]: executing diffoscope
+[2023-05-07 18:57:21] INFO root fetch - processPackages [mkdocstrings-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocstrings-python-0.8.3.tar.gz tmp/mkdocstrings-python-0.9.0.tar.gz --markdown 20230507/m/mkdocstrings-python/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-05-07 18:57:21] INFO root fetch - processPackages [pylovelace]: Downloading https://files.pythonhosted.org/packages/8f/fd/6e5415e77a2d957fafc79f0d8bb1c75ea510a0b0e876900fe9cf68db393c/pylovelace-2023.1.5-py3-none-any.whl
+[2023-05-07 18:57:21] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/17/7f/cbe097150981c49cea1815edbf66e9acd65858810ca9d949b22ef7acbbf1/certora-cli-alpha-roy-CERT-1955-assertHits-20230507.14.10.356139.tar.gz
+[2023-05-07 18:57:21] INFO root fetch - processPackages [fabsync]: Downloading https://files.pythonhosted.org/packages/d4/30/5a8fe2647b5a06a3ace2b537f8798693c32d72041cc3416f1275db1dd536/fabsync-1.0.0.tar.gz
+[2023-05-07 18:57:21] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 38474344>=10485760
+[2023-05-07 18:57:21] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Start processing: sportsdataverse
+[2023-05-07 18:57:21] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-07 18:57:21] INFO root fetch - processPackages [dgh]: Downloading https://files.pythonhosted.org/packages/87/45/19c4f5670ff0bda3207e82d8f71e7dc7a14477d58fa270bf5bb036598a0b/dgh-0.0.5.tar.gz
+[2023-05-07 18:57:21] INFO root fetch - processPackages [neumann]: Downloading https://files.pythonhosted.org/packages/75/4a/e54919dd9cd1e5f255721306d30b7c2cb89296cfdbda096764b6d1b03633/neumann-1.0.5.tar.gz
+[2023-05-07 18:57:21] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-07 18:57:21] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230507/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 18:57:21] ERROR root fetch - processPackages [mkdocstrings-python]: Diffoscope failed: Error: error creating container storage: the container name "frosty_franklin" is already in use by "ec08b70a7cd92f0dc0d3e380c318e0301b777c2f59746def7274ad73c45bd435". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-07 18:57:21] INFO root fetch - processPackages [sportsdataverse]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 18:57:21] INFO root fetch - processPackages [mkdocstrings-python]: Start processing: moneycarlo
+[2023-05-07 18:57:21] INFO root fetch - main [MainThread]: End processing [mkdocstrings-python] error
+[2023-05-07 18:57:21] WARNING root fetch - processPackages [moneycarlo]: Skipping, unable to determine old version
+[2023-05-07 18:57:21] INFO root fetch - processPackages [moneycarlo]: Start processing: querytograph
+[2023-05-07 18:57:21] INFO root fetch - main [MainThread]: End processing [moneycarlo] error
+[2023-05-07 18:57:21] INFO root fetch - processPackages [dgh]: executing diffoscope
+[2023-05-07 18:57:21] INFO root fetch - processPackages [dgh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dgh-0.0.4.tar.gz tmp/dgh-0.0.5.tar.gz --markdown 20230507/d/dgh/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-07 18:57:21] WARNING root fetch - processPackages [querytograph]: Skipping, unable to determine old version
+[2023-05-07 18:57:21] INFO root fetch - main [MainThread]: End processing [querytograph] error
+[2023-05-07 18:57:21] INFO root fetch - processPackages [cluedin]: Downloading https://files.pythonhosted.org/packages/ea/dc/e39e8d1fede7aaed160bd1ef865aee3dc9b623e69c6700a4cdebeb0d896c/cluedin-0.2.0.tar.gz
+[2023-05-07 18:57:21] INFO root fetch - processPackages [teelebot]: Downloading https://files.pythonhosted.org/packages/5a/15/91c2b1b7f1eb19c5c60c63e7a3ea1f7c6c487b2e8f4cdfb1c7ca5d94988b/teelebot-2.0.3-py3-none-any.whl
+[2023-05-07 18:57:21] INFO root fetch - processPackages [anova-wifi]: executing diffoscope
+[2023-05-07 18:57:21] INFO root fetch - processPackages [anova-wifi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anova_wifi-0.8.0.tar.gz tmp/anova_wifi-0.9.0.tar.gz --markdown 20230507/a/anova-wifi/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-07 18:57:21] INFO root fetch - processPackages [cluedin]: executing diffoscope
+[2023-05-07 18:57:21] INFO root fetch - processPackages [cluedin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluedin-0.1.1.tar.gz tmp/cluedin-0.2.0.tar.gz --markdown 20230507/c/cluedin/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 18:57:21] INFO root fetch - processPackages [teelebot]: executing diffoscope
+[2023-05-07 18:57:21] INFO root fetch - processPackages [teelebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teelebot-2.0.2-py3-none-any.whl.zip tmp/teelebot-2.0.3-py3-none-any.whl.zip --markdown 20230507/t/teelebot/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-07 18:57:21] INFO root fetch - processPackages [sportsdataverse]: Downloading https://files.pythonhosted.org/packages/b7/a6/4fb2d1b69ec20bce975badef81c3ae412184ae6d6ec460482099435b3d65/sportsdataverse-0.0.8.tar.gz
+[2023-05-07 18:57:21] INFO root fetch - processPackages [fabsync]: Downloading https://files.pythonhosted.org/packages/e4/90/8e3087e43e9eaabf33e49f785a08effb2d1426b06b632604f11b2dd124e8/fabsync-1.1.0.tar.gz
+[2023-05-07 18:57:21] INFO root fetch - processPackages [pylovelace]: Downloading https://files.pythonhosted.org/packages/bc/5b/35700609a00bbe949d2ed9686da99fbcf0ecd281c1a2ea926df23784103c/pylovelace-2023.2.0-py3-none-any.whl
+[2023-05-07 18:57:22] INFO root fetch - processPackages [fabsync]: executing diffoscope
+[2023-05-07 18:57:22] INFO root fetch - processPackages [fabsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabsync-1.0.0.tar.gz tmp/fabsync-1.1.0.tar.gz --markdown 20230507/f/fabsync/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-07 18:57:22] INFO root fetch - processPackages [pylovelace]: executing diffoscope
+[2023-05-07 18:57:22] INFO root fetch - processPackages [pylovelace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylovelace-2023.1.5-py3-none-any.whl.zip tmp/pylovelace-2023.2.0-py3-none-any.whl.zip --markdown 20230507/p/pylovelace/2023.1.5-2023.2.0/diff.md --exclude *.pyd
+[2023-05-07 18:57:22] INFO root fetch - processPackages [neumann]: Downloading https://files.pythonhosted.org/packages/b4/d8/1474f6d5a061560153d10dcba3df562fd2c23028d012ba20fdb1b47a6082/neumann-1.0.6.tar.gz
+[2023-05-07 18:57:22] INFO root fetch - processPackages [neumann]: executing diffoscope
+[2023-05-07 18:57:22] INFO root fetch - processPackages [neumann]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neumann-1.0.5.tar.gz tmp/neumann-1.0.6.tar.gz --markdown 20230507/n/neumann/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-07 18:57:22] INFO root fetch - processPackages [sportsdataverse]: Downloading https://files.pythonhosted.org/packages/de/f2/c6810712b6fcc76f60c32c29f5d67f940b1850ecc5fb55736a89499149af/sportsdataverse-0.0.9.tar.gz
+[2023-05-07 18:57:22] INFO root fetch - processPackages [sportsdataverse]: executing diffoscope
+[2023-05-07 18:57:22] INFO root fetch - processPackages [sportsdataverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sportsdataverse-0.0.8.tar.gz tmp/sportsdataverse-0.0.9.tar.gz --markdown 20230507/s/sportsdataverse/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 18:57:23] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-07 18:57:23] INFO root fetch - main [MainThread]: End processing [dgh]: success
+[2023-05-07 18:57:23] INFO root fetch - main [MainThread]: End processing [cluedin]: success
+[2023-05-07 18:57:23] INFO root fetch - main [MainThread]: End processing [anova-wifi]: success
+[2023-05-07 18:57:23] INFO root fetch - main [MainThread]: End processing [teelebot]: success
+[2023-05-07 18:57:23] INFO root fetch - main [MainThread]: End processing [pylovelace]: success
+[2023-05-07 18:57:23] INFO root fetch - main [MainThread]: End processing [fabsync]: success
+[2023-05-07 18:57:23] INFO root fetch - main [MainThread]: End processing [neumann]: success
+[2023-05-07 18:57:23] INFO root fetch - main [MainThread]: End processing [sportsdataverse]: success
+[2023-05-07 18:57:23] INFO root fetch - main [MainThread]: Store serial: [18008398]
