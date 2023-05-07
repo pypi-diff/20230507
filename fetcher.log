@@ -2937,3 +2937,36 @@
 [2023-05-07 07:06:34] INFO root fetch - main [MainThread]: End processing [hikari-bot]: success
 [2023-05-07 07:06:35] INFO root fetch - main [MainThread]: End processing [badi-users]: success
 [2023-05-07 07:06:35] INFO root fetch - main [MainThread]: Store serial: [18004234]
+[2023-05-07 07:11:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004234]
+[2023-05-07 07:11:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 07:11:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multi-model-server
+[2023-05-07 07:11:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapid-pe
+[2023-05-07 07:11:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tflite-model-maker-nightly
+[2023-05-07 07:11:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: silobuster
+[2023-05-07 07:11:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autoxx
+[2023-05-07 07:11:43] INFO root fetch - processPackages [autoxx]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 07:11:43] INFO root fetch - processPackages [silobuster]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-07 07:11:43] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202305060508] Old Version: [0.4.3.dev202305050508]
+[2023-05-07 07:11:43] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230507] Old Version: [0.1.1.dev20230506]
+[2023-05-07 07:11:44] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230507] Old Version: [1.1.8b20230506]
+[2023-05-07 07:11:44] INFO root fetch - processPackages [autoxx]: Downloading https://files.pythonhosted.org/packages/d4/07/c7e4a5a4ef7e0385334ad57d89f57c20ac6581c27b1490ac8ca1ff15528a/autoxx-0.0.8.tar.gz
+[2023-05-07 07:11:44] INFO root fetch - processPackages [silobuster]: Downloading https://files.pythonhosted.org/packages/31/3c/06ca7533a4fd47d533326680c9ee29f4b8a6661d775d55e3bc6f511327e3/silobuster-0.1.7.tar.gz
+[2023-05-07 07:11:44] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/ee/2b/c04e3dbbe7863150cb0d324869e0dff5ae0e229cf8ddec49cdbf6867132a/rapid_pe-0.1.1.dev20230507.tar.gz
+[2023-05-07 07:11:44] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/ee/84/ffb10b0c80d74f8b3d96a8f18401a3128a390e763db667f6b5682f608ea4/tflite-model-maker-nightly-0.4.3.dev202305060508.tar.gz
+[2023-05-07 07:11:44] INFO root fetch - processPackages [autoxx]: executing diffoscope
+[2023-05-07 07:11:44] INFO root fetch - processPackages [autoxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoxx-0.0.7.tar.gz tmp/autoxx-0.0.8.tar.gz --markdown 20230507/a/autoxx/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 07:11:44] INFO root fetch - processPackages [silobuster]: executing diffoscope
+[2023-05-07 07:11:44] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-0.1.6.tar.gz tmp/silobuster-0.1.7.tar.gz --markdown 20230507/s/silobuster/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-07 07:11:44] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-05-07 07:11:44] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202305050508.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202305060508.tar.gz --markdown 20230507/t/tflite-model-maker-nightly/0.4.3.dev202305050508-0.4.3.dev202305060508/diff.md --exclude *.pyd
+[2023-05-07 07:11:44] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/d6/fe/88b9a84a00a56d28b921a4c74b8ca80c30ea78da9c665f74ecfaa315452a/multi_model_server-1.1.8b20230507-py2.py3-none-any.whl
+[2023-05-07 07:11:44] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-05-07 07:11:44] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230506.tar.gz tmp/rapid_pe-0.1.1.dev20230507.tar.gz --markdown 20230507/r/rapid-pe/0.1.1.dev20230506-0.1.1.dev20230507/diff.md --exclude *.pyd
+[2023-05-07 07:11:44] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-05-07 07:11:44] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230506-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230507-py2.py3-none-any.whl.zip --markdown 20230507/m/multi-model-server/1.1.8b20230506-1.1.8b20230507/diff.md --exclude *.pyd
+[2023-05-07 07:11:45] INFO root fetch - main [MainThread]: End processing [silobuster]: success
+[2023-05-07 07:11:45] INFO root fetch - main [MainThread]: End processing [autoxx]: success
+[2023-05-07 07:11:45] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-05-07 07:11:47] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-05-07 07:14:35] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-05-07 07:14:35] INFO root fetch - main [MainThread]: Store serial: [18004254]
