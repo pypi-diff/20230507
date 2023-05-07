@@ -3821,3 +3821,22 @@
 [2023-05-07 09:24:35] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
 [2023-05-07 09:24:35] INFO root fetch - main [MainThread]: End processing [silobuster]: success
 [2023-05-07 09:24:35] INFO root fetch - main [MainThread]: Store serial: [18004845]
+[2023-05-07 09:29:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004845]
+[2023-05-07 09:29:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 09:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfmc
+[2023-05-07 09:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modular-rl
+[2023-05-07 09:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: emp-scribe
+[2023-05-07 09:29:43] INFO root fetch - processPackages [modular-rl]: New version: [0.2.0] Old Version: [0.1.3a0]
+[2023-05-07 09:29:43] INFO root fetch - processPackages [pyfmc]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 09:29:43] WARNING root fetch - processPackages [emp-scribe]: Skipping, unable to determine old version
+[2023-05-07 09:29:43] INFO root fetch - main [MainThread]: End processing [emp-scribe] error
+[2023-05-07 09:29:44] INFO root fetch - processPackages [pyfmc]: Downloading https://files.pythonhosted.org/packages/be/1b/2ddbab68c000362f2001ec0f71c6958af869f5ac471da5456e90aacd36f5/pyfmc-0.0.2.tar.gz
+[2023-05-07 09:29:44] INFO root fetch - processPackages [modular-rl]: Downloading https://files.pythonhosted.org/packages/f2/17/6238283e2953b12e8d416349c8683387e2cb95b53a288606aa9ba464367c/modular_rl-0.2.0.tar.gz
+[2023-05-07 09:29:44] INFO root fetch - processPackages [modular-rl]: executing diffoscope
+[2023-05-07 09:29:44] INFO root fetch - processPackages [modular-rl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modular_rl-0.1.3a0.tar.gz tmp/modular_rl-0.2.0.tar.gz --markdown 20230507/m/modular-rl/0.1.3a0-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 09:29:44] INFO root fetch - processPackages [pyfmc]: Downloading https://files.pythonhosted.org/packages/28/86/1e59949b8ae91bdec50608d3edcbd4f60c664f66cb5c21889165fa66fbfd/pyfmc-0.0.3.tar.gz
+[2023-05-07 09:29:44] INFO root fetch - processPackages [pyfmc]: executing diffoscope
+[2023-05-07 09:29:44] INFO root fetch - processPackages [pyfmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfmc-0.0.2.tar.gz tmp/pyfmc-0.0.3.tar.gz --markdown 20230507/p/pyfmc/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 09:29:45] INFO root fetch - main [MainThread]: End processing [modular-rl]: success
+[2023-05-07 09:29:45] INFO root fetch - main [MainThread]: End processing [pyfmc]: success
+[2023-05-07 09:29:45] INFO root fetch - main [MainThread]: Store serial: [18004854]
