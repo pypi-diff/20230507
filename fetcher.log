@@ -2853,3 +2853,32 @@
 [2023-05-07 06:51:02] INFO root fetch - main [MainThread]: End processing [project-lighter]: success
 [2023-05-07 06:51:02] INFO root fetch - main [MainThread]: End processing [reactpy-django]: success
 [2023-05-07 06:51:02] INFO root fetch - main [MainThread]: Store serial: [18004170]
+[2023-05-07 06:56:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004170]
+[2023-05-07 06:56:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 06:56:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: silobuster
+[2023-05-07 06:56:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: isyflask-cli
+[2023-05-07 06:56:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gsearch-nyaa
+[2023-05-07 06:56:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autoxx
+[2023-05-07 06:56:11] INFO root fetch - processPackages [gsearch-nyaa]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-07 06:56:11] INFO root fetch - processPackages [isyflask-cli]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-07 06:56:11] INFO root fetch - processPackages [autoxx]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 06:56:11] INFO root fetch - processPackages [silobuster]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-07 06:56:11] INFO root fetch - processPackages [gsearch-nyaa]: Downloading https://files.pythonhosted.org/packages/a9/eb/da51743a55965ba5835788acf80511b9f9ff8d93ab07dc4d2a7a28c8e027/gsearch-nyaa-0.1.4.tar.gz
+[2023-05-07 06:56:11] INFO root fetch - processPackages [isyflask-cli]: Downloading https://files.pythonhosted.org/packages/53/7d/2931ae5d3887a98589d6fdd61f525eb013a8696c26fe499881cc153aa396/isyflask_cli-0.1.7.tar.gz
+[2023-05-07 06:56:11] INFO root fetch - processPackages [silobuster]: Downloading https://files.pythonhosted.org/packages/d0/c0/6dba61c0a7fb7bd320b9771ebc7abac31077dc4c51dd221375bd84479d03/silobuster-0.1.5.tar.gz
+[2023-05-07 06:56:11] INFO root fetch - processPackages [autoxx]: Downloading https://files.pythonhosted.org/packages/4c/da/c216ecbc9c8010cacb090fb5a05a28ebcdc401d64c264b21b089e625dd20/autoxx-0.0.7.tar.gz
+[2023-05-07 06:56:11] INFO root fetch - processPackages [silobuster]: executing diffoscope
+[2023-05-07 06:56:11] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-0.1.4.tar.gz tmp/silobuster-0.1.5.tar.gz --markdown 20230507/s/silobuster/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-07 06:56:11] INFO root fetch - processPackages [autoxx]: executing diffoscope
+[2023-05-07 06:56:11] INFO root fetch - processPackages [autoxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoxx-0.0.6.tar.gz tmp/autoxx-0.0.7.tar.gz --markdown 20230507/a/autoxx/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 06:56:11] INFO root fetch - processPackages [gsearch-nyaa]: Downloading https://files.pythonhosted.org/packages/39/67/bdce72d3b9e15e5984881eb489960c67479c7a9c877bbe5e0ba6a45e47a8/gsearch-nyaa-0.1.5.tar.gz
+[2023-05-07 06:56:11] INFO root fetch - processPackages [isyflask-cli]: Downloading https://files.pythonhosted.org/packages/63/8d/3c68c0b44f061a594806d2a4600c8685b95c80cd1affb77d7767bb51ee1b/isyflask_cli-0.1.8.tar.gz
+[2023-05-07 06:56:11] INFO root fetch - processPackages [gsearch-nyaa]: executing diffoscope
+[2023-05-07 06:56:11] INFO root fetch - processPackages [gsearch-nyaa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gsearch-nyaa-0.1.4.tar.gz tmp/gsearch-nyaa-0.1.5.tar.gz --markdown 20230507/g/gsearch-nyaa/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-07 06:56:11] INFO root fetch - processPackages [isyflask-cli]: executing diffoscope
+[2023-05-07 06:56:11] INFO root fetch - processPackages [isyflask-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isyflask_cli-0.1.7.tar.gz tmp/isyflask_cli-0.1.8.tar.gz --markdown 20230507/i/isyflask-cli/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-07 06:56:12] INFO root fetch - main [MainThread]: End processing [silobuster]: success
+[2023-05-07 06:56:12] INFO root fetch - main [MainThread]: End processing [autoxx]: success
+[2023-05-07 06:56:12] INFO root fetch - main [MainThread]: End processing [gsearch-nyaa]: success
+[2023-05-07 06:56:12] INFO root fetch - main [MainThread]: End processing [isyflask-cli]: success
+[2023-05-07 06:56:12] INFO root fetch - main [MainThread]: Store serial: [18004181]
