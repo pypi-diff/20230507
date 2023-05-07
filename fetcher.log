@@ -9324,3 +9324,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 18:57:23] INFO root fetch - main [MainThread]: End processing [neumann]: success
 [2023-05-07 18:57:23] INFO root fetch - main [MainThread]: End processing [sportsdataverse]: success
 [2023-05-07 18:57:23] INFO root fetch - main [MainThread]: Store serial: [18008398]
+[2023-05-07 19:02:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008398]
+[2023-05-07 19:02:32] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 19:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sidetrek
+[2023-05-07 19:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: searchbook
+[2023-05-07 19:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mplcyberpunk
+[2023-05-07 19:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-pystack
+[2023-05-07 19:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nspawn
+[2023-05-07 19:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dcentralab-qa-infra-automation
+[2023-05-07 19:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vmn
+[2023-05-07 19:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo13-addon-stock-deferred-assign
+[2023-05-07 19:02:32] WARNING root fetch - processPackages [pytest-pystack]: Skipping, unable to determine old version
+[2023-05-07 19:02:32] INFO root fetch - main [MainThread]: End processing [pytest-pystack] error
+[2023-05-07 19:02:32] WARNING root fetch - processPackages [nspawn]: Skipping, unable to determine old version
+[2023-05-07 19:02:32] INFO root fetch - main [MainThread]: End processing [nspawn] error
+[2023-05-07 19:02:32] INFO root fetch - processPackages [vmn]: New version: [0.8.3] Old Version: [0.8.2rc1]
+[2023-05-07 19:02:32] WARNING root fetch - processPackages [searchbook]: Skipping, unable to determine old version
+[2023-05-07 19:02:32] INFO root fetch - main [MainThread]: End processing [searchbook] error
+[2023-05-07 19:02:32] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 19:02:32] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-07 19:02:32] WARNING root fetch - processPackages [odoo13-addon-stock-deferred-assign]: Skipping, unable to determine old version
+[2023-05-07 19:02:32] INFO root fetch - processPackages [mplcyberpunk]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-07 19:02:32] INFO root fetch - main [MainThread]: End processing [odoo13-addon-stock-deferred-assign] error
+[2023-05-07 19:02:32] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-07 19:02:32] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230507/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 19:02:32] INFO root fetch - processPackages [vmn]: Downloading https://files.pythonhosted.org/packages/71/06/dc263d1441b745fde92657ca66fb69ac558d420432619a1461b8d2f017be/vmn-0.8.2rc1-py3-none-any.whl
+[2023-05-07 19:02:32] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: Downloading https://files.pythonhosted.org/packages/9c/26/fd41186bdc7e1b49bf2257a7345efa8972e87729d7b3b3ccb946ebeae3ab/dcentralab_qa_infra_automation-0.1.5.tar.gz
+[2023-05-07 19:02:32] INFO root fetch - processPackages [mplcyberpunk]: Downloading https://files.pythonhosted.org/packages/21/90/5db12a657a90cfc25d58017d72e088f47f836ba90ea8acb90135c0983e3c/mplcyberpunk-0.6.0-py3-none-any.whl
+[2023-05-07 19:02:33] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: Downloading https://files.pythonhosted.org/packages/d4/3d/172e85b7460c41bb2f3d7ce3f15168566d1f2468d71ec07f257584a9da49/dcentralab_qa_infra_automation-0.1.6.tar.gz
+[2023-05-07 19:02:33] INFO root fetch - processPackages [vmn]: Downloading https://files.pythonhosted.org/packages/01/26/a8ca1c0ec2745ac3112c7874b3491190b4302b7267b1baa896c7d05c2d00/vmn-0.8.3-py3-none-any.whl
+[2023-05-07 19:02:33] INFO root fetch - processPackages [mplcyberpunk]: Downloading https://files.pythonhosted.org/packages/9c/61/ea54b1a5a2bc982df7720314ed5e65d9f273c1ac71e033fd79c266895e33/mplcyberpunk-0.7.0.tar.gz
+[2023-05-07 19:02:33] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: executing diffoscope
+[2023-05-07 19:02:33] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcentralab_qa_infra_automation-0.1.5.tar.gz tmp/dcentralab_qa_infra_automation-0.1.6.tar.gz --markdown 20230507/d/dcentralab-qa-infra-automation/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-07 19:02:33] INFO root fetch - processPackages [vmn]: executing diffoscope
+[2023-05-07 19:02:33] INFO root fetch - processPackages [vmn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmn-0.8.2rc1-py3-none-any.whl.zip tmp/vmn-0.8.3-py3-none-any.whl.zip --markdown 20230507/v/vmn/0.8.2rc1-0.8.3/diff.md --exclude *.pyd
+[2023-05-07 19:02:33] INFO root fetch - processPackages [mplcyberpunk]: executing diffoscope
+[2023-05-07 19:02:33] INFO root fetch - processPackages [mplcyberpunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mplcyberpunk-0.6.0-py3-none-any.whl.zip tmp/mplcyberpunk-0.7.0.tar.gz --markdown 20230507/m/mplcyberpunk/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-07 19:02:33] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-07 19:02:34] INFO root fetch - main [MainThread]: End processing [mplcyberpunk]: success
+[2023-05-07 19:02:34] INFO root fetch - main [MainThread]: End processing [vmn]: success
+[2023-05-07 19:02:34] INFO root fetch - main [MainThread]: End processing [dcentralab-qa-infra-automation]: success
+[2023-05-07 19:02:34] INFO root fetch - main [MainThread]: Store serial: [18008429]
