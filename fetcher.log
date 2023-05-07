@@ -10299,3 +10299,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 20:46:53] INFO root fetch - main [MainThread]: End processing [tsx]: success
 [2023-05-07 20:46:53] INFO root fetch - main [MainThread]: End processing [zkt]: success
 [2023-05-07 20:46:53] INFO root fetch - main [MainThread]: Store serial: [18008961]
+[2023-05-07 20:51:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008961]
+[2023-05-07 20:52:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 20:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: conding
+[2023-05-07 20:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: miniaudio
+[2023-05-07 20:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytorch-toolbelt
+[2023-05-07 20:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: circleinfo
+[2023-05-07 20:52:02] INFO root fetch - processPackages [conding]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 20:52:02] INFO root fetch - processPackages [pytorch-toolbelt]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-05-07 20:52:02] WARNING root fetch - processPackages [circleinfo]: Skipping, unable to determine old version
+[2023-05-07 20:52:02] INFO root fetch - main [MainThread]: End processing [circleinfo] error
+[2023-05-07 20:52:02] INFO root fetch - processPackages [miniaudio]: New version: [1.9] Old Version: [1.8]
+[2023-05-07 20:52:02] INFO root fetch - processPackages [pytorch-toolbelt]: Downloading https://files.pythonhosted.org/packages/15/95/3a1f4144102979caf09c6770ee688def4c9eb30043390ab22cfb28de60a6/pytorch_toolbelt-0.6.2.tar.gz
+[2023-05-07 20:52:02] INFO root fetch - processPackages [conding]: executing diffoscope
+[2023-05-07 20:52:02] INFO root fetch - processPackages [conding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conding-0.1.0.tar.gz tmp/conding-0.1.1.tar.gz --markdown 20230507/c/conding/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 20:52:02] INFO root fetch - processPackages [miniaudio]: Downloading https://files.pythonhosted.org/packages/e6/92/5768230a926eef1f266c5489e73990d9e0a35f37deb35cc41b456eeff7b7/miniaudio-1.8.tar.gz
+[2023-05-07 20:52:03] INFO root fetch - processPackages [pytorch-toolbelt]: Downloading https://files.pythonhosted.org/packages/3c/ac/4855d346767245802e533550a72ee9944542c298afe75aacbea3ce504ca3/pytorch_toolbelt-0.6.3.tar.gz
+[2023-05-07 20:52:03] INFO root fetch - processPackages [pytorch-toolbelt]: executing diffoscope
+[2023-05-07 20:52:03] INFO root fetch - processPackages [pytorch-toolbelt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch_toolbelt-0.6.2.tar.gz tmp/pytorch_toolbelt-0.6.3.tar.gz --markdown 20230507/p/pytorch-toolbelt/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-05-07 20:52:03] INFO root fetch - processPackages [miniaudio]: Downloading https://files.pythonhosted.org/packages/63/44/a6bc09539db27638d84c2dda4f17dbcf3894f12a05d07b5208d2cc4c2568/miniaudio-1.9.tar.gz
+[2023-05-07 20:52:03] INFO root fetch - main [MainThread]: End processing [conding]: success
+[2023-05-07 20:52:04] INFO root fetch - processPackages [miniaudio]: executing diffoscope
+[2023-05-07 20:52:04] INFO root fetch - processPackages [miniaudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miniaudio-1.8.tar.gz tmp/miniaudio-1.9.tar.gz --markdown 20230507/m/miniaudio/1.8-1.9/diff.md --exclude *.pyd
+[2023-05-07 20:52:05] INFO root fetch - main [MainThread]: End processing [pytorch-toolbelt]: success
+[2023-05-07 20:52:06] INFO root fetch - main [MainThread]: End processing [miniaudio]: success
+[2023-05-07 20:52:06] INFO root fetch - main [MainThread]: Store serial: [18009010]
