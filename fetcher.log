@@ -5688,3 +5688,47 @@
 [2023-05-07 13:03:39] INFO root fetch - main [MainThread]: End processing [trubrics]: success
 [2023-05-07 13:04:07] INFO root fetch - main [MainThread]: End processing [descope]: success
 [2023-05-07 13:04:07] INFO root fetch - main [MainThread]: Store serial: [18006163]
+[2023-05-07 13:09:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006163]
+[2023-05-07 13:09:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 13:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: playgroundrl
+[2023-05-07 13:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alns
+[2023-05-07 13:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: darwinpyspark
+[2023-05-07 13:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sndfileio
+[2023-05-07 13:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pkglog
+[2023-05-07 13:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: maturin
+[2023-05-07 13:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: razel
+[2023-05-07 13:09:16] INFO root fetch - processPackages [playgroundrl]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 13:09:16] INFO root fetch - processPackages [maturin]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-05-07 13:09:16] INFO root fetch - processPackages [sndfileio]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-07 13:09:16] INFO root fetch - processPackages [pkglog]: New version: [1.9] Old Version: [1.8]
+[2023-05-07 13:09:17] WARNING root fetch - processPackages [darwinpyspark]: Skipping, unable to determine old version
+[2023-05-07 13:09:17] INFO root fetch - main [MainThread]: End processing [darwinpyspark] error
+[2023-05-07 13:09:17] INFO root fetch - processPackages [alns]: New version: [5.1.0] Old Version: [5.0.4]
+[2023-05-07 13:09:17] INFO root fetch - processPackages [razel]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-07 13:09:17] INFO root fetch - processPackages [maturin]: executing diffoscope
+[2023-05-07 13:09:17] INFO root fetch - processPackages [maturin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maturin-1.0.0b8.tar.gz tmp/maturin-1.0.0b9.tar.gz --markdown 20230507/m/maturin/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-05-07 13:09:17] INFO root fetch - processPackages [sndfileio]: Downloading https://files.pythonhosted.org/packages/5f/18/114be1b87356bf61a7bbfef55746dec68883d7df4e1bf1d16f0808fefc56/sndfileio-1.9.0.tar.gz
+[2023-05-07 13:09:17] INFO root fetch - processPackages [pkglog]: Downloading https://files.pythonhosted.org/packages/b1/6e/bf9b5bb041dd77abaf3c3d2af4d51b3f0d34611a1e6469674784fa7c6a55/pkglog-1.8.tar.gz
+[2023-05-07 13:09:17] INFO root fetch - processPackages [alns]: Downloading https://files.pythonhosted.org/packages/07/d8/7573ee02d8d3997b7746a15643585f1f9bf04cd6e1f4be6d95f37c2aa09b/alns-5.0.4.tar.gz
+[2023-05-07 13:09:17] INFO root fetch - processPackages [playgroundrl]: executing diffoscope
+[2023-05-07 13:09:17] INFO root fetch - processPackages [playgroundrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playgroundrl-0.0.7.tar.gz tmp/playgroundrl-0.0.8.tar.gz --markdown 20230507/p/playgroundrl/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 13:09:17] INFO root fetch - processPackages [razel]: Downloading https://files.pythonhosted.org/packages/14/57/f08ebe766decd0a7af682e0fa5912f4dbadafed10a87b3064c80fae3b458/razel-0.1.6.tar.gz
+[2023-05-07 13:09:17] INFO root fetch - processPackages [sndfileio]: Downloading https://files.pythonhosted.org/packages/21/d9/6987d81e5d8034af478b54e486b446f61f67656e8565efe77ebaf7baa04b/sndfileio-1.9.1.tar.gz
+[2023-05-07 13:09:17] INFO root fetch - processPackages [alns]: Downloading https://files.pythonhosted.org/packages/63/e8/8ff769b610f8e38588513fac71842e2a3603c682b0c30636fd40322bac22/alns-5.1.0.tar.gz
+[2023-05-07 13:09:17] INFO root fetch - processPackages [pkglog]: Downloading https://files.pythonhosted.org/packages/13/f4/c1b17ccae3c8e359ca72e37b10fa544b6c5754902de435d0b61b4ac24580/pkglog-1.9.tar.gz
+[2023-05-07 13:09:17] INFO root fetch - processPackages [pkglog]: executing diffoscope
+[2023-05-07 13:09:17] INFO root fetch - processPackages [pkglog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkglog-1.8.tar.gz tmp/pkglog-1.9.tar.gz --markdown 20230507/p/pkglog/1.8-1.9/diff.md --exclude *.pyd
+[2023-05-07 13:09:17] INFO root fetch - processPackages [razel]: Downloading https://files.pythonhosted.org/packages/69/e8/69e9a892b1f3aab710cfa482402e4f245ad9e30a750c42eadb3a5e0871e1/razel-0.1.7.tar.gz
+[2023-05-07 13:09:17] INFO root fetch - processPackages [sndfileio]: executing diffoscope
+[2023-05-07 13:09:17] INFO root fetch - processPackages [sndfileio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sndfileio-1.9.0.tar.gz tmp/sndfileio-1.9.1.tar.gz --markdown 20230507/s/sndfileio/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-07 13:09:17] INFO root fetch - processPackages [alns]: executing diffoscope
+[2023-05-07 13:09:17] INFO root fetch - processPackages [alns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alns-5.0.4.tar.gz tmp/alns-5.1.0.tar.gz --markdown 20230507/a/alns/5.0.4-5.1.0/diff.md --exclude *.pyd
+[2023-05-07 13:09:17] INFO root fetch - processPackages [razel]: executing diffoscope
+[2023-05-07 13:09:17] INFO root fetch - processPackages [razel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/razel-0.1.6.tar.gz tmp/razel-0.1.7.tar.gz --markdown 20230507/r/razel/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-07 13:09:18] INFO root fetch - main [MainThread]: End processing [playgroundrl]: success
+[2023-05-07 13:09:18] INFO root fetch - main [MainThread]: End processing [pkglog]: success
+[2023-05-07 13:09:18] INFO root fetch - main [MainThread]: End processing [sndfileio]: success
+[2023-05-07 13:09:18] INFO root fetch - main [MainThread]: End processing [razel]: success
+[2023-05-07 13:09:18] INFO root fetch - main [MainThread]: End processing [maturin]: success
+[2023-05-07 13:09:19] INFO root fetch - main [MainThread]: End processing [alns]: success
+[2023-05-07 13:09:19] INFO root fetch - main [MainThread]: Store serial: [18006196]
