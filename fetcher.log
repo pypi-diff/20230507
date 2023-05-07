@@ -3840,3 +3840,38 @@
 [2023-05-07 09:29:45] INFO root fetch - main [MainThread]: End processing [modular-rl]: success
 [2023-05-07 09:29:45] INFO root fetch - main [MainThread]: End processing [pyfmc]: success
 [2023-05-07 09:29:45] INFO root fetch - main [MainThread]: Store serial: [18004854]
+[2023-05-07 09:34:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004854]
+[2023-05-07 09:34:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 09:34:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: os-aaron-alphabet
+[2023-05-07 09:34:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certifi
+[2023-05-07 09:34:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llama-cpp-python
+[2023-05-07 09:34:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: silobuster
+[2023-05-07 09:34:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: isedit
+[2023-05-07 09:34:54] INFO root fetch - processPackages [os-aaron-alphabet]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 09:34:54] INFO root fetch - processPackages [silobuster]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-07 09:34:54] INFO root fetch - processPackages [certifi]: New version: [2023.5.7] Old Version: [2022.9.24]
+[2023-05-07 09:34:54] INFO root fetch - processPackages [llama-cpp-python]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 09:34:54] INFO root fetch - processPackages [isedit]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-07 09:34:54] INFO root fetch - processPackages [os-aaron-alphabet]: Downloading https://files.pythonhosted.org/packages/54/74/05b612d23960898315c7b85c124a5805079be8fa293cc4edf57c3b329355/os-aaron-alphabet-0.0.1.tar.gz
+[2023-05-07 09:34:54] INFO root fetch - processPackages [certifi]: Downloading https://files.pythonhosted.org/packages/cb/a4/7de7cd59e429bd0ee6521ba58a75adaec136d32f91a761b28a11d8088d44/certifi-2022.9.24.tar.gz
+[2023-05-07 09:34:54] INFO root fetch - processPackages [silobuster]: Downloading https://files.pythonhosted.org/packages/93/9a/5702d6640dddf56ab583715872081025e41c56e1bc17c66574f366416a1b/silobuster-1.0.3.tar.gz
+[2023-05-07 09:34:54] INFO root fetch - processPackages [isedit]: Downloading https://files.pythonhosted.org/packages/f6/65/46ae998d43225637fadb0967fd84aa8652e8d1802c3d5c7ebe18032ead92/isedit-0.2.0.tar.gz
+[2023-05-07 09:34:54] INFO root fetch - processPackages [certifi]: Downloading https://files.pythonhosted.org/packages/93/71/752f7a4dd4c20d6b12341ed1732368546bc0ca9866139fe812f6009d9ac7/certifi-2023.5.7.tar.gz
+[2023-05-07 09:34:54] INFO root fetch - processPackages [silobuster]: executing diffoscope
+[2023-05-07 09:34:54] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-1.0.2.tar.gz tmp/silobuster-1.0.3.tar.gz --markdown 20230507/s/silobuster/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-07 09:34:54] INFO root fetch - processPackages [os-aaron-alphabet]: Downloading https://files.pythonhosted.org/packages/7d/1f/0b4f80927331bbeafd42ec8e33a653890a2552b0823020f0ccca308f1129/os-aaron-alphabet-0.0.2.tar.gz
+[2023-05-07 09:34:54] INFO root fetch - processPackages [llama-cpp-python]: executing diffoscope
+[2023-05-07 09:34:54] INFO root fetch - processPackages [llama-cpp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_python-0.1.8.tar.gz tmp/llama_cpp_python-0.1.9.tar.gz --markdown 20230507/l/llama-cpp-python/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 09:34:54] INFO root fetch - processPackages [certifi]: executing diffoscope
+[2023-05-07 09:34:54] INFO root fetch - processPackages [certifi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/certifi-2022.9.24.tar.gz tmp/certifi-2023.5.7.tar.gz --markdown 20230507/c/certifi/2022.9.24-2023.5.7/diff.md --exclude *.pyd
+[2023-05-07 09:34:54] INFO root fetch - processPackages [os-aaron-alphabet]: executing diffoscope
+[2023-05-07 09:34:54] INFO root fetch - processPackages [os-aaron-alphabet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os-aaron-alphabet-0.0.1.tar.gz tmp/os-aaron-alphabet-0.0.2.tar.gz --markdown 20230507/o/os-aaron-alphabet/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 09:34:54] INFO root fetch - processPackages [isedit]: Downloading https://files.pythonhosted.org/packages/b3/fc/2525b10a0d1b513303518d40efd7f07f231127cf2775ee4c558bb5560c55/isedit-0.3.0.tar.gz
+[2023-05-07 09:34:55] INFO root fetch - main [MainThread]: End processing [os-aaron-alphabet]: success
+[2023-05-07 09:34:55] INFO root fetch - main [MainThread]: End processing [certifi]: success
+[2023-05-07 09:34:55] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
+[2023-05-07 09:34:56] INFO root fetch - processPackages [isedit]: executing diffoscope
+[2023-05-07 09:34:56] INFO root fetch - processPackages [isedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isedit-0.2.0.tar.gz tmp/isedit-0.3.0.tar.gz --markdown 20230507/i/isedit/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-07 09:34:56] INFO root fetch - main [MainThread]: End processing [silobuster]: success
+[2023-05-07 09:36:03] INFO root fetch - main [MainThread]: End processing [isedit]: success
+[2023-05-07 09:36:03] INFO root fetch - main [MainThread]: Store serial: [18004867]
