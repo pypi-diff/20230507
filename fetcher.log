@@ -5858,3 +5858,176 @@
 [2023-05-07 13:27:50] ERROR root fetch - processPackages [sage-conf]: Timeout during execution of pkgdiff
 [2023-05-07 13:27:50] INFO root fetch - main [MainThread]: End processing [sage-conf] error
 [2023-05-07 13:27:50] INFO root fetch - main [MainThread]: Store serial: [18006274]
+[2023-05-07 13:32:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006274]
+[2023-05-07 13:32:59] INFO root fetch - main [MainThread]: Found 27 changed packages
+[2023-05-07 13:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sage-conf
+[2023-05-07 13:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sage-docbuild
+[2023-05-07 13:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sage-setup
+[2023-05-07 13:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sage-sws2rst
+[2023-05-07 13:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sagemath-categories
+[2023-05-07 13:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sagemath-environment
+[2023-05-07 13:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sagemath-objects
+[2023-05-07 13:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sagemath-repl
+[2023-05-07 13:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sagemath-standard
+[2023-05-07 13:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nwebclient
+[2023-05-07 13:32:59] INFO root fetch - processPackages [sage-docbuild]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-07 13:32:59] INFO root fetch - processPackages [sage-conf]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-07 13:32:59] INFO root fetch - processPackages [sagemath-categories]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-07 13:32:59] INFO root fetch - processPackages [sage-sws2rst]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-07 13:32:59] INFO root fetch - processPackages [sage-setup]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-07 13:32:59] INFO root fetch - processPackages [sagemath-repl]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-07 13:32:59] INFO root fetch - processPackages [sagemath-environment]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-07 13:32:59] INFO root fetch - processPackages [nwebclient]: New version: [1.0.85] Old Version: [1.0.84]
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-standard]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-objects]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sage-docbuild]: Downloading https://files.pythonhosted.org/packages/68/e5/530ac4d218aa81bb055436ab8553554b883e0e460c773cbd530d7442463a/sage-docbuild-9.8b7.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [nwebclient]: Downloading https://files.pythonhosted.org/packages/a2/6f/870812ebba107c75d98a7e41a2fefae7b3fbc0fc5ec8f21f96b840bd5408/nwebclient-1.0.84.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-repl]: Downloading https://files.pythonhosted.org/packages/a4/e3/3abe6fb13b6aec05d433260a637c57426bc40016a26515ce1de2f6ccb547/sagemath-repl-9.8b7.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sage-sws2rst]: Downloading https://files.pythonhosted.org/packages/c7/9a/24d44916ef366f957e246ba99527efc0b4893673067aa991646a73886e88/sage-sws2rst-9.8b7.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sage-setup]: Downloading https://files.pythonhosted.org/packages/bb/16/bd3221dd969ef83cdb78698299f6e3cfa8be59d749daa81b4dc97f6d24ed/sage-setup-9.8b7.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-environment]: Downloading https://files.pythonhosted.org/packages/63/7d/1a322711621a03371daf041779f473d569145e98561ddd9039e79a30255e/sagemath-environment-9.8b7.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-categories]: Downloading https://files.pythonhosted.org/packages/91/fe/5b4220d8485b9b1ea1e00d27d4033da6b77ab9bb3d90f96c2b0f69915cd9/sagemath-categories-9.8b7.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-objects]: Downloading https://files.pythonhosted.org/packages/4c/41/42559ab77e0184ee4c3cc7719ba4348e5aa1307506fab7a306aa4a483214/sagemath-objects-9.8b7.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-standard]: Downloading https://files.pythonhosted.org/packages/ca/44/3341aa128d2058989dc35be67a94f004ad9873fc2cece58881abf81f3091/sagemath-standard-9.8b7.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sage-conf]: executing diffoscope
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sage-conf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-conf-9.8b7.tar.gz tmp/sage-conf-9.8rc0.tar.gz --markdown 20230507/s/sage-conf/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-07 13:33:00] WARNING root fetch - processPackages [sagemath-standard]: Skipping package: exceeds size limit 18194906>=10485760
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-standard]: Start processing: nkust-ucl-k12-bot
+[2023-05-07 13:33:00] INFO root fetch - main [MainThread]: End processing [sagemath-standard] error
+[2023-05-07 13:33:00] INFO root fetch - processPackages [nwebclient]: Downloading https://files.pythonhosted.org/packages/fe/90/773c425f153680df997561fbeb929d629e27003d30aadedee0166c9ea6a7/nwebclient-1.0.85.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [nkust-ucl-k12-bot]: New version: [2.8.2] Old Version: [2.8.1]
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sage-docbuild]: Downloading https://files.pythonhosted.org/packages/83/bc/944e941625ce0a283b49b178d1b3dc9b9c8af78512a7f2fd8ec2c617e1eb/sage-docbuild-9.8rc0.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-05-07 13:33:00] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.84.tar.gz tmp/nwebclient-1.0.85.tar.gz --markdown 20230507/n/nwebclient/1.0.84-1.0.85/diff.md --exclude *.pyd
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-environment]: Downloading https://files.pythonhosted.org/packages/25/81/ca7c2bcc4784c3075bcbf1849d48cee85027d56bdb107f8a0bf943b919ad/sagemath-environment-9.8rc0.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sage-setup]: Downloading https://files.pythonhosted.org/packages/aa/ea/ed314950f3374f03b1417e552a4f31d8618f2811e6eacf3fe3332268f07c/sage-setup-9.8rc0.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-repl]: Downloading https://files.pythonhosted.org/packages/fb/3c/6493d3c2a0f3a5c6276a510bac2fc348d682e8e826d3565dfc4f047ed8a2/sagemath-repl-9.8rc0.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-categories]: Downloading https://files.pythonhosted.org/packages/91/dd/0daa405ce2567bb39e004c123601d2ec55ede2bc549eb306d07ba35eb456/sagemath-categories-9.8rc0.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-objects]: Downloading https://files.pythonhosted.org/packages/3e/ec/de38e0fcc76454c395321b4d2989ffe5f56e6334e310d1d9c6ad53f991f4/sagemath-objects-9.8rc0.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sage-sws2rst]: Downloading https://files.pythonhosted.org/packages/e2/13/be8c4c1c6ddab4fd81239014b8596bd4a65576cb4ec8fd36b8295e719cd8/sage-sws2rst-9.8rc0.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Downloading https://files.pythonhosted.org/packages/83/da/e9fd35e7794e5740fb8000dacf5dc6fd9cc1fae67895b358a76c1c820fc1/nkust-ucl-k12-bot-2.8.1.tar.gz
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sage-docbuild]: executing diffoscope
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sage-docbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-docbuild-9.8b7.tar.gz tmp/sage-docbuild-9.8rc0.tar.gz --markdown 20230507/s/sage-docbuild/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-environment]: executing diffoscope
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-environment-9.8b7.tar.gz tmp/sagemath-environment-9.8rc0.tar.gz --markdown 20230507/s/sagemath-environment/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sage-setup]: executing diffoscope
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sage-setup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-setup-9.8b7.tar.gz tmp/sage-setup-9.8rc0.tar.gz --markdown 20230507/s/sage-setup/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-repl]: executing diffoscope
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-repl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-repl-9.8b7.tar.gz tmp/sagemath-repl-9.8rc0.tar.gz --markdown 20230507/s/sagemath-repl/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-categories]: executing diffoscope
+[2023-05-07 13:33:00] INFO root fetch - processPackages [sagemath-categories]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-categories-9.8b7.tar.gz tmp/sagemath-categories-9.8rc0.tar.gz --markdown 20230507/s/sagemath-categories/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-07 13:33:00] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Downloading https://files.pythonhosted.org/packages/48/69/8eaf785aa42415d21bb2dedc03a998d15ac3ecbeb0baf07a11494e914376/nkust-ucl-k12-bot-2.8.2.tar.gz
+[2023-05-07 13:33:01] INFO root fetch - processPackages [sage-sws2rst]: executing diffoscope
+[2023-05-07 13:33:01] INFO root fetch - processPackages [sage-sws2rst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-sws2rst-9.8b7.tar.gz tmp/sage-sws2rst-9.8rc0.tar.gz --markdown 20230507/s/sage-sws2rst/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-07 13:33:01] INFO root fetch - processPackages [sagemath-objects]: executing diffoscope
+[2023-05-07 13:33:01] INFO root fetch - processPackages [sagemath-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-objects-9.8b7.tar.gz tmp/sagemath-objects-9.8rc0.tar.gz --markdown 20230507/s/sagemath-objects/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-07 13:33:01] INFO root fetch - processPackages [nkust-ucl-k12-bot]: executing diffoscope
+[2023-05-07 13:33:01] INFO root fetch - processPackages [nkust-ucl-k12-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkust-ucl-k12-bot-2.8.1.tar.gz tmp/nkust-ucl-k12-bot-2.8.2.tar.gz --markdown 20230507/n/nkust-ucl-k12-bot/2.8.1-2.8.2/diff.md --exclude *.pyd
+[2023-05-07 13:33:02] INFO root fetch - processPackages [nwebclient]: Start processing: hikari-bot
+[2023-05-07 13:33:02] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-05-07 13:33:02] INFO root fetch - processPackages [hikari-bot]: New version: [0.3.9.1] Old Version: [0.3.9]
+[2023-05-07 13:33:02] INFO root fetch - processPackages [sage-docbuild]: Start processing: mixturemapping
+[2023-05-07 13:33:02] INFO root fetch - main [MainThread]: End processing [sage-docbuild]: success
+[2023-05-07 13:33:02] INFO root fetch - processPackages [hikari-bot]: Downloading https://files.pythonhosted.org/packages/5c/78/a732be0d4f233dec52be1d256c89ce00a8c150f3fd2e3c26362c5e59209e/hikari_bot-0.3.9.1.tar.gz
+[2023-05-07 13:33:02] INFO root fetch - processPackages [mixturemapping]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-05-07 13:33:02] INFO root fetch - processPackages [sage-setup]: Start processing: tb-nightly
+[2023-05-07 13:33:02] INFO root fetch - main [MainThread]: End processing [sage-setup]: success
+[2023-05-07 13:33:02] INFO root fetch - processPackages [hikari-bot]: executing diffoscope
+[2023-05-07 13:33:02] INFO root fetch - processPackages [hikari-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikari_bot-0.3.9.tar.gz tmp/hikari_bot-0.3.9.1.tar.gz --markdown 20230507/h/hikari-bot/0.3.9-0.3.9.1/diff.md --exclude *.pyd
+[2023-05-07 13:33:02] INFO root fetch - processPackages [mixturemapping]: Downloading https://files.pythonhosted.org/packages/8f/92/9a7429dba878167ee7546402a20ac17a42f6137f53b7293ac11a525578c8/mixturemapping-0.3.2-py39-none-any.whl
+[2023-05-07 13:33:02] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Start processing: torchrec-nightly
+[2023-05-07 13:33:02] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
+[2023-05-07 13:33:02] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-05-07 13:33:02] INFO root fetch - processPackages [sagemath-environment]: Start processing: torchx-nightly
+[2023-05-07 13:33:02] INFO root fetch - main [MainThread]: End processing [sagemath-environment]: success
+[2023-05-07 13:33:02] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.5.7] Old Version: [2023.5.6]
+[2023-05-07 13:33:02] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.5.7] Old Version: [2023.5.6]
+[2023-05-07 13:33:03] INFO root fetch - processPackages [mixturemapping]: Downloading https://files.pythonhosted.org/packages/0c/71/b40e840ec5b4087e8231ec3a192b92200c26e901ac347c9d58ab0db6c0c7/mixturemapping-0.4.0-py39-none-any.whl
+[2023-05-07 13:33:03] INFO root fetch - processPackages [torchrec-nightly]: Downloading https://files.pythonhosted.org/packages/4b/f7/91b589d524ca417f8e7efced39aa8eaa1f5815e26ef4482f9929e9d11e1c/torchrec_nightly-2023.5.6-py39-none-any.whl
+[2023-05-07 13:33:03] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/ac/77/a4c964e0fed0e73bd7a098521c8434979408351590ab805ad6e2009cbcc5/torchx_nightly-2023.5.6-py3-none-any.whl
+[2023-05-07 13:33:03] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-05-07 13:33:03] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230507/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-05-07 13:33:03] INFO root fetch - processPackages [mixturemapping]: executing diffoscope
+[2023-05-07 13:33:03] INFO root fetch - processPackages [mixturemapping]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixturemapping-0.3.2-py39-none-any.whl.zip tmp/mixturemapping-0.4.0-py39-none-any.whl.zip --markdown 20230507/m/mixturemapping/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-05-07 13:33:03] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/19/30/67d474c304b9108a9acfc53a4b0557a88ff4cc7d70807618ca0b39e9a8b2/torchx_nightly-2023.5.7-py3-none-any.whl
+[2023-05-07 13:33:03] INFO root fetch - processPackages [torchrec-nightly]: Downloading https://files.pythonhosted.org/packages/2f/a3/c8fea2a4a17b2ca7f33d5cd35472849730ecc0480921bceea1e2de34f10c/torchrec_nightly-2023.5.7-py39-none-any.whl
+[2023-05-07 13:33:03] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-05-07 13:33:03] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.5.6-py3-none-any.whl.zip tmp/torchx_nightly-2023.5.7-py3-none-any.whl.zip --markdown 20230507/t/torchx-nightly/2023.5.6-2023.5.7/diff.md --exclude *.pyd
+[2023-05-07 13:33:03] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-05-07 13:33:03] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.5.6-py39-none-any.whl.zip tmp/torchrec_nightly-2023.5.7-py39-none-any.whl.zip --markdown 20230507/t/torchrec-nightly/2023.5.6-2023.5.7/diff.md --exclude *.pyd
+[2023-05-07 13:33:04] INFO root fetch - processPackages [hikari-bot]: Start processing: inverse
+[2023-05-07 13:33:04] INFO root fetch - main [MainThread]: End processing [hikari-bot]: success
+[2023-05-07 13:33:04] INFO root fetch - processPackages [inverse]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 13:33:04] INFO root fetch - processPackages [inverse]: executing diffoscope
+[2023-05-07 13:33:04] INFO root fetch - processPackages [inverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverse-0.0.8-py3-none-any.whl.zip tmp/inverse-0.0.9-py3-none-any.whl.zip --markdown 20230507/i/inverse/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 13:33:04] INFO root fetch - processPackages [sage-sws2rst]: Start processing: ItsPrompt
+[2023-05-07 13:33:04] INFO root fetch - main [MainThread]: End processing [sage-sws2rst]: success
+[2023-05-07 13:33:04] INFO root fetch - processPackages [ItsPrompt]: New version: [1.2] Old Version: [1.1]
+[2023-05-07 13:33:04] INFO root fetch - processPackages [ItsPrompt]: Downloading https://files.pythonhosted.org/packages/0f/98/8557b7c262a3dc2094f2a8c156178af582be5627173a512a9d819a196d06/ItsPrompt-1.1.tar.gz
+[2023-05-07 13:33:04] INFO root fetch - processPackages [ItsPrompt]: Downloading https://files.pythonhosted.org/packages/45/64/66b54679fb72b18c86936833960609ca5478173cb97aa8fc8a007d2fca96/ItsPrompt-1.2.tar.gz
+[2023-05-07 13:33:05] INFO root fetch - processPackages [ItsPrompt]: executing diffoscope
+[2023-05-07 13:33:05] INFO root fetch - processPackages [ItsPrompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ItsPrompt-1.1.tar.gz tmp/ItsPrompt-1.2.tar.gz --markdown 20230507/I/ItsPrompt/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-07 13:33:05] INFO root fetch - processPackages [sagemath-repl]: Start processing: piwwwaterflow
+[2023-05-07 13:33:05] INFO root fetch - main [MainThread]: End processing [sagemath-repl]: success
+[2023-05-07 13:33:05] INFO root fetch - processPackages [piwwwaterflow]: New version: [0.1.3] Old Version: [0.1.1]
+[2023-05-07 13:33:05] INFO root fetch - processPackages [sagemath-objects]: Start processing: nkust-ucl-k12-bot
+[2023-05-07 13:33:05] INFO root fetch - main [MainThread]: End processing [sagemath-objects]: success
+[2023-05-07 13:33:05] INFO root fetch - processPackages [nkust-ucl-k12-bot]: New version: [2.8.2] Old Version: [2.8.1]
+[2023-05-07 13:33:05] INFO root fetch - processPackages [nkust-ucl-k12-bot]: executing diffoscope
+[2023-05-07 13:33:05] INFO root fetch - processPackages [nkust-ucl-k12-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkust-ucl-k12-bot-2.8.1.tar.gz tmp/nkust-ucl-k12-bot-2.8.2.tar.gz --markdown 20230507/n/nkust-ucl-k12-bot/2.8.1-2.8.2/diff.md --exclude *.pyd
+[2023-05-07 13:33:05] INFO root fetch - processPackages [piwwwaterflow]: Downloading https://files.pythonhosted.org/packages/aa/fa/9a4a392c40362eeb1641f67bc52be6bc0221764019103e48c9886494a350/piwwwaterflow-0.1.3.tar.gz
+[2023-05-07 13:33:05] INFO root fetch - processPackages [piwwwaterflow]: executing diffoscope
+[2023-05-07 13:33:05] INFO root fetch - processPackages [piwwwaterflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piwwwaterflow-0.1.1.tar.gz tmp/piwwwaterflow-0.1.3.tar.gz --markdown 20230507/p/piwwwaterflow/0.1.1-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torchx-nightly]: Start processing: torchserve-nightly
+[2023-05-07 13:33:06] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.5.6] Old Version: [2023.5.5]
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/61/59/5a91bc532811d9a09e607fbb10c4b29fe9956f4a48a1e8e00db291644297/torchserve_nightly-2023.5.5-py3-none-any.whl
+[2023-05-07 13:33:06] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23716883>=10485760
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torchserve-nightly]: Start processing: torch-model-archiver-nightly
+[2023-05-07 13:33:06] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.5.6] Old Version: [2023.5.5]
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torchrec-nightly]: Start processing: torch-workflow-archiver-nightly
+[2023-05-07 13:33:06] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.5.6] Old Version: [2023.5.5]
+[2023-05-07 13:33:06] INFO root fetch - processPackages [ItsPrompt]: Start processing: api-ninja
+[2023-05-07 13:33:06] INFO root fetch - main [MainThread]: End processing [ItsPrompt]: success
+[2023-05-07 13:33:06] INFO root fetch - processPackages [api-ninja]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/30/8a/4b3006ad23e77c4cb3cb9da893da396bb5967ca488c7c05b7643b481c68f/torch_model_archiver_nightly-2023.5.6-py3-none-any.whl
+[2023-05-07 13:33:06] INFO root fetch - processPackages [sagemath-categories]: Start processing: nkust-ucl-k12-bot
+[2023-05-07 13:33:06] INFO root fetch - main [MainThread]: End processing [sagemath-categories]: success
+[2023-05-07 13:33:06] INFO root fetch - processPackages [nkust-ucl-k12-bot]: New version: [2.8.2] Old Version: [2.8.1]
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/fa/e9/b3949332e01b86a04c8b040c401f4e9d3a047a91d9039b26556f75c2f2af/torch_workflow_archiver_nightly-2023.5.6-py3-none-any.whl
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.5.5-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.5.6-py3-none-any.whl.zip --markdown 20230507/t/torch-model-archiver-nightly/2023.5.5-2023.5.6/diff.md --exclude *.pyd
+[2023-05-07 13:33:06] INFO root fetch - processPackages [api-ninja]: Downloading https://files.pythonhosted.org/packages/a6/09/907d9e41147275bb40a11edc314c4cb9f96bb3b0b0a1ea1dd2774ca1cb55/api_ninja-0.1.0.tar.gz
+[2023-05-07 13:33:06] INFO root fetch - processPackages [nkust-ucl-k12-bot]: executing diffoscope
+[2023-05-07 13:33:06] INFO root fetch - processPackages [nkust-ucl-k12-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkust-ucl-k12-bot-2.8.1.tar.gz tmp/nkust-ucl-k12-bot-2.8.2.tar.gz --markdown 20230507/n/nkust-ucl-k12-bot/2.8.1-2.8.2/diff.md --exclude *.pyd
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-05-07 13:33:06] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.5.5-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.5.6-py3-none-any.whl.zip --markdown 20230507/t/torch-workflow-archiver-nightly/2023.5.5-2023.5.6/diff.md --exclude *.pyd
+[2023-05-07 13:33:07] INFO root fetch - processPackages [api-ninja]: Downloading https://files.pythonhosted.org/packages/2e/39/acfc30e23f1dd0d8cc1f74f3d9125147ab7c6cf1196ede4dfac6990ef59f/api_ninja-0.1.1.tar.gz
+[2023-05-07 13:33:07] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Start processing: pyre-check-nightly
+[2023-05-07 13:33:07] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
+[2023-05-07 13:33:07] INFO root fetch - processPackages [api-ninja]: executing diffoscope
+[2023-05-07 13:33:07] INFO root fetch - processPackages [api-ninja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_ninja-0.1.0.tar.gz tmp/api_ninja-0.1.1.tar.gz --markdown 20230507/a/api-ninja/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 13:33:07] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101683457825] Old Version: [0.0.101683371288]
+[2023-05-07 13:33:07] INFO root fetch - processPackages [piwwwaterflow]: Start processing: Flask-Minify
+[2023-05-07 13:33:07] INFO root fetch - main [MainThread]: End processing [piwwwaterflow]: success
+[2023-05-07 13:33:07] INFO root fetch - processPackages [Flask-Minify]: New version: [0.9] Old Version: [0.8]
+[2023-05-07 13:33:07] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/fe/1e/42bba2acae0c6e6fb6c0e4cbcdced476c19c24564cf9b448de56f862bcaa/pyre-check-nightly-0.0.101683371288.tar.gz
+[2023-05-07 13:33:07] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 23284272>=10485760
+[2023-05-07 13:33:07] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-05-07 13:33:07] INFO root fetch - main [MainThread]: End processing [inverse]: success
+[2023-05-07 13:33:07] INFO root fetch - processPackages [Flask-Minify]: Downloading https://files.pythonhosted.org/packages/f3/eb/c17fa3a76f3932841d95c65c616929757e0a16136b35a5cba9ec0e4b4d22/Flask-Minify-0.8.tar.gz
+[2023-05-07 13:33:07] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-05-07 13:33:07] INFO root fetch - processPackages [Flask-Minify]: Downloading https://files.pythonhosted.org/packages/aa/b2/f57f25d78a51f0fbb268113ae277b89019da2a7d2c842d3ebdadb7ffb05e/Flask-Minify-0.9.tar.gz
+[2023-05-07 13:33:08] INFO root fetch - processPackages [Flask-Minify]: executing diffoscope
+[2023-05-07 13:33:08] INFO root fetch - processPackages [Flask-Minify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-Minify-0.8.tar.gz tmp/Flask-Minify-0.9.tar.gz --markdown 20230507/F/Flask-Minify/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-07 13:33:08] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-05-07 13:33:08] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
+[2023-05-07 13:33:08] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-05-07 13:33:08] INFO root fetch - main [MainThread]: End processing [api-ninja]: success
+[2023-05-07 13:33:09] INFO root fetch - main [MainThread]: End processing [Flask-Minify]: success
+[2023-05-07 13:33:20] INFO root fetch - main [MainThread]: End processing [mixturemapping]: success
+[2023-05-07 13:36:00] ERROR root fetch - processPackages [sage-conf]: Timeout during execution of pkgdiff
+[2023-05-07 13:36:00] INFO root fetch - main [MainThread]: End processing [sage-conf] error
+[2023-05-07 13:36:00] INFO root fetch - main [MainThread]: Store serial: [18006352]
