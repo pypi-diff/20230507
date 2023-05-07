@@ -8512,3 +8512,66 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 17:44:02] INFO root fetch - main [MainThread]: End processing [VoiceIdentification]: success
 [2023-05-07 17:44:03] INFO root fetch - main [MainThread]: End processing [pcleaner]: success
 [2023-05-07 17:44:03] INFO root fetch - main [MainThread]: Store serial: [18007962]
+[2023-05-07 17:49:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007962]
+[2023-05-07 17:49:11] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-07 17:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xcpcio-board-spider
+[2023-05-07 17:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipcryptomodsV2
+[2023-05-07 17:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: grrif-tools
+[2023-05-07 17:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: grrif-tools
+[2023-05-07 17:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pycloaker
+[2023-05-07 17:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pipcryptomodsV2
+[2023-05-07 17:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cos-uploader
+[2023-05-07 17:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gcscore
+[2023-05-07 17:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: complex-network-link-prediction
+[2023-05-07 17:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gcsaws
+[2023-05-07 17:49:11] INFO root fetch - processPackages [grrif-tools]: New version: [0.5.0] Old Version: [0.0.0]
+[2023-05-07 17:49:11] INFO root fetch - processPackages [xcpcio-board-spider]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 17:49:11] WARNING root fetch - processPackages [gcsaws]: Skipping, unable to determine old version
+[2023-05-07 17:49:11] INFO root fetch - processPackages [pipcryptomodsV2]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-07 17:49:11] INFO root fetch - processPackages [gcsaws]: Start processing: zenq
+[2023-05-07 17:49:11] INFO root fetch - main [MainThread]: End processing [gcsaws] error
+[2023-05-07 17:49:11] INFO root fetch - processPackages [grrif-tools]: New version: [0.5.0] Old Version: [0.0.0]
+[2023-05-07 17:49:11] INFO root fetch - processPackages [pycloaker]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-05-07 17:49:11] WARNING root fetch - processPackages [gcscore]: Skipping, unable to determine old version
+[2023-05-07 17:49:11] INFO root fetch - main [MainThread]: End processing [gcscore] error
+[2023-05-07 17:49:11] INFO root fetch - processPackages [pipcryptomodsV2]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-07 17:49:11] INFO root fetch - processPackages [cos-uploader]: New version: [2.0.0a2] Old Version: [2.0.0a1]
+[2023-05-07 17:49:11] INFO root fetch - processPackages [xcpcio-board-spider]: executing diffoscope
+[2023-05-07 17:49:11] INFO root fetch - processPackages [xcpcio-board-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcpcio_board_spider-0.0.8.tar.gz tmp/xcpcio_board_spider-0.0.9.tar.gz --markdown 20230507/x/xcpcio-board-spider/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 17:49:11] INFO root fetch - processPackages [complex-network-link-prediction]: New version: [1.3] Old Version: [1.2]
+[2023-05-07 17:49:11] WARNING root fetch - processPackages [zenq]: Skipping, unable to determine old version
+[2023-05-07 17:49:11] INFO root fetch - main [MainThread]: End processing [zenq] error
+[2023-05-07 17:49:11] INFO root fetch - processPackages [grrif-tools]: Downloading https://files.pythonhosted.org/packages/26/85/ddb70e4a15e7b334613489290a4f8c930b4647b50ddd93f629a230a0c533/grrif_tools-0.0.0.tar.gz
+[2023-05-07 17:49:11] INFO root fetch - processPackages [grrif-tools]: Downloading https://files.pythonhosted.org/packages/26/85/ddb70e4a15e7b334613489290a4f8c930b4647b50ddd93f629a230a0c533/grrif_tools-0.0.0.tar.gz
+[2023-05-07 17:49:11] INFO root fetch - processPackages [pipcryptomodsV2]: Downloading https://files.pythonhosted.org/packages/2c/94/30f5ca9e817200c8d94bcb5c5f3c27cb3f4e4d88bf7e365d0b4b3c7c8b78/pipcryptomodsV2-1.0.0.tar.gz
+[2023-05-07 17:49:11] INFO root fetch - processPackages [pipcryptomodsV2]: Downloading https://files.pythonhosted.org/packages/2c/94/30f5ca9e817200c8d94bcb5c5f3c27cb3f4e4d88bf7e365d0b4b3c7c8b78/pipcryptomodsV2-1.0.0.tar.gz
+[2023-05-07 17:49:11] ERROR root fetch - processPackages [pycloaker]: Unable to fetch info: No such project/version 'pycloaker' 0.0.1
+[2023-05-07 17:49:11] INFO root fetch - main [MainThread]: End processing [pycloaker] error
+[2023-05-07 17:49:11] INFO root fetch - processPackages [cos-uploader]: Downloading https://files.pythonhosted.org/packages/02/51/82ef00d77ddd05487a407bad929b99d4c84c699c4a988b3a9131340d3e21/cos_uploader-2.0.0a1.tar.gz
+[2023-05-07 17:49:11] INFO root fetch - processPackages [complex-network-link-prediction]: Downloading https://files.pythonhosted.org/packages/23/84/cef23c8bfc5fdcc309aec93264c99802781ff8bed9dbe25caba67180eb26/complex-network-link-prediction-1.2.tar.gz
+[2023-05-07 17:49:11] INFO root fetch - processPackages [pipcryptomodsV2]: Downloading https://files.pythonhosted.org/packages/45/9e/5017910eaf6f169787945865b6c12f04f1afca1a16d488039843b016f712/pipcryptomodsV2-1.1.0.tar.gz
+[2023-05-07 17:49:11] INFO root fetch - processPackages [pipcryptomodsV2]: Downloading https://files.pythonhosted.org/packages/45/9e/5017910eaf6f169787945865b6c12f04f1afca1a16d488039843b016f712/pipcryptomodsV2-1.1.0.tar.gz
+[2023-05-07 17:49:11] INFO root fetch - processPackages [grrif-tools]: Downloading https://files.pythonhosted.org/packages/3d/21/86b1622aef9f0b53ef67e693beea9f5fe6e8a758b2662fc5feeb5ef0c245/grrif_tools-0.5.0.tar.gz
+[2023-05-07 17:49:11] INFO root fetch - processPackages [grrif-tools]: Downloading https://files.pythonhosted.org/packages/3d/21/86b1622aef9f0b53ef67e693beea9f5fe6e8a758b2662fc5feeb5ef0c245/grrif_tools-0.5.0.tar.gz
+[2023-05-07 17:49:11] INFO root fetch - processPackages [cos-uploader]: Downloading https://files.pythonhosted.org/packages/d3/24/db66c81bf82a133ce41f02556b2f8c56b148378608ef3245a3b10a3a4f4c/cos_uploader-2.0.0a2.tar.gz
+[2023-05-07 17:49:11] INFO root fetch - processPackages [pipcryptomodsV2]: executing diffoscope
+[2023-05-07 17:49:11] INFO root fetch - processPackages [pipcryptomodsV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipcryptomodsV2-1.0.0.tar.gz tmp/pipcryptomodsV2-1.1.0.tar.gz --markdown 20230507/p/pipcryptomodsV2/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-07 17:49:11] INFO root fetch - processPackages [pipcryptomodsV2]: executing diffoscope
+[2023-05-07 17:49:11] INFO root fetch - processPackages [pipcryptomodsV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipcryptomodsV2-1.0.0.tar.gz tmp/pipcryptomodsV2-1.1.0.tar.gz --markdown 20230507/p/pipcryptomodsV2/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-07 17:49:11] INFO root fetch - processPackages [grrif-tools]: executing diffoscope
+[2023-05-07 17:49:11] INFO root fetch - processPackages [grrif-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grrif_tools-0.0.0.tar.gz tmp/grrif_tools-0.5.0.tar.gz --markdown 20230507/g/grrif-tools/0.0.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-07 17:49:11] INFO root fetch - processPackages [grrif-tools]: executing diffoscope
+[2023-05-07 17:49:11] INFO root fetch - processPackages [grrif-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grrif_tools-0.0.0.tar.gz tmp/grrif_tools-0.5.0.tar.gz --markdown 20230507/g/grrif-tools/0.0.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-07 17:49:11] INFO root fetch - processPackages [complex-network-link-prediction]: Downloading https://files.pythonhosted.org/packages/3c/47/d15fe7b26101046db803c31b72613e11288cc90767a9cc5f63b8d67c10b4/complex-network-link-prediction-1.3.tar.gz
+[2023-05-07 17:49:12] INFO root fetch - processPackages [complex-network-link-prediction]: executing diffoscope
+[2023-05-07 17:49:12] INFO root fetch - processPackages [complex-network-link-prediction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/complex-network-link-prediction-1.2.tar.gz tmp/complex-network-link-prediction-1.3.tar.gz --markdown 20230507/c/complex-network-link-prediction/1.2-1.3/diff.md --exclude *.pyd
+[2023-05-07 17:49:12] INFO root fetch - processPackages [cos-uploader]: executing diffoscope
+[2023-05-07 17:49:12] INFO root fetch - processPackages [cos-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cos_uploader-2.0.0a1.tar.gz tmp/cos_uploader-2.0.0a2.tar.gz --markdown 20230507/c/cos-uploader/2.0.0a1-2.0.0a2/diff.md --exclude *.pyd
+[2023-05-07 17:49:12] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
+[2023-05-07 17:49:12] INFO root fetch - main [MainThread]: End processing [pipcryptomodsV2]: success
+[2023-05-07 17:49:13] INFO root fetch - main [MainThread]: End processing [grrif-tools]: success
+[2023-05-07 17:49:13] INFO root fetch - main [MainThread]: End processing [pipcryptomodsV2]: success
+[2023-05-07 17:49:13] INFO root fetch - main [MainThread]: End processing [grrif-tools]: success
+[2023-05-07 17:49:13] INFO root fetch - main [MainThread]: End processing [cos-uploader]: success
+[2023-05-07 17:49:13] INFO root fetch - main [MainThread]: End processing [complex-network-link-prediction]: success
+[2023-05-07 17:49:13] INFO root fetch - main [MainThread]: Store serial: [18008002]
