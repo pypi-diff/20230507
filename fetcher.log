@@ -2215,3 +2215,11 @@
 [2023-05-07 04:51:19] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-watermarker]: success
 [2023-05-07 04:51:19] INFO root fetch - main [MainThread]: End processing [dorado]: success
 [2023-05-07 04:51:19] INFO root fetch - main [MainThread]: Store serial: [18003860]
+[2023-05-07 04:56:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003860]
+[2023-05-07 04:56:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-07 04:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfirebird
+[2023-05-07 04:56:28] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 04:56:28] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-07 04:56:28] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.8.tar.gz tmp/pyfirebird-0.0.9.tar.gz --markdown 20230507/p/pyfirebird/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 04:56:29] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-07 04:56:29] INFO root fetch - main [MainThread]: Store serial: [18003863]
