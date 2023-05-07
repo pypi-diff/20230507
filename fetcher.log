@@ -8922,3 +8922,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 18:15:36] INFO root fetch - main [MainThread]: End processing [kappadata]: success
 [2023-05-07 18:15:36] INFO root fetch - main [MainThread]: End processing [ooresults]: success
 [2023-05-07 18:15:36] INFO root fetch - main [MainThread]: Store serial: [18008201]
+[2023-05-07 18:20:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008201]
+[2023-05-07 18:20:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 18:20:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: funasr
+[2023-05-07 18:20:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ocp-vscode
+[2023-05-07 18:20:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cliconfig
+[2023-05-07 18:20:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mixalime
+[2023-05-07 18:20:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xcpcio-board-spider
+[2023-05-07 18:20:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bevy
+[2023-05-07 18:20:45] INFO root fetch - processPackages [ocp-vscode]: New version: [1.0.0] Old Version: [0.93.0]
+[2023-05-07 18:20:45] INFO root fetch - processPackages [xcpcio-board-spider]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 18:20:45] INFO root fetch - processPackages [mixalime]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-07 18:20:45] INFO root fetch - processPackages [funasr]: New version: [0.4.6] Old Version: [0.4.4]
+[2023-05-07 18:20:45] INFO root fetch - processPackages [bevy]: New version: [2.0.0b5] Old Version: [2.0.0b4]
+[2023-05-07 18:20:45] INFO root fetch - processPackages [cliconfig]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-05-07 18:20:45] INFO root fetch - processPackages [xcpcio-board-spider]: executing diffoscope
+[2023-05-07 18:20:45] INFO root fetch - processPackages [xcpcio-board-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcpcio_board_spider-0.0.8.tar.gz tmp/xcpcio_board_spider-0.0.9.tar.gz --markdown 20230507/x/xcpcio-board-spider/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 18:20:45] INFO root fetch - processPackages [mixalime]: executing diffoscope
+[2023-05-07 18:20:45] INFO root fetch - processPackages [mixalime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixalime-2.9.8.tar.gz tmp/mixalime-2.9.9.tar.gz --markdown 20230507/m/mixalime/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-07 18:20:45] INFO root fetch - processPackages [ocp-vscode]: Downloading https://files.pythonhosted.org/packages/38/02/7e001886fa06cabee978ba81b4390cb2ec72288bc2a06b19e19b6561898c/ocp_vscode-0.93.0.tar.gz
+[2023-05-07 18:20:45] INFO root fetch - processPackages [funasr]: Downloading https://files.pythonhosted.org/packages/dd/c3/e83b80e264d0405fd4c4d618313d2a02105b813f8ea2c28c4ca06a6b53fa/funasr-0.4.4.tar.gz
+[2023-05-07 18:20:45] INFO root fetch - processPackages [cliconfig]: Downloading https://files.pythonhosted.org/packages/b7/43/75a348d5f99b01759493daf6d2e20bb048f992c3c4663e838eef6320f2ce/cliconfig-0.2.0.tar.gz
+[2023-05-07 18:20:45] INFO root fetch - processPackages [bevy]: Downloading https://files.pythonhosted.org/packages/aa/b6/4d4f445703e424d9d5901a74853ce35e7db2d85b24f3f365bff938514d3c/bevy-2.0.0b4.tar.gz
+[2023-05-07 18:20:46] INFO root fetch - processPackages [ocp-vscode]: Downloading https://files.pythonhosted.org/packages/47/f4/6746847c3583d04fb064e60d00c2307d8965e21d3296e47cfe8422190ca2/ocp_vscode-1.0.0.tar.gz
+[2023-05-07 18:20:46] INFO root fetch - processPackages [cliconfig]: executing diffoscope
+[2023-05-07 18:20:46] INFO root fetch - processPackages [cliconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cliconfig-0.1.4.tar.gz tmp/cliconfig-0.2.0.tar.gz --markdown 20230507/c/cliconfig/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 18:20:46] INFO root fetch - processPackages [funasr]: Downloading https://files.pythonhosted.org/packages/6c/9b/bafc3a13e323d522563b82383c4f02ad8bd02d23d3cbe122bce08899edc7/funasr-0.4.6.tar.gz
+[2023-05-07 18:20:46] INFO root fetch - processPackages [bevy]: Downloading https://files.pythonhosted.org/packages/85/11/f65137fa611e41b26c967daa1cb9a358bbd97ec1e661462638bbd7711973/bevy-2.0.0b5.tar.gz
+[2023-05-07 18:20:46] INFO root fetch - processPackages [ocp-vscode]: executing diffoscope
+[2023-05-07 18:20:46] INFO root fetch - processPackages [ocp-vscode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocp_vscode-0.93.0.tar.gz tmp/ocp_vscode-1.0.0.tar.gz --markdown 20230507/o/ocp-vscode/0.93.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 18:20:46] INFO root fetch - processPackages [bevy]: executing diffoscope
+[2023-05-07 18:20:46] INFO root fetch - processPackages [bevy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bevy-2.0.0b4.tar.gz tmp/bevy-2.0.0b5.tar.gz --markdown 20230507/b/bevy/2.0.0b4-2.0.0b5/diff.md --exclude *.pyd
+[2023-05-07 18:20:46] INFO root fetch - processPackages [funasr]: executing diffoscope
+[2023-05-07 18:20:46] INFO root fetch - processPackages [funasr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funasr-0.4.4.tar.gz tmp/funasr-0.4.6.tar.gz --markdown 20230507/f/funasr/0.4.4-0.4.6/diff.md --exclude *.pyd
+[2023-05-07 18:20:46] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
+[2023-05-07 18:20:47] INFO root fetch - main [MainThread]: End processing [ocp-vscode]: success
+[2023-05-07 18:20:47] INFO root fetch - main [MainThread]: End processing [bevy]: success
+[2023-05-07 18:20:47] INFO root fetch - main [MainThread]: End processing [cliconfig]: success
+[2023-05-07 18:20:49] INFO root fetch - main [MainThread]: End processing [mixalime]: success
+[2023-05-07 18:20:49] INFO root fetch - main [MainThread]: End processing [funasr]: success
+[2023-05-07 18:20:49] INFO root fetch - main [MainThread]: Store serial: [18008222]
