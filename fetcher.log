@@ -7294,3 +7294,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 15:45:20] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chatgpt-plus]: success
 [2023-05-07 15:46:38] INFO root fetch - main [MainThread]: End processing [django-ace]: success
 [2023-05-07 15:46:38] INFO root fetch - main [MainThread]: Store serial: [18007167]
+[2023-05-07 15:51:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007167]
+[2023-05-07 15:51:47] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 15:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: corecrud
+[2023-05-07 15:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hella-api
+[2023-05-07 15:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xpanther
+[2023-05-07 15:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: steamcrawl
+[2023-05-07 15:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: easy-table-work
+[2023-05-07 15:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fieldedge-utilities
+[2023-05-07 15:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: time-magic
+[2023-05-07 15:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mysqlcipher
+[2023-05-07 15:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cagen
+[2023-05-07 15:51:47] INFO root fetch - processPackages [corecrud]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-07 15:51:47] WARNING root fetch - processPackages [mysqlcipher]: Skipping, unable to determine old version
+[2023-05-07 15:51:47] INFO root fetch - main [MainThread]: End processing [mysqlcipher] error
+[2023-05-07 15:51:47] WARNING root fetch - processPackages [easy-table-work]: Skipping, unable to determine old version
+[2023-05-07 15:51:47] INFO root fetch - main [MainThread]: End processing [easy-table-work] error
+[2023-05-07 15:51:47] WARNING root fetch - processPackages [hella-api]: Skipping, unable to determine old version
+[2023-05-07 15:51:47] INFO root fetch - main [MainThread]: End processing [hella-api] error
+[2023-05-07 15:51:47] INFO root fetch - processPackages [time-magic]: New version: [0.3.0] Old Version: [0.1.1]
+[2023-05-07 15:51:47] WARNING root fetch - processPackages [steamcrawl]: Skipping, unable to determine old version
+[2023-05-07 15:51:47] INFO root fetch - main [MainThread]: End processing [steamcrawl] error
+[2023-05-07 15:51:47] INFO root fetch - processPackages [xpanther]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-07 15:51:47] INFO root fetch - processPackages [cagen]: New version: [0.2.0b9] Old Version: [0.2.0b8]
+[2023-05-07 15:51:47] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-07 15:51:47] INFO root fetch - processPackages [corecrud]: Downloading https://files.pythonhosted.org/packages/8f/b6/d00f01d36d9297cda7785099a8425c4384cf0ca82c695524b71787763b9e/corecrud-0.1.tar.gz
+[2023-05-07 15:51:47] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-05-07 15:51:47] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230507/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-07 15:51:47] INFO root fetch - processPackages [time-magic]: Downloading https://files.pythonhosted.org/packages/0b/a9/fdfe411bba97e163c151f6d78ad5cfdd0156efc822cdb4476242b2203268/time_magic-0.3.0.tar.gz
+[2023-05-07 15:51:47] INFO root fetch - processPackages [cagen]: executing diffoscope
+[2023-05-07 15:51:47] INFO root fetch - processPackages [cagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagen-0.2.0b8.tar.gz tmp/cagen-0.2.0b9.tar.gz --markdown 20230507/c/cagen/0.2.0b8-0.2.0b9/diff.md --exclude *.pyd
+[2023-05-07 15:51:47] INFO root fetch - processPackages [xpanther]: Downloading https://files.pythonhosted.org/packages/c4/83/47b0c6a797b024916f5a11d32bbc00a2b6538f31c9a2bcc396182068cd06/xpanther-1.0.5.tar.gz
+[2023-05-07 15:51:47] INFO root fetch - processPackages [time-magic]: executing diffoscope
+[2023-05-07 15:51:47] INFO root fetch - processPackages [time-magic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/time_magic-0.1.1.tar.gz tmp/time_magic-0.3.0.tar.gz --markdown 20230507/t/time-magic/0.1.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-07 15:51:47] INFO root fetch - processPackages [corecrud]: Downloading https://files.pythonhosted.org/packages/f3/98/d271419f39aee06779e8cfcdddd263b8ab82ad8de414d55b8474cea20c6a/corecrud-0.1.1.tar.gz
+[2023-05-07 15:51:47] INFO root fetch - processPackages [xpanther]: Downloading https://files.pythonhosted.org/packages/fa/d7/c576b0e366783d6366cac9a12d90b5d03f3576e30d28c675ee18f9de8680/xpanther-1.0.6.tar.gz
+[2023-05-07 15:51:47] INFO root fetch - processPackages [corecrud]: executing diffoscope
+[2023-05-07 15:51:47] INFO root fetch - processPackages [corecrud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corecrud-0.1.tar.gz tmp/corecrud-0.1.1.tar.gz --markdown 20230507/c/corecrud/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 15:51:47] INFO root fetch - processPackages [xpanther]: executing diffoscope
+[2023-05-07 15:51:47] INFO root fetch - processPackages [xpanther]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpanther-1.0.5.tar.gz tmp/xpanther-1.0.6.tar.gz --markdown 20230507/x/xpanther/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-07 15:51:48] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-05-07 15:51:48] INFO root fetch - main [MainThread]: End processing [cagen]: success
+[2023-05-07 15:51:48] INFO root fetch - main [MainThread]: End processing [time-magic]: success
+[2023-05-07 15:51:48] INFO root fetch - main [MainThread]: End processing [corecrud]: success
+[2023-05-07 15:51:48] INFO root fetch - main [MainThread]: End processing [xpanther]: success
+[2023-05-07 15:51:48] INFO root fetch - main [MainThread]: Store serial: [18007198]
