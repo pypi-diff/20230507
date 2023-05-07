@@ -3581,3 +3581,33 @@
 [2023-05-07 08:53:13] INFO root fetch - main [MainThread]: End processing [irails]: success
 [2023-05-07 08:53:13] INFO root fetch - main [MainThread]: End processing [xtrack]: success
 [2023-05-07 08:53:13] INFO root fetch - main [MainThread]: Store serial: [18004683]
+[2023-05-07 08:58:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004683]
+[2023-05-07 08:58:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 08:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-Shahar-ValueRangeAnalysis
+[2023-05-07 08:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xmask
+[2023-05-07 08:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: csv2notion
+[2023-05-07 08:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlman
+[2023-05-07 08:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mpb-lib
+[2023-05-07 08:58:22] INFO root fetch - processPackages [mpb-lib]: New version: [0.1.83] Old Version: [0.1.82]
+[2023-05-07 08:58:22] INFO root fetch - processPackages [certora-cli-alpha-Shahar-ValueRangeAnalysis]: New version: [20230507.6.53.61010] Old Version: [20230504.15.15.372193]
+[2023-05-07 08:58:22] INFO root fetch - processPackages [csv2notion]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-05-07 08:58:22] INFO root fetch - processPackages [xmask]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-07 08:58:22] WARNING root fetch - processPackages [sqlman]: Skipping, unable to determine old version
+[2023-05-07 08:58:22] INFO root fetch - main [MainThread]: End processing [sqlman] error
+[2023-05-07 08:58:22] INFO root fetch - processPackages [mpb-lib]: executing diffoscope
+[2023-05-07 08:58:22] INFO root fetch - processPackages [mpb-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpb_lib-0.1.82.tar.gz tmp/mpb_lib-0.1.83.tar.gz --markdown 20230507/m/mpb-lib/0.1.82-0.1.83/diff.md --exclude *.pyd
+[2023-05-07 08:58:22] INFO root fetch - processPackages [certora-cli-alpha-Shahar-ValueRangeAnalysis]: Downloading https://files.pythonhosted.org/packages/5e/26/8fd41577c26526d39867b10f9fa2c3e71ea1b279ecbb17fcb95860d2799d/certora-cli-alpha-Shahar-ValueRangeAnalysis-20230504.15.15.372193.tar.gz
+[2023-05-07 08:58:22] INFO root fetch - processPackages [xmask]: Downloading https://files.pythonhosted.org/packages/73/7c/f7d1f3f8f0fa60279e2dcd62e10c6427b1f0248176b72b77f3a9e8feb73b/xmask-0.2.2.tar.gz
+[2023-05-07 08:58:22] INFO root fetch - processPackages [csv2notion]: Downloading https://files.pythonhosted.org/packages/63/25/42b0c7f83b6ea01754cde8cfef45f12af798ad1b645d8de53d5e2a52aba9/csv2notion-0.3.7.tar.gz
+[2023-05-07 08:58:22] WARNING root fetch - processPackages [certora-cli-alpha-Shahar-ValueRangeAnalysis]: Skipping package: exceeds size limit 38380980>=10485760
+[2023-05-07 08:58:22] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-Shahar-ValueRangeAnalysis] error
+[2023-05-07 08:58:22] INFO root fetch - processPackages [xmask]: Downloading https://files.pythonhosted.org/packages/b6/b2/b3a78f43400d43c3ad1a2ed1ec55e45fb9deccd7925ebdffaa864effaf9a/xmask-0.3.0.tar.gz
+[2023-05-07 08:58:22] INFO root fetch - processPackages [csv2notion]: Downloading https://files.pythonhosted.org/packages/2e/4b/f3d6289d5c3e8abb83e0925a703b0c4bd6b913d1f253ab08251a32a2b91e/csv2notion-0.3.8.tar.gz
+[2023-05-07 08:58:22] INFO root fetch - processPackages [xmask]: executing diffoscope
+[2023-05-07 08:58:22] INFO root fetch - processPackages [xmask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xmask-0.2.2.tar.gz tmp/xmask-0.3.0.tar.gz --markdown 20230507/x/xmask/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-07 08:58:22] INFO root fetch - processPackages [csv2notion]: executing diffoscope
+[2023-05-07 08:58:22] INFO root fetch - processPackages [csv2notion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csv2notion-0.3.7.tar.gz tmp/csv2notion-0.3.8.tar.gz --markdown 20230507/c/csv2notion/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-05-07 08:58:23] INFO root fetch - main [MainThread]: End processing [xmask]: success
+[2023-05-07 08:58:24] INFO root fetch - main [MainThread]: End processing [csv2notion]: success
+[2023-05-07 08:58:24] INFO root fetch - main [MainThread]: End processing [mpb-lib]: success
+[2023-05-07 08:58:24] INFO root fetch - main [MainThread]: Store serial: [18004705]
