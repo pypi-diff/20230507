@@ -9106,3 +9106,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 18:36:29] INFO root fetch - main [MainThread]: End processing [tsp-wrapper]: success
 [2023-05-07 18:36:29] INFO root fetch - main [MainThread]: End processing [instruction-ner]: success
 [2023-05-07 18:36:29] INFO root fetch - main [MainThread]: Store serial: [18008287]
+[2023-05-07 18:41:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008287]
+[2023-05-07 18:41:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 18:41:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-intel
+[2023-05-07 18:41:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LibJciHitachi
+[2023-05-07 18:41:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thesleepinglion
+[2023-05-07 18:41:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dgh
+[2023-05-07 18:41:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: twitter-api-py
+[2023-05-07 18:41:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: corecrud
+[2023-05-07 18:41:38] INFO root fetch - processPackages [dgh]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-07 18:41:38] INFO root fetch - processPackages [twitter-api-py]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-05-07 18:41:38] INFO root fetch - processPackages [LibJciHitachi]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-07 18:41:38] INFO root fetch - processPackages [thesleepinglion]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-07 18:41:38] INFO root fetch - processPackages [corecrud]: New version: [0.1.4.2] Old Version: [0.1.4.1]
+[2023-05-07 18:41:39] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.14.0.dev20230507] Old Version: [2.14.0.dev20230506]
+[2023-05-07 18:41:39] INFO root fetch - processPackages [twitter-api-py]: Downloading https://files.pythonhosted.org/packages/22/16/a011cc78be1f8668d65c13dfbd1612b517e624aceeb8273f18371c5e3df1/twitter_api_py-0.4.6.tar.gz
+[2023-05-07 18:41:39] INFO root fetch - processPackages [LibJciHitachi]: Downloading https://files.pythonhosted.org/packages/74/9a/e7827e138d9c7cace5c1b5b42f5fa613846f09f1d4e153b3265ec0cab995/LibJciHitachi-1.2.1.tar.gz
+[2023-05-07 18:41:39] INFO root fetch - processPackages [dgh]: Downloading https://files.pythonhosted.org/packages/fe/11/fa3afc12b6baca07673aedd98707b2934b5fa5fddff19c2bfaa60a4d134a/dgh-0.0.4.tar.gz
+[2023-05-07 18:41:39] INFO root fetch - processPackages [thesleepinglion]: Downloading https://files.pythonhosted.org/packages/74/28/2ab119eebaf33938a035bfd78c77f97a07c410b59a07cdffee47cf51b5cd/thesleepinglion-1.0.0.tar.gz
+[2023-05-07 18:41:39] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/6c/7a/c3c9d234e11b74d7cbed55f5c307c9e229663471d72dde2586cdbd802aec/tf_nightly_intel-2.14.0.dev20230506-cp39-cp39-win_amd64.whl
+[2023-05-07 18:41:39] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 179866241>=10485760
+[2023-05-07 18:41:39] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2023-05-07 18:41:39] INFO root fetch - processPackages [twitter-api-py]: executing diffoscope
+[2023-05-07 18:41:39] INFO root fetch - processPackages [twitter-api-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_api_py-0.4.5.tar.gz tmp/twitter_api_py-0.4.6.tar.gz --markdown 20230507/t/twitter-api-py/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-05-07 18:41:39] INFO root fetch - processPackages [corecrud]: Downloading https://files.pythonhosted.org/packages/2c/11/e6754d08650e9665d6de3008f17ed6d1363eb7215aced30394a1d41943ce/corecrud-0.1.4.1.tar.gz
+[2023-05-07 18:41:39] INFO root fetch - processPackages [dgh]: executing diffoscope
+[2023-05-07 18:41:39] INFO root fetch - processPackages [dgh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dgh-0.0.3.tar.gz tmp/dgh-0.0.4.tar.gz --markdown 20230507/d/dgh/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-07 18:41:39] INFO root fetch - processPackages [LibJciHitachi]: Downloading https://files.pythonhosted.org/packages/f1/cd/893ab41388da8fd2e9c3287793d3cd18bba7ee5770527a16f7428092262d/LibJciHitachi-1.2.2.tar.gz
+[2023-05-07 18:41:39] INFO root fetch - processPackages [LibJciHitachi]: executing diffoscope
+[2023-05-07 18:41:39] INFO root fetch - processPackages [LibJciHitachi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LibJciHitachi-1.2.1.tar.gz tmp/LibJciHitachi-1.2.2.tar.gz --markdown 20230507/L/LibJciHitachi/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-07 18:41:39] INFO root fetch - processPackages [corecrud]: Downloading https://files.pythonhosted.org/packages/2c/06/777c6ab54d2648ab3ec044ef12d97e9fb5cc9f741141fc63db3bc814b043/corecrud-0.1.4.2.tar.gz
+[2023-05-07 18:41:39] INFO root fetch - processPackages [corecrud]: executing diffoscope
+[2023-05-07 18:41:39] INFO root fetch - processPackages [corecrud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corecrud-0.1.4.1.tar.gz tmp/corecrud-0.1.4.2.tar.gz --markdown 20230507/c/corecrud/0.1.4.1-0.1.4.2/diff.md --exclude *.pyd
+[2023-05-07 18:41:39] INFO root fetch - processPackages [thesleepinglion]: Downloading https://files.pythonhosted.org/packages/17/73/fff7b587464bd84958547ab37d0e5ec7b883a9a4f346e57dae0c83c965b7/thesleepinglion-1.1.0.tar.gz
+[2023-05-07 18:41:39] WARNING root fetch - processPackages [thesleepinglion]: Skipping package: exceeds size limit 29299085>=10485760
+[2023-05-07 18:41:39] INFO root fetch - main [MainThread]: End processing [thesleepinglion] error
+[2023-05-07 18:41:40] INFO root fetch - main [MainThread]: End processing [dgh]: success
+[2023-05-07 18:41:40] INFO root fetch - main [MainThread]: End processing [corecrud]: success
+[2023-05-07 18:41:41] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
+[2023-05-07 18:41:41] INFO root fetch - main [MainThread]: End processing [LibJciHitachi]: success
+[2023-05-07 18:41:41] INFO root fetch - main [MainThread]: Store serial: [18008307]
