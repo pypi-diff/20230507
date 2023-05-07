@@ -4713,3 +4713,57 @@
 [2023-05-07 11:16:56] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
 [2023-05-07 11:16:56] INFO root fetch - main [MainThread]: End processing [mk]: success
 [2023-05-07 11:16:56] INFO root fetch - main [MainThread]: Store serial: [18005431]
+[2023-05-07 11:22:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005431]
+[2023-05-07 11:22:05] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 11:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-eremaea2
+[2023-05-07 11:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phylo-treetime
+[2023-05-07 11:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tbp-nightly
+[2023-05-07 11:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-05-07 11:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2023-05-07 11:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: async-pipeline
+[2023-05-07 11:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: D-algorithm
+[2023-05-07 11:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tf-nightly-cpu-aws
+[2023-05-07 11:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ebi-eva-common-pyutils
+[2023-05-07 11:22:05] INFO root fetch - processPackages [django-eremaea2]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-07 11:22:05] INFO root fetch - processPackages [phylo-treetime]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-07 11:22:05] INFO root fetch - processPackages [async-pipeline]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 11:22:05] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-05-07 11:22:05] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-07 11:22:05] WARNING root fetch - processPackages [D-algorithm]: Skipping, unable to determine old version
+[2023-05-07 11:22:05] INFO root fetch - main [MainThread]: End processing [D-algorithm] error
+[2023-05-07 11:22:05] INFO root fetch - processPackages [ebi-eva-common-pyutils]: New version: [0.5.3.dev7] Old Version: [0.5.3.dev6]
+[2023-05-07 11:22:05] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-07 11:22:05] INFO root fetch - processPackages [phylo-treetime]: Downloading https://files.pythonhosted.org/packages/ea/bd/acefc9304c312e1b3ad9d6015d104ce7d683c6090ba01111ce67dd739ddf/phylo-treetime-0.9.5.tar.gz
+[2023-05-07 11:22:05] INFO root fetch - processPackages [tf-nightly-cpu-aws]: New version: [2.14.0.dev20230507] Old Version: [2.14.0.dev20230506]
+[2023-05-07 11:22:05] INFO root fetch - processPackages [async-pipeline]: Downloading https://files.pythonhosted.org/packages/cc/db/8e516353afc8a84ed747a1673bad2ab5e7e3d56fad737751711ee7a40b8a/async_pipeline-0.1.0.tar.gz
+[2023-05-07 11:22:05] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-05-07 11:22:05] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230507/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-05-07 11:22:05] INFO root fetch - processPackages [ebi-eva-common-pyutils]: Downloading https://files.pythonhosted.org/packages/6c/82/7f9724e090e98dfeea2041223f679214915c04cc46e1c8ec4020316af01a/ebi_eva_common_pyutils-0.5.3.dev6.tar.gz
+[2023-05-07 11:22:05] INFO root fetch - processPackages [django-eremaea2]: Downloading https://files.pythonhosted.org/packages/72/3b/1a1ba1ef89b5c22e5ae7845bdad79e53bdb17ed4ff50c466b9675a548c95/django-eremaea2-2.0.8.tar.gz
+[2023-05-07 11:22:05] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-07 11:22:05] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230507/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-07 11:22:05] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-07 11:22:05] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230507/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-07 11:22:05] INFO root fetch - processPackages [tf-nightly-cpu-aws]: Downloading https://files.pythonhosted.org/packages/1f/ff/35422df4dca58a5386a8e50c24a34577fec219fb31899b6febade1c40a25/tf_nightly_cpu_aws-2.14.0.dev20230506-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-05-07 11:22:05] INFO root fetch - processPackages [async-pipeline]: Downloading https://files.pythonhosted.org/packages/c1/39/2bb922f9ab073554b0573368e33b5963254ddc3a8f1874dea637a3c67263/async_pipeline-0.1.1.tar.gz
+[2023-05-07 11:22:05] INFO root fetch - processPackages [phylo-treetime]: Downloading https://files.pythonhosted.org/packages/d1/8b/db9a33464169598797ef1027f1c13be489da62bd4d9040902af47644e300/phylo-treetime-0.9.6.tar.gz
+[2023-05-07 11:22:05] WARNING root fetch - processPackages [tf-nightly-cpu-aws]: Skipping package: exceeds size limit 250740032>=10485760
+[2023-05-07 11:22:05] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu-aws] error
+[2023-05-07 11:22:05] INFO root fetch - processPackages [ebi-eva-common-pyutils]: Downloading https://files.pythonhosted.org/packages/f5/df/be2bf3fefabbe3bc8ca90543da3865dfa37322187745c9874e1c66c81e16/ebi_eva_common_pyutils-0.5.3.dev7.tar.gz
+[2023-05-07 11:22:05] INFO root fetch - processPackages [django-eremaea2]: Downloading https://files.pythonhosted.org/packages/09/2a/747a44a42cde9aac561cd66bb84acbadf033c3f0532f82ba282224d73472/django-eremaea2-2.0.9.tar.gz
+[2023-05-07 11:22:05] INFO root fetch - processPackages [async-pipeline]: executing diffoscope
+[2023-05-07 11:22:05] INFO root fetch - processPackages [async-pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_pipeline-0.1.0.tar.gz tmp/async_pipeline-0.1.1.tar.gz --markdown 20230507/a/async-pipeline/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 11:22:05] INFO root fetch - processPackages [phylo-treetime]: executing diffoscope
+[2023-05-07 11:22:05] INFO root fetch - processPackages [phylo-treetime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phylo-treetime-0.9.5.tar.gz tmp/phylo-treetime-0.9.6.tar.gz --markdown 20230507/p/phylo-treetime/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-07 11:22:06] INFO root fetch - processPackages [ebi-eva-common-pyutils]: executing diffoscope
+[2023-05-07 11:22:06] INFO root fetch - processPackages [ebi-eva-common-pyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebi_eva_common_pyutils-0.5.3.dev6.tar.gz tmp/ebi_eva_common_pyutils-0.5.3.dev7.tar.gz --markdown 20230507/e/ebi-eva-common-pyutils/0.5.3.dev6-0.5.3.dev7/diff.md --exclude *.pyd
+[2023-05-07 11:22:06] INFO root fetch - processPackages [django-eremaea2]: executing diffoscope
+[2023-05-07 11:22:06] INFO root fetch - processPackages [django-eremaea2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-eremaea2-2.0.8.tar.gz tmp/django-eremaea2-2.0.9.tar.gz --markdown 20230507/d/django-eremaea2/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-07 11:22:06] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-07 11:22:06] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-07 11:22:07] INFO root fetch - main [MainThread]: End processing [async-pipeline]: success
+[2023-05-07 11:22:07] INFO root fetch - main [MainThread]: End processing [phylo-treetime]: success
+[2023-05-07 11:22:07] INFO root fetch - main [MainThread]: End processing [ebi-eva-common-pyutils]: success
+[2023-05-07 11:22:10] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-05-07 11:22:35] INFO root fetch - main [MainThread]: End processing [django-eremaea2]: success
+[2023-05-07 11:22:35] INFO root fetch - main [MainThread]: Store serial: [18005459]
