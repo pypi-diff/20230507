@@ -3641,3 +3641,52 @@
 [2023-05-07 09:03:34] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
 [2023-05-07 09:03:35] INFO root fetch - main [MainThread]: End processing [mpb-lib]: success
 [2023-05-07 09:03:35] INFO root fetch - main [MainThread]: Store serial: [18004724]
+[2023-05-07 09:08:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004724]
+[2023-05-07 09:08:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 09:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpservice
+[2023-05-07 09:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leap-model-rebuilder
+[2023-05-07 09:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyproton
+[2023-05-07 09:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfmc
+[2023-05-07 09:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tuneflow-py
+[2023-05-07 09:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PCRinSilico
+[2023-05-07 09:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: maturin
+[2023-05-07 09:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: leap-model-parser
+[2023-05-07 09:08:44] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-05-07 09:08:44] INFO root fetch - processPackages [leap-model-rebuilder]: New version: [0.1.6.dev3] Old Version: [0.1.6.dev2]
+[2023-05-07 09:08:44] INFO root fetch - processPackages [PCRinSilico]: New version: [1.0.0] Old Version: [0.0.13]
+[2023-05-07 09:08:44] INFO root fetch - processPackages [tuneflow-py]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-07 09:08:44] INFO root fetch - processPackages [pyproton]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-07 09:08:44] WARNING root fetch - processPackages [pyfmc]: Skipping, unable to determine old version
+[2023-05-07 09:08:44] INFO root fetch - main [MainThread]: End processing [pyfmc] error
+[2023-05-07 09:08:44] INFO root fetch - processPackages [maturin]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-05-07 09:08:44] INFO root fetch - processPackages [leap-model-parser]: New version: [0.1.93.dev3] Old Version: [0.1.93.dev2]
+[2023-05-07 09:08:44] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-05-07 09:08:44] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230507/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-05-07 09:08:44] INFO root fetch - processPackages [leap-model-rebuilder]: Downloading https://files.pythonhosted.org/packages/d1/aa/944992d128f199be0428a2908d6e4935f5d8d5bc0c79002a649d2c1e0c76/leap_model_rebuilder-0.1.6.dev2.tar.gz
+[2023-05-07 09:08:44] INFO root fetch - processPackages [PCRinSilico]: Downloading https://files.pythonhosted.org/packages/fc/f4/1036b989d0501f5f82cacd35e8d7aae88363f8a58ea2e062c31251bcfd9d/PCRinSilico-0.0.13.tar.gz
+[2023-05-07 09:08:44] INFO root fetch - processPackages [maturin]: executing diffoscope
+[2023-05-07 09:08:44] INFO root fetch - processPackages [maturin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maturin-1.0.0b8.tar.gz tmp/maturin-1.0.0b9.tar.gz --markdown 20230507/m/maturin/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-05-07 09:08:44] INFO root fetch - processPackages [leap-model-parser]: Downloading https://files.pythonhosted.org/packages/64/07/7a6f3d7bbc454f958492d4c8ab988119f4c9fda673ecafcfe2b9038599cb/leap_model_parser-0.1.93.dev2.tar.gz
+[2023-05-07 09:08:44] INFO root fetch - processPackages [tuneflow-py]: Downloading https://files.pythonhosted.org/packages/c7/85/b8dc02f8a7f54f6cc250eed5aa3e03c6df664dce1a7a421a149ab4c11607/tuneflow-py-0.7.2.tar.gz
+[2023-05-07 09:08:44] INFO root fetch - processPackages [pyproton]: Downloading https://files.pythonhosted.org/packages/d4/af/5b27c34305362fcd78850dc3def4c9d3b95d98a1aaeb4c2f7b9b60d31f2e/pyproton-0.0.5.tar.gz
+[2023-05-07 09:08:44] INFO root fetch - processPackages [pyproton]: executing diffoscope
+[2023-05-07 09:08:44] INFO root fetch - processPackages [pyproton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproton-0.0.4.tar.gz tmp/pyproton-0.0.5.tar.gz --markdown 20230507/p/pyproton/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-07 09:08:44] INFO root fetch - processPackages [PCRinSilico]: Downloading https://files.pythonhosted.org/packages/35/78/ad9feecf512b3384a19159ab31788ea8414a8d40fd54b9612fc98a823cbc/PCRinSilico-1.0.0.tar.gz
+[2023-05-07 09:08:44] INFO root fetch - processPackages [tuneflow-py]: executing diffoscope
+[2023-05-07 09:08:44] INFO root fetch - processPackages [tuneflow-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuneflow-py-0.7.1.tar.gz tmp/tuneflow-py-0.7.2.tar.gz --markdown 20230507/t/tuneflow-py/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-07 09:08:44] INFO root fetch - processPackages [leap-model-parser]: Downloading https://files.pythonhosted.org/packages/e6/81/6d1989948567087048115735190679703992440c66d7dacbd04b7726354c/leap_model_parser-0.1.93.dev3.tar.gz
+[2023-05-07 09:08:44] INFO root fetch - processPackages [leap-model-rebuilder]: Downloading https://files.pythonhosted.org/packages/e7/af/88ed415eeb060a9647e8ba7f305e232a8a653e45e3be554d35da0853b98a/leap_model_rebuilder-0.1.6.dev3.tar.gz
+[2023-05-07 09:08:44] INFO root fetch - processPackages [PCRinSilico]: executing diffoscope
+[2023-05-07 09:08:44] INFO root fetch - processPackages [PCRinSilico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PCRinSilico-0.0.13.tar.gz tmp/PCRinSilico-1.0.0.tar.gz --markdown 20230507/P/PCRinSilico/0.0.13-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 09:08:44] INFO root fetch - processPackages [leap-model-rebuilder]: executing diffoscope
+[2023-05-07 09:08:44] INFO root fetch - processPackages [leap-model-rebuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leap_model_rebuilder-0.1.6.dev2.tar.gz tmp/leap_model_rebuilder-0.1.6.dev3.tar.gz --markdown 20230507/l/leap-model-rebuilder/0.1.6.dev2-0.1.6.dev3/diff.md --exclude *.pyd
+[2023-05-07 09:08:44] INFO root fetch - processPackages [leap-model-parser]: executing diffoscope
+[2023-05-07 09:08:44] INFO root fetch - processPackages [leap-model-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leap_model_parser-0.1.93.dev2.tar.gz tmp/leap_model_parser-0.1.93.dev3.tar.gz --markdown 20230507/l/leap-model-parser/0.1.93.dev2-0.1.93.dev3/diff.md --exclude *.pyd
+[2023-05-07 09:08:45] INFO root fetch - main [MainThread]: End processing [pyproton]: success
+[2023-05-07 09:08:45] INFO root fetch - main [MainThread]: End processing [PCRinSilico]: success
+[2023-05-07 09:08:45] INFO root fetch - main [MainThread]: End processing [leap-model-rebuilder]: success
+[2023-05-07 09:08:45] INFO root fetch - main [MainThread]: End processing [tuneflow-py]: success
+[2023-05-07 09:08:45] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-05-07 09:08:45] INFO root fetch - main [MainThread]: End processing [leap-model-parser]: success
+[2023-05-07 09:08:47] INFO root fetch - main [MainThread]: End processing [maturin]: success
+[2023-05-07 09:08:47] INFO root fetch - main [MainThread]: Store serial: [18004762]
