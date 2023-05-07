@@ -1928,3 +1928,42 @@
 [2023-05-07 04:03:41] INFO root fetch - main [MainThread]: End processing [sphinx-pdf-generate]: success
 [2023-05-07 04:03:43] INFO root fetch - main [MainThread]: End processing [mojo-interop]: success
 [2023-05-07 04:03:43] INFO root fetch - main [MainThread]: Store serial: [18003719]
+[2023-05-07 04:08:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003719]
+[2023-05-07 04:08:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 04:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-csgo-case-simulator
+[2023-05-07 04:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thonny-autosave
+[2023-05-07 04:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ibm-generative-ai
+[2023-05-07 04:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hj-ur5
+[2023-05-07 04:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: redfin-scraper
+[2023-05-07 04:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tastytrade-sdk
+[2023-05-07 04:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autoxx
+[2023-05-07 04:08:52] INFO root fetch - processPackages [autoxx]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 04:08:52] INFO root fetch - processPackages [tastytrade-sdk]: New version: [0.0.dev1] Old Version: [0.0.1a4904767531]
+[2023-05-07 04:08:52] WARNING root fetch - processPackages [hj-ur5]: Skipping, unable to determine old version
+[2023-05-07 04:08:52] INFO root fetch - main [MainThread]: End processing [hj-ur5] error
+[2023-05-07 04:08:52] INFO root fetch - processPackages [thonny-autosave]: New version: [0.0.21] Old Version: [0.0.20]
+[2023-05-07 04:08:52] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-07 04:08:52] WARNING root fetch - processPackages [ibm-generative-ai]: Skipping, unable to determine old version
+[2023-05-07 04:08:52] INFO root fetch - processPackages [redfin-scraper]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-07 04:08:52] INFO root fetch - main [MainThread]: End processing [ibm-generative-ai] error
+[2023-05-07 04:08:52] INFO root fetch - processPackages [autoxx]: executing diffoscope
+[2023-05-07 04:08:52] INFO root fetch - processPackages [autoxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoxx-0.0.2.tar.gz tmp/autoxx-0.0.3.tar.gz --markdown 20230507/a/autoxx/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 04:08:52] INFO root fetch - processPackages [tastytrade-sdk]: Downloading https://files.pythonhosted.org/packages/ed/1e/c0fc094a5d3dbe0ae2daec4eec8e986699ae4833073ff1495d7144893a51/tastytrade-sdk-0.0.1a4904767531.tar.gz
+[2023-05-07 04:08:52] INFO root fetch - processPackages [redfin-scraper]: Downloading https://files.pythonhosted.org/packages/1b/67/e04998e47779e1f82be1cf668fa41dfd7ba33f66960805ddeccd1df62d0d/redfin-scraper-0.1.5.tar.gz
+[2023-05-07 04:08:52] INFO root fetch - processPackages [thonny-autosave]: Downloading https://files.pythonhosted.org/packages/e3/fb/76ac0f1bc40f68993b753881e9d724aabcb28459b472c160184751773703/thonny_autosave-0.0.21-py3-none-any.whl
+[2023-05-07 04:08:52] INFO root fetch - processPackages [tastytrade-sdk]: executing diffoscope
+[2023-05-07 04:08:52] INFO root fetch - processPackages [tastytrade-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tastytrade-sdk-0.0.1a4904767531.tar.gz tmp/tastytrade-sdk-0.0.dev1.tar.gz --markdown 20230507/t/tastytrade-sdk/0.0.1a4904767531-0.0.dev1/diff.md --exclude *.pyd
+[2023-05-07 04:08:52] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: Downloading https://files.pythonhosted.org/packages/dc/de/1cd412bc5b49fd458074bd2ad0a5f096cc3ef8f4f451d1a5b2f5c3b928c3/nonebot-plugin-csgo-case-simulator-0.1.5.tar.gz
+[2023-05-07 04:08:52] INFO root fetch - processPackages [thonny-autosave]: executing diffoscope
+[2023-05-07 04:08:52] INFO root fetch - processPackages [thonny-autosave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thonny_autosave-0.0.20-py3-none-any.whl.zip tmp/thonny_autosave-0.0.21-py3-none-any.whl.zip --markdown 20230507/t/thonny-autosave/0.0.20-0.0.21/diff.md --exclude *.pyd
+[2023-05-07 04:08:52] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: executing diffoscope
+[2023-05-07 04:08:52] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-csgo-case-simulator-0.1.4.tar.gz tmp/nonebot-plugin-csgo-case-simulator-0.1.5.tar.gz --markdown 20230507/n/nonebot-plugin-csgo-case-simulator/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-07 04:08:52] INFO root fetch - processPackages [redfin-scraper]: Downloading https://files.pythonhosted.org/packages/b3/a2/70cb6fa3fa485f3c00093a43151bf77594a87a485adfcc0298f8975d8421/redfin-scraper-0.1.6.tar.gz
+[2023-05-07 04:08:53] INFO root fetch - processPackages [redfin-scraper]: executing diffoscope
+[2023-05-07 04:08:53] INFO root fetch - processPackages [redfin-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redfin-scraper-0.1.5.tar.gz tmp/redfin-scraper-0.1.6.tar.gz --markdown 20230507/r/redfin-scraper/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-07 04:08:53] INFO root fetch - main [MainThread]: End processing [autoxx]: success
+[2023-05-07 04:08:53] INFO root fetch - main [MainThread]: End processing [tastytrade-sdk]: success
+[2023-05-07 04:08:53] INFO root fetch - main [MainThread]: End processing [thonny-autosave]: success
+[2023-05-07 04:08:54] INFO root fetch - main [MainThread]: End processing [redfin-scraper]: success
+[2023-05-07 04:08:54] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-csgo-case-simulator]: success
+[2023-05-07 04:08:54] INFO root fetch - main [MainThread]: Store serial: [18003743]
