@@ -815,3 +815,52 @@
 [2023-05-07 02:06:27] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2023-05-07 02:06:51] INFO root fetch - main [MainThread]: End processing [FeatureInsight]: success
 [2023-05-07 02:06:51] INFO root fetch - main [MainThread]: Store serial: [18003061]
+[2023-05-07 02:11:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003061]
+[2023-05-07 02:12:00] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 02:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asciicards
+[2023-05-07 02:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaxutils-nightly
+[2023-05-07 02:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchlayers-nightly
+[2023-05-07 02:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk8s-redis
+[2023-05-07 02:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: s3-simple-compress
+[2023-05-07 02:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openbb-nightly
+[2023-05-07 02:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-aws-discord-notifiers
+[2023-05-07 02:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdklabs.codepipeline-extensions
+[2023-05-07 02:12:00] INFO root fetch - processPackages [s3-simple-compress]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 02:12:00] INFO root fetch - processPackages [asciicards]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 02:12:00] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.0rc2.dev20230426] Old Version: [3.0.0rc2.dev20230425]
+[2023-05-07 02:12:00] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 02:12:00] INFO root fetch - processPackages [cdk8s-redis]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-07 02:12:00] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 02:12:00] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1683331592] Old Version: [1683245202]
+[2023-05-07 02:12:00] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230507] Old Version: [0.0.8.dev20230506]
+[2023-05-07 02:12:00] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: Downloading https://files.pythonhosted.org/packages/df/6c/78f1bfa2ffc81709ec21b0077aff92b7460ad1f071d595e2d767653cedc0/cdklabs.codepipeline-extensions-0.0.98.tar.gz
+[2023-05-07 02:12:00] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-05-07 02:12:00] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230507/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 02:12:00] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-05-07 02:12:00] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.0rc2.dev20230425.tar.gz tmp/openbb_nightly-3.0.0rc2.dev20230426.tar.gz --markdown 20230507/o/openbb-nightly/3.0.0rc2.dev20230425-3.0.0rc2.dev20230426/diff.md --exclude *.pyd
+[2023-05-07 02:12:00] WARNING root fetch - processPackages [cdklabs.codepipeline-extensions]: Skipping package: exceeds size limit 12637726>=10485760
+[2023-05-07 02:12:00] INFO root fetch - main [MainThread]: End processing [cdklabs.codepipeline-extensions] error
+[2023-05-07 02:12:00] INFO root fetch - processPackages [s3-simple-compress]: Downloading https://files.pythonhosted.org/packages/7e/12/989656d7da60f3ab4cbd6bac18aca4a4af0feb92352630f283eb332a6d59/s3_simple_compress-0.1.0.tar.gz
+[2023-05-07 02:12:00] INFO root fetch - processPackages [cdk8s-redis]: executing diffoscope
+[2023-05-07 02:12:00] INFO root fetch - processPackages [cdk8s-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-redis-0.1.98.tar.gz tmp/cdk8s-redis-0.1.99.tar.gz --markdown 20230507/c/cdk8s-redis/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-07 02:12:00] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/74/49/8a092bba032b0f2748f70637d001099a11fb3fa72aa27f81945b5db78490/jaxutils-nightly-0.0.8.dev20230506.tar.gz
+[2023-05-07 02:12:00] INFO root fetch - processPackages [asciicards]: Downloading https://files.pythonhosted.org/packages/03/32/addd6345e30a5985a48680af5fc92a28f038fe1066ccfdbb55d3cec970ca/asciicards-0.0.3.tar.gz
+[2023-05-07 02:12:00] INFO root fetch - processPackages [torchlayers-nightly]: Downloading https://files.pythonhosted.org/packages/61/c1/7084d65e3a9472345bdd2bf6f02551efe818c35b3a6604409c85054c26cd/torchlayers-nightly-1683331592.tar.gz
+[2023-05-07 02:12:00] INFO root fetch - processPackages [asciicards]: executing diffoscope
+[2023-05-07 02:12:00] INFO root fetch - processPackages [asciicards]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asciicards-0.0.2.tar.gz tmp/asciicards-0.0.3.tar.gz --markdown 20230507/a/asciicards/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 02:12:00] INFO root fetch - processPackages [s3-simple-compress]: Downloading https://files.pythonhosted.org/packages/cb/a6/90b38c19d93937b8af84998a41f423249e3eeda95a2fddbe167a91b70a29/s3_simple_compress-0.1.1.tar.gz
+[2023-05-07 02:12:00] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-05-07 02:12:00] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1683245202.tar.gz tmp/torchlayers-nightly-1683331592.tar.gz --markdown 20230507/t/torchlayers-nightly/1683245202-1683331592/diff.md --exclude *.pyd
+[2023-05-07 02:12:00] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/6f/50/cacb3900045bd9a8b7d936d370d5f7da61dcc1af2411205e4c036c862325/jaxutils-nightly-0.0.8.dev20230507.tar.gz
+[2023-05-07 02:12:01] INFO root fetch - processPackages [s3-simple-compress]: executing diffoscope
+[2023-05-07 02:12:01] INFO root fetch - processPackages [s3-simple-compress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s3_simple_compress-0.1.0.tar.gz tmp/s3_simple_compress-0.1.1.tar.gz --markdown 20230507/s/s3-simple-compress/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 02:12:01] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-05-07 02:12:01] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230506.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230507.tar.gz --markdown 20230507/j/jaxutils-nightly/0.0.8.dev20230506-0.0.8.dev20230507/diff.md --exclude *.pyd
+[2023-05-07 02:12:01] INFO root fetch - main [MainThread]: End processing [asciicards]: success
+[2023-05-07 02:12:02] INFO root fetch - main [MainThread]: End processing [s3-simple-compress]: success
+[2023-05-07 02:12:02] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-05-07 02:12:02] INFO root fetch - main [MainThread]: End processing [cdk8s-redis]: success
+[2023-05-07 02:12:04] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
+[2023-05-07 02:12:16] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2023-05-07 02:12:28] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-05-07 02:12:28] INFO root fetch - main [MainThread]: Store serial: [18003082]
