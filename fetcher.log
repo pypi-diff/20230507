@@ -9621,3 +9621,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 19:28:31] INFO root fetch - main [MainThread]: End processing [quantplay]: success
 [2023-05-07 19:28:31] INFO root fetch - main [MainThread]: End processing [pipkin]: success
 [2023-05-07 19:28:31] INFO root fetch - main [MainThread]: Store serial: [18008563]
+[2023-05-07 19:33:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008563]
+[2023-05-07 19:33:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 19:33:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sidetrek
+[2023-05-07 19:33:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycromanager
+[2023-05-07 19:33:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: variation-normalizer
+[2023-05-07 19:33:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cagen
+[2023-05-07 19:33:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moneycarlo
+[2023-05-07 19:33:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vmn
+[2023-05-07 19:33:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: disease-normalizer
+[2023-05-07 19:33:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: scratchattach
+[2023-05-07 19:33:40] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 19:33:40] INFO root fetch - processPackages [variation-normalizer]: New version: [0.7.dev0] Old Version: [0.7.0.dev7]
+[2023-05-07 19:33:40] INFO root fetch - processPackages [pycromanager]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-07 19:33:40] INFO root fetch - processPackages [moneycarlo]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 19:33:40] INFO root fetch - processPackages [cagen]: New version: [0.2.0rc1] Old Version: [0.2.0b9]
+[2023-05-07 19:33:40] INFO root fetch - processPackages [vmn]: New version: [0.8.4] Old Version: [0.8.2rc1]
+[2023-05-07 19:33:40] INFO root fetch - processPackages [disease-normalizer]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-07 19:33:40] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-07 19:33:40] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230507/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 19:33:40] INFO root fetch - processPackages [variation-normalizer]: Downloading https://files.pythonhosted.org/packages/f8/ad/e89f731ff8e64763c124e8f725f540e3adbcd03530e8569951a8cff2072b/variation-normalizer-0.7.0.dev7.tar.gz
+[2023-05-07 19:33:40] INFO root fetch - processPackages [moneycarlo]: Downloading https://files.pythonhosted.org/packages/c1/eb/3ed56f76410274b482626a536e31fe864850a82c45381a4713070a3d0c12/moneycarlo-0.1.0.tar.gz
+[2023-05-07 19:33:40] INFO root fetch - processPackages [scratchattach]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-07 19:33:40] INFO root fetch - processPackages [pycromanager]: Downloading https://files.pythonhosted.org/packages/d6/d9/1ce85c91ef199b7d1708815ec30a2d301885401029eedbebca5beefd61a3/pycromanager-0.8.0.tar.gz
+[2023-05-07 19:33:40] INFO root fetch - processPackages [vmn]: Downloading https://files.pythonhosted.org/packages/92/3d/0d42dd53c6d7501560fd7d5f375f303b22513f0f4a7facc1106e2e429a93/vmn-0.8.4-py3-none-any.whl
+[2023-05-07 19:33:40] INFO root fetch - processPackages [cagen]: Downloading https://files.pythonhosted.org/packages/8c/b2/7a3af76f85c4f87a3da66bfadddb26407580acaad6e8324e8e3a4c7cb546/cagen-0.2.0rc1.tar.gz
+[2023-05-07 19:33:40] INFO root fetch - processPackages [disease-normalizer]: Downloading https://files.pythonhosted.org/packages/40/e0/61ae2126f686078cc44cad539376eb70727d8a4644512187337876d2c532/disease-normalizer-0.3.0.tar.gz
+[2023-05-07 19:33:40] INFO root fetch - processPackages [vmn]: executing diffoscope
+[2023-05-07 19:33:40] INFO root fetch - processPackages [vmn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmn-0.8.2rc1-py3-none-any.whl.zip tmp/vmn-0.8.4-py3-none-any.whl.zip --markdown 20230507/v/vmn/0.8.2rc1-0.8.4/diff.md --exclude *.pyd
+[2023-05-07 19:33:41] INFO root fetch - processPackages [scratchattach]: Downloading https://files.pythonhosted.org/packages/e8/74/cf11d14abbff93b8d675ed5190f698460b0924267d52a69b43222d13781c/scratchattach-1.1.4.tar.gz
+[2023-05-07 19:33:41] INFO root fetch - processPackages [cagen]: executing diffoscope
+[2023-05-07 19:33:41] INFO root fetch - processPackages [cagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagen-0.2.0b9.tar.gz tmp/cagen-0.2.0rc1.tar.gz --markdown 20230507/c/cagen/0.2.0b9-0.2.0rc1/diff.md --exclude *.pyd
+[2023-05-07 19:33:41] INFO root fetch - processPackages [moneycarlo]: Downloading https://files.pythonhosted.org/packages/36/a3/836e949c45830c9fc578453c5dbb40637422cd20db4a55c75107650ac22f/moneycarlo-0.1.1.tar.gz
+[2023-05-07 19:33:41] INFO root fetch - processPackages [variation-normalizer]: Downloading https://files.pythonhosted.org/packages/4e/01/d61d3b1fdaf44f7639922d4926ca40945fd6931ff7679b63d0f504e14e96/variation-normalizer-0.7.dev0.tar.gz
+[2023-05-07 19:33:41] INFO root fetch - processPackages [pycromanager]: Downloading https://files.pythonhosted.org/packages/e5/5d/188606415b768217f9830aa158f48062823ef69352eac8938f194b7b35d6/pycromanager-0.9.0.tar.gz
+[2023-05-07 19:33:41] INFO root fetch - processPackages [moneycarlo]: executing diffoscope
+[2023-05-07 19:33:41] INFO root fetch - processPackages [moneycarlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moneycarlo-0.1.0.tar.gz tmp/moneycarlo-0.1.1.tar.gz --markdown 20230507/m/moneycarlo/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 19:33:41] INFO root fetch - processPackages [scratchattach]: Downloading https://files.pythonhosted.org/packages/d6/cd/7a36cf6ebcf5d654edb9667c97d0d33b95a48076fab2f7fcdb56966c297c/scratchattach-1.1.5.tar.gz
+[2023-05-07 19:33:41] INFO root fetch - processPackages [disease-normalizer]: Downloading https://files.pythonhosted.org/packages/1b/fc/ae3345fab32a23a1b2efd7dcb0425e79825d893c9a8934f61e3166fea0fc/disease-normalizer-0.3.1.tar.gz
+[2023-05-07 19:33:41] INFO root fetch - processPackages [pycromanager]: executing diffoscope
+[2023-05-07 19:33:41] INFO root fetch - processPackages [pycromanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycromanager-0.8.0.tar.gz tmp/pycromanager-0.9.0.tar.gz --markdown 20230507/p/pycromanager/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-07 19:33:41] INFO root fetch - processPackages [scratchattach]: executing diffoscope
+[2023-05-07 19:33:41] INFO root fetch - processPackages [scratchattach]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scratchattach-1.1.4.tar.gz tmp/scratchattach-1.1.5.tar.gz --markdown 20230507/s/scratchattach/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-07 19:33:41] INFO root fetch - processPackages [disease-normalizer]: executing diffoscope
+[2023-05-07 19:33:41] INFO root fetch - processPackages [disease-normalizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/disease-normalizer-0.3.0.tar.gz tmp/disease-normalizer-0.3.1.tar.gz --markdown 20230507/d/disease-normalizer/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-07 19:33:42] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-07 19:33:42] INFO root fetch - processPackages [variation-normalizer]: executing diffoscope
+[2023-05-07 19:33:42] INFO root fetch - processPackages [variation-normalizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/variation-normalizer-0.7.0.dev7.tar.gz tmp/variation-normalizer-0.7.dev0.tar.gz --markdown 20230507/v/variation-normalizer/0.7.0.dev7-0.7.dev0/diff.md --exclude *.pyd
+[2023-05-07 19:33:42] INFO root fetch - main [MainThread]: End processing [cagen]: success
+[2023-05-07 19:33:42] INFO root fetch - main [MainThread]: End processing [vmn]: success
+[2023-05-07 19:33:42] INFO root fetch - main [MainThread]: End processing [moneycarlo]: success
+[2023-05-07 19:33:42] INFO root fetch - main [MainThread]: End processing [pycromanager]: success
+[2023-05-07 19:33:42] INFO root fetch - main [MainThread]: End processing [scratchattach]: success
+[2023-05-07 19:33:43] INFO root fetch - main [MainThread]: End processing [disease-normalizer]: success
+[2023-05-07 19:33:46] INFO root fetch - main [MainThread]: End processing [variation-normalizer]: success
+[2023-05-07 19:33:46] INFO root fetch - main [MainThread]: Store serial: [18008588]
