@@ -3319,3 +3319,62 @@
 [2023-05-07 08:21:57] INFO root fetch - main [MainThread]: End processing [xj-thread]: success
 [2023-05-07 08:22:00] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-05-07 08:22:00] INFO root fetch - main [MainThread]: Store serial: [18004444]
+[2023-05-07 08:27:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004444]
+[2023-05-07 08:27:09] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 08:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyperfast-python-template
+[2023-05-07 08:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fake-bpy-module-latest
+[2023-05-07 08:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streetscope
+[2023-05-07 08:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: taospyudf
+[2023-05-07 08:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tuneflow-py
+[2023-05-07 08:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pdisk
+[2023-05-07 08:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pynchon
+[2023-05-07 08:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: silobuster
+[2023-05-07 08:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: automation-common-test
+[2023-05-07 08:27:09] INFO root fetch - processPackages [streetscope]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-07 08:27:09] INFO root fetch - processPackages [taospyudf]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 08:27:09] INFO root fetch - processPackages [silobuster]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-07 08:27:09] INFO root fetch - processPackages [hyperfast-python-template]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-07 08:27:09] INFO root fetch - processPackages [pynchon]: New version: [2023.5.7.2.25] Old Version: [2023.5.2.14.50]
+[2023-05-07 08:27:09] INFO root fetch - processPackages [pdisk]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-07 08:27:09] INFO root fetch - processPackages [tuneflow-py]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-07 08:27:09] INFO root fetch - processPackages [automation-common-test]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-07 08:27:09] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230507] Old Version: [20230506]
+[2023-05-07 08:27:09] INFO root fetch - processPackages [hyperfast-python-template]: executing diffoscope
+[2023-05-07 08:27:09] INFO root fetch - processPackages [hyperfast-python-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperfast_python_template-0.4.8.tar.gz tmp/hyperfast_python_template-0.4.9.tar.gz --markdown 20230507/h/hyperfast-python-template/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-07 08:27:09] INFO root fetch - processPackages [streetscope]: Downloading https://files.pythonhosted.org/packages/5c/32/bc26f613977d55905259aae4050781f2340935eaa6044d24c292f4cf7fbd/streetscope-0.3.6.tar.gz
+[2023-05-07 08:27:09] INFO root fetch - processPackages [silobuster]: Downloading https://files.pythonhosted.org/packages/bd/2d/96f756d1ab48a4fe36e3bfd6f40e00199c95f49ecb3fe3d488bc54e8baba/silobuster-1.0.1.tar.gz
+[2023-05-07 08:27:09] INFO root fetch - processPackages [taospyudf]: Downloading https://files.pythonhosted.org/packages/02/b2/acc03ddebf818e39812de2b207d98699548e30158e81d60640b2ecab4cb5/taospyudf-0.0.8.tar.gz
+[2023-05-07 08:27:09] INFO root fetch - processPackages [automation-common-test]: Downloading https://files.pythonhosted.org/packages/d9/1b/2d520e37ce5236319a94da76c7523df7981afcdc6f56efa0e785b6a8c253/automation-common-test-1.1.0.tar.gz
+[2023-05-07 08:27:09] INFO root fetch - processPackages [tuneflow-py]: Downloading https://files.pythonhosted.org/packages/77/0a/ba6cd02e99d387acee39a917feb195b94068b8a31ebaf12a2d08c34d1882/tuneflow-py-0.7.0.tar.gz
+[2023-05-07 08:27:09] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/16/0c/43b0689cbf2d42c6b12b529763a1721da8b5518c30da0ed800831da81052/fake-bpy-module-latest-20230507.tar.gz
+[2023-05-07 08:27:09] INFO root fetch - processPackages [pynchon]: Downloading https://files.pythonhosted.org/packages/af/75/64c12a202de5d03548c40848df001019a63d64e7edee24a60384188c5d24/pynchon-2023.5.7.2.25.tar.gz
+[2023-05-07 08:27:09] INFO root fetch - processPackages [streetscope]: executing diffoscope
+[2023-05-07 08:27:09] INFO root fetch - processPackages [streetscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streetscope-0.3.5.tar.gz tmp/streetscope-0.3.6.tar.gz --markdown 20230507/s/streetscope/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-07 08:27:09] INFO root fetch - processPackages [silobuster]: executing diffoscope
+[2023-05-07 08:27:09] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-1.0.0.tar.gz tmp/silobuster-1.0.1.tar.gz --markdown 20230507/s/silobuster/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-07 08:27:09] INFO root fetch - processPackages [pdisk]: Downloading https://files.pythonhosted.org/packages/b6/55/da92698dceea4694de44e60d4d9bf137d3a23de246ffbc2c9157db641eeb/pdisk-1.0.2.tar.gz
+[2023-05-07 08:27:09] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-05-07 08:27:09] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230506.tar.gz tmp/fake-bpy-module-latest-20230507.tar.gz --markdown 20230507/f/fake-bpy-module-latest/20230506-20230507/diff.md --exclude *.pyd
+[2023-05-07 08:27:09] INFO root fetch - processPackages [pynchon]: executing diffoscope
+[2023-05-07 08:27:09] INFO root fetch - processPackages [pynchon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynchon-2023.5.2.14.50.tar.gz tmp/pynchon-2023.5.7.2.25.tar.gz --markdown 20230507/p/pynchon/2023.5.2.14.50-2023.5.7.2.25/diff.md --exclude *.pyd
+[2023-05-07 08:27:09] INFO root fetch - processPackages [pdisk]: executing diffoscope
+[2023-05-07 08:27:09] INFO root fetch - processPackages [pdisk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdisk-1.0.1.tar.gz tmp/pdisk-1.0.2.tar.gz --markdown 20230507/p/pdisk/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-07 08:27:09] INFO root fetch - processPackages [automation-common-test]: Downloading https://files.pythonhosted.org/packages/b7/99/9473be9fb53ebcd10cf6137487ca7e24c6bd7dd41e3b50a71e1d44cac978/automation-common-test-1.2.0.tar.gz
+[2023-05-07 08:27:09] INFO root fetch - processPackages [tuneflow-py]: Downloading https://files.pythonhosted.org/packages/07/4d/1fbd7ad259fe88f34de1e7f9d238db3a0ecc4eba6530cccbc9a5a56b6566/tuneflow-py-0.7.1.tar.gz
+[2023-05-07 08:27:09] INFO root fetch - processPackages [taospyudf]: Downloading https://files.pythonhosted.org/packages/36/cc/bcfc56ed0212bbad6daf17d8ece674bf23af8f57ed8c573f8c72adbadc02/taospyudf-0.0.9.tar.gz
+[2023-05-07 08:27:09] INFO root fetch - processPackages [automation-common-test]: executing diffoscope
+[2023-05-07 08:27:09] INFO root fetch - processPackages [automation-common-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automation-common-test-1.1.0.tar.gz tmp/automation-common-test-1.2.0.tar.gz --markdown 20230507/a/automation-common-test/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-07 08:27:09] INFO root fetch - processPackages [tuneflow-py]: executing diffoscope
+[2023-05-07 08:27:09] INFO root fetch - processPackages [tuneflow-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuneflow-py-0.7.0.tar.gz tmp/tuneflow-py-0.7.1.tar.gz --markdown 20230507/t/tuneflow-py/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-07 08:27:09] INFO root fetch - processPackages [taospyudf]: executing diffoscope
+[2023-05-07 08:27:09] INFO root fetch - processPackages [taospyudf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taospyudf-0.0.8.tar.gz tmp/taospyudf-0.0.9.tar.gz --markdown 20230507/t/taospyudf/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 08:27:10] INFO root fetch - main [MainThread]: End processing [hyperfast-python-template]: success
+[2023-05-07 08:27:10] INFO root fetch - main [MainThread]: End processing [pdisk]: success
+[2023-05-07 08:27:11] INFO root fetch - main [MainThread]: End processing [automation-common-test]: success
+[2023-05-07 08:27:11] INFO root fetch - main [MainThread]: End processing [taospyudf]: success
+[2023-05-07 08:27:11] INFO root fetch - main [MainThread]: End processing [streetscope]: success
+[2023-05-07 08:27:13] INFO root fetch - main [MainThread]: End processing [pynchon]: success
+[2023-05-07 08:27:13] INFO root fetch - main [MainThread]: End processing [tuneflow-py]: success
+[2023-05-07 08:27:13] INFO root fetch - main [MainThread]: End processing [silobuster]: success
+[2023-05-07 08:27:15] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2023-05-07 08:27:15] INFO root fetch - main [MainThread]: Store serial: [18004498]
