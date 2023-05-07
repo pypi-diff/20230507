@@ -8127,3 +8127,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 17:11:51] INFO root fetch - main [MainThread]: End processing [papis]: success
 [2023-05-07 17:12:17] INFO root fetch - main [MainThread]: End processing [rnginline]: success
 [2023-05-07 17:12:17] INFO root fetch - main [MainThread]: Store serial: [18007749]
+[2023-05-07 17:17:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007749]
+[2023-05-07 17:17:26] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lixinger
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: impose-cli
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: JBPhD
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dhapi
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fieldedge-utilities
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: questdb-connect
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ml-starter
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: customshowme
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: filebrowser
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: khloraascaf
+[2023-05-07 17:17:26] INFO root fetch - processPackages [lixinger]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 17:17:26] WARNING root fetch - processPackages [JBPhD]: Skipping, unable to determine old version
+[2023-05-07 17:17:26] INFO root fetch - processPackages [JBPhD]: Start processing: tpcollections
+[2023-05-07 17:17:26] INFO root fetch - main [MainThread]: End processing [JBPhD] error
+[2023-05-07 17:17:26] INFO root fetch - processPackages [impose-cli]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ml-starter]: New version: [0.0.29] Old Version: [0.0.28]
+[2023-05-07 17:17:26] INFO root fetch - processPackages [filebrowser]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-07 17:17:26] INFO root fetch - processPackages [dhapi]: New version: [1.3.5] Old Version: [1.3.4]
+[2023-05-07 17:17:26] INFO root fetch - processPackages [questdb-connect]: New version: [0.0.38] Old Version: [0.0.37]
+[2023-05-07 17:17:26] INFO root fetch - processPackages [customshowme]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 17:17:26] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-07 17:17:26] INFO root fetch - processPackages [tpcollections]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 17:17:26] INFO root fetch - processPackages [khloraascaf]: New version: [1.6.0] Old Version: [1.5.1]
+[2023-05-07 17:17:26] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-05-07 17:17:26] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230507/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-07 17:17:26] INFO root fetch - processPackages [impose-cli]: Downloading https://files.pythonhosted.org/packages/17/cc/247d190fe5b8f897faffa5f865d0212ac562188c6a81b3f1edf5b124f5a8/impose-cli-0.2.1.tar.gz
+[2023-05-07 17:17:26] INFO root fetch - processPackages [questdb-connect]: Downloading https://files.pythonhosted.org/packages/76/67/5c51f9d05cc60fd5ba938ffb7b72ed38fe1fbcd0ab720a3291ae5c71b3cc/questdb-connect-0.0.37.tar.gz
+[2023-05-07 17:17:26] INFO root fetch - processPackages [lixinger]: Downloading https://files.pythonhosted.org/packages/3d/ac/cfa9075d35d173461e910e07d607affe7bb7725ff0b1400a396a28ae0ac6/lixinger-0.1.3.tar.gz
+[2023-05-07 17:17:26] INFO root fetch - processPackages [filebrowser]: Downloading https://files.pythonhosted.org/packages/95/6c/5cc9332f04b95621bbbd3bece3a1ade81e168c5284fa2915a2808d5769c8/filebrowser-1.1.3-py3-none-any.whl
+[2023-05-07 17:17:26] INFO root fetch - processPackages [dhapi]: Downloading https://files.pythonhosted.org/packages/55/b6/0a6a7a76de5b645b9a0bafe6b60dd6e22176d61e4a66c77ff2b68fbd9e25/dhapi-1.3.5.tar.gz
+[2023-05-07 17:17:26] INFO root fetch - processPackages [customshowme]: Downloading https://files.pythonhosted.org/packages/74/9b/5f593aa4bb648a5feae87e8bf13876e8c183de9302263ae17c2c422109d7/customshowme-1.0.8-py2.py3-none-any.whl
+[2023-05-07 17:17:26] INFO root fetch - processPackages [khloraascaf]: Downloading https://files.pythonhosted.org/packages/b2/2a/ecf88df70989451d3b07f95f672f019c75dd86746272aab0fb5ea5b88b8a/khloraascaf-1.5.1.tar.gz
+[2023-05-07 17:17:26] INFO root fetch - processPackages [dhapi]: executing diffoscope
+[2023-05-07 17:17:26] INFO root fetch - processPackages [dhapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dhapi-1.3.4.tar.gz tmp/dhapi-1.3.5.tar.gz --markdown 20230507/d/dhapi/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2023-05-07 17:17:26] INFO root fetch - processPackages [tpcollections]: Downloading https://files.pythonhosted.org/packages/16/e6/22c7292bf384adcf4072bb9b8c2c89ea543e7bbc969020a7791f0d941f68/tpcollections-0.0.3.tar.gz
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/ec/2f/c5194528eb76496482e7850f204cb742cd6136c400c1fd4358b27bb1ca70/ml-starter-0.0.29.tar.gz
+[2023-05-07 17:17:26] INFO root fetch - processPackages [impose-cli]: Downloading https://files.pythonhosted.org/packages/94/aa/5c4c541a761b431f9c9f6567ca29ab9aadec7a67e0ac170c1ee2237a4066/impose-cli-0.2.2.tar.gz
+[2023-05-07 17:17:26] INFO root fetch - processPackages [tpcollections]: executing diffoscope
+[2023-05-07 17:17:26] INFO root fetch - processPackages [tpcollections]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpcollections-0.0.2.tar.gz tmp/tpcollections-0.0.3.tar.gz --markdown 20230507/t/tpcollections/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 17:17:26] INFO root fetch - processPackages [questdb-connect]: Downloading https://files.pythonhosted.org/packages/45/87/cbce05bb4a8b28d7855dfc40c32d09951bbc341e6f01fc18158e9c78c5f9/questdb-connect-0.0.38.tar.gz
+[2023-05-07 17:17:26] INFO root fetch - processPackages [filebrowser]: Downloading https://files.pythonhosted.org/packages/68/98/198ae6b096a3f582eda9c34e24afa0ad16793dc2b60f247cf09ae1c9a2f0/filebrowser-1.1.4-py3-none-any.whl
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-05-07 17:17:26] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.28.tar.gz tmp/ml-starter-0.0.29.tar.gz --markdown 20230507/m/ml-starter/0.0.28-0.0.29/diff.md --exclude *.pyd
+[2023-05-07 17:17:26] INFO root fetch - processPackages [lixinger]: Downloading https://files.pythonhosted.org/packages/30/1e/6d50424909e24f907637c16e1e3e55dc8803be7aa39e75234f589861a1da/lixinger-0.1.4.tar.gz
+[2023-05-07 17:17:26] INFO root fetch - processPackages [impose-cli]: executing diffoscope
+[2023-05-07 17:17:26] INFO root fetch - processPackages [impose-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/impose-cli-0.2.1.tar.gz tmp/impose-cli-0.2.2.tar.gz --markdown 20230507/i/impose-cli/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-07 17:17:26] INFO root fetch - processPackages [customshowme]: Downloading https://files.pythonhosted.org/packages/fc/f6/41e6487c2ddb23297f53e4cbbba7059d5a9be343d01f38e7602b866f2f60/customshowme-1.0.9.tar.gz
+[2023-05-07 17:17:27] INFO root fetch - processPackages [questdb-connect]: executing diffoscope
+[2023-05-07 17:17:27] INFO root fetch - processPackages [questdb-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/questdb-connect-0.0.37.tar.gz tmp/questdb-connect-0.0.38.tar.gz --markdown 20230507/q/questdb-connect/0.0.37-0.0.38/diff.md --exclude *.pyd
+[2023-05-07 17:17:27] INFO root fetch - processPackages [filebrowser]: executing diffoscope
+[2023-05-07 17:17:27] INFO root fetch - processPackages [filebrowser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filebrowser-1.1.3-py3-none-any.whl.zip tmp/filebrowser-1.1.4-py3-none-any.whl.zip --markdown 20230507/f/filebrowser/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-07 17:17:27] INFO root fetch - processPackages [lixinger]: executing diffoscope
+[2023-05-07 17:17:27] INFO root fetch - processPackages [lixinger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lixinger-0.1.3.tar.gz tmp/lixinger-0.1.4.tar.gz --markdown 20230507/l/lixinger/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 17:17:27] INFO root fetch - processPackages [customshowme]: executing diffoscope
+[2023-05-07 17:17:27] INFO root fetch - processPackages [customshowme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customshowme-1.0.8-py2.py3-none-any.whl.zip tmp/customshowme-1.0.9.tar.gz --markdown 20230507/c/customshowme/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 17:17:27] INFO root fetch - processPackages [khloraascaf]: Downloading https://files.pythonhosted.org/packages/0c/77/97ee04ed3fd517987f068df68574a99d7b48e0c7ce8899e82d37a9287b02/khloraascaf-1.6.0.tar.gz
+[2023-05-07 17:17:27] INFO root fetch - processPackages [khloraascaf]: executing diffoscope
+[2023-05-07 17:17:27] INFO root fetch - processPackages [khloraascaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khloraascaf-1.5.1.tar.gz tmp/khloraascaf-1.6.0.tar.gz --markdown 20230507/k/khloraascaf/1.5.1-1.6.0/diff.md --exclude *.pyd
+[2023-05-07 17:17:28] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-05-07 17:17:28] INFO root fetch - main [MainThread]: End processing [dhapi]: success
+[2023-05-07 17:17:28] INFO root fetch - main [MainThread]: End processing [impose-cli]: success
+[2023-05-07 17:17:28] INFO root fetch - main [MainThread]: End processing [lixinger]: success
+[2023-05-07 17:17:28] INFO root fetch - main [MainThread]: End processing [tpcollections]: success
+[2023-05-07 17:17:28] INFO root fetch - main [MainThread]: End processing [filebrowser]: success
+[2023-05-07 17:17:28] INFO root fetch - main [MainThread]: End processing [customshowme]: success
+[2023-05-07 17:17:28] INFO root fetch - main [MainThread]: End processing [questdb-connect]: success
+[2023-05-07 17:17:29] INFO root fetch - main [MainThread]: End processing [khloraascaf]: success
+[2023-05-07 17:17:30] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
+[2023-05-07 17:17:30] INFO root fetch - main [MainThread]: Store serial: [18007783]
