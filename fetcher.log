@@ -3982,3 +3982,28 @@
 [2023-05-07 09:51:34] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
 [2023-05-07 09:51:34] INFO root fetch - main [MainThread]: End processing [quantplay]: success
 [2023-05-07 09:51:34] INFO root fetch - main [MainThread]: Store serial: [18004959]
+[2023-05-07 09:56:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004959]
+[2023-05-07 09:56:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 09:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peal
+[2023-05-07 09:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-steam-game-status
+[2023-05-07 09:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyQt6-Fluent-Widgets
+[2023-05-07 09:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dynamic-qrcode-image
+[2023-05-07 09:56:43] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: New version: [0.8.6] Old Version: [0.8.4]
+[2023-05-07 09:56:43] WARNING root fetch - processPackages [peal]: Skipping, unable to determine old version
+[2023-05-07 09:56:43] INFO root fetch - main [MainThread]: End processing [peal] error
+[2023-05-07 09:56:43] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 09:56:43] INFO root fetch - processPackages [dynamic-qrcode-image]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 09:56:43] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: Downloading https://files.pythonhosted.org/packages/a4/e7/e1388c4d6eadd3d3b78a1b544cd3cc764b39430d1ef35b20b9a7523a26a7/nonebot_plugin_steam_game_status-0.0.8.tar.gz
+[2023-05-07 09:56:43] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/40/c2/61d8a9c94df05ea261280798690563b831810abfb4674abdd6ea8e979311/PyQt6-Fluent-Widgets-0.8.6.tar.gz
+[2023-05-07 09:56:43] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: executing diffoscope
+[2023-05-07 09:56:43] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6-Fluent-Widgets-0.8.4.tar.gz tmp/PyQt6-Fluent-Widgets-0.8.6.tar.gz --markdown 20230507/P/PyQt6-Fluent-Widgets/0.8.4-0.8.6/diff.md --exclude *.pyd
+[2023-05-07 09:56:43] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: Downloading https://files.pythonhosted.org/packages/75/fa/42777336a7c2bce14b88d2cbcf8fc749a9ba8fc5a18efa537f85327d7e72/nonebot_plugin_steam_game_status-0.0.9.tar.gz
+[2023-05-07 09:56:43] INFO root fetch - processPackages [dynamic-qrcode-image]: Downloading https://files.pythonhosted.org/packages/a5/bf/d8414479a28e31415ce494e83fa67aa7d1372f2268dab3bc3b3605e1fe3d/dynamic_qrcode_image-0.0.7.tar.gz
+[2023-05-07 09:56:43] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: executing diffoscope
+[2023-05-07 09:56:43] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_steam_game_status-0.0.8.tar.gz tmp/nonebot_plugin_steam_game_status-0.0.9.tar.gz --markdown 20230507/n/nonebot-plugin-steam-game-status/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 09:56:43] INFO root fetch - processPackages [dynamic-qrcode-image]: executing diffoscope
+[2023-05-07 09:56:43] INFO root fetch - processPackages [dynamic-qrcode-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamic_qrcode_image-0.0.6.tar.gz tmp/dynamic_qrcode_image-0.0.7.tar.gz --markdown 20230507/d/dynamic-qrcode-image/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 09:56:44] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-steam-game-status]: success
+[2023-05-07 09:56:44] INFO root fetch - main [MainThread]: End processing [dynamic-qrcode-image]: success
+[2023-05-07 09:56:46] INFO root fetch - main [MainThread]: End processing [PyQt6-Fluent-Widgets]: success
+[2023-05-07 09:56:46] INFO root fetch - main [MainThread]: Store serial: [18004976]
