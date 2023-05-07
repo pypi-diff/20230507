@@ -8198,3 +8198,76 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 17:17:29] INFO root fetch - main [MainThread]: End processing [khloraascaf]: success
 [2023-05-07 17:17:30] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
 [2023-05-07 17:17:30] INFO root fetch - main [MainThread]: Store serial: [18007783]
+[2023-05-07 17:22:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007783]
+[2023-05-07 17:22:39] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-07 17:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ufbt
+[2023-05-07 17:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chat2plot
+[2023-05-07 17:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hordelib
+[2023-05-07 17:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bosch-control-panel-cc880p
+[2023-05-07 17:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rnginline
+[2023-05-07 17:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: firebirdsql-run
+[2023-05-07 17:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tpcollections
+[2023-05-07 17:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: betanegbinfit
+[2023-05-07 17:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nonebot-plugin-l4d2-server
+[2023-05-07 17:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: impose-cli
+[2023-05-07 17:22:39] INFO root fetch - processPackages [firebirdsql-run]: New version: [1.0.2a1] Old Version: [1.0.2]
+[2023-05-07 17:22:39] INFO root fetch - processPackages [rnginline]: New version: [1.0.0rc1] Old Version: [1.0.0]
+[2023-05-07 17:22:39] INFO root fetch - processPackages [bosch-control-panel-cc880p]: New version: [3.0.0] Old Version: [2.3.0]
+[2023-05-07 17:22:39] INFO root fetch - processPackages [tpcollections]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 17:22:39] INFO root fetch - processPackages [chat2plot]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 17:22:39] INFO root fetch - processPackages [ufbt]: New version: [0.2.2rc0] Old Version: [0.2.1rc4]
+[2023-05-07 17:22:39] INFO root fetch - processPackages [impose-cli]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-07 17:22:39] INFO root fetch - processPackages [betanegbinfit]: New version: [1.9.4] Old Version: [1.9.3]
+[2023-05-07 17:22:39] INFO root fetch - processPackages [hordelib]: New version: [0.9.5] Old Version: [0.9.2]
+[2023-05-07 17:22:39] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-07 17:22:39] INFO root fetch - processPackages [firebirdsql-run]: Downloading https://files.pythonhosted.org/packages/08/c7/c725ba73288c1c9610f24ea95602e2eb60f5ce8fdecd941f8b2cc5335bd8/firebirdsql_run-1.0.2.tar.gz
+[2023-05-07 17:22:39] INFO root fetch - processPackages [rnginline]: Downloading https://files.pythonhosted.org/packages/6d/71/294bd361978a48ea5f16b1ccb5f18135ceec8c1ae8ce82eaeef47cbdee01/rnginline-1.0.0.tar.gz
+[2023-05-07 17:22:39] INFO root fetch - processPackages [tpcollections]: Downloading https://files.pythonhosted.org/packages/c6/c3/36515e9865f1e6f806b55517bb7db621987478535c770031a62815adbb0e/tpcollections-0.1.0.tar.gz
+[2023-05-07 17:22:39] INFO root fetch - processPackages [betanegbinfit]: Downloading https://files.pythonhosted.org/packages/67/ec/ddd83b7a46adce8b47373f5aabe7f665f94854cf6719a5a8a1edae5ab9a6/betanegbinfit-1.9.3.tar.gz
+[2023-05-07 17:22:39] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: Downloading https://files.pythonhosted.org/packages/e8/90/e799419a09b028fb5de8101c74ca640a06dc547a898e0709fbea412e28a9/nonebot_plugin_l4d2_server-0.5.2.tar.gz
+[2023-05-07 17:22:39] INFO root fetch - processPackages [ufbt]: Downloading https://files.pythonhosted.org/packages/0f/54/96114a453905c3758819b551b7d403830398ee4eff4cad0a9b8a0ea9fa68/ufbt-0.2.1rc4.tar.gz
+[2023-05-07 17:22:39] INFO root fetch - processPackages [chat2plot]: Downloading https://files.pythonhosted.org/packages/47/d8/83274e0ed39afc75574dcc31887a7a81a6496a533e58112f19ae148fe349/chat2plot-0.0.1.tar.gz
+[2023-05-07 17:22:39] INFO root fetch - processPackages [impose-cli]: Downloading https://files.pythonhosted.org/packages/fe/c8/f42556a6a2ca94300fc1b99fc94162dc0b49f8a25082460ae35d5865b313/impose-cli-0.2.3.tar.gz
+[2023-05-07 17:22:39] INFO root fetch - processPackages [bosch-control-panel-cc880p]: Downloading https://files.pythonhosted.org/packages/5a/37/1c0fe43e61d3bb7cfdeaafe4dfdc8c6a7f3a197bece9e7cb45276a72da49/bosch-control-panel-cc880p-2.3.0.tar.gz
+[2023-05-07 17:22:39] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/fd/a2/adcbb07401fbedfb5e142d1a138de62bf94227ad2e238ea5a5b6eb5033f4/hordelib-0.9.2.tar.gz
+[2023-05-07 17:22:39] INFO root fetch - processPackages [rnginline]: executing diffoscope
+[2023-05-07 17:22:39] INFO root fetch - processPackages [rnginline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rnginline-1.0.0.tar.gz tmp/rnginline-1.0.0rc1.tar.gz --markdown 20230507/r/rnginline/1.0.0-1.0.0rc1/diff.md --exclude *.pyd
+[2023-05-07 17:22:39] INFO root fetch - processPackages [impose-cli]: executing diffoscope
+[2023-05-07 17:22:39] INFO root fetch - processPackages [impose-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/impose-cli-0.2.2.tar.gz tmp/impose-cli-0.2.3.tar.gz --markdown 20230507/i/impose-cli/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-07 17:22:39] INFO root fetch - processPackages [firebirdsql-run]: Downloading https://files.pythonhosted.org/packages/08/90/14c46190fc665f45ae3109b1b7cf28766ea96d6ee716f2ded20e535f4c01/firebirdsql_run-1.0.2a1.tar.gz
+[2023-05-07 17:22:40] INFO root fetch - processPackages [betanegbinfit]: Downloading https://files.pythonhosted.org/packages/29/58/1634f988edcd30a2dd6ce083ef8f9d17f149ffa79d402e23017600134a30/betanegbinfit-1.9.4.tar.gz
+[2023-05-07 17:22:40] INFO root fetch - processPackages [tpcollections]: Downloading https://files.pythonhosted.org/packages/0c/30/b0bc846a3eed8b6fa145f4ce43e54b0efe454886e0e070fa8fbd66ce37db/tpcollections-0.1.1.tar.gz
+[2023-05-07 17:22:40] INFO root fetch - processPackages [chat2plot]: Downloading https://files.pythonhosted.org/packages/5b/9b/641f03fe72666907e7c559aa15681372fc1400f6f2dfd2df65ef489c0a68/chat2plot-0.0.2.tar.gz
+[2023-05-07 17:22:40] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: Downloading https://files.pythonhosted.org/packages/68/26/577ab5c6f836111d8c9bcd299b4fc198fef1a1208a3ad3df4e2d3705ff8d/nonebot_plugin_l4d2_server-0.5.3.tar.gz
+[2023-05-07 17:22:40] INFO root fetch - processPackages [bosch-control-panel-cc880p]: Downloading https://files.pythonhosted.org/packages/6b/db/54580fff5f9635353aec03afc680ff5b68fc6689f090c49670ced04ad0ee/bosch-control-panel-cc880p-3.0.0.tar.gz
+[2023-05-07 17:22:40] INFO root fetch - processPackages [ufbt]: Downloading https://files.pythonhosted.org/packages/bc/e9/5989983d4ba385f9b24b1d9dafca1894c4152cdf9e791b566f0d17022182/ufbt-0.2.2rc0.tar.gz
+[2023-05-07 17:22:40] INFO root fetch - processPackages [firebirdsql-run]: executing diffoscope
+[2023-05-07 17:22:40] INFO root fetch - processPackages [firebirdsql-run]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firebirdsql_run-1.0.2.tar.gz tmp/firebirdsql_run-1.0.2a1.tar.gz --markdown 20230507/f/firebirdsql-run/1.0.2-1.0.2a1/diff.md --exclude *.pyd
+[2023-05-07 17:22:40] INFO root fetch - processPackages [tpcollections]: executing diffoscope
+[2023-05-07 17:22:40] INFO root fetch - processPackages [tpcollections]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpcollections-0.1.0.tar.gz tmp/tpcollections-0.1.1.tar.gz --markdown 20230507/t/tpcollections/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 17:22:40] INFO root fetch - processPackages [chat2plot]: executing diffoscope
+[2023-05-07 17:22:40] INFO root fetch - processPackages [chat2plot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat2plot-0.0.1.tar.gz tmp/chat2plot-0.0.2.tar.gz --markdown 20230507/c/chat2plot/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 17:22:40] INFO root fetch - processPackages [bosch-control-panel-cc880p]: executing diffoscope
+[2023-05-07 17:22:40] INFO root fetch - processPackages [bosch-control-panel-cc880p]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosch-control-panel-cc880p-2.3.0.tar.gz tmp/bosch-control-panel-cc880p-3.0.0.tar.gz --markdown 20230507/b/bosch-control-panel-cc880p/2.3.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-07 17:22:40] INFO root fetch - processPackages [ufbt]: executing diffoscope
+[2023-05-07 17:22:40] INFO root fetch - processPackages [ufbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ufbt-0.2.1rc4.tar.gz tmp/ufbt-0.2.2rc0.tar.gz --markdown 20230507/u/ufbt/0.2.1rc4-0.2.2rc0/diff.md --exclude *.pyd
+[2023-05-07 17:22:40] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: executing diffoscope
+[2023-05-07 17:22:40] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_l4d2_server-0.5.2.tar.gz tmp/nonebot_plugin_l4d2_server-0.5.3.tar.gz --markdown 20230507/n/nonebot-plugin-l4d2-server/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-07 17:22:40] INFO root fetch - processPackages [betanegbinfit]: executing diffoscope
+[2023-05-07 17:22:40] INFO root fetch - processPackages [betanegbinfit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betanegbinfit-1.9.3.tar.gz tmp/betanegbinfit-1.9.4.tar.gz --markdown 20230507/b/betanegbinfit/1.9.3-1.9.4/diff.md --exclude *.pyd
+[2023-05-07 17:22:40] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/9c/6a/e948a22abe1306f081d00e441c84b24d63987802f65e7372d1c5dc75061a/hordelib-0.9.5.tar.gz
+[2023-05-07 17:22:40] ERROR root fetch - processPackages [nonebot-plugin-l4d2-server]: Diffoscope failed: Error: error creating container storage: the container name "youthful_shirley" is already in use by "2afe256e98ed53b91fe31bc6104f9ca483545cd7575572ffc12d725bfdf0e421". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-07 17:22:40] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-l4d2-server] error
+[2023-05-07 17:22:40] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-05-07 17:22:40] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.9.2.tar.gz tmp/hordelib-0.9.5.tar.gz --markdown 20230507/h/hordelib/0.9.2-0.9.5/diff.md --exclude *.pyd
+[2023-05-07 17:22:41] INFO root fetch - main [MainThread]: End processing [impose-cli]: success
+[2023-05-07 17:22:41] INFO root fetch - main [MainThread]: End processing [firebirdsql-run]: success
+[2023-05-07 17:22:41] INFO root fetch - main [MainThread]: End processing [ufbt]: success
+[2023-05-07 17:22:41] INFO root fetch - main [MainThread]: End processing [betanegbinfit]: success
+[2023-05-07 17:22:41] INFO root fetch - main [MainThread]: End processing [chat2plot]: success
+[2023-05-07 17:22:41] INFO root fetch - main [MainThread]: End processing [rnginline]: success
+[2023-05-07 17:22:41] INFO root fetch - main [MainThread]: End processing [bosch-control-panel-cc880p]: success
+[2023-05-07 17:22:41] INFO root fetch - main [MainThread]: End processing [tpcollections]: success
+[2023-05-07 17:22:52] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-05-07 17:22:52] INFO root fetch - main [MainThread]: Store serial: [18007816]
