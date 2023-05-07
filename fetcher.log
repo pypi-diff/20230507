@@ -5320,3 +5320,69 @@
 [2023-05-07 12:27:06] INFO root fetch - main [MainThread]: End processing [brownian-stock]: success
 [2023-05-07 12:27:06] INFO root fetch - main [MainThread]: End processing [EmailNotice]: success
 [2023-05-07 12:27:06] INFO root fetch - main [MainThread]: Store serial: [18005845]
+[2023-05-07 12:32:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005845]
+[2023-05-07 12:32:14] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-07 12:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: boneIO
+[2023-05-07 12:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: genv
+[2023-05-07 12:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hpo3
+[2023-05-07 12:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spacy-curated-transformers
+[2023-05-07 12:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bring-python-api
+[2023-05-07 12:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bridgecrew
+[2023-05-07 12:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nazo-rand
+[2023-05-07 12:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zimmauth
+[2023-05-07 12:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: configgy
+[2023-05-07 12:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: exciton
+[2023-05-07 12:32:15] INFO root fetch - processPackages [exciton]: New version: [1.6.2] Old Version: [1.6.0]
+[2023-05-07 12:32:15] INFO root fetch - processPackages [hpo3]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-07 12:32:15] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-07 12:32:15] INFO root fetch - processPackages [spacy-curated-transformers]: New version: [0.1.0] Old Version: [0.0.8]
+[2023-05-07 12:32:15] WARNING root fetch - processPackages [bring-python-api]: Skipping, unable to determine old version
+[2023-05-07 12:32:15] INFO root fetch - processPackages [bring-python-api]: Start processing: deepracer-utils
+[2023-05-07 12:32:15] INFO root fetch - main [MainThread]: End processing [bring-python-api] error
+[2023-05-07 12:32:15] INFO root fetch - processPackages [genv]: New version: [0.9.0] Old Version: [0.6.0]
+[2023-05-07 12:32:15] INFO root fetch - processPackages [zimmauth]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 12:32:15] WARNING root fetch - processPackages [configgy]: Skipping, unable to determine old version
+[2023-05-07 12:32:15] INFO root fetch - processPackages [exciton]: executing diffoscope
+[2023-05-07 12:32:15] INFO root fetch - main [MainThread]: End processing [configgy] error
+[2023-05-07 12:32:15] INFO root fetch - processPackages [exciton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exciton-1.6.0-py3-none-any.whl.zip tmp/exciton-1.6.2-py3-none-any.whl.zip --markdown 20230507/e/exciton/1.6.0-1.6.2/diff.md --exclude *.pyd
+[2023-05-07 12:32:15] INFO root fetch - processPackages [boneIO]: New version: [0.6.0.dev5] Old Version: [0.6.0.dev4]
+[2023-05-07 12:32:15] INFO root fetch - processPackages [nazo-rand]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 12:32:15] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-05-07 12:32:15] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230507/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-07 12:32:15] INFO root fetch - processPackages [deepracer-utils]: New version: [1.0.5rc0] Old Version: [1.0.4rc0]
+[2023-05-07 12:32:15] INFO root fetch - processPackages [boneIO]: Downloading https://files.pythonhosted.org/packages/1b/84/6d86b080dca64e2863108a445b4026a23129ec3b97e7b0c87476f69ed1b9/boneIO-0.6.0.dev4.tar.gz
+[2023-05-07 12:32:15] INFO root fetch - processPackages [spacy-curated-transformers]: Downloading https://files.pythonhosted.org/packages/b0/66/99c785ec1d4ec244661ca2ce887e997c32ce9c1a1301f865205e168afc28/spacy-curated-transformers-0.0.8.tar.gz
+[2023-05-07 12:32:15] INFO root fetch - processPackages [genv]: Downloading https://files.pythonhosted.org/packages/26/9e/ac16ad963a6ccefc63de6898eb2cde74e0ad5c65bd791f4e1e45eb2e917c/genv-0.6.0.tar.gz
+[2023-05-07 12:32:15] INFO root fetch - processPackages [zimmauth]: Downloading https://files.pythonhosted.org/packages/eb/0f/4e6eddcc7c5a8f42a60c65804332b8a6ed5af3237354c747714808ea3f14/zimmauth-0.0.8.tar.gz
+[2023-05-07 12:32:15] INFO root fetch - processPackages [nazo-rand]: Downloading https://files.pythonhosted.org/packages/4a/47/8dff15494a820ce1f3270d359647c0be50bec283b0521bc20ca8a11c88a1/nazo_rand-0.0.9.tar.gz
+[2023-05-07 12:32:15] INFO root fetch - processPackages [deepracer-utils]: Downloading https://files.pythonhosted.org/packages/6f/62/ff388fb62840af8d000375eca5df4ef43be0b4e090f2fc3e3620b5f4a15c/deepracer-utils-1.0.4rc0.tar.gz
+[2023-05-07 12:32:15] INFO root fetch - processPackages [hpo3]: Downloading https://files.pythonhosted.org/packages/9e/a0/3080972f94d12a223065997f4839cdc67cc05f2c7749ae6732092347bc71/hpo3-0.2.2.tar.gz
+[2023-05-07 12:32:15] INFO root fetch - processPackages [nazo-rand]: executing diffoscope
+[2023-05-07 12:32:15] INFO root fetch - processPackages [nazo-rand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nazo_rand-0.0.8.tar.gz tmp/nazo_rand-0.0.9.tar.gz --markdown 20230507/n/nazo-rand/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 12:32:15] INFO root fetch - processPackages [boneIO]: Downloading https://files.pythonhosted.org/packages/76/86/9cae9a2c899954efc4fcc86e43e900ac7d7c8725e5ae805c055477f2fea6/boneIO-0.6.0.dev5.tar.gz
+[2023-05-07 12:32:15] INFO root fetch - processPackages [boneIO]: executing diffoscope
+[2023-05-07 12:32:15] INFO root fetch - processPackages [boneIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boneIO-0.6.0.dev4.tar.gz tmp/boneIO-0.6.0.dev5.tar.gz --markdown 20230507/b/boneIO/0.6.0.dev4-0.6.0.dev5/diff.md --exclude *.pyd
+[2023-05-07 12:32:15] INFO root fetch - processPackages [hpo3]: executing diffoscope
+[2023-05-07 12:32:15] INFO root fetch - processPackages [hpo3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hpo3-0.2.1.tar.gz tmp/hpo3-0.2.2.tar.gz --markdown 20230507/h/hpo3/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-07 12:32:15] INFO root fetch - processPackages [genv]: Downloading https://files.pythonhosted.org/packages/5e/16/7cf20f4dd39f61fe40b7a6afcf9dae6bc6d477f284d62eb1835e95bbd8ba/genv-0.9.0.tar.gz
+[2023-05-07 12:32:15] INFO root fetch - processPackages [zimmauth]: Downloading https://files.pythonhosted.org/packages/1a/5d/c1827df400ea9e9e60f80dafa90ddf5663ef3dfb1196097ceed92777e912/zimmauth-0.0.9.tar.gz
+[2023-05-07 12:32:15] INFO root fetch - processPackages [spacy-curated-transformers]: Downloading https://files.pythonhosted.org/packages/91/f6/5ef9a82c378ffabb5d5b7efb8ecf22972d7ef314f8fe9d801704dd6afad8/spacy-curated-transformers-0.1.0.tar.gz
+[2023-05-07 12:32:15] INFO root fetch - processPackages [zimmauth]: executing diffoscope
+[2023-05-07 12:32:15] INFO root fetch - processPackages [zimmauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zimmauth-0.0.8.tar.gz tmp/zimmauth-0.0.9.tar.gz --markdown 20230507/z/zimmauth/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 12:32:15] INFO root fetch - processPackages [spacy-curated-transformers]: executing diffoscope
+[2023-05-07 12:32:15] INFO root fetch - processPackages [spacy-curated-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spacy-curated-transformers-0.0.8.tar.gz tmp/spacy-curated-transformers-0.1.0.tar.gz --markdown 20230507/s/spacy-curated-transformers/0.0.8-0.1.0/diff.md --exclude *.pyd
+[2023-05-07 12:32:15] INFO root fetch - processPackages [genv]: executing diffoscope
+[2023-05-07 12:32:15] INFO root fetch - processPackages [genv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genv-0.6.0.tar.gz tmp/genv-0.9.0.tar.gz --markdown 20230507/g/genv/0.6.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-07 12:32:16] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-05-07 12:32:16] INFO root fetch - main [MainThread]: End processing [exciton]: success
+[2023-05-07 12:32:16] INFO root fetch - processPackages [deepracer-utils]: Downloading https://files.pythonhosted.org/packages/89/24/767c038074eae8e853b8b7ba424b9375e7310af13cff6402d06345c7c983/deepracer-utils-1.0.5rc0.tar.gz
+[2023-05-07 12:32:17] INFO root fetch - main [MainThread]: End processing [zimmauth]: success
+[2023-05-07 12:32:17] INFO root fetch - main [MainThread]: End processing [genv]: success
+[2023-05-07 12:32:17] INFO root fetch - main [MainThread]: End processing [boneIO]: success
+[2023-05-07 12:32:17] INFO root fetch - main [MainThread]: End processing [spacy-curated-transformers]: success
+[2023-05-07 12:32:17] INFO root fetch - processPackages [deepracer-utils]: executing diffoscope
+[2023-05-07 12:32:17] INFO root fetch - processPackages [deepracer-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepracer-utils-1.0.4rc0.tar.gz tmp/deepracer-utils-1.0.5rc0.tar.gz --markdown 20230507/d/deepracer-utils/1.0.4rc0-1.0.5rc0/diff.md --exclude *.pyd
+[2023-05-07 12:32:18] INFO root fetch - main [MainThread]: End processing [nazo-rand]: success
+[2023-05-07 12:32:20] INFO root fetch - main [MainThread]: End processing [hpo3]: success
+[2023-05-07 12:32:21] INFO root fetch - main [MainThread]: End processing [deepracer-utils]: success
+[2023-05-07 12:32:21] INFO root fetch - main [MainThread]: Store serial: [18005960]
