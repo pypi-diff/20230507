@@ -1740,3 +1740,83 @@
 [2023-05-07 03:42:56] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
 [2023-05-07 03:42:57] INFO root fetch - main [MainThread]: End processing [tomcru]: success
 [2023-05-07 03:42:57] INFO root fetch - main [MainThread]: Store serial: [18003619]
+[2023-05-07 03:48:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003619]
+[2023-05-07 03:48:06] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-07 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spatialcsv
+[2023-05-07 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: digital-multimeter
+[2023-05-07 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-django
+[2023-05-07 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: proactive
+[2023-05-07 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: synapgrad
+[2023-05-07 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: thonny-autosave
+[2023-05-07 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pdcscore
+[2023-05-07 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: proactive-jupyter-kernel
+[2023-05-07 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nbdev-apl
+[2023-05-07 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdk-lambda-layer-wget
+[2023-05-07 03:48:06] INFO root fetch - processPackages [thonny-autosave]: New version: [0.0.18] Old Version: [0.0.17]
+[2023-05-07 03:48:06] INFO root fetch - processPackages [synapgrad]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-07 03:48:06] INFO root fetch - processPackages [spatialcsv]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 03:48:06] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-05-07 03:48:06] INFO root fetch - processPackages [pdcscore]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-07 03:48:06] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-05-07 03:48:06] INFO root fetch - processPackages [digital-multimeter]: New version: [0.5.1] Old Version: [0.4.0]
+[2023-05-07 03:48:06] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.758] Old Version: [0.0.757]
+[2023-05-07 03:48:06] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 03:48:06] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-07 03:48:06] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-05-07 03:48:06] INFO root fetch - processPackages [thonny-autosave]: Downloading https://files.pythonhosted.org/packages/5e/93/cc15f4919cd47e1b99df89847e2e1663d6e0dd6c2fdf3c891690cb8ab1bd/thonny_autosave-0.0.17-py3-none-any.whl
+[2023-05-07 03:48:06] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-05-07 03:48:06] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230507/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-05-07 03:48:06] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-05-07 03:48:06] INFO root fetch - processPackages [proactive]: Start processing: playbacker
+[2023-05-07 03:48:06] INFO root fetch - main [MainThread]: End processing [proactive] error
+[2023-05-07 03:48:06] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-07 03:48:06] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230507/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:48:06] INFO root fetch - processPackages [playbacker]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-07 03:48:06] INFO root fetch - processPackages [pdcscore]: Downloading https://files.pythonhosted.org/packages/44/87/9429760168473064d20c179ac81891602d3e16f491c999240809a2705726/pdcscore-1.1.2.tar.gz
+[2023-05-07 03:48:06] INFO root fetch - processPackages [spatialcsv]: Downloading https://files.pythonhosted.org/packages/86/f7/cb6527e4eabdd1024bb4c38717262235133e213f862f1910ef4e1a6fa1a9/spatialcsv-0.0.8.tar.gz
+[2023-05-07 03:48:06] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-07 03:48:06] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230507/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:48:06] INFO root fetch - processPackages [digital-multimeter]: Downloading https://files.pythonhosted.org/packages/8b/44/e8c3d0344d3437f35a11167e2d8ace84dbb811476aaa7dc4e93ea7e2f92b/digital-multimeter-0.4.0.tar.gz
+[2023-05-07 03:48:06] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/ea/7f/1b54e1a9c3f259c70395301e95a00790e9a7cfcf5ec0b1fb6b9688fd747a/nbdev-apl-0.0.757.tar.gz
+[2023-05-07 03:48:06] INFO root fetch - processPackages [synapgrad]: Downloading https://files.pythonhosted.org/packages/69/bc/e1f4dd87ccc3764c0b717a893eaf836d294cb7f63dc96ee7a86f34cd477d/synapgrad-0.3.2-py3-none-any.whl
+[2023-05-07 03:48:06] INFO root fetch - processPackages [synapgrad]: executing diffoscope
+[2023-05-07 03:48:06] INFO root fetch - processPackages [synapgrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synapgrad-0.3.1-py3-none-any.whl.zip tmp/synapgrad-0.3.2-py3-none-any.whl.zip --markdown 20230507/s/synapgrad/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-07 03:48:06] INFO root fetch - processPackages [thonny-autosave]: Downloading https://files.pythonhosted.org/packages/eb/ba/7ffca5ea80276bde39a3206ed9c42648862e79561f98b4fe4a83067c4519/thonny_autosave-0.0.18-py3-none-any.whl
+[2023-05-07 03:48:06] INFO root fetch - processPackages [playbacker]: Downloading https://files.pythonhosted.org/packages/8a/07/1e1beb222f93ebb7d3bbf3cb7c822a492626ae2623502ddd4d07cbd572ab/playbacker-0.5.0.tar.gz
+[2023-05-07 03:48:06] INFO root fetch - processPackages [pdcscore]: Downloading https://files.pythonhosted.org/packages/ff/a1/46a7913b400421493376cc9ffc8406d3dadb23774661621e60d62044f5e9/pdcscore-1.1.3.tar.gz
+[2023-05-07 03:48:06] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/55/2e/3ad6ec4034ba42ee0e811834af5f3b4b90300dc9f3a7a9bcff8a5d180ed5/nbdev-apl-0.0.758.tar.gz
+[2023-05-07 03:48:06] INFO root fetch - processPackages [thonny-autosave]: executing diffoscope
+[2023-05-07 03:48:06] INFO root fetch - processPackages [thonny-autosave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thonny_autosave-0.0.17-py3-none-any.whl.zip tmp/thonny_autosave-0.0.18-py3-none-any.whl.zip --markdown 20230507/t/thonny-autosave/0.0.17-0.0.18/diff.md --exclude *.pyd
+[2023-05-07 03:48:07] INFO root fetch - processPackages [pdcscore]: executing diffoscope
+[2023-05-07 03:48:07] INFO root fetch - processPackages [pdcscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdcscore-1.1.2.tar.gz tmp/pdcscore-1.1.3.tar.gz --markdown 20230507/p/pdcscore/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-07 03:48:07] INFO root fetch - processPackages [spatialcsv]: Downloading https://files.pythonhosted.org/packages/0b/fc/dda154d6cde113a4883ffa33dcaf5d0ec196a9bfde1591b0862a11ed2571/spatialcsv-0.0.9.tar.gz
+[2023-05-07 03:48:07] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-07 03:48:07] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.757.tar.gz tmp/nbdev-apl-0.0.758.tar.gz --markdown 20230507/n/nbdev-apl/0.0.757-0.0.758/diff.md --exclude *.pyd
+[2023-05-07 03:48:07] INFO root fetch - processPackages [digital-multimeter]: Downloading https://files.pythonhosted.org/packages/db/d0/53555f73c1b7fda82bed6b6438931a097a6822b30f606c12f3aa876c7c1a/digital_multimeter-0.5.1.tar.gz
+[2023-05-07 03:48:07] INFO root fetch - processPackages [digital-multimeter]: executing diffoscope
+[2023-05-07 03:48:07] INFO root fetch - processPackages [digital-multimeter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital-multimeter-0.4.0.tar.gz tmp/digital_multimeter-0.5.1.tar.gz --markdown 20230507/d/digital-multimeter/0.4.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-07 03:48:07] INFO root fetch - processPackages [playbacker]: Downloading https://files.pythonhosted.org/packages/e2/e7/109381ea08089994578890c04dfe28fb3a560c5f320e9f5a0792a68ae05f/playbacker-0.5.1.tar.gz
+[2023-05-07 03:48:07] INFO root fetch - processPackages [spatialcsv]: executing diffoscope
+[2023-05-07 03:48:07] INFO root fetch - processPackages [spatialcsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spatialcsv-0.0.8.tar.gz tmp/spatialcsv-0.0.9.tar.gz --markdown 20230507/s/spatialcsv/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 03:48:07] INFO root fetch - processPackages [playbacker]: executing diffoscope
+[2023-05-07 03:48:07] INFO root fetch - processPackages [playbacker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playbacker-0.5.0.tar.gz tmp/playbacker-0.5.1.tar.gz --markdown 20230507/p/playbacker/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-07 03:48:08] INFO root fetch - processPackages [pdcscore]: Start processing: django-remote-field
+[2023-05-07 03:48:08] INFO root fetch - main [MainThread]: End processing [pdcscore]: success
+[2023-05-07 03:48:08] WARNING root fetch - processPackages [django-remote-field]: Skipping, unable to determine old version
+[2023-05-07 03:48:08] INFO root fetch - processPackages [django-remote-field]: Start processing: ImageMagic
+[2023-05-07 03:48:08] INFO root fetch - main [MainThread]: End processing [django-remote-field] error
+[2023-05-07 03:48:08] INFO root fetch - processPackages [ImageMagic]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-07 03:48:08] INFO root fetch - main [MainThread]: End processing [synapgrad]: success
+[2023-05-07 03:48:08] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-07 03:48:08] INFO root fetch - main [MainThread]: End processing [thonny-autosave]: success
+[2023-05-07 03:48:08] INFO root fetch - main [MainThread]: End processing [spatialcsv]: success
+[2023-05-07 03:48:08] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-05-07 03:48:08] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-07 03:48:08] INFO root fetch - processPackages [ImageMagic]: Downloading https://files.pythonhosted.org/packages/28/ff/0e28cb4f685ced60218a26ab64a6b3c8fcfb727fbab7b5e49b0b79d8f376/ImageMagic-0.1.8.tar.gz
+[2023-05-07 03:48:08] INFO root fetch - processPackages [ImageMagic]: executing diffoscope
+[2023-05-07 03:48:08] INFO root fetch - processPackages [ImageMagic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ImageMagic-0.1.7.tar.gz tmp/ImageMagic-0.1.8.tar.gz --markdown 20230507/I/ImageMagic/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-07 03:48:08] INFO root fetch - main [MainThread]: End processing [digital-multimeter]: success
+[2023-05-07 03:48:09] INFO root fetch - main [MainThread]: End processing [playbacker]: success
+[2023-05-07 03:48:09] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-07 03:48:09] INFO root fetch - main [MainThread]: End processing [ImageMagic]: success
+[2023-05-07 03:48:09] INFO root fetch - main [MainThread]: Store serial: [18003660]
