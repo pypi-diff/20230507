@@ -4682,3 +4682,34 @@
 [2023-05-07 11:11:46] INFO root fetch - main [MainThread]: End processing [foliolib]: success
 [2023-05-07 11:11:46] INFO root fetch - main [MainThread]: End processing [Pyrosex]: success
 [2023-05-07 11:11:46] INFO root fetch - main [MainThread]: Store serial: [18005408]
+[2023-05-07 11:16:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005408]
+[2023-05-07 11:16:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 11:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly
+[2023-05-07 11:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: types-flake8-2020
+[2023-05-07 11:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mk
+[2023-05-07 11:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scraperhero
+[2023-05-07 11:16:54] INFO root fetch - processPackages [mk]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-05-07 11:16:54] INFO root fetch - processPackages [types-flake8-2020]: New version: [1.8.0.0] Old Version: [1.7.0.2]
+[2023-05-07 11:16:54] INFO root fetch - processPackages [scraperhero]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-07 11:16:54] INFO root fetch - processPackages [tf-nightly]: New version: [2.14.0.dev20230507] Old Version: [2.14.0.dev20230506]
+[2023-05-07 11:16:54] INFO root fetch - processPackages [types-flake8-2020]: Downloading https://files.pythonhosted.org/packages/83/f7/9dea1f45d0bd241c7fc066cb6e4302ccaeab674f5db1b0d9ff805af06169/types-flake8-2020-1.7.0.2.tar.gz
+[2023-05-07 11:16:54] INFO root fetch - processPackages [scraperhero]: Downloading https://files.pythonhosted.org/packages/89/23/8267c8817c49350b076554a6089539ed236eda4891f889c79301dedf0fc1/scraperhero-0.1.0.tar.gz
+[2023-05-07 11:16:54] INFO root fetch - processPackages [mk]: Downloading https://files.pythonhosted.org/packages/b8/ef/97b28d16da461a2cc17b920061dce8470d6c30562c2e3ae6150ae3051160/mk-2.4.0.tar.gz
+[2023-05-07 11:16:55] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/2f/c6/86838eeef9bf1232fbbca1691861e118fbedacd1fb96ea8a2bedcb32840e/tf_nightly-2.14.0.dev20230506-cp39-cp39-win_amd64.whl
+[2023-05-07 11:16:55] INFO root fetch - processPackages [scraperhero]: Downloading https://files.pythonhosted.org/packages/4a/c8/d97728884f127e68eb41221d22f0021f6c90604095e2200d531a1d4119e5/scraperhero-0.2.0.tar.gz
+[2023-05-07 11:16:55] INFO root fetch - processPackages [types-flake8-2020]: Downloading https://files.pythonhosted.org/packages/8f/bc/ffa13132305de1957df32ec1188c05f5c7626744881e188e894faf9a58ef/types-flake8-2020-1.8.0.0.tar.gz
+[2023-05-07 11:16:55] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/10/ea/655a1ce409def12db04611cd0f60600d79a3071ea98e0f14bbdae7234d25/tf_nightly-2.14.0.dev20230507-cp39-cp39-win_amd64.whl
+[2023-05-07 11:16:55] INFO root fetch - processPackages [scraperhero]: executing diffoscope
+[2023-05-07 11:16:55] INFO root fetch - processPackages [scraperhero]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scraperhero-0.1.0.tar.gz tmp/scraperhero-0.2.0.tar.gz --markdown 20230507/s/scraperhero/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 11:16:55] INFO root fetch - processPackages [types-flake8-2020]: executing diffoscope
+[2023-05-07 11:16:55] INFO root fetch - processPackages [types-flake8-2020]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-flake8-2020-1.7.0.2.tar.gz tmp/types-flake8-2020-1.8.0.0.tar.gz --markdown 20230507/t/types-flake8-2020/1.7.0.2-1.8.0.0/diff.md --exclude *.pyd
+[2023-05-07 11:16:55] INFO root fetch - processPackages [mk]: Downloading https://files.pythonhosted.org/packages/28/b8/68e212d68410189f157a1382efd84be70fedd0312dd47a6a76efa0acf647/mk-2.4.1.tar.gz
+[2023-05-07 11:16:55] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2023-05-07 11:16:55] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.14.0.dev20230506-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.14.0.dev20230507-cp39-cp39-win_amd64.whl.zip --markdown 20230507/t/tf-nightly/2.14.0.dev20230506-2.14.0.dev20230507/diff.md --exclude *.pyd
+[2023-05-07 11:16:55] INFO root fetch - processPackages [mk]: executing diffoscope
+[2023-05-07 11:16:55] INFO root fetch - processPackages [mk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mk-2.4.0.tar.gz tmp/mk-2.4.1.tar.gz --markdown 20230507/m/mk/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-05-07 11:16:56] INFO root fetch - main [MainThread]: End processing [types-flake8-2020]: success
+[2023-05-07 11:16:56] INFO root fetch - main [MainThread]: End processing [scraperhero]: success
+[2023-05-07 11:16:56] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2023-05-07 11:16:56] INFO root fetch - main [MainThread]: End processing [mk]: success
+[2023-05-07 11:16:56] INFO root fetch - main [MainThread]: Store serial: [18005431]
