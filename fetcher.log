@@ -5732,3 +5732,31 @@
 [2023-05-07 13:09:18] INFO root fetch - main [MainThread]: End processing [maturin]: success
 [2023-05-07 13:09:19] INFO root fetch - main [MainThread]: End processing [alns]: success
 [2023-05-07 13:09:19] INFO root fetch - main [MainThread]: Store serial: [18006196]
+[2023-05-07 13:14:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006196]
+[2023-05-07 13:14:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 13:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-uri-generate-link-json
+[2023-05-07 13:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: compoundwidgets
+[2023-05-07 13:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QuNet
+[2023-05-07 13:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mixturemapping-binning
+[2023-05-07 13:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: inverse
+[2023-05-07 13:14:27] INFO root fetch - processPackages [compoundwidgets]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-07 13:14:27] INFO root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: New version: [20230507.11.11.247102] Old Version: [20230504.20.21.960659]
+[2023-05-07 13:14:27] INFO root fetch - processPackages [inverse]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 13:14:27] INFO root fetch - processPackages [QuNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 13:14:27] WARNING root fetch - processPackages [mixturemapping-binning]: Skipping, unable to determine old version
+[2023-05-07 13:14:27] INFO root fetch - main [MainThread]: End processing [mixturemapping-binning] error
+[2023-05-07 13:14:27] INFO root fetch - processPackages [inverse]: executing diffoscope
+[2023-05-07 13:14:27] INFO root fetch - processPackages [inverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverse-0.0.8-py3-none-any.whl.zip tmp/inverse-0.0.9-py3-none-any.whl.zip --markdown 20230507/i/inverse/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 13:14:27] INFO root fetch - processPackages [compoundwidgets]: Downloading https://files.pythonhosted.org/packages/6e/e8/c8aba7c6bb14a02cea51131b35f41f9aa2c5be86fff3e532e4ad4cb5aa49/compoundwidgets-0.2.8.tar.gz
+[2023-05-07 13:14:27] INFO root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: Downloading https://files.pythonhosted.org/packages/b9/5e/56a528f19f47e4f3fdd902c48e3595ca9bfd2137f01c008b4d579596bfa1/certora-cli-alpha-uri-generate_link_json-20230504.20.21.960659.tar.gz
+[2023-05-07 13:14:28] WARNING root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: Skipping package: exceeds size limit 38472148>=10485760
+[2023-05-07 13:14:28] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-uri-generate-link-json] error
+[2023-05-07 13:14:28] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-05-07 13:14:28] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.8-py3-none-any.whl.zip tmp/QuNet-0.0.9-py3-none-any.whl.zip --markdown 20230507/Q/QuNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 13:14:28] INFO root fetch - processPackages [compoundwidgets]: Downloading https://files.pythonhosted.org/packages/2d/02/41a17a00996debfcc84ce21efe340c89924c33f3917f8b98892eb8e711e8/compoundwidgets-0.2.9.tar.gz
+[2023-05-07 13:14:28] INFO root fetch - processPackages [compoundwidgets]: executing diffoscope
+[2023-05-07 13:14:28] INFO root fetch - processPackages [compoundwidgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compoundwidgets-0.2.8.tar.gz tmp/compoundwidgets-0.2.9.tar.gz --markdown 20230507/c/compoundwidgets/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-07 13:14:29] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-05-07 13:14:29] INFO root fetch - main [MainThread]: End processing [inverse]: success
+[2023-05-07 13:14:29] INFO root fetch - main [MainThread]: End processing [compoundwidgets]: success
+[2023-05-07 13:14:29] INFO root fetch - main [MainThread]: Store serial: [18006212]
