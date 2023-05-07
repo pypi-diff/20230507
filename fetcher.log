@@ -2970,3 +2970,49 @@
 [2023-05-07 07:11:47] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
 [2023-05-07 07:14:35] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
 [2023-05-07 07:14:35] INFO root fetch - main [MainThread]: Store serial: [18004254]
+[2023-05-07 07:19:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004254]
+[2023-05-07 07:19:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 07:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: boardinator
+[2023-05-07 07:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spectrafit
+[2023-05-07 07:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wheeldiff
+[2023-05-07 07:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: po98
+[2023-05-07 07:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ImageMagic
+[2023-05-07 07:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cyberdrop-dl
+[2023-05-07 07:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rapidpe-rift-pipe
+[2023-05-07 07:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nyckel
+[2023-05-07 07:19:44] INFO root fetch - processPackages [wheeldiff]: New version: [2023.5.7.5] Old Version: [2023.5.7]
+[2023-05-07 07:19:44] WARNING root fetch - processPackages [po98]: Skipping, unable to determine old version
+[2023-05-07 07:19:44] INFO root fetch - main [MainThread]: End processing [po98] error
+[2023-05-07 07:19:44] INFO root fetch - processPackages [spectrafit]: New version: [1.0.0b2] Old Version: [1.0.0b1]
+[2023-05-07 07:19:44] INFO root fetch - processPackages [nyckel]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 07:19:44] INFO root fetch - processPackages [ImageMagic]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 07:19:44] WARNING root fetch - processPackages [boardinator]: Skipping, unable to determine old version
+[2023-05-07 07:19:44] INFO root fetch - main [MainThread]: End processing [boardinator] error
+[2023-05-07 07:19:44] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.2.2.dev20230507] Old Version: [0.2.2.dev20230506]
+[2023-05-07 07:19:44] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.13] Old Version: [4.2.12]
+[2023-05-07 07:19:44] INFO root fetch - processPackages [spectrafit]: Downloading https://files.pythonhosted.org/packages/6b/2a/41e9908ead4ca1e1d9d996de0c892d67d060119e8afe804904347a462817/spectrafit-1.0.0b1.tar.gz
+[2023-05-07 07:19:44] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/c7/c5/59cbe5d47024ff95ee2756898563543405b4cecba1ab4c5ae3a18e62c108/rapidpe_rift_pipe-0.2.2.dev20230507.tar.gz
+[2023-05-07 07:19:44] INFO root fetch - processPackages [ImageMagic]: Downloading https://files.pythonhosted.org/packages/36/f2/d7696615ad2ac38aa9664de3cec9279dcb6c2795ca5a5c08e2f411f13d1a/ImageMagic-0.1.9.tar.gz
+[2023-05-07 07:19:44] INFO root fetch - processPackages [nyckel]: Downloading https://files.pythonhosted.org/packages/84/16/921be5721a1bf9aaa52ee17c5a3877a7fb5eee5fffba36999ff2ce374379/nyckel-0.0.8.tar.gz
+[2023-05-07 07:19:44] INFO root fetch - processPackages [ImageMagic]: executing diffoscope
+[2023-05-07 07:19:44] INFO root fetch - processPackages [ImageMagic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ImageMagic-0.1.8.tar.gz tmp/ImageMagic-0.1.9.tar.gz --markdown 20230507/I/ImageMagic/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 07:19:44] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/ef/d7/4f1eee29bac242321730b73fa40db8c6c466f61bd9525f0d41fa17d5158c/cyberdrop-dl-4.2.13.tar.gz
+[2023-05-07 07:19:44] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-07 07:19:44] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.7.tar.gz tmp/nyckel-0.0.8.tar.gz --markdown 20230507/n/nyckel/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 07:19:44] INFO root fetch - processPackages [wheeldiff]: Downloading https://files.pythonhosted.org/packages/81/02/8a72b499d2a778fc8f0ddb26dc427d0c31d6d6625552d53ca2db35b56ac8/wheeldiff-2023.5.7.5.tar.gz
+[2023-05-07 07:19:44] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2023-05-07 07:19:44] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.2.2.dev20230506.tar.gz tmp/rapidpe_rift_pipe-0.2.2.dev20230507.tar.gz --markdown 20230507/r/rapidpe-rift-pipe/0.2.2.dev20230506-0.2.2.dev20230507/diff.md --exclude *.pyd
+[2023-05-07 07:19:44] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-05-07 07:19:44] INFO root fetch - processPackages [wheeldiff]: executing diffoscope
+[2023-05-07 07:19:44] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.12.tar.gz tmp/cyberdrop-dl-4.2.13.tar.gz --markdown 20230507/c/cyberdrop-dl/4.2.12-4.2.13/diff.md --exclude *.pyd
+[2023-05-07 07:19:44] INFO root fetch - processPackages [wheeldiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheeldiff-2023.5.7.tar.gz tmp/wheeldiff-2023.5.7.5.tar.gz --markdown 20230507/w/wheeldiff/2023.5.7-2023.5.7.5/diff.md --exclude *.pyd
+[2023-05-07 07:19:44] INFO root fetch - processPackages [spectrafit]: Downloading https://files.pythonhosted.org/packages/b0/e6/82afb2b07e68fd939709273d2e78209c65e2ecd4f15dfd661bf36a3c9604/spectrafit-1.0.0b2.tar.gz
+[2023-05-07 07:19:45] INFO root fetch - processPackages [spectrafit]: executing diffoscope
+[2023-05-07 07:19:45] INFO root fetch - processPackages [spectrafit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectrafit-1.0.0b1.tar.gz tmp/spectrafit-1.0.0b2.tar.gz --markdown 20230507/s/spectrafit/1.0.0b1-1.0.0b2/diff.md --exclude *.pyd
+[2023-05-07 07:19:45] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-07 07:19:45] INFO root fetch - main [MainThread]: End processing [wheeldiff]: success
+[2023-05-07 07:19:45] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2023-05-07 07:19:46] INFO root fetch - main [MainThread]: End processing [ImageMagic]: success
+[2023-05-07 07:19:46] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-05-07 07:19:46] INFO root fetch - main [MainThread]: End processing [spectrafit]: success
+[2023-05-07 07:19:46] INFO root fetch - main [MainThread]: Store serial: [18004288]
