@@ -6838,3 +6838,63 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 15:03:02] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2023-05-07 15:03:05] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-05-07 15:03:05] INFO root fetch - main [MainThread]: Store serial: [18006829]
+[2023-05-07 15:08:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006829]
+[2023-05-07 15:08:14] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 15:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-erp-framework
+[2023-05-07 15:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: napari-laptrack
+[2023-05-07 15:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onvif-zeep-async
+[2023-05-07 15:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aswan
+[2023-05-07 15:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-stdlib
+[2023-05-07 15:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qwak-inference
+[2023-05-07 15:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: py-tfl
+[2023-05-07 15:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nbdev-numpy
+[2023-05-07 15:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: arvan-dns
+[2023-05-07 15:08:14] INFO root fetch - processPackages [napari-laptrack]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-07 15:08:14] WARNING root fetch - processPackages [py-tfl]: Skipping, unable to determine old version
+[2023-05-07 15:08:14] INFO root fetch - main [MainThread]: End processing [py-tfl] error
+[2023-05-07 15:08:14] INFO root fetch - processPackages [aswan]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-07 15:08:14] INFO root fetch - processPackages [arvan-dns]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-07 15:08:14] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 15:08:14] INFO root fetch - processPackages [qwak-inference]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 15:08:14] INFO root fetch - processPackages [django-erp-framework]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-07 15:08:14] INFO root fetch - processPackages [onvif-zeep-async]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-05-07 15:08:14] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 15:08:14] INFO root fetch - processPackages [nbdev-stdlib]: Downloading https://files.pythonhosted.org/packages/e8/48/ed43dbfa0bd5ca86a6a3f6ae0500b0cffb413b2c3f118e82da24ef3488f1/nbdev-stdlib-0.0.98.tar.gz
+[2023-05-07 15:08:14] INFO root fetch - processPackages [nbdev-numpy]: Downloading https://files.pythonhosted.org/packages/73/28/26429c7dd7dcf4c45025b55facc2688943de2ab2ec4851cc073f81f31e65/nbdev-numpy-0.0.98.tar.gz
+[2023-05-07 15:08:14] INFO root fetch - processPackages [qwak-inference]: Downloading https://files.pythonhosted.org/packages/2e/e3/72f071195aca6a2fc1a646c3dfb88830bb32646d67ce061edff95804e9be/qwak_inference-0.1.1.tar.gz
+[2023-05-07 15:08:14] INFO root fetch - processPackages [django-erp-framework]: Downloading https://files.pythonhosted.org/packages/f9/36/ebfe67c7bd27d96428df5946376b8061bd1b76ebcb6fc86f8aac6c8bdbfe/django-erp-framework-0.9.0.tar.gz
+[2023-05-07 15:08:14] INFO root fetch - processPackages [aswan]: Downloading https://files.pythonhosted.org/packages/78/a1/2c89459ee85457c31d4cd9bcc2c4f0744a8530e958c4b5c230bf9f074b49/aswan-0.5.8.tar.gz
+[2023-05-07 15:08:14] INFO root fetch - processPackages [napari-laptrack]: Downloading https://files.pythonhosted.org/packages/07/3e/b55d717f4f4fba44cf77a4a31044369da8e1835de68b8fdcc848a552d70c/napari-laptrack-0.1.0.tar.gz
+[2023-05-07 15:08:14] INFO root fetch - processPackages [arvan-dns]: Downloading https://files.pythonhosted.org/packages/1b/77/74221d93e477685ff13d7a2fe6f9c09c5675db93bf41e7b93820c6689e0a/arvan_dns-1.0.2.tar.gz
+[2023-05-07 15:08:14] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/42/d5/be3a5226678e040d513e6866332e69b908adf15d01321f471e119e111603/onvif-zeep-async-3.1.1.tar.gz
+[2023-05-07 15:08:14] INFO root fetch - processPackages [nbdev-stdlib]: Downloading https://files.pythonhosted.org/packages/9b/0f/42944508859f820e43bf894814c5e9dbc7920a0caceef1828a31a9e5b599/nbdev-stdlib-0.0.99.tar.gz
+[2023-05-07 15:08:14] INFO root fetch - processPackages [nbdev-numpy]: Downloading https://files.pythonhosted.org/packages/ea/78/0c0ef1d69ad517e7123dd810dda3cf8c0863af031c2cbb78ac3dae878b48/nbdev-numpy-0.0.99.tar.gz
+[2023-05-07 15:08:14] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-05-07 15:08:14] INFO root fetch - processPackages [arvan-dns]: executing diffoscope
+[2023-05-07 15:08:14] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-3.1.0.tar.gz tmp/onvif-zeep-async-3.1.1.tar.gz --markdown 20230507/o/onvif-zeep-async/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-05-07 15:08:14] INFO root fetch - processPackages [arvan-dns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arvan_dns-1.0.1.tar.gz tmp/arvan_dns-1.0.2.tar.gz --markdown 20230507/a/arvan-dns/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-07 15:08:15] INFO root fetch - processPackages [qwak-inference]: Downloading https://files.pythonhosted.org/packages/b3/c7/6426828c79410e12eee4d1c8c401a837224e70528ed546ae1b2dbf0ca192/qwak_inference-0.1.2.tar.gz
+[2023-05-07 15:08:15] INFO root fetch - processPackages [django-erp-framework]: Downloading https://files.pythonhosted.org/packages/92/a7/3681eb1f68bef4a9ff26e60365aee7aa81687405e4099b27967bc6fdf323/django-erp-framework-0.9.1.tar.gz
+[2023-05-07 15:08:15] INFO root fetch - processPackages [aswan]: Downloading https://files.pythonhosted.org/packages/eb/30/37a44327f13c1abfd7ef84983cafda4016d2ebb8dfe69a5164ece3e063cb/aswan-0.5.9.tar.gz
+[2023-05-07 15:08:15] INFO root fetch - processPackages [qwak-inference]: executing diffoscope
+[2023-05-07 15:08:15] INFO root fetch - processPackages [qwak-inference]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_inference-0.1.1.tar.gz tmp/qwak_inference-0.1.2.tar.gz --markdown 20230507/q/qwak-inference/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 15:08:15] INFO root fetch - processPackages [django-erp-framework]: executing diffoscope
+[2023-05-07 15:08:15] INFO root fetch - processPackages [django-erp-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-erp-framework-0.9.0.tar.gz tmp/django-erp-framework-0.9.1.tar.gz --markdown 20230507/d/django-erp-framework/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-07 15:08:15] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-07 15:08:15] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230507/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 15:08:15] INFO root fetch - processPackages [aswan]: executing diffoscope
+[2023-05-07 15:08:15] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-07 15:08:15] INFO root fetch - processPackages [aswan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aswan-0.5.8.tar.gz tmp/aswan-0.5.9.tar.gz --markdown 20230507/a/aswan/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-07 15:08:15] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230507/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 15:08:16] INFO root fetch - processPackages [napari-laptrack]: Downloading https://files.pythonhosted.org/packages/63/a4/1e2ae8392f4995ce0fbed676f28b32c74d373e17dc07b91761af0cb62330/napari-laptrack-0.2.0.tar.gz
+[2023-05-07 15:08:16] INFO root fetch - main [MainThread]: End processing [arvan-dns]: success
+[2023-05-07 15:08:16] INFO root fetch - main [MainThread]: End processing [qwak-inference]: success
+[2023-05-07 15:08:16] INFO root fetch - processPackages [napari-laptrack]: executing diffoscope
+[2023-05-07 15:08:16] INFO root fetch - processPackages [napari-laptrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-laptrack-0.1.0.tar.gz tmp/napari-laptrack-0.2.0.tar.gz --markdown 20230507/n/napari-laptrack/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 15:08:16] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-07 15:08:16] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-07 15:08:16] INFO root fetch - main [MainThread]: End processing [django-erp-framework]: success
+[2023-05-07 15:08:16] INFO root fetch - main [MainThread]: End processing [aswan]: success
+[2023-05-07 15:08:17] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-05-07 15:08:18] INFO root fetch - main [MainThread]: End processing [napari-laptrack]: success
+[2023-05-07 15:08:18] INFO root fetch - main [MainThread]: Store serial: [18006859]
