@@ -5130,3 +5130,52 @@
 [2023-05-07 11:54:31] INFO root fetch - main [MainThread]: End processing [twitch-dl]: success
 [2023-05-07 11:54:31] INFO root fetch - main [MainThread]: End processing [gym-trading-env]: success
 [2023-05-07 11:54:31] INFO root fetch - main [MainThread]: Store serial: [18005676]
+[2023-05-07 11:59:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005676]
+[2023-05-07 11:59:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 11:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ogc-na
+[2023-05-07 11:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: struct-gpt
+[2023-05-07 11:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: promptwatch
+[2023-05-07 11:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: starbot-bilibili
+[2023-05-07 11:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bivalve
+[2023-05-07 11:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: inverse
+[2023-05-07 11:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bring-python-api
+[2023-05-07 11:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vht
+[2023-05-07 11:59:40] INFO root fetch - processPackages [struct-gpt]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-07 11:59:40] INFO root fetch - processPackages [ogc-na]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-07 11:59:40] INFO root fetch - processPackages [bivalve]: New version: [0.3] Old Version: [0.2]
+[2023-05-07 11:59:40] INFO root fetch - processPackages [inverse]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 11:59:40] INFO root fetch - processPackages [starbot-bilibili]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-07 11:59:40] INFO root fetch - processPackages [vht]: New version: [0.3.32] Old Version: [0.3.23]
+[2023-05-07 11:59:40] INFO root fetch - processPackages [promptwatch]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 11:59:40] WARNING root fetch - processPackages [bring-python-api]: Skipping, unable to determine old version
+[2023-05-07 11:59:40] INFO root fetch - main [MainThread]: End processing [bring-python-api] error
+[2023-05-07 11:59:40] INFO root fetch - processPackages [starbot-bilibili]: Downloading https://files.pythonhosted.org/packages/0d/17/6f70a12e76b39b53d6159d38edfe6f917314d0570799b9ca6a3141c0ac8b/starbot-bilibili-1.0.5.tar.gz
+[2023-05-07 11:59:40] INFO root fetch - processPackages [promptwatch]: Downloading https://files.pythonhosted.org/packages/88/0e/56b13655be1f558d36972bbdec5c6e2681190b567ac84ef4b1c4da427837/promptwatch-0.0.6.tar.gz
+[2023-05-07 11:59:40] INFO root fetch - processPackages [vht]: Downloading https://files.pythonhosted.org/packages/25/2e/78f581ae642cc25c734a5a42fc7e0079c62d8217536ba300bd4840d593a3/vht-0.3.23.tar.gz
+[2023-05-07 11:59:40] INFO root fetch - processPackages [inverse]: Downloading https://files.pythonhosted.org/packages/9c/35/34696b3ea4632731c0c3ce20837f1585bb3101c0fa2709e9478b1d715b91/inverse-0.0.9-py3-none-any.whl
+[2023-05-07 11:59:40] INFO root fetch - processPackages [struct-gpt]: Downloading https://files.pythonhosted.org/packages/76/d1/a4139de926f0675e81e7c80da037afefffaf32a42178d3b03cc9364afa46/struct_gpt-0.3.3.tar.gz
+[2023-05-07 11:59:40] WARNING root fetch - processPackages [starbot-bilibili]: Skipping package: exceeds size limit 20885852>=10485760
+[2023-05-07 11:59:40] INFO root fetch - main [MainThread]: End processing [starbot-bilibili] error
+[2023-05-07 11:59:40] INFO root fetch - processPackages [ogc-na]: Downloading https://files.pythonhosted.org/packages/64/94/329cbd56e234b9186b326f343d6b84acd39be04b809acb292b4d828a6ece/ogc_na-0.1.5.tar.gz
+[2023-05-07 11:59:40] INFO root fetch - processPackages [struct-gpt]: executing diffoscope
+[2023-05-07 11:59:40] INFO root fetch - processPackages [struct-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/struct_gpt-0.3.2.tar.gz tmp/struct_gpt-0.3.3.tar.gz --markdown 20230507/s/struct-gpt/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-07 11:59:40] INFO root fetch - processPackages [inverse]: executing diffoscope
+[2023-05-07 11:59:40] INFO root fetch - processPackages [inverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverse-0.0.8-py3-none-any.whl.zip tmp/inverse-0.0.9-py3-none-any.whl.zip --markdown 20230507/i/inverse/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 11:59:40] INFO root fetch - processPackages [bivalve]: Downloading https://files.pythonhosted.org/packages/68/b9/eedbbe02277be5a22813b5ad1586f0ae2ccb27c9a7bc688492cacf624583/bivalve-0.3.tar.gz
+[2023-05-07 11:59:40] INFO root fetch - processPackages [ogc-na]: executing diffoscope
+[2023-05-07 11:59:40] INFO root fetch - processPackages [ogc-na]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogc_na-0.1.4.tar.gz tmp/ogc_na-0.1.5.tar.gz --markdown 20230507/o/ogc-na/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-07 11:59:40] INFO root fetch - processPackages [promptwatch]: Downloading https://files.pythonhosted.org/packages/a9/db/7a48ad167564fd295b2ccbefb2622621f5bc9e2fc68ff58826a09c877acf/promptwatch-0.0.7.tar.gz
+[2023-05-07 11:59:40] INFO root fetch - processPackages [bivalve]: executing diffoscope
+[2023-05-07 11:59:40] INFO root fetch - processPackages [bivalve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bivalve-0.2.tar.gz tmp/bivalve-0.3.tar.gz --markdown 20230507/b/bivalve/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-07 11:59:41] INFO root fetch - processPackages [vht]: Downloading https://files.pythonhosted.org/packages/b3/cc/d3b6cd641e2ccc4d8f4db688fbe62e6088027ed928e635822be33ab7c484/vht-0.3.32.tar.gz
+[2023-05-07 11:59:41] INFO root fetch - processPackages [promptwatch]: executing diffoscope
+[2023-05-07 11:59:41] INFO root fetch - processPackages [promptwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptwatch-0.0.6.tar.gz tmp/promptwatch-0.0.7.tar.gz --markdown 20230507/p/promptwatch/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 11:59:41] INFO root fetch - processPackages [vht]: executing diffoscope
+[2023-05-07 11:59:41] INFO root fetch - processPackages [vht]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vht-0.3.23.tar.gz tmp/vht-0.3.32.tar.gz --markdown 20230507/v/vht/0.3.23-0.3.32/diff.md --exclude *.pyd
+[2023-05-07 11:59:41] INFO root fetch - main [MainThread]: End processing [struct-gpt]: success
+[2023-05-07 11:59:42] INFO root fetch - main [MainThread]: End processing [bivalve]: success
+[2023-05-07 11:59:42] INFO root fetch - main [MainThread]: End processing [promptwatch]: success
+[2023-05-07 11:59:42] INFO root fetch - main [MainThread]: End processing [inverse]: success
+[2023-05-07 11:59:42] INFO root fetch - main [MainThread]: End processing [ogc-na]: success
+[2023-05-07 11:59:42] INFO root fetch - main [MainThread]: End processing [vht]: success
+[2023-05-07 11:59:42] INFO root fetch - main [MainThread]: Store serial: [18005704]
