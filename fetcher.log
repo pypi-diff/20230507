@@ -10460,3 +10460,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 21:07:44] INFO root fetch - main [MainThread]: End processing [fsspec]: success
 [2023-05-07 21:07:44] INFO root fetch - main [MainThread]: End processing [edc-dx]: success
 [2023-05-07 21:07:44] INFO root fetch - main [MainThread]: Store serial: [18009113]
+[2023-05-07 21:12:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009113]
+[2023-05-07 21:12:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 21:12:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shikoni
+[2023-05-07 21:12:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mdsplit
+[2023-05-07 21:12:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libpipultravirtual
+[2023-05-07 21:12:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: grrif-tools
+[2023-05-07 21:12:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dxsp
+[2023-05-07 21:12:53] INFO root fetch - processPackages [grrif-tools]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-07 21:12:53] INFO root fetch - processPackages [dxsp]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-07 21:12:53] INFO root fetch - processPackages [mdsplit]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-05-07 21:12:53] WARNING root fetch - processPackages [shikoni]: Skipping, unable to determine old version
+[2023-05-07 21:12:53] INFO root fetch - main [MainThread]: End processing [shikoni] error
+[2023-05-07 21:12:53] WARNING root fetch - processPackages [libpipultravirtual]: Skipping, unable to determine old version
+[2023-05-07 21:12:53] INFO root fetch - main [MainThread]: End processing [libpipultravirtual] error
+[2023-05-07 21:12:53] INFO root fetch - processPackages [grrif-tools]: executing diffoscope
+[2023-05-07 21:12:53] INFO root fetch - processPackages [grrif-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grrif_tools-0.5.1.tar.gz tmp/grrif_tools-0.5.2.tar.gz --markdown 20230507/g/grrif-tools/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-07 21:12:53] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-07 21:12:53] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.0.0.tar.gz tmp/dxsp-2.0.1.tar.gz --markdown 20230507/d/dxsp/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-07 21:12:53] INFO root fetch - processPackages [mdsplit]: Downloading https://files.pythonhosted.org/packages/a5/63/056056fab4cd90b2e9ca415d614d1bea83d49d6474396cd16153455690c7/mdsplit-0.3.2.tar.gz
+[2023-05-07 21:12:54] INFO root fetch - processPackages [mdsplit]: Downloading https://files.pythonhosted.org/packages/7b/5b/ab21ef863da037a68e26ebd11d6e79b59a8a1490d56e72682948d75d76df/mdsplit-0.4.0.tar.gz
+[2023-05-07 21:12:54] INFO root fetch - processPackages [mdsplit]: executing diffoscope
+[2023-05-07 21:12:54] INFO root fetch - processPackages [mdsplit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdsplit-0.3.2.tar.gz tmp/mdsplit-0.4.0.tar.gz --markdown 20230507/m/mdsplit/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-05-07 21:12:54] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-07 21:12:54] INFO root fetch - main [MainThread]: End processing [grrif-tools]: success
+[2023-05-07 21:12:55] INFO root fetch - main [MainThread]: End processing [mdsplit]: success
+[2023-05-07 21:12:55] INFO root fetch - main [MainThread]: Store serial: [18009133]
