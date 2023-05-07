@@ -1246,3 +1246,31 @@
 [2023-05-07 02:39:02] INFO root fetch - main [MainThread]: End processing [cliconfig]: success
 [2023-05-07 02:39:05] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
 [2023-05-07 02:39:05] INFO root fetch - main [MainThread]: Store serial: [18003313]
+[2023-05-07 02:44:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003313]
+[2023-05-07 02:44:13] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-07 02:49:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003334]
+[2023-05-07 02:49:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 02:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfds-nightly
+[2023-05-07 02:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-comprehend-s3olap
+[2023-05-07 02:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kubric-nightly
+[2023-05-07 02:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thonny-autosave
+[2023-05-07 02:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sphinx-pdf-generate
+[2023-05-07 02:49:19] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-07 02:49:19] WARNING root fetch - processPackages [thonny-autosave]: Skipping, unable to determine old version
+[2023-05-07 02:49:19] INFO root fetch - main [MainThread]: End processing [thonny-autosave] error
+[2023-05-07 02:49:19] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202305060044] Old Version: [4.9.2.dev202305050044]
+[2023-05-07 02:49:19] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.5.6] Old Version: [2023.5.5]
+[2023-05-07 02:49:19] WARNING root fetch - processPackages [sphinx-pdf-generate]: Skipping, unable to determine old version
+[2023-05-07 02:49:19] INFO root fetch - main [MainThread]: End processing [sphinx-pdf-generate] error
+[2023-05-07 02:49:19] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-05-07 02:49:19] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/7c/4c/aa6b70d82491bf397116ab06db6e192e1075992903f6eba2a05b02f5629e/tfds-nightly-4.9.2.dev202305060044.tar.gz
+[2023-05-07 02:49:19] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-05-07 02:49:19] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-05-07 02:49:19] INFO root fetch - processPackages [kubric-nightly]: Downloading https://files.pythonhosted.org/packages/37/58/a17505197f2928e1d211629254b9d5ec7fad196808e31346427282b70353/kubric-nightly-2023.5.6.tar.gz
+[2023-05-07 02:49:19] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-05-07 02:49:19] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.5.5.tar.gz tmp/kubric-nightly-2023.5.6.tar.gz --markdown 20230507/k/kubric-nightly/2023.5.5-2023.5.6/diff.md --exclude *.pyd
+[2023-05-07 02:49:19] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-05-07 02:49:19] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202305050044.tar.gz tmp/tfds-nightly-4.9.2.dev202305060044.tar.gz --markdown 20230507/t/tfds-nightly/4.9.2.dev202305050044-4.9.2.dev202305060044/diff.md --exclude *.pyd
+[2023-05-07 02:49:20] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-05-07 02:49:31] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-05-07 02:49:31] INFO root fetch - main [MainThread]: Store serial: [18003354]
