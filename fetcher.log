@@ -4007,3 +4007,35 @@
 [2023-05-07 09:56:44] INFO root fetch - main [MainThread]: End processing [dynamic-qrcode-image]: success
 [2023-05-07 09:56:46] INFO root fetch - main [MainThread]: End processing [PyQt6-Fluent-Widgets]: success
 [2023-05-07 09:56:46] INFO root fetch - main [MainThread]: Store serial: [18004976]
+[2023-05-07 10:01:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004976]
+[2023-05-07 10:01:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 10:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sym-recognizer
+[2023-05-07 10:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: najia
+[2023-05-07 10:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: frankAllSkyCam
+[2023-05-07 10:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plantumlcli
+[2023-05-07 10:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pineapple-spark
+[2023-05-07 10:01:56] INFO root fetch - processPackages [frankAllSkyCam]: New version: [5.9] Old Version: [5.8]
+[2023-05-07 10:01:56] WARNING root fetch - processPackages [pineapple-spark]: Skipping, unable to determine old version
+[2023-05-07 10:01:56] INFO root fetch - main [MainThread]: End processing [pineapple-spark] error
+[2023-05-07 10:01:56] INFO root fetch - processPackages [najia]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-07 10:01:56] INFO root fetch - processPackages [sym-recognizer]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-05-07 10:01:56] INFO root fetch - processPackages [plantumlcli]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 10:01:56] INFO root fetch - processPackages [sym-recognizer]: Downloading https://files.pythonhosted.org/packages/e7/74/544a0bb44a0d01d3ad680424700f7284b06317a3e6598196e1d3f12faa0f/sym-recognizer-0.0.1.tar.gz
+[2023-05-07 10:01:56] INFO root fetch - processPackages [frankAllSkyCam]: Downloading https://files.pythonhosted.org/packages/2c/5e/607f4f231fe4fffb9c3d54b535ae97ad2928cdd574de64ae3eba6cc50353/frankAllSkyCam-5.8.tar.gz
+[2023-05-07 10:01:56] INFO root fetch - processPackages [najia]: Downloading https://files.pythonhosted.org/packages/e3/f4/410717f7e49ea01e2c40486a047d1dfa245a88d920e632933d8f5ff65b8c/najia-2.0.1.tar.gz
+[2023-05-07 10:01:56] INFO root fetch - processPackages [plantumlcli]: Downloading https://files.pythonhosted.org/packages/36/03/cce944c2c50532ac5a0a8eb49094689f2ffc722cc2f21be5d6a2bfb54a64/plantumlcli-0.1.2.tar.gz
+[2023-05-07 10:01:56] INFO root fetch - processPackages [najia]: executing diffoscope
+[2023-05-07 10:01:56] INFO root fetch - processPackages [najia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/najia-2.0.0.tar.gz tmp/najia-2.0.1.tar.gz --markdown 20230507/n/najia/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-07 10:01:56] INFO root fetch - processPackages [plantumlcli]: executing diffoscope
+[2023-05-07 10:01:56] INFO root fetch - processPackages [plantumlcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plantumlcli-0.1.1.tar.gz tmp/plantumlcli-0.1.2.tar.gz --markdown 20230507/p/plantumlcli/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 10:01:56] INFO root fetch - processPackages [sym-recognizer]: Downloading https://files.pythonhosted.org/packages/80/fe/ddb65e89d50ab916d4b8d62485681bdcfddd6e6ae701f39e9d513e6a8ea1/sym-recognizer-0.0.3.tar.gz
+[2023-05-07 10:01:56] INFO root fetch - processPackages [frankAllSkyCam]: Downloading https://files.pythonhosted.org/packages/48/33/e1f3623648195eee1915bb1d1c0d5d20aba24d06c3796b28183d37ca3618/frankAllSkyCam-5.9.tar.gz
+[2023-05-07 10:01:56] INFO root fetch - processPackages [sym-recognizer]: executing diffoscope
+[2023-05-07 10:01:56] INFO root fetch - processPackages [sym-recognizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sym-recognizer-0.0.1.tar.gz tmp/sym-recognizer-0.0.3.tar.gz --markdown 20230507/s/sym-recognizer/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 10:01:56] INFO root fetch - processPackages [frankAllSkyCam]: executing diffoscope
+[2023-05-07 10:01:56] INFO root fetch - processPackages [frankAllSkyCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frankAllSkyCam-5.8.tar.gz tmp/frankAllSkyCam-5.9.tar.gz --markdown 20230507/f/frankAllSkyCam/5.8-5.9/diff.md --exclude *.pyd
+[2023-05-07 10:01:57] INFO root fetch - main [MainThread]: End processing [najia]: success
+[2023-05-07 10:01:57] INFO root fetch - main [MainThread]: End processing [plantumlcli]: success
+[2023-05-07 10:01:57] INFO root fetch - main [MainThread]: End processing [sym-recognizer]: success
+[2023-05-07 10:01:57] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam]: success
+[2023-05-07 10:01:57] INFO root fetch - main [MainThread]: Store serial: [18004989]
