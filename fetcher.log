@@ -2462,3 +2462,22 @@
 [2023-05-07 05:43:09] INFO root fetch - main [MainThread]: End processing [pwproxy]: success
 [2023-05-07 05:43:09] INFO root fetch - main [MainThread]: End processing [zillionare-trader-client]: success
 [2023-05-07 05:43:09] INFO root fetch - main [MainThread]: Store serial: [18003977]
+[2023-05-07 05:48:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003977]
+[2023-05-07 05:48:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 05:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: usda-api
+[2023-05-07 05:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neuromorphic-drivers
+[2023-05-07 05:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyroporn
+[2023-05-07 05:48:18] WARNING root fetch - processPackages [neuromorphic-drivers]: Skipping, unable to determine old version
+[2023-05-07 05:48:18] INFO root fetch - main [MainThread]: End processing [neuromorphic-drivers] error
+[2023-05-07 05:48:18] INFO root fetch - processPackages [usda-api]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-07 05:48:18] INFO root fetch - processPackages [pyroporn]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-07 05:48:18] INFO root fetch - processPackages [usda-api]: Downloading https://files.pythonhosted.org/packages/3e/d0/37ca0ad927a66fd97b99a230ef4815ab259bc6b371b40ea42936617f3085/usda_api-0.1.tar.gz
+[2023-05-07 05:48:18] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/c6/91/ed39fb14a008340359b5078c2eb538a1fab8d83663c19a047890c8672e64/pyroporn-0.2.9.tar.gz
+[2023-05-07 05:48:18] INFO root fetch - processPackages [pyroporn]: executing diffoscope
+[2023-05-07 05:48:18] INFO root fetch - processPackages [pyroporn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroporn-0.2.8.tar.gz tmp/pyroporn-0.2.9.tar.gz --markdown 20230507/p/pyroporn/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-07 05:48:18] INFO root fetch - processPackages [usda-api]: Downloading https://files.pythonhosted.org/packages/0f/7b/836b8a93c16ae79b8a81a74f4232087653bc95c49c4a42afea3e63c22df3/usda_api-0.1.1.tar.gz
+[2023-05-07 05:48:18] INFO root fetch - processPackages [usda-api]: executing diffoscope
+[2023-05-07 05:48:18] INFO root fetch - processPackages [usda-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usda_api-0.1.tar.gz tmp/usda_api-0.1.1.tar.gz --markdown 20230507/u/usda-api/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 05:48:19] INFO root fetch - main [MainThread]: End processing [usda-api]: success
+[2023-05-07 05:48:19] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
+[2023-05-07 05:48:19] INFO root fetch - main [MainThread]: Store serial: [18003988]
