@@ -12013,3 +12013,23 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 23:46:22] INFO root fetch - main [MainThread]: End processing [whisper-cpp-python]: success
 [2023-05-07 23:46:23] INFO root fetch - main [MainThread]: End processing [stitchtoon]: success
 [2023-05-07 23:46:23] INFO root fetch - main [MainThread]: Store serial: [18010043]
+[2023-05-07 23:51:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18010043]
+[2023-05-07 23:51:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 23:51:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: colititato
+[2023-05-07 23:51:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: doitoml
+[2023-05-07 23:51:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ua-node-avail
+[2023-05-07 23:51:33] WARNING root fetch - processPackages [colititato]: Skipping, unable to determine old version
+[2023-05-07 23:51:33] INFO root fetch - main [MainThread]: End processing [colititato] error
+[2023-05-07 23:51:33] INFO root fetch - processPackages [ua-node-avail]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 23:51:33] INFO root fetch - processPackages [doitoml]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-07 23:51:33] INFO root fetch - processPackages [ua-node-avail]: Downloading https://files.pythonhosted.org/packages/26/ea/65a20760e2e67ded063847043f35c17db3aa2400e2c5db6134309c295201/ua-node-avail-0.1.8.tar.gz
+[2023-05-07 23:51:33] INFO root fetch - processPackages [doitoml]: Downloading https://files.pythonhosted.org/packages/10/c7/83fce3cf1f5c8f94b3a22b321603f27aaf365a998de276330fad65acf611/doitoml-0.1.1.tar.gz
+[2023-05-07 23:51:33] INFO root fetch - processPackages [doitoml]: Downloading https://files.pythonhosted.org/packages/93/98/ac4521ac9ee95317e3d6605a900a67d42d3f2e7b9d98742d58b91c75a57e/doitoml-0.2.0.tar.gz
+[2023-05-07 23:51:33] INFO root fetch - processPackages [ua-node-avail]: Downloading https://files.pythonhosted.org/packages/49/c8/9a4bd3cfba26957d45b8bb26b1e63d816e8863bf0737d886ea649a830ec1/ua-node-avail-0.1.9.tar.gz
+[2023-05-07 23:51:33] INFO root fetch - processPackages [doitoml]: executing diffoscope
+[2023-05-07 23:51:33] INFO root fetch - processPackages [doitoml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doitoml-0.1.1.tar.gz tmp/doitoml-0.2.0.tar.gz --markdown 20230507/d/doitoml/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 23:51:33] INFO root fetch - processPackages [ua-node-avail]: executing diffoscope
+[2023-05-07 23:51:33] INFO root fetch - processPackages [ua-node-avail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ua-node-avail-0.1.8.tar.gz tmp/ua-node-avail-0.1.9.tar.gz --markdown 20230507/u/ua-node-avail/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 23:51:34] INFO root fetch - main [MainThread]: End processing [ua-node-avail]: success
+[2023-05-07 23:51:35] INFO root fetch - main [MainThread]: End processing [doitoml]: success
+[2023-05-07 23:51:35] INFO root fetch - main [MainThread]: Store serial: [18010054]
