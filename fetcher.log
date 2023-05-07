@@ -11575,3 +11575,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 23:04:05] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
 [2023-05-07 23:04:05] INFO root fetch - main [MainThread]: End processing [mokuro]: success
 [2023-05-07 23:04:05] INFO root fetch - main [MainThread]: Store serial: [18009741]
+[2023-05-07 23:09:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009741]
+[2023-05-07 23:09:14] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: JBPhD
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neurodec
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aij-webcam
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ini-klass
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymap-admin
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: docassemble
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: docassemble.base
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: docassemble.demo
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: docassemble.webapp
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fpyo2apk
+[2023-05-07 23:09:14] INFO root fetch - processPackages [JBPhD]: New version: [1.1] Old Version: [1.0.0]
+[2023-05-07 23:09:14] INFO root fetch - processPackages [aij-webcam]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-07 23:09:14] INFO root fetch - processPackages [neurodec]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ini-klass]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-07 23:09:14] WARNING root fetch - processPackages [fpyo2apk]: Skipping, unable to determine old version
+[2023-05-07 23:09:14] INFO root fetch - processPackages [pymap-admin]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-07 23:09:14] INFO root fetch - main [MainThread]: End processing [fpyo2apk] error
+[2023-05-07 23:09:14] INFO root fetch - processPackages [docassemble.demo]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-07 23:09:14] INFO root fetch - processPackages [docassemble]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-07 23:09:14] INFO root fetch - processPackages [docassemble.webapp]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-07 23:09:14] INFO root fetch - processPackages [docassemble.base]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-07 23:09:14] INFO root fetch - processPackages [pymap-admin]: executing diffoscope
+[2023-05-07 23:09:14] INFO root fetch - processPackages [pymap-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymap_admin-0.9.1.tar.gz tmp/pymap_admin-0.9.2.tar.gz --markdown 20230507/p/pymap-admin/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-07 23:09:14] INFO root fetch - processPackages [JBPhD]: Downloading https://files.pythonhosted.org/packages/cd/cc/4c3631665d0d98c52dcf5b0936514f5550638f3279f095101e3d5613f6b6/jbphd-1.0-py3-none-any.whl
+[2023-05-07 23:09:14] INFO root fetch - processPackages [aij-webcam]: Downloading https://files.pythonhosted.org/packages/a1/5d/f398b99b8a02061be78763b1bcc308c1f44cb07368c92446eefc2a8d2008/aij-webcam-1.1.9.tar.gz
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ini-klass]: Downloading https://files.pythonhosted.org/packages/84/b4/760ba7bb86946bfcf11c02e8ed65d8f63c482d6acf697645f9ee7751758e/ini-klass-0.0.5.tar.gz
+[2023-05-07 23:09:14] INFO root fetch - processPackages [neurodec]: Downloading https://files.pythonhosted.org/packages/71/b0/258aa978d90bd80b1fb6cb2fd6b760b0afada4a0c188e35cbe73d4830f2a/neurodec-0.0.4.tar.gz
+[2023-05-07 23:09:14] WARNING root fetch - processPackages [JBPhD]: Skipping package: exceeds size limit 13199869>=10485760
+[2023-05-07 23:09:14] INFO root fetch - main [MainThread]: End processing [JBPhD] error
+[2023-05-07 23:09:14] INFO root fetch - processPackages [docassemble.base]: Downloading https://files.pythonhosted.org/packages/49/6f/c82f5b1b26e0b12bdf1e565f9218b862142854979a0f01ea54c864ac7770/docassemble.base-1.4.8.tar.gz
+[2023-05-07 23:09:14] WARNING root fetch - processPackages [docassemble.base]: Skipping package: exceeds size limit 10987248>=10485760
+[2023-05-07 23:09:14] INFO root fetch - main [MainThread]: End processing [docassemble.base] error
+[2023-05-07 23:09:14] INFO root fetch - processPackages [aij-webcam]: executing diffoscope
+[2023-05-07 23:09:14] INFO root fetch - processPackages [aij-webcam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-webcam-1.1.8.tar.gz tmp/aij-webcam-1.1.9.tar.gz --markdown 20230507/a/aij-webcam/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ini-klass]: executing diffoscope
+[2023-05-07 23:09:14] INFO root fetch - processPackages [ini-klass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ini-klass-0.0.4.tar.gz tmp/ini-klass-0.0.5.tar.gz --markdown 20230507/i/ini-klass/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-07 23:09:14] INFO root fetch - processPackages [docassemble.webapp]: executing diffoscope
+[2023-05-07 23:09:14] INFO root fetch - processPackages [docassemble.webapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docassemble.webapp-1.4.8.tar.gz tmp/docassemble.webapp-1.4.9.tar.gz --markdown 20230507/d/docassemble.webapp/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-07 23:09:14] INFO root fetch - processPackages [docassemble]: executing diffoscope
+[2023-05-07 23:09:14] INFO root fetch - processPackages [docassemble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docassemble-1.4.8.tar.gz tmp/docassemble-1.4.9.tar.gz --markdown 20230507/d/docassemble/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-07 23:09:14] INFO root fetch - processPackages [docassemble.demo]: executing diffoscope
+[2023-05-07 23:09:14] INFO root fetch - processPackages [docassemble.demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docassemble.demo-1.4.8.tar.gz tmp/docassemble.demo-1.4.9.tar.gz --markdown 20230507/d/docassemble.demo/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-07 23:09:15] INFO root fetch - processPackages [neurodec]: Downloading https://files.pythonhosted.org/packages/5c/86/016e13d53639300e3071d741ee05573750a8c2fc345f5a526a446e3a4f2e/neurodec-0.0.5.linux-x86_64.tar.gz
+[2023-05-07 23:09:15] INFO root fetch - processPackages [neurodec]: executing diffoscope
+[2023-05-07 23:09:15] INFO root fetch - processPackages [neurodec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neurodec-0.0.4.tar.gz tmp/neurodec-0.0.5.linux-x86_64.tar.gz --markdown 20230507/n/neurodec/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-07 23:09:16] INFO root fetch - main [MainThread]: End processing [aij-webcam]: success
+[2023-05-07 23:09:16] INFO root fetch - main [MainThread]: End processing [ini-klass]: success
+[2023-05-07 23:09:16] INFO root fetch - main [MainThread]: End processing [docassemble]: success
+[2023-05-07 23:09:16] INFO root fetch - main [MainThread]: End processing [pymap-admin]: success
+[2023-05-07 23:09:16] INFO root fetch - main [MainThread]: End processing [neurodec]: success
+[2023-05-07 23:09:21] INFO root fetch - main [MainThread]: End processing [docassemble.demo]: success
+[2023-05-07 23:09:23] INFO root fetch - main [MainThread]: End processing [docassemble.webapp]: success
+[2023-05-07 23:09:23] INFO root fetch - main [MainThread]: Store serial: [18009770]
