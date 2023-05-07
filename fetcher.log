@@ -10977,3 +10977,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 22:00:04] INFO root fetch - main [MainThread]: End processing [dxsp]: success
 [2023-05-07 22:00:04] INFO root fetch - main [MainThread]: End processing [djangocms-blog]: success
 [2023-05-07 22:00:04] INFO root fetch - main [MainThread]: Store serial: [18009426]
+[2023-05-07 22:05:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009426]
+[2023-05-07 22:05:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 22:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gsheetquery
+[2023-05-07 22:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-sa-orm-filter
+[2023-05-07 22:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: followee-notifier
+[2023-05-07 22:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dxsp
+[2023-05-07 22:05:13] INFO root fetch - processPackages [gsheetquery]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 22:05:13] WARNING root fetch - processPackages [followee-notifier]: Skipping, unable to determine old version
+[2023-05-07 22:05:13] INFO root fetch - processPackages [fastapi-sa-orm-filter]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 22:05:13] INFO root fetch - main [MainThread]: End processing [followee-notifier] error
+[2023-05-07 22:05:13] INFO root fetch - processPackages [dxsp]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-07 22:05:13] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-07 22:05:13] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.0.2.tar.gz tmp/dxsp-2.0.3.tar.gz --markdown 20230507/d/dxsp/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-07 22:05:13] INFO root fetch - processPackages [fastapi-sa-orm-filter]: Downloading https://files.pythonhosted.org/packages/ee/0f/c038a3aa53aea2db3249a8fa4f9de6881321770bdad609bbc76995a4a223/fastapi-sa-orm-filter-0.1.0.tar.gz
+[2023-05-07 22:05:13] INFO root fetch - processPackages [gsheetquery]: Downloading https://files.pythonhosted.org/packages/18/4d/f91392d22985987f525fb39c4a2f7f46eeef1880302e821c7319a2c2acab/gsheetquery-0.0.2.tar.gz
+[2023-05-07 22:05:13] INFO root fetch - processPackages [fastapi-sa-orm-filter]: Downloading https://files.pythonhosted.org/packages/a1/d7/0f30e2360b4d694b6447967c742916644831f2fc98c27199e2aab0b8d6f2/fastapi-sa-orm-filter-0.1.1.tar.gz
+[2023-05-07 22:05:13] INFO root fetch - processPackages [gsheetquery]: Downloading https://files.pythonhosted.org/packages/73/2f/0a002e52258b85f07b50a348aa922847e3f4acac03fe55247286afe9bc5f/gsheetquery-0.0.3.tar.gz
+[2023-05-07 22:05:13] INFO root fetch - processPackages [fastapi-sa-orm-filter]: executing diffoscope
+[2023-05-07 22:05:13] INFO root fetch - processPackages [fastapi-sa-orm-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-sa-orm-filter-0.1.0.tar.gz tmp/fastapi-sa-orm-filter-0.1.1.tar.gz --markdown 20230507/f/fastapi-sa-orm-filter/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 22:05:14] INFO root fetch - processPackages [gsheetquery]: executing diffoscope
+[2023-05-07 22:05:14] INFO root fetch - processPackages [gsheetquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gsheetquery-0.0.2.tar.gz tmp/gsheetquery-0.0.3.tar.gz --markdown 20230507/g/gsheetquery/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 22:05:14] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-07 22:05:14] INFO root fetch - main [MainThread]: End processing [fastapi-sa-orm-filter]: success
+[2023-05-07 22:05:14] INFO root fetch - main [MainThread]: End processing [gsheetquery]: success
+[2023-05-07 22:05:14] INFO root fetch - main [MainThread]: Store serial: [18009437]
