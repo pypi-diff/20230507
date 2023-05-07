@@ -8053,3 +8053,77 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 17:06:37] INFO root fetch - main [MainThread]: End processing [leagueclientlivedata]: success
 [2023-05-07 17:06:38] INFO root fetch - main [MainThread]: End processing [betanegbinfit]: success
 [2023-05-07 17:06:38] INFO root fetch - main [MainThread]: Store serial: [18007701]
+[2023-05-07 17:11:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007701]
+[2023-05-07 17:11:46] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-07 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leagueclientlivedata
+[2023-05-07 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: papis
+[2023-05-07 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: photoprism-client
+[2023-05-07 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pep440-rs
+[2023-05-07 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: haloop
+[2023-05-07 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rnginline
+[2023-05-07 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: JB-PhD-Trial
+[2023-05-07 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jetblack-serialization
+[2023-05-07 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dhapi
+[2023-05-07 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: arxiv-post
+[2023-05-07 17:11:46] INFO root fetch - processPackages [rnginline]: New version: [1.0.0rc1] Old Version: [0.0.2]
+[2023-05-07 17:11:46] INFO root fetch - processPackages [haloop]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 17:11:46] INFO root fetch - processPackages [leagueclientlivedata]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 17:11:46] WARNING root fetch - processPackages [JB-PhD-Trial]: Skipping, unable to determine old version
+[2023-05-07 17:11:46] INFO root fetch - processPackages [JB-PhD-Trial]: Start processing: optimal-loc
+[2023-05-07 17:11:46] INFO root fetch - processPackages [dhapi]: New version: [1.3.4] Old Version: [1.3.2]
+[2023-05-07 17:11:46] INFO root fetch - processPackages [jetblack-serialization]: New version: [3.0.1] Old Version: [3.0.0a3]
+[2023-05-07 17:11:46] INFO root fetch - main [MainThread]: End processing [JB-PhD-Trial] error
+[2023-05-07 17:11:46] INFO root fetch - processPackages [photoprism-client]: New version: [0.1.3] Old Version: [0.1.1]
+[2023-05-07 17:11:46] INFO root fetch - processPackages [papis]: New version: [0.9] Old Version: [0.8.2]
+[2023-05-07 17:11:46] INFO root fetch - processPackages [arxiv-post]: New version: [0.7.0] Old Version: [0.6.4]
+[2023-05-07 17:11:46] INFO root fetch - processPackages [optimal-loc]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-07 17:11:46] INFO root fetch - processPackages [pep440-rs]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-05-07 17:11:46] INFO root fetch - processPackages [rnginline]: Downloading https://files.pythonhosted.org/packages/6d/41/6d8e6a1259ed386fb88f9961eff46c9c0edef614147b9b4c7ac057c375e2/rnginline-0.0.2.tar.gz
+[2023-05-07 17:11:46] INFO root fetch - processPackages [haloop]: Downloading https://files.pythonhosted.org/packages/9b/39/c7e98aa7715541f846db826e1808c64be0a467154ece1ec59359505b2525/haloop-0.0.6.tar.gz
+[2023-05-07 17:11:46] INFO root fetch - processPackages [leagueclientlivedata]: Downloading https://files.pythonhosted.org/packages/ec/66/401424fda5abc6ba2e4ac64f876ed0c115317bb9b7dfa648359e42ab99c7/leagueclientlivedata-0.1.2.tar.gz
+[2023-05-07 17:11:46] INFO root fetch - processPackages [jetblack-serialization]: Downloading https://files.pythonhosted.org/packages/6e/5e/44797107e9ddde5f320b64fbc0d0487268e58fa285cdda385d3f35c5f985/jetblack-serialization-3.0.0a3.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [papis]: Downloading https://files.pythonhosted.org/packages/45/31/e405a125d7fac719945f3f5ed1796c1d28cadcd4d6771183a442694a7431/papis-0.8.2.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [pep440-rs]: Downloading https://files.pythonhosted.org/packages/73/6e/16fa15506f1e33f229feea6e94087397b92587f1bafc0bd70ab81ae3e7ec/pep440_rs-0.3.6.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [dhapi]: Downloading https://files.pythonhosted.org/packages/6a/1c/697a0ff7652c326ec3ddd429e59575cecb8b0397bda25d0e061645a1b159/dhapi-1.3.2.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [arxiv-post]: Downloading https://files.pythonhosted.org/packages/65/27/d0c95138e9373b0fa7ac31239d976879f8ae110ba10eda3b594df4465cdb/arxiv-post-0.6.4.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [photoprism-client]: Downloading https://files.pythonhosted.org/packages/12/9b/f9efa40c0ce7b3700a73d840e4b68aa777ab2e8dae8ee1efd2cb96ac5a28/photoprism_client-0.1.1.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [optimal-loc]: Downloading https://files.pythonhosted.org/packages/68/11/0f36680dc647487a8b7315d721085f6ffc9c6e9aea97ceab3ab845ad4b15/optimal_loc-0.0.5.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [leagueclientlivedata]: executing diffoscope
+[2023-05-07 17:11:47] INFO root fetch - processPackages [leagueclientlivedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leagueclientlivedata-0.1.1.tar.gz tmp/leagueclientlivedata-0.1.2.tar.gz --markdown 20230507/l/leagueclientlivedata/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 17:11:47] INFO root fetch - processPackages [optimal-loc]: executing diffoscope
+[2023-05-07 17:11:47] INFO root fetch - processPackages [optimal-loc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimal_loc-0.0.4.tar.gz tmp/optimal_loc-0.0.5.tar.gz --markdown 20230507/o/optimal-loc/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-07 17:11:47] INFO root fetch - processPackages [haloop]: Downloading https://files.pythonhosted.org/packages/5b/61/e8b84f2b21b31c2e0700514c296f15c84c0c316f62b5629943d02c255f9f/haloop-0.0.7.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [rnginline]: Downloading https://files.pythonhosted.org/packages/3b/7a/51d02484d30831f7f118ecc0808668b71ccc8140dec7e2dca85fb11e76f8/rnginline-1.0.0rc1.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [dhapi]: Downloading https://files.pythonhosted.org/packages/57/17/84182c1880c675abc486f85e4c5b1d726c497efcaebf68ab1f47180d2245/dhapi-1.3.4.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [jetblack-serialization]: Downloading https://files.pythonhosted.org/packages/85/73/c5a065ad711277fcc61080ab9602dc9b7042ee7c68ff6e10ccc5f8653116/jetblack-serialization-3.0.1.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [arxiv-post]: Downloading https://files.pythonhosted.org/packages/48/51/11fe52847740c0be77d6e83f02c07a040a6678392682c3166a827148e484/arxiv_post-0.7.0.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [haloop]: executing diffoscope
+[2023-05-07 17:11:47] INFO root fetch - processPackages [haloop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haloop-0.0.6.tar.gz tmp/haloop-0.0.7.tar.gz --markdown 20230507/h/haloop/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-07 17:11:47] INFO root fetch - processPackages [rnginline]: executing diffoscope
+[2023-05-07 17:11:47] INFO root fetch - processPackages [rnginline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rnginline-0.0.2.tar.gz tmp/rnginline-1.0.0rc1.tar.gz --markdown 20230507/r/rnginline/0.0.2-1.0.0rc1/diff.md --exclude *.pyd
+[2023-05-07 17:11:47] INFO root fetch - processPackages [dhapi]: executing diffoscope
+[2023-05-07 17:11:47] INFO root fetch - processPackages [dhapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dhapi-1.3.2.tar.gz tmp/dhapi-1.3.4.tar.gz --markdown 20230507/d/dhapi/1.3.2-1.3.4/diff.md --exclude *.pyd
+[2023-05-07 17:11:47] INFO root fetch - processPackages [pep440-rs]: Downloading https://files.pythonhosted.org/packages/58/47/3efc008e3f3c9c24b5e1420caea0c3c91bb5615c49b618455b265145e079/pep440_rs-0.3.7.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [papis]: Downloading https://files.pythonhosted.org/packages/a4/dc/a1b2ae73ba63ac6ebe9abaea335636f86967cbc892c6f7dbacfa4c5caff9/papis-0.9.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [photoprism-client]: Downloading https://files.pythonhosted.org/packages/c2/ed/3e480813068fc0aa1bf02328a2cb44fa7c4bd50e332456ba2f394c3f7ca7/photoprism_client-0.1.3.tar.gz
+[2023-05-07 17:11:47] INFO root fetch - processPackages [jetblack-serialization]: executing diffoscope
+[2023-05-07 17:11:47] INFO root fetch - processPackages [jetblack-serialization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetblack-serialization-3.0.0a3.tar.gz tmp/jetblack-serialization-3.0.1.tar.gz --markdown 20230507/j/jetblack-serialization/3.0.0a3-3.0.1/diff.md --exclude *.pyd
+[2023-05-07 17:11:47] INFO root fetch - processPackages [arxiv-post]: executing diffoscope
+[2023-05-07 17:11:47] INFO root fetch - processPackages [arxiv-post]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arxiv-post-0.6.4.tar.gz tmp/arxiv_post-0.7.0.tar.gz --markdown 20230507/a/arxiv-post/0.6.4-0.7.0/diff.md --exclude *.pyd
+[2023-05-07 17:11:47] INFO root fetch - processPackages [pep440-rs]: executing diffoscope
+[2023-05-07 17:11:47] INFO root fetch - processPackages [pep440-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pep440_rs-0.3.6.tar.gz tmp/pep440_rs-0.3.7.tar.gz --markdown 20230507/p/pep440-rs/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-05-07 17:11:47] INFO root fetch - processPackages [photoprism-client]: executing diffoscope
+[2023-05-07 17:11:47] INFO root fetch - processPackages [photoprism-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/photoprism_client-0.1.1.tar.gz tmp/photoprism_client-0.1.3.tar.gz --markdown 20230507/p/photoprism-client/0.1.1-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 17:11:47] INFO root fetch - processPackages [papis]: executing diffoscope
+[2023-05-07 17:11:47] INFO root fetch - processPackages [papis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/papis-0.8.2.tar.gz tmp/papis-0.9.tar.gz --markdown 20230507/p/papis/0.8.2-0.9/diff.md --exclude *.pyd
+[2023-05-07 17:11:48] INFO root fetch - main [MainThread]: End processing [optimal-loc]: success
+[2023-05-07 17:11:48] INFO root fetch - main [MainThread]: End processing [leagueclientlivedata]: success
+[2023-05-07 17:11:49] INFO root fetch - main [MainThread]: End processing [arxiv-post]: success
+[2023-05-07 17:11:49] INFO root fetch - main [MainThread]: End processing [pep440-rs]: success
+[2023-05-07 17:11:49] INFO root fetch - main [MainThread]: End processing [photoprism-client]: success
+[2023-05-07 17:11:49] INFO root fetch - main [MainThread]: End processing [dhapi]: success
+[2023-05-07 17:11:49] INFO root fetch - main [MainThread]: End processing [jetblack-serialization]: success
+[2023-05-07 17:11:49] INFO root fetch - main [MainThread]: End processing [haloop]: success
+[2023-05-07 17:11:51] INFO root fetch - main [MainThread]: End processing [papis]: success
+[2023-05-07 17:12:17] INFO root fetch - main [MainThread]: End processing [rnginline]: success
+[2023-05-07 17:12:17] INFO root fetch - main [MainThread]: Store serial: [18007749]
