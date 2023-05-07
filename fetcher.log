@@ -6257,3 +6257,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 14:04:53] INFO root fetch - main [MainThread]: End processing [klarity-connector]: success
 [2023-05-07 14:04:53] INFO root fetch - main [MainThread]: End processing [telegram-menu]: success
 [2023-05-07 14:04:53] INFO root fetch - main [MainThread]: Store serial: [18006482]
+[2023-05-07 14:09:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006482]
+[2023-05-07 14:10:02] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 14:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maya-rig-operation-graph
+[2023-05-07 14:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: darwinpyspark
+[2023-05-07 14:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: intervalframe
+[2023-05-07 14:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-agents-nightly
+[2023-05-07 14:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygraphia
+[2023-05-07 14:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: apininja
+[2023-05-07 14:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: eth-acount
+[2023-05-07 14:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: prettyqt
+[2023-05-07 14:10:02] INFO root fetch - processPackages [darwinpyspark]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 14:10:02] INFO root fetch - processPackages [apininja]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 14:10:02] WARNING root fetch - processPackages [eth-acount]: Skipping, unable to determine old version
+[2023-05-07 14:10:02] INFO root fetch - main [MainThread]: End processing [eth-acount] error
+[2023-05-07 14:10:02] INFO root fetch - processPackages [maya-rig-operation-graph]: New version: [0.6.0] Old Version: [0.5.3]
+[2023-05-07 14:10:02] WARNING root fetch - processPackages [pygraphia]: Skipping, unable to determine old version
+[2023-05-07 14:10:02] INFO root fetch - processPackages [intervalframe]: New version: [1.1.1] Old Version: [1.0.0]
+[2023-05-07 14:10:02] INFO root fetch - main [MainThread]: End processing [pygraphia] error
+[2023-05-07 14:10:02] INFO root fetch - processPackages [prettyqt]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-07 14:10:02] INFO root fetch - processPackages [darwinpyspark]: Downloading https://files.pythonhosted.org/packages/d3/9d/10c09da4b1b359c77205948e8246e73e88bd8d822adf6553d72df313de1b/darwinpyspark-0.0.1.tar.gz
+[2023-05-07 14:10:02] INFO root fetch - processPackages [tf-agents-nightly]: New version: [0.9.0.dev20210812] Old Version: [0.9.0.dev20210811]
+[2023-05-07 14:10:02] INFO root fetch - processPackages [apininja]: Downloading https://files.pythonhosted.org/packages/14/c5/5fa0c7905ca2bb118fd249667d63972d3b96d8d014db03ecc18caaf9c64f/apininja-0.1.3.tar.gz
+[2023-05-07 14:10:02] INFO root fetch - processPackages [maya-rig-operation-graph]: Downloading https://files.pythonhosted.org/packages/a5/aa/fadab817adb010b6a1ea6ac5856426641687266d13f56bdf1b510eef17bb/maya-rig-operation-graph-0.6.0.tar.gz
+[2023-05-07 14:10:02] INFO root fetch - processPackages [intervalframe]: Downloading https://files.pythonhosted.org/packages/83/6f/60945d9515a5a58b37b1df7ae927816b5817ace81922a2561a41d7ddf7c5/intervalframe-1.1.1.tar.gz
+[2023-05-07 14:10:02] INFO root fetch - processPackages [darwinpyspark]: Downloading https://files.pythonhosted.org/packages/a6/82/57c88d9b2dc7fbdc2154f7d2e86cdf7f39e6bd7ad44da67aa9f599266645/darwinpyspark-0.0.2.tar.gz
+[2023-05-07 14:10:02] INFO root fetch - processPackages [maya-rig-operation-graph]: executing diffoscope
+[2023-05-07 14:10:02] INFO root fetch - processPackages [prettyqt]: executing diffoscope
+[2023-05-07 14:10:02] INFO root fetch - processPackages [maya-rig-operation-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maya-rig-operation-graph-0.5.3.tar.gz tmp/maya-rig-operation-graph-0.6.0.tar.gz --markdown 20230507/m/maya-rig-operation-graph/0.5.3-0.6.0/diff.md --exclude *.pyd
+[2023-05-07 14:10:02] INFO root fetch - processPackages [prettyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyqt-1.9.1.tar.gz tmp/prettyqt-1.9.2.tar.gz --markdown 20230507/p/prettyqt/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-07 14:10:02] INFO root fetch - processPackages [apininja]: Downloading https://files.pythonhosted.org/packages/eb/ea/30b8cd66a83f87da3b805b02960a4bd1ab3549a9efd3dc95c85fad02db16/apininja-0.1.4.tar.gz
+[2023-05-07 14:10:02] INFO root fetch - processPackages [intervalframe]: executing diffoscope
+[2023-05-07 14:10:02] INFO root fetch - processPackages [intervalframe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intervalframe-1.0.0.tar.gz tmp/intervalframe-1.1.1.tar.gz --markdown 20230507/i/intervalframe/1.0.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-07 14:10:02] INFO root fetch - processPackages [apininja]: executing diffoscope
+[2023-05-07 14:10:02] INFO root fetch - processPackages [apininja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apininja-0.1.3.tar.gz tmp/apininja-0.1.4.tar.gz --markdown 20230507/a/apininja/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 14:10:02] INFO root fetch - processPackages [tf-agents-nightly]: executing diffoscope
+[2023-05-07 14:10:02] INFO root fetch - processPackages [tf-agents-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_agents_nightly-0.9.0.dev20210811-py3-none-any.whl.zip tmp/tf_agents_nightly-0.9.0.dev20210812-py3-none-any.whl.zip --markdown 20230507/t/tf-agents-nightly/0.9.0.dev20210811-0.9.0.dev20210812/diff.md --exclude *.pyd
+[2023-05-07 14:10:02] INFO root fetch - processPackages [darwinpyspark]: executing diffoscope
+[2023-05-07 14:10:02] INFO root fetch - processPackages [darwinpyspark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/darwinpyspark-0.0.1.tar.gz tmp/darwinpyspark-0.0.2.tar.gz --markdown 20230507/d/darwinpyspark/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 14:10:04] INFO root fetch - main [MainThread]: End processing [intervalframe]: success
+[2023-05-07 14:10:04] INFO root fetch - main [MainThread]: End processing [apininja]: success
+[2023-05-07 14:10:04] INFO root fetch - main [MainThread]: End processing [maya-rig-operation-graph]: success
+[2023-05-07 14:10:04] INFO root fetch - main [MainThread]: End processing [darwinpyspark]: success
+[2023-05-07 14:10:09] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
+[2023-05-07 14:10:10] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
+[2023-05-07 14:10:10] INFO root fetch - main [MainThread]: Store serial: [18006508]
