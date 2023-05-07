@@ -4444,3 +4444,39 @@
 [2023-05-07 10:49:51] INFO root fetch - main [MainThread]: End processing [cshogi]: success
 [2023-05-07 10:50:06] INFO root fetch - main [MainThread]: End processing [pylebai]: success
 [2023-05-07 10:50:06] INFO root fetch - main [MainThread]: Store serial: [18005244]
+[2023-05-07 10:55:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005244]
+[2023-05-07 10:55:17] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 10:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnx2tf
+[2023-05-07 10:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ut-date
+[2023-05-07 10:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: celeste
+[2023-05-07 10:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cshogi
+[2023-05-07 10:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: league-shop-base
+[2023-05-07 10:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: airflow-kubernetes-job-operator-test27
+[2023-05-07 10:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: checkov
+[2023-05-07 10:55:17] INFO root fetch - processPackages [ut-date]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-05-07 10:55:17] INFO root fetch - processPackages [cshogi]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-07 10:55:17] INFO root fetch - processPackages [ut-date]: Downloading https://files.pythonhosted.org/packages/62/ea/2486f0eb450efc43e6238da24e0505dcee368749c81e42d39df562f8e286/ut-date-1.2.0.tar.gz
+[2023-05-07 10:55:17] INFO root fetch - processPackages [league-shop-base]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 10:55:17] WARNING root fetch - processPackages [celeste]: Skipping, unable to determine old version
+[2023-05-07 10:55:17] INFO root fetch - main [MainThread]: End processing [celeste] error
+[2023-05-07 10:55:17] WARNING root fetch - processPackages [airflow-kubernetes-job-operator-test27]: Skipping, unable to determine old version
+[2023-05-07 10:55:17] INFO root fetch - main [MainThread]: End processing [airflow-kubernetes-job-operator-test27] error
+[2023-05-07 10:55:17] WARNING root fetch - processPackages [ut-date]: Skipping package: exceeds size limit 12732487>=10485760
+[2023-05-07 10:55:17] INFO root fetch - main [MainThread]: End processing [ut-date] error
+[2023-05-07 10:55:17] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-07 10:55:17] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-07 10:55:17] INFO root fetch - processPackages [cshogi]: executing diffoscope
+[2023-05-07 10:55:17] INFO root fetch - processPackages [cshogi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cshogi-0.5.1.tar.gz tmp/cshogi-0.5.2-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip --markdown 20230507/c/cshogi/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-07 10:55:17] INFO root fetch - processPackages [league-shop-base]: Downloading https://files.pythonhosted.org/packages/9a/36/856f05ff8f20b041ffd8a46c1c83f9f8b227d1764d27b5882c86fee7084a/league-shop-base-1.0.8.tar.gz
+[2023-05-07 10:55:18] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-05-07 10:55:18] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230507/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-07 10:55:18] INFO root fetch - processPackages [league-shop-base]: Downloading https://files.pythonhosted.org/packages/e2/26/1a7ca28a471c3705930fb862d3f11522557e5f6c0d324560bcea93b51906/league-shop-base-1.0.9.tar.gz
+[2023-05-07 10:55:18] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-05-07 10:55:18] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230507/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-07 10:55:18] INFO root fetch - processPackages [league-shop-base]: executing diffoscope
+[2023-05-07 10:55:18] INFO root fetch - processPackages [league-shop-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/league-shop-base-1.0.8.tar.gz tmp/league-shop-base-1.0.9.tar.gz --markdown 20230507/l/league-shop-base/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 10:55:19] INFO root fetch - main [MainThread]: End processing [cshogi]: success
+[2023-05-07 10:55:19] INFO root fetch - main [MainThread]: End processing [league-shop-base]: success
+[2023-05-07 10:55:20] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-05-07 10:55:58] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-05-07 10:55:58] INFO root fetch - main [MainThread]: Store serial: [18005278]
