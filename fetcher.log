@@ -7577,3 +7577,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 16:13:20] INFO root fetch - main [MainThread]: End processing [datazimmer]: success
 [2023-05-07 16:13:21] INFO root fetch - main [MainThread]: End processing [ursina]: success
 [2023-05-07 16:13:21] INFO root fetch - main [MainThread]: Store serial: [18007341]
+[2023-05-07 16:18:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007341]
+[2023-05-07 16:18:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 16:18:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-master
+[2023-05-07 16:18:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyViCare
+[2023-05-07 16:18:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blockgamebot
+[2023-05-07 16:18:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pythesyncer
+[2023-05-07 16:18:30] INFO root fetch - processPackages [pythesyncer]: New version: [23.5.7.12] Old Version: [23.4.22.13]
+[2023-05-07 16:18:30] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230507.8.43.246318] Old Version: [20230507.8.23.441642]
+[2023-05-07 16:18:30] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/d8/2f/daa34fe878aac6c13bf35c9e6c4156e3f4c2507d9daefad15047c7fe5863/certora-cli-alpha-master-20230507.8.23.441642.tar.gz
+[2023-05-07 16:18:30] INFO root fetch - processPackages [pythesyncer]: executing diffoscope
+[2023-05-07 16:18:30] INFO root fetch - processPackages [pythesyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythesyncer-23.4.22.13.tar.gz tmp/pythesyncer-23.5.7.12.tar.gz --markdown 20230507/p/pythesyncer/23.4.22.13-23.5.7.12/diff.md --exclude *.pyd
+[2023-05-07 16:18:30] WARNING root fetch - processPackages [blockgamebot]: Skipping, unable to determine old version
+[2023-05-07 16:18:30] INFO root fetch - main [MainThread]: End processing [blockgamebot] error
+[2023-05-07 16:18:30] INFO root fetch - processPackages [PyViCare]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-07 16:18:30] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38474057>=10485760
+[2023-05-07 16:18:30] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-07 16:18:30] INFO root fetch - processPackages [PyViCare]: Downloading https://files.pythonhosted.org/packages/cc/c4/e3dac5b09348659e7abfa5f635ccf2785bcb9751aaa881f5819f40c55cd6/PyViCare-2.9.0.tar.gz
+[2023-05-07 16:18:31] INFO root fetch - processPackages [PyViCare]: Downloading https://files.pythonhosted.org/packages/d5/05/f482d4123e1378ef7bdcdde10ce2511a092b92c85c0f34bd58187f602b35/PyViCare-2.9.1.tar.gz
+[2023-05-07 16:18:31] INFO root fetch - processPackages [PyViCare]: executing diffoscope
+[2023-05-07 16:18:31] INFO root fetch - processPackages [PyViCare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyViCare-2.9.0.tar.gz tmp/PyViCare-2.9.1.tar.gz --markdown 20230507/P/PyViCare/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-07 16:18:31] INFO root fetch - main [MainThread]: End processing [pythesyncer]: success
+[2023-05-07 16:18:32] INFO root fetch - main [MainThread]: End processing [PyViCare]: success
+[2023-05-07 16:18:32] INFO root fetch - main [MainThread]: Store serial: [18007357]
