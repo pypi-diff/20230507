@@ -2364,3 +2364,28 @@
 [2023-05-07 05:22:22] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mahjong-scoreboard]: success
 [2023-05-07 05:22:26] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
 [2023-05-07 05:22:26] INFO root fetch - main [MainThread]: Store serial: [18003929]
+[2023-05-07 05:27:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003929]
+[2023-05-07 05:27:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 05:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rcmpy
+[2023-05-07 05:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moss-rl
+[2023-05-07 05:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: konfuzio-sdk
+[2023-05-07 05:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyComplexHeatmap
+[2023-05-07 05:27:35] INFO root fetch - processPackages [rcmpy]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-05-07 05:27:35] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.2.9.dev20230104175944] Old Version: [0.2.9.dev20221227125623]
+[2023-05-07 05:27:35] INFO root fetch - processPackages [PyComplexHeatmap]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-07 05:27:35] WARNING root fetch - processPackages [moss-rl]: Skipping, unable to determine old version
+[2023-05-07 05:27:35] INFO root fetch - main [MainThread]: End processing [moss-rl] error
+[2023-05-07 05:27:36] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2023-05-07 05:27:36] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.2.9.dev20221227125623.tar.gz tmp/konfuzio_sdk-0.2.9.dev20230104175944.tar.gz --markdown 20230507/k/konfuzio-sdk/0.2.9.dev20221227125623-0.2.9.dev20230104175944/diff.md --exclude *.pyd
+[2023-05-07 05:27:36] INFO root fetch - processPackages [PyComplexHeatmap]: Downloading https://files.pythonhosted.org/packages/b0/19/fb9c7ffba878859d73d6c0524e7d90e0f6df245f2e3dcc9a0cf3945e4723/PyComplexHeatmap-1.4.1.tar.gz
+[2023-05-07 05:27:36] INFO root fetch - processPackages [rcmpy]: Downloading https://files.pythonhosted.org/packages/8f/b9/622131832bca82aa364db7d8abff4fd05934324d4468562181ebe297f74a/rcmpy-1.2.0.tar.gz
+[2023-05-07 05:27:36] INFO root fetch - processPackages [PyComplexHeatmap]: Downloading https://files.pythonhosted.org/packages/1e/fc/07a98e4c399ae2ca7834a9a3dc88855955b4d177acaa17ca706b77034801/PyComplexHeatmap-1.4.2.tar.gz
+[2023-05-07 05:27:36] INFO root fetch - processPackages [rcmpy]: Downloading https://files.pythonhosted.org/packages/99/26/73cf029770c64afcbfb0d8f48f7f6d6b683f2d49b8feed93d9106cbaf6f7/rcmpy-1.3.0.tar.gz
+[2023-05-07 05:27:36] INFO root fetch - processPackages [PyComplexHeatmap]: executing diffoscope
+[2023-05-07 05:27:36] INFO root fetch - processPackages [PyComplexHeatmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyComplexHeatmap-1.4.1.tar.gz tmp/PyComplexHeatmap-1.4.2.tar.gz --markdown 20230507/P/PyComplexHeatmap/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-07 05:27:36] INFO root fetch - processPackages [rcmpy]: executing diffoscope
+[2023-05-07 05:27:36] INFO root fetch - processPackages [rcmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcmpy-1.2.0.tar.gz tmp/rcmpy-1.3.0.tar.gz --markdown 20230507/r/rcmpy/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-05-07 05:27:37] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2023-05-07 05:27:37] INFO root fetch - main [MainThread]: End processing [rcmpy]: success
+[2023-05-07 05:27:38] INFO root fetch - main [MainThread]: End processing [PyComplexHeatmap]: success
+[2023-05-07 05:27:38] INFO root fetch - main [MainThread]: Store serial: [18003941]
