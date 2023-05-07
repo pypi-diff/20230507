@@ -4623,3 +4623,62 @@
 [2023-05-07 11:06:32] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
 [2023-05-07 11:06:33] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
 [2023-05-07 11:06:33] INFO root fetch - main [MainThread]: Store serial: [18005366]
+[2023-05-07 11:11:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005366]
+[2023-05-07 11:11:41] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 11:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: async-pipeline
+[2023-05-07 11:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: foliolib
+[2023-05-07 11:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wombatoo
+[2023-05-07 11:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: piwwwaterflow
+[2023-05-07 11:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Pyrosex
+[2023-05-07 11:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mc-pdf2txt
+[2023-05-07 11:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vector-quantize-tf
+[2023-05-07 11:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cshogi
+[2023-05-07 11:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jilei
+[2023-05-07 11:11:41] INFO root fetch - processPackages [wombatoo]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 11:11:41] INFO root fetch - processPackages [foliolib]: New version: [0.3.4a1] Old Version: [0.3.3a2]
+[2023-05-07 11:11:41] WARNING root fetch - processPackages [async-pipeline]: Skipping, unable to determine old version
+[2023-05-07 11:11:41] INFO root fetch - main [MainThread]: End processing [async-pipeline] error
+[2023-05-07 11:11:41] INFO root fetch - processPackages [piwwwaterflow]: New version: [0.1.1] Old Version: [0.0.5]
+[2023-05-07 11:11:41] INFO root fetch - processPackages [vector-quantize-tf]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 11:11:41] INFO root fetch - processPackages [mc-pdf2txt]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-07 11:11:41] INFO root fetch - processPackages [Pyrosex]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-05-07 11:11:41] INFO root fetch - processPackages [jilei]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 11:11:41] INFO root fetch - processPackages [cshogi]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-05-07 11:11:42] INFO root fetch - processPackages [foliolib]: Downloading https://files.pythonhosted.org/packages/a0/08/44f8cd84fcbf7af31345e28d916f9195074d668d1782b2afe3d5dd0aa714/foliolib-0.3.3a2.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [jilei]: Downloading https://files.pythonhosted.org/packages/08/4e/6e5afb61218831f90951fcbd2dec4efa2823df1079d7db1608606135076a/jilei-0.0.9.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [Pyrosex]: Downloading https://files.pythonhosted.org/packages/2d/52/cebe9cc1814ecfe7d2130a659570490f9b273b1e58b80d342c4f9169a29c/Pyrosex-0.0.0.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [vector-quantize-tf]: Downloading https://files.pythonhosted.org/packages/78/41/1168cd8c7001758b31c3a0eb9aa6da0d779d25866ecfc30babf410ed5e49/vector-quantize-tf-0.0.1.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [mc-pdf2txt]: Downloading https://files.pythonhosted.org/packages/2a/fa/6373a7a27f5a01093fd86c2f68867b2ea9dc8f5f7488089f29da43220a29/mc-pdf2txt-0.2.0.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [piwwwaterflow]: Downloading https://files.pythonhosted.org/packages/6d/92/40c5ab692a932d5c4c263407b851addd2920b0eff7b050fa85c709215901/piwwwaterflow-0.0.5.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [cshogi]: Downloading https://files.pythonhosted.org/packages/90/89/3af079578f36d8e289961714fea5d00cd154bc6612fd5d144064c9e9fc31/cshogi-0.5.5.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [jilei]: executing diffoscope
+[2023-05-07 11:11:42] INFO root fetch - processPackages [jilei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jilei-0.0.8.tar.gz tmp/jilei-0.0.9.tar.gz --markdown 20230507/j/jilei/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 11:11:42] INFO root fetch - processPackages [wombatoo]: Downloading https://files.pythonhosted.org/packages/92/e4/40db6491ef253d40f92fff28fca32a1a9a4da34ae5096fc75f9ecf26a2c8/wombatoo-0.0.3.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [cshogi]: executing diffoscope
+[2023-05-07 11:11:42] INFO root fetch - processPackages [cshogi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cshogi-0.5.4.tar.gz tmp/cshogi-0.5.5.tar.gz --markdown 20230507/c/cshogi/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-05-07 11:11:42] INFO root fetch - processPackages [wombatoo]: executing diffoscope
+[2023-05-07 11:11:42] INFO root fetch - processPackages [wombatoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wombatoo-0.0.2.tar.gz tmp/wombatoo-0.0.3.tar.gz --markdown 20230507/w/wombatoo/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 11:11:42] INFO root fetch - processPackages [vector-quantize-tf]: Downloading https://files.pythonhosted.org/packages/ca/7f/65444c54c2d8c540227a631377743ad714a6de6dcb86b98fb76e22a63314/vector-quantize-tf-0.0.2.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [foliolib]: Downloading https://files.pythonhosted.org/packages/52/30/8cf1f02a0ebf7ed3c9338bdb5fa4a46f74c232052200648b1c40bc049359/foliolib-0.3.4a1.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [Pyrosex]: Downloading https://files.pythonhosted.org/packages/90/81/52f2146ea895b5fafaaecb79faf8beafd731d484e2801663ca4a4fd3adb2/Pyrosex-0.0.1.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [piwwwaterflow]: Downloading https://files.pythonhosted.org/packages/6d/2c/3e9b52daa105e852b204403993ba43480d3b09a1284b008a105c291cc6ef/piwwwaterflow-0.1.1.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [mc-pdf2txt]: Downloading https://files.pythonhosted.org/packages/9a/31/73bc9587ea4e0ec259e057a6689d00991402ce3c4f02a1c9d94759caf774/mc-pdf2txt-0.3.0.tar.gz
+[2023-05-07 11:11:42] INFO root fetch - processPackages [vector-quantize-tf]: executing diffoscope
+[2023-05-07 11:11:42] INFO root fetch - processPackages [vector-quantize-tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector-quantize-tf-0.0.1.tar.gz tmp/vector-quantize-tf-0.0.2.tar.gz --markdown 20230507/v/vector-quantize-tf/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 11:11:42] INFO root fetch - processPackages [foliolib]: executing diffoscope
+[2023-05-07 11:11:42] INFO root fetch - processPackages [foliolib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foliolib-0.3.3a2.tar.gz tmp/foliolib-0.3.4a1.tar.gz --markdown 20230507/f/foliolib/0.3.3a2-0.3.4a1/diff.md --exclude *.pyd
+[2023-05-07 11:11:42] INFO root fetch - processPackages [piwwwaterflow]: executing diffoscope
+[2023-05-07 11:11:42] INFO root fetch - processPackages [piwwwaterflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piwwwaterflow-0.0.5.tar.gz tmp/piwwwaterflow-0.1.1.tar.gz --markdown 20230507/p/piwwwaterflow/0.0.5-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 11:11:42] INFO root fetch - processPackages [mc-pdf2txt]: executing diffoscope
+[2023-05-07 11:11:42] INFO root fetch - processPackages [mc-pdf2txt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mc-pdf2txt-0.2.0.tar.gz tmp/mc-pdf2txt-0.3.0.tar.gz --markdown 20230507/m/mc-pdf2txt/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-07 11:11:42] INFO root fetch - processPackages [Pyrosex]: executing diffoscope
+[2023-05-07 11:11:42] INFO root fetch - processPackages [Pyrosex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pyrosex-0.0.0.tar.gz tmp/Pyrosex-0.0.1.tar.gz --markdown 20230507/P/Pyrosex/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-07 11:11:43] INFO root fetch - main [MainThread]: End processing [jilei]: success
+[2023-05-07 11:11:43] INFO root fetch - main [MainThread]: End processing [wombatoo]: success
+[2023-05-07 11:11:43] INFO root fetch - main [MainThread]: End processing [mc-pdf2txt]: success
+[2023-05-07 11:11:43] INFO root fetch - main [MainThread]: End processing [vector-quantize-tf]: success
+[2023-05-07 11:11:43] INFO root fetch - main [MainThread]: End processing [piwwwaterflow]: success
+[2023-05-07 11:11:44] INFO root fetch - main [MainThread]: End processing [cshogi]: success
+[2023-05-07 11:11:46] INFO root fetch - main [MainThread]: End processing [foliolib]: success
+[2023-05-07 11:11:46] INFO root fetch - main [MainThread]: End processing [Pyrosex]: success
+[2023-05-07 11:11:46] INFO root fetch - main [MainThread]: Store serial: [18005408]
