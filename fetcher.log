@@ -2526,3 +2526,27 @@
 [2023-05-07 05:53:29] INFO root fetch - main [MainThread]: End processing [control-rod]: success
 [2023-05-07 05:53:30] INFO root fetch - main [MainThread]: End processing [TDhelper]: success
 [2023-05-07 05:53:30] INFO root fetch - main [MainThread]: Store serial: [18004016]
+[2023-05-07 05:58:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004016]
+[2023-05-07 05:58:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 05:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mtsql
+[2023-05-07 05:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyaxetool
+[2023-05-07 05:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-virtual-fields
+[2023-05-07 05:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llmbda-fastapi
+[2023-05-07 05:58:39] WARNING root fetch - processPackages [django-virtual-fields]: Skipping, unable to determine old version
+[2023-05-07 05:58:39] INFO root fetch - main [MainThread]: End processing [django-virtual-fields] error
+[2023-05-07 05:58:39] INFO root fetch - processPackages [pyaxetool]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-07 05:58:39] INFO root fetch - processPackages [llmbda-fastapi]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 05:58:39] INFO root fetch - processPackages [mtsql]: New version: [1.4.202305070337] Old Version: [1.4.202304241646]
+[2023-05-07 05:58:39] INFO root fetch - processPackages [llmbda-fastapi]: executing diffoscope
+[2023-05-07 05:58:39] INFO root fetch - processPackages [llmbda-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmbda_fastapi-0.0.7.tar.gz tmp/llmbda_fastapi-0.0.8.tar.gz --markdown 20230507/l/llmbda-fastapi/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 05:58:39] INFO root fetch - processPackages [mtsql]: Downloading https://files.pythonhosted.org/packages/38/4e/101d164006ec30ef8e6bb832d49ae0a3eadda376ba0f2c27dc0918debad2/mtsql-1.4.202304241646-py3-none-any.whl
+[2023-05-07 05:58:39] INFO root fetch - processPackages [pyaxetool]: Downloading https://files.pythonhosted.org/packages/7d/1a/4c469182f6b49023751faef62f9caa11055d32c51ecc912abda3b4dedcd4/pyaxetool-1.1.1.tar.gz
+[2023-05-07 05:58:39] INFO root fetch - processPackages [pyaxetool]: executing diffoscope
+[2023-05-07 05:58:39] INFO root fetch - processPackages [pyaxetool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaxetool-1.1.0.tar.gz tmp/pyaxetool-1.1.1.tar.gz --markdown 20230507/p/pyaxetool/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-07 05:58:39] INFO root fetch - processPackages [mtsql]: Downloading https://files.pythonhosted.org/packages/c5/6f/e5e704de3d0072e3bfa05a158f419fb4f706aaa2c28ebf0f898630dd5604/mtsql-1.4.202305070337-py3-none-any.whl
+[2023-05-07 05:58:39] INFO root fetch - processPackages [mtsql]: executing diffoscope
+[2023-05-07 05:58:39] INFO root fetch - processPackages [mtsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtsql-1.4.202304241646-py3-none-any.whl.zip tmp/mtsql-1.4.202305070337-py3-none-any.whl.zip --markdown 20230507/m/mtsql/1.4.202304241646-1.4.202305070337/diff.md --exclude *.pyd
+[2023-05-07 05:58:40] INFO root fetch - main [MainThread]: End processing [llmbda-fastapi]: success
+[2023-05-07 05:58:40] INFO root fetch - main [MainThread]: End processing [pyaxetool]: success
+[2023-05-07 05:58:40] INFO root fetch - main [MainThread]: End processing [mtsql]: success
+[2023-05-07 05:58:40] INFO root fetch - main [MainThread]: Store serial: [18004029]
