@@ -864,3 +864,82 @@
 [2023-05-07 02:12:16] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
 [2023-05-07 02:12:28] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
 [2023-05-07 02:12:28] INFO root fetch - main [MainThread]: Store serial: [18003082]
+[2023-05-07 02:17:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003082]
+[2023-05-07 02:17:37] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-07 02:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdklabs.codepipeline-extensions
+[2023-05-07 02:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyth-sysdistv1
+[2023-05-07 02:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdktf-gitlab-runner
+[2023-05-07 02:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-skylight
+[2023-05-07 02:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: canonical
+[2023-05-07 02:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchmultimodal-nightly
+[2023-05-07 02:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pfelogic
+[2023-05-07 02:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pytorch-ignite
+[2023-05-07 02:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: headless
+[2023-05-07 02:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hyperlight
+[2023-05-07 02:17:37] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 02:17:37] INFO root fetch - processPackages [pfelogic]: New version: [2023.5.6.0] Old Version: [2023.5.5.0]
+[2023-05-07 02:17:37] WARNING root fetch - processPackages [pyth-sysdistv1]: Skipping, unable to determine old version
+[2023-05-07 02:17:37] INFO root fetch - processPackages [pyth-sysdistv1]: Start processing: hotbox
+[2023-05-07 02:17:37] INFO root fetch - main [MainThread]: End processing [pyth-sysdistv1] error
+[2023-05-07 02:17:37] INFO root fetch - processPackages [headless]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-05-07 02:17:37] INFO root fetch - processPackages [canonical]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-07 02:17:37] INFO root fetch - processPackages [hyperlight]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-07 02:17:37] INFO root fetch - processPackages [torchmultimodal-nightly]: New version: [2023.5.6] Old Version: [2023.5.5]
+[2023-05-07 02:17:37] INFO root fetch - processPackages [cdktf-gitlab-runner]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 02:17:37] INFO root fetch - processPackages [cdk-skylight]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-07 02:17:37] INFO root fetch - processPackages [hotbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 02:17:37] INFO root fetch - processPackages [pytorch-ignite]: New version: [0.5.0.dev20230507] Old Version: [0.5.0.dev20230506]
+[2023-05-07 02:17:37] INFO root fetch - processPackages [cdktf-gitlab-runner]: executing diffoscope
+[2023-05-07 02:17:37] INFO root fetch - processPackages [cdktf-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-gitlab-runner-0.0.98.tar.gz tmp/cdktf-gitlab-runner-0.0.99.tar.gz --markdown 20230507/c/cdktf-gitlab-runner/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 02:17:37] INFO root fetch - processPackages [canonical]: executing diffoscope
+[2023-05-07 02:17:37] INFO root fetch - processPackages [canonical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canonical-0.8.0.tar.gz tmp/canonical-0.9.0.tar.gz --markdown 20230507/c/canonical/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-07 02:17:37] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: Downloading https://files.pythonhosted.org/packages/df/6c/78f1bfa2ffc81709ec21b0077aff92b7460ad1f071d595e2d767653cedc0/cdklabs.codepipeline-extensions-0.0.98.tar.gz
+[2023-05-07 02:17:37] INFO root fetch - processPackages [pfelogic]: Downloading https://files.pythonhosted.org/packages/a4/b7/d13355b982aa895caa8b9908f96d97d9713cf0fd15973e48e577602f004d/pfelogic-2023.5.5.0.tar.gz
+[2023-05-07 02:17:37] INFO root fetch - processPackages [cdk-skylight]: executing diffoscope
+[2023-05-07 02:17:37] INFO root fetch - processPackages [cdk-skylight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-skylight-1.1.98.tar.gz tmp/cdk-skylight-1.1.99.tar.gz --markdown 20230507/c/cdk-skylight/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-07 02:17:37] INFO root fetch - processPackages [torchmultimodal-nightly]: executing diffoscope
+[2023-05-07 02:17:37] INFO root fetch - processPackages [torchmultimodal-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchmultimodal_nightly-2023.5.5-py39-none-any.whl.zip tmp/torchmultimodal_nightly-2023.5.6-py39-none-any.whl.zip --markdown 20230507/t/torchmultimodal-nightly/2023.5.5-2023.5.6/diff.md --exclude *.pyd
+[2023-05-07 02:17:37] WARNING root fetch - processPackages [cdklabs.codepipeline-extensions]: Skipping package: exceeds size limit 12637726>=10485760
+[2023-05-07 02:17:37] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: Start processing: cdklabs.cdk-hyperledger-fabric-network
+[2023-05-07 02:17:37] INFO root fetch - main [MainThread]: End processing [cdklabs.codepipeline-extensions] error
+[2023-05-07 02:17:37] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2023-05-07 02:17:37] INFO root fetch - processPackages [hotbox]: Downloading https://files.pythonhosted.org/packages/bc/bd/ba2f8994446a8e86458c66c5b618b6096951a13228371314de100a0d9a63/hotbox-0.0.8.tar.gz
+[2023-05-07 02:17:38] INFO root fetch - processPackages [hyperlight]: Downloading https://files.pythonhosted.org/packages/02/65/14bbf21b81d553139176e32f515df19a8154575c5b9b36d13b971552e0d4/hyperlight-0.0.5.tar.gz
+[2023-05-07 02:17:38] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/7a/74/dd235c8d853fbbfb8f66bd47370e669290580ea065c41264a1969a545f54/pytorch-ignite-0.5.0.dev20230506.tar.gz
+[2023-05-07 02:17:38] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2023-05-07 02:17:38] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20230507/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/diff.md --exclude *.pyd
+[2023-05-07 02:17:38] INFO root fetch - processPackages [hyperlight]: executing diffoscope
+[2023-05-07 02:17:38] INFO root fetch - processPackages [hyperlight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperlight-0.0.4.tar.gz tmp/hyperlight-0.0.5.tar.gz --markdown 20230507/h/hyperlight/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-07 02:17:38] INFO root fetch - processPackages [pfelogic]: Downloading https://files.pythonhosted.org/packages/55/a3/6f76e97eef1e9bb4706a571a0567e9fa8234da1100d6fa70f400bc706a67/pfelogic-2023.5.6.0.tar.gz
+[2023-05-07 02:17:38] INFO root fetch - processPackages [headless]: executing diffoscope
+[2023-05-07 02:17:38] INFO root fetch - processPackages [headless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headless-2.0.0a8.tar.gz tmp/headless-2.0.0a9.tar.gz --markdown 20230507/h/headless/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-05-07 02:17:38] INFO root fetch - processPackages [pfelogic]: executing diffoscope
+[2023-05-07 02:17:38] INFO root fetch - processPackages [pfelogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pfelogic-2023.5.5.0.tar.gz tmp/pfelogic-2023.5.6.0.tar.gz --markdown 20230507/p/pfelogic/2023.5.5.0-2023.5.6.0/diff.md --exclude *.pyd
+[2023-05-07 02:17:38] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/4a/74/ac053329e7f46ca8d8cd9d233620ddd334f2ac2058c58128b7e02d2fb89f/pytorch-ignite-0.5.0.dev20230507.tar.gz
+[2023-05-07 02:17:38] INFO root fetch - processPackages [pytorch-ignite]: executing diffoscope
+[2023-05-07 02:17:38] INFO root fetch - processPackages [pytorch-ignite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch-ignite-0.5.0.dev20230506.tar.gz tmp/pytorch-ignite-0.5.0.dev20230507.tar.gz --markdown 20230507/p/pytorch-ignite/0.5.0.dev20230506-0.5.0.dev20230507/diff.md --exclude *.pyd
+[2023-05-07 02:17:38] INFO root fetch - processPackages [hotbox]: Downloading https://files.pythonhosted.org/packages/59/15/3b73e9614ba377c60f5a7e76fc196687ac82ac09ca8c3909a099ea4a0bf8/hotbox-0.0.9.tar.gz
+[2023-05-07 02:17:38] INFO root fetch - processPackages [hotbox]: executing diffoscope
+[2023-05-07 02:17:38] INFO root fetch - processPackages [hotbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotbox-0.0.8.tar.gz tmp/hotbox-0.0.9.tar.gz --markdown 20230507/h/hotbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 02:17:39] INFO root fetch - processPackages [cdk-skylight]: Start processing: cdk-amazon-chime-resources
+[2023-05-07 02:17:39] INFO root fetch - main [MainThread]: End processing [cdk-skylight]: success
+[2023-05-07 02:17:39] INFO root fetch - processPackages [cdk-amazon-chime-resources]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-07 02:17:39] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Start processing: unigui
+[2023-05-07 02:17:39] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
+[2023-05-07 02:17:39] INFO root fetch - processPackages [cdk-amazon-chime-resources]: Downloading https://files.pythonhosted.org/packages/15/ac/bee4d7971c4b31f5809d546f8f4d120d37a258cdbfb28775825c6a72b324/cdk-amazon-chime-resources-2.3.8.tar.gz
+[2023-05-07 02:17:39] INFO root fetch - main [MainThread]: End processing [canonical]: success
+[2023-05-07 02:17:39] WARNING root fetch - processPackages [cdk-amazon-chime-resources]: Skipping package: exceeds size limit 14200774>=10485760
+[2023-05-07 02:17:39] INFO root fetch - main [MainThread]: End processing [cdk-amazon-chime-resources] error
+[2023-05-07 02:17:39] INFO root fetch - main [MainThread]: End processing [cdktf-gitlab-runner]: success
+[2023-05-07 02:17:39] INFO root fetch - main [MainThread]: End processing [hyperlight]: success
+[2023-05-07 02:17:39] INFO root fetch - processPackages [unigui]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-07 02:17:39] INFO root fetch - main [MainThread]: End processing [pfelogic]: success
+[2023-05-07 02:17:39] INFO root fetch - main [MainThread]: End processing [torchmultimodal-nightly]: success
+[2023-05-07 02:17:40] INFO root fetch - processPackages [unigui]: Downloading https://files.pythonhosted.org/packages/44/67/c0fdf463eb5d6740a18eed7806840cb1eb2bdc281e9376d677d8daf06a06/unigui-1.4.1.tar.gz
+[2023-05-07 02:17:40] INFO root fetch - main [MainThread]: End processing [headless]: success
+[2023-05-07 02:17:40] INFO root fetch - processPackages [unigui]: executing diffoscope
+[2023-05-07 02:17:40] INFO root fetch - processPackages [unigui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unigui-1.4.0.tar.gz tmp/unigui-1.4.1.tar.gz --markdown 20230507/u/unigui/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-07 02:17:40] INFO root fetch - main [MainThread]: End processing [hotbox]: success
+[2023-05-07 02:17:42] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
+[2023-05-07 02:17:43] INFO root fetch - main [MainThread]: End processing [unigui]: success
+[2023-05-07 02:17:43] INFO root fetch - main [MainThread]: Store serial: [18003120]
