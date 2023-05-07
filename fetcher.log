@@ -7114,3 +7114,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 15:29:41] INFO root fetch - main [MainThread]: End processing [KMMTR]: success
 [2023-05-07 15:29:41] INFO root fetch - main [MainThread]: End processing [inverse]: success
 [2023-05-07 15:29:41] INFO root fetch - main [MainThread]: Store serial: [18007079]
+[2023-05-07 15:34:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007079]
+[2023-05-07 15:34:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 15:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hella-api
+[2023-05-07 15:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lesscode-tool
+[2023-05-07 15:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ProcessingImg1
+[2023-05-07 15:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maya-rig-operation-graph
+[2023-05-07 15:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-shelly-longTests
+[2023-05-07 15:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: indiek-mockdb
+[2023-05-07 15:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gama-config
+[2023-05-07 15:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gama-cli
+[2023-05-07 15:34:49] INFO root fetch - processPackages [maya-rig-operation-graph]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-05-07 15:34:49] INFO root fetch - processPackages [certora-cli-alpha-shelly-longTests]: New version: [20230506.16.17.464024] Old Version: [20230506.15.23.234854]
+[2023-05-07 15:34:49] INFO root fetch - processPackages [certora-cli-alpha-shelly-longTests]: Downloading https://files.pythonhosted.org/packages/26/6d/593fd0b1fd5755483debec8facf67a1818d4d531b9007523c8582bd74138/certora-cli-alpha-shelly-longTests-20230506.15.23.234854.tar.gz
+[2023-05-07 15:34:49] INFO root fetch - processPackages [maya-rig-operation-graph]: executing diffoscope
+[2023-05-07 15:34:49] INFO root fetch - processPackages [maya-rig-operation-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maya-rig-operation-graph-0.6.2.tar.gz tmp/maya-rig-operation-graph-0.7.0.tar.gz --markdown 20230507/m/maya-rig-operation-graph/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-05-07 15:34:49] INFO root fetch - processPackages [gama-config]: New version: [1.9.0] Old Version: [1.14.0]
+[2023-05-07 15:34:49] INFO root fetch - processPackages [lesscode-tool]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 15:34:49] INFO root fetch - processPackages [indiek-mockdb]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 15:34:49] WARNING root fetch - processPackages [hella-api]: Skipping, unable to determine old version
+[2023-05-07 15:34:49] INFO root fetch - processPackages [ProcessingImg1]: New version: [0.2] Old Version: [0.1]
+[2023-05-07 15:34:49] INFO root fetch - main [MainThread]: End processing [hella-api] error
+[2023-05-07 15:34:49] INFO root fetch - processPackages [gama-cli]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-07 15:34:49] WARNING root fetch - processPackages [certora-cli-alpha-shelly-longTests]: Skipping package: exceeds size limit 38473058>=10485760
+[2023-05-07 15:34:49] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-longTests] error
+[2023-05-07 15:34:50] INFO root fetch - processPackages [gama-config]: Downloading https://files.pythonhosted.org/packages/04/8b/d369c2c02cc75e299aa1f6f20917ae3e940cf3b015fa5574d072b5232a93/gama_config-1.14.0.tar.gz
+[2023-05-07 15:34:50] INFO root fetch - processPackages [lesscode-tool]: Downloading https://files.pythonhosted.org/packages/ec/3b/c9cd99ede1d7066ae898e7ce12532e4e700c463fc448b5cc8056036f9bdc/lesscode_tool-0.0.8.tar.gz
+[2023-05-07 15:34:50] INFO root fetch - processPackages [indiek-mockdb]: Downloading https://files.pythonhosted.org/packages/df/df/47f316f1a70ce224b1a3a6604d66eaec96d9c988d384e40ee528e0a702f5/indiek-mockdb-0.1.1.tar.gz
+[2023-05-07 15:34:50] INFO root fetch - processPackages [ProcessingImg1]: Downloading https://files.pythonhosted.org/packages/38/12/e301e5c57b2c616fae3390c54e1ab067855eea19e9cac29a9397080bd5de/ProcessingImg1-0.1.tar.gz
+[2023-05-07 15:34:50] INFO root fetch - processPackages [gama-cli]: Downloading https://files.pythonhosted.org/packages/b0/b1/8bebc6fac896cec1144e9ce4e3e19e65f7bdd092dfe3271a765a8f185cd5/gama_cli-1.8.0.tar.gz
+[2023-05-07 15:34:50] INFO root fetch - processPackages [ProcessingImg1]: Downloading https://files.pythonhosted.org/packages/0d/aa/9ecfaab5598824f6e8b92e49c4cd1b2a8bdb95e3d95e5b74f5f9616778b5/ProcessingImg1-0.2.tar.gz
+[2023-05-07 15:34:50] INFO root fetch - processPackages [indiek-mockdb]: Downloading https://files.pythonhosted.org/packages/77/2f/cdd569a957e9ea0277615c94724b54d8dd391b5ec3b7f779dff8b892bbf0/indiek-mockdb-0.1.2.tar.gz
+[2023-05-07 15:34:50] INFO root fetch - processPackages [gama-config]: Downloading https://files.pythonhosted.org/packages/46/08/3ae4c7e16d7637b110f10926d3f716f41bd63c17da7515588e0226862c71/gama_config-1.9.0.tar.gz
+[2023-05-07 15:34:50] INFO root fetch - processPackages [lesscode-tool]: Downloading https://files.pythonhosted.org/packages/96/a3/0a9a46370a4a8b0a9a4e8f479cdec3e5599d5cc5a6bcb07f73ce4bc15270/lesscode_tool-0.0.9.tar.gz
+[2023-05-07 15:34:50] INFO root fetch - processPackages [ProcessingImg1]: executing diffoscope
+[2023-05-07 15:34:50] INFO root fetch - processPackages [ProcessingImg1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ProcessingImg1-0.1.tar.gz tmp/ProcessingImg1-0.2.tar.gz --markdown 20230507/P/ProcessingImg1/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-07 15:34:50] INFO root fetch - processPackages [gama-cli]: Downloading https://files.pythonhosted.org/packages/73/3f/392add37fedb2571be16c97804071d7280b669a6b43d9cc096faccfcc851/gama_cli-1.9.0.tar.gz
+[2023-05-07 15:34:50] INFO root fetch - processPackages [lesscode-tool]: executing diffoscope
+[2023-05-07 15:34:50] INFO root fetch - processPackages [lesscode-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode_tool-0.0.8.tar.gz tmp/lesscode_tool-0.0.9.tar.gz --markdown 20230507/l/lesscode-tool/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 15:34:50] INFO root fetch - processPackages [gama-config]: executing diffoscope
+[2023-05-07 15:34:50] INFO root fetch - processPackages [gama-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gama_config-1.14.0.tar.gz tmp/gama_config-1.9.0.tar.gz --markdown 20230507/g/gama-config/1.14.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-07 15:34:50] INFO root fetch - processPackages [indiek-mockdb]: executing diffoscope
+[2023-05-07 15:34:50] INFO root fetch - processPackages [indiek-mockdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indiek-mockdb-0.1.1.tar.gz tmp/indiek-mockdb-0.1.2.tar.gz --markdown 20230507/i/indiek-mockdb/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 15:34:50] INFO root fetch - processPackages [gama-cli]: executing diffoscope
+[2023-05-07 15:34:50] INFO root fetch - processPackages [gama-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gama_cli-1.8.0.tar.gz tmp/gama_cli-1.9.0.tar.gz --markdown 20230507/g/gama-cli/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-07 15:34:51] INFO root fetch - main [MainThread]: End processing [maya-rig-operation-graph]: success
+[2023-05-07 15:34:51] INFO root fetch - main [MainThread]: End processing [lesscode-tool]: success
+[2023-05-07 15:34:51] INFO root fetch - main [MainThread]: End processing [ProcessingImg1]: success
+[2023-05-07 15:34:51] INFO root fetch - main [MainThread]: End processing [indiek-mockdb]: success
+[2023-05-07 15:34:51] INFO root fetch - main [MainThread]: End processing [gama-config]: success
+[2023-05-07 15:34:52] INFO root fetch - main [MainThread]: End processing [gama-cli]: success
+[2023-05-07 15:34:52] INFO root fetch - main [MainThread]: Store serial: [18007105]
