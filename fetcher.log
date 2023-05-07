@@ -7600,3 +7600,76 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 16:18:31] INFO root fetch - main [MainThread]: End processing [pythesyncer]: success
 [2023-05-07 16:18:32] INFO root fetch - main [MainThread]: End processing [PyViCare]: success
 [2023-05-07 16:18:32] INFO root fetch - main [MainThread]: Store serial: [18007357]
+[2023-05-07 16:23:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007357]
+[2023-05-07 16:23:40] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-07 16:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: allianceauth-discordbot
+[2023-05-07 16:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2023-05-07 16:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycolorlibaryV1
+[2023-05-07 16:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-fast-grpc
+[2023-05-07 16:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2023-05-07 16:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pybankid
+[2023-05-07 16:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vessl
+[2023-05-07 16:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyportfolioopt
+[2023-05-07 16:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyroe
+[2023-05-07 16:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: operator-library
+[2023-05-07 16:23:40] INFO root fetch - processPackages [allianceauth-discordbot]: New version: [3.6.1] Old Version: [3.6.0]
+[2023-05-07 16:23:40] WARNING root fetch - processPackages [python-fast-grpc]: Skipping, unable to determine old version
+[2023-05-07 16:23:40] WARNING root fetch - processPackages [pycolorlibaryV1]: Skipping, unable to determine old version
+[2023-05-07 16:23:40] INFO root fetch - processPackages [python-fast-grpc]: Start processing: websockets
+[2023-05-07 16:23:40] INFO root fetch - main [MainThread]: End processing [python-fast-grpc] error
+[2023-05-07 16:23:40] INFO root fetch - processPackages [pycolorlibaryV1]: Start processing: alipai
+[2023-05-07 16:23:40] INFO root fetch - processPackages [pybankid]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-07 16:23:40] INFO root fetch - main [MainThread]: End processing [pycolorlibaryV1] error
+[2023-05-07 16:23:40] INFO root fetch - processPackages [vessl]: New version: [0.1.93] Old Version: [0.1.92]
+[2023-05-07 16:23:40] INFO root fetch - processPackages [pyportfolioopt]: New version: [1.5.5] Old Version: [1.5.4]
+[2023-05-07 16:23:41] INFO root fetch - processPackages [websockets]: New version: [9.1] Old Version: [9.0.2]
+[2023-05-07 16:23:41] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-07 16:23:41] WARNING root fetch - processPackages [operator-library]: Skipping, unable to determine old version
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pyroe]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-07 16:23:41] INFO root fetch - processPackages [alipai]: New version: [0.4.0] Old Version: [0.3.7.dev0]
+[2023-05-07 16:23:41] INFO root fetch - main [MainThread]: End processing [operator-library] error
+[2023-05-07 16:23:41] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [vessl]: Downloading https://files.pythonhosted.org/packages/15/48/6ac9095a2f61a6ddfffa82befb360e3df5b2c81293bfc0a58aa8c3ac15ae/vessl-0.1.93.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pybankid]: Downloading https://files.pythonhosted.org/packages/67/05/94a38ea7df180c7465eebdc2b13a0617e3c6ecc76d64af172a4f99d866d7/pybankid-0.8.0.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-07 16:23:41] INFO root fetch - processPackages [websockets]: Downloading https://files.pythonhosted.org/packages/2c/6e/472fc01f721af829b07d1c13bb3b8e8df0a57ecb5e81b9fc5e76ce824583/websockets-9.0.2.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pyportfolioopt]: Downloading https://files.pythonhosted.org/packages/e3/a6/3095735352deaf120754273ee801033d3ac730a2c447f372fe7bad40a0d3/pyportfolioopt-1.5.4.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pyroe]: Downloading https://files.pythonhosted.org/packages/2a/cb/248d64472096ab8984525458f0c60a4cefe57fc6432190027ff1bf6947c9/pyroe-0.9.1.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [alipai]: Downloading https://files.pythonhosted.org/packages/f0/96/885c5276b3cad91a767851c6535b8a6b4d00fcecd2338b11cfb1b48ca46c/alipai-0.3.7.dev0-py2.py3-none-any.whl
+[2023-05-07 16:23:41] INFO root fetch - processPackages [allianceauth-discordbot]: Downloading https://files.pythonhosted.org/packages/cf/8c/81e8f53e0ed1f5168edde8cea12d9f439499a24f5134061829c806232856/allianceauth-discordbot-3.6.1.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [allianceauth-discordbot]: executing diffoscope
+[2023-05-07 16:23:41] INFO root fetch - processPackages [allianceauth-discordbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allianceauth-discordbot-3.6.0.tar.gz tmp/allianceauth-discordbot-3.6.1.tar.gz --markdown 20230507/a/allianceauth-discordbot/3.6.0-3.6.1/diff.md --exclude *.pyd
+[2023-05-07 16:23:41] INFO root fetch - processPackages [vessl]: executing diffoscope
+[2023-05-07 16:23:41] INFO root fetch - processPackages [vessl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vessl-0.1.92.tar.gz tmp/vessl-0.1.93.tar.gz --markdown 20230507/v/vessl/0.1.92-0.1.93/diff.md --exclude *.pyd
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pybankid]: Downloading https://files.pythonhosted.org/packages/9b/cd/e28b6edf519f0e5f1c309a012ad80cbd27efb0d439e34740c94b61771587/pybankid-0.9.0.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pyportfolioopt]: Downloading https://files.pythonhosted.org/packages/5f/e3/922d2279adc6e965c5aacce89ff317d6c9f8cabbbb70fa604a84443c6b1e/pyportfolioopt-1.5.5.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pyroe]: Downloading https://files.pythonhosted.org/packages/89/4a/a6b0d4d7c4d8f507ec6fd9c214e7e8445186434db143e724d6564c3200e8/pyroe-0.9.2.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-07 16:23:41] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230507/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-07 16:23:41] INFO root fetch - processPackages [alipai]: Downloading https://files.pythonhosted.org/packages/b0/51/668d2b00d92935bc320fc4faf5fd87ca4f22e3ea8dfffd9b7812d2be2b7b/alipai-0.4.0-py2.py3-none-any.whl
+[2023-05-07 16:23:41] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-07 16:23:41] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230507/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pyportfolioopt]: executing diffoscope
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pyportfolioopt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyportfolioopt-1.5.4.tar.gz tmp/pyportfolioopt-1.5.5.tar.gz --markdown 20230507/p/pyportfolioopt/1.5.4-1.5.5/diff.md --exclude *.pyd
+[2023-05-07 16:23:41] INFO root fetch - processPackages [websockets]: Downloading https://files.pythonhosted.org/packages/0d/bd/5262054455ab2067e51de331bfbc53a1dfa9071af7c424cf7c0793c4349a/websockets-9.1.tar.gz
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pyroe]: executing diffoscope
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pybankid]: executing diffoscope
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pyroe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroe-0.9.1.tar.gz tmp/pyroe-0.9.2.tar.gz --markdown 20230507/p/pyroe/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-07 16:23:41] INFO root fetch - processPackages [pybankid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybankid-0.8.0.tar.gz tmp/pybankid-0.9.0.tar.gz --markdown 20230507/p/pybankid/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-07 16:23:41] INFO root fetch - processPackages [alipai]: executing diffoscope
+[2023-05-07 16:23:41] INFO root fetch - processPackages [alipai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alipai-0.3.7.dev0-py2.py3-none-any.whl.zip tmp/alipai-0.4.0-py2.py3-none-any.whl.zip --markdown 20230507/a/alipai/0.3.7.dev0-0.4.0/diff.md --exclude *.pyd
+[2023-05-07 16:23:41] INFO root fetch - processPackages [websockets]: executing diffoscope
+[2023-05-07 16:23:41] INFO root fetch - processPackages [websockets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/websockets-9.0.2.tar.gz tmp/websockets-9.1.tar.gz --markdown 20230507/w/websockets/9.0.2-9.1/diff.md --exclude *.pyd
+[2023-05-07 16:23:43] INFO root fetch - main [MainThread]: End processing [pyroe]: success
+[2023-05-07 16:23:43] INFO root fetch - main [MainThread]: End processing [pybankid]: success
+[2023-05-07 16:23:43] INFO root fetch - main [MainThread]: End processing [websockets]: success
+[2023-05-07 16:23:43] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-07 16:23:43] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-07 16:23:43] INFO root fetch - main [MainThread]: End processing [pyportfolioopt]: success
+[2023-05-07 16:23:44] INFO root fetch - main [MainThread]: End processing [allianceauth-discordbot]: success
+[2023-05-07 16:23:44] INFO root fetch - main [MainThread]: End processing [alipai]: success
+[2023-05-07 16:23:48] INFO root fetch - main [MainThread]: End processing [vessl]: success
+[2023-05-07 16:23:48] INFO root fetch - main [MainThread]: Store serial: [18007405]
