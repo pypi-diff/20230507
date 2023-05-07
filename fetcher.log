@@ -3080,3 +3080,18 @@
 [2023-05-07 07:30:08] INFO root fetch - main [MainThread]: End processing [saltext.bitwarden]: success
 [2023-05-07 07:30:08] INFO root fetch - main [MainThread]: End processing [SeisMonitor]: success
 [2023-05-07 07:30:08] INFO root fetch - main [MainThread]: Store serial: [18004324]
+[2023-05-07 07:35:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004324]
+[2023-05-07 07:35:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-07 07:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: os-mfa
+[2023-05-07 07:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cmx
+[2023-05-07 07:35:16] INFO root fetch - processPackages [cmx]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 07:35:17] INFO root fetch - processPackages [os-mfa]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-07 07:35:17] INFO root fetch - processPackages [cmx]: executing diffoscope
+[2023-05-07 07:35:17] INFO root fetch - processPackages [cmx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmx-0.0.8-py3-none-any.whl.zip tmp/cmx-0.0.9-py3-none-any.whl.zip --markdown 20230507/c/cmx/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 07:35:17] INFO root fetch - processPackages [os-mfa]: Downloading https://files.pythonhosted.org/packages/94/a7/8596963d9f379d77d7ef97e141bbf1b2ff4a14ad438a7af587970d121a91/os-mfa-0.4.1.tar.gz
+[2023-05-07 07:35:17] INFO root fetch - processPackages [os-mfa]: Downloading https://files.pythonhosted.org/packages/a7/4f/c43c714541df986e8e6e6db13eb33538cc9a33d760713258e409db9d257f/os-mfa-0.4.2.tar.gz
+[2023-05-07 07:35:17] INFO root fetch - processPackages [os-mfa]: executing diffoscope
+[2023-05-07 07:35:17] INFO root fetch - processPackages [os-mfa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os-mfa-0.4.1.tar.gz tmp/os-mfa-0.4.2.tar.gz --markdown 20230507/o/os-mfa/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-07 07:35:18] INFO root fetch - main [MainThread]: End processing [cmx]: success
+[2023-05-07 07:35:18] INFO root fetch - main [MainThread]: End processing [os-mfa]: success
+[2023-05-07 07:35:18] INFO root fetch - main [MainThread]: Store serial: [18004331]
