@@ -6513,3 +6513,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 14:26:14] INFO root fetch - main [MainThread]: End processing [bw2calc]: success
 [2023-05-07 14:26:14] INFO root fetch - main [MainThread]: End processing [siat]: success
 [2023-05-07 14:26:14] INFO root fetch - main [MainThread]: Store serial: [18006611]
+[2023-05-07 14:31:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006611]
+[2023-05-07 14:31:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 14:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: password-generator-lib
+[2023-05-07 14:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vyxal
+[2023-05-07 14:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apininja
+[2023-05-07 14:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OctoBot-Tulipy
+[2023-05-07 14:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbt-ai
+[2023-05-07 14:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prompt-me
+[2023-05-07 14:31:23] INFO root fetch - processPackages [apininja]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-07 14:31:23] WARNING root fetch - processPackages [password-generator-lib]: Skipping, unable to determine old version
+[2023-05-07 14:31:23] INFO root fetch - main [MainThread]: End processing [password-generator-lib] error
+[2023-05-07 14:31:23] INFO root fetch - processPackages [prompt-me]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-05-07 14:31:23] INFO root fetch - processPackages [OctoBot-Tulipy]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-05-07 14:31:23] INFO root fetch - processPackages [dbt-ai]: New version: [0.1.2a0] Old Version: [0.1.1a0]
+[2023-05-07 14:31:23] INFO root fetch - processPackages [vyxal]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-07 14:31:23] INFO root fetch - processPackages [prompt-me]: executing diffoscope
+[2023-05-07 14:31:23] INFO root fetch - processPackages [prompt-me]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompt-me-1.0.0.tar.gz tmp/prompt-me-2.0.0.tar.gz --markdown 20230507/p/prompt-me/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-07 14:31:23] INFO root fetch - processPackages [apininja]: Downloading https://files.pythonhosted.org/packages/8b/dd/b44b599b8e4be897a008fcedbca5d51fe581a3fd38cc0050b30d38979885/apininja-0.1.7.tar.gz
+[2023-05-07 14:31:23] INFO root fetch - processPackages [dbt-ai]: Downloading https://files.pythonhosted.org/packages/7f/5d/80de0a027a1d4631986944607af718952623cfe8614891e4d0932495297a/dbt-ai-0.1.2a0.tar.gz
+[2023-05-07 14:31:23] INFO root fetch - processPackages [vyxal]: Downloading https://files.pythonhosted.org/packages/df/34/a9313887f0e45965697911af82da491ce6ab3d9b9692419bc9d28e55edae/vyxal-2.9.0.tar.gz
+[2023-05-07 14:31:23] INFO root fetch - processPackages [apininja]: executing diffoscope
+[2023-05-07 14:31:23] INFO root fetch - processPackages [apininja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apininja-0.1.6.tar.gz tmp/apininja-0.1.7.tar.gz --markdown 20230507/a/apininja/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-07 14:31:23] INFO root fetch - processPackages [OctoBot-Tulipy]: Downloading https://files.pythonhosted.org/packages/69/a0/8a6740785d54811a925fe7b337ac413a4d5cbadaed67797ac944ad4b8638/OctoBot-Tulipy-0.4.8.tar.gz
+[2023-05-07 14:31:23] INFO root fetch - processPackages [dbt-ai]: executing diffoscope
+[2023-05-07 14:31:23] INFO root fetch - processPackages [dbt-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-ai-0.1.1a0.tar.gz tmp/dbt-ai-0.1.2a0.tar.gz --markdown 20230507/d/dbt-ai/0.1.1a0-0.1.2a0/diff.md --exclude *.pyd
+[2023-05-07 14:31:23] INFO root fetch - processPackages [OctoBot-Tulipy]: executing diffoscope
+[2023-05-07 14:31:23] INFO root fetch - processPackages [OctoBot-Tulipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Tulipy-0.4.7.tar.gz tmp/OctoBot-Tulipy-0.4.8.tar.gz --markdown 20230507/O/OctoBot-Tulipy/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-05-07 14:31:24] INFO root fetch - processPackages [vyxal]: Downloading https://files.pythonhosted.org/packages/50/63/1746c2cccb187042ae5cc09caa52fd1fb83b4e37b2533d5d7dbcf041841a/vyxal-2.9.1.tar.gz
+[2023-05-07 14:31:24] INFO root fetch - processPackages [vyxal]: executing diffoscope
+[2023-05-07 14:31:24] INFO root fetch - processPackages [vyxal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vyxal-2.9.0.tar.gz tmp/vyxal-2.9.1.tar.gz --markdown 20230507/v/vyxal/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-07 14:31:24] INFO root fetch - main [MainThread]: End processing [prompt-me]: success
+[2023-05-07 14:31:24] INFO root fetch - main [MainThread]: End processing [apininja]: success
+[2023-05-07 14:31:24] INFO root fetch - main [MainThread]: End processing [OctoBot-Tulipy]: success
+[2023-05-07 14:31:25] INFO root fetch - main [MainThread]: End processing [dbt-ai]: success
+[2023-05-07 14:31:25] INFO root fetch - main [MainThread]: End processing [vyxal]: success
+[2023-05-07 14:31:25] INFO root fetch - main [MainThread]: Store serial: [18006628]
