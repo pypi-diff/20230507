@@ -3904,3 +3904,52 @@
 [2023-05-07 09:41:13] INFO root fetch - main [MainThread]: End processing [wheeldiff]: success
 [2023-05-07 09:41:13] INFO root fetch - main [MainThread]: End processing [lincs]: success
 [2023-05-07 09:41:13] INFO root fetch - main [MainThread]: Store serial: [18004915]
+[2023-05-07 09:46:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004915]
+[2023-05-07 09:46:22] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 09:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-naftali-CERT-1897-parametric-instantiation-always
+[2023-05-07 09:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emp-taskman
+[2023-05-07 09:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: portman
+[2023-05-07 09:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wheeldiff
+[2023-05-07 09:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bambooai
+[2023-05-07 09:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: async-rotating-proxy
+[2023-05-07 09:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: compel
+[2023-05-07 09:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dxsp
+[2023-05-07 09:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: keras-nightly
+[2023-05-07 09:46:22] INFO root fetch - processPackages [certora-cli-alpha-naftali-CERT-1897-parametric-instantiation-always]: New version: [20230507.7.41.137068] Old Version: [20230501.8.42.292176]
+[2023-05-07 09:46:22] WARNING root fetch - processPackages [bambooai]: Skipping, unable to determine old version
+[2023-05-07 09:46:22] WARNING root fetch - processPackages [portman]: Skipping, unable to determine old version
+[2023-05-07 09:46:22] INFO root fetch - processPackages [async-rotating-proxy]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-05-07 09:46:22] INFO root fetch - processPackages [wheeldiff]: New version: [2023.5.7.7.44] Old Version: [2023.5.7.7.39]
+[2023-05-07 09:46:22] INFO root fetch - main [MainThread]: End processing [bambooai] error
+[2023-05-07 09:46:22] INFO root fetch - main [MainThread]: End processing [portman] error
+[2023-05-07 09:46:22] WARNING root fetch - processPackages [emp-taskman]: Skipping, unable to determine old version
+[2023-05-07 09:46:22] INFO root fetch - main [MainThread]: End processing [emp-taskman] error
+[2023-05-07 09:46:22] INFO root fetch - processPackages [dxsp]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-07 09:46:22] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-05-07 09:46:22] INFO root fetch - processPackages [compel]: New version: [1.1.4.dev0] Old Version: [1.1.3.dev0]
+[2023-05-07 09:46:22] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-05-07 09:46:22] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230507/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-05-07 09:46:22] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-07 09:46:22] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.9.8.tar.gz tmp/dxsp-1.9.9.tar.gz --markdown 20230507/d/dxsp/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-07 09:46:22] INFO root fetch - processPackages [certora-cli-alpha-naftali-CERT-1897-parametric-instantiation-always]: Downloading https://files.pythonhosted.org/packages/01/45/1b7f4a8f156a741f5a369b67348e46fdb98fdd2be5557c59ce037e516dac/certora-cli-alpha-naftali-CERT-1897_parametric_instantiation_always-20230501.8.42.292176.tar.gz
+[2023-05-07 09:46:22] INFO root fetch - processPackages [wheeldiff]: Downloading https://files.pythonhosted.org/packages/ed/00/0500729d1e8ce48c0b62d84faf8543024f98ee88d8b9438ce42ec53f1443/wheeldiff-2023.5.7.7.44.tar.gz
+[2023-05-07 09:46:22] INFO root fetch - processPackages [async-rotating-proxy]: Downloading https://files.pythonhosted.org/packages/f3/2a/fed0fc948631748933a77453684db4532c2f24053b804ac67a5c71201127/async_rotating_proxy-0.0.1.tar.gz
+[2023-05-07 09:46:22] WARNING root fetch - processPackages [certora-cli-alpha-naftali-CERT-1897-parametric-instantiation-always]: Skipping package: exceeds size limit 38299134>=10485760
+[2023-05-07 09:46:22] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-naftali-CERT-1897-parametric-instantiation-always] error
+[2023-05-07 09:46:22] ERROR root fetch - processPackages [keras-nightly]: Diffoscope failed: Error: error creating container storage: the container name "youthful_shirley" is already in use by "2afe256e98ed53b91fe31bc6104f9ca483545cd7575572ffc12d725bfdf0e421". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-07 09:46:22] INFO root fetch - main [MainThread]: End processing [keras-nightly] error
+[2023-05-07 09:46:22] INFO root fetch - processPackages [wheeldiff]: executing diffoscope
+[2023-05-07 09:46:22] INFO root fetch - processPackages [wheeldiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheeldiff-2023.5.7.7.39.tar.gz tmp/wheeldiff-2023.5.7.7.44.tar.gz --markdown 20230507/w/wheeldiff/2023.5.7.7.39-2023.5.7.7.44/diff.md --exclude *.pyd
+[2023-05-07 09:46:22] INFO root fetch - processPackages [compel]: Downloading https://files.pythonhosted.org/packages/c2/dc/bfcefb5810fb8392f1d05820b0b2f72f7a8ccbcc4f101a3d91d61ca8c348/compel-1.1.3.dev0.tar.gz
+[2023-05-07 09:46:22] INFO root fetch - processPackages [async-rotating-proxy]: Downloading https://files.pythonhosted.org/packages/74/db/e7ff427b45b36043938c5005e55124b9a20a158cd3d870acc59edc2d5171/async_rotating_proxy-0.0.3.tar.gz
+[2023-05-07 09:46:22] INFO root fetch - processPackages [compel]: Downloading https://files.pythonhosted.org/packages/f5/09/d35ec6d275f20e12c4fd9b656b104da818b67a57ba7ba50be0bf99de1a8e/compel-1.1.4.dev0.tar.gz
+[2023-05-07 09:46:22] INFO root fetch - processPackages [async-rotating-proxy]: executing diffoscope
+[2023-05-07 09:46:22] INFO root fetch - processPackages [async-rotating-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_rotating_proxy-0.0.1.tar.gz tmp/async_rotating_proxy-0.0.3.tar.gz --markdown 20230507/a/async-rotating-proxy/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 09:46:22] INFO root fetch - processPackages [compel]: executing diffoscope
+[2023-05-07 09:46:22] INFO root fetch - processPackages [compel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compel-1.1.3.dev0.tar.gz tmp/compel-1.1.4.dev0.tar.gz --markdown 20230507/c/compel/1.1.3.dev0-1.1.4.dev0/diff.md --exclude *.pyd
+[2023-05-07 09:46:23] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-07 09:46:23] INFO root fetch - main [MainThread]: End processing [wheeldiff]: success
+[2023-05-07 09:46:23] INFO root fetch - main [MainThread]: End processing [async-rotating-proxy]: success
+[2023-05-07 09:46:23] INFO root fetch - main [MainThread]: End processing [compel]: success
+[2023-05-07 09:46:23] INFO root fetch - main [MainThread]: Store serial: [18004945]
