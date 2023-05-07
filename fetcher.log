@@ -3016,3 +3016,15 @@
 [2023-05-07 07:19:46] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2023-05-07 07:19:46] INFO root fetch - main [MainThread]: End processing [spectrafit]: success
 [2023-05-07 07:19:46] INFO root fetch - main [MainThread]: Store serial: [18004288]
+[2023-05-07 07:24:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004288]
+[2023-05-07 07:24:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-07 07:24:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plantumlcli
+[2023-05-07 07:24:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: passtorage
+[2023-05-07 07:24:55] INFO root fetch - processPackages [plantumlcli]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 07:24:55] WARNING root fetch - processPackages [passtorage]: Skipping, unable to determine old version
+[2023-05-07 07:24:55] INFO root fetch - main [MainThread]: End processing [passtorage] error
+[2023-05-07 07:24:55] INFO root fetch - processPackages [plantumlcli]: Downloading https://files.pythonhosted.org/packages/28/71/3cb4b1177bdb2c3923f256bd8d59b79f679c7eff36b8cf13cacea50cb13b/plantumlcli-0.1.1.tar.gz
+[2023-05-07 07:24:56] INFO root fetch - processPackages [plantumlcli]: executing diffoscope
+[2023-05-07 07:24:56] INFO root fetch - processPackages [plantumlcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plantumlcli-0.1.0.tar.gz tmp/plantumlcli-0.1.1.tar.gz --markdown 20230507/p/plantumlcli/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 07:24:57] INFO root fetch - main [MainThread]: End processing [plantumlcli]: success
+[2023-05-07 07:24:57] INFO root fetch - main [MainThread]: Store serial: [18004295]
