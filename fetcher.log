@@ -5246,3 +5246,44 @@
 [2023-05-07 12:15:15] INFO root fetch - main [MainThread]: End processing [lightwood]: success
 [2023-05-07 12:16:06] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
 [2023-05-07 12:16:06] INFO root fetch - main [MainThread]: Store serial: [18005747]
+[2023-05-07 12:21:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005747]
+[2023-05-07 12:21:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 12:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cramjam
+[2023-05-07 12:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: failures
+[2023-05-07 12:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyswitchbee
+[2023-05-07 12:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: antgo
+[2023-05-07 12:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hyponic
+[2023-05-07 12:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: checkov
+[2023-05-07 12:21:15] INFO root fetch - processPackages [pyswitchbee]: New version: [1.7.9] Old Version: [1.7.8]
+[2023-05-07 12:21:15] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-07 12:21:15] INFO root fetch - processPackages [hyponic]: New version: [0.0.1a0] Old Version: [0.0.1]
+[2023-05-07 12:21:15] INFO root fetch - processPackages [failures]: New version: [1.0.0] Old Version: [0.2.0]
+[2023-05-07 12:21:15] INFO root fetch - processPackages [antgo]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-07 12:21:15] INFO root fetch - processPackages [pyswitchbee]: executing diffoscope
+[2023-05-07 12:21:16] INFO root fetch - processPackages [pyswitchbee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyswitchbee-1.7.8.tar.gz tmp/pyswitchbee-1.7.9.tar.gz --markdown 20230507/p/pyswitchbee/1.7.8-1.7.9/diff.md --exclude *.pyd
+[2023-05-07 12:21:16] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-05-07 12:21:16] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230507/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-07 12:21:16] INFO root fetch - processPackages [cramjam]: New version: [2.7.0rc3] Old Version: [2.7.0rc2]
+[2023-05-07 12:21:16] INFO root fetch - processPackages [hyponic]: Downloading https://files.pythonhosted.org/packages/bb/e1/d1029e7e5a744d0a0dd24a69cc8687b8c87d8e4e3f087b9d3ababe8e0724/hyponic-0.0.1.tar.gz
+[2023-05-07 12:21:16] INFO root fetch - processPackages [antgo]: Downloading https://files.pythonhosted.org/packages/d4/c7/dafc425b24617393b16a7c80356f13da5efff10f3b04faf243d26fd2fef0/antgo-0.1.5.tar.gz
+[2023-05-07 12:21:16] INFO root fetch - processPackages [failures]: Downloading https://files.pythonhosted.org/packages/51/93/c41252aca46e1d9b61e6a3407f24e057707445b9afac946659e9b8df43c1/failures-0.2.0.tar.gz
+[2023-05-07 12:21:16] INFO root fetch - processPackages [cramjam]: Downloading https://files.pythonhosted.org/packages/14/5a/97fdb9e512ffedd2591eab379cbf8131e75d5d84c6a1b124aef01c830922/cramjam-2.7.0rc2.tar.gz
+[2023-05-07 12:21:16] INFO root fetch - processPackages [hyponic]: Downloading https://files.pythonhosted.org/packages/68/05/7f6b199d5e3df3c6f8bed7d50ba9ff231718e4ef71763c0054574f0624a9/hyponic-0.0.1a0.tar.gz
+[2023-05-07 12:21:16] INFO root fetch - processPackages [antgo]: Downloading https://files.pythonhosted.org/packages/31/d4/c38dd78750d790ecd56e7339e302d2fa2f03c834d37c11388b27f3409c45/antgo-0.1.6.tar.gz
+[2023-05-07 12:21:16] INFO root fetch - processPackages [hyponic]: executing diffoscope
+[2023-05-07 12:21:16] INFO root fetch - processPackages [hyponic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyponic-0.0.1.tar.gz tmp/hyponic-0.0.1a0.tar.gz --markdown 20230507/h/hyponic/0.0.1-0.0.1a0/diff.md --exclude *.pyd
+[2023-05-07 12:21:16] INFO root fetch - processPackages [failures]: Downloading https://files.pythonhosted.org/packages/dd/ac/0a54aa70a4f9ea91089537fa5096305be92fdaec29845e483d1c06e0f1dc/failures-1.0.0.tar.gz
+[2023-05-07 12:21:16] INFO root fetch - processPackages [cramjam]: Downloading https://files.pythonhosted.org/packages/cc/c9/ed6de7a51f9e73a70955d26d68a5c09e6fd12a35e0958db031bc33b104c2/cramjam-2.7.0rc3.tar.gz
+[2023-05-07 12:21:16] INFO root fetch - processPackages [failures]: executing diffoscope
+[2023-05-07 12:21:16] INFO root fetch - processPackages [failures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/failures-0.2.0.tar.gz tmp/failures-1.0.0.tar.gz --markdown 20230507/f/failures/0.2.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 12:21:16] INFO root fetch - processPackages [antgo]: executing diffoscope
+[2023-05-07 12:21:16] INFO root fetch - processPackages [antgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antgo-0.1.5.tar.gz tmp/antgo-0.1.6.tar.gz --markdown 20230507/a/antgo/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-07 12:21:16] INFO root fetch - processPackages [cramjam]: executing diffoscope
+[2023-05-07 12:21:16] INFO root fetch - processPackages [cramjam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cramjam-2.7.0rc2.tar.gz tmp/cramjam-2.7.0rc3.tar.gz --markdown 20230507/c/cramjam/2.7.0rc2-2.7.0rc3/diff.md --exclude *.pyd
+[2023-05-07 12:21:17] INFO root fetch - main [MainThread]: End processing [pyswitchbee]: success
+[2023-05-07 12:21:17] INFO root fetch - main [MainThread]: End processing [failures]: success
+[2023-05-07 12:21:17] INFO root fetch - main [MainThread]: End processing [hyponic]: success
+[2023-05-07 12:21:18] INFO root fetch - main [MainThread]: End processing [cramjam]: success
+[2023-05-07 12:21:25] INFO root fetch - main [MainThread]: End processing [antgo]: success
+[2023-05-07 12:21:55] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-05-07 12:21:55] INFO root fetch - main [MainThread]: Store serial: [18005825]
