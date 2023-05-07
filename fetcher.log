@@ -4129,3 +4129,45 @@
 [2023-05-07 10:12:48] INFO root fetch - main [MainThread]: End processing [webscrapbook]: success
 [2023-05-07 10:12:49] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
 [2023-05-07 10:12:49] INFO root fetch - main [MainThread]: Store serial: [18005046]
+[2023-05-07 10:17:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005046]
+[2023-05-07 10:17:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 10:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: piwaterflow
+[2023-05-07 10:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: angola
+[2023-05-07 10:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrainbow
+[2023-05-07 10:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: audioviz
+[2023-05-07 10:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: struct-gpt
+[2023-05-07 10:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: winorwin
+[2023-05-07 10:17:59] INFO root fetch - processPackages [scrainbow]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 10:17:59] INFO root fetch - processPackages [winorwin]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-07 10:17:59] INFO root fetch - processPackages [audioviz]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-07 10:17:59] INFO root fetch - processPackages [angola]: New version: [0.10.9] Old Version: [0.10.8]
+[2023-05-07 10:17:59] INFO root fetch - processPackages [piwaterflow]: New version: [0.5.2] Old Version: [0.3.3]
+[2023-05-07 10:17:59] INFO root fetch - processPackages [struct-gpt]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 10:17:59] INFO root fetch - processPackages [struct-gpt]: Downloading https://files.pythonhosted.org/packages/4f/fa/886af1ee043891ea71ca03f3212be78c47dabc93ac20748203746e9b1f18/struct_gpt-0.1.0.tar.gz
+[2023-05-07 10:17:59] INFO root fetch - processPackages [winorwin]: Downloading https://files.pythonhosted.org/packages/67/ed/0f3cfe62acb8670a6af65900266ca081c0c690f999c94a8c3ad49dbfe03c/winorwin-0.0.6.tar.gz
+[2023-05-07 10:17:59] INFO root fetch - processPackages [scrainbow]: Downloading https://files.pythonhosted.org/packages/d0/ea/b3f8817c991c2de0da5637fb2c172edf42cf1d85f08646771544f4600a51/scrainbow-0.0.1.tar.gz
+[2023-05-07 10:17:59] INFO root fetch - processPackages [piwaterflow]: Downloading https://files.pythonhosted.org/packages/38/98/d6c0d9e93abc27160c0d514f9d6e8d28586db00eb45879b1de3f5fdf2d6e/piwaterflow-0.3.3.tar.gz
+[2023-05-07 10:17:59] INFO root fetch - processPackages [angola]: Downloading https://files.pythonhosted.org/packages/ba/a1/156c3d4aefbca6c6bc3376b8fd19529f9b87d5d07b1ed731bc717a3d4cd9/angola-0.10.8.tar.gz
+[2023-05-07 10:17:59] INFO root fetch - processPackages [audioviz]: Downloading https://files.pythonhosted.org/packages/19/f5/2a648276efcceb2cc57ba008db461bcca04496ef66f80bb530d21c8b8eb4/audioviz-0.1.7.tar.gz
+[2023-05-07 10:17:59] INFO root fetch - processPackages [audioviz]: executing diffoscope
+[2023-05-07 10:17:59] INFO root fetch - processPackages [audioviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audioviz-0.1.6.tar.gz tmp/audioviz-0.1.7.tar.gz --markdown 20230507/a/audioviz/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-07 10:17:59] WARNING root fetch - processPackages [winorwin]: Skipping package: exceeds size limit 28473665>=10485760
+[2023-05-07 10:17:59] INFO root fetch - main [MainThread]: End processing [winorwin] error
+[2023-05-07 10:17:59] INFO root fetch - processPackages [struct-gpt]: Downloading https://files.pythonhosted.org/packages/b9/8a/26479c4fd6c783b498a50e836894c89446eeed51978090a8ae7102278af1/struct_gpt-0.1.1.tar.gz
+[2023-05-07 10:17:59] INFO root fetch - processPackages [scrainbow]: Downloading https://files.pythonhosted.org/packages/00/84/acb5188fb037892f25a71510a7323bb6413ce72a6ddc4df9f3f698fd825d/scrainbow-0.0.2.tar.gz
+[2023-05-07 10:17:59] INFO root fetch - processPackages [angola]: Downloading https://files.pythonhosted.org/packages/ef/c2/f915c0dd3427d9c66fde4e54b90de911fd82fcc8c329459e12cbcd4a235d/angola-0.10.9.tar.gz
+[2023-05-07 10:17:59] INFO root fetch - processPackages [piwaterflow]: Downloading https://files.pythonhosted.org/packages/fa/c2/0751868be5cad216bb1bb13902ab1fb0766cf07134eb8a8ebd5a3b875da4/piwaterflow-0.5.2.tar.gz
+[2023-05-07 10:17:59] INFO root fetch - processPackages [struct-gpt]: executing diffoscope
+[2023-05-07 10:17:59] INFO root fetch - processPackages [struct-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/struct_gpt-0.1.0.tar.gz tmp/struct_gpt-0.1.1.tar.gz --markdown 20230507/s/struct-gpt/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 10:17:59] INFO root fetch - processPackages [scrainbow]: executing diffoscope
+[2023-05-07 10:17:59] INFO root fetch - processPackages [scrainbow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrainbow-0.0.1.tar.gz tmp/scrainbow-0.0.2.tar.gz --markdown 20230507/s/scrainbow/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 10:17:59] INFO root fetch - processPackages [piwaterflow]: executing diffoscope
+[2023-05-07 10:17:59] INFO root fetch - processPackages [piwaterflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piwaterflow-0.3.3.tar.gz tmp/piwaterflow-0.5.2.tar.gz --markdown 20230507/p/piwaterflow/0.3.3-0.5.2/diff.md --exclude *.pyd
+[2023-05-07 10:17:59] INFO root fetch - processPackages [angola]: executing diffoscope
+[2023-05-07 10:17:59] INFO root fetch - processPackages [angola]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/angola-0.10.8.tar.gz tmp/angola-0.10.9.tar.gz --markdown 20230507/a/angola/0.10.8-0.10.9/diff.md --exclude *.pyd
+[2023-05-07 10:18:00] INFO root fetch - main [MainThread]: End processing [audioviz]: success
+[2023-05-07 10:18:00] INFO root fetch - main [MainThread]: End processing [scrainbow]: success
+[2023-05-07 10:18:01] INFO root fetch - main [MainThread]: End processing [struct-gpt]: success
+[2023-05-07 10:18:01] INFO root fetch - main [MainThread]: End processing [piwaterflow]: success
+[2023-05-07 10:18:01] INFO root fetch - main [MainThread]: End processing [angola]: success
+[2023-05-07 10:18:01] INFO root fetch - main [MainThread]: Store serial: [18005066]
