@@ -8001,3 +8001,55 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 17:01:25] INFO root fetch - processPackages [mixalime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixalime-2.9.8.tar.gz tmp/mixalime-2.9.9.tar.gz --markdown 20230507/m/mixalime/2.9.8-2.9.9/diff.md --exclude *.pyd
 [2023-05-07 17:01:26] INFO root fetch - main [MainThread]: End processing [mixalime]: success
 [2023-05-07 17:01:26] INFO root fetch - main [MainThread]: Store serial: [18007662]
+[2023-05-07 17:06:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007662]
+[2023-05-07 17:06:35] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-07 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymp4
+[2023-05-07 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cos-uploader
+[2023-05-07 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: JB-PhD-Upload-Trial
+[2023-05-07 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: betanegbinfit
+[2023-05-07 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: optimal-loc
+[2023-05-07 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: impose-cli
+[2023-05-07 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: images-upload-cli
+[2023-05-07 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: parquet2lance
+[2023-05-07 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mixalime
+[2023-05-07 17:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: leagueclientlivedata
+[2023-05-07 17:06:35] INFO root fetch - processPackages [optimal-loc]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-07 17:06:35] INFO root fetch - processPackages [betanegbinfit]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-07 17:06:35] INFO root fetch - processPackages [parquet2lance]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 17:06:36] INFO root fetch - processPackages [mixalime]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-07 17:06:36] INFO root fetch - processPackages [pymp4]: New version: [1.4.0] Old Version: [1.3.2]
+[2023-05-07 17:06:36] WARNING root fetch - processPackages [cos-uploader]: Skipping, unable to determine old version
+[2023-05-07 17:06:36] INFO root fetch - main [MainThread]: End processing [cos-uploader] error
+[2023-05-07 17:06:36] WARNING root fetch - processPackages [JB-PhD-Upload-Trial]: Skipping, unable to determine old version
+[2023-05-07 17:06:36] INFO root fetch - main [MainThread]: End processing [JB-PhD-Upload-Trial] error
+[2023-05-07 17:06:36] INFO root fetch - processPackages [parquet2lance]: executing diffoscope
+[2023-05-07 17:06:36] INFO root fetch - processPackages [parquet2lance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parquet2lance-0.0.2.tar.gz tmp/parquet2lance-0.0.3-cp310-cp310-macosx_10_7_x86_64.whl.zip --markdown 20230507/p/parquet2lance/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 17:06:36] WARNING root fetch - processPackages [impose-cli]: Skipping, unable to determine old version
+[2023-05-07 17:06:36] INFO root fetch - processPackages [leagueclientlivedata]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 17:06:36] INFO root fetch - main [MainThread]: End processing [impose-cli] error
+[2023-05-07 17:06:36] INFO root fetch - processPackages [images-upload-cli]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-07 17:06:36] INFO root fetch - processPackages [mixalime]: executing diffoscope
+[2023-05-07 17:06:36] INFO root fetch - processPackages [optimal-loc]: executing diffoscope
+[2023-05-07 17:06:36] INFO root fetch - processPackages [mixalime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixalime-2.9.8.tar.gz tmp/mixalime-2.9.9.tar.gz --markdown 20230507/m/mixalime/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-07 17:06:36] INFO root fetch - processPackages [optimal-loc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimal_loc-0.0.3.tar.gz tmp/optimal_loc-0.0.4.tar.gz --markdown 20230507/o/optimal-loc/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-07 17:06:36] INFO root fetch - processPackages [betanegbinfit]: executing diffoscope
+[2023-05-07 17:06:36] INFO root fetch - processPackages [betanegbinfit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betanegbinfit-1.9.1.tar.gz tmp/betanegbinfit-1.9.2.tar.gz --markdown 20230507/b/betanegbinfit/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-07 17:06:36] INFO root fetch - processPackages [leagueclientlivedata]: Downloading https://files.pythonhosted.org/packages/d6/56/7c994733f4def145e08099dbfeda10c10f489b4d23dcc22dc89df01c7933/leagueclientlivedata-0.1.0.tar.gz
+[2023-05-07 17:06:36] INFO root fetch - processPackages [images-upload-cli]: Downloading https://files.pythonhosted.org/packages/3b/46/62089a8e7255dbbf242e7d0fcfd33db360a8669ac4dc252846cb5cb5db73/images_upload_cli-1.1.2.tar.gz
+[2023-05-07 17:06:36] INFO root fetch - processPackages [pymp4]: Downloading https://files.pythonhosted.org/packages/2e/82/80ae1a23f7007d28d16f9387b066ee274a3fbaca549698a8f77a57137cf6/pymp4-1.3.2.tar.gz
+[2023-05-07 17:06:36] INFO root fetch - processPackages [leagueclientlivedata]: Downloading https://files.pythonhosted.org/packages/09/ab/08e70637cdbc9420c8585cbf8d6f647083438dbe3bde6b412c6dd4987744/leagueclientlivedata-0.1.1.tar.gz
+[2023-05-07 17:06:36] INFO root fetch - processPackages [images-upload-cli]: executing diffoscope
+[2023-05-07 17:06:36] INFO root fetch - processPackages [images-upload-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/images_upload_cli-1.1.1.tar.gz tmp/images_upload_cli-1.1.2.tar.gz --markdown 20230507/i/images-upload-cli/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-07 17:06:36] INFO root fetch - processPackages [pymp4]: Downloading https://files.pythonhosted.org/packages/a5/46/dfb3f5363fc71adaf419147fdcb93341029ca638634a5cc6f7e7446416b2/pymp4-1.4.0.tar.gz
+[2023-05-07 17:06:36] INFO root fetch - processPackages [leagueclientlivedata]: executing diffoscope
+[2023-05-07 17:06:36] INFO root fetch - processPackages [leagueclientlivedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leagueclientlivedata-0.1.0.tar.gz tmp/leagueclientlivedata-0.1.1.tar.gz --markdown 20230507/l/leagueclientlivedata/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 17:06:36] INFO root fetch - processPackages [pymp4]: executing diffoscope
+[2023-05-07 17:06:36] INFO root fetch - processPackages [pymp4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymp4-1.3.2.tar.gz tmp/pymp4-1.4.0.tar.gz --markdown 20230507/p/pymp4/1.3.2-1.4.0/diff.md --exclude *.pyd
+[2023-05-07 17:06:37] INFO root fetch - main [MainThread]: End processing [optimal-loc]: success
+[2023-05-07 17:06:37] INFO root fetch - main [MainThread]: End processing [images-upload-cli]: success
+[2023-05-07 17:06:37] INFO root fetch - main [MainThread]: End processing [mixalime]: success
+[2023-05-07 17:06:37] INFO root fetch - main [MainThread]: End processing [parquet2lance]: success
+[2023-05-07 17:06:37] INFO root fetch - main [MainThread]: End processing [pymp4]: success
+[2023-05-07 17:06:37] INFO root fetch - main [MainThread]: End processing [leagueclientlivedata]: success
+[2023-05-07 17:06:38] INFO root fetch - main [MainThread]: End processing [betanegbinfit]: success
+[2023-05-07 17:06:38] INFO root fetch - main [MainThread]: Store serial: [18007701]
