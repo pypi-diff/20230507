@@ -4480,3 +4480,52 @@
 [2023-05-07 10:55:20] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2023-05-07 10:55:58] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-05-07 10:55:58] INFO root fetch - main [MainThread]: Store serial: [18005278]
+[2023-05-07 11:01:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005278]
+[2023-05-07 11:01:07] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 11:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: struct-gpt
+[2023-05-07 11:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: password-management-system
+[2023-05-07 11:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edit-anything
+[2023-05-07 11:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: putkoff-chatGPT-API
+[2023-05-07 11:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spotify-playlist-exporter
+[2023-05-07 11:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cshogi
+[2023-05-07 11:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oregpt
+[2023-05-07 11:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jilei
+[2023-05-07 11:01:07] INFO root fetch - processPackages [struct-gpt]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-05-07 11:01:07] INFO root fetch - processPackages [edit-anything]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-07 11:01:07] WARNING root fetch - processPackages [putkoff-chatGPT-API]: Skipping, unable to determine old version
+[2023-05-07 11:01:07] INFO root fetch - main [MainThread]: End processing [putkoff-chatGPT-API] error
+[2023-05-07 11:01:07] WARNING root fetch - processPackages [spotify-playlist-exporter]: Skipping, unable to determine old version
+[2023-05-07 11:01:07] INFO root fetch - main [MainThread]: End processing [spotify-playlist-exporter] error
+[2023-05-07 11:01:07] INFO root fetch - processPackages [oregpt]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 11:01:07] INFO root fetch - processPackages [cshogi]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-07 11:01:07] INFO root fetch - processPackages [password-management-system]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-07 11:01:07] INFO root fetch - processPackages [jilei]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 11:01:07] INFO root fetch - processPackages [struct-gpt]: Downloading https://files.pythonhosted.org/packages/e6/63/4c31cf609572d80cb2ea3c072666245be83dd35c572b36e1f42f137b620a/struct_gpt-0.1.2.tar.gz
+[2023-05-07 11:01:07] INFO root fetch - processPackages [cshogi]: Downloading https://files.pythonhosted.org/packages/88/73/1558eee6d0de1bd4499ab369f75048266774b5e12b5ef5f381402802b0f6/cshogi-0.5.3-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
+[2023-05-07 11:01:07] INFO root fetch - processPackages [password-management-system]: Downloading https://files.pythonhosted.org/packages/83/82/1a34719b6397cdeccd913cb1ea54e99c4df208043cb375cde990a138c662/password-management-system-1.0.0.tar.gz
+[2023-05-07 11:01:07] INFO root fetch - processPackages [edit-anything]: Downloading https://files.pythonhosted.org/packages/f2/46/2f2007d08a3042b1353e1017073a29e3b76f2f6dc229ec79cd27ebedb2f0/edit-anything-0.0.5.tar.gz
+[2023-05-07 11:01:07] INFO root fetch - processPackages [jilei]: Downloading https://files.pythonhosted.org/packages/a6/9d/cf8d05b036c0559b1abfbaed59cd6e163414e5a3e6381f61f8f5fc8446ff/jilei-0.0.5-py3-none-any.whl
+[2023-05-07 11:01:07] INFO root fetch - processPackages [oregpt]: Downloading https://files.pythonhosted.org/packages/ab/9a/907f680746e06cdcea90de8665068953a9e3b6328fb9a2d70e53d0f26cea/oregpt-0.1.2.tar.gz
+[2023-05-07 11:01:07] INFO root fetch - processPackages [struct-gpt]: Downloading https://files.pythonhosted.org/packages/17/11/32a1b9f0bc94886b308da172889f1e1c391239b93990ed6069ef8d7b8ceb/struct_gpt-0.2.0.tar.gz
+[2023-05-07 11:01:07] INFO root fetch - processPackages [edit-anything]: executing diffoscope
+[2023-05-07 11:01:07] INFO root fetch - processPackages [edit-anything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edit-anything-0.0.4.tar.gz tmp/edit-anything-0.0.5.tar.gz --markdown 20230507/e/edit-anything/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-07 11:01:07] INFO root fetch - processPackages [password-management-system]: Downloading https://files.pythonhosted.org/packages/f1/a8/250e14682ca4272a66cfe13db6a89f5a6d639f7e0fc17de4be2a32cdf13a/password-management-system-1.0.1.tar.gz
+[2023-05-07 11:01:07] INFO root fetch - processPackages [oregpt]: executing diffoscope
+[2023-05-07 11:01:07] INFO root fetch - processPackages [oregpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oregpt-0.1.1.tar.gz tmp/oregpt-0.1.2.tar.gz --markdown 20230507/o/oregpt/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 11:01:08] INFO root fetch - processPackages [struct-gpt]: executing diffoscope
+[2023-05-07 11:01:08] INFO root fetch - processPackages [struct-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/struct_gpt-0.1.2.tar.gz tmp/struct_gpt-0.2.0.tar.gz --markdown 20230507/s/struct-gpt/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 11:01:08] INFO root fetch - processPackages [cshogi]: Downloading https://files.pythonhosted.org/packages/c7/e0/47b0c0da4a692802eb2adfd0a4cdf79d2bc66943b9e3b1bb05e6554105af/cshogi-0.5.4.tar.gz
+[2023-05-07 11:01:08] INFO root fetch - processPackages [password-management-system]: executing diffoscope
+[2023-05-07 11:01:08] INFO root fetch - processPackages [password-management-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/password-management-system-1.0.0.tar.gz tmp/password-management-system-1.0.1.tar.gz --markdown 20230507/p/password-management-system/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-07 11:01:08] INFO root fetch - processPackages [cshogi]: executing diffoscope
+[2023-05-07 11:01:08] INFO root fetch - processPackages [cshogi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cshogi-0.5.3-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip tmp/cshogi-0.5.4.tar.gz --markdown 20230507/c/cshogi/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-07 11:01:08] INFO root fetch - processPackages [jilei]: Downloading https://files.pythonhosted.org/packages/19/f4/aa718c6af9927808c1c0d021a47a2bf422a440d82cdc04d2132c57d73402/jilei-0.0.6-py3-none-any.whl
+[2023-05-07 11:01:08] INFO root fetch - processPackages [jilei]: executing diffoscope
+[2023-05-07 11:01:08] INFO root fetch - processPackages [jilei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jilei-0.0.5-py3-none-any.whl.zip tmp/jilei-0.0.6-py3-none-any.whl.zip --markdown 20230507/j/jilei/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 11:01:09] INFO root fetch - main [MainThread]: End processing [oregpt]: success
+[2023-05-07 11:01:09] INFO root fetch - main [MainThread]: End processing [struct-gpt]: success
+[2023-05-07 11:01:09] INFO root fetch - main [MainThread]: End processing [password-management-system]: success
+[2023-05-07 11:01:09] INFO root fetch - main [MainThread]: End processing [edit-anything]: success
+[2023-05-07 11:01:09] INFO root fetch - main [MainThread]: End processing [jilei]: success
+[2023-05-07 11:01:12] INFO root fetch - main [MainThread]: End processing [cshogi]: success
+[2023-05-07 11:01:12] INFO root fetch - main [MainThread]: Store serial: [18005316]
