@@ -3875,3 +3875,32 @@
 [2023-05-07 09:34:56] INFO root fetch - main [MainThread]: End processing [silobuster]: success
 [2023-05-07 09:36:03] INFO root fetch - main [MainThread]: End processing [isedit]: success
 [2023-05-07 09:36:03] INFO root fetch - main [MainThread]: Store serial: [18004867]
+[2023-05-07 09:41:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004867]
+[2023-05-07 09:41:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 09:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lalsuite
+[2023-05-07 09:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lincs
+[2023-05-07 09:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mknsmPy
+[2023-05-07 09:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PCRinSilico
+[2023-05-07 09:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: emp-beholder
+[2023-05-07 09:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wheeldiff
+[2023-05-07 09:41:11] WARNING root fetch - processPackages [PCRinSilico]: Skipping, unable to determine old version
+[2023-05-07 09:41:11] INFO root fetch - main [MainThread]: End processing [PCRinSilico] error
+[2023-05-07 09:41:11] WARNING root fetch - processPackages [emp-beholder]: Skipping, unable to determine old version
+[2023-05-07 09:41:11] INFO root fetch - main [MainThread]: End processing [emp-beholder] error
+[2023-05-07 09:41:11] WARNING root fetch - processPackages [mknsmPy]: Skipping, unable to determine old version
+[2023-05-07 09:41:11] INFO root fetch - main [MainThread]: End processing [mknsmPy] error
+[2023-05-07 09:41:11] INFO root fetch - processPackages [lincs]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-07 09:41:11] INFO root fetch - processPackages [wheeldiff]: New version: [2023.5.7.7.39] Old Version: [2023.5.7.7.15]
+[2023-05-07 09:41:11] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-05-07 09:41:12] INFO root fetch - processPackages [wheeldiff]: Downloading https://files.pythonhosted.org/packages/12/2a/d4344c6d7147d671f04954f71b7a7ef9257c66a6fc5518af6bda578be4df/wheeldiff-2023.5.7.7.39.tar.gz
+[2023-05-07 09:41:12] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-07 09:41:12] INFO root fetch - processPackages [lincs]: Downloading https://files.pythonhosted.org/packages/c1/4c/da97cbf340a299d3012f4d68114d0632e6bc868404f231d597aaccd38321/lincs-0.2.2.tar.gz
+[2023-05-07 09:41:12] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-05-07 09:41:12] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-05-07 09:41:12] INFO root fetch - processPackages [lincs]: executing diffoscope
+[2023-05-07 09:41:12] INFO root fetch - processPackages [lincs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lincs-0.2.1.tar.gz tmp/lincs-0.2.2.tar.gz --markdown 20230507/l/lincs/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-07 09:41:12] INFO root fetch - processPackages [wheeldiff]: executing diffoscope
+[2023-05-07 09:41:12] INFO root fetch - processPackages [wheeldiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheeldiff-2023.5.7.7.15.tar.gz tmp/wheeldiff-2023.5.7.7.39.tar.gz --markdown 20230507/w/wheeldiff/2023.5.7.7.15-2023.5.7.7.39/diff.md --exclude *.pyd
+[2023-05-07 09:41:13] INFO root fetch - main [MainThread]: End processing [wheeldiff]: success
+[2023-05-07 09:41:13] INFO root fetch - main [MainThread]: End processing [lincs]: success
+[2023-05-07 09:41:13] INFO root fetch - main [MainThread]: Store serial: [18004915]
