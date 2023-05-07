@@ -4395,3 +4395,52 @@
 [2023-05-07 10:44:29] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
 [2023-05-07 10:44:37] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-05-07 10:44:37] INFO root fetch - main [MainThread]: Store serial: [18005206]
+[2023-05-07 10:49:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005206]
+[2023-05-07 10:49:47] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 10:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: image-to-arduino
+[2023-05-07 10:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pylebai
+[2023-05-07 10:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: irails
+[2023-05-07 10:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pointclass
+[2023-05-07 10:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sicli-cli
+[2023-05-07 10:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: image-to-arduino
+[2023-05-07 10:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cshogi
+[2023-05-07 10:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Pyrosex
+[2023-05-07 10:49:47] INFO root fetch - processPackages [irails]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-07 10:49:47] INFO root fetch - processPackages [pointclass]: New version: [1.4] Old Version: [1.2]
+[2023-05-07 10:49:47] INFO root fetch - processPackages [pylebai]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 10:49:47] INFO root fetch - processPackages [image-to-arduino]: New version: [1.0.3.4] Old Version: [1.0.3.3]
+[2023-05-07 10:49:47] INFO root fetch - processPackages [image-to-arduino]: New version: [1.0.3.4] Old Version: [1.0.3.3]
+[2023-05-07 10:49:47] INFO root fetch - processPackages [sicli-cli]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-07 10:49:47] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-07 10:49:47] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.1.8.tar.gz tmp/irails-1.1.9.tar.gz --markdown 20230507/i/irails/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-07 10:49:47] WARNING root fetch - processPackages [Pyrosex]: Skipping, unable to determine old version
+[2023-05-07 10:49:47] INFO root fetch - main [MainThread]: End processing [Pyrosex] error
+[2023-05-07 10:49:47] INFO root fetch - processPackages [pointclass]: executing diffoscope
+[2023-05-07 10:49:47] INFO root fetch - processPackages [pointclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pointclass-1.2.tar.gz tmp/pointclass-1.4.tar.gz --markdown 20230507/p/pointclass/1.2-1.4/diff.md --exclude *.pyd
+[2023-05-07 10:49:47] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/cf/ea/119f557bc2b239666f1b8595f46912514ef5968b32e80afc783ec325fdec/image-to-arduino-1.0.3.3.tar.gz
+[2023-05-07 10:49:47] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/cf/ea/119f557bc2b239666f1b8595f46912514ef5968b32e80afc783ec325fdec/image-to-arduino-1.0.3.3.tar.gz
+[2023-05-07 10:49:47] INFO root fetch - processPackages [sicli-cli]: Downloading https://files.pythonhosted.org/packages/4f/3e/67555f330a01da7d30381aa1c2566123197ee29d15b175d17f34c996d7e1/sicli-cli-0.1.0.tar.gz
+[2023-05-07 10:49:47] INFO root fetch - processPackages [cshogi]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-07 10:49:48] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/6b/79/38150aa43f49dfb807cd0c16439f32f9d0f6ec3328d9461c68cbdd807249/image-to-arduino-1.0.3.4.tar.gz
+[2023-05-07 10:49:48] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/6b/79/38150aa43f49dfb807cd0c16439f32f9d0f6ec3328d9461c68cbdd807249/image-to-arduino-1.0.3.4.tar.gz
+[2023-05-07 10:49:48] INFO root fetch - processPackages [pylebai]: executing diffoscope
+[2023-05-07 10:49:48] INFO root fetch - processPackages [pylebai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylebai-1.0.8-pp38-pypy38_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip tmp/pylebai-1.0.9-pp38-pypy38_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip --markdown 20230507/p/pylebai/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 10:49:48] INFO root fetch - processPackages [cshogi]: Downloading https://files.pythonhosted.org/packages/fb/5b/2d979813ce58ac46f4f9ad66190197ae038ae146f8d3b7152ec66795588a/cshogi-0.5.1.tar.gz
+[2023-05-07 10:49:48] INFO root fetch - processPackages [sicli-cli]: Downloading https://files.pythonhosted.org/packages/2a/a8/db4417c99ed462e889272acbe5db7cfa0b1c8cf768403295f83d40f3565f/sicli-cli-0.2.0.tar.gz
+[2023-05-07 10:49:48] INFO root fetch - processPackages [sicli-cli]: executing diffoscope
+[2023-05-07 10:49:48] INFO root fetch - processPackages [sicli-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sicli-cli-0.1.0.tar.gz tmp/sicli-cli-0.2.0.tar.gz --markdown 20230507/s/sicli-cli/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 10:49:48] INFO root fetch - processPackages [image-to-arduino]: executing diffoscope
+[2023-05-07 10:49:48] INFO root fetch - processPackages [image-to-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-to-arduino-1.0.3.3.tar.gz tmp/image-to-arduino-1.0.3.4.tar.gz --markdown 20230507/i/image-to-arduino/1.0.3.3-1.0.3.4/diff.md --exclude *.pyd
+[2023-05-07 10:49:48] INFO root fetch - processPackages [image-to-arduino]: executing diffoscope
+[2023-05-07 10:49:48] INFO root fetch - processPackages [image-to-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-to-arduino-1.0.3.3.tar.gz tmp/image-to-arduino-1.0.3.4.tar.gz --markdown 20230507/i/image-to-arduino/1.0.3.3-1.0.3.4/diff.md --exclude *.pyd
+[2023-05-07 10:49:48] INFO root fetch - processPackages [cshogi]: Downloading https://files.pythonhosted.org/packages/c6/99/f13120334a9f00480c68fb00089ba6038c92c9349a34b7ae9df92f91ba8f/cshogi-0.5.2-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
+[2023-05-07 10:49:48] INFO root fetch - main [MainThread]: End processing [pointclass]: success
+[2023-05-07 10:49:49] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
+[2023-05-07 10:49:49] INFO root fetch - main [MainThread]: End processing [sicli-cli]: success
+[2023-05-07 10:49:49] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
+[2023-05-07 10:49:49] INFO root fetch - processPackages [cshogi]: executing diffoscope
+[2023-05-07 10:49:49] INFO root fetch - processPackages [cshogi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cshogi-0.5.1.tar.gz tmp/cshogi-0.5.2-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip --markdown 20230507/c/cshogi/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-07 10:49:50] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-07 10:49:51] INFO root fetch - main [MainThread]: End processing [cshogi]: success
+[2023-05-07 10:50:06] INFO root fetch - main [MainThread]: End processing [pylebai]: success
+[2023-05-07 10:50:06] INFO root fetch - main [MainThread]: Store serial: [18005244]
