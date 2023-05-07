@@ -1120,3 +1120,83 @@
 [2023-05-07 02:28:34] INFO root fetch - main [MainThread]: End processing [cdk8s-jenkins]: success
 [2023-05-07 02:28:34] INFO root fetch - main [MainThread]: End processing [my-labextension-demo]: success
 [2023-05-07 02:28:34] INFO root fetch - main [MainThread]: Store serial: [18003214]
+[2023-05-07 02:33:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003214]
+[2023-05-07 02:33:43] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-07 02:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: latex2mathml
+[2023-05-07 02:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-aurora-globaldatabase
+[2023-05-07 02:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-ecs-service-extensions
+[2023-05-07 02:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdktf-proxmox
+[2023-05-07 02:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdktf-github-actions
+[2023-05-07 02:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk8s-operator
+[2023-05-07 02:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: QPUIQ
+[2023-05-07 02:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dbt-ai
+[2023-05-07 02:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aeppl-nightly
+[2023-05-07 02:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: atlas-finance
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdktf-proxmox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdk-ecs-service-extensions]: New version: [2.0.1a9] Old Version: [2.0.1a8]
+[2023-05-07 02:33:43] INFO root fetch - processPackages [dbt-ai]: New version: [0.0.9a0] Old Version: [0.0.8a0]
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdk8s-operator]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdktf-github-actions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 02:33:43] INFO root fetch - processPackages [QPUIQ]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 02:33:43] INFO root fetch - processPackages [atlas-finance]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-07 02:33:43] INFO root fetch - processPackages [latex2mathml]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-05-07 02:33:43] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.3.dev20230506] Old Version: [0.1.3.dev20230505]
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdk8s-operator]: executing diffoscope
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdk8s-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-operator-0.1.98.tar.gz tmp/cdk8s-operator-0.1.99.tar.gz --markdown 20230507/c/cdk8s-operator/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdktf-proxmox]: executing diffoscope
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdktf-proxmox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-proxmox-0.0.8.tar.gz tmp/cdktf-proxmox-0.0.9.tar.gz --markdown 20230507/c/cdktf-proxmox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 02:33:43] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2023-05-07 02:33:43] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.3.dev20230505.tar.gz tmp/aeppl-nightly-0.1.3.dev20230506.tar.gz --markdown 20230507/a/aeppl-nightly/0.1.3.dev20230505-0.1.3.dev20230506/diff.md --exclude *.pyd
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdk-ecs-service-extensions]: executing diffoscope
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdk-ecs-service-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-ecs-service-extensions-2.0.1a8.tar.gz tmp/cdk-ecs-service-extensions-2.0.1a9.tar.gz --markdown 20230507/c/cdk-ecs-service-extensions/2.0.1a8-2.0.1a9/diff.md --exclude *.pyd
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdktf-github-actions]: executing diffoscope
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdktf-github-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-github-actions-0.0.98.tar.gz tmp/cdktf-github-actions-0.0.99.tar.gz --markdown 20230507/c/cdktf-github-actions/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 02:33:43] INFO root fetch - processPackages [dbt-ai]: Downloading https://files.pythonhosted.org/packages/3e/06/7792e1ba954360462a555cead9933e5ff15956643dd0ccc818fc79d1b7b3/dbt-ai-0.0.9a0.tar.gz
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2023-05-07 02:33:43] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20230507/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-07 02:33:43] INFO root fetch - processPackages [atlas-finance]: Downloading https://files.pythonhosted.org/packages/2d/2d/7d33fbd9a23f22670a7d1ffdc18a9f9afa0873ac54d6432e9149bd47ed41/atlas-finance-2.0.0.tar.gz
+[2023-05-07 02:33:43] INFO root fetch - processPackages [QPUIQ]: Downloading https://files.pythonhosted.org/packages/cc/5f/4d22afaad6568a6614964a5120c7666cd427198aad235704bf5f851b6be0/QPUIQ-0.1.8.tar.gz
+[2023-05-07 02:33:43] INFO root fetch - processPackages [dbt-ai]: executing diffoscope
+[2023-05-07 02:33:43] INFO root fetch - processPackages [dbt-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-ai-0.0.8a0.tar.gz tmp/dbt-ai-0.0.9a0.tar.gz --markdown 20230507/d/dbt-ai/0.0.8a0-0.0.9a0/diff.md --exclude *.pyd
+[2023-05-07 02:33:43] INFO root fetch - processPackages [latex2mathml]: executing diffoscope
+[2023-05-07 02:33:43] INFO root fetch - processPackages [latex2mathml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latex2mathml-3.8.0.tar.gz tmp/latex2mathml-3.9.0.tar.gz --markdown 20230507/l/latex2mathml/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-07 02:33:43] INFO root fetch - processPackages [atlas-finance]: Downloading https://files.pythonhosted.org/packages/0d/d7/63cd448bb02441e477e83edf64f599c51f99c50beac5a2eade15f181e941/atlas_finance-2.0.1-cp310-cp310-win_amd64.whl
+[2023-05-07 02:33:43] INFO root fetch - processPackages [QPUIQ]: Downloading https://files.pythonhosted.org/packages/00/52/bc219186aef62b2b0e8ca7645597a4e4cd561f19c22b99145daed27dd6f0/QPUIQ-0.1.9.tar.gz
+[2023-05-07 02:33:43] INFO root fetch - processPackages [QPUIQ]: executing diffoscope
+[2023-05-07 02:33:43] INFO root fetch - processPackages [QPUIQ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QPUIQ-0.1.8.tar.gz tmp/QPUIQ-0.1.9.tar.gz --markdown 20230507/Q/QPUIQ/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 02:33:43] INFO root fetch - processPackages [atlas-finance]: executing diffoscope
+[2023-05-07 02:33:43] INFO root fetch - processPackages [atlas-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlas-finance-2.0.0.tar.gz tmp/atlas_finance-2.0.1-cp310-cp310-win_amd64.whl.zip --markdown 20230507/a/atlas-finance/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-07 02:33:44] INFO root fetch - processPackages [aeppl-nightly]: Start processing: everdrop-aws-cdk-constructs
+[2023-05-07 02:33:44] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2023-05-07 02:33:44] INFO root fetch - processPackages [cdk8s-operator]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-05-07 02:33:44] INFO root fetch - main [MainThread]: End processing [cdk8s-operator]: success
+[2023-05-07 02:33:44] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 02:33:45] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 02:33:45] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: executing diffoscope
+[2023-05-07 02:33:45] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everdrop-aws-cdk-constructs-0.0.8.tar.gz tmp/everdrop-aws-cdk-constructs-0.0.9.tar.gz --markdown 20230507/e/everdrop-aws-cdk-constructs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 02:33:45] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-05-07 02:33:45] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230507/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 02:33:45] INFO root fetch - processPackages [atlas-finance]: Start processing: aesara-nightly
+[2023-05-07 02:33:45] INFO root fetch - main [MainThread]: End processing [atlas-finance]: success
+[2023-05-07 02:33:45] INFO root fetch - processPackages [aesara-nightly]: New version: [2.8.9.post118] Old Version: [2.8.9.post117]
+[2023-05-07 02:33:45] INFO root fetch - processPackages [dbt-ai]: Start processing: asciicards
+[2023-05-07 02:33:45] INFO root fetch - main [MainThread]: End processing [dbt-ai]: success
+[2023-05-07 02:33:45] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2023-05-07 02:33:45] INFO root fetch - main [MainThread]: End processing [QPUIQ]: success
+[2023-05-07 02:33:45] INFO root fetch - processPackages [asciicards]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-07 02:33:45] INFO root fetch - main [MainThread]: End processing [latex2mathml]: success
+[2023-05-07 02:33:45] INFO root fetch - processPackages [aesara-nightly]: Downloading https://files.pythonhosted.org/packages/bc/5b/a75b866373e933c4a8dd109b42189bf0e9c72ef23c5dd5931d3f4d554c10/aesara-nightly-2.8.9.post117.tar.gz
+[2023-05-07 02:33:45] INFO root fetch - processPackages [asciicards]: executing diffoscope
+[2023-05-07 02:33:45] INFO root fetch - processPackages [asciicards]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asciicards-0.0.3.tar.gz tmp/asciicards-0.0.4.tar.gz --markdown 20230507/a/asciicards/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-07 02:33:46] INFO root fetch - main [MainThread]: End processing [everdrop-aws-cdk-constructs]: success
+[2023-05-07 02:33:46] INFO root fetch - main [MainThread]: End processing [asciicards]: success
+[2023-05-07 02:33:46] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
+[2023-05-07 02:33:46] INFO root fetch - processPackages [aesara-nightly]: Downloading https://files.pythonhosted.org/packages/29/7e/5d6d0fa9a83261b9bb5142e2d7196ed6ba5845c2759bc431599a604a525b/aesara-nightly-2.8.9.post118.tar.gz
+[2023-05-07 02:33:46] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-05-07 02:33:46] INFO root fetch - main [MainThread]: End processing [cdktf-github-actions]: success
+[2023-05-07 02:33:47] INFO root fetch - processPackages [aesara-nightly]: executing diffoscope
+[2023-05-07 02:33:47] INFO root fetch - processPackages [aesara-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aesara-nightly-2.8.9.post117.tar.gz tmp/aesara-nightly-2.8.9.post118.tar.gz --markdown 20230507/a/aesara-nightly/2.8.9.post117-2.8.9.post118/diff.md --exclude *.pyd
+[2023-05-07 02:33:48] INFO root fetch - main [MainThread]: End processing [cdktf-proxmox]: success
+[2023-05-07 02:33:51] INFO root fetch - main [MainThread]: End processing [aesara-nightly]: success
+[2023-05-07 02:33:51] INFO root fetch - main [MainThread]: Store serial: [18003258]
