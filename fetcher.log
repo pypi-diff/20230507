@@ -2181,3 +2181,37 @@
 [2023-05-07 04:46:09] INFO root fetch - main [MainThread]: End processing [plotfish2]: success
 [2023-05-07 04:46:09] INFO root fetch - main [MainThread]: End processing [spPersist]: success
 [2023-05-07 04:46:09] INFO root fetch - main [MainThread]: Store serial: [18003846]
+[2023-05-07 04:51:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003846]
+[2023-05-07 04:51:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 04:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dorado
+[2023-05-07 04:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bumbo-shogo
+[2023-05-07 04:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-stt-plugin-fasterwhisper
+[2023-05-07 04:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: VonPylib
+[2023-05-07 04:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-watermarker
+[2023-05-07 04:51:17] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: New version: [0.0.1a4] Old Version: [0.0.1a3]
+[2023-05-07 04:51:17] INFO root fetch - processPackages [nonebot-plugin-watermarker]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 04:51:17] INFO root fetch - processPackages [bumbo-shogo]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 04:51:17] INFO root fetch - processPackages [VonPylib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 04:51:17] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-07 04:51:18] INFO root fetch - processPackages [VonPylib]: executing diffoscope
+[2023-05-07 04:51:18] INFO root fetch - processPackages [VonPylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VonPylib-0.1.8.tar.gz tmp/VonPylib-0.1.9.tar.gz --markdown 20230507/V/VonPylib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 04:51:18] INFO root fetch - processPackages [bumbo-shogo]: Downloading https://files.pythonhosted.org/packages/71/87/6d890c93716c69ac59fdaf4a885e056b9822927eaafeda41764612f15265/bumbo_shogo-0.0.3.tar.gz
+[2023-05-07 04:51:18] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: Downloading https://files.pythonhosted.org/packages/cb/44/ffb80c79bf1939e53da5f6fdf93593d80b638c71051788a8c9bda8e85957/ovos-stt-plugin-fasterwhisper-0.0.1a4.tar.gz
+[2023-05-07 04:51:18] INFO root fetch - processPackages [dorado]: Downloading https://files.pythonhosted.org/packages/28/c3/25ec9324622ba0dd720edcd3809a1c623c162133d247d2e22790624c723b/dorado-2.0.6.dev97.tar.gz
+[2023-05-07 04:51:18] INFO root fetch - processPackages [nonebot-plugin-watermarker]: Downloading https://files.pythonhosted.org/packages/0c/9b/49bb35bf3aa9621b26e63ad9f8fd2c876f70f1057c9d2fbacc2e6e61e0e1/nonebot_plugin_watermarker-0.1.3.tar.gz
+[2023-05-07 04:51:18] INFO root fetch - processPackages [bumbo-shogo]: executing diffoscope
+[2023-05-07 04:51:18] INFO root fetch - processPackages [bumbo-shogo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bumbo_shogo-0.0.2.tar.gz tmp/bumbo_shogo-0.0.3.tar.gz --markdown 20230507/b/bumbo-shogo/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 04:51:18] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: executing diffoscope
+[2023-05-07 04:51:18] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-stt-plugin-fasterwhisper-0.0.1a3.tar.gz tmp/ovos-stt-plugin-fasterwhisper-0.0.1a4.tar.gz --markdown 20230507/o/ovos-stt-plugin-fasterwhisper/0.0.1a3-0.0.1a4/diff.md --exclude *.pyd
+[2023-05-07 04:51:18] INFO root fetch - processPackages [dorado]: Downloading https://files.pythonhosted.org/packages/b9/2e/854512bc2085bd5738d74bd4b50e4a958e43ee3e802999c5402e429e6030/dorado-2.0.6.dev99.tar.gz
+[2023-05-07 04:51:18] INFO root fetch - processPackages [nonebot-plugin-watermarker]: Downloading https://files.pythonhosted.org/packages/6c/af/008ecfa13f3df7a4573dddaecf4e734333749d1f09cf65a2116591541bb8/nonebot_plugin_watermarker-0.1.4.tar.gz
+[2023-05-07 04:51:18] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-07 04:51:18] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230507/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-07 04:51:18] INFO root fetch - processPackages [nonebot-plugin-watermarker]: executing diffoscope
+[2023-05-07 04:51:18] INFO root fetch - processPackages [nonebot-plugin-watermarker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_watermarker-0.1.3.tar.gz tmp/nonebot_plugin_watermarker-0.1.4.tar.gz --markdown 20230507/n/nonebot-plugin-watermarker/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 04:51:19] INFO root fetch - main [MainThread]: End processing [VonPylib]: success
+[2023-05-07 04:51:19] INFO root fetch - main [MainThread]: End processing [ovos-stt-plugin-fasterwhisper]: success
+[2023-05-07 04:51:19] INFO root fetch - main [MainThread]: End processing [bumbo-shogo]: success
+[2023-05-07 04:51:19] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-watermarker]: success
+[2023-05-07 04:51:19] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-07 04:51:19] INFO root fetch - main [MainThread]: Store serial: [18003860]
