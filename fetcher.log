@@ -3472,3 +3472,28 @@
 [2023-05-07 08:37:38] INFO root fetch - main [MainThread]: End processing [allianceauth-discordbot]: success
 [2023-05-07 08:37:39] INFO root fetch - main [MainThread]: End processing [hpo3]: success
 [2023-05-07 08:37:39] INFO root fetch - main [MainThread]: Store serial: [18004603]
+[2023-05-07 08:42:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004603]
+[2023-05-07 08:42:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 08:42:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: printman
+[2023-05-07 08:42:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easyMirai
+[2023-05-07 08:42:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-csgo-case-simulator
+[2023-05-07 08:42:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tremolo
+[2023-05-07 08:42:47] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-07 08:42:47] INFO root fetch - processPackages [tremolo]: New version: [0.0.90] Old Version: [0.0.89]
+[2023-05-07 08:42:47] WARNING root fetch - processPackages [printman]: Skipping, unable to determine old version
+[2023-05-07 08:42:47] INFO root fetch - main [MainThread]: End processing [printman] error
+[2023-05-07 08:42:47] INFO root fetch - processPackages [easyMirai]: New version: [2.32.36] Old Version: [2.31.36]
+[2023-05-07 08:42:47] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: Downloading https://files.pythonhosted.org/packages/07/27/345efbf793dfa61eb47275d4ce938c6ac07390a6013849462f695263037d/nonebot-plugin-csgo-case-simulator-0.1.7.tar.gz
+[2023-05-07 08:42:47] INFO root fetch - processPackages [tremolo]: Downloading https://files.pythonhosted.org/packages/2f/e7/86f68d5a4e1444af376e8f7e45c617c254167a1600a12e0229ff2f1ab2d2/tremolo-0.0.89.tar.gz
+[2023-05-07 08:42:47] INFO root fetch - processPackages [easyMirai]: Downloading https://files.pythonhosted.org/packages/26/c3/0c8c686ce6c8305d10124120fcb4753f743f002f5522004e85c145eab9da/easyMirai-2.32.36-py3-none-any.whl
+[2023-05-07 08:42:48] INFO root fetch - processPackages [easyMirai]: executing diffoscope
+[2023-05-07 08:42:48] INFO root fetch - processPackages [easyMirai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyMirai-2.31.36-py3-none-any.whl.zip tmp/easyMirai-2.32.36-py3-none-any.whl.zip --markdown 20230507/e/easyMirai/2.31.36-2.32.36/diff.md --exclude *.pyd
+[2023-05-07 08:42:48] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: executing diffoscope
+[2023-05-07 08:42:48] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-csgo-case-simulator-0.1.6.tar.gz tmp/nonebot-plugin-csgo-case-simulator-0.1.7.tar.gz --markdown 20230507/n/nonebot-plugin-csgo-case-simulator/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-07 08:42:48] INFO root fetch - processPackages [tremolo]: Downloading https://files.pythonhosted.org/packages/3c/32/0b200fb4465019e7bf5be54f8b04df10f6ceb0664d29b613aaa474394954/tremolo-0.0.90.tar.gz
+[2023-05-07 08:42:48] INFO root fetch - processPackages [tremolo]: executing diffoscope
+[2023-05-07 08:42:48] INFO root fetch - processPackages [tremolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tremolo-0.0.89.tar.gz tmp/tremolo-0.0.90.tar.gz --markdown 20230507/t/tremolo/0.0.89-0.0.90/diff.md --exclude *.pyd
+[2023-05-07 08:42:49] INFO root fetch - main [MainThread]: End processing [easyMirai]: success
+[2023-05-07 08:42:49] INFO root fetch - main [MainThread]: End processing [tremolo]: success
+[2023-05-07 08:42:49] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-csgo-case-simulator]: success
+[2023-05-07 08:42:49] INFO root fetch - main [MainThread]: Store serial: [18004645]
