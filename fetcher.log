@@ -3305,3 +3305,17 @@
 [2023-05-07 08:16:46] INFO root fetch - main [MainThread]: End processing [xj-location]: success
 [2023-05-07 08:16:46] INFO root fetch - main [MainThread]: End processing [opstool]: success
 [2023-05-07 08:16:46] INFO root fetch - main [MainThread]: Store serial: [18004434]
+[2023-05-07 08:21:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004434]
+[2023-05-07 08:21:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-07 08:21:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xj-thread
+[2023-05-07 08:21:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pretext
+[2023-05-07 08:21:55] INFO root fetch - processPackages [xj-thread]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-07 08:21:55] INFO root fetch - processPackages [pretext]: New version: [1.5.3.dev20230507] Old Version: [1.5.3.dev20230506]
+[2023-05-07 08:21:55] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/69/52/f7438e7826da0393b36619537e49d3f7c0967685b24d01c1f32d2a09fd02/pretext-1.5.3.dev20230507.tar.gz
+[2023-05-07 08:21:56] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-05-07 08:21:56] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.3.dev20230506.tar.gz tmp/pretext-1.5.3.dev20230507.tar.gz --markdown 20230507/p/pretext/1.5.3.dev20230506-1.5.3.dev20230507/diff.md --exclude *.pyd
+[2023-05-07 08:21:56] INFO root fetch - processPackages [xj-thread]: executing diffoscope
+[2023-05-07 08:21:56] INFO root fetch - processPackages [xj-thread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_thread-1.2.98.tar.gz tmp/xj_thread-1.2.99.tar.gz --markdown 20230507/x/xj-thread/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-07 08:21:57] INFO root fetch - main [MainThread]: End processing [xj-thread]: success
+[2023-05-07 08:22:00] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-05-07 08:22:00] INFO root fetch - main [MainThread]: Store serial: [18004444]
