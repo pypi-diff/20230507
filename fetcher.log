@@ -4077,3 +4077,55 @@
 [2023-05-07 10:07:09] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2023-05-07 10:07:37] INFO root fetch - main [MainThread]: End processing [mistacheeselib]: success
 [2023-05-07 10:07:37] INFO root fetch - main [MainThread]: Store serial: [18005009]
+[2023-05-07 10:12:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005009]
+[2023-05-07 10:12:46] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-07 10:12:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyponic
+[2023-05-07 10:12:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrainbow
+[2023-05-07 10:12:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyQt-Fluent-Widgets
+[2023-05-07 10:12:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mnzipcode
+[2023-05-07 10:12:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: housing-packages
+[2023-05-07 10:12:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sym-recognizer
+[2023-05-07 10:12:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: webscrapbook
+[2023-05-07 10:12:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: struct-gpt
+[2023-05-07 10:12:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: applyx
+[2023-05-07 10:12:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: authcaptureproxy
+[2023-05-07 10:12:46] WARNING root fetch - processPackages [hyponic]: Skipping, unable to determine old version
+[2023-05-07 10:12:46] WARNING root fetch - processPackages [housing-packages]: Skipping, unable to determine old version
+[2023-05-07 10:12:46] INFO root fetch - main [MainThread]: End processing [hyponic] error
+[2023-05-07 10:12:46] INFO root fetch - main [MainThread]: End processing [housing-packages] error
+[2023-05-07 10:12:46] WARNING root fetch - processPackages [scrainbow]: Skipping, unable to determine old version
+[2023-05-07 10:12:46] INFO root fetch - processPackages [sym-recognizer]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-07 10:12:46] INFO root fetch - main [MainThread]: End processing [scrainbow] error
+[2023-05-07 10:12:46] INFO root fetch - processPackages [mnzipcode]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 10:12:46] INFO root fetch - processPackages [applyx]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-07 10:12:46] WARNING root fetch - processPackages [struct-gpt]: Skipping, unable to determine old version
+[2023-05-07 10:12:46] INFO root fetch - main [MainThread]: End processing [struct-gpt] error
+[2023-05-07 10:12:46] INFO root fetch - processPackages [authcaptureproxy]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-07 10:12:46] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-05-07 10:12:46] INFO root fetch - processPackages [webscrapbook]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-05-07 10:12:46] INFO root fetch - processPackages [applyx]: Downloading https://files.pythonhosted.org/packages/82/93/e40b469c2331b79970fd40d60260a5192916053b095cfb00daddbdb8cf49/applyx-0.2.3-py3-none-any.whl
+[2023-05-07 10:12:46] INFO root fetch - processPackages [authcaptureproxy]: Downloading https://files.pythonhosted.org/packages/32/e3/f96d2f008d952513a7d273e0eaed22ad200b4c38aa8d0423983872f800b4/authcaptureproxy-1.1.4.tar.gz
+[2023-05-07 10:12:46] INFO root fetch - processPackages [sym-recognizer]: Downloading https://files.pythonhosted.org/packages/14/03/208e78ace5aedfbe855a6d3c4ed7c798a52820b05d250fd1dc9b1ab926bb/sym-recognizer-0.0.4.tar.gz
+[2023-05-07 10:12:46] INFO root fetch - processPackages [sym-recognizer]: executing diffoscope
+[2023-05-07 10:12:46] INFO root fetch - processPackages [sym-recognizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sym-recognizer-0.0.3.tar.gz tmp/sym-recognizer-0.0.4.tar.gz --markdown 20230507/s/sym-recognizer/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-07 10:12:46] INFO root fetch - processPackages [mnzipcode]: Downloading https://files.pythonhosted.org/packages/6d/a1/bfcaff5c6f4ded783eb949d6c18dbfcad07ca3bd994ccab83927aad36051/mnzipcode-0.0.6.tar.gz
+[2023-05-07 10:12:46] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/d5/6b/a289f03a3fff591e54ecbe2854865ddf6d998b87be7f9dd74bbd55f15479/PyQt-Fluent-Widgets-0.8.6.tar.gz
+[2023-05-07 10:12:46] INFO root fetch - processPackages [webscrapbook]: executing diffoscope
+[2023-05-07 10:12:46] INFO root fetch - processPackages [webscrapbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webscrapbook-1.8.3.tar.gz tmp/webscrapbook-1.9.0.tar.gz --markdown 20230507/w/webscrapbook/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-05-07 10:12:46] INFO root fetch - processPackages [applyx]: Downloading https://files.pythonhosted.org/packages/e0/a0/bdf8efbc655c63c1a319d617485bde53ff1fc80442a904d2bb1b806d5ab0/applyx-0.2.4-py3-none-any.whl
+[2023-05-07 10:12:46] INFO root fetch - processPackages [mnzipcode]: executing diffoscope
+[2023-05-07 10:12:46] INFO root fetch - processPackages [mnzipcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mnzipcode-0.0.5.tar.gz tmp/mnzipcode-0.0.6.tar.gz --markdown 20230507/m/mnzipcode/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 10:12:46] INFO root fetch - processPackages [authcaptureproxy]: Downloading https://files.pythonhosted.org/packages/aa/29/8108851c3aecac7e5f92cf253d5a3f362ac8ea1f636e76a155728aff36c2/authcaptureproxy-1.1.5.tar.gz
+[2023-05-07 10:12:46] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: executing diffoscope
+[2023-05-07 10:12:46] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt-Fluent-Widgets-0.8.5.tar.gz tmp/PyQt-Fluent-Widgets-0.8.6.tar.gz --markdown 20230507/P/PyQt-Fluent-Widgets/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-05-07 10:12:46] INFO root fetch - processPackages [authcaptureproxy]: executing diffoscope
+[2023-05-07 10:12:46] INFO root fetch - processPackages [authcaptureproxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authcaptureproxy-1.1.4.tar.gz tmp/authcaptureproxy-1.1.5.tar.gz --markdown 20230507/a/authcaptureproxy/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-07 10:12:46] INFO root fetch - processPackages [applyx]: executing diffoscope
+[2023-05-07 10:12:46] INFO root fetch - processPackages [applyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applyx-0.2.3-py3-none-any.whl.zip tmp/applyx-0.2.4-py3-none-any.whl.zip --markdown 20230507/a/applyx/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-07 10:12:47] INFO root fetch - main [MainThread]: End processing [mnzipcode]: success
+[2023-05-07 10:12:47] INFO root fetch - main [MainThread]: End processing [sym-recognizer]: success
+[2023-05-07 10:12:48] INFO root fetch - main [MainThread]: End processing [authcaptureproxy]: success
+[2023-05-07 10:12:48] INFO root fetch - main [MainThread]: End processing [applyx]: success
+[2023-05-07 10:12:48] INFO root fetch - main [MainThread]: End processing [webscrapbook]: success
+[2023-05-07 10:12:49] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
+[2023-05-07 10:12:49] INFO root fetch - main [MainThread]: Store serial: [18005046]
