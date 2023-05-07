@@ -8767,3 +8767,93 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 18:04:52] INFO root fetch - main [MainThread]: End processing [mixalime]: success
 [2023-05-07 18:05:01] INFO root fetch - main [MainThread]: End processing [cairo-lang]: success
 [2023-05-07 18:05:01] INFO root fetch - main [MainThread]: Store serial: [18008123]
+[2023-05-07 18:10:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008123]
+[2023-05-07 18:10:13] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-07 18:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: srtk
+[2023-05-07 18:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: st-bnt-group
+[2023-05-07 18:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notification-service-nightly
+[2023-05-07 18:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pylovelace.kernel
+[2023-05-07 18:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ai-flow-nightly
+[2023-05-07 18:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cos-uploader
+[2023-05-07 18:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: more-pathlib
+[2023-05-07 18:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: evina
+[2023-05-07 18:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aldryn-apphooks-config
+[2023-05-07 18:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nonebot-plugin-setu4
+[2023-05-07 18:10:13] INFO root fetch - processPackages [pylovelace.kernel]: New version: [2023.2.0] Old Version: [2023.1.6]
+[2023-05-07 18:10:13] INFO root fetch - processPackages [srtk]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-07 18:10:13] WARNING root fetch - processPackages [st-bnt-group]: Skipping, unable to determine old version
+[2023-05-07 18:10:13] INFO root fetch - processPackages [st-bnt-group]: Start processing: osxphotos
+[2023-05-07 18:10:13] INFO root fetch - main [MainThread]: End processing [st-bnt-group] error
+[2023-05-07 18:10:13] INFO root fetch - processPackages [aldryn-apphooks-config]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-07 18:10:13] INFO root fetch - processPackages [more-pathlib]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-07 18:10:13] INFO root fetch - processPackages [cos-uploader]: New version: [2.0.0a3] Old Version: [2.0.0a2]
+[2023-05-07 18:10:13] INFO root fetch - processPackages [nonebot-plugin-setu4]: New version: [0.0.37] Old Version: [0.0.36]
+[2023-05-07 18:10:13] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.5.6] Old Version: [2023.5.5]
+[2023-05-07 18:10:13] INFO root fetch - processPackages [evina]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-07 18:10:13] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.5.6] Old Version: [2023.5.5]
+[2023-05-07 18:10:13] INFO root fetch - processPackages [osxphotos]: New version: [0.60.0] Old Version: [0.59.3]
+[2023-05-07 18:10:13] INFO root fetch - processPackages [more-pathlib]: Downloading https://files.pythonhosted.org/packages/76/07/c31a4cc994184f72f70166db370bdaf02b8bf5ded8a7361b9fb5a8beb27e/more_pathlib-0.1.0.tar.gz
+[2023-05-07 18:10:13] INFO root fetch - processPackages [pylovelace.kernel]: Downloading https://files.pythonhosted.org/packages/6b/21/4808bf0c390d4747f63b5fdd3c3c37b333bd3c88b34fe8303c245e147104/pylovelace.kernel-2023.1.6-cp312-none-any.whl
+[2023-05-07 18:10:13] INFO root fetch - processPackages [aldryn-apphooks-config]: Downloading https://files.pythonhosted.org/packages/d6/9e/ea94d764287dc8b0b8c95d31981f529c0dfcb8bff9ade3a14adcf94918ac/aldryn-apphooks-config-0.6.0.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [osxphotos]: Downloading https://files.pythonhosted.org/packages/96/0b/805ae0d140f2a5471cf32f0eff5f78d0dd56a245a76212b690c90392f040/osxphotos-0.59.3.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [nonebot-plugin-setu4]: Downloading https://files.pythonhosted.org/packages/e0/6d/a89c6a86f864de5dd2eb0c12e48d0e4afd961cf2fd188fece8e22b8e94e3/nonebot_plugin_setu4-0.0.36.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [cos-uploader]: Downloading https://files.pythonhosted.org/packages/6e/eb/144522d3149aa48016335694c8ef03009dcf4e232ab9f7a11fcdbdb01172/cos_uploader-2.0.0a3.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [evina]: Downloading https://files.pythonhosted.org/packages/15/e5/e8b86747f7c47fc8fd544518122095cdf15a27d2e112d1d0a6516ba66d06/evina-1.0.5.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [ai-flow-nightly]: Downloading https://files.pythonhosted.org/packages/29/f7/f34d5bac0647a56ed13b28063dcbb1cdd94f88db767783ac2565a7695a38/ai_flow_nightly-2023.5.6.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [notification-service-nightly]: Downloading https://files.pythonhosted.org/packages/d6/a3/0777383bb4d8db5a153f99a3e133983928feb5498fc3a771e2198b93fd08/notification_service_nightly-2023.5.6.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-05-07 18:10:14] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.5.5.tar.gz tmp/ai_flow_nightly-2023.5.6.tar.gz --markdown 20230507/a/ai-flow-nightly/2023.5.5-2023.5.6/diff.md --exclude *.pyd
+[2023-05-07 18:10:14] WARNING root fetch - processPackages [nonebot-plugin-setu4]: Skipping package: exceeds size limit 10816443>=10485760
+[2023-05-07 18:10:14] INFO root fetch - processPackages [srtk]: Downloading https://files.pythonhosted.org/packages/85/5d/816b34427b89f73eca7dce3eb3045b979058bdc84a912fe1e1f72d921604/srtk-0.0.4.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [nonebot-plugin-setu4]: Start processing: butterflymx
+[2023-05-07 18:10:14] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-setu4] error
+[2023-05-07 18:10:14] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-05-07 18:10:14] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.5.5.tar.gz tmp/notification_service_nightly-2023.5.6.tar.gz --markdown 20230507/n/notification-service-nightly/2023.5.5-2023.5.6/diff.md --exclude *.pyd
+[2023-05-07 18:10:14] INFO root fetch - processPackages [aldryn-apphooks-config]: Downloading https://files.pythonhosted.org/packages/fe/0d/ae9d0a05f9a87bd99ea34789bb405bc9d89d4c9deadeaf0bb9769977ddfa/aldryn-apphooks-config-0.7.0.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [butterflymx]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-05-07 18:10:14] INFO root fetch - processPackages [cos-uploader]: executing diffoscope
+[2023-05-07 18:10:14] INFO root fetch - processPackages [cos-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cos_uploader-2.0.0a2.tar.gz tmp/cos_uploader-2.0.0a3.tar.gz --markdown 20230507/c/cos-uploader/2.0.0a2-2.0.0a3/diff.md --exclude *.pyd
+[2023-05-07 18:10:14] INFO root fetch - processPackages [more-pathlib]: Downloading https://files.pythonhosted.org/packages/3a/98/6cbe6e1116a5db27e68634b2e6e465e7f99bf69370c2831b60cc484a4824/more_pathlib-0.2.0.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [aldryn-apphooks-config]: executing diffoscope
+[2023-05-07 18:10:14] INFO root fetch - processPackages [aldryn-apphooks-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aldryn-apphooks-config-0.6.0.tar.gz tmp/aldryn-apphooks-config-0.7.0.tar.gz --markdown 20230507/a/aldryn-apphooks-config/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-07 18:10:14] INFO root fetch - processPackages [evina]: Downloading https://files.pythonhosted.org/packages/86/90/001516d9d40562efdb281760f19bc490757598a8416cd22b321fdd0a6d65/evina-1.0.6.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [srtk]: executing diffoscope
+[2023-05-07 18:10:14] INFO root fetch - processPackages [srtk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srtk-0.0.3.tar.gz tmp/srtk-0.0.4.tar.gz --markdown 20230507/s/srtk/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-07 18:10:14] INFO root fetch - processPackages [pylovelace.kernel]: Downloading https://files.pythonhosted.org/packages/59/55/8c2100b276392a025fa03907e740add901cbc39c87e1c5ed0bd2885a9397/pylovelace.kernel-2023.2.0-cp311-none-any.whl
+[2023-05-07 18:10:14] INFO root fetch - processPackages [more-pathlib]: executing diffoscope
+[2023-05-07 18:10:14] INFO root fetch - processPackages [more-pathlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/more_pathlib-0.1.0.tar.gz tmp/more_pathlib-0.2.0.tar.gz --markdown 20230507/m/more-pathlib/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 18:10:14] INFO root fetch - processPackages [butterflymx]: Downloading https://files.pythonhosted.org/packages/06/55/9b9d2c7dac91cb2864f5e9ebef10cd25e5a3d288a9343e0fc8f075982278/butterflymx-0.0.2.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [evina]: executing diffoscope
+[2023-05-07 18:10:14] INFO root fetch - processPackages [evina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evina-1.0.5.tar.gz tmp/evina-1.0.6.tar.gz --markdown 20230507/e/evina/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-07 18:10:14] INFO root fetch - processPackages [osxphotos]: Downloading https://files.pythonhosted.org/packages/2e/d9/ca568e74ffceda0fec25c5c390172796c87aa415582200153e27ced70421/osxphotos-0.60.0.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [pylovelace.kernel]: executing diffoscope
+[2023-05-07 18:10:14] INFO root fetch - processPackages [pylovelace.kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylovelace.kernel-2023.1.6-cp312-none-any.whl.zip tmp/pylovelace.kernel-2023.2.0-cp311-none-any.whl.zip --markdown 20230507/p/pylovelace.kernel/2023.1.6-2023.2.0/diff.md --exclude *.pyd
+[2023-05-07 18:10:14] INFO root fetch - processPackages [osxphotos]: executing diffoscope
+[2023-05-07 18:10:14] INFO root fetch - processPackages [osxphotos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osxphotos-0.59.3.tar.gz tmp/osxphotos-0.60.0.tar.gz --markdown 20230507/o/osxphotos/0.59.3-0.60.0/diff.md --exclude *.pyd
+[2023-05-07 18:10:14] INFO root fetch - processPackages [butterflymx]: Downloading https://files.pythonhosted.org/packages/19/0c/c1b33c5b28f2461e4e9f7538c3884cf7ba39fb593eb3b6fb633f32808275/butterflymx-0.1.0.tar.gz
+[2023-05-07 18:10:14] INFO root fetch - processPackages [butterflymx]: executing diffoscope
+[2023-05-07 18:10:14] INFO root fetch - processPackages [butterflymx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/butterflymx-0.0.2.tar.gz tmp/butterflymx-0.1.0.tar.gz --markdown 20230507/b/butterflymx/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-05-07 18:10:15] INFO root fetch - processPackages [cos-uploader]: Start processing: ml-starter
+[2023-05-07 18:10:15] INFO root fetch - main [MainThread]: End processing [cos-uploader]: success
+[2023-05-07 18:10:15] INFO root fetch - processPackages [ml-starter]: New version: [0.0.30] Old Version: [0.0.29]
+[2023-05-07 18:10:15] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/d6/6e/67048b685e419558d6a7614cac6b9b44141db33e65844675a18d7cccec47/ml-starter-0.0.30.tar.gz
+[2023-05-07 18:10:15] INFO root fetch - processPackages [more-pathlib]: Start processing: gums
+[2023-05-07 18:10:15] INFO root fetch - main [MainThread]: End processing [more-pathlib]: success
+[2023-05-07 18:10:15] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-05-07 18:10:15] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.29.tar.gz tmp/ml-starter-0.0.30.tar.gz --markdown 20230507/m/ml-starter/0.0.29-0.0.30/diff.md --exclude *.pyd
+[2023-05-07 18:10:16] INFO root fetch - processPackages [gums]: New version: [0.0.29] Old Version: [0.0.27]
+[2023-05-07 18:10:16] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-05-07 18:10:16] INFO root fetch - processPackages [gums]: Downloading https://files.pythonhosted.org/packages/1b/52/add54755a2974f958e89fea8166b04318864e55c56bf80c1d47ae9747646/gums-0.0.27.tar.gz
+[2023-05-07 18:10:16] INFO root fetch - main [MainThread]: End processing [evina]: success
+[2023-05-07 18:10:16] INFO root fetch - main [MainThread]: End processing [butterflymx]: success
+[2023-05-07 18:10:16] INFO root fetch - main [MainThread]: End processing [srtk]: success
+[2023-05-07 18:10:16] INFO root fetch - processPackages [gums]: Downloading https://files.pythonhosted.org/packages/54/a1/eb71da8ef79b85e6244c64b63f34c4f2020cc55cf3885affef1b2522f3cd/gums-0.0.29.tar.gz
+[2023-05-07 18:10:16] INFO root fetch - processPackages [gums]: executing diffoscope
+[2023-05-07 18:10:16] INFO root fetch - processPackages [gums]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gums-0.0.27.tar.gz tmp/gums-0.0.29.tar.gz --markdown 20230507/g/gums/0.0.27-0.0.29/diff.md --exclude *.pyd
+[2023-05-07 18:10:17] INFO root fetch - main [MainThread]: End processing [aldryn-apphooks-config]: success
+[2023-05-07 18:10:17] INFO root fetch - main [MainThread]: End processing [gums]: success
+[2023-05-07 18:10:17] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
+[2023-05-07 18:10:18] INFO root fetch - main [MainThread]: End processing [pylovelace.kernel]: success
+[2023-05-07 18:10:19] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-05-07 18:10:24] INFO root fetch - main [MainThread]: End processing [osxphotos]: success
+[2023-05-07 18:10:24] INFO root fetch - main [MainThread]: Store serial: [18008167]
