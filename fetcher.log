@@ -11454,3 +11454,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 22:47:33] INFO root fetch - main [MainThread]: End processing [pycutils]: success
 [2023-05-07 22:47:34] INFO root fetch - main [MainThread]: End processing [netbox-secrets]: success
 [2023-05-07 22:47:34] INFO root fetch - main [MainThread]: Store serial: [18009684]
+[2023-05-07 22:52:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009684]
+[2023-05-07 22:52:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 22:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grrif-tools
+[2023-05-07 22:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llmbda-fastapi
+[2023-05-07 22:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cloud-files
+[2023-05-07 22:52:43] INFO root fetch - processPackages [grrif-tools]: New version: [0.6.0] Old Version: [0.5.4]
+[2023-05-07 22:52:43] INFO root fetch - processPackages [llmbda-fastapi]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 22:52:43] INFO root fetch - processPackages [cloud-files]: New version: [4.9.1] Old Version: [4.9.0]
+[2023-05-07 22:52:43] INFO root fetch - processPackages [llmbda-fastapi]: Downloading https://files.pythonhosted.org/packages/8a/a9/92993b3eeea48db8a6c646cbcf150e201056e49f7bdaf9d957001d8465c6/llmbda_fastapi-0.0.7.tar.gz
+[2023-05-07 22:52:43] INFO root fetch - processPackages [grrif-tools]: Downloading https://files.pythonhosted.org/packages/48/b8/450f3a88e7a8ea6d62b8a508cb5611d64b27707d2292c59ee5573478fcca/grrif_tools-0.6.0.tar.gz
+[2023-05-07 22:52:43] INFO root fetch - processPackages [cloud-files]: Downloading https://files.pythonhosted.org/packages/f0/c8/1670e09d59d1c4e03277e61e4bba0d8e81cfa625158c04efd19bee4c1aa8/cloud-files-4.9.0.tar.gz
+[2023-05-07 22:52:43] INFO root fetch - processPackages [grrif-tools]: executing diffoscope
+[2023-05-07 22:52:43] INFO root fetch - processPackages [grrif-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grrif_tools-0.5.4.tar.gz tmp/grrif_tools-0.6.0.tar.gz --markdown 20230507/g/grrif-tools/0.5.4-0.6.0/diff.md --exclude *.pyd
+[2023-05-07 22:52:43] INFO root fetch - processPackages [llmbda-fastapi]: Downloading https://files.pythonhosted.org/packages/b9/97/eeb159e777bf1963f3e31ba262051236554cb9bbb25b8d01826cd3dc5307/llmbda_fastapi-0.0.8.tar.gz
+[2023-05-07 22:52:43] INFO root fetch - processPackages [cloud-files]: Downloading https://files.pythonhosted.org/packages/6c/69/68998e8e8025bf7860d9cdef6ff6c18032f8995566053e1b5e13c3e18851/cloud-files-4.9.1.tar.gz
+[2023-05-07 22:52:43] INFO root fetch - processPackages [llmbda-fastapi]: executing diffoscope
+[2023-05-07 22:52:43] INFO root fetch - processPackages [llmbda-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmbda_fastapi-0.0.7.tar.gz tmp/llmbda_fastapi-0.0.8.tar.gz --markdown 20230507/l/llmbda-fastapi/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 22:52:43] INFO root fetch - processPackages [cloud-files]: executing diffoscope
+[2023-05-07 22:52:43] INFO root fetch - processPackages [cloud-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud-files-4.9.0.tar.gz tmp/cloud-files-4.9.1.tar.gz --markdown 20230507/c/cloud-files/4.9.0-4.9.1/diff.md --exclude *.pyd
+[2023-05-07 22:52:44] INFO root fetch - main [MainThread]: End processing [grrif-tools]: success
+[2023-05-07 22:52:44] INFO root fetch - main [MainThread]: End processing [llmbda-fastapi]: success
+[2023-05-07 22:53:14] INFO root fetch - main [MainThread]: End processing [cloud-files]: success
+[2023-05-07 22:53:14] INFO root fetch - main [MainThread]: Store serial: [18009694]
