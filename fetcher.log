@@ -12033,3 +12033,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 23:51:34] INFO root fetch - main [MainThread]: End processing [ua-node-avail]: success
 [2023-05-07 23:51:35] INFO root fetch - main [MainThread]: End processing [doitoml]: success
 [2023-05-07 23:51:35] INFO root fetch - main [MainThread]: Store serial: [18010054]
+[2023-05-07 23:56:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18010054]
+[2023-05-07 23:56:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 23:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bismarkplot
+[2023-05-07 23:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: igv-flask
+[2023-05-07 23:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vocalpy
+[2023-05-07 23:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: NikeCA
+[2023-05-07 23:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: peripage
+[2023-05-07 23:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: st-bnt-group
+[2023-05-07 23:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mynacode
+[2023-05-07 23:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: python-opensky
+[2023-05-07 23:56:44] INFO root fetch - processPackages [vocalpy]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-07 23:56:44] WARNING root fetch - processPackages [igv-flask]: Skipping, unable to determine old version
+[2023-05-07 23:56:44] INFO root fetch - main [MainThread]: End processing [igv-flask] error
+[2023-05-07 23:56:44] WARNING root fetch - processPackages [bismarkplot]: Skipping, unable to determine old version
+[2023-05-07 23:56:44] INFO root fetch - main [MainThread]: End processing [bismarkplot] error
+[2023-05-07 23:56:44] INFO root fetch - processPackages [NikeCA]: New version: [0.1.97] Old Version: [0.1.96rc0]
+[2023-05-07 23:56:44] INFO root fetch - processPackages [mynacode]: New version: [1.0.96] Old Version: [1.0.95]
+[2023-05-07 23:56:44] WARNING root fetch - processPackages [peripage]: Skipping, unable to determine old version
+[2023-05-07 23:56:44] INFO root fetch - main [MainThread]: End processing [peripage] error
+[2023-05-07 23:56:44] WARNING root fetch - processPackages [python-opensky]: Skipping, unable to determine old version
+[2023-05-07 23:56:44] INFO root fetch - main [MainThread]: End processing [python-opensky] error
+[2023-05-07 23:56:44] INFO root fetch - processPackages [st-bnt-group]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 23:56:44] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-05-07 23:56:44] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.95-py3-none-any.whl.zip tmp/mynacode-1.0.96-py3-none-any.whl.zip --markdown 20230507/m/mynacode/1.0.95-1.0.96/diff.md --exclude *.pyd
+[2023-05-07 23:56:44] INFO root fetch - processPackages [vocalpy]: Downloading https://files.pythonhosted.org/packages/97/e8/caf5de896189acf9bcebfe919aabeabc227b569f7e8be4e963b80d0fb154/vocalpy-0.1.0.tar.gz
+[2023-05-07 23:56:44] INFO root fetch - processPackages [st-bnt-group]: Downloading https://files.pythonhosted.org/packages/dc/e1/00eef8e133d1243871ea534ef8083ac2bf6f47b00401d4b956fa1cfb2257/st_bnt_group-0.0.1-py3-none-any.whl
+[2023-05-07 23:56:44] INFO root fetch - processPackages [NikeCA]: Downloading https://files.pythonhosted.org/packages/b4/fe/212e7478644096b6ab53adea3bf4cf11980d01efca955811be58e5ced9ca/NikeCA-0.1.97.tar.gz
+[2023-05-07 23:56:44] INFO root fetch - processPackages [NikeCA]: executing diffoscope
+[2023-05-07 23:56:44] INFO root fetch - processPackages [NikeCA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NikeCA-0.1.96rc0.tar.gz tmp/NikeCA-0.1.97.tar.gz --markdown 20230507/N/NikeCA/0.1.96rc0-0.1.97/diff.md --exclude *.pyd
+[2023-05-07 23:56:44] INFO root fetch - processPackages [vocalpy]: Downloading https://files.pythonhosted.org/packages/46/5c/1e50f78e275d0ea715404530e53f12f70b00b6641e8875a0fe48188d1cd9/vocalpy-0.2.0.tar.gz
+[2023-05-07 23:56:44] INFO root fetch - processPackages [st-bnt-group]: Downloading https://files.pythonhosted.org/packages/a5/8c/d133756d10d55af873f72be7cd3758532847c72cece3cb852b9e53d5a202/st_bnt_group-0.0.2-py3-none-any.whl
+[2023-05-07 23:56:44] INFO root fetch - processPackages [vocalpy]: executing diffoscope
+[2023-05-07 23:56:44] INFO root fetch - processPackages [vocalpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocalpy-0.1.0.tar.gz tmp/vocalpy-0.2.0.tar.gz --markdown 20230507/v/vocalpy/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 23:56:45] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-05-07 23:56:45] INFO root fetch - processPackages [st-bnt-group]: executing diffoscope
+[2023-05-07 23:56:45] INFO root fetch - processPackages [st-bnt-group]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_bnt_group-0.0.1-py3-none-any.whl.zip tmp/st_bnt_group-0.0.2-py3-none-any.whl.zip --markdown 20230507/s/st-bnt-group/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 23:56:45] INFO root fetch - main [MainThread]: End processing [NikeCA]: success
+[2023-05-07 23:56:46] INFO root fetch - main [MainThread]: End processing [vocalpy]: success
+[2023-05-07 23:56:48] INFO root fetch - main [MainThread]: End processing [st-bnt-group]: success
+[2023-05-07 23:56:48] INFO root fetch - main [MainThread]: Store serial: [18010081]
