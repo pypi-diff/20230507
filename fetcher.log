@@ -10113,3 +10113,14 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 20:20:52] INFO root fetch - main [MainThread]: End processing [mysqlcipher]: success
 [2023-05-07 20:20:53] INFO root fetch - main [MainThread]: End processing [omoment]: success
 [2023-05-07 20:20:53] INFO root fetch - main [MainThread]: Store serial: [18008834]
+[2023-05-07 20:25:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008834]
+[2023-05-07 20:26:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-07 20:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: soccer-poisson
+[2023-05-07 20:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arkprts
+[2023-05-07 20:26:02] WARNING root fetch - processPackages [arkprts]: Skipping, unable to determine old version
+[2023-05-07 20:26:02] INFO root fetch - main [MainThread]: End processing [arkprts] error
+[2023-05-07 20:26:02] INFO root fetch - processPackages [soccer-poisson]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 20:26:02] INFO root fetch - processPackages [soccer-poisson]: executing diffoscope
+[2023-05-07 20:26:02] INFO root fetch - processPackages [soccer-poisson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soccer_poisson-0.1.8.tar.gz tmp/soccer_poisson-0.1.9.tar.gz --markdown 20230507/s/soccer-poisson/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 20:26:03] INFO root fetch - main [MainThread]: End processing [soccer-poisson]: success
+[2023-05-07 20:26:03] INFO root fetch - main [MainThread]: Store serial: [18008842]
