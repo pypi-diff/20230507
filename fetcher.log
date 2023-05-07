@@ -11153,3 +11153,84 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 22:21:01] INFO root fetch - main [MainThread]: End processing [pycardano]: success
 [2023-05-07 22:21:30] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2023-05-07 22:21:30] INFO root fetch - main [MainThread]: Store serial: [18009527]
+[2023-05-07 22:26:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009527]
+[2023-05-07 22:26:39] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-07 22:26:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-05-07 22:26:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whisper-cpp-python
+[2023-05-07 22:26:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oresat-olaf
+[2023-05-07 22:26:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maid-sweeper
+[2023-05-07 22:26:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: karcher-home
+[2023-05-07 22:26:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: neopolitan
+[2023-05-07 22:26:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: q2terminal
+[2023-05-07 22:26:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: unique-char-counter-cli-kir-boh
+[2023-05-07 22:26:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hyponic
+[2023-05-07 22:26:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: retrotype
+[2023-05-07 22:26:39] INFO root fetch - processPackages [whisper-cpp-python]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 22:26:39] WARNING root fetch - processPackages [maid-sweeper]: Skipping, unable to determine old version
+[2023-05-07 22:26:39] INFO root fetch - processPackages [maid-sweeper]: Start processing: arabic2latin
+[2023-05-07 22:26:39] INFO root fetch - main [MainThread]: End processing [maid-sweeper] error
+[2023-05-07 22:26:39] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 22:26:39] INFO root fetch - processPackages [retrotype]: New version: [1.0.0] Old Version: [0.0.3]
+[2023-05-07 22:26:39] INFO root fetch - processPackages [oresat-olaf]: New version: [2.1.0] Old Version: [2.0.1]
+[2023-05-07 22:26:39] INFO root fetch - processPackages [unique-char-counter-cli-kir-boh]: New version: [2] Old Version: [1.5.8]
+[2023-05-07 22:26:39] INFO root fetch - processPackages [karcher-home]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-07 22:26:39] INFO root fetch - processPackages [q2terminal]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-07 22:26:39] INFO root fetch - processPackages [hyponic]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 22:26:39] INFO root fetch - processPackages [arabic2latin]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-07 22:26:39] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-07 22:26:39] INFO root fetch - processPackages [oresat-olaf]: Downloading https://files.pythonhosted.org/packages/3f/ee/d115356a7909222a35eed0df1fde6c430e7f15609f85d92dee71c190ba4a/oresat-olaf-2.0.1.tar.gz
+[2023-05-07 22:26:39] INFO root fetch - processPackages [q2terminal]: Downloading https://files.pythonhosted.org/packages/d9/63/1585a8aeca37432c80b0b61ab5e325ca09c45a2bfd55f84b8f1f1f92bef6/q2terminal-0.1.5.tar.gz
+[2023-05-07 22:26:39] INFO root fetch - processPackages [whisper-cpp-python]: Downloading https://files.pythonhosted.org/packages/38/fb/513e0f3f74e3c4d35e2c700554b14a1190850ae3b1a558df5fb97b14d0ec/whisper_cpp_python-0.1.1.tar.gz
+[2023-05-07 22:26:39] INFO root fetch - processPackages [neopolitan]: Downloading https://files.pythonhosted.org/packages/82/fd/cfe7abfc0a0fc620899bdb1731b862dbd2ed1adefd5c647417f24efd5294/neopolitan-0.1.8.tar.gz
+[2023-05-07 22:26:39] INFO root fetch - processPackages [retrotype]: Downloading https://files.pythonhosted.org/packages/94/0c/599beb73cb62476ed08b3a9b1f690be1f16dd9c9f735eaed4b7d78fb998d/retrotype-0.0.3.tar.gz
+[2023-05-07 22:26:39] INFO root fetch - processPackages [arabic2latin]: Downloading https://files.pythonhosted.org/packages/e9/79/1bb781ab1db8d02647570d9a597c4f9e840b3ab959d12301e0d1ded885d1/arabic2latin-1.1.1.tar.gz
+[2023-05-07 22:26:39] INFO root fetch - processPackages [unique-char-counter-cli-kir-boh]: Downloading https://files.pythonhosted.org/packages/65/ef/52af8d501e0c16b86d7d099e1ece08237279863465f715077a303b7b7208/unique_char_counter_cli_kir_boh-2.tar.gz
+[2023-05-07 22:26:39] INFO root fetch - processPackages [hyponic]: Downloading https://files.pythonhosted.org/packages/53/bc/6f056e11c21ed68fed71c3d2f2e4069ffedbaff24ad8f781d4c6f8ac654c/hyponic-0.0.3.tar.gz
+[2023-05-07 22:26:39] INFO root fetch - processPackages [karcher-home]: Downloading https://files.pythonhosted.org/packages/6b/29/445a869219462815e3008e5561680d26609b388cea7c2fad0f29b13517d3/karcher-home-0.4.4.tar.gz
+[2023-05-07 22:26:40] INFO root fetch - processPackages [unique-char-counter-cli-kir-boh]: executing diffoscope
+[2023-05-07 22:26:40] INFO root fetch - processPackages [unique-char-counter-cli-kir-boh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unique_char_counter_cli_kir_boh-1.5.8.tar.gz tmp/unique_char_counter_cli_kir_boh-2.tar.gz --markdown 20230507/u/unique-char-counter-cli-kir-boh/1.5.8-2/diff.md --exclude *.pyd
+[2023-05-07 22:26:40] INFO root fetch - processPackages [whisper-cpp-python]: Downloading https://files.pythonhosted.org/packages/03/0f/380237625538cf122c10cf86f2fe9c14d6dbab84caa18ef3155538ee2ad2/whisper_cpp_python-0.1.2.tar.gz
+[2023-05-07 22:26:40] INFO root fetch - processPackages [neopolitan]: Downloading https://files.pythonhosted.org/packages/00/65/b41ff523baaf805c0854f263e01e6607c4304683730b1e063ca7deb47d55/neopolitan-0.1.9.tar.gz
+[2023-05-07 22:26:40] INFO root fetch - processPackages [oresat-olaf]: Downloading https://files.pythonhosted.org/packages/4e/f3/67e2a564ca6860a44817bee88f52465e5dddb1027d986f2dae6e806b5add/oresat-olaf-2.1.0.tar.gz
+[2023-05-07 22:26:40] INFO root fetch - processPackages [q2terminal]: Downloading https://files.pythonhosted.org/packages/78/e1/8b5e7120a61c60f1cce73e69585949270314b68cc0618bf226b706107019/q2terminal-0.1.6.tar.gz
+[2023-05-07 22:26:40] INFO root fetch - processPackages [hyponic]: executing diffoscope
+[2023-05-07 22:26:40] INFO root fetch - processPackages [hyponic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyponic-0.0.2.tar.gz tmp/hyponic-0.0.3.tar.gz --markdown 20230507/h/hyponic/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 22:26:40] INFO root fetch - processPackages [arabic2latin]: Downloading https://files.pythonhosted.org/packages/95/8c/9c718fc69c6f288d80370cea2d2eb123a80665b084904c5a44ca05c7acae/arabic2latin-1.1.2.tar.gz
+[2023-05-07 22:26:40] INFO root fetch - processPackages [karcher-home]: executing diffoscope
+[2023-05-07 22:26:40] INFO root fetch - processPackages [retrotype]: Downloading https://files.pythonhosted.org/packages/83/f0/efbbc9cc16371ead7435f8c3395347c928bd8d1ddf4ac01bb40b5dc478da/retrotype-1.0.0.tar.gz
+[2023-05-07 22:26:40] INFO root fetch - processPackages [karcher-home]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karcher-home-0.4.3.tar.gz tmp/karcher-home-0.4.4.tar.gz --markdown 20230507/k/karcher-home/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-07 22:26:40] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-07 22:26:40] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230507/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 22:26:40] INFO root fetch - processPackages [oresat-olaf]: executing diffoscope
+[2023-05-07 22:26:40] INFO root fetch - processPackages [oresat-olaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat-olaf-2.0.1.tar.gz tmp/oresat-olaf-2.1.0.tar.gz --markdown 20230507/o/oresat-olaf/2.0.1-2.1.0/diff.md --exclude *.pyd
+[2023-05-07 22:26:40] INFO root fetch - processPackages [q2terminal]: executing diffoscope
+[2023-05-07 22:26:40] INFO root fetch - processPackages [q2terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2terminal-0.1.5.tar.gz tmp/q2terminal-0.1.6.tar.gz --markdown 20230507/q/q2terminal/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-07 22:26:40] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-07 22:26:40] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230507/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-07 22:26:40] INFO root fetch - processPackages [arabic2latin]: executing diffoscope
+[2023-05-07 22:26:40] INFO root fetch - processPackages [arabic2latin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arabic2latin-1.1.1.tar.gz tmp/arabic2latin-1.1.2.tar.gz --markdown 20230507/a/arabic2latin/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-07 22:26:40] INFO root fetch - processPackages [retrotype]: executing diffoscope
+[2023-05-07 22:26:40] INFO root fetch - processPackages [retrotype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retrotype-0.0.3.tar.gz tmp/retrotype-1.0.0.tar.gz --markdown 20230507/r/retrotype/0.0.3-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 22:26:40] INFO root fetch - processPackages [whisper-cpp-python]: executing diffoscope
+[2023-05-07 22:26:40] INFO root fetch - processPackages [whisper-cpp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_cpp_python-0.1.1.tar.gz tmp/whisper_cpp_python-0.1.2.tar.gz --markdown 20230507/w/whisper-cpp-python/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 22:26:41] INFO root fetch - processPackages [unique-char-counter-cli-kir-boh]: Start processing: pulsectl-asyncio
+[2023-05-07 22:26:41] INFO root fetch - main [MainThread]: End processing [unique-char-counter-cli-kir-boh]: success
+[2023-05-07 22:26:41] INFO root fetch - processPackages [pulsectl-asyncio]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-07 22:26:41] INFO root fetch - processPackages [hyponic]: Start processing: hella-api
+[2023-05-07 22:26:41] INFO root fetch - main [MainThread]: End processing [hyponic]: success
+[2023-05-07 22:26:41] WARNING root fetch - processPackages [hella-api]: Skipping, unable to determine old version
+[2023-05-07 22:26:41] INFO root fetch - main [MainThread]: End processing [hella-api] error
+[2023-05-07 22:26:41] INFO root fetch - processPackages [pulsectl-asyncio]: Downloading https://files.pythonhosted.org/packages/02/98/b5618e70db2279c9d7f604283df21eadd0d0a5e878bc5a0b9fd85e14fc96/pulsectl-asyncio-1.0.0.tar.gz
+[2023-05-07 22:26:42] INFO root fetch - main [MainThread]: End processing [q2terminal]: success
+[2023-05-07 22:26:42] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-07 22:26:42] INFO root fetch - main [MainThread]: End processing [karcher-home]: success
+[2023-05-07 22:26:42] INFO root fetch - main [MainThread]: End processing [arabic2latin]: success
+[2023-05-07 22:26:42] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-07 22:26:42] INFO root fetch - main [MainThread]: End processing [retrotype]: success
+[2023-05-07 22:26:42] INFO root fetch - processPackages [pulsectl-asyncio]: Downloading https://files.pythonhosted.org/packages/9d/68/193dde1685a2abbf317c8742c2708bd40bf5ab6d664b5d4b3a632bfb15c2/pulsectl-asyncio-1.1.0.tar.gz
+[2023-05-07 22:26:42] INFO root fetch - main [MainThread]: End processing [oresat-olaf]: success
+[2023-05-07 22:26:42] INFO root fetch - processPackages [pulsectl-asyncio]: executing diffoscope
+[2023-05-07 22:26:42] INFO root fetch - processPackages [pulsectl-asyncio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulsectl-asyncio-1.0.0.tar.gz tmp/pulsectl-asyncio-1.1.0.tar.gz --markdown 20230507/p/pulsectl-asyncio/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-07 22:26:43] INFO root fetch - main [MainThread]: End processing [pulsectl-asyncio]: success
+[2023-05-07 22:26:45] INFO root fetch - main [MainThread]: End processing [whisper-cpp-python]: success
+[2023-05-07 22:26:45] INFO root fetch - main [MainThread]: Store serial: [18009574]
