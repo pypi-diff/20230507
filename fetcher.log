@@ -10486,3 +10486,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 21:12:54] INFO root fetch - main [MainThread]: End processing [grrif-tools]: success
 [2023-05-07 21:12:55] INFO root fetch - main [MainThread]: End processing [mdsplit]: success
 [2023-05-07 21:12:55] INFO root fetch - main [MainThread]: Store serial: [18009133]
+[2023-05-07 21:17:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009133]
+[2023-05-07 21:18:04] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 21:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: esqgameencodereplace
+[2023-05-07 21:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-intellibint
+[2023-05-07 21:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: antsibull-docs
+[2023-05-07 21:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cagen
+[2023-05-07 21:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: s3fs
+[2023-05-07 21:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-anymail
+[2023-05-07 21:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dragon-city-utils
+[2023-05-07 21:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: safrs
+[2023-05-07 21:18:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: geomapdemo
+[2023-05-07 21:18:04] WARNING root fetch - processPackages [esqgameencodereplace]: Skipping, unable to determine old version
+[2023-05-07 21:18:04] INFO root fetch - processPackages [django-anymail]: New version: [9.2] Old Version: [9.1]
+[2023-05-07 21:18:04] INFO root fetch - main [MainThread]: End processing [esqgameencodereplace] error
+[2023-05-07 21:18:04] INFO root fetch - processPackages [cagen]: New version: [0.2.0rc2] Old Version: [0.2.0rc1]
+[2023-05-07 21:18:04] WARNING root fetch - processPackages [py-intellibint]: Skipping, unable to determine old version
+[2023-05-07 21:18:04] INFO root fetch - main [MainThread]: End processing [py-intellibint] error
+[2023-05-07 21:18:04] INFO root fetch - processPackages [antsibull-docs]: New version: [2.0.0a1] Old Version: [1.9.0]
+[2023-05-07 21:18:04] INFO root fetch - processPackages [dragon-city-utils]: New version: [1.9] Old Version: [1.8]
+[2023-05-07 21:18:04] INFO root fetch - processPackages [s3fs]: New version: [2023.5.0] Old Version: [2023.4.0]
+[2023-05-07 21:18:04] INFO root fetch - processPackages [geomapdemo]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-07 21:18:04] INFO root fetch - processPackages [s3fs]: Downloading https://files.pythonhosted.org/packages/59/cf/fc3a89633285718f2a6d44ca10b32c84befac38414cd8a6c4f0659ede2f8/s3fs-2023.4.0.tar.gz
+[2023-05-07 21:18:04] INFO root fetch - processPackages [antsibull-docs]: Downloading https://files.pythonhosted.org/packages/67/f1/5b6968b70c50b7f19a3d9f81c1c4c7fca9c26ae156add3443f2fded9c297/antsibull_docs-1.9.0.tar.gz
+[2023-05-07 21:18:04] INFO root fetch - processPackages [safrs]: New version: [3.0.4] Old Version: [3.0.3]
+[2023-05-07 21:18:04] INFO root fetch - processPackages [django-anymail]: Downloading https://files.pythonhosted.org/packages/c7/94/fce13f267050a627d5274cc9adc930f5c78413a637e07af60ac48ee30dc4/django-anymail-9.1.tar.gz
+[2023-05-07 21:18:04] INFO root fetch - processPackages [cagen]: Downloading https://files.pythonhosted.org/packages/ec/65/a424b8ac8e5e62b0c92d97a686ab351f3feb345ab05b9d95ab52d6ee216c/cagen-0.2.0rc2.tar.gz
+[2023-05-07 21:18:04] INFO root fetch - processPackages [dragon-city-utils]: Downloading https://files.pythonhosted.org/packages/0d/45/ac48e29111f07f0561597fbe8985ecc196d76c2c8b4e7dea5e6b34bf3ddf/dragon-city-utils-1.8.tar.gz
+[2023-05-07 21:18:04] INFO root fetch - processPackages [geomapdemo]: Downloading https://files.pythonhosted.org/packages/a1/d4/45c6d9355133f56d2b97d681ee2f650d70fb99a95b7816e8003f2e642b20/geomapdemo-0.3.1.tar.gz
+[2023-05-07 21:18:04] INFO root fetch - processPackages [cagen]: executing diffoscope
+[2023-05-07 21:18:04] INFO root fetch - processPackages [cagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagen-0.2.0rc1.tar.gz tmp/cagen-0.2.0rc2.tar.gz --markdown 20230507/c/cagen/0.2.0rc1-0.2.0rc2/diff.md --exclude *.pyd
+[2023-05-07 21:18:04] INFO root fetch - processPackages [safrs]: Downloading https://files.pythonhosted.org/packages/0e/a9/331f26c53d927425aedeb967b20f0c2d59bff16575ce27ece57632de8480/safrs-3.0.3.tar.gz
+[2023-05-07 21:18:04] INFO root fetch - processPackages [s3fs]: Downloading https://files.pythonhosted.org/packages/17/44/513d90e312d31d3f6ff9d171a411a6fbcf9f51a04d8cb600ee2d3a220835/s3fs-2023.5.0.tar.gz
+[2023-05-07 21:18:04] INFO root fetch - processPackages [antsibull-docs]: Downloading https://files.pythonhosted.org/packages/43/44/d423bb5dc9d4cf6528efb35dbe28b326f79f495b72b2c3e4ecd7fa4fdee1/antsibull_docs-2.0.0a1.tar.gz
+[2023-05-07 21:18:04] INFO root fetch - processPackages [django-anymail]: Downloading https://files.pythonhosted.org/packages/d3/33/003a8a56192ef3334990c3571f898188ac0d40f7c582067e793de8e506c7/django-anymail-9.2.tar.gz
+[2023-05-07 21:18:04] INFO root fetch - processPackages [s3fs]: executing diffoscope
+[2023-05-07 21:18:04] INFO root fetch - processPackages [s3fs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s3fs-2023.4.0.tar.gz tmp/s3fs-2023.5.0.tar.gz --markdown 20230507/s/s3fs/2023.4.0-2023.5.0/diff.md --exclude *.pyd
+[2023-05-07 21:18:04] INFO root fetch - processPackages [django-anymail]: executing diffoscope
+[2023-05-07 21:18:04] INFO root fetch - processPackages [django-anymail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-anymail-9.1.tar.gz tmp/django-anymail-9.2.tar.gz --markdown 20230507/d/django-anymail/9.1-9.2/diff.md --exclude *.pyd
+[2023-05-07 21:18:04] INFO root fetch - processPackages [geomapdemo]: Downloading https://files.pythonhosted.org/packages/27/1e/898798d556a103c0ec1856dbc3d29cf61f3f5263ac233ae500f2a99b974f/geomapdemo-0.3.2.tar.gz
+[2023-05-07 21:18:04] INFO root fetch - processPackages [dragon-city-utils]: Downloading https://files.pythonhosted.org/packages/19/a4/5a7ecacf4605d50dda816b47c635efcb1bf7862e5acb4df359b53003429d/dragon-city-utils-1.9.tar.gz
+[2023-05-07 21:18:04] INFO root fetch - processPackages [antsibull-docs]: executing diffoscope
+[2023-05-07 21:18:04] INFO root fetch - processPackages [antsibull-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antsibull_docs-1.9.0.tar.gz tmp/antsibull_docs-2.0.0a1.tar.gz --markdown 20230507/a/antsibull-docs/1.9.0-2.0.0a1/diff.md --exclude *.pyd
+[2023-05-07 21:18:05] INFO root fetch - processPackages [safrs]: Downloading https://files.pythonhosted.org/packages/4a/3e/d2414020919ac0c0a11cc2f19e147ecdc9b77bbc83ea9ca91a4f7d198d86/safrs-3.0.4.tar.gz
+[2023-05-07 21:18:05] INFO root fetch - processPackages [geomapdemo]: executing diffoscope
+[2023-05-07 21:18:05] INFO root fetch - processPackages [geomapdemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geomapdemo-0.3.1.tar.gz tmp/geomapdemo-0.3.2.tar.gz --markdown 20230507/g/geomapdemo/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-07 21:18:05] INFO root fetch - processPackages [safrs]: executing diffoscope
+[2023-05-07 21:18:05] INFO root fetch - processPackages [safrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safrs-3.0.3.tar.gz tmp/safrs-3.0.4.tar.gz --markdown 20230507/s/safrs/3.0.3-3.0.4/diff.md --exclude *.pyd
+[2023-05-07 21:18:05] INFO root fetch - processPackages [dragon-city-utils]: executing diffoscope
+[2023-05-07 21:18:05] INFO root fetch - processPackages [dragon-city-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragon-city-utils-1.8.tar.gz tmp/dragon-city-utils-1.9.tar.gz --markdown 20230507/d/dragon-city-utils/1.8-1.9/diff.md --exclude *.pyd
+[2023-05-07 21:18:06] INFO root fetch - main [MainThread]: End processing [cagen]: success
+[2023-05-07 21:18:06] INFO root fetch - main [MainThread]: End processing [geomapdemo]: success
+[2023-05-07 21:18:06] INFO root fetch - main [MainThread]: End processing [django-anymail]: success
+[2023-05-07 21:18:06] INFO root fetch - main [MainThread]: End processing [dragon-city-utils]: success
+[2023-05-07 21:18:06] INFO root fetch - main [MainThread]: End processing [safrs]: success
+[2023-05-07 21:18:06] INFO root fetch - main [MainThread]: End processing [s3fs]: success
+[2023-05-07 21:18:12] INFO root fetch - main [MainThread]: End processing [antsibull-docs]: success
+[2023-05-07 21:18:12] INFO root fetch - main [MainThread]: Store serial: [18009176]
