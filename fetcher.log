@@ -3263,3 +3263,11 @@
 [2023-05-07 08:06:24] INFO root fetch - main [MainThread]: End processing [bagbag]: success
 [2023-05-07 08:06:26] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-05-07 08:06:26] INFO root fetch - main [MainThread]: Store serial: [18004412]
+[2023-05-07 08:11:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004412]
+[2023-05-07 08:11:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-07 08:11:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: silobuster
+[2023-05-07 08:11:34] INFO root fetch - processPackages [silobuster]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-07 08:11:34] INFO root fetch - processPackages [silobuster]: executing diffoscope
+[2023-05-07 08:11:34] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-0.1.7.tar.gz tmp/silobuster-0.1.8.tar.gz --markdown 20230507/s/silobuster/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-07 08:11:35] INFO root fetch - main [MainThread]: End processing [silobuster]: success
+[2023-05-07 08:11:35] INFO root fetch - main [MainThread]: Store serial: [18004413]
