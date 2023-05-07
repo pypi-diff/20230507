@@ -6949,3 +6949,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 15:13:28] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
 [2023-05-07 15:13:29] INFO root fetch - main [MainThread]: End processing [fitk]: success
 [2023-05-07 15:13:29] INFO root fetch - main [MainThread]: Store serial: [18006954]
+[2023-05-07 15:18:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006954]
+[2023-05-07 15:18:38] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-07 15:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xiaogpt
+[2023-05-07 15:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-assaf-TACSummaryAndAnnotationSerialize
+[2023-05-07 15:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geofileops
+[2023-05-07 15:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-django
+[2023-05-07 15:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smartjs
+[2023-05-07 15:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-rahav-cert-1987-update-regTest
+[2023-05-07 15:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-apl
+[2023-05-07 15:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: checkov
+[2023-05-07 15:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mysqlcipher
+[2023-05-07 15:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: twitter-2-album
+[2023-05-07 15:18:38] INFO root fetch - processPackages [geofileops]: New version: [0.8.0a3] Old Version: [0.8.0a2]
+[2023-05-07 15:18:38] INFO root fetch - processPackages [smartjs]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 15:18:38] INFO root fetch - processPackages [certora-cli-alpha-assaf-TACSummaryAndAnnotationSerialize]: New version: [20230507.9.30.414759] Old Version: [20230507.13.14.573782]
+[2023-05-07 15:18:38] INFO root fetch - processPackages [xiaogpt]: New version: [1.44] Old Version: [1.43]
+[2023-05-07 15:18:38] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: New version: [20230507.9.47.577125] Old Version: [20230507.8.27.526824]
+[2023-05-07 15:18:38] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 15:18:38] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.759] Old Version: [0.0.758]
+[2023-05-07 15:18:38] INFO root fetch - processPackages [nbdev-django]: Downloading https://files.pythonhosted.org/packages/2b/95/9e261b8f3e5f931da5a2f9ddc475954265376d1d468b6f3877f38ad482c3/nbdev-django-0.0.98.tar.gz
+[2023-05-07 15:18:38] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Downloading https://files.pythonhosted.org/packages/18/91/9107948ff93f03169be37397174f066ca051c92e276c8ba5f256faf1536a/certora-cli-alpha-rahav-cert-1987_update_regTest-20230507.8.27.526824.tar.gz
+[2023-05-07 15:18:38] INFO root fetch - processPackages [twitter-2-album]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 15:18:38] WARNING root fetch - processPackages [mysqlcipher]: Skipping, unable to determine old version
+[2023-05-07 15:18:38] INFO root fetch - processPackages [mysqlcipher]: Start processing: ajayspackage
+[2023-05-07 15:18:38] INFO root fetch - main [MainThread]: End processing [mysqlcipher] error
+[2023-05-07 15:18:38] WARNING root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Skipping package: exceeds size limit 38472946>=10485760
+[2023-05-07 15:18:38] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-rahav-cert-1987-update-regTest] error
+[2023-05-07 15:18:38] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-07 15:18:38] INFO root fetch - processPackages [certora-cli-alpha-assaf-TACSummaryAndAnnotationSerialize]: Downloading https://files.pythonhosted.org/packages/fc/ac/5513fd26e08a0066f3fd9abe38b8484dd10eb5c2e7a76e159ee4142d74e9/certora-cli-alpha-assaf-TACSummaryAndAnnotationSerialize-20230507.13.14.573782.tar.gz
+[2023-05-07 15:18:39] INFO root fetch - processPackages [geofileops]: Downloading https://files.pythonhosted.org/packages/96/dc/d0a8b9caf5c8e4e42ac119b5c94fe7155bc7d1ac0b60582bb55bcd54118b/geofileops-0.8.0a2.tar.gz
+[2023-05-07 15:18:39] INFO root fetch - processPackages [smartjs]: Downloading https://files.pythonhosted.org/packages/68/84/4d79c538b56ff154660ad7ed157fc02e678577f399f61d31126cb172405e/smartjs-0.0.8.tar.gz
+[2023-05-07 15:18:39] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/f9/8c/ed5e0741bee2984bdea34fb9189a78c6809a12d0397b11170dc2d56b6f83/xiaogpt-1.43.tar.gz
+[2023-05-07 15:18:39] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/8f/c0/b3713d4cbc03ff63d42af6bc96060bf07ac510f578af21d0beb23a58ebd5/checkov-2.3.98.tar.gz
+[2023-05-07 15:18:39] WARNING root fetch - processPackages [ajayspackage]: Skipping, unable to determine old version
+[2023-05-07 15:18:39] INFO root fetch - main [MainThread]: End processing [ajayspackage] error
+[2023-05-07 15:18:39] INFO root fetch - processPackages [nbdev-django]: Downloading https://files.pythonhosted.org/packages/f2/7a/5214014e1426324d1fea2f984c9b5480e467e5eddefe61721e8f4d1c025e/nbdev-django-0.0.99.tar.gz
+[2023-05-07 15:18:39] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/a0/0e/113878eb9a78d5e517a2e2f2381adec3c1a14f125798d7e5bd61a3f487a1/nbdev-apl-0.0.759.tar.gz
+[2023-05-07 15:18:39] WARNING root fetch - processPackages [certora-cli-alpha-assaf-TACSummaryAndAnnotationSerialize]: Skipping package: exceeds size limit 38481207>=10485760
+[2023-05-07 15:18:39] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-assaf-TACSummaryAndAnnotationSerialize] error
+[2023-05-07 15:18:39] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-07 15:18:39] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230507/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 15:18:39] INFO root fetch - processPackages [smartjs]: executing diffoscope
+[2023-05-07 15:18:39] INFO root fetch - processPackages [smartjs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartjs-0.0.7.tar.gz tmp/smartjs-0.0.8.tar.gz --markdown 20230507/s/smartjs/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 15:18:39] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-07 15:18:39] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.758.tar.gz tmp/nbdev-apl-0.0.759.tar.gz --markdown 20230507/n/nbdev-apl/0.0.758-0.0.759/diff.md --exclude *.pyd
+[2023-05-07 15:18:39] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/36/b2/faea7cf4d04d72880327d7e73a0327922cb8cd1c61a51e8fd38f344e9f2f/checkov-2.3.99.tar.gz
+[2023-05-07 15:18:39] INFO root fetch - processPackages [twitter-2-album]: executing diffoscope
+[2023-05-07 15:18:39] INFO root fetch - processPackages [twitter-2-album]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_2_album-0.0.8.tar.gz tmp/twitter_2_album-0.0.9.tar.gz --markdown 20230507/t/twitter-2-album/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 15:18:39] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/7e/b4/60cf82c8821c7c4b67ea5cc30bb7a6d93530f321d41ce9b8cc3e7bfe84ac/xiaogpt-1.44.tar.gz
+[2023-05-07 15:18:39] INFO root fetch - processPackages [geofileops]: Downloading https://files.pythonhosted.org/packages/a3/1e/0efc5aab3a5a315b275145894cbf3488757c873c1e4f719a4977d6a6a89b/geofileops-0.8.0a3.tar.gz
+[2023-05-07 15:18:39] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-05-07 15:18:39] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230507/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-07 15:18:39] INFO root fetch - processPackages [xiaogpt]: executing diffoscope
+[2023-05-07 15:18:39] INFO root fetch - processPackages [xiaogpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaogpt-1.43.tar.gz tmp/xiaogpt-1.44.tar.gz --markdown 20230507/x/xiaogpt/1.43-1.44/diff.md --exclude *.pyd
+[2023-05-07 15:18:39] INFO root fetch - processPackages [geofileops]: executing diffoscope
+[2023-05-07 15:18:39] INFO root fetch - processPackages [geofileops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geofileops-0.8.0a2.tar.gz tmp/geofileops-0.8.0a3.tar.gz --markdown 20230507/g/geofileops/0.8.0a2-0.8.0a3/diff.md --exclude *.pyd
+[2023-05-07 15:18:40] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-07 15:18:40] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-07 15:18:40] INFO root fetch - main [MainThread]: End processing [smartjs]: success
+[2023-05-07 15:18:40] INFO root fetch - main [MainThread]: End processing [twitter-2-album]: success
+[2023-05-07 15:18:40] INFO root fetch - main [MainThread]: End processing [xiaogpt]: success
+[2023-05-07 15:18:41] INFO root fetch - main [MainThread]: End processing [geofileops]: success
+[2023-05-07 15:19:19] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-05-07 15:19:19] INFO root fetch - main [MainThread]: Store serial: [18006995]
