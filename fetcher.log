@@ -2585,3 +2585,26 @@
 [2023-05-07 06:03:51] INFO root fetch - main [MainThread]: End processing [getMultiPrimerSet]: success
 [2023-05-07 06:03:51] INFO root fetch - main [MainThread]: End processing [TDhelper]: success
 [2023-05-07 06:03:51] INFO root fetch - main [MainThread]: Store serial: [18004043]
+[2023-05-07 06:08:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004043]
+[2023-05-07 06:09:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 06:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bnaug
+[2023-05-07 06:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: usda-api
+[2023-05-07 06:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: silobuster
+[2023-05-07 06:09:00] INFO root fetch - processPackages [bnaug]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-07 06:09:00] INFO root fetch - processPackages [usda-api]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 06:09:00] INFO root fetch - processPackages [silobuster]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 06:09:00] INFO root fetch - processPackages [silobuster]: Downloading https://files.pythonhosted.org/packages/ea/95/9f8f000a1739282ddcfd219f3479476ff8d69c61b0cc9590721dcbe306eb/silobuster-0.1.0.tar.gz
+[2023-05-07 06:09:00] INFO root fetch - processPackages [bnaug]: Downloading https://files.pythonhosted.org/packages/84/50/74239f10ea5161615dde68a1bf8d8e1ae007c414ddb9d103a920c3bd5dfd/bnaug-1.1.0.tar.gz
+[2023-05-07 06:09:00] INFO root fetch - processPackages [usda-api]: Downloading https://files.pythonhosted.org/packages/3e/f1/57db2b7c297795c6d8e8c4b9ef64e6913f51a38e90d3adeee5b9f74dce8b/usda_api-0.1.2.tar.gz
+[2023-05-07 06:09:00] INFO root fetch - processPackages [usda-api]: executing diffoscope
+[2023-05-07 06:09:00] INFO root fetch - processPackages [usda-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usda_api-0.1.1.tar.gz tmp/usda_api-0.1.2.tar.gz --markdown 20230507/u/usda-api/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 06:09:00] INFO root fetch - processPackages [bnaug]: Downloading https://files.pythonhosted.org/packages/49/91/da231a9c14ca4b8aa1ebb5066066ae832eab4bfb335fad6aa44fee05b829/bnaug-1.1.1.tar.gz
+[2023-05-07 06:09:00] INFO root fetch - processPackages [silobuster]: Downloading https://files.pythonhosted.org/packages/a6/99/98a65ff901b2f0a100b1d66a30b88bab455503287304bd0595161c646be6/silobuster-0.1.1.tar.gz
+[2023-05-07 06:09:00] INFO root fetch - processPackages [bnaug]: executing diffoscope
+[2023-05-07 06:09:00] INFO root fetch - processPackages [bnaug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bnaug-1.1.0.tar.gz tmp/bnaug-1.1.1.tar.gz --markdown 20230507/b/bnaug/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-07 06:09:00] INFO root fetch - processPackages [silobuster]: executing diffoscope
+[2023-05-07 06:09:00] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-0.1.0.tar.gz tmp/silobuster-0.1.1.tar.gz --markdown 20230507/s/silobuster/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 06:09:01] INFO root fetch - main [MainThread]: End processing [usda-api]: success
+[2023-05-07 06:09:01] INFO root fetch - main [MainThread]: End processing [bnaug]: success
+[2023-05-07 06:09:30] INFO root fetch - main [MainThread]: End processing [silobuster]: success
+[2023-05-07 06:09:30] INFO root fetch - main [MainThread]: Store serial: [18004052]
