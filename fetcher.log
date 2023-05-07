@@ -3095,3 +3095,30 @@
 [2023-05-07 07:35:18] INFO root fetch - main [MainThread]: End processing [cmx]: success
 [2023-05-07 07:35:18] INFO root fetch - main [MainThread]: End processing [os-mfa]: success
 [2023-05-07 07:35:18] INFO root fetch - main [MainThread]: Store serial: [18004331]
+[2023-05-07 07:40:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004331]
+[2023-05-07 07:40:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 07:40:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cmx
+[2023-05-07 07:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MDbrew
+[2023-05-07 07:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dj-rest-auth
+[2023-05-07 07:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streetscope
+[2023-05-07 07:40:27] INFO root fetch - processPackages [cmx]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 07:40:27] INFO root fetch - processPackages [MDbrew]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-05-07 07:40:27] INFO root fetch - processPackages [dj-rest-auth]: New version: [4.0.0] Old Version: [3.0.0]
+[2023-05-07 07:40:27] INFO root fetch - processPackages [cmx]: executing diffoscope
+[2023-05-07 07:40:27] INFO root fetch - processPackages [cmx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmx-0.0.8-py3-none-any.whl.zip tmp/cmx-0.0.9-py3-none-any.whl.zip --markdown 20230507/c/cmx/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 07:40:27] INFO root fetch - processPackages [streetscope]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-07 07:40:27] INFO root fetch - processPackages [dj-rest-auth]: Downloading https://files.pythonhosted.org/packages/d0/6f/ea89f2d928f2d56edfbfb3511552968b92d62b2fc6a68b7904af050c0135/dj-rest-auth-3.0.0.tar.gz
+[2023-05-07 07:40:27] INFO root fetch - processPackages [MDbrew]: Downloading https://files.pythonhosted.org/packages/ae/ee/e33c17d1ce4df855758d4a0bf9f2cd98f5468e36194da6361da89d21e92e/MDbrew-2.3.1.tar.gz
+[2023-05-07 07:40:27] INFO root fetch - processPackages [dj-rest-auth]: Downloading https://files.pythonhosted.org/packages/4b/ac/2be7544a47931950762d1c9f25e96db952321f80796e2b265e1bc5ad7143/dj-rest-auth-4.0.0.tar.gz
+[2023-05-07 07:40:27] INFO root fetch - processPackages [streetscope]: Downloading https://files.pythonhosted.org/packages/24/cf/f1cba93268acd45eab2d3c980a7d132afb72d76672f503f3c46839f6d78c/streetscope-0.3.3.tar.gz
+[2023-05-07 07:40:27] INFO root fetch - processPackages [dj-rest-auth]: executing diffoscope
+[2023-05-07 07:40:27] INFO root fetch - processPackages [dj-rest-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj-rest-auth-3.0.0.tar.gz tmp/dj-rest-auth-4.0.0.tar.gz --markdown 20230507/d/dj-rest-auth/3.0.0-4.0.0/diff.md --exclude *.pyd
+[2023-05-07 07:40:27] INFO root fetch - processPackages [MDbrew]: executing diffoscope
+[2023-05-07 07:40:27] INFO root fetch - processPackages [MDbrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MDbrew-2.3.0.tar.gz tmp/MDbrew-2.3.1.tar.gz --markdown 20230507/M/MDbrew/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-05-07 07:40:27] INFO root fetch - processPackages [streetscope]: executing diffoscope
+[2023-05-07 07:40:27] INFO root fetch - processPackages [streetscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streetscope-0.3.2.tar.gz tmp/streetscope-0.3.3.tar.gz --markdown 20230507/s/streetscope/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-07 07:40:28] INFO root fetch - main [MainThread]: End processing [cmx]: success
+[2023-05-07 07:40:28] INFO root fetch - main [MainThread]: End processing [MDbrew]: success
+[2023-05-07 07:40:28] INFO root fetch - main [MainThread]: End processing [streetscope]: success
+[2023-05-07 07:40:29] INFO root fetch - main [MainThread]: End processing [dj-rest-auth]: success
+[2023-05-07 07:40:29] INFO root fetch - main [MainThread]: Store serial: [18004341]
