@@ -10417,3 +10417,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 21:02:33] INFO root fetch - main [MainThread]: End processing [asap-stereo]: success
 [2023-05-07 21:02:34] INFO root fetch - main [MainThread]: End processing [gallery-dl]: success
 [2023-05-07 21:02:34] INFO root fetch - main [MainThread]: Store serial: [18009081]
+[2023-05-07 21:07:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009081]
+[2023-05-07 21:07:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 21:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ukmon-meteortools
+[2023-05-07 21:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-tsp
+[2023-05-07 21:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gravitypy
+[2023-05-07 21:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: igv-flask
+[2023-05-07 21:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edc-dx
+[2023-05-07 21:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fsspec
+[2023-05-07 21:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: grrif-tools
+[2023-05-07 21:07:42] INFO root fetch - processPackages [django-tsp]: New version: [3.14.6] Old Version: [3.14.5]
+[2023-05-07 21:07:42] INFO root fetch - processPackages [ukmon-meteortools]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-07 21:07:42] INFO root fetch - processPackages [gravitypy]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-07 21:07:42] INFO root fetch - processPackages [ukmon-meteortools]: executing diffoscope
+[2023-05-07 21:07:42] INFO root fetch - processPackages [ukmon-meteortools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ukmon_meteortools-2023.5.8.tar.gz tmp/ukmon_meteortools-2023.5.9.tar.gz --markdown 20230507/u/ukmon-meteortools/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-07 21:07:42] WARNING root fetch - processPackages [igv-flask]: Skipping, unable to determine old version
+[2023-05-07 21:07:42] INFO root fetch - main [MainThread]: End processing [igv-flask] error
+[2023-05-07 21:07:42] INFO root fetch - processPackages [fsspec]: New version: [2023.5.0] Old Version: [2023.4.0]
+[2023-05-07 21:07:42] INFO root fetch - processPackages [grrif-tools]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-07 21:07:42] INFO root fetch - processPackages [edc-dx]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 21:07:42] INFO root fetch - processPackages [django-tsp]: Downloading https://files.pythonhosted.org/packages/cb/c0/e6c6e5064f877611a86daeb78c556a336a2d29de8ce4fa98dd70ea1a7252/django_tsp-3.14.6.tar.gz
+[2023-05-07 21:07:42] INFO root fetch - processPackages [gravitypy]: Downloading https://files.pythonhosted.org/packages/54/47/9e1d748b7c8bcf1ac0e3f158d6ce739dfc6983a2d7e191b3ab83dfb7eb98/gravitypy-1.0.3.tar.gz
+[2023-05-07 21:07:42] INFO root fetch - processPackages [django-tsp]: executing diffoscope
+[2023-05-07 21:07:42] INFO root fetch - processPackages [django-tsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tsp-3.14.5.tar.gz tmp/django_tsp-3.14.6.tar.gz --markdown 20230507/d/django-tsp/3.14.5-3.14.6/diff.md --exclude *.pyd
+[2023-05-07 21:07:42] INFO root fetch - processPackages [fsspec]: Downloading https://files.pythonhosted.org/packages/d8/c3/7eb5ace7aac24890fd6f3dbf49d547305237bd4002903f19b524061ce8ae/fsspec-2023.4.0.tar.gz
+[2023-05-07 21:07:43] INFO root fetch - processPackages [edc-dx]: Downloading https://files.pythonhosted.org/packages/68/c0/edc698e2d32e05844560fb0783b9a30821ac88a0a52c9585e771c70f08a3/edc-dx-0.1.8.tar.gz
+[2023-05-07 21:07:43] INFO root fetch - processPackages [gravitypy]: executing diffoscope
+[2023-05-07 21:07:43] INFO root fetch - processPackages [gravitypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitypy-1.0.2.tar.gz tmp/gravitypy-1.0.3.tar.gz --markdown 20230507/g/gravitypy/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-07 21:07:43] INFO root fetch - processPackages [grrif-tools]: Downloading https://files.pythonhosted.org/packages/5c/ad/4a840ecbe1af75ac0f6f6431796315020cade79df735f0439f961bd94948/grrif_tools-0.5.2.tar.gz
+[2023-05-07 21:07:43] INFO root fetch - processPackages [fsspec]: Downloading https://files.pythonhosted.org/packages/4e/5f/faee1c6261997e5b0782f48db9d01dc8ce7aa817d2016dd5cd64c60b1d86/fsspec-2023.5.0.tar.gz
+[2023-05-07 21:07:43] INFO root fetch - processPackages [grrif-tools]: executing diffoscope
+[2023-05-07 21:07:43] INFO root fetch - processPackages [grrif-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grrif_tools-0.5.1.tar.gz tmp/grrif_tools-0.5.2.tar.gz --markdown 20230507/g/grrif-tools/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-07 21:07:43] INFO root fetch - processPackages [fsspec]: executing diffoscope
+[2023-05-07 21:07:43] INFO root fetch - processPackages [fsspec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fsspec-2023.4.0.tar.gz tmp/fsspec-2023.5.0.tar.gz --markdown 20230507/f/fsspec/2023.4.0-2023.5.0/diff.md --exclude *.pyd
+[2023-05-07 21:07:43] INFO root fetch - processPackages [edc-dx]: Downloading https://files.pythonhosted.org/packages/a0/87/5a42918cb811af1101d0b9aea1d7e5a950e2e2a4686a60ffa5aa4afba98a/edc-dx-0.1.9.tar.gz
+[2023-05-07 21:07:43] INFO root fetch - processPackages [edc-dx]: executing diffoscope
+[2023-05-07 21:07:43] INFO root fetch - processPackages [edc-dx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-dx-0.1.8.tar.gz tmp/edc-dx-0.1.9.tar.gz --markdown 20230507/e/edc-dx/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 21:07:44] INFO root fetch - main [MainThread]: End processing [gravitypy]: success
+[2023-05-07 21:07:44] INFO root fetch - main [MainThread]: End processing [django-tsp]: success
+[2023-05-07 21:07:44] INFO root fetch - main [MainThread]: End processing [grrif-tools]: success
+[2023-05-07 21:07:44] INFO root fetch - main [MainThread]: End processing [ukmon-meteortools]: success
+[2023-05-07 21:07:44] INFO root fetch - main [MainThread]: End processing [fsspec]: success
+[2023-05-07 21:07:44] INFO root fetch - main [MainThread]: End processing [edc-dx]: success
+[2023-05-07 21:07:44] INFO root fetch - main [MainThread]: Store serial: [18009113]
