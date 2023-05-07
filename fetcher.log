@@ -1343,3 +1343,56 @@
 [2023-05-07 02:59:54] INFO root fetch - main [MainThread]: End processing [zipline-norgatedata]: success
 [2023-05-07 03:00:13] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2023-05-07 03:00:13] INFO root fetch - main [MainThread]: Store serial: [18003392]
+[2023-05-07 03:05:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003392]
+[2023-05-07 03:05:22] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 03:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pidevdistv2
+[2023-05-07 03:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-wget
+[2023-05-07 03:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-dinkum-listener
+[2023-05-07 03:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: norgatedata
+[2023-05-07 03:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aemcmc-nightly
+[2023-05-07 03:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyagrum-nightly
+[2023-05-07 03:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pytest-budosystems
+[2023-05-07 03:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-lambda-layer-curl
+[2023-05-07 03:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mecha
+[2023-05-07 03:05:22] INFO root fetch - processPackages [ovos-dinkum-listener]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2023-05-07 03:05:22] WARNING root fetch - processPackages [pidevdistv2]: Skipping, unable to determine old version
+[2023-05-07 03:05:22] INFO root fetch - main [MainThread]: End processing [pidevdistv2] error
+[2023-05-07 03:05:22] INFO root fetch - processPackages [norgatedata]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 03:05:22] INFO root fetch - processPackages [mecha]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-07 03:05:22] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-07 03:05:22] INFO root fetch - processPackages [pytest-budosystems]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-07 03:05:22] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-07 03:05:22] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230507] Old Version: [0.0.8.dev20230506]
+[2023-05-07 03:05:22] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.7.1.9.dev202305061682913970] Old Version: [1.7.1.9.dev202305051682913970]
+[2023-05-07 03:05:22] INFO root fetch - processPackages [mecha]: executing diffoscope
+[2023-05-07 03:05:22] INFO root fetch - processPackages [mecha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mecha-0.9.1.tar.gz tmp/mecha-0.9.2.tar.gz --markdown 20230507/m/mecha/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-07 03:05:22] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-07 03:05:22] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230507/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:05:22] INFO root fetch - processPackages [norgatedata]: Downloading https://files.pythonhosted.org/packages/85/d9/cdaf3095003dca94826cd608d7cfe2ede94aa8a7b8861a2dfb29b7ee0092/norgatedata-1.0.8-py3-none-any.whl
+[2023-05-07 03:05:22] INFO root fetch - processPackages [pytest-budosystems]: Downloading https://files.pythonhosted.org/packages/47/49/d5d379b8171986f2b90680e0c45f73d054412892794d9707f96b51289d0b/pytest-budosystems-0.2.0.tar.gz
+[2023-05-07 03:05:22] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/7b/da/685b81c20f8cb28cdb82778d938f1c77ac3478a33b42b8becdb24a18d506/aemcmc-nightly-0.0.8.dev20230506.tar.gz
+[2023-05-07 03:05:22] INFO root fetch - processPackages [ovos-dinkum-listener]: executing diffoscope
+[2023-05-07 03:05:22] INFO root fetch - processPackages [ovos-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_dinkum_listener-0.0.2a8-py3-none-any.whl.zip tmp/ovos_dinkum_listener-0.0.2a9-py3-none-any.whl.zip --markdown 20230507/o/ovos-dinkum-listener/0.0.2a8-0.0.2a9/diff.md --exclude *.pyd
+[2023-05-07 03:05:22] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-07 03:05:22] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230507/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:05:22] INFO root fetch - processPackages [pyagrum-nightly]: Downloading https://files.pythonhosted.org/packages/d4/fb/9672eb1d52f91857c0d350b872026029531c0c1dbec11d50e2be56259072/pyAgrum_nightly-1.7.1.9.dev202305061682913970-cp39-cp39-win_amd64.whl
+[2023-05-07 03:05:22] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-05-07 03:05:22] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.7.1.9.dev202305051682913970-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.7.1.9.dev202305061682913970-cp39-cp39-win_amd64.whl.zip --markdown 20230507/p/pyagrum-nightly/1.7.1.9.dev202305051682913970-1.7.1.9.dev202305061682913970/diff.md --exclude *.pyd
+[2023-05-07 03:05:22] INFO root fetch - processPackages [pytest-budosystems]: Downloading https://files.pythonhosted.org/packages/a8/d3/01c971ee100ae0306fb1e01cab4b2451e47040fb8283361c5676e80aa296/pytest-budosystems-0.3.0.tar.gz
+[2023-05-07 03:05:22] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/2e/aa/d531b5091c8eb962f6692a5af19412b84c2cd37b2ff9ef85aa467c7a7897/aemcmc-nightly-0.0.8.dev20230507.tar.gz
+[2023-05-07 03:05:22] INFO root fetch - processPackages [norgatedata]: Downloading https://files.pythonhosted.org/packages/1b/f9/7a0ccd9bed4b68ec2d0c068cc052137ec2244dfe4c6a6e9ad8bf7a9d6ce6/norgatedata-1.0.9-py3-none-any.whl
+[2023-05-07 03:05:23] INFO root fetch - processPackages [pytest-budosystems]: executing diffoscope
+[2023-05-07 03:05:23] INFO root fetch - processPackages [pytest-budosystems]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-budosystems-0.2.0.tar.gz tmp/pytest-budosystems-0.3.0.tar.gz --markdown 20230507/p/pytest-budosystems/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-07 03:05:23] INFO root fetch - processPackages [norgatedata]: executing diffoscope
+[2023-05-07 03:05:23] INFO root fetch - processPackages [norgatedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/norgatedata-1.0.8-py3-none-any.whl.zip tmp/norgatedata-1.0.9-py3-none-any.whl.zip --markdown 20230507/n/norgatedata/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 03:05:23] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-05-07 03:05:23] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230506.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230507.tar.gz --markdown 20230507/a/aemcmc-nightly/0.0.8.dev20230506-0.0.8.dev20230507/diff.md --exclude *.pyd
+[2023-05-07 03:05:23] INFO root fetch - main [MainThread]: End processing [mecha]: success
+[2023-05-07 03:05:24] INFO root fetch - main [MainThread]: End processing [ovos-dinkum-listener]: success
+[2023-05-07 03:05:24] INFO root fetch - main [MainThread]: End processing [pytest-budosystems]: success
+[2023-05-07 03:05:24] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-07 03:05:24] INFO root fetch - main [MainThread]: End processing [norgatedata]: success
+[2023-05-07 03:05:24] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-07 03:05:24] INFO root fetch - main [MainThread]: End processing [aemcmc-nightly]: success
+[2023-05-07 03:05:25] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-05-07 03:05:25] INFO root fetch - main [MainThread]: Store serial: [18003436]
