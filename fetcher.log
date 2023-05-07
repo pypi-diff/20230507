@@ -1441,3 +1441,64 @@
 [2023-05-07 03:15:48] INFO root fetch - main [MainThread]: End processing [basal-and-bark]: success
 [2023-05-07 03:15:50] INFO root fetch - main [MainThread]: End processing [mp-api]: success
 [2023-05-07 03:15:50] INFO root fetch - main [MainThread]: Store serial: [18003458]
+[2023-05-07 03:20:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003458]
+[2023-05-07 03:20:59] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-07 03:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-sops-secrets
+[2023-05-07 03:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: portmod
+[2023-05-07 03:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cpsim
+[2023-05-07 03:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thonny-autosave
+[2023-05-07 03:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cliconfig
+[2023-05-07 03:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: temptacious
+[2023-05-07 03:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: prelude-parser
+[2023-05-07 03:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: types-redis
+[2023-05-07 03:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk-lambda-subminute
+[2023-05-07 03:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: file-name-attributes
+[2023-05-07 03:20:59] INFO root fetch - processPackages [cpsim]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 03:20:59] INFO root fetch - processPackages [cliconfig]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 03:20:59] WARNING root fetch - processPackages [temptacious]: Skipping, unable to determine old version
+[2023-05-07 03:20:59] INFO root fetch - processPackages [thonny-autosave]: New version: [0.0.16] Old Version: [0.0.15]
+[2023-05-07 03:20:59] INFO root fetch - main [MainThread]: End processing [temptacious] error
+[2023-05-07 03:20:59] INFO root fetch - processPackages [prelude-parser]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 03:20:59] INFO root fetch - processPackages [types-redis]: New version: [4.5.4.2] Old Version: [4.5.4.1]
+[2023-05-07 03:20:59] INFO root fetch - processPackages [portmod]: New version: [2.6.2] Old Version: [2.6.1]
+[2023-05-07 03:20:59] INFO root fetch - processPackages [cdk-lambda-subminute]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-07 03:20:59] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.84]
+[2023-05-07 03:21:00] WARNING root fetch - processPackages [file-name-attributes]: Skipping, unable to determine old version
+[2023-05-07 03:21:00] INFO root fetch - main [MainThread]: End processing [file-name-attributes] error
+[2023-05-07 03:21:00] INFO root fetch - processPackages [thonny-autosave]: Downloading https://files.pythonhosted.org/packages/a4/37/7ab5099047cc0c57a6962b81cb59eed8c86a4807ca546515a29ef7e90b88/thonny_autosave-0.0.15-py3-none-any.whl
+[2023-05-07 03:21:00] INFO root fetch - processPackages [cpsim]: Downloading https://files.pythonhosted.org/packages/5b/6f/244b47a361247c36cf553c998e5a77d321b90c69dd6f1fda8ae9828393a8/cpsim-0.0.1.tar.gz
+[2023-05-07 03:21:00] INFO root fetch - processPackages [prelude-parser]: Downloading https://files.pythonhosted.org/packages/05/27/5cec73920a0a390893fcadb9941b0a2aedc7ef5f669d85f1c64f4833add4/prelude_parser-0.1.0.tar.gz
+[2023-05-07 03:21:00] INFO root fetch - processPackages [cdk-sops-secrets]: Downloading https://files.pythonhosted.org/packages/08/51/29a7046836ba300080e36908baf41356a81079d66f327e2169f0a25afbbe/cdk-sops-secrets-1.2.84.tar.gz
+[2023-05-07 03:21:00] INFO root fetch - processPackages [cliconfig]: Downloading https://files.pythonhosted.org/packages/69/46/7d04bcb963d234d785ad452abadca1ddfdbca3c5eac1bff0cf37b57c2e1b/cliconfig-0.1.4.tar.gz
+[2023-05-07 03:21:00] INFO root fetch - processPackages [types-redis]: Downloading https://files.pythonhosted.org/packages/a1/92/ea644c8b0f5896dac62d4f8aff0ce23fab0270d34e2957497c0890a70569/types-redis-4.5.4.1.tar.gz
+[2023-05-07 03:21:00] INFO root fetch - processPackages [portmod]: Downloading https://files.pythonhosted.org/packages/99/c0/adc7a7b20f6fdf10656ea011999ad45fcc8cedec351c55c29fed2b0ca7f5/portmod-2.6.1.tar.gz
+[2023-05-07 03:21:00] INFO root fetch - processPackages [cliconfig]: executing diffoscope
+[2023-05-07 03:21:00] INFO root fetch - processPackages [cliconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cliconfig-0.1.3.tar.gz tmp/cliconfig-0.1.4.tar.gz --markdown 20230507/c/cliconfig/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 03:21:00] INFO root fetch - processPackages [thonny-autosave]: Downloading https://files.pythonhosted.org/packages/c7/df/cf834c3f31bb80f724f5747279085acd83d0881f3a964fb53fe76297366a/thonny_autosave-0.0.16-py3-none-any.whl
+[2023-05-07 03:21:00] INFO root fetch - processPackages [cdk-lambda-subminute]: executing diffoscope
+[2023-05-07 03:21:00] INFO root fetch - processPackages [cdk-lambda-subminute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_lambda_subminute-2.0.98.tar.gz tmp/cdk_lambda_subminute-2.0.99.tar.gz --markdown 20230507/c/cdk-lambda-subminute/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-07 03:21:00] INFO root fetch - processPackages [prelude-parser]: Downloading https://files.pythonhosted.org/packages/cb/ca/a67e73423aa44ae78a00f267166c80c336054e46380ce95b64c088ec1667/prelude_parser-0.1.1.tar.gz
+[2023-05-07 03:21:00] INFO root fetch - processPackages [cpsim]: Downloading https://files.pythonhosted.org/packages/59/9d/a12e5b6cb49b56dd061151b3e269ba9b2e19c45d66745c081e8d6f7115a8/cpsim-0.0.2.tar.gz
+[2023-05-07 03:21:00] INFO root fetch - processPackages [types-redis]: Downloading https://files.pythonhosted.org/packages/ae/a5/5de2755ff82af316fbeac3dbcb50c23b4730cc1ee6a3f1b9b86357b12c33/types-redis-4.5.4.2.tar.gz
+[2023-05-07 03:21:00] INFO root fetch - processPackages [thonny-autosave]: executing diffoscope
+[2023-05-07 03:21:00] INFO root fetch - processPackages [thonny-autosave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thonny_autosave-0.0.15-py3-none-any.whl.zip tmp/thonny_autosave-0.0.16-py3-none-any.whl.zip --markdown 20230507/t/thonny-autosave/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2023-05-07 03:21:00] INFO root fetch - processPackages [prelude-parser]: executing diffoscope
+[2023-05-07 03:21:00] INFO root fetch - processPackages [prelude-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prelude_parser-0.1.0.tar.gz tmp/prelude_parser-0.1.1.tar.gz --markdown 20230507/p/prelude-parser/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 03:21:00] INFO root fetch - processPackages [types-redis]: executing diffoscope
+[2023-05-07 03:21:00] INFO root fetch - processPackages [types-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-redis-4.5.4.1.tar.gz tmp/types-redis-4.5.4.2.tar.gz --markdown 20230507/t/types-redis/4.5.4.1-4.5.4.2/diff.md --exclude *.pyd
+[2023-05-07 03:21:00] INFO root fetch - processPackages [portmod]: Downloading https://files.pythonhosted.org/packages/d5/74/52ed3dae9a56583547b2440702c88f2f4f0f6a8186a06784bf2306f1e57d/portmod-2.6.2.tar.gz
+[2023-05-07 03:21:00] INFO root fetch - processPackages [cpsim]: executing diffoscope
+[2023-05-07 03:21:00] INFO root fetch - processPackages [cpsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpsim-0.0.1.tar.gz tmp/cpsim-0.0.2.tar.gz --markdown 20230507/c/cpsim/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 03:21:00] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-05-07 03:21:00] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.84.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230507/c/cdk-sops-secrets/1.2.84-1.2.9/diff.md --exclude *.pyd
+[2023-05-07 03:21:00] INFO root fetch - processPackages [portmod]: executing diffoscope
+[2023-05-07 03:21:00] INFO root fetch - processPackages [portmod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portmod-2.6.1.tar.gz tmp/portmod-2.6.2.tar.gz --markdown 20230507/p/portmod/2.6.1-2.6.2/diff.md --exclude *.pyd
+[2023-05-07 03:21:01] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
+[2023-05-07 03:21:01] INFO root fetch - main [MainThread]: End processing [thonny-autosave]: success
+[2023-05-07 03:21:01] INFO root fetch - main [MainThread]: End processing [prelude-parser]: success
+[2023-05-07 03:21:02] INFO root fetch - main [MainThread]: End processing [types-redis]: success
+[2023-05-07 03:21:02] INFO root fetch - main [MainThread]: End processing [cpsim]: success
+[2023-05-07 03:21:02] INFO root fetch - main [MainThread]: End processing [cliconfig]: success
+[2023-05-07 03:21:04] INFO root fetch - main [MainThread]: End processing [portmod]: success
+[2023-05-07 03:21:04] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-05-07 03:21:04] INFO root fetch - main [MainThread]: Store serial: [18003499]
