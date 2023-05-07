@@ -5760,3 +5760,34 @@
 [2023-05-07 13:14:29] INFO root fetch - main [MainThread]: End processing [inverse]: success
 [2023-05-07 13:14:29] INFO root fetch - main [MainThread]: End processing [compoundwidgets]: success
 [2023-05-07 13:14:29] INFO root fetch - main [MainThread]: Store serial: [18006212]
+[2023-05-07 13:19:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006212]
+[2023-05-07 13:19:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 13:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elevenlabslib
+[2023-05-07 13:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: masedb
+[2023-05-07 13:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkglog
+[2023-05-07 13:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: api-ninja
+[2023-05-07 13:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nwebclient
+[2023-05-07 13:19:37] INFO root fetch - processPackages [pkglog]: New version: [1.9] Old Version: [1.8]
+[2023-05-07 13:19:37] INFO root fetch - processPackages [masedb]: New version: [1.2.1] Old Version: [1.1.8]
+[2023-05-07 13:19:37] INFO root fetch - processPackages [elevenlabslib]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-07 13:19:37] WARNING root fetch - processPackages [api-ninja]: Skipping, unable to determine old version
+[2023-05-07 13:19:37] INFO root fetch - main [MainThread]: End processing [api-ninja] error
+[2023-05-07 13:19:37] INFO root fetch - processPackages [nwebclient]: New version: [1.0.83] Old Version: [1.0.82]
+[2023-05-07 13:19:38] INFO root fetch - processPackages [pkglog]: executing diffoscope
+[2023-05-07 13:19:38] INFO root fetch - processPackages [pkglog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkglog-1.8.tar.gz tmp/pkglog-1.9.tar.gz --markdown 20230507/p/pkglog/1.8-1.9/diff.md --exclude *.pyd
+[2023-05-07 13:19:38] INFO root fetch - processPackages [elevenlabslib]: Downloading https://files.pythonhosted.org/packages/85/b5/993416773589eb830b3fb86b449add0596d2ffe03a818f94e7509b48af62/elevenlabslib-0.6.0.tar.gz
+[2023-05-07 13:19:38] INFO root fetch - processPackages [masedb]: Downloading https://files.pythonhosted.org/packages/7a/ca/7256c67feff9a6eade23b53ac825e05c6f9c183f6463e103ffe12213de39/masedb-1.1.8.tar.gz
+[2023-05-07 13:19:38] INFO root fetch - processPackages [nwebclient]: Downloading https://files.pythonhosted.org/packages/9c/d0/29c8108ed75b0ca5b188a67b789919c799ca7573815b99e6136a65d38c27/nwebclient-1.0.83.tar.gz
+[2023-05-07 13:19:38] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-05-07 13:19:38] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.82.tar.gz tmp/nwebclient-1.0.83.tar.gz --markdown 20230507/n/nwebclient/1.0.82-1.0.83/diff.md --exclude *.pyd
+[2023-05-07 13:19:38] INFO root fetch - processPackages [elevenlabslib]: Downloading https://files.pythonhosted.org/packages/0b/3d/8a4a38d2c47772ca86d1b9df9b30d4a7606fc473a9bea33a228f4ba137da/elevenlabslib-0.6.1.tar.gz
+[2023-05-07 13:19:38] INFO root fetch - processPackages [masedb]: Downloading https://files.pythonhosted.org/packages/fb/57/96a5364fae49c545dddd046a54fcb703b72511d010c9052c79427c5539ce/masedb-1.2.1.tar.gz
+[2023-05-07 13:19:38] INFO root fetch - processPackages [masedb]: executing diffoscope
+[2023-05-07 13:19:38] INFO root fetch - processPackages [masedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masedb-1.1.8.tar.gz tmp/masedb-1.2.1.tar.gz --markdown 20230507/m/masedb/1.1.8-1.2.1/diff.md --exclude *.pyd
+[2023-05-07 13:19:38] INFO root fetch - processPackages [elevenlabslib]: executing diffoscope
+[2023-05-07 13:19:38] INFO root fetch - processPackages [elevenlabslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elevenlabslib-0.6.0.tar.gz tmp/elevenlabslib-0.6.1.tar.gz --markdown 20230507/e/elevenlabslib/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-07 13:19:39] INFO root fetch - main [MainThread]: End processing [pkglog]: success
+[2023-05-07 13:19:39] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-05-07 13:19:39] INFO root fetch - main [MainThread]: End processing [masedb]: success
+[2023-05-07 13:19:39] INFO root fetch - main [MainThread]: End processing [elevenlabslib]: success
+[2023-05-07 13:19:39] INFO root fetch - main [MainThread]: Store serial: [18006230]
