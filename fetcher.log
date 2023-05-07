@@ -10324,3 +10324,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 20:52:05] INFO root fetch - main [MainThread]: End processing [pytorch-toolbelt]: success
 [2023-05-07 20:52:06] INFO root fetch - main [MainThread]: End processing [miniaudio]: success
 [2023-05-07 20:52:06] INFO root fetch - main [MainThread]: Store serial: [18009010]
+[2023-05-07 20:57:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009010]
+[2023-05-07 20:57:16] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 20:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ndfind
+[2023-05-07 20:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ansys-mapdl-reader
+[2023-05-07 20:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: circleinfo
+[2023-05-07 20:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whisper-cpp-python
+[2023-05-07 20:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wn
+[2023-05-07 20:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: blaster-server
+[2023-05-07 20:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Routing-flet
+[2023-05-07 20:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: akane
+[2023-05-07 20:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: stockpy-learn
+[2023-05-07 20:57:16] WARNING root fetch - processPackages [circleinfo]: Skipping, unable to determine old version
+[2023-05-07 20:57:16] INFO root fetch - main [MainThread]: End processing [circleinfo] error
+[2023-05-07 20:57:16] WARNING root fetch - processPackages [whisper-cpp-python]: Skipping, unable to determine old version
+[2023-05-07 20:57:16] INFO root fetch - main [MainThread]: End processing [whisper-cpp-python] error
+[2023-05-07 20:57:16] INFO root fetch - processPackages [ndfind]: New version: [0.4] Old Version: [0.3]
+[2023-05-07 20:57:16] INFO root fetch - processPackages [stockpy-learn]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 20:57:16] WARNING root fetch - processPackages [akane]: Skipping, unable to determine old version
+[2023-05-07 20:57:16] INFO root fetch - main [MainThread]: End processing [akane] error
+[2023-05-07 20:57:16] INFO root fetch - processPackages [Routing-flet]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 20:57:16] INFO root fetch - processPackages [wn]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-07 20:57:16] INFO root fetch - processPackages [ansys-mapdl-reader]: New version: [0.52.9] Old Version: [0.52.8]
+[2023-05-07 20:57:16] INFO root fetch - processPackages [blaster-server]: New version: [0.0.428] Old Version: [0.0.427b0]
+[2023-05-07 20:57:17] INFO root fetch - processPackages [ndfind]: Downloading https://files.pythonhosted.org/packages/00/80/2f02f10c6e721845ceb4afda5094db0daa3ffdc43629ccc9288638800d39/ndfind-0.3.tar.gz
+[2023-05-07 20:57:17] INFO root fetch - processPackages [stockpy-learn]: Downloading https://files.pythonhosted.org/packages/b5/2e/141a28bac4ef8cec59ba0824bb7b56999b7732269dac5b055f6dabdd94ab/stockpy-learn-0.1.8.tar.gz
+[2023-05-07 20:57:17] INFO root fetch - processPackages [blaster-server]: Downloading https://files.pythonhosted.org/packages/94/e8/028558e33d4b0d2d124e415629ddba9abf6f0ada385f8509d8882076dd04/blaster-server-0.0.427b0.tar.gz
+[2023-05-07 20:57:17] INFO root fetch - processPackages [ansys-mapdl-reader]: Downloading https://files.pythonhosted.org/packages/20/51/22eefda22cb103d4b5084eace87b68e0bbb4fd6604542d7851206b42b131/ansys-mapdl-reader-0.52.8.tar.gz
+[2023-05-07 20:57:17] INFO root fetch - processPackages [Routing-flet]: Downloading https://files.pythonhosted.org/packages/3d/19/353f7dbdbff90e6a99ca410c375cfb89103ed649ba7e865080ec7ae5aff6/Routing_flet-0.0.2.tar.gz
+[2023-05-07 20:57:17] INFO root fetch - processPackages [wn]: Downloading https://files.pythonhosted.org/packages/98/28/25efb2c03b6a3fc7167d0ee7af2e691b76ec920e031633b38020713cc05f/wn-0.9.3.tar.gz
+[2023-05-07 20:57:17] INFO root fetch - processPackages [ndfind]: Downloading https://files.pythonhosted.org/packages/42/68/b6019873c2a1ffebaa5a40b29dc8b0ab2dc45199aa82a385f2a1cb8688d8/ndfind-0.4.tar.gz
+[2023-05-07 20:57:17] INFO root fetch - processPackages [Routing-flet]: Downloading https://files.pythonhosted.org/packages/da/0b/ce1859d0afa2d587f4951e0b38aa5f2168c1a5358e269f1b282236144587/Routing_flet-0.0.3.tar.gz
+[2023-05-07 20:57:17] INFO root fetch - processPackages [ansys-mapdl-reader]: Downloading https://files.pythonhosted.org/packages/4e/81/374b1cc48191003b8370ce8390bfbffaca3018090a2f524209b4db588af6/ansys-mapdl-reader-0.52.9.tar.gz
+[2023-05-07 20:57:17] INFO root fetch - processPackages [blaster-server]: Downloading https://files.pythonhosted.org/packages/e3/81/8c2acfed746d6d445bf1c2329fe2bc05a3841ff347e29b6a4112d9070cff/blaster-server-0.0.428.tar.gz
+[2023-05-07 20:57:17] INFO root fetch - processPackages [stockpy-learn]: Downloading https://files.pythonhosted.org/packages/35/56/69f9c890f8cf1bf5673c3be476c03bbd6daaa6fb35392b269cc5028677c9/stockpy-learn-0.1.9.tar.gz
+[2023-05-07 20:57:17] INFO root fetch - processPackages [wn]: Downloading https://files.pythonhosted.org/packages/4d/a9/612e69cf7621bf0e9f805c0e9b77ff6f931a88147872c769b4416d58ed62/wn-0.9.4.tar.gz
+[2023-05-07 20:57:17] INFO root fetch - processPackages [ndfind]: executing diffoscope
+[2023-05-07 20:57:17] INFO root fetch - processPackages [ndfind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ndfind-0.3.tar.gz tmp/ndfind-0.4.tar.gz --markdown 20230507/n/ndfind/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-07 20:57:17] INFO root fetch - processPackages [Routing-flet]: executing diffoscope
+[2023-05-07 20:57:17] INFO root fetch - processPackages [Routing-flet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Routing_flet-0.0.2.tar.gz tmp/Routing_flet-0.0.3.tar.gz --markdown 20230507/R/Routing-flet/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 20:57:17] INFO root fetch - processPackages [ansys-mapdl-reader]: executing diffoscope
+[2023-05-07 20:57:17] INFO root fetch - processPackages [ansys-mapdl-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansys-mapdl-reader-0.52.8.tar.gz tmp/ansys-mapdl-reader-0.52.9.tar.gz --markdown 20230507/a/ansys-mapdl-reader/0.52.8-0.52.9/diff.md --exclude *.pyd
+[2023-05-07 20:57:17] INFO root fetch - processPackages [stockpy-learn]: executing diffoscope
+[2023-05-07 20:57:17] INFO root fetch - processPackages [stockpy-learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockpy-learn-0.1.8.tar.gz tmp/stockpy-learn-0.1.9.tar.gz --markdown 20230507/s/stockpy-learn/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 20:57:17] INFO root fetch - processPackages [wn]: executing diffoscope
+[2023-05-07 20:57:17] INFO root fetch - processPackages [wn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wn-0.9.3.tar.gz tmp/wn-0.9.4.tar.gz --markdown 20230507/w/wn/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-07 20:57:17] INFO root fetch - processPackages [blaster-server]: executing diffoscope
+[2023-05-07 20:57:17] INFO root fetch - processPackages [blaster-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blaster-server-0.0.427b0.tar.gz tmp/blaster-server-0.0.428.tar.gz --markdown 20230507/b/blaster-server/0.0.427b0-0.0.428/diff.md --exclude *.pyd
+[2023-05-07 20:57:18] INFO root fetch - main [MainThread]: End processing [Routing-flet]: success
+[2023-05-07 20:57:19] INFO root fetch - main [MainThread]: End processing [stockpy-learn]: success
+[2023-05-07 20:57:19] INFO root fetch - main [MainThread]: End processing [blaster-server]: success
+[2023-05-07 20:57:19] INFO root fetch - main [MainThread]: End processing [ansys-mapdl-reader]: success
+[2023-05-07 20:57:20] INFO root fetch - main [MainThread]: End processing [wn]: success
+[2023-05-07 20:57:21] INFO root fetch - main [MainThread]: End processing [ndfind]: success
+[2023-05-07 20:57:21] INFO root fetch - main [MainThread]: Store serial: [18009058]
