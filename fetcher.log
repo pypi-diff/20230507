@@ -2276,3 +2276,48 @@
 [2023-05-07 05:06:50] INFO root fetch - main [MainThread]: End processing [LyricLib]: success
 [2023-05-07 05:06:50] INFO root fetch - main [MainThread]: End processing [volttron-testing]: success
 [2023-05-07 05:06:50] INFO root fetch - main [MainThread]: Store serial: [18003887]
+[2023-05-07 05:11:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003887]
+[2023-05-07 05:11:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nycu-tdx-py
+[2023-05-07 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: IMDbTraktSyncer
+[2023-05-07 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: buildsys-dateversion
+[2023-05-07 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jiggybase
+[2023-05-07 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gcvit
+[2023-05-07 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nycu-tdx-py
+[2023-05-07 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tremolo
+[2023-05-07 05:11:59] INFO root fetch - processPackages [jiggybase]: New version: [0.0.26] Old Version: [0.0.25]
+[2023-05-07 05:11:59] INFO root fetch - processPackages [tremolo]: New version: [0.0.88] Old Version: [0.0.86]
+[2023-05-07 05:11:59] INFO root fetch - processPackages [gcvit]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-07 05:11:59] INFO root fetch - processPackages [nycu-tdx-py]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 05:11:59] INFO root fetch - processPackages [nycu-tdx-py]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 05:11:59] INFO root fetch - processPackages [IMDbTraktSyncer]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 05:11:59] INFO root fetch - processPackages [buildsys-dateversion]: New version: [2023.5.7] Old Version: [2023.5.6.3]
+[2023-05-07 05:11:59] INFO root fetch - processPackages [nycu-tdx-py]: executing diffoscope
+[2023-05-07 05:11:59] INFO root fetch - processPackages [nycu-tdx-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nycu_tdx_py-0.1.8.tar.gz tmp/nycu_tdx_py-0.1.9.tar.gz --markdown 20230507/n/nycu-tdx-py/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 05:11:59] INFO root fetch - processPackages [tremolo]: executing diffoscope
+[2023-05-07 05:11:59] INFO root fetch - processPackages [tremolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tremolo-0.0.86.tar.gz tmp/tremolo-0.0.88.tar.gz --markdown 20230507/t/tremolo/0.0.86-0.0.88/diff.md --exclude *.pyd
+[2023-05-07 05:11:59] INFO root fetch - processPackages [nycu-tdx-py]: executing diffoscope
+[2023-05-07 05:11:59] INFO root fetch - processPackages [nycu-tdx-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nycu_tdx_py-0.1.8.tar.gz tmp/nycu_tdx_py-0.1.9.tar.gz --markdown 20230507/n/nycu-tdx-py/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 05:11:59] INFO root fetch - processPackages [gcvit]: Downloading https://files.pythonhosted.org/packages/e8/df/8c0f74baade6a408ee83c1d5d064a70a4505c553a03c88b7bb0e7edf32e9/gcvit-1.1.1.tar.gz
+[2023-05-07 05:11:59] INFO root fetch - processPackages [IMDbTraktSyncer]: Downloading https://files.pythonhosted.org/packages/e6/cf/5a890bf0de5b03a21f5b7d1d8ee90de8817283999b2616e50d8cf75d2891/IMDbTraktSyncer-1.0.9.tar.gz
+[2023-05-07 05:11:59] INFO root fetch - processPackages [buildsys-dateversion]: Downloading https://files.pythonhosted.org/packages/b4/46/3091bf315dcae3e505433aaac3a81d02575b9411fa55d715997566af6545/buildsys-dateversion-2023.5.7.tar.gz
+[2023-05-07 05:11:59] INFO root fetch - processPackages [jiggybase]: Downloading https://files.pythonhosted.org/packages/b6/ba/23da2c280664de3980199529746ab7fe1157b41fc8075105b47d6369509a/jiggybase-0.0.26.tar.gz
+[2023-05-07 05:11:59] INFO root fetch - processPackages [IMDbTraktSyncer]: executing diffoscope
+[2023-05-07 05:11:59] INFO root fetch - processPackages [IMDbTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDbTraktSyncer-1.0.8.tar.gz tmp/IMDbTraktSyncer-1.0.9.tar.gz --markdown 20230507/I/IMDbTraktSyncer/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 05:11:59] ERROR root fetch - processPackages [tremolo]: Diffoscope failed: Error: error creating container storage: the container name "busy_ganguly" is already in use by "4ff28e15f89251ed9e24288cf93c2096e37a37164af646e1800c87f1b4364f66". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-07 05:11:59] INFO root fetch - main [MainThread]: End processing [tremolo] error
+[2023-05-07 05:11:59] INFO root fetch - processPackages [buildsys-dateversion]: executing diffoscope
+[2023-05-07 05:11:59] INFO root fetch - processPackages [buildsys-dateversion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildsys-dateversion-2023.5.6.3.tar.gz tmp/buildsys-dateversion-2023.5.7.tar.gz --markdown 20230507/b/buildsys-dateversion/2023.5.6.3-2023.5.7/diff.md --exclude *.pyd
+[2023-05-07 05:11:59] INFO root fetch - processPackages [jiggybase]: executing diffoscope
+[2023-05-07 05:11:59] INFO root fetch - processPackages [jiggybase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jiggybase-0.0.25.tar.gz tmp/jiggybase-0.0.26.tar.gz --markdown 20230507/j/jiggybase/0.0.25-0.0.26/diff.md --exclude *.pyd
+[2023-05-07 05:11:59] INFO root fetch - processPackages [gcvit]: Downloading https://files.pythonhosted.org/packages/e4/48/19b9d2548b0877a7bfe9b68df1392d98a48d5b42cf9b1e67c97754930ef7/gcvit-1.1.2.tar.gz
+[2023-05-07 05:11:59] INFO root fetch - processPackages [gcvit]: executing diffoscope
+[2023-05-07 05:11:59] INFO root fetch - processPackages [gcvit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcvit-1.1.1.tar.gz tmp/gcvit-1.1.2.tar.gz --markdown 20230507/g/gcvit/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-07 05:12:00] INFO root fetch - main [MainThread]: End processing [nycu-tdx-py]: success
+[2023-05-07 05:12:00] INFO root fetch - main [MainThread]: End processing [nycu-tdx-py]: success
+[2023-05-07 05:12:00] INFO root fetch - main [MainThread]: End processing [buildsys-dateversion]: success
+[2023-05-07 05:12:00] INFO root fetch - main [MainThread]: End processing [IMDbTraktSyncer]: success
+[2023-05-07 05:12:00] INFO root fetch - main [MainThread]: End processing [jiggybase]: success
+[2023-05-07 05:12:01] INFO root fetch - main [MainThread]: End processing [gcvit]: success
+[2023-05-07 05:12:01] INFO root fetch - main [MainThread]: Store serial: [18003905]
