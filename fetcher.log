@@ -11952,3 +11952,64 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 23:40:54] INFO root fetch - main [MainThread]: End processing [hedra]: success
 [2023-05-07 23:41:05] INFO root fetch - main [MainThread]: End processing [postgres-copy-binary-extension-module]: success
 [2023-05-07 23:41:05] INFO root fetch - main [MainThread]: Store serial: [18009951]
+[2023-05-07 23:46:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009951]
+[2023-05-07 23:46:19] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-07 23:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SeisMonitor
+[2023-05-07 23:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pystarshade
+[2023-05-07 23:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyper-bump-it
+[2023-05-07 23:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: serial-packets
+[2023-05-07 23:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: twitter-api-py
+[2023-05-07 23:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: generateword
+[2023-05-07 23:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: stitchtoon
+[2023-05-07 23:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: calapy
+[2023-05-07 23:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: whisper-cpp-python
+[2023-05-07 23:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: SeisMonitor
+[2023-05-07 23:46:19] INFO root fetch - processPackages [SeisMonitor]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 23:46:19] INFO root fetch - processPackages [pystarshade]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-07 23:46:19] WARNING root fetch - processPackages [generateword]: Skipping, unable to determine old version
+[2023-05-07 23:46:19] INFO root fetch - main [MainThread]: End processing [generateword] error
+[2023-05-07 23:46:19] INFO root fetch - processPackages [SeisMonitor]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 23:46:19] INFO root fetch - processPackages [whisper-cpp-python]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 23:46:19] INFO root fetch - processPackages [hyper-bump-it]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-07 23:46:19] INFO root fetch - processPackages [serial-packets]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 23:46:19] INFO root fetch - processPackages [twitter-api-py]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-05-07 23:46:19] INFO root fetch - processPackages [whisper-cpp-python]: executing diffoscope
+[2023-05-07 23:46:19] INFO root fetch - processPackages [whisper-cpp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_cpp_python-0.1.3.tar.gz tmp/whisper_cpp_python-0.1.4.tar.gz --markdown 20230507/w/whisper-cpp-python/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 23:46:19] INFO root fetch - processPackages [stitchtoon]: New version: [1.0.0] Old Version: [0.0.2]
+[2023-05-07 23:46:19] INFO root fetch - processPackages [calapy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 23:46:19] INFO root fetch - processPackages [pystarshade]: Downloading https://files.pythonhosted.org/packages/ac/8d/c92ebda5d193a6faeb6f1af60ea8c3753527feaef613e5ace1bdb491b608/pystarshade-0.1.6.tar.gz
+[2023-05-07 23:46:19] INFO root fetch - processPackages [hyper-bump-it]: Downloading https://files.pythonhosted.org/packages/3d/56/a81e6010af51fbd1b435450765448e284ac2276bcbe9003e79ab35f8233e/hyper-bump-it-0.4.0.tar.gz
+[2023-05-07 23:46:19] INFO root fetch - processPackages [twitter-api-py]: Downloading https://files.pythonhosted.org/packages/80/04/5d236e4d3c173ad35a1560eb63e71102fbd8c2f4f6f5536eeba8c820e3f5/twitter_api_py-0.4.7.tar.gz
+[2023-05-07 23:46:20] INFO root fetch - processPackages [stitchtoon]: Downloading https://files.pythonhosted.org/packages/b8/54/abe6bf9df9696b7122cb9dbc77df0b3fba2e965dc77e7cf1c5d1aaed8614/stitchtoon-0.0.2.tar.gz
+[2023-05-07 23:46:20] INFO root fetch - processPackages [calapy]: Downloading https://files.pythonhosted.org/packages/36/a9/9b6d4d7ec20dd11ca477fa84e7d2583925b5fe705f1c4c3d427ab45771b5/calapy-0.1.8.tar.gz
+[2023-05-07 23:46:20] INFO root fetch - processPackages [twitter-api-py]: executing diffoscope
+[2023-05-07 23:46:20] INFO root fetch - processPackages [twitter-api-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_api_py-0.4.6.tar.gz tmp/twitter_api_py-0.4.7.tar.gz --markdown 20230507/t/twitter-api-py/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-05-07 23:46:20] INFO root fetch - processPackages [serial-packets]: Downloading https://files.pythonhosted.org/packages/5a/ba/71b0d8aa44b09c82e66baabdfc59edd560d1b9cd09e0405aa09db1b744dc/serial_packets-0.1.1.tar.gz
+[2023-05-07 23:46:20] INFO root fetch - processPackages [pystarshade]: Downloading https://files.pythonhosted.org/packages/c4/69/934c1a77194647a5713ff22dd22fb44f237b70a6580052ba3c46d8948cbf/pystarshade-0.1.7.tar.gz
+[2023-05-07 23:46:20] INFO root fetch - processPackages [SeisMonitor]: executing diffoscope
+[2023-05-07 23:46:20] INFO root fetch - processPackages [SeisMonitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SeisMonitor-0.0.8.tar.gz tmp/SeisMonitor-0.0.9.tar.gz --markdown 20230507/S/SeisMonitor/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 23:46:20] INFO root fetch - processPackages [SeisMonitor]: executing diffoscope
+[2023-05-07 23:46:20] INFO root fetch - processPackages [SeisMonitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SeisMonitor-0.0.8.tar.gz tmp/SeisMonitor-0.0.9.tar.gz --markdown 20230507/S/SeisMonitor/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 23:46:20] INFO root fetch - processPackages [serial-packets]: executing diffoscope
+[2023-05-07 23:46:20] INFO root fetch - processPackages [serial-packets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serial_packets-0.1.0.tar.gz tmp/serial_packets-0.1.1.tar.gz --markdown 20230507/s/serial-packets/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 23:46:20] INFO root fetch - processPackages [pystarshade]: executing diffoscope
+[2023-05-07 23:46:20] INFO root fetch - processPackages [pystarshade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystarshade-0.1.6.tar.gz tmp/pystarshade-0.1.7.tar.gz --markdown 20230507/p/pystarshade/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-07 23:46:20] INFO root fetch - processPackages [hyper-bump-it]: Downloading https://files.pythonhosted.org/packages/c2/43/b98968cdfc4f4a59a7817c2e4d899460203eed4389af231e223402af29c9/hyper-bump-it-0.4.1.tar.gz
+[2023-05-07 23:46:20] INFO root fetch - processPackages [calapy]: Downloading https://files.pythonhosted.org/packages/8e/71/2f5c835ebe87bf95f2e792a1b4241b30845d607696ef262f860e13a16393/calapy-0.1.9.tar.gz
+[2023-05-07 23:46:20] INFO root fetch - processPackages [hyper-bump-it]: executing diffoscope
+[2023-05-07 23:46:20] INFO root fetch - processPackages [hyper-bump-it]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyper-bump-it-0.4.0.tar.gz tmp/hyper-bump-it-0.4.1.tar.gz --markdown 20230507/h/hyper-bump-it/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-07 23:46:20] INFO root fetch - processPackages [calapy]: executing diffoscope
+[2023-05-07 23:46:20] INFO root fetch - processPackages [calapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calapy-0.1.8.tar.gz tmp/calapy-0.1.9.tar.gz --markdown 20230507/c/calapy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 23:46:20] INFO root fetch - processPackages [stitchtoon]: Downloading https://files.pythonhosted.org/packages/52/a2/298d62383a2f6f72ffb156643434503707110345136150356c417525a26a/stitchtoon-1.0.0.tar.gz
+[2023-05-07 23:46:20] INFO root fetch - processPackages [stitchtoon]: executing diffoscope
+[2023-05-07 23:46:20] INFO root fetch - processPackages [stitchtoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stitchtoon-0.0.2.tar.gz tmp/stitchtoon-1.0.0.tar.gz --markdown 20230507/s/stitchtoon/0.0.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 23:46:21] INFO root fetch - main [MainThread]: End processing [SeisMonitor]: success
+[2023-05-07 23:46:21] INFO root fetch - main [MainThread]: End processing [serial-packets]: success
+[2023-05-07 23:46:21] INFO root fetch - main [MainThread]: End processing [pystarshade]: success
+[2023-05-07 23:46:21] INFO root fetch - main [MainThread]: End processing [hyper-bump-it]: success
+[2023-05-07 23:46:22] INFO root fetch - main [MainThread]: End processing [calapy]: success
+[2023-05-07 23:46:22] INFO root fetch - main [MainThread]: End processing [SeisMonitor]: success
+[2023-05-07 23:46:22] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
+[2023-05-07 23:46:22] INFO root fetch - main [MainThread]: End processing [whisper-cpp-python]: success
+[2023-05-07 23:46:23] INFO root fetch - main [MainThread]: End processing [stitchtoon]: success
+[2023-05-07 23:46:23] INFO root fetch - main [MainThread]: Store serial: [18010043]
