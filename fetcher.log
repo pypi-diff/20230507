@@ -2689,3 +2689,47 @@
 [2023-05-07 06:35:24] INFO root fetch - main [MainThread]: End processing [k1lib]: success
 [2023-05-07 06:35:25] INFO root fetch - main [MainThread]: End processing [c65faucet]: success
 [2023-05-07 06:35:25] INFO root fetch - main [MainThread]: Store serial: [18004085]
+[2023-05-07 06:40:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004085]
+[2023-05-07 06:40:33] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 06:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dataset-viewer
+[2023-05-07 06:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pythesyncer
+[2023-05-07 06:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wheeldiff
+[2023-05-07 06:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cobragpt
+[2023-05-07 06:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: VonPylib
+[2023-05-07 06:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jiggybase
+[2023-05-07 06:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wheeldiff
+[2023-05-07 06:40:33] INFO root fetch - processPackages [dataset-viewer]: New version: [1.0.0] Old Version: [0.1.2]
+[2023-05-07 06:40:33] INFO root fetch - processPackages [pythesyncer]: New version: [23.5.7.12] Old Version: [23.4.22.13]
+[2023-05-07 06:40:33] WARNING root fetch - processPackages [cobragpt]: Skipping, unable to determine old version
+[2023-05-07 06:40:33] INFO root fetch - main [MainThread]: End processing [cobragpt] error
+[2023-05-07 06:40:33] INFO root fetch - processPackages [wheeldiff]: New version: [2023.5.7] Old Version: [2023.5]
+[2023-05-07 06:40:33] INFO root fetch - processPackages [jiggybase]: New version: [0.0.27] Old Version: [0.0.26]
+[2023-05-07 06:40:33] INFO root fetch - processPackages [VonPylib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 06:40:33] INFO root fetch - processPackages [wheeldiff]: New version: [2023.5.7] Old Version: [2023.5]
+[2023-05-07 06:40:34] INFO root fetch - processPackages [pythesyncer]: Downloading https://files.pythonhosted.org/packages/7f/c1/0ce57862975e51f21b58793f767e4a2ba05f4cc6f9766221fecc97787f8f/pythesyncer-23.4.22.13.tar.gz
+[2023-05-07 06:40:34] INFO root fetch - processPackages [VonPylib]: executing diffoscope
+[2023-05-07 06:40:34] INFO root fetch - processPackages [VonPylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VonPylib-0.1.8.tar.gz tmp/VonPylib-0.1.9.tar.gz --markdown 20230507/V/VonPylib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 06:40:34] INFO root fetch - processPackages [wheeldiff]: Downloading https://files.pythonhosted.org/packages/d4/1f/6250eb9ed381b17b07161b97e4970f8ef74a07987d8579be1a181ebde1eb/wheeldiff-2023.5.tar.gz
+[2023-05-07 06:40:34] INFO root fetch - processPackages [wheeldiff]: Downloading https://files.pythonhosted.org/packages/d4/1f/6250eb9ed381b17b07161b97e4970f8ef74a07987d8579be1a181ebde1eb/wheeldiff-2023.5.tar.gz
+[2023-05-07 06:40:34] INFO root fetch - processPackages [dataset-viewer]: Downloading https://files.pythonhosted.org/packages/6a/aa/89b77a912cda0f1e9956d7381981f549c67bf536d88b074d173d47554521/dataset-viewer-1.0.0.tar.gz
+[2023-05-07 06:40:34] INFO root fetch - processPackages [jiggybase]: Downloading https://files.pythonhosted.org/packages/3c/c4/fff9361843553c346beae1506a0ec0c53b2cf5a468384519faf4c044962a/jiggybase-0.0.27.tar.gz
+[2023-05-07 06:40:34] INFO root fetch - processPackages [dataset-viewer]: executing diffoscope
+[2023-05-07 06:40:34] INFO root fetch - processPackages [dataset-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataset-viewer-0.1.2.tar.gz tmp/dataset-viewer-1.0.0.tar.gz --markdown 20230507/d/dataset-viewer/0.1.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 06:40:34] INFO root fetch - processPackages [jiggybase]: executing diffoscope
+[2023-05-07 06:40:34] INFO root fetch - processPackages [jiggybase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jiggybase-0.0.26.tar.gz tmp/jiggybase-0.0.27.tar.gz --markdown 20230507/j/jiggybase/0.0.26-0.0.27/diff.md --exclude *.pyd
+[2023-05-07 06:40:34] INFO root fetch - processPackages [wheeldiff]: Downloading https://files.pythonhosted.org/packages/47/25/91721a8149556b58c0b1456a2ea1f11b6e8cd23d63b01c36cfde2a9d542d/wheeldiff-2023.5.7.tar.gz
+[2023-05-07 06:40:34] INFO root fetch - processPackages [wheeldiff]: Downloading https://files.pythonhosted.org/packages/47/25/91721a8149556b58c0b1456a2ea1f11b6e8cd23d63b01c36cfde2a9d542d/wheeldiff-2023.5.7.tar.gz
+[2023-05-07 06:40:34] INFO root fetch - processPackages [pythesyncer]: Downloading https://files.pythonhosted.org/packages/fb/5f/4083e344409d4c469ee8cea150b1515b30aa9d617ca0bbf6ac798d542583/pythesyncer-23.5.7.12.tar.gz
+[2023-05-07 06:40:34] INFO root fetch - processPackages [pythesyncer]: executing diffoscope
+[2023-05-07 06:40:34] INFO root fetch - processPackages [pythesyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythesyncer-23.4.22.13.tar.gz tmp/pythesyncer-23.5.7.12.tar.gz --markdown 20230507/p/pythesyncer/23.4.22.13-23.5.7.12/diff.md --exclude *.pyd
+[2023-05-07 06:40:34] INFO root fetch - processPackages [wheeldiff]: executing diffoscope
+[2023-05-07 06:40:34] INFO root fetch - processPackages [wheeldiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheeldiff-2023.5.tar.gz tmp/wheeldiff-2023.5.7.tar.gz --markdown 20230507/w/wheeldiff/2023.5-2023.5.7/diff.md --exclude *.pyd
+[2023-05-07 06:40:34] INFO root fetch - processPackages [wheeldiff]: executing diffoscope
+[2023-05-07 06:40:34] INFO root fetch - processPackages [wheeldiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheeldiff-2023.5.tar.gz tmp/wheeldiff-2023.5.7.tar.gz --markdown 20230507/w/wheeldiff/2023.5-2023.5.7/diff.md --exclude *.pyd
+[2023-05-07 06:40:35] INFO root fetch - main [MainThread]: End processing [VonPylib]: success
+[2023-05-07 06:40:35] INFO root fetch - main [MainThread]: End processing [pythesyncer]: success
+[2023-05-07 06:40:35] INFO root fetch - main [MainThread]: End processing [dataset-viewer]: success
+[2023-05-07 06:40:35] INFO root fetch - main [MainThread]: End processing [jiggybase]: success
+[2023-05-07 06:40:35] INFO root fetch - main [MainThread]: End processing [wheeldiff]: success
+[2023-05-07 06:40:36] INFO root fetch - main [MainThread]: End processing [wheeldiff]: success
+[2023-05-07 06:40:36] INFO root fetch - main [MainThread]: Store serial: [18004113]
