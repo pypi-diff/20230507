@@ -2733,3 +2733,98 @@
 [2023-05-07 06:40:35] INFO root fetch - main [MainThread]: End processing [wheeldiff]: success
 [2023-05-07 06:40:36] INFO root fetch - main [MainThread]: End processing [wheeldiff]: success
 [2023-05-07 06:40:36] INFO root fetch - main [MainThread]: Store serial: [18004113]
+[2023-05-07 06:45:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004113]
+[2023-05-07 06:45:44] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-07 06:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyQt-Fluent-Widgets
+[2023-05-07 06:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yumiko
+[2023-05-07 06:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: silobuster
+[2023-05-07 06:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: geopix
+[2023-05-07 06:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cvat-manifest-builder
+[2023-05-07 06:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: json-file-split
+[2023-05-07 06:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: recursive-validator
+[2023-05-07 06:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fsai-grpc-api
+[2023-05-07 06:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: iwx-manifest-builder
+[2023-05-07 06:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fsai-shared-funcs
+[2023-05-07 06:45:44] WARNING root fetch - processPackages [yumiko]: Skipping, unable to determine old version
+[2023-05-07 06:45:44] INFO root fetch - processPackages [yumiko]: Start processing: custodes
+[2023-05-07 06:45:44] INFO root fetch - main [MainThread]: End processing [yumiko] error
+[2023-05-07 06:45:44] INFO root fetch - processPackages [silobuster]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 06:45:44] INFO root fetch - processPackages [geopix]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 06:45:44] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-05-07 06:45:44] INFO root fetch - processPackages [iwx-manifest-builder]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 06:45:44] INFO root fetch - processPackages [json-file-split]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 06:45:44] INFO root fetch - processPackages [custodes]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 06:45:44] INFO root fetch - processPackages [recursive-validator]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 06:45:44] INFO root fetch - processPackages [cvat-manifest-builder]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 06:45:44] INFO root fetch - processPackages [fsai-grpc-api]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 06:45:44] INFO root fetch - processPackages [fsai-shared-funcs]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 06:45:44] INFO root fetch - processPackages [custodes]: executing diffoscope
+[2023-05-07 06:45:44] INFO root fetch - processPackages [custodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custodes-0.0.8.tar.gz tmp/custodes-0.0.9.tar.gz --markdown 20230507/c/custodes/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 06:45:44] INFO root fetch - processPackages [iwx-manifest-builder]: Downloading https://files.pythonhosted.org/packages/33/bf/02ba356059e9069f6db9f027bf1bd97a4c1de39fe82e72814ed2f73f3c39/iwx_manifest_builder-0.0.98.tar.gz
+[2023-05-07 06:45:44] INFO root fetch - processPackages [recursive-validator]: Downloading https://files.pythonhosted.org/packages/44/24/6e3f27033069680d4ad07aee3e1d535e1b3444f1ce72e8df548e8a16dc8e/recursive_validator-0.0.98.tar.gz
+[2023-05-07 06:45:44] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/3c/de/d27ef21f61218e8644ff28587a9861486282cb0a02dad4ffa67692f6f28f/PyQt-Fluent-Widgets-0.8.4.tar.gz
+[2023-05-07 06:45:44] INFO root fetch - processPackages [silobuster]: Downloading https://files.pythonhosted.org/packages/25/30/25033ff548bd96a1883d4d7ef5405e054d4fc5b3a6c2a99df3b9424f6bc4/silobuster-0.1.4.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [geopix]: Downloading https://files.pythonhosted.org/packages/b6/a3/41b4f581e7463e3bce55e79579de9bf1f2c828011573c06bf7ab33a974bd/geopix-0.0.98.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [cvat-manifest-builder]: Downloading https://files.pythonhosted.org/packages/4d/53/ceeb4be50300cbb9ab2e0de8699ddef9fb20be70ac60f72cac3097f0efc9/cvat_manifest_builder-0.0.98.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [fsai-grpc-api]: Downloading https://files.pythonhosted.org/packages/08/a7/9a7ebe38ab432231655f1bfd81e702be8be178baa4b6a212002bdcf3cd96/fsai_grpc_api-0.0.98.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [fsai-shared-funcs]: Downloading https://files.pythonhosted.org/packages/61/bc/39412ebc8deaeb66f457caebc15c02bc1fe07bc33108672e4bf143d64e3b/fsai_shared_funcs-0.0.98.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [json-file-split]: Downloading https://files.pythonhosted.org/packages/99/d8/622632db80b721cb33feb5bafb9759e9b295589e09234724044a35a985ba/json_file_split-0.0.98.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [silobuster]: executing diffoscope
+[2023-05-07 06:45:45] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-0.1.3.tar.gz tmp/silobuster-0.1.4.tar.gz --markdown 20230507/s/silobuster/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 06:45:45] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/3d/b9/dc340d48251d3fe9085e9d045e3da9b5662c982b8576b8538f6c49348f06/PyQt-Fluent-Widgets-0.8.5.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [iwx-manifest-builder]: Downloading https://files.pythonhosted.org/packages/d7/d6/4db840a6915c649204176fabdc1a7d70a4fdf7a1d3bd33ddd8cd11c02111/iwx_manifest_builder-0.0.99.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [geopix]: Downloading https://files.pythonhosted.org/packages/6a/35/1c90409a83c347836b8e4e5b2ad3d6ad6534718a8977dd9b3a646edd5e26/geopix-0.0.99.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [fsai-shared-funcs]: Downloading https://files.pythonhosted.org/packages/3d/ad/0128c444d5b95fa3b9882d63404069f05fbee06ab63f54a541348c51a445/fsai_shared_funcs-0.0.99.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [fsai-grpc-api]: Downloading https://files.pythonhosted.org/packages/9b/76/8a69144e2e7db3d7b70f7a9a6458e71d63b921d67ca39c9f646ee438e103/fsai_grpc_api-0.0.99.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: executing diffoscope
+[2023-05-07 06:45:45] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt-Fluent-Widgets-0.8.4.tar.gz tmp/PyQt-Fluent-Widgets-0.8.5.tar.gz --markdown 20230507/P/PyQt-Fluent-Widgets/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-05-07 06:45:45] INFO root fetch - processPackages [cvat-manifest-builder]: Downloading https://files.pythonhosted.org/packages/2d/fd/8ffcf4ea6e13da75ab842cd4fdacad9222d483a9b210dbc27e9c251f6a20/cvat_manifest_builder-0.0.99.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [geopix]: executing diffoscope
+[2023-05-07 06:45:45] INFO root fetch - processPackages [geopix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geopix-0.0.98.tar.gz tmp/geopix-0.0.99.tar.gz --markdown 20230507/g/geopix/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 06:45:45] INFO root fetch - processPackages [json-file-split]: Downloading https://files.pythonhosted.org/packages/a0/bb/0991effbd14e0114fac9146f11da815fc866dc9e12a179cdfc204af7bd99/json_file_split-0.0.99.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [iwx-manifest-builder]: executing diffoscope
+[2023-05-07 06:45:45] INFO root fetch - processPackages [iwx-manifest-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iwx_manifest_builder-0.0.98.tar.gz tmp/iwx_manifest_builder-0.0.99.tar.gz --markdown 20230507/i/iwx-manifest-builder/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 06:45:45] INFO root fetch - processPackages [cvat-manifest-builder]: executing diffoscope
+[2023-05-07 06:45:45] INFO root fetch - processPackages [cvat-manifest-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvat_manifest_builder-0.0.98.tar.gz tmp/cvat_manifest_builder-0.0.99.tar.gz --markdown 20230507/c/cvat-manifest-builder/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 06:45:45] INFO root fetch - processPackages [recursive-validator]: Downloading https://files.pythonhosted.org/packages/3a/cc/f8feacbe20ac476d11c94a3c866b32fb9b4dde5694a5194843b6b0dde0eb/recursive_validator-0.0.99.tar.gz
+[2023-05-07 06:45:45] INFO root fetch - processPackages [fsai-grpc-api]: executing diffoscope
+[2023-05-07 06:45:45] INFO root fetch - processPackages [fsai-grpc-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fsai_grpc_api-0.0.98.tar.gz tmp/fsai_grpc_api-0.0.99.tar.gz --markdown 20230507/f/fsai-grpc-api/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 06:45:45] INFO root fetch - processPackages [json-file-split]: executing diffoscope
+[2023-05-07 06:45:45] INFO root fetch - processPackages [json-file-split]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_file_split-0.0.98.tar.gz tmp/json_file_split-0.0.99.tar.gz --markdown 20230507/j/json-file-split/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 06:45:45] INFO root fetch - processPackages [fsai-shared-funcs]: executing diffoscope
+[2023-05-07 06:45:45] INFO root fetch - processPackages [fsai-shared-funcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fsai_shared_funcs-0.0.98.tar.gz tmp/fsai_shared_funcs-0.0.99.tar.gz --markdown 20230507/f/fsai-shared-funcs/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 06:45:45] INFO root fetch - processPackages [recursive-validator]: executing diffoscope
+[2023-05-07 06:45:45] INFO root fetch - processPackages [recursive-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recursive_validator-0.0.98.tar.gz tmp/recursive_validator-0.0.99.tar.gz --markdown 20230507/r/recursive-validator/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 06:45:46] INFO root fetch - processPackages [custodes]: Start processing: awpr
+[2023-05-07 06:45:46] INFO root fetch - main [MainThread]: End processing [custodes]: success
+[2023-05-07 06:45:46] INFO root fetch - processPackages [awpr]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-07 06:45:46] INFO root fetch - processPackages [awpr]: Downloading https://files.pythonhosted.org/packages/20/69/15c65a62a3a988a3178f156c6296d17502891a9da8e386979e511c8bd639/awpr-0.0.98.tar.gz
+[2023-05-07 06:45:46] INFO root fetch - processPackages [silobuster]: Start processing: owlapi
+[2023-05-07 06:45:46] INFO root fetch - main [MainThread]: End processing [silobuster]: success
+[2023-05-07 06:45:46] WARNING root fetch - processPackages [owlapi]: Skipping, unable to determine old version
+[2023-05-07 06:45:46] INFO root fetch - processPackages [owlapi]: Start processing: Jvav
+[2023-05-07 06:45:46] INFO root fetch - main [MainThread]: End processing [owlapi] error
+[2023-05-07 06:45:46] INFO root fetch - processPackages [Jvav]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-07 06:45:46] INFO root fetch - processPackages [awpr]: Downloading https://files.pythonhosted.org/packages/43/6a/a5e099ae1a88431e28ea793094495025f2a78ac4d52ea49d8aad0e55cf8c/awpr-0.0.99.tar.gz
+[2023-05-07 06:45:46] INFO root fetch - processPackages [Jvav]: executing diffoscope
+[2023-05-07 06:45:46] INFO root fetch - processPackages [Jvav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jvav-1.2.8.tar.gz tmp/Jvav-1.2.9.tar.gz --markdown 20230507/J/Jvav/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-07 06:45:46] INFO root fetch - processPackages [awpr]: executing diffoscope
+[2023-05-07 06:45:46] INFO root fetch - processPackages [awpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awpr-0.0.98.tar.gz tmp/awpr-0.0.99.tar.gz --markdown 20230507/a/awpr/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-07 06:45:46] INFO root fetch - processPackages [geopix]: Start processing: widelearning
+[2023-05-07 06:45:46] INFO root fetch - main [MainThread]: End processing [geopix]: success
+[2023-05-07 06:45:46] INFO root fetch - processPackages [widelearning]: New version: [0.7.5] Old Version: [0.6.0]
+[2023-05-07 06:45:46] INFO root fetch - main [MainThread]: End processing [cvat-manifest-builder]: success
+[2023-05-07 06:45:46] INFO root fetch - processPackages [widelearning]: Downloading https://files.pythonhosted.org/packages/ee/a8/072ec49923712daf37c79a6e251efc0e13b9a167096af4138c9731ba940d/widelearning-0.6.0.tar.gz
+[2023-05-07 06:45:46] INFO root fetch - main [MainThread]: End processing [iwx-manifest-builder]: success
+[2023-05-07 06:45:47] INFO root fetch - main [MainThread]: End processing [recursive-validator]: success
+[2023-05-07 06:45:47] INFO root fetch - main [MainThread]: End processing [json-file-split]: success
+[2023-05-07 06:45:47] INFO root fetch - main [MainThread]: End processing [fsai-shared-funcs]: success
+[2023-05-07 06:45:47] INFO root fetch - processPackages [widelearning]: Downloading https://files.pythonhosted.org/packages/3a/c3/1fad215376b10df638955440791b7c43f664c971b2ef45ef996a787d84d0/widelearning-0.7.5.tar.gz
+[2023-05-07 06:45:47] INFO root fetch - processPackages [widelearning]: executing diffoscope
+[2023-05-07 06:45:47] INFO root fetch - processPackages [widelearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/widelearning-0.6.0.tar.gz tmp/widelearning-0.7.5.tar.gz --markdown 20230507/w/widelearning/0.6.0-0.7.5/diff.md --exclude *.pyd
+[2023-05-07 06:45:47] INFO root fetch - main [MainThread]: End processing [awpr]: success
+[2023-05-07 06:45:47] INFO root fetch - main [MainThread]: End processing [fsai-grpc-api]: success
+[2023-05-07 06:45:47] INFO root fetch - main [MainThread]: End processing [Jvav]: success
+[2023-05-07 06:45:48] INFO root fetch - main [MainThread]: End processing [widelearning]: success
+[2023-05-07 06:45:51] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
+[2023-05-07 06:45:51] INFO root fetch - main [MainThread]: Store serial: [18004161]
