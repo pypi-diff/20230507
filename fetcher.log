@@ -1200,3 +1200,49 @@
 [2023-05-07 02:33:48] INFO root fetch - main [MainThread]: End processing [cdktf-proxmox]: success
 [2023-05-07 02:33:51] INFO root fetch - main [MainThread]: End processing [aesara-nightly]: success
 [2023-05-07 02:33:51] INFO root fetch - main [MainThread]: Store serial: [18003258]
+[2023-05-07 02:38:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003258]
+[2023-05-07 02:39:00] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 02:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cliconfig
+[2023-05-07 02:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-dinkum-listener
+[2023-05-07 02:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: discovery-transition-ds
+[2023-05-07 02:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyllamacpp
+[2023-05-07 02:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: thonny-autosave
+[2023-05-07 02:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: coder-coder
+[2023-05-07 02:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: state-machine-semaphore
+[2023-05-07 02:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: prelude-parser
+[2023-05-07 02:39:00] INFO root fetch - processPackages [ovos-dinkum-listener]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2023-05-07 02:39:00] INFO root fetch - processPackages [thonny-autosave]: New version: [0.0.9] Old Version: [0.0.6]
+[2023-05-07 02:39:00] INFO root fetch - processPackages [cliconfig]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 02:39:00] INFO root fetch - processPackages [pyllamacpp]: New version: [2.1.3] Old Version: [2.1.2]
+[2023-05-07 02:39:00] INFO root fetch - processPackages [coder-coder]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-07 02:39:00] WARNING root fetch - processPackages [prelude-parser]: Skipping, unable to determine old version
+[2023-05-07 02:39:00] INFO root fetch - main [MainThread]: End processing [prelude-parser] error
+[2023-05-07 02:39:00] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-07 02:39:00] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-07 02:39:00] INFO root fetch - processPackages [ovos-dinkum-listener]: executing diffoscope
+[2023-05-07 02:39:00] INFO root fetch - processPackages [ovos-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_dinkum_listener-0.0.2a8-py3-none-any.whl.zip tmp/ovos_dinkum_listener-0.0.2a9-py3-none-any.whl.zip --markdown 20230507/o/ovos-dinkum-listener/0.0.2a8-0.0.2a9/diff.md --exclude *.pyd
+[2023-05-07 02:39:00] INFO root fetch - processPackages [cliconfig]: Downloading https://files.pythonhosted.org/packages/b8/0b/7e2fad2cd09d81e4380e787376bdb5a8399c4f6149de5825ccebe13004a7/cliconfig-0.1.1.tar.gz
+[2023-05-07 02:39:00] INFO root fetch - processPackages [coder-coder]: Downloading https://files.pythonhosted.org/packages/3e/47/510fa50ec1f7f73de0ffe8714052b46b8bedefae9727c08f3b1b5825e762/coder_coder-0.1.0.tar.gz
+[2023-05-07 02:39:00] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2023-05-07 02:39:00] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20230507/s/state-machine-semaphore/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-07 02:39:00] INFO root fetch - processPackages [pyllamacpp]: Downloading https://files.pythonhosted.org/packages/3f/82/ad1eab49693f76d284e889f1efc3c052043f1d5b0ca85a089b2a88b177d0/pyllamacpp-2.1.3.tar.gz
+[2023-05-07 02:39:01] INFO root fetch - processPackages [thonny-autosave]: executing diffoscope
+[2023-05-07 02:39:01] INFO root fetch - processPackages [thonny-autosave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thonny-autosave-0.0.6.tar.gz tmp/thonny-autosave-0.0.9.tar.gz --markdown 20230507/t/thonny-autosave/0.0.6-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 02:39:01] INFO root fetch - processPackages [pyllamacpp]: executing diffoscope
+[2023-05-07 02:39:01] INFO root fetch - processPackages [pyllamacpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyllamacpp-2.1.2.tar.gz tmp/pyllamacpp-2.1.3.tar.gz --markdown 20230507/p/pyllamacpp/2.1.2-2.1.3/diff.md --exclude *.pyd
+[2023-05-07 02:39:01] INFO root fetch - processPackages [cliconfig]: Downloading https://files.pythonhosted.org/packages/0a/1e/4ee5cee2f753b52b0b64375a2ca96e3a33ae731f853e481691b843e6a539/cliconfig-0.1.2.tar.gz
+[2023-05-07 02:39:01] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-05-07 02:39:01] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230507/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-07 02:39:01] INFO root fetch - processPackages [coder-coder]: Downloading https://files.pythonhosted.org/packages/d8/d3/db1af377912cd46adbffc96f185a42376ccdb5d1ddc16a8ef95f5396ac41/coder_coder-0.2.0.tar.gz
+[2023-05-07 02:39:01] INFO root fetch - processPackages [cliconfig]: executing diffoscope
+[2023-05-07 02:39:01] INFO root fetch - processPackages [cliconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cliconfig-0.1.1.tar.gz tmp/cliconfig-0.1.2.tar.gz --markdown 20230507/c/cliconfig/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 02:39:01] INFO root fetch - processPackages [coder-coder]: executing diffoscope
+[2023-05-07 02:39:01] INFO root fetch - processPackages [coder-coder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coder_coder-0.1.0.tar.gz tmp/coder_coder-0.2.0.tar.gz --markdown 20230507/c/coder-coder/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 02:39:02] INFO root fetch - main [MainThread]: End processing [ovos-dinkum-listener]: success
+[2023-05-07 02:39:02] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2023-05-07 02:39:02] INFO root fetch - main [MainThread]: End processing [thonny-autosave]: success
+[2023-05-07 02:39:02] INFO root fetch - main [MainThread]: End processing [coder-coder]: success
+[2023-05-07 02:39:02] INFO root fetch - main [MainThread]: End processing [pyllamacpp]: success
+[2023-05-07 02:39:02] INFO root fetch - main [MainThread]: End processing [cliconfig]: success
+[2023-05-07 02:39:05] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-05-07 02:39:05] INFO root fetch - main [MainThread]: Store serial: [18003313]
