@@ -10919,3 +10919,23 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 21:49:39] INFO root fetch - main [MainThread]: End processing [shell-themer]: success
 [2023-05-07 21:49:39] INFO root fetch - main [MainThread]: End processing [searchbook]: success
 [2023-05-07 21:49:39] INFO root fetch - main [MainThread]: Store serial: [18009400]
+[2023-05-07 21:54:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009400]
+[2023-05-07 21:54:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 21:54:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotPython
+[2023-05-07 21:54:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: owlery
+[2023-05-07 21:54:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: releng-tool
+[2023-05-07 21:54:48] INFO root fetch - processPackages [releng-tool]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-07 21:54:48] WARNING root fetch - processPackages [owlery]: Skipping, unable to determine old version
+[2023-05-07 21:54:48] INFO root fetch - main [MainThread]: End processing [owlery] error
+[2023-05-07 21:54:48] INFO root fetch - processPackages [spotPython]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 21:54:48] INFO root fetch - processPackages [releng-tool]: Downloading https://files.pythonhosted.org/packages/40/05/83d995ca544db0ab67f6b8d224c59b80df33095322c600086fbf6a1b808b/releng-tool-0.8.0.tar.gz
+[2023-05-07 21:54:48] INFO root fetch - processPackages [spotPython]: Downloading https://files.pythonhosted.org/packages/6e/02/b62c43753db71f5d9f38ae7283b794e6f74a68fb4ed705d99cefd2253532/spotPython-0.0.8.tar.gz
+[2023-05-07 21:54:48] INFO root fetch - processPackages [releng-tool]: Downloading https://files.pythonhosted.org/packages/5f/ee/3463afc510b8b381f6d6637f33e0d378518aac77eaf093995c44d5e141d4/releng-tool-0.9.0.tar.gz
+[2023-05-07 21:54:49] INFO root fetch - processPackages [releng-tool]: executing diffoscope
+[2023-05-07 21:54:49] INFO root fetch - processPackages [releng-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/releng-tool-0.8.0.tar.gz tmp/releng-tool-0.9.0.tar.gz --markdown 20230507/r/releng-tool/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-07 21:54:50] INFO root fetch - processPackages [spotPython]: Downloading https://files.pythonhosted.org/packages/4b/fe/e18dc9bcd7946a695352c3bdf34b95776e2ad6d970f7a8b6ff4368e7e2fe/spotPython-0.0.9.tar.gz
+[2023-05-07 21:54:51] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-05-07 21:54:51] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.0.8.tar.gz tmp/spotPython-0.0.9.tar.gz --markdown 20230507/s/spotPython/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 21:54:52] INFO root fetch - main [MainThread]: End processing [releng-tool]: success
+[2023-05-07 21:54:53] INFO root fetch - main [MainThread]: End processing [spotPython]: success
+[2023-05-07 21:54:53] INFO root fetch - main [MainThread]: Store serial: [18009411]
