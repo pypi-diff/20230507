@@ -11753,3 +11753,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 23:19:49] INFO root fetch - main [MainThread]: End processing [fpyo2apk]: success
 [2023-05-07 23:19:51] INFO root fetch - main [MainThread]: End processing [satsim]: success
 [2023-05-07 23:19:51] INFO root fetch - main [MainThread]: Store serial: [18009820]
+[2023-05-07 23:24:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009820]
+[2023-05-07 23:24:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 23:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aij-webcam
+[2023-05-07 23:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kcli
+[2023-05-07 23:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gravitypy
+[2023-05-07 23:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: power-analysis
+[2023-05-07 23:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fpyo2apk
+[2023-05-07 23:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SeisMonitor
+[2023-05-07 23:25:00] INFO root fetch - processPackages [power-analysis]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 23:25:00] INFO root fetch - processPackages [gravitypy]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 23:25:00] INFO root fetch - processPackages [SeisMonitor]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 23:25:00] INFO root fetch - processPackages [aij-webcam]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-07 23:25:00] INFO root fetch - processPackages [fpyo2apk]: New version: [1.1.1] Old Version: [1.0]
+[2023-05-07 23:25:00] INFO root fetch - processPackages [kcli]: New version: [99.0.202305072120] Old Version: [99.0.202305051337]
+[2023-05-07 23:25:00] INFO root fetch - processPackages [SeisMonitor]: executing diffoscope
+[2023-05-07 23:25:00] INFO root fetch - processPackages [SeisMonitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SeisMonitor-0.0.8.tar.gz tmp/SeisMonitor-0.0.9.tar.gz --markdown 20230507/S/SeisMonitor/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 23:25:00] INFO root fetch - processPackages [gravitypy]: executing diffoscope
+[2023-05-07 23:25:00] INFO root fetch - processPackages [gravitypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitypy-1.0.8.tar.gz tmp/gravitypy-1.0.9.tar.gz --markdown 20230507/g/gravitypy/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 23:25:00] INFO root fetch - processPackages [power-analysis]: Downloading https://files.pythonhosted.org/packages/81/24/c0a71a4981a983f988d41f7891a8c4af417fe351c96568a358944d60d333/power_analysis-0.1.4.tar.gz
+[2023-05-07 23:25:00] INFO root fetch - processPackages [power-analysis]: executing diffoscope
+[2023-05-07 23:25:00] INFO root fetch - processPackages [power-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/power_analysis-0.1.3.tar.gz tmp/power_analysis-0.1.4.tar.gz --markdown 20230507/p/power-analysis/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 23:25:00] INFO root fetch - processPackages [aij-webcam]: executing diffoscope
+[2023-05-07 23:25:00] INFO root fetch - processPackages [aij-webcam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-webcam-1.1.8.tar.gz tmp/aij-webcam-1.1.9.tar.gz --markdown 20230507/a/aij-webcam/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-07 23:25:00] INFO root fetch - processPackages [fpyo2apk]: Downloading https://files.pythonhosted.org/packages/b8/7a/51dcf4b4b3f2415e0cab9cd5218e307853d10b0a37bcc9ce35a87f0fd94f/fpyo2apk-1.1.1.tar.gz
+[2023-05-07 23:25:00] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/85/14/9dec132809fdaa352cc9d83a176fb089a25fdc419f4d4092e8bdaf80bff8/kcli-99.0.202305072120-py3-none-any.whl
+[2023-05-07 23:25:00] INFO root fetch - processPackages [fpyo2apk]: executing diffoscope
+[2023-05-07 23:25:00] INFO root fetch - processPackages [fpyo2apk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fpyo2apk-1.0.tar.gz tmp/fpyo2apk-1.1.1.tar.gz --markdown 20230507/f/fpyo2apk/1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-07 23:25:00] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-07 23:25:00] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305051337-py3-none-any.whl.zip tmp/kcli-99.0.202305072120-py3-none-any.whl.zip --markdown 20230507/k/kcli/99.0.202305051337-99.0.202305072120/diff.md --exclude *.pyd
+[2023-05-07 23:25:01] INFO root fetch - main [MainThread]: End processing [gravitypy]: success
+[2023-05-07 23:25:01] INFO root fetch - main [MainThread]: End processing [power-analysis]: success
+[2023-05-07 23:25:01] INFO root fetch - main [MainThread]: End processing [aij-webcam]: success
+[2023-05-07 23:25:01] INFO root fetch - main [MainThread]: End processing [SeisMonitor]: success
+[2023-05-07 23:25:02] INFO root fetch - main [MainThread]: End processing [fpyo2apk]: success
+[2023-05-07 23:25:10] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-07 23:25:10] INFO root fetch - main [MainThread]: Store serial: [18009841]
