@@ -7673,3 +7673,62 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 16:23:44] INFO root fetch - main [MainThread]: End processing [alipai]: success
 [2023-05-07 16:23:48] INFO root fetch - main [MainThread]: End processing [vessl]: success
 [2023-05-07 16:23:48] INFO root fetch - main [MainThread]: Store serial: [18007405]
+[2023-05-07 16:28:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007405]
+[2023-05-07 16:28:59] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 16:28:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dnxmy
+[2023-05-07 16:28:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quantsight
+[2023-05-07 16:28:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: palmers-agents-general
+[2023-05-07 16:28:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scinode
+[2023-05-07 16:28:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: usearch
+[2023-05-07 16:28:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: optimal-loc
+[2023-05-07 16:28:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sphinx-ansible-theme
+[2023-05-07 16:28:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ipyreact
+[2023-05-07 16:28:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fastdatasets
+[2023-05-07 16:28:59] INFO root fetch - processPackages [quantsight]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 16:28:59] INFO root fetch - processPackages [dnxmy]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-07 16:28:59] INFO root fetch - processPackages [fastdatasets]: New version: [0.9.7.post0] Old Version: [0.9.7]
+[2023-05-07 16:28:59] INFO root fetch - processPackages [optimal-loc]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 16:28:59] INFO root fetch - processPackages [ipyreact]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-07 16:28:59] INFO root fetch - processPackages [sphinx-ansible-theme]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-07 16:28:59] WARNING root fetch - processPackages [scinode]: Skipping, unable to determine old version
+[2023-05-07 16:28:59] INFO root fetch - main [MainThread]: End processing [scinode] error
+[2023-05-07 16:28:59] INFO root fetch - processPackages [palmers-agents-general]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 16:28:59] INFO root fetch - processPackages [usearch]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 16:28:59] INFO root fetch - processPackages [dnxmy]: Downloading https://files.pythonhosted.org/packages/b5/5e/8076eba2a9716f8fbe4524970e47f73fb7463e37aa639e3f59153d74e0dd/dnxmy-1.0.1.tar.gz
+[2023-05-07 16:28:59] INFO root fetch - processPackages [quantsight]: Downloading https://files.pythonhosted.org/packages/c1/a3/ec899c7392b843ef264de7e4515a60b4bce500d6b411a06c07c52d275335/quantsight-0.1.9.tar.gz
+[2023-05-07 16:28:59] INFO root fetch - processPackages [optimal-loc]: Downloading https://files.pythonhosted.org/packages/b5/7e/d5b0aa3c7eaa33a200b12c42122b540808c371853d6a9df7062a22191b09/optimal_loc-0.0.3.tar.gz
+[2023-05-07 16:28:59] INFO root fetch - processPackages [fastdatasets]: Downloading https://files.pythonhosted.org/packages/90/0d/ed6f0940a7ce874e3c6a3c9c2c20d3ebb48999081334fd3c470a8c8ea916/fastdatasets-0.9.7-py3-none-any.whl
+[2023-05-07 16:28:59] INFO root fetch - processPackages [ipyreact]: Downloading https://files.pythonhosted.org/packages/ea/3a/7553421aa26a59249521ead1ad9d63696e2c758193ed25488f119abc5a5b/ipyreact-0.2.0.tar.gz
+[2023-05-07 16:28:59] INFO root fetch - processPackages [sphinx-ansible-theme]: Downloading https://files.pythonhosted.org/packages/f1/26/917234dd5347212de4ceb9617253aea26c11962f37e8eb3d7a447407c40c/sphinx-ansible-theme-0.9.0.tar.gz
+[2023-05-07 16:28:59] INFO root fetch - processPackages [palmers-agents-general]: Downloading https://files.pythonhosted.org/packages/79/e7/f1c8601ea8742b5dd3de824c2b6e4cfc0fc19b43dc89326c1f407fa2a46a/palmers_agents_general-0.0.6.tar.gz
+[2023-05-07 16:28:59] INFO root fetch - processPackages [usearch]: Downloading https://files.pythonhosted.org/packages/79/44/08b57b2ca5709bbd28418a00a0dc3eaec473883eaaa1b3427944508cf43a/usearch-0.1.8-cp311-cp311-macosx_10_9_universal2.whl
+[2023-05-07 16:28:59] INFO root fetch - processPackages [optimal-loc]: executing diffoscope
+[2023-05-07 16:28:59] INFO root fetch - processPackages [optimal-loc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimal_loc-0.0.2.tar.gz tmp/optimal_loc-0.0.3.tar.gz --markdown 20230507/o/optimal-loc/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 16:28:59] INFO root fetch - processPackages [quantsight]: executing diffoscope
+[2023-05-07 16:28:59] INFO root fetch - processPackages [quantsight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantsight-0.1.8.tar.gz tmp/quantsight-0.1.9.tar.gz --markdown 20230507/q/quantsight/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 16:28:59] INFO root fetch - processPackages [palmers-agents-general]: executing diffoscope
+[2023-05-07 16:28:59] INFO root fetch - processPackages [palmers-agents-general]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palmers_agents_general-0.0.5.tar.gz tmp/palmers_agents_general-0.0.6.tar.gz --markdown 20230507/p/palmers-agents-general/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 16:28:59] INFO root fetch - processPackages [dnxmy]: Downloading https://files.pythonhosted.org/packages/73/bc/5c4b0c016b0655de125d588d01792d858317a1545629b63ccb01ffddfa05/dnxmy-1.0.2.tar.gz
+[2023-05-07 16:29:00] INFO root fetch - processPackages [fastdatasets]: Downloading https://files.pythonhosted.org/packages/84/d0/f74a5dda34a2ac541f0a2dfe77dd747cba0954d0b9e8e94c161e28c2e188/fastdatasets-0.9.7.post0-py3-none-any.whl
+[2023-05-07 16:29:00] INFO root fetch - processPackages [dnxmy]: executing diffoscope
+[2023-05-07 16:29:00] INFO root fetch - processPackages [dnxmy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnxmy-1.0.1.tar.gz tmp/dnxmy-1.0.2.tar.gz --markdown 20230507/d/dnxmy/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-07 16:29:00] INFO root fetch - processPackages [usearch]: Downloading https://files.pythonhosted.org/packages/5a/61/183cb9279d026f4d0ed216fcc80dc7925b2c83df1ac3bd57b96241d7bfec/usearch-0.1.9-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+[2023-05-07 16:29:00] INFO root fetch - processPackages [fastdatasets]: executing diffoscope
+[2023-05-07 16:29:00] INFO root fetch - processPackages [fastdatasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastdatasets-0.9.7-py3-none-any.whl.zip tmp/fastdatasets-0.9.7.post0-py3-none-any.whl.zip --markdown 20230507/f/fastdatasets/0.9.7-0.9.7.post0/diff.md --exclude *.pyd
+[2023-05-07 16:29:00] INFO root fetch - processPackages [ipyreact]: Downloading https://files.pythonhosted.org/packages/74/d1/6d4f725c31bb506a6954eda5c28c6f0007fe80f6eea147cda15672548327/ipyreact-0.3.0.tar.gz
+[2023-05-07 16:29:00] INFO root fetch - processPackages [sphinx-ansible-theme]: Downloading https://files.pythonhosted.org/packages/ee/df/e60542b260c71b9e8c39647a0f3605d44500012dbcc235f69880abe626c8/sphinx-ansible-theme-0.9.1.tar.gz
+[2023-05-07 16:29:00] INFO root fetch - processPackages [usearch]: executing diffoscope
+[2023-05-07 16:29:00] INFO root fetch - processPackages [usearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usearch-0.1.8-cp311-cp311-macosx_10_9_universal2.whl.zip tmp/usearch-0.1.9-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.zip --markdown 20230507/u/usearch/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 16:29:00] INFO root fetch - processPackages [ipyreact]: executing diffoscope
+[2023-05-07 16:29:00] INFO root fetch - processPackages [ipyreact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyreact-0.2.0.tar.gz tmp/ipyreact-0.3.0.tar.gz --markdown 20230507/i/ipyreact/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-07 16:29:00] INFO root fetch - processPackages [sphinx-ansible-theme]: executing diffoscope
+[2023-05-07 16:29:00] INFO root fetch - processPackages [sphinx-ansible-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-ansible-theme-0.9.0.tar.gz tmp/sphinx-ansible-theme-0.9.1.tar.gz --markdown 20230507/s/sphinx-ansible-theme/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-07 16:29:01] INFO root fetch - main [MainThread]: End processing [optimal-loc]: success
+[2023-05-07 16:29:01] INFO root fetch - main [MainThread]: End processing [quantsight]: success
+[2023-05-07 16:29:01] INFO root fetch - main [MainThread]: End processing [palmers-agents-general]: success
+[2023-05-07 16:29:01] INFO root fetch - main [MainThread]: End processing [dnxmy]: success
+[2023-05-07 16:29:01] INFO root fetch - main [MainThread]: End processing [usearch]: success
+[2023-05-07 16:29:01] INFO root fetch - main [MainThread]: End processing [fastdatasets]: success
+[2023-05-07 16:29:02] INFO root fetch - main [MainThread]: End processing [sphinx-ansible-theme]: success
+[2023-05-07 16:29:14] INFO root fetch - main [MainThread]: End processing [ipyreact]: success
+[2023-05-07 16:29:14] INFO root fetch - main [MainThread]: Store serial: [18007517]
