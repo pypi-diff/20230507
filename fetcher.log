@@ -7508,3 +7508,72 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 16:07:56] INFO root fetch - main [MainThread]: End processing [aioesphomeapi]: success
 [2023-05-07 16:08:08] INFO root fetch - main [MainThread]: End processing [demisto-sdk]: success
 [2023-05-07 16:08:08] INFO root fetch - main [MainThread]: Store serial: [18007299]
+[2023-05-07 16:13:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007299]
+[2023-05-07 16:13:17] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-07 16:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xefab
+[2023-05-07 16:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deadnews-template-python
+[2023-05-07 16:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: square-vilavr
+[2023-05-07 16:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: time-magic
+[2023-05-07 16:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: impose-cli
+[2023-05-07 16:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ursina
+[2023-05-07 16:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-07 16:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ocp-tessellate
+[2023-05-07 16:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: certora-cli-alpha-rahav-cert-1987-update-regTest
+[2023-05-07 16:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gravitypy
+[2023-05-07 16:13:17] INFO root fetch - processPackages [xefab]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 16:13:17] WARNING root fetch - processPackages [square-vilavr]: Skipping, unable to determine old version
+[2023-05-07 16:13:17] INFO root fetch - processPackages [square-vilavr]: Start processing: discord-qalib
+[2023-05-07 16:13:17] INFO root fetch - processPackages [deadnews-template-python]: New version: [1.0.2a6] Old Version: [1.0.2a5]
+[2023-05-07 16:13:17] INFO root fetch - main [MainThread]: End processing [square-vilavr] error
+[2023-05-07 16:13:17] WARNING root fetch - processPackages [impose-cli]: Skipping, unable to determine old version
+[2023-05-07 16:13:17] INFO root fetch - processPackages [impose-cli]: Start processing: datazimmer
+[2023-05-07 16:13:17] INFO root fetch - main [MainThread]: End processing [impose-cli] error
+[2023-05-07 16:13:17] INFO root fetch - processPackages [time-magic]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-07 16:13:17] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230507.14.10.356139] Old Version: [20230507.12.41.550958]
+[2023-05-07 16:13:17] INFO root fetch - processPackages [ursina]: New version: [5.3.0] Old Version: [5.2.0]
+[2023-05-07 16:13:17] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: New version: [20230507.9.47.577125] Old Version: [20230507.8.27.526824]
+[2023-05-07 16:13:18] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Downloading https://files.pythonhosted.org/packages/18/91/9107948ff93f03169be37397174f066ca051c92e276c8ba5f256faf1536a/certora-cli-alpha-rahav-cert-1987_update_regTest-20230507.8.27.526824.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [ocp-tessellate]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-07 16:13:18] WARNING root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Skipping package: exceeds size limit 38472946>=10485760
+[2023-05-07 16:13:18] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-rahav-cert-1987-update-regTest] error
+[2023-05-07 16:13:18] INFO root fetch - processPackages [discord-qalib]: New version: [2.2.3] Old Version: [2.2.2]
+[2023-05-07 16:13:18] WARNING root fetch - processPackages [gravitypy]: Skipping, unable to determine old version
+[2023-05-07 16:13:18] INFO root fetch - main [MainThread]: End processing [gravitypy] error
+[2023-05-07 16:13:18] INFO root fetch - processPackages [datazimmer]: New version: [0.5.0] Old Version: [0.4.9]
+[2023-05-07 16:13:18] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/be/b9/9782fc22c7c6f0e01300cf117619536c743af3ffab5fdb79407319385755/certora-cli-alpha-roy-CERT-1955-assertHits-20230507.12.41.550958.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [time-magic]: Downloading https://files.pythonhosted.org/packages/cc/5a/8bff359f1a853007ebf39c28de5bd783dfb322047338a47cfc8eb10415f3/time_magic-0.3.1.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [xefab]: Downloading https://files.pythonhosted.org/packages/ec/03/230a95134df4c355a6da652786b16220d910776419518007aa5317dcbfcc/xefab-0.1.8.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [deadnews-template-python]: Downloading https://files.pythonhosted.org/packages/88/50/a94e160deafc79ae100440ed33bb9e7aabc8986b23b058c83964edab75da/deadnews_template_python-1.0.2a5.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [ursina]: Downloading https://files.pythonhosted.org/packages/1c/ae/767f11bdee8a1ed6e755c4f7805caa73d76468963669e1891e02f2e138c4/ursina-5.2.0.tar.gz
+[2023-05-07 16:13:18] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 38474293>=10485760
+[2023-05-07 16:13:18] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-07 16:13:18] INFO root fetch - processPackages [ocp-tessellate]: Downloading https://files.pythonhosted.org/packages/f1/79/fe298d20642a75f43be897f1583992cadd6d3aecab1619378d118dbfcf2f/ocp_tessellate-1.0.2.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [time-magic]: executing diffoscope
+[2023-05-07 16:13:18] INFO root fetch - processPackages [datazimmer]: Downloading https://files.pythonhosted.org/packages/f7/22/1869e234c9387532e4247d3ae1304794a15792b3f86c6a015f3963d2a2ee/datazimmer-0.4.9.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [time-magic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/time_magic-0.3.0.tar.gz tmp/time_magic-0.3.1.tar.gz --markdown 20230507/t/time-magic/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-07 16:13:18] INFO root fetch - processPackages [discord-qalib]: Downloading https://files.pythonhosted.org/packages/8f/13/54099fb4ee1bc317a48b87cb2dfe48a6bad9d42e0cd7190c46ef1b552745/discord-qalib-2.2.3.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [ocp-tessellate]: Downloading https://files.pythonhosted.org/packages/6a/e1/6355118a5863cb91ec24e079c06cbca0faa5beedb9f5c116feb779f856e1/ocp_tessellate-1.0.3.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [discord-qalib]: executing diffoscope
+[2023-05-07 16:13:18] INFO root fetch - processPackages [discord-qalib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-qalib-2.2.2.tar.gz tmp/discord-qalib-2.2.3.tar.gz --markdown 20230507/d/discord-qalib/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2023-05-07 16:13:18] INFO root fetch - processPackages [deadnews-template-python]: Downloading https://files.pythonhosted.org/packages/d6/82/c045a135dcfbae57b1c33b75ca3af992b9fc8b21b180e4d8cba17add59ea/deadnews_template_python-1.0.2a6.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [xefab]: Downloading https://files.pythonhosted.org/packages/5b/90/1495db4049904a8b148eb5e7b30e35e30a2c81f0bf74a90157a33d53fe08/xefab-0.1.9.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [ocp-tessellate]: executing diffoscope
+[2023-05-07 16:13:18] INFO root fetch - processPackages [ocp-tessellate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocp_tessellate-1.0.2.tar.gz tmp/ocp_tessellate-1.0.3.tar.gz --markdown 20230507/o/ocp-tessellate/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-07 16:13:18] INFO root fetch - processPackages [datazimmer]: Downloading https://files.pythonhosted.org/packages/47/c7/223cfd374d5bf3aca47c207fab1d8cbe05e694e33ea7085156cae56fc51c/datazimmer-0.5.0.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [ursina]: Downloading https://files.pythonhosted.org/packages/52/c4/3e8ad3061eafd8ca24c325a8218f4c94255aa21844a8857ad4f6bb564181/ursina-5.3.0.tar.gz
+[2023-05-07 16:13:18] INFO root fetch - processPackages [deadnews-template-python]: executing diffoscope
+[2023-05-07 16:13:18] INFO root fetch - processPackages [deadnews-template-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deadnews_template_python-1.0.2a5.tar.gz tmp/deadnews_template_python-1.0.2a6.tar.gz --markdown 20230507/d/deadnews-template-python/1.0.2a5-1.0.2a6/diff.md --exclude *.pyd
+[2023-05-07 16:13:18] INFO root fetch - processPackages [xefab]: executing diffoscope
+[2023-05-07 16:13:18] INFO root fetch - processPackages [xefab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xefab-0.1.8.tar.gz tmp/xefab-0.1.9.tar.gz --markdown 20230507/x/xefab/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 16:13:18] INFO root fetch - processPackages [ursina]: executing diffoscope
+[2023-05-07 16:13:18] INFO root fetch - processPackages [ursina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ursina-5.2.0.tar.gz tmp/ursina-5.3.0.tar.gz --markdown 20230507/u/ursina/5.2.0-5.3.0/diff.md --exclude *.pyd
+[2023-05-07 16:13:18] INFO root fetch - processPackages [datazimmer]: executing diffoscope
+[2023-05-07 16:13:18] INFO root fetch - processPackages [datazimmer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datazimmer-0.4.9.tar.gz tmp/datazimmer-0.5.0.tar.gz --markdown 20230507/d/datazimmer/0.4.9-0.5.0/diff.md --exclude *.pyd
+[2023-05-07 16:13:19] INFO root fetch - main [MainThread]: End processing [time-magic]: success
+[2023-05-07 16:13:19] INFO root fetch - main [MainThread]: End processing [discord-qalib]: success
+[2023-05-07 16:13:19] INFO root fetch - main [MainThread]: End processing [deadnews-template-python]: success
+[2023-05-07 16:13:20] INFO root fetch - main [MainThread]: End processing [ocp-tessellate]: success
+[2023-05-07 16:13:20] INFO root fetch - main [MainThread]: End processing [xefab]: success
+[2023-05-07 16:13:20] INFO root fetch - main [MainThread]: End processing [datazimmer]: success
+[2023-05-07 16:13:21] INFO root fetch - main [MainThread]: End processing [ursina]: success
+[2023-05-07 16:13:21] INFO root fetch - main [MainThread]: Store serial: [18007341]
