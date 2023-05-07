@@ -11312,3 +11312,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 22:31:58] INFO root fetch - main [MainThread]: End processing [ue4-docker]: success
 [2023-05-07 22:32:00] INFO root fetch - main [MainThread]: End processing [qlat]: success
 [2023-05-07 22:32:00] INFO root fetch - main [MainThread]: Store serial: [18009619]
+[2023-05-07 22:37:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009619]
+[2023-05-07 22:37:09] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 22:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pitv
+[2023-05-07 22:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matgl
+[2023-05-07 22:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xia-service
+[2023-05-07 22:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mynacode
+[2023-05-07 22:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pitv
+[2023-05-07 22:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gradient-accumulator
+[2023-05-07 22:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scoobi
+[2023-05-07 22:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py-tfl
+[2023-05-07 22:37:09] INFO root fetch - processPackages [pitv]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 22:37:09] INFO root fetch - processPackages [py-tfl]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 22:37:09] INFO root fetch - processPackages [xia-service]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 22:37:09] INFO root fetch - processPackages [mynacode]: New version: [1.0.95] Old Version: [1.0.94]
+[2023-05-07 22:37:09] INFO root fetch - processPackages [pitv]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 22:37:09] INFO root fetch - processPackages [matgl]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-07 22:37:09] INFO root fetch - processPackages [gradient-accumulator]: New version: [0.5.0] Old Version: [0.4.2]
+[2023-05-07 22:37:10] INFO root fetch - processPackages [py-tfl]: executing diffoscope
+[2023-05-07 22:37:10] INFO root fetch - processPackages [py-tfl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_tfl-0.1.0.tar.gz tmp/py_tfl-0.1.1.tar.gz --markdown 20230507/p/py-tfl/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 22:37:10] INFO root fetch - processPackages [scoobi]: New version: [0.0.1.5] Old Version: [0.0.1.4]
+[2023-05-07 22:37:10] INFO root fetch - processPackages [pitv]: Downloading https://files.pythonhosted.org/packages/66/48/eca82ee87bc06995216820285133785ace9db3d1fadd002e2d7306114d83/pitv-0.0.8.tar.gz
+[2023-05-07 22:37:10] INFO root fetch - processPackages [pitv]: Downloading https://files.pythonhosted.org/packages/66/48/eca82ee87bc06995216820285133785ace9db3d1fadd002e2d7306114d83/pitv-0.0.8.tar.gz
+[2023-05-07 22:37:10] INFO root fetch - processPackages [mynacode]: Downloading https://files.pythonhosted.org/packages/54/6c/17a7898859d15694f3776d0fb981e66c8cee8df52c3503a88f45740550f0/mynacode-1.0.94-py3-none-any.whl
+[2023-05-07 22:37:10] INFO root fetch - processPackages [matgl]: Downloading https://files.pythonhosted.org/packages/e8/4a/89676ce16cf68e28b6547c680f0562ac49aa323e09b19867dfdc861f8f67/matgl-0.2.1.tar.gz
+[2023-05-07 22:37:10] INFO root fetch - processPackages [xia-service]: Downloading https://files.pythonhosted.org/packages/e0/1b/ec32bc7ee5bfb2641b0a683698378ac629d70387d9ce7326f8a012b2f130/xia_service-0.0.1-cp39-none-win_amd64.whl
+[2023-05-07 22:37:10] INFO root fetch - processPackages [gradient-accumulator]: Downloading https://files.pythonhosted.org/packages/ab/81/9af491d6f7e3b7d3640e60c458cf2cee3ad9d0ed47abc7f7e26c6050ef2b/gradient-accumulator-0.4.2.tar.gz
+[2023-05-07 22:37:10] INFO root fetch - processPackages [scoobi]: Downloading https://files.pythonhosted.org/packages/0d/4f/499e153add8bf4ec6e6d5f040d757456b242f85212e8825c66e4708c8dc6/scoobi-0.0.1.4.tar.gz
+[2023-05-07 22:37:10] INFO root fetch - processPackages [gradient-accumulator]: Downloading https://files.pythonhosted.org/packages/6a/cc/e792ad82cdc5f3a876b33a1d0e1e5327bc5b02c7c163de0a32474824465d/gradient-accumulator-0.5.0.tar.gz
+[2023-05-07 22:37:10] INFO root fetch - processPackages [pitv]: Downloading https://files.pythonhosted.org/packages/80/ae/c610107b1ba9388feb84ffbea2c5b8701344c871c415d4dffdb4565ae950/pitv-0.0.9.tar.gz
+[2023-05-07 22:37:10] INFO root fetch - processPackages [pitv]: Downloading https://files.pythonhosted.org/packages/80/ae/c610107b1ba9388feb84ffbea2c5b8701344c871c415d4dffdb4565ae950/pitv-0.0.9.tar.gz
+[2023-05-07 22:37:10] INFO root fetch - processPackages [gradient-accumulator]: executing diffoscope
+[2023-05-07 22:37:10] INFO root fetch - processPackages [gradient-accumulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradient-accumulator-0.4.2.tar.gz tmp/gradient-accumulator-0.5.0.tar.gz --markdown 20230507/g/gradient-accumulator/0.4.2-0.5.0/diff.md --exclude *.pyd
+[2023-05-07 22:37:10] INFO root fetch - processPackages [xia-service]: Downloading https://files.pythonhosted.org/packages/8f/46/b0dab596619cbaf5f778e1bdf253c4f705324edba096842e65c12c9ace0e/xia_service-0.0.2-cp39-none-win_amd64.whl
+[2023-05-07 22:37:10] INFO root fetch - processPackages [mynacode]: Downloading https://files.pythonhosted.org/packages/e8/39/52e63b94c39b258d52de2b7845b81bd51ceca6a84fd05dc61c828b5b9e01/mynacode-1.0.95-py3-none-any.whl
+[2023-05-07 22:37:10] INFO root fetch - processPackages [matgl]: Downloading https://files.pythonhosted.org/packages/41/8d/07ae068420dfaa4eb4edca26d744c7900747789f09af1573f59a31bd9ccd/matgl-0.3.0.tar.gz
+[2023-05-07 22:37:10] INFO root fetch - processPackages [xia-service]: executing diffoscope
+[2023-05-07 22:37:10] INFO root fetch - processPackages [xia-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_service-0.0.1-cp39-none-win_amd64.whl.zip tmp/xia_service-0.0.2-cp39-none-win_amd64.whl.zip --markdown 20230507/x/xia-service/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 22:37:10] INFO root fetch - processPackages [scoobi]: Downloading https://files.pythonhosted.org/packages/ee/5a/b5416fda04082e89e92cfe83d62f0742efe39a7701636c2af0e075b6446e/scoobi-0.0.1.5.tar.gz
+[2023-05-07 22:37:10] INFO root fetch - processPackages [pitv]: executing diffoscope
+[2023-05-07 22:37:10] INFO root fetch - processPackages [pitv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pitv-0.0.8.tar.gz tmp/pitv-0.0.9.tar.gz --markdown 20230507/p/pitv/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 22:37:10] INFO root fetch - processPackages [pitv]: executing diffoscope
+[2023-05-07 22:37:10] INFO root fetch - processPackages [pitv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pitv-0.0.8.tar.gz tmp/pitv-0.0.9.tar.gz --markdown 20230507/p/pitv/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 22:37:10] INFO root fetch - processPackages [matgl]: executing diffoscope
+[2023-05-07 22:37:10] INFO root fetch - processPackages [matgl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matgl-0.2.1.tar.gz tmp/matgl-0.3.0.tar.gz --markdown 20230507/m/matgl/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-07 22:37:10] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-05-07 22:37:10] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.94-py3-none-any.whl.zip tmp/mynacode-1.0.95-py3-none-any.whl.zip --markdown 20230507/m/mynacode/1.0.94-1.0.95/diff.md --exclude *.pyd
+[2023-05-07 22:37:10] INFO root fetch - processPackages [scoobi]: executing diffoscope
+[2023-05-07 22:37:10] INFO root fetch - processPackages [scoobi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scoobi-0.0.1.4.tar.gz tmp/scoobi-0.0.1.5.tar.gz --markdown 20230507/s/scoobi/0.0.1.4-0.0.1.5/diff.md --exclude *.pyd
+[2023-05-07 22:37:11] INFO root fetch - main [MainThread]: End processing [py-tfl]: success
+[2023-05-07 22:37:11] INFO root fetch - main [MainThread]: End processing [gradient-accumulator]: success
+[2023-05-07 22:37:11] INFO root fetch - main [MainThread]: End processing [pitv]: success
+[2023-05-07 22:37:11] INFO root fetch - main [MainThread]: End processing [pitv]: success
+[2023-05-07 22:37:11] INFO root fetch - main [MainThread]: End processing [xia-service]: success
+[2023-05-07 22:37:11] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-05-07 22:37:12] INFO root fetch - main [MainThread]: End processing [matgl]: success
+[2023-05-07 22:37:12] INFO root fetch - main [MainThread]: End processing [scoobi]: success
+[2023-05-07 22:37:12] INFO root fetch - main [MainThread]: Store serial: [18009647]
