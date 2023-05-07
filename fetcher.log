@@ -11684,3 +11684,72 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 23:14:36] INFO root fetch - main [MainThread]: End processing [pyocd]: success
 [2023-05-07 23:14:36] INFO root fetch - main [MainThread]: End processing [pandera]: success
 [2023-05-07 23:14:36] INFO root fetch - main [MainThread]: Store serial: [18009790]
+[2023-05-07 23:19:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009790]
+[2023-05-07 23:19:45] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-07 23:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmbda-fastapi
+[2023-05-07 23:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: video-de-ferramentas-2023
+[2023-05-07 23:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyNukiBT
+[2023-05-07 23:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wg-utilities
+[2023-05-07 23:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: parsel-get-selector-text
+[2023-05-07 23:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fpyo2apk
+[2023-05-07 23:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: satsim
+[2023-05-07 23:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: parsel-get-selector-text
+[2023-05-07 23:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: finlab-crypto
+[2023-05-07 23:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pystarshade
+[2023-05-07 23:19:45] INFO root fetch - processPackages [pyNukiBT]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-07 23:19:45] WARNING root fetch - processPackages [video-de-ferramentas-2023]: Skipping, unable to determine old version
+[2023-05-07 23:19:45] INFO root fetch - processPackages [video-de-ferramentas-2023]: Start processing: aij-webcam
+[2023-05-07 23:19:45] INFO root fetch - main [MainThread]: End processing [video-de-ferramentas-2023] error
+[2023-05-07 23:19:45] INFO root fetch - processPackages [pystarshade]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-07 23:19:45] INFO root fetch - processPackages [fpyo2apk]: New version: [1.1] Old Version: [1.0]
+[2023-05-07 23:19:45] INFO root fetch - processPackages [parsel-get-selector-text]: New version: [0.5] Old Version: [0.4]
+[2023-05-07 23:19:45] INFO root fetch - processPackages [parsel-get-selector-text]: New version: [0.5] Old Version: [0.4]
+[2023-05-07 23:19:45] INFO root fetch - processPackages [llmbda-fastapi]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 23:19:45] INFO root fetch - processPackages [satsim]: New version: [0.15.1] Old Version: [0.15.0]
+[2023-05-07 23:19:45] INFO root fetch - processPackages [wg-utilities]: New version: [3.7.0] Old Version: [3.6.0]
+[2023-05-07 23:19:45] INFO root fetch - processPackages [aij-webcam]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-07 23:19:46] INFO root fetch - processPackages [finlab-crypto]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-07 23:19:46] INFO root fetch - processPackages [pystarshade]: executing diffoscope
+[2023-05-07 23:19:46] INFO root fetch - processPackages [pystarshade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystarshade-0.1.3.tar.gz tmp/pystarshade-0.1.4.tar.gz --markdown 20230507/p/pystarshade/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-07 23:19:46] INFO root fetch - processPackages [satsim]: Downloading https://files.pythonhosted.org/packages/d8/76/3b54de9cf5f3eccfe23aa203b25016469c779c9ae2689b0e944616d80d96/satsim-0.15.0.tar.gz
+[2023-05-07 23:19:46] INFO root fetch - processPackages [parsel-get-selector-text]: Downloading https://files.pythonhosted.org/packages/e1/c2/a9f56b973aa3da2d3a3ecffb75a4c303cf21ca7b1d7d394b32ae85bcf798/parsel_get_selector_text-0.4.tar.gz
+[2023-05-07 23:19:46] INFO root fetch - processPackages [aij-webcam]: executing diffoscope
+[2023-05-07 23:19:46] INFO root fetch - processPackages [aij-webcam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-webcam-1.1.8.tar.gz tmp/aij-webcam-1.1.9.tar.gz --markdown 20230507/a/aij-webcam/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-07 23:19:46] INFO root fetch - processPackages [parsel-get-selector-text]: Downloading https://files.pythonhosted.org/packages/e1/c2/a9f56b973aa3da2d3a3ecffb75a4c303cf21ca7b1d7d394b32ae85bcf798/parsel_get_selector_text-0.4.tar.gz
+[2023-05-07 23:19:46] INFO root fetch - processPackages [wg-utilities]: Downloading https://files.pythonhosted.org/packages/46/6c/3cfe8473bb04e74fae52157a67632bb926553b73799b57c23f75f02e3fa6/wg_utilities-3.6.0.tar.gz
+[2023-05-07 23:19:46] INFO root fetch - processPackages [fpyo2apk]: Downloading https://files.pythonhosted.org/packages/75/46/7559743f3569ae26f39130b978a2a6c874122a6806dac08441da16816678/fpyo2apk-1.0.tar.gz
+[2023-05-07 23:19:46] INFO root fetch - processPackages [finlab-crypto]: Downloading https://files.pythonhosted.org/packages/bb/da/3db0e1121e7fa5fe0cdb7d8905d03476394e84981b227659017c1d4375fd/finlab_crypto-0.2.8-py3-none-any.whl
+[2023-05-07 23:19:46] INFO root fetch - processPackages [pyNukiBT]: Downloading https://files.pythonhosted.org/packages/dc/aa/e875b5d2f6a295188887d905b40a101aa58c71a5e6247984b4279c3ef4f8/pynukibt-0.0.5.tar.gz
+[2023-05-07 23:19:46] INFO root fetch - processPackages [parsel-get-selector-text]: Downloading https://files.pythonhosted.org/packages/25/13/11ce7e56700b494396703932df454aac4a6dbb33d918ca5a224de45a0bd5/parsel_get_selector_text-0.5.tar.gz
+[2023-05-07 23:19:46] INFO root fetch - processPackages [parsel-get-selector-text]: Downloading https://files.pythonhosted.org/packages/25/13/11ce7e56700b494396703932df454aac4a6dbb33d918ca5a224de45a0bd5/parsel_get_selector_text-0.5.tar.gz
+[2023-05-07 23:19:46] INFO root fetch - processPackages [llmbda-fastapi]: executing diffoscope
+[2023-05-07 23:19:46] INFO root fetch - processPackages [llmbda-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmbda_fastapi-0.0.7.tar.gz tmp/llmbda_fastapi-0.0.8.tar.gz --markdown 20230507/l/llmbda-fastapi/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 23:19:46] INFO root fetch - processPackages [pyNukiBT]: executing diffoscope
+[2023-05-07 23:19:46] INFO root fetch - processPackages [pyNukiBT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynukibt-0.0.4.tar.gz tmp/pynukibt-0.0.5.tar.gz --markdown 20230507/p/pyNukiBT/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-07 23:19:46] INFO root fetch - processPackages [satsim]: Downloading https://files.pythonhosted.org/packages/d5/7d/807de5177f4c14951d9d5a6e096da3fafe9b7cb78b73b5cade9fe31d38b7/satsim-0.15.1.tar.gz
+[2023-05-07 23:19:46] INFO root fetch - processPackages [parsel-get-selector-text]: executing diffoscope
+[2023-05-07 23:19:46] INFO root fetch - processPackages [parsel-get-selector-text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsel_get_selector_text-0.4.tar.gz tmp/parsel_get_selector_text-0.5.tar.gz --markdown 20230507/p/parsel-get-selector-text/0.4-0.5/diff.md --exclude *.pyd
+[2023-05-07 23:19:46] INFO root fetch - processPackages [fpyo2apk]: Downloading https://files.pythonhosted.org/packages/dd/8a/01b84d9bb212ad4e0d62c4474d5a2358a37f4473e437663f4c6be1d3c924/fpyo2apk-1.1.tar.gz
+[2023-05-07 23:19:46] INFO root fetch - processPackages [parsel-get-selector-text]: executing diffoscope
+[2023-05-07 23:19:46] INFO root fetch - processPackages [parsel-get-selector-text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsel_get_selector_text-0.4.tar.gz tmp/parsel_get_selector_text-0.5.tar.gz --markdown 20230507/p/parsel-get-selector-text/0.4-0.5/diff.md --exclude *.pyd
+[2023-05-07 23:19:46] INFO root fetch - processPackages [wg-utilities]: Downloading https://files.pythonhosted.org/packages/1f/d0/50c6b5d45480ed483b82d19b8ba58566339302ae000e990b6c2d0f06d1ea/wg_utilities-3.7.0.tar.gz
+[2023-05-07 23:19:46] INFO root fetch - processPackages [satsim]: executing diffoscope
+[2023-05-07 23:19:46] INFO root fetch - processPackages [satsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satsim-0.15.0.tar.gz tmp/satsim-0.15.1.tar.gz --markdown 20230507/s/satsim/0.15.0-0.15.1/diff.md --exclude *.pyd
+[2023-05-07 23:19:46] INFO root fetch - processPackages [fpyo2apk]: executing diffoscope
+[2023-05-07 23:19:46] INFO root fetch - processPackages [fpyo2apk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fpyo2apk-1.0.tar.gz tmp/fpyo2apk-1.1.tar.gz --markdown 20230507/f/fpyo2apk/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-07 23:19:46] INFO root fetch - processPackages [finlab-crypto]: Downloading https://files.pythonhosted.org/packages/19/87/9c146ad7792f473965498444b048a9111068dd84215646631149e9d822ce/finlab_crypto-0.2.9-py3-none-any.whl
+[2023-05-07 23:19:46] INFO root fetch - processPackages [wg-utilities]: executing diffoscope
+[2023-05-07 23:19:46] INFO root fetch - processPackages [wg-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wg_utilities-3.6.0.tar.gz tmp/wg_utilities-3.7.0.tar.gz --markdown 20230507/w/wg-utilities/3.6.0-3.7.0/diff.md --exclude *.pyd
+[2023-05-07 23:19:46] INFO root fetch - processPackages [finlab-crypto]: executing diffoscope
+[2023-05-07 23:19:46] INFO root fetch - processPackages [finlab-crypto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finlab_crypto-0.2.8-py3-none-any.whl.zip tmp/finlab_crypto-0.2.9-py3-none-any.whl.zip --markdown 20230507/f/finlab-crypto/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-07 23:19:47] INFO root fetch - main [MainThread]: End processing [aij-webcam]: success
+[2023-05-07 23:19:47] INFO root fetch - main [MainThread]: End processing [pystarshade]: success
+[2023-05-07 23:19:47] INFO root fetch - main [MainThread]: End processing [llmbda-fastapi]: success
+[2023-05-07 23:19:47] INFO root fetch - main [MainThread]: End processing [parsel-get-selector-text]: success
+[2023-05-07 23:19:48] INFO root fetch - main [MainThread]: End processing [parsel-get-selector-text]: success
+[2023-05-07 23:19:48] INFO root fetch - main [MainThread]: End processing [pyNukiBT]: success
+[2023-05-07 23:19:48] INFO root fetch - main [MainThread]: End processing [finlab-crypto]: success
+[2023-05-07 23:19:49] INFO root fetch - main [MainThread]: End processing [wg-utilities]: success
+[2023-05-07 23:19:49] INFO root fetch - main [MainThread]: End processing [fpyo2apk]: success
+[2023-05-07 23:19:51] INFO root fetch - main [MainThread]: End processing [satsim]: success
+[2023-05-07 23:19:51] INFO root fetch - main [MainThread]: Store serial: [18009820]
