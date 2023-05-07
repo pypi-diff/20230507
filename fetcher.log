@@ -10267,3 +10267,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 20:41:41] INFO root fetch - main [MainThread]: End processing [dt-authentication-ente]: success
 [2023-05-07 20:41:42] INFO root fetch - main [MainThread]: End processing [khl]: success
 [2023-05-07 20:41:42] INFO root fetch - main [MainThread]: Store serial: [18008947]
+[2023-05-07 20:46:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008947]
+[2023-05-07 20:46:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 20:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-07 20:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dt-authentication-ente
+[2023-05-07 20:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tsx
+[2023-05-07 20:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BlockFrame
+[2023-05-07 20:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zkt
+[2023-05-07 20:46:51] INFO root fetch - processPackages [BlockFrame]: New version: [1.0.0] Old Version: [0.1.4]
+[2023-05-07 20:46:51] INFO root fetch - processPackages [dt-authentication-ente]: New version: [2.0.0] Old Version: [1.0.1]
+[2023-05-07 20:46:51] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230507.18.42.247566] Old Version: [20230507.17.39.646619]
+[2023-05-07 20:46:51] INFO root fetch - processPackages [tsx]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-07 20:46:51] INFO root fetch - processPackages [dt-authentication-ente]: executing diffoscope
+[2023-05-07 20:46:51] INFO root fetch - processPackages [dt-authentication-ente]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dt-authentication-ente-1.0.1.tar.gz tmp/dt-authentication-ente-2.0.0.tar.gz --markdown 20230507/d/dt-authentication-ente/1.0.1-2.0.0/diff.md --exclude *.pyd
+[2023-05-07 20:46:51] INFO root fetch - processPackages [zkt]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-07 20:46:51] INFO root fetch - processPackages [BlockFrame]: executing diffoscope
+[2023-05-07 20:46:51] INFO root fetch - processPackages [BlockFrame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BlockFrame-0.1.4.tar.gz tmp/BlockFrame-1.0.0.tar.gz --markdown 20230507/B/BlockFrame/0.1.4-1.0.0/diff.md --exclude *.pyd
+[2023-05-07 20:46:51] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/30/7c/4670055248ac40e35bd568846216b6f8e62f28e424ac3ca5ff50dcd0b52e/certora-cli-alpha-roy-CERT-1955-assertHits-20230507.17.39.646619.tar.gz
+[2023-05-07 20:46:51] INFO root fetch - processPackages [tsx]: Downloading https://files.pythonhosted.org/packages/8c/a7/4953def597a6dc44dc4a77b68a5f99a2be13d4049a8e741a31149f8542ae/tsx-0.1.2-py3-none-any.whl
+[2023-05-07 20:46:51] INFO root fetch - processPackages [zkt]: Downloading https://files.pythonhosted.org/packages/7b/e3/136b171738ac31f67cbb679c5b40d03e879125f8e6dbc5c1141545d663cb/zkt-1.0.2.tar.gz
+[2023-05-07 20:46:51] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 38474319>=10485760
+[2023-05-07 20:46:51] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-07 20:46:51] INFO root fetch - processPackages [tsx]: Downloading https://files.pythonhosted.org/packages/85/9b/d70539c744d384844a7779a5f61fd43703307936b7a7c059d298eaa9c0f3/tsx-0.1.3-py3-none-any.whl
+[2023-05-07 20:46:51] INFO root fetch - processPackages [zkt]: Downloading https://files.pythonhosted.org/packages/eb/67/5c7b3751117946acd1df5bee6a7a72e3ccf70a9fe02114e53416c3e63406/zkt-1.0.3.tar.gz
+[2023-05-07 20:46:52] INFO root fetch - processPackages [tsx]: executing diffoscope
+[2023-05-07 20:46:52] INFO root fetch - processPackages [tsx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsx-0.1.2-py3-none-any.whl.zip tmp/tsx-0.1.3-py3-none-any.whl.zip --markdown 20230507/t/tsx/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 20:46:52] INFO root fetch - processPackages [zkt]: executing diffoscope
+[2023-05-07 20:46:52] INFO root fetch - processPackages [zkt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zkt-1.0.2.tar.gz tmp/zkt-1.0.3.tar.gz --markdown 20230507/z/zkt/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-07 20:46:52] INFO root fetch - main [MainThread]: End processing [dt-authentication-ente]: success
+[2023-05-07 20:46:52] INFO root fetch - main [MainThread]: End processing [BlockFrame]: success
+[2023-05-07 20:46:53] INFO root fetch - main [MainThread]: End processing [tsx]: success
+[2023-05-07 20:46:53] INFO root fetch - main [MainThread]: End processing [zkt]: success
+[2023-05-07 20:46:53] INFO root fetch - main [MainThread]: Store serial: [18008961]
