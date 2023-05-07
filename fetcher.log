@@ -8271,3 +8271,70 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 17:22:41] INFO root fetch - main [MainThread]: End processing [tpcollections]: success
 [2023-05-07 17:22:52] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-05-07 17:22:52] INFO root fetch - main [MainThread]: Store serial: [18007816]
+[2023-05-07 17:27:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007816]
+[2023-05-07 17:28:00] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-07 17:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mixalime
+[2023-05-07 17:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: impose-cli
+[2023-05-07 17:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: evina
+[2023-05-07 17:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anylabeling-gpu
+[2023-05-07 17:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anylabeling
+[2023-05-07 17:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aio-rom
+[2023-05-07 17:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tumfl
+[2023-05-07 17:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tumfl
+[2023-05-07 17:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: impose-cli
+[2023-05-07 17:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: twitter-2-album
+[2023-05-07 17:28:01] INFO root fetch - processPackages [evina]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-07 17:28:01] INFO root fetch - processPackages [impose-cli]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-07 17:28:01] INFO root fetch - processPackages [tumfl]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 17:28:01] INFO root fetch - processPackages [aio-rom]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-07 17:28:01] INFO root fetch - processPackages [anylabeling]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-07 17:28:01] INFO root fetch - processPackages [mixalime]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-07 17:28:01] INFO root fetch - processPackages [twitter-2-album]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 17:28:01] INFO root fetch - processPackages [impose-cli]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-07 17:28:01] INFO root fetch - processPackages [anylabeling-gpu]: New version: [0.2.23] Old Version: [0.2.22]
+[2023-05-07 17:28:01] INFO root fetch - processPackages [tumfl]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 17:28:01] INFO root fetch - processPackages [mixalime]: executing diffoscope
+[2023-05-07 17:28:01] INFO root fetch - processPackages [mixalime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixalime-2.9.8.tar.gz tmp/mixalime-2.9.9.tar.gz --markdown 20230507/m/mixalime/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-07 17:28:01] INFO root fetch - processPackages [twitter-2-album]: executing diffoscope
+[2023-05-07 17:28:01] INFO root fetch - processPackages [twitter-2-album]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_2_album-0.0.8.tar.gz tmp/twitter_2_album-0.0.9.tar.gz --markdown 20230507/t/twitter-2-album/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 17:28:01] INFO root fetch - processPackages [tumfl]: Downloading https://files.pythonhosted.org/packages/1c/f6/51d6f34ce304e223eed7045ac012ab2788655615d1cbedbcda38487d44a2/tumfl-0.1.0.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [tumfl]: Downloading https://files.pythonhosted.org/packages/1c/f6/51d6f34ce304e223eed7045ac012ab2788655615d1cbedbcda38487d44a2/tumfl-0.1.0.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [aio-rom]: Downloading https://files.pythonhosted.org/packages/6f/4b/4a9261f8c08d48db8995dc343d31bb7d366cd74a4903ddc65ea94e3f8e7d/aio-rom-0.1.5.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/42/30/905d0fffab23c77bb74416b7af5a94384c349998fe31ec9ec537c1a734f5/anylabeling-0.2.8.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [evina]: Downloading https://files.pythonhosted.org/packages/28/2d/e554f490893c756d144be049981ad924d41d72111e6cb4c0043c99170876/evina-1.0.3.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [tumfl]: Downloading https://files.pythonhosted.org/packages/9a/2d/59eb5f3c16d9fbce6e1880c3c09451d8aebdb640fb7898a74d7efa82c7f8/tumfl-0.1.1.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [tumfl]: Downloading https://files.pythonhosted.org/packages/9a/2d/59eb5f3c16d9fbce6e1880c3c09451d8aebdb640fb7898a74d7efa82c7f8/tumfl-0.1.1.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [anylabeling-gpu]: Downloading https://files.pythonhosted.org/packages/7a/0a/99a68da610c6bfa49669a2d50de32fac1a572c47da891c3e8c1cd3f55132/anylabeling_gpu-0.2.23-py3-none-any.whl
+[2023-05-07 17:28:01] INFO root fetch - processPackages [evina]: executing diffoscope
+[2023-05-07 17:28:01] INFO root fetch - processPackages [evina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evina-1.0.2.tar.gz tmp/evina-1.0.3.tar.gz --markdown 20230507/e/evina/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-07 17:28:01] INFO root fetch - processPackages [impose-cli]: Downloading https://files.pythonhosted.org/packages/9a/8d/d2a3c68ed6777860f2868e226a4be302afa90bddd048f7c6660fc2a34a51/impose-cli-0.2.4.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [impose-cli]: Downloading https://files.pythonhosted.org/packages/9a/8d/d2a3c68ed6777860f2868e226a4be302afa90bddd048f7c6660fc2a34a51/impose-cli-0.2.4.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [aio-rom]: Downloading https://files.pythonhosted.org/packages/d2/3e/c8e89d9aa0691e5dc3cb5d7f3f16e0cbf52202a9e05eb6ac096fcfa67b7a/aio_rom-0.1.6.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [anylabeling-gpu]: executing diffoscope
+[2023-05-07 17:28:01] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/a1/f6/b481803051cb87f4ac45a08869fbef2f0dc3c7541bf3abecb466191b1f2e/anylabeling-0.2.9.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [anylabeling-gpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling_gpu-0.2.22-py3-none-any.whl.zip tmp/anylabeling_gpu-0.2.23-py3-none-any.whl.zip --markdown 20230507/a/anylabeling-gpu/0.2.22-0.2.23/diff.md --exclude *.pyd
+[2023-05-07 17:28:01] INFO root fetch - processPackages [tumfl]: executing diffoscope
+[2023-05-07 17:28:01] INFO root fetch - processPackages [tumfl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tumfl-0.1.0.tar.gz tmp/tumfl-0.1.1.tar.gz --markdown 20230507/t/tumfl/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 17:28:01] INFO root fetch - processPackages [tumfl]: executing diffoscope
+[2023-05-07 17:28:01] INFO root fetch - processPackages [tumfl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tumfl-0.1.0.tar.gz tmp/tumfl-0.1.1.tar.gz --markdown 20230507/t/tumfl/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 17:28:01] INFO root fetch - processPackages [aio-rom]: executing diffoscope
+[2023-05-07 17:28:01] INFO root fetch - processPackages [aio-rom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aio-rom-0.1.5.tar.gz tmp/aio_rom-0.1.6.tar.gz --markdown 20230507/a/aio-rom/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-07 17:28:01] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-05-07 17:28:01] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.2.8.tar.gz tmp/anylabeling-0.2.9.tar.gz --markdown 20230507/a/anylabeling/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-07 17:28:01] INFO root fetch - processPackages [impose-cli]: Downloading https://files.pythonhosted.org/packages/02/3e/524094a17d79cc5dcbdbb8d64ab979b61e3011d7256fd7c9e9ea442acc54/impose-cli-0.2.5.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [impose-cli]: Downloading https://files.pythonhosted.org/packages/02/3e/524094a17d79cc5dcbdbb8d64ab979b61e3011d7256fd7c9e9ea442acc54/impose-cli-0.2.5.tar.gz
+[2023-05-07 17:28:01] INFO root fetch - processPackages [impose-cli]: executing diffoscope
+[2023-05-07 17:28:01] INFO root fetch - processPackages [impose-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/impose-cli-0.2.4.tar.gz tmp/impose-cli-0.2.5.tar.gz --markdown 20230507/i/impose-cli/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-07 17:28:01] INFO root fetch - processPackages [impose-cli]: executing diffoscope
+[2023-05-07 17:28:01] INFO root fetch - processPackages [impose-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/impose-cli-0.2.4.tar.gz tmp/impose-cli-0.2.5.tar.gz --markdown 20230507/i/impose-cli/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-07 17:28:02] INFO root fetch - main [MainThread]: End processing [twitter-2-album]: success
+[2023-05-07 17:28:02] INFO root fetch - main [MainThread]: End processing [mixalime]: success
+[2023-05-07 17:28:03] INFO root fetch - main [MainThread]: End processing [impose-cli]: success
+[2023-05-07 17:28:03] INFO root fetch - main [MainThread]: End processing [evina]: success
+[2023-05-07 17:28:03] INFO root fetch - main [MainThread]: End processing [aio-rom]: success
+[2023-05-07 17:28:03] INFO root fetch - main [MainThread]: End processing [tumfl]: success
+[2023-05-07 17:28:03] INFO root fetch - main [MainThread]: End processing [impose-cli]: success
+[2023-05-07 17:28:03] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
+[2023-05-07 17:28:04] INFO root fetch - main [MainThread]: End processing [tumfl]: success
+[2023-05-07 17:28:08] INFO root fetch - main [MainThread]: End processing [anylabeling-gpu]: success
+[2023-05-07 17:28:08] INFO root fetch - main [MainThread]: Store serial: [18007846]
