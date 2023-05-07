@@ -9876,3 +9876,75 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 19:59:56] INFO root fetch - main [MainThread]: End processing [FinderZ]: success
 [2023-05-07 19:59:57] INFO root fetch - main [MainThread]: End processing [constellate]: success
 [2023-05-07 19:59:57] INFO root fetch - main [MainThread]: Store serial: [18008696]
+[2023-05-07 20:05:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18008696]
+[2023-05-07 20:05:06] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-07 20:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cluedin
+[2023-05-07 20:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nexus-utilities
+[2023-05-07 20:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wagtail-photography
+[2023-05-07 20:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nographs
+[2023-05-07 20:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: conding
+[2023-05-07 20:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: parse-stages
+[2023-05-07 20:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyVLMP
+[2023-05-07 20:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: audit-flask
+[2023-05-07 20:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sidetrek
+[2023-05-07 20:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ogc-na
+[2023-05-07 20:05:06] INFO root fetch - processPackages [cluedin]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-07 20:05:06] INFO root fetch - processPackages [parse-stages]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-07 20:05:06] INFO root fetch - processPackages [wagtail-photography]: New version: [0.4] Old Version: [0.3]
+[2023-05-07 20:05:06] INFO root fetch - processPackages [nographs]: New version: [3.1.0] Old Version: [3.0.3]
+[2023-05-07 20:05:06] INFO root fetch - processPackages [audit-flask]: New version: [0.24] Old Version: [0.23]
+[2023-05-07 20:05:06] INFO root fetch - processPackages [pyVLMP]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-07 20:05:06] WARNING root fetch - processPackages [conding]: Skipping, unable to determine old version
+[2023-05-07 20:05:06] INFO root fetch - processPackages [ogc-na]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-07 20:05:06] INFO root fetch - processPackages [conding]: Start processing: 6captcha
+[2023-05-07 20:05:06] INFO root fetch - main [MainThread]: End processing [conding] error
+[2023-05-07 20:05:06] INFO root fetch - processPackages [nexus-utilities]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-07 20:05:06] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 20:05:06] WARNING root fetch - processPackages [6captcha]: Skipping, unable to determine old version
+[2023-05-07 20:05:06] INFO root fetch - processPackages [6captcha]: Start processing: code-aimpetus
+[2023-05-07 20:05:06] INFO root fetch - main [MainThread]: End processing [6captcha] error
+[2023-05-07 20:05:06] INFO root fetch - processPackages [code-aimpetus]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 20:05:06] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-07 20:05:06] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230507/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 20:05:06] INFO root fetch - processPackages [code-aimpetus]: executing diffoscope
+[2023-05-07 20:05:06] INFO root fetch - processPackages [code-aimpetus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code_aimpetus-0.1.0-py3-none-any.whl.zip tmp/code_aimpetus-0.1.1-py3-none-any.whl.zip --markdown 20230507/c/code-aimpetus/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 20:05:06] INFO root fetch - processPackages [cluedin]: Downloading https://files.pythonhosted.org/packages/b3/70/f576fc709179e9f5e7284c1a7140fc4a229ade04dbbcf13227ab5f68f1cb/cluedin-0.2.1.tar.gz
+[2023-05-07 20:05:06] INFO root fetch - processPackages [nographs]: Downloading https://files.pythonhosted.org/packages/02/d5/9ad4dd833c973a5ee434e03d51be1de310188be95bd812f40f8c2b9174dc/nographs-3.0.3.tar.gz
+[2023-05-07 20:05:06] INFO root fetch - processPackages [ogc-na]: Downloading https://files.pythonhosted.org/packages/e8/5b/e8570707426acad68a9faed9aab410dc971637025269a897b0da22b5481b/ogc_na-0.1.6.tar.gz
+[2023-05-07 20:05:06] INFO root fetch - processPackages [nexus-utilities]: Downloading https://files.pythonhosted.org/packages/da/67/6f21308dee47ca1981a272050e406f266d2fdaeec04614268afa8acc5288/nexus-utilities-0.1.7.tar.gz
+[2023-05-07 20:05:06] INFO root fetch - processPackages [parse-stages]: Downloading https://files.pythonhosted.org/packages/51/29/aa81957f67612cf87d6d2cc76272a0dfb1f440f99c3e813c268dd3f9c4b9/parse_stages-0.1.2.tar.gz
+[2023-05-07 20:05:06] INFO root fetch - processPackages [pyVLMP]: Downloading https://files.pythonhosted.org/packages/60/a3/557fb0af2a1ff229dd77587b46dc1fa940681c343314cf01c805bf1f2061/pyVLMP-1.0.1.tar.gz
+[2023-05-07 20:05:06] INFO root fetch - processPackages [audit-flask]: Downloading https://files.pythonhosted.org/packages/9c/0d/73b0b9aadb0d385a5a1cd67d5eb49e6a9eddbfb1a9adcbf23da674568d77/audit_flask-0.23.tar.gz
+[2023-05-07 20:05:06] INFO root fetch - processPackages [wagtail-photography]: Downloading https://files.pythonhosted.org/packages/9b/e8/8438c8c9226a2546f59c934988564fa209b87f8c02162dd01e655472d25c/wagtail-photography-0.4.tar.gz
+[2023-05-07 20:05:07] INFO root fetch - main [MainThread]: End processing [code-aimpetus]: success
+[2023-05-07 20:05:07] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-07 20:05:07] INFO root fetch - processPackages [wagtail-photography]: executing diffoscope
+[2023-05-07 20:05:07] INFO root fetch - processPackages [wagtail-photography]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-photography-0.3.tar.gz tmp/wagtail-photography-0.4.tar.gz --markdown 20230507/w/wagtail-photography/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-07 20:05:07] INFO root fetch - processPackages [ogc-na]: executing diffoscope
+[2023-05-07 20:05:07] INFO root fetch - processPackages [ogc-na]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogc_na-0.1.5.tar.gz tmp/ogc_na-0.1.6.tar.gz --markdown 20230507/o/ogc-na/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-07 20:05:07] INFO root fetch - processPackages [cluedin]: executing diffoscope
+[2023-05-07 20:05:07] INFO root fetch - processPackages [cluedin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluedin-0.2.0.tar.gz tmp/cluedin-0.2.1.tar.gz --markdown 20230507/c/cluedin/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-07 20:05:07] INFO root fetch - processPackages [pyVLMP]: Downloading https://files.pythonhosted.org/packages/e6/50/ce771c473b5dab91bd48220b446cf19f4de42b10b8d58216fe9e7e7b0599/pyVLMP-1.0.2.tar.gz
+[2023-05-07 20:05:08] INFO root fetch - processPackages [audit-flask]: Downloading https://files.pythonhosted.org/packages/62/5d/c5284b707d0104e1ba0937368e2b2862a8d58064937c4e8ae72c10bb7af4/audit_flask-0.24-py3-none-any.whl
+[2023-05-07 20:05:08] INFO root fetch - processPackages [pyVLMP]: executing diffoscope
+[2023-05-07 20:05:08] INFO root fetch - processPackages [parse-stages]: Downloading https://files.pythonhosted.org/packages/0b/3f/e24d1a8e814c7386f3918a08756ae2075254caac208316b0e36fdc73786f/parse_stages-0.1.3.tar.gz
+[2023-05-07 20:05:08] INFO root fetch - processPackages [pyVLMP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyVLMP-1.0.1.tar.gz tmp/pyVLMP-1.0.2.tar.gz --markdown 20230507/p/pyVLMP/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-07 20:05:08] INFO root fetch - processPackages [nexus-utilities]: Downloading https://files.pythonhosted.org/packages/f6/1b/02711ea9409834f53ba4202206a503eadaaa1e9e9bdeff55030f7dc5104b/nexus-utilities-0.1.8.tar.gz
+[2023-05-07 20:05:08] INFO root fetch - processPackages [nographs]: Downloading https://files.pythonhosted.org/packages/fa/16/881aff2b0de3c0a4f3a27e0a23bd568312e543d8303619aabdc265ad41c1/nographs-3.1.0.tar.gz
+[2023-05-07 20:05:08] INFO root fetch - processPackages [audit-flask]: executing diffoscope
+[2023-05-07 20:05:08] INFO root fetch - processPackages [audit-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audit_flask-0.23.tar.gz tmp/audit_flask-0.24-py3-none-any.whl.zip --markdown 20230507/a/audit-flask/0.23-0.24/diff.md --exclude *.pyd
+[2023-05-07 20:05:08] INFO root fetch - processPackages [parse-stages]: executing diffoscope
+[2023-05-07 20:05:08] INFO root fetch - processPackages [parse-stages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parse_stages-0.1.2.tar.gz tmp/parse_stages-0.1.3.tar.gz --markdown 20230507/p/parse-stages/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 20:05:08] INFO root fetch - processPackages [nexus-utilities]: executing diffoscope
+[2023-05-07 20:05:08] INFO root fetch - processPackages [nexus-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus-utilities-0.1.7.tar.gz tmp/nexus-utilities-0.1.8.tar.gz --markdown 20230507/n/nexus-utilities/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-07 20:05:08] INFO root fetch - processPackages [nographs]: executing diffoscope
+[2023-05-07 20:05:08] INFO root fetch - processPackages [nographs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nographs-3.0.3.tar.gz tmp/nographs-3.1.0.tar.gz --markdown 20230507/n/nographs/3.0.3-3.1.0/diff.md --exclude *.pyd
+[2023-05-07 20:05:08] INFO root fetch - main [MainThread]: End processing [cluedin]: success
+[2023-05-07 20:05:09] INFO root fetch - main [MainThread]: End processing [ogc-na]: success
+[2023-05-07 20:05:09] INFO root fetch - main [MainThread]: End processing [audit-flask]: success
+[2023-05-07 20:05:09] INFO root fetch - main [MainThread]: End processing [nexus-utilities]: success
+[2023-05-07 20:05:09] INFO root fetch - main [MainThread]: End processing [parse-stages]: success
+[2023-05-07 20:05:09] INFO root fetch - main [MainThread]: End processing [wagtail-photography]: success
+[2023-05-07 20:05:09] INFO root fetch - main [MainThread]: End processing [nographs]: success
+[2023-05-07 20:05:11] INFO root fetch - main [MainThread]: End processing [pyVLMP]: success
+[2023-05-07 20:05:11] INFO root fetch - main [MainThread]: Store serial: [18008732]
