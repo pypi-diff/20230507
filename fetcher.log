@@ -7732,3 +7732,25 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 16:29:02] INFO root fetch - main [MainThread]: End processing [sphinx-ansible-theme]: success
 [2023-05-07 16:29:14] INFO root fetch - main [MainThread]: End processing [ipyreact]: success
 [2023-05-07 16:29:14] INFO root fetch - main [MainThread]: Store serial: [18007517]
+[2023-05-07 16:34:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007517]
+[2023-05-07 16:34:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 16:34:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elasticsearch-faker
+[2023-05-07 16:34:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aws-lambda-stream
+[2023-05-07 16:34:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-kit-annotation
+[2023-05-07 16:34:23] INFO root fetch - processPackages [aws-lambda-stream]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 16:34:23] INFO root fetch - processPackages [elasticsearch-faker]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-07 16:34:23] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: New version: [20230507.14.33.454532] Old Version: [20230503.13.59.520988]
+[2023-05-07 16:34:23] INFO root fetch - processPackages [elasticsearch-faker]: Downloading https://files.pythonhosted.org/packages/05/bf/a69435bc0a5b15e251b615d331985eb82bdfe9147fe42896d2d8c8aca95b/elasticsearch-faker-0.2.0.tar.gz
+[2023-05-07 16:34:23] INFO root fetch - processPackages [aws-lambda-stream]: Downloading https://files.pythonhosted.org/packages/22/8f/dcb5ba98230515a1199f83cfdb868fe7f1045540643bddbfe4b5e66b92be/aws_lambda_stream-1.0.8.tar.gz
+[2023-05-07 16:34:23] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: Downloading https://files.pythonhosted.org/packages/53/54/005377f1886e4ab96fe102f44d30d0b29ca0a08d2f1908814e0fa367acc2/certora-cli-alpha-kit-annotation-20230503.13.59.520988.tar.gz
+[2023-05-07 16:34:23] WARNING root fetch - processPackages [certora-cli-alpha-kit-annotation]: Skipping package: exceeds size limit 38379567>=10485760
+[2023-05-07 16:34:23] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-kit-annotation] error
+[2023-05-07 16:34:23] INFO root fetch - processPackages [aws-lambda-stream]: Downloading https://files.pythonhosted.org/packages/da/15/c31ca0eb5f5909e28e4231087916245fa809168fa902c34c9df8c1c94268/aws_lambda_stream-1.0.9.tar.gz
+[2023-05-07 16:34:23] INFO root fetch - processPackages [elasticsearch-faker]: Downloading https://files.pythonhosted.org/packages/35/3d/b8865ec3972d2aa0f38b2a5b24d8216a2a5bfa05145af02a0539c3e504d0/elasticsearch-faker-0.3.0.tar.gz
+[2023-05-07 16:34:24] INFO root fetch - processPackages [aws-lambda-stream]: executing diffoscope
+[2023-05-07 16:34:24] INFO root fetch - processPackages [aws-lambda-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_lambda_stream-1.0.8.tar.gz tmp/aws_lambda_stream-1.0.9.tar.gz --markdown 20230507/a/aws-lambda-stream/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 16:34:24] INFO root fetch - processPackages [elasticsearch-faker]: executing diffoscope
+[2023-05-07 16:34:24] INFO root fetch - processPackages [elasticsearch-faker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elasticsearch-faker-0.2.0.tar.gz tmp/elasticsearch-faker-0.3.0.tar.gz --markdown 20230507/e/elasticsearch-faker/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-07 16:34:25] INFO root fetch - main [MainThread]: End processing [aws-lambda-stream]: success
+[2023-05-07 16:34:25] INFO root fetch - main [MainThread]: End processing [elasticsearch-faker]: success
+[2023-05-07 16:34:25] INFO root fetch - main [MainThread]: Store serial: [18007527]
