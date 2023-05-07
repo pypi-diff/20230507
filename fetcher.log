@@ -2658,3 +2658,34 @@
 [2023-05-07 06:30:12] INFO root fetch - processPackages [start-html-tag-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/start_html_tag_helpers-0.0.2.tar.gz tmp/start_html_tag_helpers-0.0.3.tar.gz --markdown 20230507/s/start-html-tag-helpers/0.0.2-0.0.3/diff.md --exclude *.pyd
 [2023-05-07 06:30:13] INFO root fetch - main [MainThread]: End processing [start-html-tag-helpers]: success
 [2023-05-07 06:30:13] INFO root fetch - main [MainThread]: Store serial: [18004068]
+[2023-05-07 06:35:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004068]
+[2023-05-07 06:35:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 06:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: c65faucet
+[2023-05-07 06:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: silobuster
+[2023-05-07 06:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dataset-viewer
+[2023-05-07 06:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: k1lib
+[2023-05-07 06:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: auptitcafe
+[2023-05-07 06:35:21] INFO root fetch - processPackages [dataset-viewer]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-07 06:35:21] INFO root fetch - processPackages [k1lib]: New version: [1.3.6.4] Old Version: [1.3.6.3]
+[2023-05-07 06:35:21] INFO root fetch - processPackages [c65faucet]: New version: [1.0.52] Old Version: [1.0.51]
+[2023-05-07 06:35:21] INFO root fetch - processPackages [silobuster]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-07 06:35:21] WARNING root fetch - processPackages [auptitcafe]: Skipping, unable to determine old version
+[2023-05-07 06:35:21] INFO root fetch - main [MainThread]: End processing [auptitcafe] error
+[2023-05-07 06:35:21] INFO root fetch - processPackages [k1lib]: Downloading https://files.pythonhosted.org/packages/bd/cc/5cd27c6f575ed9f6c7926e5bc8193173597cf9cc303a70ceee021b5e0bf9/k1lib-1.3.6.3-py3-none-any.whl
+[2023-05-07 06:35:21] INFO root fetch - processPackages [dataset-viewer]: Downloading https://files.pythonhosted.org/packages/f6/bf/997532046f9782f01d1d9c5f273d97b6eed7218128d407efaa5de58db6cd/dataset-viewer-0.1.2.tar.gz
+[2023-05-07 06:35:21] INFO root fetch - processPackages [silobuster]: Downloading https://files.pythonhosted.org/packages/4d/36/1d06c15fddb4bd53b13a17960d7220606cac0ffbff8c8564e699fea0fec3/silobuster-0.1.3.tar.gz
+[2023-05-07 06:35:21] INFO root fetch - processPackages [dataset-viewer]: executing diffoscope
+[2023-05-07 06:35:21] INFO root fetch - processPackages [dataset-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataset-viewer-0.1.1.tar.gz tmp/dataset-viewer-0.1.2.tar.gz --markdown 20230507/d/dataset-viewer/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-07 06:35:21] INFO root fetch - processPackages [silobuster]: executing diffoscope
+[2023-05-07 06:35:21] INFO root fetch - processPackages [silobuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silobuster-0.1.2.tar.gz tmp/silobuster-0.1.3.tar.gz --markdown 20230507/s/silobuster/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 06:35:21] INFO root fetch - processPackages [c65faucet]: Downloading https://files.pythonhosted.org/packages/7d/ff/08295d1c49f27d9558b4c7d9a30ce73426c86b80dea73891b96939efd570/c65faucet-1.0.52.tar.gz
+[2023-05-07 06:35:22] INFO root fetch - processPackages [c65faucet]: executing diffoscope
+[2023-05-07 06:35:22] INFO root fetch - processPackages [c65faucet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c65faucet-1.0.51.tar.gz tmp/c65faucet-1.0.52.tar.gz --markdown 20230507/c/c65faucet/1.0.51-1.0.52/diff.md --exclude *.pyd
+[2023-05-07 06:35:22] INFO root fetch - main [MainThread]: End processing [silobuster]: success
+[2023-05-07 06:35:22] INFO root fetch - main [MainThread]: End processing [dataset-viewer]: success
+[2023-05-07 06:35:23] INFO root fetch - processPackages [k1lib]: Downloading https://files.pythonhosted.org/packages/fc/2e/fb9a51315d7ab7145e991bfafd49c1fcc61b8569edcb06b1ed27f000b037/k1lib-1.3.6.4-py3-none-any.whl
+[2023-05-07 06:35:23] INFO root fetch - processPackages [k1lib]: executing diffoscope
+[2023-05-07 06:35:23] INFO root fetch - processPackages [k1lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/k1lib-1.3.6.3-py3-none-any.whl.zip tmp/k1lib-1.3.6.4-py3-none-any.whl.zip --markdown 20230507/k/k1lib/1.3.6.3-1.3.6.4/diff.md --exclude *.pyd
+[2023-05-07 06:35:24] INFO root fetch - main [MainThread]: End processing [k1lib]: success
+[2023-05-07 06:35:25] INFO root fetch - main [MainThread]: End processing [c65faucet]: success
+[2023-05-07 06:35:25] INFO root fetch - main [MainThread]: Store serial: [18004085]
