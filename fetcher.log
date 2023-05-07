@@ -4767,3 +4767,46 @@
 [2023-05-07 11:22:10] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-05-07 11:22:35] INFO root fetch - main [MainThread]: End processing [django-eremaea2]: success
 [2023-05-07 11:22:35] INFO root fetch - main [MainThread]: Store serial: [18005459]
+[2023-05-07 11:27:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005459]
+[2023-05-07 11:27:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-07 11:27:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: punctfix
+[2023-05-07 11:27:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wordx
+[2023-05-07 11:27:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyturf
+[2023-05-07 11:27:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tksheet
+[2023-05-07 11:27:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bambooai
+[2023-05-07 11:27:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Jvav
+[2023-05-07 11:27:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Pyomic
+[2023-05-07 11:27:44] INFO root fetch - processPackages [punctfix]: New version: [0.10.0] Old Version: [0.0.9]
+[2023-05-07 11:27:44] INFO root fetch - processPackages [Pyomic]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-07 11:27:44] INFO root fetch - processPackages [Jvav]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-07 11:27:44] INFO root fetch - processPackages [pyturf]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-05-07 11:27:44] INFO root fetch - processPackages [wordx]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-07 11:27:44] WARNING root fetch - processPackages [bambooai]: Skipping, unable to determine old version
+[2023-05-07 11:27:44] INFO root fetch - main [MainThread]: End processing [bambooai] error
+[2023-05-07 11:27:44] INFO root fetch - processPackages [tksheet]: New version: [6.1.2] Old Version: [6.1.1]
+[2023-05-07 11:27:44] INFO root fetch - processPackages [Jvav]: executing diffoscope
+[2023-05-07 11:27:44] INFO root fetch - processPackages [Jvav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jvav-1.2.8.tar.gz tmp/Jvav-1.2.9.tar.gz --markdown 20230507/J/Jvav/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-07 11:27:44] INFO root fetch - processPackages [punctfix]: Downloading https://files.pythonhosted.org/packages/c2/c2/facd6664c55b2a9173ccc2d2c18a55efc265a51e27a5100c6534a6cc5e03/punctfix-0.0.9.tar.gz
+[2023-05-07 11:27:44] INFO root fetch - processPackages [Pyomic]: Downloading https://files.pythonhosted.org/packages/a2/62/acc66730be61624467d2bfc23b0800c6bda01b6da950ad6a1741a3ca1ee2/Pyomic-1.2.8-py3-none-any.whl
+[2023-05-07 11:27:44] INFO root fetch - processPackages [pyturf]: Downloading https://files.pythonhosted.org/packages/c8/50/9d65453107938808717a979bdc7508bf7acd0a7ddddafcf19394bc5b2708/pyturf-0.6.3.tar.gz
+[2023-05-07 11:27:44] INFO root fetch - processPackages [wordx]: Downloading https://files.pythonhosted.org/packages/50/23/bbcaca4b8b054718c3146399e0ea31e707f8d7ca6164de0b57a834a6ce40/wordx-0.2.3.tar.gz
+[2023-05-07 11:27:44] INFO root fetch - processPackages [tksheet]: Downloading https://files.pythonhosted.org/packages/5f/76/12f7c28765f5aa5f685d660ef412d52a54e6a8795acf5abf13c4aff1ddbf/tksheet-6.1.2.tar.gz
+[2023-05-07 11:27:44] WARNING root fetch - processPackages [Pyomic]: Skipping package: exceeds size limit 15984806>=10485760
+[2023-05-07 11:27:44] INFO root fetch - main [MainThread]: End processing [Pyomic] error
+[2023-05-07 11:27:44] INFO root fetch - processPackages [tksheet]: executing diffoscope
+[2023-05-07 11:27:44] INFO root fetch - processPackages [tksheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tksheet-6.1.1.tar.gz tmp/tksheet-6.1.2.tar.gz --markdown 20230507/t/tksheet/6.1.1-6.1.2/diff.md --exclude *.pyd
+[2023-05-07 11:27:45] INFO root fetch - processPackages [punctfix]: Downloading https://files.pythonhosted.org/packages/04/85/71ba504256c328d49d17542acd91404903306aeb16ce84921e159866d4e6/punctfix-0.10.0.tar.gz
+[2023-05-07 11:27:45] INFO root fetch - processPackages [pyturf]: Downloading https://files.pythonhosted.org/packages/69/4b/a0881d3e8ad43eef8f0d3e5891b347673eca5a9a522ad1f1323189041bc8/pyturf-0.6.4.tar.gz
+[2023-05-07 11:27:45] INFO root fetch - processPackages [wordx]: Downloading https://files.pythonhosted.org/packages/b9/e8/b7baaf246cb465700964acc55492f89514975e7c0f34c4d21c177a773033/wordx-0.2.4.tar.gz
+[2023-05-07 11:27:45] INFO root fetch - processPackages [punctfix]: executing diffoscope
+[2023-05-07 11:27:45] INFO root fetch - processPackages [punctfix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/punctfix-0.0.9.tar.gz tmp/punctfix-0.10.0.tar.gz --markdown 20230507/p/punctfix/0.0.9-0.10.0/diff.md --exclude *.pyd
+[2023-05-07 11:27:45] INFO root fetch - processPackages [pyturf]: executing diffoscope
+[2023-05-07 11:27:45] INFO root fetch - processPackages [pyturf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyturf-0.6.3.tar.gz tmp/pyturf-0.6.4.tar.gz --markdown 20230507/p/pyturf/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-05-07 11:27:45] INFO root fetch - processPackages [wordx]: executing diffoscope
+[2023-05-07 11:27:45] INFO root fetch - processPackages [wordx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wordx-0.2.3.tar.gz tmp/wordx-0.2.4.tar.gz --markdown 20230507/w/wordx/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-07 11:27:46] INFO root fetch - main [MainThread]: End processing [punctfix]: success
+[2023-05-07 11:27:46] INFO root fetch - main [MainThread]: End processing [tksheet]: success
+[2023-05-07 11:27:46] INFO root fetch - main [MainThread]: End processing [Jvav]: success
+[2023-05-07 11:27:47] INFO root fetch - main [MainThread]: End processing [wordx]: success
+[2023-05-07 11:28:15] INFO root fetch - main [MainThread]: End processing [pyturf]: success
+[2023-05-07 11:28:15] INFO root fetch - main [MainThread]: Store serial: [18005480]
