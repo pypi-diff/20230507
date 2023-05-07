@@ -3720,3 +3720,29 @@
 [2023-05-07 09:14:06] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2023-05-07 09:14:13] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-05-07 09:14:13] INFO root fetch - main [MainThread]: Store serial: [18004781]
+[2023-05-07 09:19:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004781]
+[2023-05-07 09:19:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 09:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfmc
+[2023-05-07 09:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: import-wrappers
+[2023-05-07 09:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streetscope
+[2023-05-07 09:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wheeldiff
+[2023-05-07 09:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tfq-nightly
+[2023-05-07 09:19:22] WARNING root fetch - processPackages [pyfmc]: Skipping, unable to determine old version
+[2023-05-07 09:19:22] INFO root fetch - main [MainThread]: End processing [pyfmc] error
+[2023-05-07 09:19:22] INFO root fetch - processPackages [streetscope]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-05-07 09:19:22] WARNING root fetch - processPackages [import-wrappers]: Skipping, unable to determine old version
+[2023-05-07 09:19:22] INFO root fetch - main [MainThread]: End processing [import-wrappers] error
+[2023-05-07 09:19:22] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230506] Old Version: [0.7.3.dev20230505]
+[2023-05-07 09:19:22] INFO root fetch - processPackages [wheeldiff]: New version: [2023.5.7.7.15] Old Version: [2023.5.7.7]
+[2023-05-07 09:19:22] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/75/18/efdeac4bbb5ffcb85966783b4d7bf2c5c222260a4ff2e3be936b5e99facf/tfq_nightly-0.7.3.dev20230505-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-07 09:19:22] INFO root fetch - processPackages [streetscope]: Downloading https://files.pythonhosted.org/packages/1a/74/36a118f0b7bcd3e5be363c9126d174e7d66b4f62cde68aeb89f71a3ebb24/streetscope-0.3.7.tar.gz
+[2023-05-07 09:19:22] INFO root fetch - processPackages [wheeldiff]: Downloading https://files.pythonhosted.org/packages/d6/18/e2ef162ea7907e74e6a95dde61fa34cfee703ff0e0b85f28830dbe7dfb4b/wheeldiff-2023.5.7.7.15.tar.gz
+[2023-05-07 09:19:22] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819848>=10485760
+[2023-05-07 09:19:22] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-05-07 09:19:22] INFO root fetch - processPackages [streetscope]: executing diffoscope
+[2023-05-07 09:19:22] INFO root fetch - processPackages [streetscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streetscope-0.3.6.tar.gz tmp/streetscope-0.3.7.tar.gz --markdown 20230507/s/streetscope/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-05-07 09:19:22] INFO root fetch - processPackages [wheeldiff]: executing diffoscope
+[2023-05-07 09:19:22] INFO root fetch - processPackages [wheeldiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheeldiff-2023.5.7.7.tar.gz tmp/wheeldiff-2023.5.7.7.15.tar.gz --markdown 20230507/w/wheeldiff/2023.5.7.7-2023.5.7.7.15/diff.md --exclude *.pyd
+[2023-05-07 09:19:23] INFO root fetch - main [MainThread]: End processing [streetscope]: success
+[2023-05-07 09:19:23] INFO root fetch - main [MainThread]: End processing [wheeldiff]: success
+[2023-05-07 09:19:23] INFO root fetch - main [MainThread]: Store serial: [18004801]
