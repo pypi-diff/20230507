@@ -3611,3 +3611,33 @@
 [2023-05-07 08:58:24] INFO root fetch - main [MainThread]: End processing [csv2notion]: success
 [2023-05-07 08:58:24] INFO root fetch - main [MainThread]: End processing [mpb-lib]: success
 [2023-05-07 08:58:24] INFO root fetch - main [MainThread]: Store serial: [18004705]
+[2023-05-07 09:03:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004705]
+[2023-05-07 09:03:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-07 09:03:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnx2kerastl
+[2023-05-07 09:03:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: faucetconfrpc
+[2023-05-07 09:03:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oopmultilang
+[2023-05-07 09:03:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seqio-nightly
+[2023-05-07 09:03:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mpb-lib
+[2023-05-07 09:03:33] INFO root fetch - processPackages [onnx2kerastl]: New version: [0.0.85] Old Version: [0.0.84.dev2]
+[2023-05-07 09:03:33] WARNING root fetch - processPackages [oopmultilang]: Skipping, unable to determine old version
+[2023-05-07 09:03:33] INFO root fetch - main [MainThread]: End processing [oopmultilang] error
+[2023-05-07 09:03:33] INFO root fetch - processPackages [mpb-lib]: New version: [0.1.85] Old Version: [0.1.84]
+[2023-05-07 09:03:33] INFO root fetch - processPackages [faucetconfrpc]: New version: [0.9] Old Version: [0.8]
+[2023-05-07 09:03:33] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-05-07 09:03:33] INFO root fetch - processPackages [onnx2kerastl]: Downloading https://files.pythonhosted.org/packages/4c/5a/ec00deee66ca782e4f91348c7e54acb8685184c17da56f4811e0b8983d2e/onnx2kerastl-0.0.84.dev2.tar.gz
+[2023-05-07 09:03:33] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-05-07 09:03:33] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230507/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-05-07 09:03:33] INFO root fetch - processPackages [mpb-lib]: Downloading https://files.pythonhosted.org/packages/a4/f4/b352726b31f8a61c9422d5349cab1af65051fc9c3e1ee48f6c13e09df000/mpb_lib-0.1.84.tar.gz
+[2023-05-07 09:03:33] INFO root fetch - processPackages [faucetconfrpc]: executing diffoscope
+[2023-05-07 09:03:33] INFO root fetch - processPackages [faucetconfrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faucetconfrpc-0.8.tar.gz tmp/faucetconfrpc-0.9.tar.gz --markdown 20230507/f/faucetconfrpc/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-07 09:03:33] INFO root fetch - processPackages [onnx2kerastl]: Downloading https://files.pythonhosted.org/packages/6a/f4/9a15e74a3ee27638af0d4cf3f8c02a783f8b852a260c03144394f56205e7/onnx2kerastl-0.0.85.tar.gz
+[2023-05-07 09:03:33] INFO root fetch - processPackages [mpb-lib]: Downloading https://files.pythonhosted.org/packages/a0/fd/b8db24e0860bcaeb914afb4398eee406c36541eaf4d8b7aad659fb54133f/mpb_lib-0.1.85.tar.gz
+[2023-05-07 09:03:33] INFO root fetch - processPackages [onnx2kerastl]: executing diffoscope
+[2023-05-07 09:03:33] INFO root fetch - processPackages [onnx2kerastl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2kerastl-0.0.84.dev2.tar.gz tmp/onnx2kerastl-0.0.85.tar.gz --markdown 20230507/o/onnx2kerastl/0.0.84.dev2-0.0.85/diff.md --exclude *.pyd
+[2023-05-07 09:03:33] INFO root fetch - processPackages [mpb-lib]: executing diffoscope
+[2023-05-07 09:03:33] INFO root fetch - processPackages [mpb-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpb_lib-0.1.84.tar.gz tmp/mpb_lib-0.1.85.tar.gz --markdown 20230507/m/mpb-lib/0.1.84-0.1.85/diff.md --exclude *.pyd
+[2023-05-07 09:03:34] INFO root fetch - main [MainThread]: End processing [faucetconfrpc]: success
+[2023-05-07 09:03:34] INFO root fetch - main [MainThread]: End processing [onnx2kerastl]: success
+[2023-05-07 09:03:34] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-05-07 09:03:35] INFO root fetch - main [MainThread]: End processing [mpb-lib]: success
+[2023-05-07 09:03:35] INFO root fetch - main [MainThread]: Store serial: [18004724]
