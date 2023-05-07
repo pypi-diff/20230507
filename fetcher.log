@@ -4301,3 +4301,31 @@
 [2023-05-07 10:33:35] INFO root fetch - main [MainThread]: End processing [quantplay]: success
 [2023-05-07 10:33:35] INFO root fetch - main [MainThread]: End processing [superwise]: success
 [2023-05-07 10:33:35] INFO root fetch - main [MainThread]: Store serial: [18005155]
+[2023-05-07 10:38:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005155]
+[2023-05-07 10:38:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-07 10:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audioviz
+[2023-05-07 10:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-estimator-nightly
+[2023-05-07 10:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sym-recognizer
+[2023-05-07 10:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sym-recognizer
+[2023-05-07 10:38:44] INFO root fetch - processPackages [sym-recognizer]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 10:38:44] INFO root fetch - processPackages [sym-recognizer]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-07 10:38:44] INFO root fetch - processPackages [audioviz]: New version: [0.1.8.dev0] Old Version: [0.1.7]
+[2023-05-07 10:38:44] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-05-07 10:38:44] INFO root fetch - processPackages [sym-recognizer]: Downloading https://files.pythonhosted.org/packages/33/cb/b1614038a5932496483cc99def8dab4b02a497c981c0d615deaa631a8bd0/sym-recognizer-0.0.5.tar.gz
+[2023-05-07 10:38:44] INFO root fetch - processPackages [sym-recognizer]: Downloading https://files.pythonhosted.org/packages/33/cb/b1614038a5932496483cc99def8dab4b02a497c981c0d615deaa631a8bd0/sym-recognizer-0.0.5.tar.gz
+[2023-05-07 10:38:44] INFO root fetch - processPackages [audioviz]: Downloading https://files.pythonhosted.org/packages/b1/10/0a4beeba9803cf513372ba98080893f58208f6a87f2ca503247db70cd43a/audioviz-0.1.8.dev0.tar.gz
+[2023-05-07 10:38:44] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-05-07 10:38:44] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230507/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-05-07 10:38:45] INFO root fetch - processPackages [audioviz]: executing diffoscope
+[2023-05-07 10:38:45] INFO root fetch - processPackages [audioviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audioviz-0.1.7.tar.gz tmp/audioviz-0.1.8.dev0.tar.gz --markdown 20230507/a/audioviz/0.1.7-0.1.8.dev0/diff.md --exclude *.pyd
+[2023-05-07 10:38:45] INFO root fetch - processPackages [sym-recognizer]: Downloading https://files.pythonhosted.org/packages/4e/07/1d75c382510f9c86c88ffc55f8c56e945ff455d569341bc2e98e28a9843b/sym-recognizer-0.0.6.tar.gz
+[2023-05-07 10:38:45] INFO root fetch - processPackages [sym-recognizer]: Downloading https://files.pythonhosted.org/packages/4e/07/1d75c382510f9c86c88ffc55f8c56e945ff455d569341bc2e98e28a9843b/sym-recognizer-0.0.6.tar.gz
+[2023-05-07 10:38:45] INFO root fetch - processPackages [sym-recognizer]: executing diffoscope
+[2023-05-07 10:38:45] INFO root fetch - processPackages [sym-recognizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sym-recognizer-0.0.5.tar.gz tmp/sym-recognizer-0.0.6.tar.gz --markdown 20230507/s/sym-recognizer/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 10:38:45] INFO root fetch - processPackages [sym-recognizer]: executing diffoscope
+[2023-05-07 10:38:45] INFO root fetch - processPackages [sym-recognizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sym-recognizer-0.0.5.tar.gz tmp/sym-recognizer-0.0.6.tar.gz --markdown 20230507/s/sym-recognizer/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-07 10:38:46] INFO root fetch - main [MainThread]: End processing [audioviz]: success
+[2023-05-07 10:38:46] INFO root fetch - main [MainThread]: End processing [sym-recognizer]: success
+[2023-05-07 10:38:46] INFO root fetch - main [MainThread]: End processing [sym-recognizer]: success
+[2023-05-07 10:39:15] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-05-07 10:39:15] INFO root fetch - main [MainThread]: Store serial: [18005167]
