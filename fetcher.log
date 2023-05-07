@@ -5204,3 +5204,24 @@
 [2023-05-07 12:04:54] INFO root fetch - main [MainThread]: End processing [zipline-norgatedata]: success
 [2023-05-07 12:04:54] INFO root fetch - main [MainThread]: End processing [nazo-rand]: success
 [2023-05-07 12:04:54] INFO root fetch - main [MainThread]: Store serial: [18005727]
+[2023-05-07 12:09:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18005727]
+[2023-05-07 12:10:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-07 12:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inverse
+[2023-05-07 12:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: speakleash
+[2023-05-07 12:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: katalytic-images
+[2023-05-07 12:10:03] INFO root fetch - processPackages [speakleash]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 12:10:03] INFO root fetch - processPackages [katalytic-images]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-07 12:10:03] INFO root fetch - processPackages [inverse]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-07 12:10:03] INFO root fetch - processPackages [inverse]: executing diffoscope
+[2023-05-07 12:10:03] INFO root fetch - processPackages [inverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverse-0.0.8-py3-none-any.whl.zip tmp/inverse-0.0.9-py3-none-any.whl.zip --markdown 20230507/i/inverse/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 12:10:03] INFO root fetch - processPackages [speakleash]: Downloading https://files.pythonhosted.org/packages/87/7a/50ca25c1589160536257782270101e68c04ec19a62f47eee027aef379327/speakleash-0.0.8.tar.gz
+[2023-05-07 12:10:03] INFO root fetch - processPackages [katalytic-images]: Downloading https://files.pythonhosted.org/packages/d3/e8/e5e8160d8a27aebbeb2dbb4f81bbbbc5b56fcdc97456c751bd7425fc53ad/katalytic-images-0.4.0.tar.gz
+[2023-05-07 12:10:03] INFO root fetch - processPackages [katalytic-images]: executing diffoscope
+[2023-05-07 12:10:03] INFO root fetch - processPackages [katalytic-images]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-images-0.3.0.tar.gz tmp/katalytic-images-0.4.0.tar.gz --markdown 20230507/k/katalytic-images/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-07 12:10:03] INFO root fetch - processPackages [speakleash]: Downloading https://files.pythonhosted.org/packages/f0/8a/0943ded79bd499c303ad1ea7e7edee8c9774afb274cc2c27219554108366/speakleash-0.0.9.tar.gz
+[2023-05-07 12:10:03] INFO root fetch - processPackages [speakleash]: executing diffoscope
+[2023-05-07 12:10:03] INFO root fetch - processPackages [speakleash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speakleash-0.0.8.tar.gz tmp/speakleash-0.0.9.tar.gz --markdown 20230507/s/speakleash/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-07 12:10:04] INFO root fetch - main [MainThread]: End processing [katalytic-images]: success
+[2023-05-07 12:10:04] INFO root fetch - main [MainThread]: End processing [speakleash]: success
+[2023-05-07 12:10:04] INFO root fetch - main [MainThread]: End processing [inverse]: success
+[2023-05-07 12:10:04] INFO root fetch - main [MainThread]: Store serial: [18005737]
