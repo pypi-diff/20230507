@@ -8436,3 +8436,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 17:33:25] INFO root fetch - main [MainThread]: End processing [flask-guard]: success
 [2023-05-07 17:33:25] INFO root fetch - main [MainThread]: End processing [evina]: success
 [2023-05-07 17:33:25] INFO root fetch - main [MainThread]: Store serial: [18007907]
+[2023-05-07 17:38:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007907]
+[2023-05-07 17:38:33] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-07 17:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cryptenv
+[2023-05-07 17:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: impose-cli
+[2023-05-07 17:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: corecrud
+[2023-05-07 17:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quantsight
+[2023-05-07 17:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: parquet2lance
+[2023-05-07 17:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: omlet-arcade-bot
+[2023-05-07 17:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: evina
+[2023-05-07 17:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: testcell
+[2023-05-07 17:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: corecrud
+[2023-05-07 17:38:33] INFO root fetch - processPackages [quantsight]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 17:38:33] INFO root fetch - processPackages [cryptenv]: New version: [0.2] Old Version: [0.1]
+[2023-05-07 17:38:33] INFO root fetch - processPackages [corecrud]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-07 17:38:33] INFO root fetch - processPackages [parquet2lance]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-07 17:38:33] INFO root fetch - processPackages [evina]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-07 17:38:33] INFO root fetch - processPackages [corecrud]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-07 17:38:34] INFO root fetch - processPackages [quantsight]: executing diffoscope
+[2023-05-07 17:38:34] INFO root fetch - processPackages [quantsight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantsight-0.1.8.tar.gz tmp/quantsight-0.1.9.tar.gz --markdown 20230507/q/quantsight/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 17:38:34] WARNING root fetch - processPackages [impose-cli]: Skipping, unable to determine old version
+[2023-05-07 17:38:34] INFO root fetch - main [MainThread]: End processing [impose-cli] error
+[2023-05-07 17:38:34] WARNING root fetch - processPackages [testcell]: Skipping, unable to determine old version
+[2023-05-07 17:38:34] INFO root fetch - main [MainThread]: End processing [testcell] error
+[2023-05-07 17:38:34] WARNING root fetch - processPackages [omlet-arcade-bot]: Skipping, unable to determine old version
+[2023-05-07 17:38:34] INFO root fetch - main [MainThread]: End processing [omlet-arcade-bot] error
+[2023-05-07 17:38:34] INFO root fetch - processPackages [cryptenv]: Downloading https://files.pythonhosted.org/packages/d1/62/1b65bb0012e8189025b6e5ea281ffeeb5a1474e36dfe376bc8ef0ac0e147/cryptenv-0.1.tar.gz
+[2023-05-07 17:38:34] INFO root fetch - processPackages [evina]: Downloading https://files.pythonhosted.org/packages/15/8a/327af97e818d0bec7658decd3e1009bf03bac0fa9643fb261cfc2598b938/evina-1.0.4.tar.gz
+[2023-05-07 17:38:34] INFO root fetch - processPackages [parquet2lance]: Downloading https://files.pythonhosted.org/packages/7a/26/99e29ae9da19f59357804e0355b43f010c65b6430bb01a4f3412f3119069/parquet2lance-0.0.4.tar.gz
+[2023-05-07 17:38:34] INFO root fetch - processPackages [corecrud]: Downloading https://files.pythonhosted.org/packages/c0/03/e4a0eb8fb9c2ee208fe15f18ab4b7c033cf43e706866f6c67cce236db9ec/corecrud-0.1.3.tar.gz
+[2023-05-07 17:38:34] INFO root fetch - processPackages [corecrud]: Downloading https://files.pythonhosted.org/packages/c0/03/e4a0eb8fb9c2ee208fe15f18ab4b7c033cf43e706866f6c67cce236db9ec/corecrud-0.1.3.tar.gz
+[2023-05-07 17:38:34] INFO root fetch - processPackages [evina]: executing diffoscope
+[2023-05-07 17:38:34] INFO root fetch - processPackages [evina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evina-1.0.3.tar.gz tmp/evina-1.0.4.tar.gz --markdown 20230507/e/evina/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-07 17:38:34] INFO root fetch - processPackages [corecrud]: executing diffoscope
+[2023-05-07 17:38:34] INFO root fetch - processPackages [corecrud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corecrud-0.1.2.tar.gz tmp/corecrud-0.1.3.tar.gz --markdown 20230507/c/corecrud/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 17:38:34] INFO root fetch - processPackages [parquet2lance]: executing diffoscope
+[2023-05-07 17:38:34] INFO root fetch - processPackages [parquet2lance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parquet2lance-0.0.3-cp310-cp310-macosx_10_7_x86_64.whl.zip tmp/parquet2lance-0.0.4.tar.gz --markdown 20230507/p/parquet2lance/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-07 17:38:34] INFO root fetch - processPackages [corecrud]: executing diffoscope
+[2023-05-07 17:38:34] INFO root fetch - processPackages [corecrud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corecrud-0.1.2.tar.gz tmp/corecrud-0.1.3.tar.gz --markdown 20230507/c/corecrud/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-07 17:38:34] INFO root fetch - processPackages [cryptenv]: Downloading https://files.pythonhosted.org/packages/bd/c7/d2e1739827b3db58d1160039782ca86f475442a5c9e9d88a08d5304ea89d/cryptenv-0.2.tar.gz
+[2023-05-07 17:38:34] INFO root fetch - processPackages [cryptenv]: executing diffoscope
+[2023-05-07 17:38:34] INFO root fetch - processPackages [cryptenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cryptenv-0.1.tar.gz tmp/cryptenv-0.2.tar.gz --markdown 20230507/c/cryptenv/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-07 17:38:35] INFO root fetch - main [MainThread]: End processing [quantsight]: success
+[2023-05-07 17:38:35] INFO root fetch - main [MainThread]: End processing [corecrud]: success
+[2023-05-07 17:38:35] INFO root fetch - main [MainThread]: End processing [evina]: success
+[2023-05-07 17:38:35] INFO root fetch - main [MainThread]: End processing [cryptenv]: success
+[2023-05-07 17:38:35] INFO root fetch - main [MainThread]: End processing [corecrud]: success
+[2023-05-07 17:38:40] INFO root fetch - main [MainThread]: End processing [parquet2lance]: success
+[2023-05-07 17:38:40] INFO root fetch - main [MainThread]: Store serial: [18007944]
