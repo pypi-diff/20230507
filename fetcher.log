@@ -2237,3 +2237,42 @@
 [2023-05-07 05:01:39] INFO root fetch - main [MainThread]: End processing [defog]: success
 [2023-05-07 05:01:39] INFO root fetch - main [MainThread]: End processing [autoxx]: success
 [2023-05-07 05:01:39] INFO root fetch - main [MainThread]: Store serial: [18003871]
+[2023-05-07 05:06:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18003871]
+[2023-05-07 05:06:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 05:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audioviz
+[2023-05-07 05:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llmbda-fastapi
+[2023-05-07 05:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rpmdyn
+[2023-05-07 05:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LyricLib
+[2023-05-07 05:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: volttron-testing
+[2023-05-07 05:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nycu-tdx-py
+[2023-05-07 05:06:48] INFO root fetch - processPackages [rpmdyn]: New version: [2023.5.7.3] Old Version: [2023.5.7]
+[2023-05-07 05:06:48] INFO root fetch - processPackages [audioviz]: New version: [0.1.5.dev1] Old Version: [0.1.5.dev0]
+[2023-05-07 05:06:48] INFO root fetch - processPackages [llmbda-fastapi]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 05:06:48] INFO root fetch - processPackages [LyricLib]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 05:06:48] INFO root fetch - processPackages [volttron-testing]: New version: [0.4.0rc3] Old Version: [0.4.0rc2]
+[2023-05-07 05:06:48] INFO root fetch - processPackages [nycu-tdx-py]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-07 05:06:48] INFO root fetch - processPackages [nycu-tdx-py]: executing diffoscope
+[2023-05-07 05:06:48] INFO root fetch - processPackages [nycu-tdx-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nycu_tdx_py-0.1.8.tar.gz tmp/nycu_tdx_py-0.1.9.tar.gz --markdown 20230507/n/nycu-tdx-py/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-07 05:06:48] INFO root fetch - processPackages [LyricLib]: Downloading https://files.pythonhosted.org/packages/e0/c2/81ee2abea87d9a16e48d346939ebe2313b15db12ba71ec48811026e17b15/LyricLib-0.0.2.tar.gz
+[2023-05-07 05:06:48] INFO root fetch - processPackages [rpmdyn]: Downloading https://files.pythonhosted.org/packages/6e/4c/d4340e3f4e276f5bd4238605399ed3c4b958748ad31b8e7dd8a302d2e785/rpmdyn-2023.5.7.3.tar.gz
+[2023-05-07 05:06:48] INFO root fetch - processPackages [volttron-testing]: Downloading https://files.pythonhosted.org/packages/43/b1/8890fca26bf602535b7b8412f7992d80868a58075ccc44566786ccdfb852/volttron-testing-0.4.0rc2.tar.gz
+[2023-05-07 05:06:48] INFO root fetch - processPackages [rpmdyn]: executing diffoscope
+[2023-05-07 05:06:48] INFO root fetch - processPackages [rpmdyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpmdyn-2023.5.7.tar.gz tmp/rpmdyn-2023.5.7.3.tar.gz --markdown 20230507/r/rpmdyn/2023.5.7-2023.5.7.3/diff.md --exclude *.pyd
+[2023-05-07 05:06:48] INFO root fetch - processPackages [audioviz]: Downloading https://files.pythonhosted.org/packages/c1/f0/892cb7d3604fb33d1792c2c421add2e7e7811f9aaaf44afea7fe5c4df0af/audioviz-0.1.5.dev1.tar.gz
+[2023-05-07 05:06:48] INFO root fetch - processPackages [llmbda-fastapi]: executing diffoscope
+[2023-05-07 05:06:48] INFO root fetch - processPackages [llmbda-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmbda_fastapi-0.0.7.tar.gz tmp/llmbda_fastapi-0.0.8.tar.gz --markdown 20230507/l/llmbda-fastapi/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 05:06:48] INFO root fetch - processPackages [LyricLib]: Downloading https://files.pythonhosted.org/packages/f9/0f/08cbdb1d8540f917359a155ebd6404457548a8a4f8d04fa30c37fab7a887/LyricLib-0.0.3.tar.gz
+[2023-05-07 05:06:48] INFO root fetch - processPackages [audioviz]: executing diffoscope
+[2023-05-07 05:06:48] INFO root fetch - processPackages [audioviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audioviz-0.1.5.dev0.tar.gz tmp/audioviz-0.1.5.dev1.tar.gz --markdown 20230507/a/audioviz/0.1.5.dev0-0.1.5.dev1/diff.md --exclude *.pyd
+[2023-05-07 05:06:48] INFO root fetch - processPackages [LyricLib]: executing diffoscope
+[2023-05-07 05:06:48] INFO root fetch - processPackages [LyricLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LyricLib-0.0.2.tar.gz tmp/LyricLib-0.0.3.tar.gz --markdown 20230507/L/LyricLib/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 05:06:48] INFO root fetch - processPackages [volttron-testing]: Downloading https://files.pythonhosted.org/packages/a4/5b/5db9debdb1546f46756c571f937ebe63f4288ed60f26a54b5a396b2d313d/volttron-testing-0.4.0rc3.tar.gz
+[2023-05-07 05:06:49] INFO root fetch - processPackages [volttron-testing]: executing diffoscope
+[2023-05-07 05:06:49] INFO root fetch - processPackages [volttron-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volttron-testing-0.4.0rc2.tar.gz tmp/volttron-testing-0.4.0rc3.tar.gz --markdown 20230507/v/volttron-testing/0.4.0rc2-0.4.0rc3/diff.md --exclude *.pyd
+[2023-05-07 05:06:49] INFO root fetch - main [MainThread]: End processing [nycu-tdx-py]: success
+[2023-05-07 05:06:49] INFO root fetch - main [MainThread]: End processing [llmbda-fastapi]: success
+[2023-05-07 05:06:49] INFO root fetch - main [MainThread]: End processing [rpmdyn]: success
+[2023-05-07 05:06:49] INFO root fetch - main [MainThread]: End processing [audioviz]: success
+[2023-05-07 05:06:50] INFO root fetch - main [MainThread]: End processing [LyricLib]: success
+[2023-05-07 05:06:50] INFO root fetch - main [MainThread]: End processing [volttron-testing]: success
+[2023-05-07 05:06:50] INFO root fetch - main [MainThread]: Store serial: [18003887]
