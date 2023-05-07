@@ -4039,3 +4039,41 @@
 [2023-05-07 10:01:57] INFO root fetch - main [MainThread]: End processing [sym-recognizer]: success
 [2023-05-07 10:01:57] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam]: success
 [2023-05-07 10:01:57] INFO root fetch - main [MainThread]: Store serial: [18004989]
+[2023-05-07 10:07:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004989]
+[2023-05-07 10:07:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-07 10:07:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mnzipcode
+[2023-05-07 10:07:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: angry-logger
+[2023-05-07 10:07:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mineterm
+[2023-05-07 10:07:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jsonrpcx
+[2023-05-07 10:07:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mistacheeselib
+[2023-05-07 10:07:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyglove
+[2023-05-07 10:07:06] INFO root fetch - processPackages [angry-logger]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-07 10:07:06] INFO root fetch - processPackages [mnzipcode]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-07 10:07:06] WARNING root fetch - processPackages [mineterm]: Skipping, unable to determine old version
+[2023-05-07 10:07:06] INFO root fetch - main [MainThread]: End processing [mineterm] error
+[2023-05-07 10:07:06] INFO root fetch - processPackages [mistacheeselib]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-07 10:07:06] INFO root fetch - processPackages [jsonrpcx]: New version: [4.1.0] Old Version: [4.0.0]
+[2023-05-07 10:07:06] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230507] Old Version: [0.3.1.dev20230506]
+[2023-05-07 10:07:06] INFO root fetch - processPackages [mistacheeselib]: Downloading https://files.pythonhosted.org/packages/cb/20/3e0291d3a5a43a5f9eb62b0ada3a2a72cd2d31787b88777b17e6db8b76eb/mistacheeselib-0.0.2.tar.gz
+[2023-05-07 10:07:06] INFO root fetch - processPackages [mnzipcode]: Downloading https://files.pythonhosted.org/packages/26/e2/6cdc8ab4309b934e05396c1bacc44dd54be77a1c5ba059762845e0d7d9c8/mnzipcode-0.0.4.tar.gz
+[2023-05-07 10:07:06] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/0c/e8/2d0f6482f69ce2deee888eb38a1e508b5fac7ba76263a933a449db80f9b3/pyglove-0.3.1.dev20230507.tar.gz
+[2023-05-07 10:07:06] INFO root fetch - processPackages [jsonrpcx]: Downloading https://files.pythonhosted.org/packages/7a/03/c78f65615086582d82ae6ddb0eec4b498f317414e627f8e9060f3432ecc6/jsonrpcx-4.1.0-py3-none-any.whl
+[2023-05-07 10:07:06] INFO root fetch - processPackages [angry-logger]: Downloading https://files.pythonhosted.org/packages/b7/ac/ae6d6343bdf2b6b233a3cfcfa3bcea9be0be3a58ffc18bee49c6391de013/angry_logger-1.0.1.tar.gz
+[2023-05-07 10:07:06] INFO root fetch - processPackages [jsonrpcx]: executing diffoscope
+[2023-05-07 10:07:06] INFO root fetch - processPackages [jsonrpcx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonrpcx-4.0.0-py3-none-any.whl.zip tmp/jsonrpcx-4.1.0-py3-none-any.whl.zip --markdown 20230507/j/jsonrpcx/4.0.0-4.1.0/diff.md --exclude *.pyd
+[2023-05-07 10:07:06] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-05-07 10:07:06] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230506.tar.gz tmp/pyglove-0.3.1.dev20230507.tar.gz --markdown 20230507/p/pyglove/0.3.1.dev20230506-0.3.1.dev20230507/diff.md --exclude *.pyd
+[2023-05-07 10:07:06] INFO root fetch - processPackages [angry-logger]: executing diffoscope
+[2023-05-07 10:07:06] INFO root fetch - processPackages [angry-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/angry_logger-1.0.0.tar.gz tmp/angry_logger-1.0.1.tar.gz --markdown 20230507/a/angry-logger/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-07 10:07:06] INFO root fetch - processPackages [mnzipcode]: Downloading https://files.pythonhosted.org/packages/77/3a/bbe6fe2f008d5f0634fd006cd5609de1f2e79469b28f55a55ca5d27fd8d1/mnzipcode-0.0.5.tar.gz
+[2023-05-07 10:07:07] INFO root fetch - processPackages [mnzipcode]: executing diffoscope
+[2023-05-07 10:07:07] INFO root fetch - processPackages [mnzipcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mnzipcode-0.0.4.tar.gz tmp/mnzipcode-0.0.5.tar.gz --markdown 20230507/m/mnzipcode/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-07 10:07:07] INFO root fetch - processPackages [mistacheeselib]: Downloading https://files.pythonhosted.org/packages/4b/8d/12d190e200dd39bef19e1153a32018def3b6bbf3dbb3560c6096d7d46ff5/mistacheeselib-0.0.3.tar.gz
+[2023-05-07 10:07:07] INFO root fetch - processPackages [mistacheeselib]: executing diffoscope
+[2023-05-07 10:07:07] INFO root fetch - processPackages [mistacheeselib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mistacheeselib-0.0.2.tar.gz tmp/mistacheeselib-0.0.3.tar.gz --markdown 20230507/m/mistacheeselib/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-07 10:07:08] INFO root fetch - main [MainThread]: End processing [jsonrpcx]: success
+[2023-05-07 10:07:08] INFO root fetch - main [MainThread]: End processing [mnzipcode]: success
+[2023-05-07 10:07:08] INFO root fetch - main [MainThread]: End processing [angry-logger]: success
+[2023-05-07 10:07:09] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2023-05-07 10:07:37] INFO root fetch - main [MainThread]: End processing [mistacheeselib]: success
+[2023-05-07 10:07:37] INFO root fetch - main [MainThread]: Store serial: [18005009]
