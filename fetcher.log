@@ -7845,3 +7845,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 16:44:46] INFO root fetch - main [MainThread]: End processing [images-upload-cli]: success
 [2023-05-07 16:45:16] INFO root fetch - main [MainThread]: End processing [ukmon-meteortools]: success
 [2023-05-07 16:45:16] INFO root fetch - main [MainThread]: Store serial: [18007574]
+[2023-05-07 16:50:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18007574]
+[2023-05-07 16:50:24] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pptools
+[2023-05-07 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dnfunc
+[2023-05-07 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shareddata
+[2023-05-07 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlite-sync
+[2023-05-07 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: encode-utils-cli
+[2023-05-07 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: decentralizedroutines
+[2023-05-07 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo13-addon-account-payment-order
+[2023-05-07 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ParMan
+[2023-05-07 16:50:24] WARNING root fetch - processPackages [pptools]: Skipping, unable to determine old version
+[2023-05-07 16:50:24] INFO root fetch - main [MainThread]: End processing [pptools] error
+[2023-05-07 16:50:24] INFO root fetch - processPackages [sqlite-sync]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-07 16:50:24] INFO root fetch - processPackages [dnfunc]: New version: [0.0.3a2] Old Version: [0.0.3]
+[2023-05-07 16:50:24] INFO root fetch - processPackages [shareddata]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-05-07 16:50:24] INFO root fetch - processPackages [decentralizedroutines]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-05-07 16:50:24] INFO root fetch - processPackages [encode-utils-cli]: New version: [0.0.4a1] Old Version: [0.0.4]
+[2023-05-07 16:50:24] INFO root fetch - processPackages [odoo13-addon-account-payment-order]: New version: [13.0.1.6.7.dev1] Old Version: [13.0.1.6.7]
+[2023-05-07 16:50:24] INFO root fetch - processPackages [ParMan]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-07 16:50:24] INFO root fetch - processPackages [dnfunc]: Downloading https://files.pythonhosted.org/packages/39/fa/ad50e36e3277f9b55c0d0de92422459f9aada440f5cdc86e2bfcfd75fc78/dnfunc-0.0.3.tar.gz
+[2023-05-07 16:50:25] INFO root fetch - processPackages [sqlite-sync]: Downloading https://files.pythonhosted.org/packages/f2/40/249929149ffe9c814531442804857e6e744b67329ad69a4bd89b34cb0543/sqlite_sync-0.0.7-py3-none-any.whl
+[2023-05-07 16:50:25] INFO root fetch - processPackages [encode-utils-cli]: Downloading https://files.pythonhosted.org/packages/55/d7/38f65460fa5afd66a2bf7472df4661c47d9253b034e76c199acc8bdce8c0/encode_utils_cli-0.0.4.tar.gz
+[2023-05-07 16:50:25] INFO root fetch - processPackages [odoo13-addon-account-payment-order]: Downloading https://files.pythonhosted.org/packages/d9/0e/112f5ec9820f4f4df4ad154f7c5264ee518d34bda4d91e3da38c12e0f121/odoo13_addon_account_payment_order-13.0.1.6.7-py3-none-any.whl
+[2023-05-07 16:50:25] INFO root fetch - processPackages [ParMan]: Downloading https://files.pythonhosted.org/packages/7b/3d/b3c5563f7cf512da9647e2159ffa621d5ea337e07c4d1d8fbdb59c91f45c/ParMan-0.1.0.tar.gz
+[2023-05-07 16:50:25] INFO root fetch - processPackages [decentralizedroutines]: Downloading https://files.pythonhosted.org/packages/8c/33/34d06241f81d2cbe2d972b55e16ed405136b21130810c90b9ac6268df94c/decentralizedroutines-2.0.6.tar.gz
+[2023-05-07 16:50:25] INFO root fetch - processPackages [shareddata]: Downloading https://files.pythonhosted.org/packages/9d/47/48d1a935c56da8059e9224f807a30bf82a4d652e6beb5599fd523fe0bf58/shareddata-2.0.6.tar.gz
+[2023-05-07 16:50:25] INFO root fetch - processPackages [sqlite-sync]: Downloading https://files.pythonhosted.org/packages/40/d4/3c11ff17109bd436f56a2a8ce4195792894710204d287fd52e502549c72b/sqlite_sync-0.0.8-py3-none-any.whl
+[2023-05-07 16:50:25] INFO root fetch - processPackages [dnfunc]: Downloading https://files.pythonhosted.org/packages/84/6b/8df916bb4f6e1eea6370c98992bbe4cc37844a5e7fbb876b9a5dfbf8ef6a/dnfunc-0.0.3a2.tar.gz
+[2023-05-07 16:50:25] INFO root fetch - processPackages [encode-utils-cli]: Downloading https://files.pythonhosted.org/packages/76/0e/db24b5f6995a0da541dcee41462545fde03206aa38b9e77101ae8ad4a4a5/encode_utils_cli-0.0.4a1.tar.gz
+[2023-05-07 16:50:25] INFO root fetch - processPackages [decentralizedroutines]: executing diffoscope
+[2023-05-07 16:50:25] INFO root fetch - processPackages [decentralizedroutines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decentralizedroutines-2.0.5.tar.gz tmp/decentralizedroutines-2.0.6.tar.gz --markdown 20230507/d/decentralizedroutines/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-05-07 16:50:25] INFO root fetch - processPackages [shareddata]: executing diffoscope
+[2023-05-07 16:50:25] INFO root fetch - processPackages [shareddata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shareddata-2.0.5.tar.gz tmp/shareddata-2.0.6.tar.gz --markdown 20230507/s/shareddata/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-05-07 16:50:25] INFO root fetch - processPackages [sqlite-sync]: executing diffoscope
+[2023-05-07 16:50:25] INFO root fetch - processPackages [sqlite-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_sync-0.0.7-py3-none-any.whl.zip tmp/sqlite_sync-0.0.8-py3-none-any.whl.zip --markdown 20230507/s/sqlite-sync/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-07 16:50:25] INFO root fetch - processPackages [dnfunc]: executing diffoscope
+[2023-05-07 16:50:25] INFO root fetch - processPackages [dnfunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnfunc-0.0.3.tar.gz tmp/dnfunc-0.0.3a2.tar.gz --markdown 20230507/d/dnfunc/0.0.3-0.0.3a2/diff.md --exclude *.pyd
+[2023-05-07 16:50:25] INFO root fetch - processPackages [ParMan]: Downloading https://files.pythonhosted.org/packages/58/04/9324685582b32b060fb2ebbc58059db311bb5059c59da6e85f5b44702efe/ParMan-0.2.0.tar.gz
+[2023-05-07 16:50:25] INFO root fetch - processPackages [encode-utils-cli]: executing diffoscope
+[2023-05-07 16:50:25] INFO root fetch - processPackages [encode-utils-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encode_utils_cli-0.0.4.tar.gz tmp/encode_utils_cli-0.0.4a1.tar.gz --markdown 20230507/e/encode-utils-cli/0.0.4-0.0.4a1/diff.md --exclude *.pyd
+[2023-05-07 16:50:25] INFO root fetch - processPackages [odoo13-addon-account-payment-order]: Downloading https://files.pythonhosted.org/packages/28/34/e6e1353c8ae6c65b2bf47d27d3952445b92a8ffd4e0c8d62fa13565fca51/odoo13_addon_account_payment_order-13.0.1.6.7.dev1-py3-none-any.whl
+[2023-05-07 16:50:25] INFO root fetch - processPackages [ParMan]: executing diffoscope
+[2023-05-07 16:50:25] INFO root fetch - processPackages [ParMan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ParMan-0.1.0.tar.gz tmp/ParMan-0.2.0.tar.gz --markdown 20230507/P/ParMan/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 16:50:25] INFO root fetch - processPackages [odoo13-addon-account-payment-order]: executing diffoscope
+[2023-05-07 16:50:25] INFO root fetch - processPackages [odoo13-addon-account-payment-order]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_account_payment_order-13.0.1.6.7-py3-none-any.whl.zip tmp/odoo13_addon_account_payment_order-13.0.1.6.7.dev1-py3-none-any.whl.zip --markdown 20230507/o/odoo13-addon-account-payment-order/13.0.1.6.7-13.0.1.6.7.dev1/diff.md --exclude *.pyd
+[2023-05-07 16:50:26] INFO root fetch - main [MainThread]: End processing [sqlite-sync]: success
+[2023-05-07 16:50:26] INFO root fetch - main [MainThread]: End processing [decentralizedroutines]: success
+[2023-05-07 16:50:26] INFO root fetch - main [MainThread]: End processing [encode-utils-cli]: success
+[2023-05-07 16:50:26] INFO root fetch - main [MainThread]: End processing [dnfunc]: success
+[2023-05-07 16:50:27] INFO root fetch - main [MainThread]: End processing [ParMan]: success
+[2023-05-07 16:50:27] INFO root fetch - main [MainThread]: End processing [shareddata]: success
+[2023-05-07 16:50:56] INFO root fetch - main [MainThread]: End processing [odoo13-addon-account-payment-order]: success
+[2023-05-07 16:50:56] INFO root fetch - main [MainThread]: Store serial: [18007605]
