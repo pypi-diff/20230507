@@ -3378,3 +3378,60 @@
 [2023-05-07 08:27:13] INFO root fetch - main [MainThread]: End processing [silobuster]: success
 [2023-05-07 08:27:15] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2023-05-07 08:27:15] INFO root fetch - main [MainThread]: Store serial: [18004498]
+[2023-05-07 08:32:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18004498]
+[2023-05-07 08:32:24] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 08:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdisk
+[2023-05-07 08:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tools-jsyoo61
+[2023-05-07 08:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easyMirai
+[2023-05-07 08:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: moss-rl
+[2023-05-07 08:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mpb-lib
+[2023-05-07 08:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: NodeGraphQt
+[2023-05-07 08:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pdisk
+[2023-05-07 08:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pydlm
+[2023-05-07 08:32:24] INFO root fetch - processPackages [pdisk]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-07 08:32:24] INFO root fetch - processPackages [easyMirai]: New version: [2.31.36] Old Version: [2.30.36]
+[2023-05-07 08:32:24] INFO root fetch - processPackages [moss-rl]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-07 08:32:24] INFO root fetch - processPackages [tools-jsyoo61]: New version: [2023.5.7.0] Old Version: [2022.6.27.0]
+[2023-05-07 08:32:24] INFO root fetch - processPackages [NodeGraphQt]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-07 08:32:24] INFO root fetch - processPackages [pydlm]: New version: [0.1.1.9] Old Version: [0.1.1.8]
+[2023-05-07 08:32:24] INFO root fetch - processPackages [pdisk]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-07 08:32:24] INFO root fetch - processPackages [mpb-lib]: New version: [0.1.83] Old Version: [0.1.82]
+[2023-05-07 08:32:24] INFO root fetch - processPackages [pdisk]: Downloading https://files.pythonhosted.org/packages/e5/67/cc7e671be7d558ebdf93db0c8a377c66d5cb0bfcaa0ba2ca7ec31b4e6750/pdisk-1.0.3.tar.gz
+[2023-05-07 08:32:24] INFO root fetch - processPackages [pdisk]: Downloading https://files.pythonhosted.org/packages/e5/67/cc7e671be7d558ebdf93db0c8a377c66d5cb0bfcaa0ba2ca7ec31b4e6750/pdisk-1.0.3.tar.gz
+[2023-05-07 08:32:24] INFO root fetch - processPackages [tools-jsyoo61]: Downloading https://files.pythonhosted.org/packages/cf/97/16f50a2ba6108d5be92694d6d45706ed2d766fd46bdaa2d7ca5eac9ba37c/tools-jsyoo61-2022.6.27.0.tar.gz
+[2023-05-07 08:32:24] INFO root fetch - processPackages [easyMirai]: Downloading https://files.pythonhosted.org/packages/e8/eb/9ec4ddacc09214b6d5c25244c19dcf3fc54ed4142812c5b54003a4a55425/easyMirai-2.30.36-py3-none-any.whl
+[2023-05-07 08:32:24] INFO root fetch - processPackages [pydlm]: Downloading https://files.pythonhosted.org/packages/67/fa/1a3cd39f5cd5db1c005d6df6a83021e5ea1bce01c6a43095c039ab80ca03/pydlm-0.1.1.8.tar.gz
+[2023-05-07 08:32:24] INFO root fetch - processPackages [moss-rl]: Downloading https://files.pythonhosted.org/packages/47/1f/de0b6f01ee2c05695c1837641fd730ad0a2c207bfd726a4e5e7159323187/moss-rl-0.0.1.tar.gz
+[2023-05-07 08:32:24] INFO root fetch - processPackages [mpb-lib]: Downloading https://files.pythonhosted.org/packages/b4/c9/7b3abdad3fe0cffd7f89ff88508ff45922f45ca95c0d7f5077cc182b9338/mpb_lib-0.1.82.tar.gz
+[2023-05-07 08:32:24] INFO root fetch - processPackages [NodeGraphQt]: executing diffoscope
+[2023-05-07 08:32:24] INFO root fetch - processPackages [NodeGraphQt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NodeGraphQt-0.5.8.tar.gz tmp/NodeGraphQt-0.5.9.tar.gz --markdown 20230507/N/NodeGraphQt/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-07 08:32:24] INFO root fetch - processPackages [pdisk]: Downloading https://files.pythonhosted.org/packages/fb/4b/24350533ce154fca86b577aff96ae9fdbbb4f8fddd233ae10271140e3e8d/pdisk-1.0.4.tar.gz
+[2023-05-07 08:32:24] INFO root fetch - processPackages [pdisk]: Downloading https://files.pythonhosted.org/packages/fb/4b/24350533ce154fca86b577aff96ae9fdbbb4f8fddd233ae10271140e3e8d/pdisk-1.0.4.tar.gz
+[2023-05-07 08:32:24] INFO root fetch - processPackages [moss-rl]: Downloading https://files.pythonhosted.org/packages/97/19/8a8697bf83cba2bc5605716b8a0eaf9df5644641ff5d60e1c94c080bd85e/moss-rl-0.0.2.tar.gz
+[2023-05-07 08:32:25] INFO root fetch - processPackages [tools-jsyoo61]: Downloading https://files.pythonhosted.org/packages/c8/08/a4a7327d8b5f79e8f0bc3a31500254413f1d485035d30a351d6ce2cd76e8/tools-jsyoo61-2023.5.7.0.tar.gz
+[2023-05-07 08:32:25] INFO root fetch - processPackages [mpb-lib]: Downloading https://files.pythonhosted.org/packages/7a/72/a4d60cf2d5c682e24ecbf652f10099f1e0e12b1b0e4ab14e9368316920f0/mpb_lib-0.1.83.tar.gz
+[2023-05-07 08:32:25] INFO root fetch - processPackages [easyMirai]: Downloading https://files.pythonhosted.org/packages/45/30/5f0347f6e351f9c38e901aa3c2cfd47d3417a252843684a98b4ad3b215ee/easyMirai-2.31.36-py3-none-any.whl
+[2023-05-07 08:32:25] INFO root fetch - processPackages [pydlm]: Downloading https://files.pythonhosted.org/packages/19/fe/b48a2f76755ba5ed8132060f7e8f43ff4ce206b59628f4ea045bbbdc078a/pydlm-0.1.1.9.tar.gz
+[2023-05-07 08:32:25] INFO root fetch - processPackages [pdisk]: executing diffoscope
+[2023-05-07 08:32:25] INFO root fetch - processPackages [pdisk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdisk-1.0.3.tar.gz tmp/pdisk-1.0.4.tar.gz --markdown 20230507/p/pdisk/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-07 08:32:25] INFO root fetch - processPackages [pdisk]: executing diffoscope
+[2023-05-07 08:32:25] INFO root fetch - processPackages [pdisk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdisk-1.0.3.tar.gz tmp/pdisk-1.0.4.tar.gz --markdown 20230507/p/pdisk/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-07 08:32:25] INFO root fetch - processPackages [moss-rl]: executing diffoscope
+[2023-05-07 08:32:25] INFO root fetch - processPackages [moss-rl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moss-rl-0.0.1.tar.gz tmp/moss-rl-0.0.2.tar.gz --markdown 20230507/m/moss-rl/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-07 08:32:25] INFO root fetch - processPackages [tools-jsyoo61]: executing diffoscope
+[2023-05-07 08:32:25] INFO root fetch - processPackages [tools-jsyoo61]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tools-jsyoo61-2022.6.27.0.tar.gz tmp/tools-jsyoo61-2023.5.7.0.tar.gz --markdown 20230507/t/tools-jsyoo61/2022.6.27.0-2023.5.7.0/diff.md --exclude *.pyd
+[2023-05-07 08:32:25] INFO root fetch - processPackages [mpb-lib]: executing diffoscope
+[2023-05-07 08:32:25] INFO root fetch - processPackages [mpb-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpb_lib-0.1.82.tar.gz tmp/mpb_lib-0.1.83.tar.gz --markdown 20230507/m/mpb-lib/0.1.82-0.1.83/diff.md --exclude *.pyd
+[2023-05-07 08:32:25] INFO root fetch - processPackages [easyMirai]: executing diffoscope
+[2023-05-07 08:32:25] INFO root fetch - processPackages [easyMirai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyMirai-2.30.36-py3-none-any.whl.zip tmp/easyMirai-2.31.36-py3-none-any.whl.zip --markdown 20230507/e/easyMirai/2.30.36-2.31.36/diff.md --exclude *.pyd
+[2023-05-07 08:32:25] INFO root fetch - processPackages [pydlm]: executing diffoscope
+[2023-05-07 08:32:25] INFO root fetch - processPackages [pydlm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydlm-0.1.1.8.tar.gz tmp/pydlm-0.1.1.9.tar.gz --markdown 20230507/p/pydlm/0.1.1.8-0.1.1.9/diff.md --exclude *.pyd
+[2023-05-07 08:32:26] INFO root fetch - main [MainThread]: End processing [pdisk]: success
+[2023-05-07 08:32:26] INFO root fetch - main [MainThread]: End processing [pdisk]: success
+[2023-05-07 08:32:26] INFO root fetch - main [MainThread]: End processing [easyMirai]: success
+[2023-05-07 08:32:26] INFO root fetch - main [MainThread]: End processing [moss-rl]: success
+[2023-05-07 08:32:26] INFO root fetch - main [MainThread]: End processing [tools-jsyoo61]: success
+[2023-05-07 08:32:26] INFO root fetch - main [MainThread]: End processing [mpb-lib]: success
+[2023-05-07 08:32:26] INFO root fetch - main [MainThread]: End processing [pydlm]: success
+[2023-05-07 08:32:28] INFO root fetch - main [MainThread]: End processing [NodeGraphQt]: success
+[2023-05-07 08:32:28] INFO root fetch - main [MainThread]: Store serial: [18004530]
