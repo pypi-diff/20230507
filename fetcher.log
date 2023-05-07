@@ -6585,3 +6585,70 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 14:36:35] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
 [2023-05-07 14:36:35] INFO root fetch - main [MainThread]: End processing [code-loader]: success
 [2023-05-07 14:36:35] INFO root fetch - main [MainThread]: Store serial: [18006647]
+[2023-05-07 14:41:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18006647]
+[2023-05-07 14:41:44] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-07 14:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-shelly-betterCertoraException
+[2023-05-07 14:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: minify-html
+[2023-05-07 14:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: minify-html-onepass
+[2023-05-07 14:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: web3lib
+[2023-05-07 14:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tremolo
+[2023-05-07 14:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: image-to-arduino
+[2023-05-07 14:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ersciyt
+[2023-05-07 14:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nodered.py
+[2023-05-07 14:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: quantsight
+[2023-05-07 14:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: apininja
+[2023-05-07 14:41:44] WARNING root fetch - processPackages [web3lib]: Skipping, unable to determine old version
+[2023-05-07 14:41:44] WARNING root fetch - processPackages [certora-cli-alpha-shelly-betterCertoraException]: Skipping, unable to determine old version
+[2023-05-07 14:41:44] INFO root fetch - processPackages [web3lib]: Start processing: ja2mqtt
+[2023-05-07 14:41:44] INFO root fetch - main [MainThread]: End processing [web3lib] error
+[2023-05-07 14:41:44] INFO root fetch - processPackages [certora-cli-alpha-shelly-betterCertoraException]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-07 14:41:44] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-betterCertoraException] error
+[2023-05-07 14:41:44] INFO root fetch - processPackages [minify-html-onepass]: New version: [0.9.2] Old Version: [0.11.1]
+[2023-05-07 14:41:44] INFO root fetch - processPackages [image-to-arduino]: New version: [1.0.3.9] Old Version: [1.0.3.7]
+[2023-05-07 14:41:44] INFO root fetch - processPackages [tremolo]: New version: [0.0.91] Old Version: [0.0.90]
+[2023-05-07 14:41:44] INFO root fetch - processPackages [apininja]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-07 14:41:44] INFO root fetch - processPackages [minify-html]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-07 14:41:44] INFO root fetch - processPackages [image-to-arduino]: executing diffoscope
+[2023-05-07 14:41:44] INFO root fetch - processPackages [image-to-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-to-arduino-1.0.3.7.tar.gz tmp/image-to-arduino-1.0.3.9.tar.gz --markdown 20230507/i/image-to-arduino/1.0.3.7-1.0.3.9/diff.md --exclude *.pyd
+[2023-05-07 14:41:44] INFO root fetch - processPackages [ersciyt]: New version: [1.8] Old Version: [1.7]
+[2023-05-07 14:41:44] INFO root fetch - processPackages [apininja]: executing diffoscope
+[2023-05-07 14:41:44] INFO root fetch - processPackages [apininja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apininja-0.1.6.tar.gz tmp/apininja-0.1.7.tar.gz --markdown 20230507/a/apininja/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-07 14:41:44] INFO root fetch - processPackages [nodered.py]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-05-07 14:41:44] INFO root fetch - processPackages [quantsight]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-07 14:41:44] INFO root fetch - processPackages [minify-html]: executing diffoscope
+[2023-05-07 14:41:44] INFO root fetch - processPackages [minify-html]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minify_html-0.9.1-cp39-none-win_amd64.whl.zip tmp/minify_html-0.9.2-cp39-none-win_amd64.whl.zip --markdown 20230507/m/minify-html/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-07 14:41:44] INFO root fetch - processPackages [ja2mqtt]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-07 14:41:44] INFO root fetch - processPackages [minify-html-onepass]: Downloading https://files.pythonhosted.org/packages/a9/90/8c7a86b176ec26bb8a0b31b51cec109b7a7d74d47fd1cb479dd765f283fc/minify_html_onepass-0.11.1.tar.gz
+[2023-05-07 14:41:44] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230507.12.41.550958] Old Version: [20230503.8.59.821391]
+[2023-05-07 14:41:44] INFO root fetch - processPackages [tremolo]: Downloading https://files.pythonhosted.org/packages/59/ab/fecca62f87f85a015534d543f599b51e7a3b45d4f0033b5f56afd5ee1e51/tremolo-0.0.91.tar.gz
+[2023-05-07 14:41:44] INFO root fetch - processPackages [nodered.py]: Downloading https://files.pythonhosted.org/packages/02/3e/59bb34a17cf106106e5296f4d76a7df72b60b0ee10919a49e43569fdac34/nodered.py-0.1.4.tar.gz
+[2023-05-07 14:41:44] INFO root fetch - processPackages [quantsight]: Downloading https://files.pythonhosted.org/packages/85/9f/8cefe0866d6a069ce7c14c8f2fc6f1d6f4d282f9d83a07dc69739477a543/quantsight-0.1.7.tar.gz
+[2023-05-07 14:41:44] INFO root fetch - processPackages [tremolo]: executing diffoscope
+[2023-05-07 14:41:44] INFO root fetch - processPackages [tremolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tremolo-0.0.90.tar.gz tmp/tremolo-0.0.91.tar.gz --markdown 20230507/t/tremolo/0.0.90-0.0.91/diff.md --exclude *.pyd
+[2023-05-07 14:41:45] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/9f/11/734c5182cedae6d75239580440f12aedc7ce7c2923ccc7070cc49ba83143/certora-cli-alpha-roy-CERT-1955-assertHits-20230503.8.59.821391.tar.gz
+[2023-05-07 14:41:45] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 38380988>=10485760
+[2023-05-07 14:41:45] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-07 14:41:45] INFO root fetch - processPackages [ersciyt]: Downloading https://files.pythonhosted.org/packages/33/32/25afcfbbe7d52e7be3e018afc835afaa5e76518c97d74f3ad71aea87cb53/ersciyt-1.8.tar.gz
+[2023-05-07 14:41:45] INFO root fetch - processPackages [minify-html-onepass]: executing diffoscope
+[2023-05-07 14:41:45] INFO root fetch - processPackages [minify-html-onepass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minify_html_onepass-0.11.1.tar.gz tmp/minify_html_onepass-0.9.2-cp39-none-win_amd64.whl.zip --markdown 20230507/m/minify-html-onepass/0.11.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-07 14:41:45] INFO root fetch - processPackages [ja2mqtt]: Downloading https://files.pythonhosted.org/packages/71/b6/23324df893aa9314feb61ee99a9361aa2bf0fcd0eea4510efbca65d4dbe9/ja2mqtt-1.0.5.tar.gz
+[2023-05-07 14:41:45] INFO root fetch - processPackages [nodered.py]: Downloading https://files.pythonhosted.org/packages/c4/37/fe7695a2f54387d64ec76782f86050e5d857f991a476a0937108e0f57fdd/nodered.py-0.2.0.tar.gz
+[2023-05-07 14:41:45] INFO root fetch - processPackages [quantsight]: Downloading https://files.pythonhosted.org/packages/75/33/1706a4b4178f7ea0e4d73529523e41ba249311a128aaa062aa231ab4cce9/quantsight-0.1.8.tar.gz
+[2023-05-07 14:41:45] INFO root fetch - processPackages [ersciyt]: executing diffoscope
+[2023-05-07 14:41:45] INFO root fetch - processPackages [ersciyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ersciyt-1.7.tar.gz tmp/ersciyt-1.8.tar.gz --markdown 20230507/e/ersciyt/1.7-1.8/diff.md --exclude *.pyd
+[2023-05-07 14:41:45] INFO root fetch - processPackages [ja2mqtt]: executing diffoscope
+[2023-05-07 14:41:45] INFO root fetch - processPackages [ja2mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ja2mqtt-1.0.4.tar.gz tmp/ja2mqtt-1.0.5.tar.gz --markdown 20230507/j/ja2mqtt/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-07 14:41:45] INFO root fetch - processPackages [quantsight]: executing diffoscope
+[2023-05-07 14:41:45] INFO root fetch - processPackages [quantsight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantsight-0.1.7.tar.gz tmp/quantsight-0.1.8.tar.gz --markdown 20230507/q/quantsight/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-07 14:41:45] INFO root fetch - processPackages [nodered.py]: executing diffoscope
+[2023-05-07 14:41:45] INFO root fetch - processPackages [nodered.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodered.py-0.1.4.tar.gz tmp/nodered.py-0.2.0.tar.gz --markdown 20230507/n/nodered.py/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-05-07 14:41:45] INFO root fetch - main [MainThread]: End processing [apininja]: success
+[2023-05-07 14:41:46] INFO root fetch - main [MainThread]: End processing [minify-html]: success
+[2023-05-07 14:41:46] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
+[2023-05-07 14:41:46] INFO root fetch - main [MainThread]: End processing [ersciyt]: success
+[2023-05-07 14:41:46] INFO root fetch - main [MainThread]: End processing [minify-html-onepass]: success
+[2023-05-07 14:41:46] INFO root fetch - main [MainThread]: End processing [ja2mqtt]: success
+[2023-05-07 14:41:46] INFO root fetch - main [MainThread]: End processing [tremolo]: success
+[2023-05-07 14:41:46] INFO root fetch - main [MainThread]: End processing [quantsight]: success
+[2023-05-07 14:41:47] INFO root fetch - main [MainThread]: End processing [nodered.py]: success
+[2023-05-07 14:41:47] INFO root fetch - main [MainThread]: Store serial: [18006715]
