@@ -10873,3 +10873,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-07 21:44:18] INFO root fetch - main [MainThread]: End processing [pytube]: success
 [2023-05-07 21:44:28] INFO root fetch - main [MainThread]: End processing [djangosaml2]: success
 [2023-05-07 21:44:28] INFO root fetch - main [MainThread]: Store serial: [18009374]
+[2023-05-07 21:49:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18009374]
+[2023-05-07 21:49:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-07 21:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gravitypy
+[2023-05-07 21:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: searchbook
+[2023-05-07 21:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipcryptov2
+[2023-05-07 21:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: acrosort-tex
+[2023-05-07 21:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: advent
+[2023-05-07 21:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-EyalH-LoopSnippet
+[2023-05-07 21:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: shell-themer
+[2023-05-07 21:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: graphdisplay
+[2023-05-07 21:49:37] INFO root fetch - processPackages [searchbook]: New version: [1.0.1] Old Version: [1.0]
+[2023-05-07 21:49:37] INFO root fetch - processPackages [acrosort-tex]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-07 21:49:37] INFO root fetch - processPackages [shell-themer]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-07 21:49:37] INFO root fetch - processPackages [certora-cli-alpha-EyalH-LoopSnippet]: New version: [20230507.8.22.258127] Old Version: [20230507.19.48.587504]
+[2023-05-07 21:49:37] WARNING root fetch - processPackages [advent]: Skipping, unable to determine old version
+[2023-05-07 21:49:37] INFO root fetch - main [MainThread]: End processing [advent] error
+[2023-05-07 21:49:37] INFO root fetch - processPackages [gravitypy]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-07 21:49:37] WARNING root fetch - processPackages [pipcryptov2]: Skipping, unable to determine old version
+[2023-05-07 21:49:37] INFO root fetch - main [MainThread]: End processing [pipcryptov2] error
+[2023-05-07 21:49:37] INFO root fetch - processPackages [graphdisplay]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-07 21:49:37] INFO root fetch - processPackages [acrosort-tex]: Downloading https://files.pythonhosted.org/packages/27/00/d4fed45fe83720af1f45b622cd859a0e97e90cc5cd06b7706a9520960dfc/acrosort_tex-0.1.0.tar.gz
+[2023-05-07 21:49:37] INFO root fetch - processPackages [certora-cli-alpha-EyalH-LoopSnippet]: Downloading https://files.pythonhosted.org/packages/be/71/a5f40fe3e2698c11e183d4046ac9c52a2fc596c6eb33081be225148bb013/certora-cli-alpha-EyalH-LoopSnippet-20230507.19.48.587504.tar.gz
+[2023-05-07 21:49:37] INFO root fetch - processPackages [shell-themer]: Downloading https://files.pythonhosted.org/packages/81/99/cfbc26b7076ccf5678b12b72a6ffe1cabbd0c021aca5cc08e91bc93d3bfe/shell-themer-0.2.0.tar.gz
+[2023-05-07 21:49:37] WARNING root fetch - processPackages [certora-cli-alpha-EyalH-LoopSnippet]: Skipping package: exceeds size limit 38474542>=10485760
+[2023-05-07 21:49:37] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-EyalH-LoopSnippet] error
+[2023-05-07 21:49:37] INFO root fetch - processPackages [searchbook]: Downloading https://files.pythonhosted.org/packages/4c/7c/72bf4cbbf1f3e56cbfd8cd3cf65985c5336998702410c6a46de95b0176ed/searchbook-1.0.tar.gz
+[2023-05-07 21:49:37] INFO root fetch - processPackages [gravitypy]: executing diffoscope
+[2023-05-07 21:49:37] INFO root fetch - processPackages [gravitypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitypy-1.0.8.tar.gz tmp/gravitypy-1.0.9.tar.gz --markdown 20230507/g/gravitypy/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-07 21:49:37] INFO root fetch - processPackages [graphdisplay]: Downloading https://files.pythonhosted.org/packages/d3/8a/e9d090aeb3bc756d177af1863904c4d6195655dbf6c22195d17f3fb1dd71/graphdisplay-0.3.3.tar.gz
+[2023-05-07 21:49:37] INFO root fetch - processPackages [acrosort-tex]: Downloading https://files.pythonhosted.org/packages/f9/d9/a04deebd9037f10ab706ea9e90434dd67ec8cead5e597a529e3ad4bc02b3/acrosort_tex-0.1.1.tar.gz
+[2023-05-07 21:49:38] INFO root fetch - processPackages [acrosort-tex]: executing diffoscope
+[2023-05-07 21:49:38] INFO root fetch - processPackages [acrosort-tex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acrosort_tex-0.1.0.tar.gz tmp/acrosort_tex-0.1.1.tar.gz --markdown 20230507/a/acrosort-tex/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-07 21:49:38] INFO root fetch - processPackages [searchbook]: Downloading https://files.pythonhosted.org/packages/ca/69/97ce2b4e85a576290fa126bbee2affdc5b744c8658df64b5ceec5ed230dc/searchbook-1.0.1.tar.gz
+[2023-05-07 21:49:38] INFO root fetch - processPackages [shell-themer]: Downloading https://files.pythonhosted.org/packages/7c/94/fccb72d2b9984191927f7d1b49c8d338faab27fb00784b0422fe57ee32e0/shell-themer-0.3.0.tar.gz
+[2023-05-07 21:49:38] INFO root fetch - processPackages [graphdisplay]: executing diffoscope
+[2023-05-07 21:49:38] INFO root fetch - processPackages [graphdisplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphdisplay-0.3.2.tar.gz tmp/graphdisplay-0.3.3.tar.gz --markdown 20230507/g/graphdisplay/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-07 21:49:38] INFO root fetch - processPackages [shell-themer]: executing diffoscope
+[2023-05-07 21:49:38] INFO root fetch - processPackages [shell-themer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shell-themer-0.2.0.tar.gz tmp/shell-themer-0.3.0.tar.gz --markdown 20230507/s/shell-themer/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-07 21:49:38] INFO root fetch - processPackages [searchbook]: executing diffoscope
+[2023-05-07 21:49:38] INFO root fetch - processPackages [searchbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230507:/home/abi/fetcher/20230507:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchbook-1.0.tar.gz tmp/searchbook-1.0.1.tar.gz --markdown 20230507/s/searchbook/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-07 21:49:38] INFO root fetch - main [MainThread]: End processing [gravitypy]: success
+[2023-05-07 21:49:39] INFO root fetch - main [MainThread]: End processing [acrosort-tex]: success
+[2023-05-07 21:49:39] INFO root fetch - main [MainThread]: End processing [graphdisplay]: success
+[2023-05-07 21:49:39] INFO root fetch - main [MainThread]: End processing [shell-themer]: success
+[2023-05-07 21:49:39] INFO root fetch - main [MainThread]: End processing [searchbook]: success
+[2023-05-07 21:49:39] INFO root fetch - main [MainThread]: Store serial: [18009400]
